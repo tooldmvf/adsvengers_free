@@ -1,0 +1,4 @@
+{
+	"first_name": "{{appsmith.store.first_name}}",
+	"last_name": "{{appsmith.store.last_name}}"
+}

@@ -1,0 +1,14 @@
+Select count(*)
+,e.ts_name
+,sum(a.amount_spent) as spent 
+,sum(a.amount_spent)+ (sum(a.amount_spent)/100 * a.spent_rate_fees) as spent_wfees
+from public.raw_user_fb_financial_data a
+inner join public.user_fb_account b on (b.fk_user_id = a.fk_user_id and b.fk_ad_account_id = a.fk_ad_account_id)
+inner join public.fb_ad_account c on (c.ad_account_id = b.fk_ad_account_id)
+inner join public.facebook_bm d on (d.bm_id = c.fk_bm_id)
+inner join public.traffic_source e on (e.ts_id = d.fk_ts_id)
+where 1 = 1
+and a.financial_date >= to_date('{{moment(DateFrom.selectedDate).format('YYYY-DD-MM')}}','YYYY-DD-MM')
+and a.financial_date <= to_date('{{moment(DateTo.selectedDate).format('YYYY-DD-MM')}}','YYYY-DD-MM')
+and ({{SelectTSFront.selectedOptionValues.length == 0}} OR text(d.fk_ts_id) IN ({{"'" + SelectTSFront.selectedOptionValues.join("', '") + "'"}}))
+group by a.spent_rate_fees, e.ts_name

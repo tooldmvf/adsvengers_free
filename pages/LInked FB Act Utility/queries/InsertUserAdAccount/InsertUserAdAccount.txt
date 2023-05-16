@@ -1,0 +1,4 @@
+INSERT INTO public.user_fb_account
+	( fk_user_id, fk_ad_account_id,spent_fees,fk_bm_id) 
+VALUES(
+	{{SelectUserFBPage.selectedOptionValue}},'{{SelectAct.selectedOptionValue}}',{{InputFees.text}},'{{SelectTs.selectedOptionValue}}')

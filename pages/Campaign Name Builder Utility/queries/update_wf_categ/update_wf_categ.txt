@@ -1,0 +1,5 @@
+update public.offer b
+set fk_off_cat_id = c.off_cat_id
+  from public.wf_raw_offers z 
+  inner join public.offer_category c on (c.off_cat_short = case when z.categories ilike '%nutra%' then 'N' when z.categories ilike '%beauty%' then 'N' when z.categories ilike '%health%' then 'N' else 'G' end)
+where z.id = b.offer_id

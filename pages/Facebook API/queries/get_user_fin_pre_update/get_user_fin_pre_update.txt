@@ -1,0 +1,47 @@
+select
+  a.fk_user_id,
+  a.financial_date,
+  a.fk_offer_id,
+  a.fk_user_network_id,
+  a.amount_spent,
+  a.amount_spent_plus_fee,
+  z.fb_spent,
+  z.spent_rate_fees,
+  z.off_cat_short,
+  z.net_name_short,
+  c.off_cat_id
+from
+  public.user_financial a
+  inner join (
+    select
+      sum(b.amount_spent) as fb_spent,
+      b.campaign_offer_id,
+      b.fk_user_id,
+      b.financial_date,
+      b.spent_rate_fees,
+      b.off_cat_short,
+      b.net_name_short
+    from
+      public.raw_user_fb_financial_data b
+    group by
+      b.campaign_offer_id,
+      b.fk_user_id,
+      b.financial_date,
+      b.spent_rate_fees,
+      b.off_cat_short,
+      b.net_name_short
+  ) z on (
+    a.fk_user_id = z.fk_user_id
+    and a.fk_offer_id = z.campaign_offer_id
+    and a.financial_date = z.financial_date
+  )
+  inner join public.offer_category c on (c.off_cat_short = z.off_cat_short)
+  inner join public.user_network d on (d.fk_user_id = a.fk_user_id and d.user_network_id = a.fk_user_network_id)
+where 1 = 1
+  and d.fk_ts_id = '6719b3bc-e4b5-41dd-a04c-4323dc921a42'
+  and a.financial_date >= '{{DatePicker2.selectedDate}}'
+order by
+  a.fk_user_id,
+  a.financial_date,
+  a.fk_offer_id,
+  a.fk_user_network_id

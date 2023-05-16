@@ -1,0 +1,6 @@
+SELECT b.last_name, b. first_name, a.email, b.fk_user_id, max(c.updated_at)
+from auth.users a
+INNER JOIN public.user_profiles b ON (b.fk_user_id = a.id)
+Inner join auth.sessions c on (c.user_id = a.id)
+group by b.last_name, b. first_name, a.email, b.fk_user_id
+order by 4 desc,1

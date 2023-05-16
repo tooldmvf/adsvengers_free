@@ -1,0 +1,11 @@
+{ 
+	"fk_offer_id": "{{SelectOfferEdit.selectedOptionValue}}",
+	"fk_user_network_id": "{{SelectNetworkEdit.selectedOptionValue}}",
+	"amount_spent": "{{parseFloat(SpentInputCopy.value)}}",
+	"amount_spent_plus_fee": "{{parseFloat(SpentInputCopy.value)+(parseFloat(SpentInputCopy.value)/100*parseInt(InputSpentFeesCopy.value)) }}",
+	"amount_revenue": "{{parseFloat(RevenueInputCopy.value)}}",
+	"amount_revenue_approved": "{{parseFloat(RevenueInputCopy.value)}}",
+	"amount_conversion": "{{parseInt(ConversionEdit.text)}}",
+	"conversions_approved": "{{parseInt(ConversionEdit.text)}}",
+	"spent_rate_fees": "{{parseInt(InputSpentFeesCopy.text)}}"
+}

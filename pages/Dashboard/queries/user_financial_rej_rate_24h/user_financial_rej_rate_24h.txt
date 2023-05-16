@@ -1,0 +1,13 @@
+SELECT 
+  sum(a.amount_conversion) as tot_conversions,
+  sum(a.conversions_pending) as conversions_pending,
+  sum(a.conversions_approved) as conversions_approved,
+  sum(a.conversions_rejected) as conversions_rejected
+FROM 
+  public."user_financial" a
+	INNER JOIN public."user_network" b on (a.fk_user_network_id = b.user_network_id)
+where 1 = 1
+and a.financial_date = '{{moment().add(-1, 'days')}}'
+and (text(a.fk_user_id) IN ({{"'" + MultiSelectUsers.selectedOptionValues.join("', '") + "'"}}) OR text(a.fk_user_id) = '{{appsmith.store.myUser}}' )
+and ({{SelectNetwork.selectedOptionValues.length == 0}} OR text(b.fk_network_id) IN ({{"'" + SelectNetwork.selectedOptionValues.join("', '") + "'"}}))
+and ({{SelectTSFront.selectedOptionValues.length == 0}} OR text(b.fk_ts_id) IN ({{"'" + SelectTSFront.selectedOptionValues.join("', '") + "'"}}))

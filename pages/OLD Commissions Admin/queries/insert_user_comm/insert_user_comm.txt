@@ -1,0 +1,6 @@
+{
+	"fk_offer_id": "{{this.params.fk_offer_id}}",
+	"fk_user_id": "{{appsmith.store.myUser}}",
+	"fk_comm_type_id": "{{SelectCommType.selectedOptionValue}}",
+	"comm_value": "{{InputCommVal.text}}"
+}

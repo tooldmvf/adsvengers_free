@@ -1,0 +1,12 @@
+select
+  d.network_id,
+  d.network_name,
+  d.network_name_short,
+  a.user_api_key,
+	a.user_aff_id
+from
+  public.user_network a
+  left outer join public."network" d on (d.network_id = a.fk_network_id)
+where
+  (text(a.fk_user_id) IN ({{"'" + MultiSelectUsers.selectedOptionValues.join("', '") + "'"}}) OR text(a.fk_user_id) = '{{appsmith.store.myUser}}' )
+   and d.network_name_short = 'SB'

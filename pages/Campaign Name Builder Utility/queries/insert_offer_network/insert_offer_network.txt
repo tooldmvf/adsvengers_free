@@ -1,0 +1,8 @@
+{ 
+	"offer_id_net": "{{this.params.offer_id_net}}", 
+	"fk_network_id": "{{this.params.fk_network_id}}",
+	"off_category_net": "{{this.params.off_category_net}}",
+	"payout": "{{this.params.payout}}",
+	"off_cat_short": "{{this.params.off_cat_short}}",
+	"offer_name_net": "{{this.params.offer_name_net}}"
+}

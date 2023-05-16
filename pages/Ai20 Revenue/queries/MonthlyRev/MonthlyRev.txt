@@ -1,0 +1,15 @@
+select b.last_name
+,COALESCE(sum(a.payout) FILTER (WHERE a.status = 'approved' OR a.status = 'pending'),0) AS tot_revenue
+,COALESCE(sum(a.payout) FILTER (WHERE a.status = 'approved'),0) AS revenue_approved
+,COALESCE(sum(a.payout) FILTER (WHERE a.status = 'pending'),0) AS revenue_pending
+,COALESCE(sum(a.payout) FILTER (WHERE a.status = 'trash' OR a.status = 'duplicate_trash'),0) AS revenue_trash
+,COALESCE(sum(a.rec_count) FILTER (WHERE a.status = 'approved' OR a.status = 'pending'),0) AS tot_conversion
+,COALESCE(sum(a.rec_count) FILTER (WHERE a.status = 'approved'),0) AS approved
+,COALESCE(sum(a.rec_count) FILTER (WHERE a.status = 'pending'),0) AS pending
+,COALESCE(sum(a.rec_count) FILTER (WHERE a.status = 'trash' OR a.status = 'duplicate_trash'),0) AS trash
+ from public.ai20_raw_data_grouped_month a
+inner join public.user_profiles b on (b.fk_user_id = a.fk_user_id)
+where 1 = 1
+and a.date >= to_date('{{moment(DateFrom.selectedDate).format('YYYY-DD-MM')}}','YYYY-DD-MM')
+and a.date <= to_date('{{moment(DateTo.selectedDate).format('YYYY-DD-MM')}}','YYYY-DD-MM')
+group by b.last_name

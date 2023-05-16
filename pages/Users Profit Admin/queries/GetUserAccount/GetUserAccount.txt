@@ -1,0 +1,10 @@
+SELECT
+	b.network_other_name,
+	b.user_email_network,
+	b.user_network_id
+from public.user_network b 
+inner join public.traffic_source e on (e.ts_id = b.fk_ts_id)
+inner join public.network f on (f.network_id = b.fk_network_id)
+where 1 = 1
+and ({{!SelectNetwork.selectedOptionValue}} OR b.fk_network_id = {{"'" + SelectNetwork.selectedOptionValue + "'"}})
+and ({{SelectTSFront.selectedOptionValues.length == 0}} OR text(e.ts_id) IN ({{"'" + SelectTSFront.selectedOptionValues.join("', '") + "'"}}))

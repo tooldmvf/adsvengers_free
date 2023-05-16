@@ -1,0 +1,33 @@
+SELECT 
+  sum(a.amount_revenue_approved) as amount_revenue_approved, 
+  sum(a.amount_revenue_h) as tot_revenue_h, 
+  sum(a.conversions_approved_h) as conversions_approved_h,
+  sum(a.conversions_total_h) as tot_conversions_h
+FROM 
+  public."user_financial" a
+	INNER JOIN public."user_network" b on (a.fk_user_network_id = b.user_network_id)
+	INNER JOIN public.network c on (c.network_id = b.fk_network_id)
+	INNER JOIN public.traffic_source d on (d.ts_id = b.fk_ts_id)
+where 1 = 1
+and d.ts_name in ('Facebook Ads', 'Google Ads')
+and c.network_name_short != 'AI'
+and a.financial_date >= to_date('{{moment(DateFrom.selectedDate).format('YYYY-DD-MM')}}','YYYY-DD-MM')
+and a.financial_date <= to_date('{{moment(DateTo.selectedDate).format('YYYY-DD-MM')}}','YYYY-DD-MM')
+and ({{!SelectUser.selectedOptionValue}} OR (text(a.fk_user_id) IN ({{"'" + SelectUser.selectedOptionValue + "'"}})))
+union all
+SELECT 
+  sum(a.amount_revenue_approved) as amount_revenue_approved, 
+  sum(a.amount_revenue_h) as tot_revenue_h, 
+  sum(a.conversions_approved_h) as conversions_approved_h,
+  sum(a.conversions_total_h) as tot_conversions_h
+FROM 
+  public."user_financial" a
+	INNER JOIN public."user_network" b on (a.fk_user_network_id = b.user_network_id)
+	INNER JOIN public.network c on (c.network_id = b.fk_network_id)
+	INNER JOIN public.traffic_source d on (d.ts_id = b.fk_ts_id)
+where 1 = 1
+and d.ts_name in ('Facebook Ads')
+and c.network_name_short = 'AI'
+and a.financial_date >= to_date('{{moment(DateFrom.selectedDate).format('YYYY-DD-MM')}}','YYYY-DD-MM')
+and a.financial_date <= to_date('{{moment(DateTo.selectedDate).format('YYYY-DD-MM')}}','YYYY-DD-MM')
+and ({{!SelectUser.selectedOptionValue}} OR (text(a.fk_user_id) IN ({{"'" + SelectUser.selectedOptionValue + "'"}})))

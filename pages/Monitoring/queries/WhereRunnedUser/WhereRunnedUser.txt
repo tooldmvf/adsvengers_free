@@ -1,0 +1,22 @@
+select distinct
+ b.fk_ad_account_id
+,d.ad_account_name
+,e.bm_name
+,f.last_name
+,(sum(b.amount_spent)+(sum(b.amount_spent))/100 * b.spent_rate_fees) as amount_spent_plus_fee
+from public.user_financial_live a
+inner join public.raw_user_fb_financial_data_live b on (b.campaign_offer_id = fk_offer_id and b.fk_user_id = a.fk_user_id and b.financial_date = a.financial_date )
+inner join public.user_network c on (c.user_network_id = a.fk_user_network_id)
+inner join public.fb_ad_account d on (d.ad_account_id = b.fk_ad_account_id)
+inner join public.facebook_bm e on (e.bm_id = d.fk_bm_id and e.fk_ts_id = c.fk_ts_id )
+inner join public.user_profiles f on (f.fk_user_id = a.fk_user_id)
+where 1 = 1
+and a.fk_offer_id != 'WU'
+and a.fk_user_id = '{{TableUsers.selectedRow.fk_user_id}}' 
+and a.financial_date = '{{moment().format('yyyy-MM-DD')}}'
+group by b.fk_ad_account_id
+,d.ad_account_name
+,e.bm_name
+,f.last_name
+,b.spent_rate_fees
+order by 5 desc

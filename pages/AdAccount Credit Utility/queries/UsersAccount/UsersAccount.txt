@@ -1,0 +1,7 @@
+select
+  b.last_name || ' ' || b.first_name as "MediaBuyer"
+from
+  public.user_profiles b 
+  inner join public.user_fb_account c on (c.fk_user_id = b.fk_user_id)
+where 1 = 1
+and c.fk_ad_account_id = '{{Table3.selectedRow.id}}'

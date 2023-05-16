@@ -1,0 +1,34 @@
+SELECT 	
+	c.offer_name,
+	c.offer_id,
+	concat(f.network_name_short,'|',d.off_cat_short,'|',a.fk_offer_id, ' - ',c.offer_name) as offer,
+	sum(a.amount_revenue) revenue,
+	sum(a.amount_spent_plus_fee) spent,
+	sum(a.amount_revenue)-sum(a.amount_spent_plus_fee) profit,
+	((sum(a.amount_revenue) - sum(a.amount_spent_plus_fee))/case when sum(a.amount_spent_plus_fee) = 0 then 1 else sum(a.amount_spent_plus_fee) end)*100 as "Tot_ROI",
+	((sum(a.amount_revenue_approved) - sum(a.amount_spent_plus_fee))/case when sum(a.amount_spent_plus_fee) = 0 then 1 else sum(a.amount_spent_plus_fee) end)*100 as "Appr_ROI",
+	sum(a.amount_conversion) as tot_conv,
+	f.network_name_short,
+	case 
+		when (((sum(a.amount_revenue) - sum(a.amount_spent_plus_fee))/case when sum(a.amount_spent_plus_fee) = 0 then 1 else sum(a.amount_spent_plus_fee) end) *100) <0 then '#fef2f2'
+		when (((sum(a.amount_revenue) - sum(a.amount_spent_plus_fee))/case when sum(a.amount_spent_plus_fee) = 0 then 1 else sum(a.amount_spent_plus_fee) end) *100) <30 then '#fefce8'
+		else '#f0fdf4' end as "row_color",
+sum(a.amount_spent_plus_fee)/(case when sum(a.amount_conversion) = 0 then 1 else sum(a.amount_conversion) end) as "CPA"
+from public.user_financial_live a
+INNER JOIN public.user_network b ON (a.fk_user_id = b.fk_user_id and a.fk_user_network_id = b.user_network_id)
+INNER JOIN public.offer c ON (b.user_network_id = c.fk_user_network_id and a.fk_offer_id = c.offer_id)
+INNER JOIN public.offer_category d ON (d.off_cat_id = c.fk_off_cat_id)
+inner join public.traffic_source e on (e.ts_id = b.fk_ts_id)
+inner join public.network f on (f.network_id = b.fk_network_id)
+inner join public.user_profiles g on (g.fk_user_id = a.fk_user_id)
+where 1 = 1
+and c.offer_id != 'WU'
+and (text(a.fk_user_id) IN ({{"'" + MultiSelectUsers.selectedOptionValues.join("', '") + "'"}}) OR text(a.fk_user_id) = '{{appsmith.store.myUser}}' )
+and a.financial_date = '{{moment().format('yyyy-MM-DD')}}'
+and ({{MSNetwork.selectedOptionValues.length == 0}} OR text(b.fk_network_id) IN ({{"'" + MSNetwork.selectedOptionValues.join("', '") + "'"}}))
+and ({{MSTrSource.selectedOptionValues.length == 0}} OR text(e.ts_id) IN ({{"'" + MSTrSource.selectedOptionValues.join("', '") + "'"}}))
+group by 
+	c.offer_name,
+	c.offer_id,concat(f.network_name_short,'|',d.off_cat_short,'|',a.fk_offer_id, ' - ',c.offer_name),network_name_short
+	having (sum(a.amount_revenue)>0 OR sum(a.amount_spent_plus_fee)>0)
+order by 5 desc

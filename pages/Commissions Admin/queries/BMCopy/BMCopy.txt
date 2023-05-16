@@ -1,0 +1,18 @@
+Select count(*)
+,bm_name, bm_id, a.spent_rate_fees
+,sum(a1.amount_spent) as spent 
+,sum(a1.amount_spent_plus_fee) as spent_wfees
+from public.user_financial a1
+inner join public.raw_user_fb_financial_data a on (a.campaign_offer_id = a1.fk_offer_id and a.fk_user_id = a1.fk_user_id and a.financial_date = a1.financial_date)
+inner join public.user_fb_account b on (b.fk_user_id = a.fk_user_id and b.fk_ad_account_id = a.fk_ad_account_id)
+inner join public.user_network c on (c.user_network_id = a1.fk_user_network_id )
+inner join public.network c1 on (c1.network_id = c.fk_network_id and c1.network_name_short = a.net_name_short)
+inner join public.fb_ad_account d on (d.ad_account_id = b.fk_ad_account_id)
+inner join public.facebook_bm e on (e.bm_id = d.fk_bm_id and e.fk_ts_id = c.fk_ts_id )
+inner join public.user_profiles f on (f.fk_user_id = a.fk_user_id)
+where 1 = 1
+and bm_id != 'Ai20-Google'
+and a1.financial_date >= to_date('{{moment(DateFrom.selectedDate).format('YYYY-MM-DD')}}','YYYY-MM-DD')
+and a1.financial_date <= to_date('{{moment(DateTo.selectedDate).format('YYYY-MM-DD')}}','YYYY-MM-DD')
+and ({{!SelectUser.selectedOptionValue}} OR (text(a1.fk_user_id) IN ({{"'" + SelectUser.selectedOptionValue + "'"}})))
+group by bm_name, bm_id, a.spent_rate_fees

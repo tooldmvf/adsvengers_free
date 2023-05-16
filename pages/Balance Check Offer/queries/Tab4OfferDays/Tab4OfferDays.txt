@@ -1,0 +1,21 @@
+SELECT a.financial_date,
+  e.last_name||' '||e.first_name as "user", c.ts_name as "traffic_source",
+	f.network_name_short||'|'||d1.off_cat_short||'|'||d.offer_id||' - '||d.offer_name as "offer",
+	sum(a.amount_revenue) as "tot_revenue",
+	sum(a.amount_spent_plus_fee) as "spent"
+from public.user_financial a
+INNER JOIN public.user_network b ON (a.fk_user_id = b.fk_user_id and a.fk_user_network_id = b.user_network_id)
+INNER JOIN public.offer d ON (d.offer_id = a.fk_offer_id and d.fk_user_network_id = a.fk_user_network_id)
+INNER JOIN public.offer_category d1 ON (d1.off_cat_id = d.fk_off_cat_id)
+INNER JOIN public.network f ON (f.network_id = b.fk_network_id)
+INNER JOIN public.traffic_source c ON (b.fk_ts_id = c.ts_id)
+INNER JOIN public.user_profiles e ON (e.fk_user_id = a. fk_user_id)
+where 1=1
+and a.financial_date >= to_date('{{moment(DateFrom.selectedDate).format('YYYY-DD-MM')}}','YYYY-DD-MM')
+and a.financial_date <= to_date('{{moment(DateTo.selectedDate).format('YYYY-DD-MM')}}','YYYY-DD-MM')
+and f.network_name_short||'|'||d1.off_cat_short||'|'||d.offer_id||' - '||d.offer_name = '{{Table1.triggeredRow.offer}}'
+and c.ts_name = '{{Table1.triggeredRow.traffic_source}}'
+and e.last_name||' '||e.first_name = '{{Table1.triggeredRow.user}}'
+group by a.financial_date, e.first_name, e.last_name, c.ts_name,
+f.network_name_short||'|'||d1.off_cat_short||'|'||d.offer_id||' - '||d.offer_name
+having (sum(a.amount_spent_plus_fee)= 0 and sum(a.amount_revenue)> 0)

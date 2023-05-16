@@ -1,0 +1,15 @@
+query{
+  readCampaigns(
+    token: "{{this.params.user_key}}"		
+    where: {name: {contains: "jeggin"}}
+    orderBy: {id: desc}
+  ) {
+    id
+    name
+    status
+    categories
+    DefaultCommission {
+      amount
+    }
+  }
+}

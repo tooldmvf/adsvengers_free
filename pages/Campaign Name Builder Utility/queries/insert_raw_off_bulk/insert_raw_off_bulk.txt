@@ -1,0 +1,1 @@
+{{this.params.arr_json}}

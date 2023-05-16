@@ -1,0 +1,15 @@
+SELECT b.network_other_name as network, 
+sum(amount_revenue) as revenue,
+sum(amount_spent_plus_fee) as spent,
+sum(amount_revenue - amount_spent_plus_fee) as profit
+FROM public."user_financial" a
+  INNER JOIN public."user_network" b  ON (a.fk_user_id = b.fk_user_id and a.fk_user_network_id = b.user_network_id)
+	INNER JOIN public."network" c on (c.network_id = b.fk_network_id)
+where 1 = 1
+and c.network_name_short != 'AW'
+and a.financial_date >= to_date('{{moment(DateFrom.selectedDate).format('YYYY-DD-MM')}}','YYYY-DD-MM')
+and a.financial_date <= to_date('{{moment(DateTo.selectedDate).format('YYYY-DD-MM')}}','YYYY-DD-MM')
+and (text(a.fk_user_id) IN ({{"'" + MultiSelectUsers.selectedOptionValues.join("', '") + "'"}}) OR text(a.fk_user_id) = '{{appsmith.store.myUser}}' )
+and ({{SelectTSFront.selectedOptionValues.length == 0}} OR text(b.fk_ts_id) IN ({{"'" + SelectTSFront.selectedOptionValues.join("', '") + "'"}}))
+and b.network_other_name not like '%For Ad Account Warming%'
+group by b.network_other_name;

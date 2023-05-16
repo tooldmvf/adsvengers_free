@@ -1,0 +1,18 @@
+select sum(z.nutra) as "Nutra", sum(z.gadget) as "Gadget" , sum(z.altro) as "Altro" from (SELECT 
+  case when off_cat_short = 'N' then count(DISTINCT a.fk_offer_id) else 0 end as nutra,
+	case when off_cat_short = 'G' then count(DISTINCT a.fk_offer_id) else 0 end as gadget,
+	case when off_cat_short != 'N' and off_cat_short != 'G' then count(DISTINCT a.fk_offer_id) 
+			 else 0 end as altro
+FROM 
+  public."user_financial" a
+	INNER JOIN public."user_network" b on (a.fk_user_network_id = b.user_network_id)
+	inner join public.offer c on (c.offer_id = a.fk_offer_id and c.fk_user_network_id = b.user_network_id)
+	inner join public.offer_category d on (d.off_cat_id = c.fk_off_cat_id)
+where 1 = 1
+and a.amount_spent > 0
+and a.financial_date = '{{moment().add(-24, 'hours')}}'
+and (text(a.fk_user_id) IN ({{"'" + MultiSelectUsers.selectedOptionValues.join("', '") + "'"}}) OR text(a.fk_user_id) = '{{appsmith.store.myUser}}' )
+and ({{SelectNetwork.selectedOptionValues.length == 0}} OR text(b.fk_network_id) IN ({{"'" + SelectNetwork.selectedOptionValues.join("', '") + "'"}}))
+and ({{SelectTSFront.selectedOptionValues.length == 0}} OR text(b.fk_ts_id) IN ({{"'" + SelectTSFront.selectedOptionValues.join("', '") + "'"}}))
+and b.network_other_name not like '%For Ad Account Warming%'
+group by off_cat_short) z

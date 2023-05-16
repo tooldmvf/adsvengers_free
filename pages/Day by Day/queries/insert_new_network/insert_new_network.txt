@@ -1,0 +1,4 @@
+{ 
+	"network_name": "{{customNetwork.text}}",
+	"network_name_short": "{{customNetwork.text.substring(0,2).toUpperCase()}}"
+}

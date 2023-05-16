@@ -1,0 +1,6 @@
+{
+	"offer_id": "custom_{{Math.floor(Math.random() * 10000)}}",
+	"offer_name": "{{customOffer.text}}",
+	"fk_user_network_id": "{{this.params.user_net_id}}",
+	"fk_off_cat_id": "{{SelectCateg.selectedOptionValue}}"
+}

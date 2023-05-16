@@ -1,0 +1,10 @@
+{
+	"fk_user_id": "{{MultiSelectUsers?.selectedOptionValues[0] || appsmith.store.myUser}}",
+	"fk_bm_id": "{{SelectBM.selectedOptionValue}}",
+	"fk_ad_account_id": "{{InputAccNameId.text}}",
+	"fk_ts_id": "{{SelectTs.selectedOptionValue}}",
+	"request_date": "{{moment()}}",
+	"recharge_amount": "{{InputAmountRecharge.value}}",
+	"recharge_currency": "{{InputAmountRecharge.currencyCode}}",
+	"remaining_amount": "{{Number(Table3.triggeredRow.Remaining.replace(/[^0-9.-]+/g,''))}}"
+}

@@ -1,0 +1,14 @@
+query{
+  readCampaigns(
+    token: "{{this.params.user_key}}"
+    orderBy: {id: desc}
+  ) {
+    id
+    name
+    status
+    categories
+    DefaultCommission {
+      amount
+    }
+  }
+}

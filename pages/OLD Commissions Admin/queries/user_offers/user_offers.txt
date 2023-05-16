@@ -1,0 +1,6 @@
+select c.network_id,c.network_name,b.offer_id,b.offer_name
+from public.user_network a
+inner join public.offer b on (b.fk_user_network_id = a.user_network_id)
+inner join public.network c on (c.network_id = a.fk_network_id)
+where (text(a.fk_user_id) IN ({{"'" + MultiSelectUsers.selectedOptionValues.join("', '") + "'"}}) OR text(a.fk_user_id) = '{{appsmith.store.myUser}}' )
+order by 2,4

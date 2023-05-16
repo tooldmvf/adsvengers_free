@@ -1,0 +1,15 @@
+SELECT b.last_name||' '||b.first_name as Mbuyer, d.bm_id, d.bm_name, e.ts_name,  
+c.ad_account_name
+FROM public."user_fb_account" a
+INNER JOIN public.user_profiles b ON b.fk_user_id = a.fk_user_id
+INNER JOIN public."fb_ad_account" c ON a.fk_ad_account_id = c.ad_account_id
+INNER JOIN public.facebook_bm d ON c.fk_bm_id = d.bm_id
+INNER JOIN public.traffic_source e ON d.fk_ts_id = e.ts_id
+Inner JOIN public.user_fb_account f ON (f.fk_user_id = a.fk_user_id and f.fk_bm_id = d.bm_id and f.fk_ad_account_id = c.ad_account_id)
+Where 1 = 1
+and lower(c.ad_account_name) like lower({{"'%"+Table1.searchText + "%'"}})
+and (text(a.fk_user_id) IN ({{"'" + MultiSelectUsers.selectedOptionValues.join("', '") + "'"}}) OR text(a.fk_user_id) = '{{appsmith.store.myUser}}' )
+and ({{MultiSelectBM.selectedOptionValues.length == 0}} OR text(d.bm_id) IN ({{"'" + MultiSelectBM.selectedOptionValues.join("', '") + "'"}}) )
+group by b.last_name||' '||b.first_name, d.bm_id, d.bm_name, e.ts_name,  
+c.ad_account_name
+order by 1,2,3

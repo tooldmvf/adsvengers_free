@@ -1,0 +1,7 @@
+{
+	"id": "{{this.params.id}}",
+	"name": "{{this.params.name}}",
+	"payout": "{{this.params.payout}}",
+	"categories": "{{this.params.categories}}",
+	"status": "{{this.params.status}}"
+}

@@ -1,0 +1,6 @@
+{ 
+	"fk_user_id": "{{SelectUserFBPage.selectedOptionValue}}", 
+	"fk_ad_account_id": "{{SelectAct.selectedOptionValue}}",
+	"spent_rate_fees" : "'{{InputFees.text}}'",
+	"fk_bm_id": "{{SelectBM.selectedOptionValue}}"
+}

@@ -1,0 +1,7 @@
+SELECT a.fk_user_id,a.fk_ad_account_id,c.ad_account_name,d.bm_id, d.bm_name, a.spent_rate_fees, e.ts_name, c.currency, c.account_status
+FROM public."user_fb_account" a
+INNER JOIN public."fb_ad_account" c ON a.fk_ad_account_id = c.ad_account_id
+INNER JOIN public.facebook_bm d ON c.fk_bm_id = d.bm_id
+INNER JOIN public.traffic_source e ON d.fk_ts_id = e.ts_id
+and a.fk_user_id = {{SelectUserFBPage?.selectedOptionValue || appsmith.store.myUser}}
+order by e.ts_name,d.bm_name,c.ad_account_name

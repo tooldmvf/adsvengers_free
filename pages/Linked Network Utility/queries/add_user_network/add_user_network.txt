@@ -1,0 +1,9 @@
+{
+	"fk_user_id": "{{SelectUser?.selectedOptionValue || appsmith.store.myUser}}", 
+	"fk_network_id": "{{SelectNetwork.selectedOptionValue}}",
+	"network_other_name": "{{SelectNetwork.selectedOptionLabel}}",
+	"user_email_network": "{{InputEmailNetwork.text}}",
+	"user_aff_id": "{{InputAffNetwork.text}}",
+	"user_api_key": "{{InputApiKey.text}}",
+	"fk_ts_id": "{{SelectTS.selectedOptionValue}}"
+}

@@ -1,0 +1,6 @@
+{ 
+	"fk_user_id": "{{appsmith.store.id}}", 
+  "first_name": "{{InputNameCopy.text}}", 
+  "last_name": "{{InputLastnameCopy.text}}", 
+	"role_level": "100"
+}

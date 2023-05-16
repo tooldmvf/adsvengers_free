@@ -1,0 +1,5 @@
+{ 
+	"invoice_date": "{{ DatePicker1.selectedDate }}",
+	"invoice_file_url": "{{this.params.url}}",
+	"fk_user_id": {{SelectUserCopy1.selectedOptionValue}}
+}

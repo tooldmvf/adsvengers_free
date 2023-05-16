@@ -1,0 +1,30 @@
+SELECT 
+	sum(a.amount_revenue) as "amount_revenue",
+	sum(a.amount_spent_plus_fee) as "amount_spent_plus_fee",
+	(sum(a.amount_revenue)-sum(a.amount_spent_plus_fee))/(case when sum(a.amount_spent_plus_fee) = 0 then 1 else sum(a.amount_spent_plus_fee) end)*100 as "Tot_Roi",
+	sum(a.conversions_rejected)/(case when sum(a.amount_conversion) = 0 then 1 else (sum(a.amount_conversion)+sum(a.conversions_rejected)) end)*100 as "Rejected_Rate",
+	count(distinct a.fk_user_id) as MB,
+	b.network_other_name, c.offer_name, c.offer_id,
+	sum(a.amount_revenue_pending) as "Pending_Rev",
+	sum(a.amount_revenue_approved) as "Approved_Rev",
+	sum(a.amount_revenue_rejected) as "Rejected_Rev",
+	sum(a.amount_spent) as "amount_spent",
+	sum(a.amount_conversion) as "amount_conversion",
+	sum(a.conversions_pending) as "Pending_Conv",
+	sum(a.conversions_approved) as "Approved_Conv",
+	sum(a.conversions_rejected) as "Rejected_Conv",
+	(sum(a.amount_revenue_approved)-sum(a.amount_spent_plus_fee))/(case when sum(a.amount_spent_plus_fee) = 0 then 1 else sum(a.amount_spent_plus_fee) end)*100 as "Roi",
+	d.off_cat_name
+from public.user_financial a
+INNER JOIN public.user_network b ON (a.fk_user_id = b.fk_user_id and a.fk_user_network_id = b.user_network_id)
+INNER JOIN public.offer c ON (b.user_network_id = c.fk_user_network_id and a.fk_offer_id = c.offer_id)
+INNER JOIN public.offer_category d ON (d.off_cat_id = c.fk_off_cat_id)
+where 1 = 1
+and c.offer_id != 'WU'
+and a.financial_date >= to_date('{{moment(DateFrom4.selectedDate).format('YYYY-DD-MM')}}','YYYY-DD-MM')
+and a.financial_date <= to_date('{{moment(DateTo4.selectedDate).format('YYYY-DD-MM')}}','YYYY-DD-MM')
+and (lower(c.offer_name) like lower('%{{Input1.text}}%') OR lower(d.off_cat_name) like lower('%{{Input1.text}}%'))
+and ({{!SelectUserFBPage.selectedOptionValue}} OR text(a.fk_user_id) = text('{{SelectUserFBPage.selectedOptionValue}}'))
+and ({{SelectTSFront.selectedOptionValues.length == 0}} OR text(b.fk_ts_id) IN ({{"'" + SelectTSFront.selectedOptionValues.join("', '") + "'"}}))
+group by b.network_other_name, c.offer_name, c.offer_id, d.off_cat_name
+order by {{Select1.selectedOptionValue}}
