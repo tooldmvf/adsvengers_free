@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "JSObject1",
+    "pageId": "BKP AdAccount Credit Utility",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "BKP AdAccount Credit Utility_JSObject1",
+  "deleted": false,
+  "gitSyncId": "63c3151532584b547fffe91b_6414b53dcaf33246bc984d82"
+}

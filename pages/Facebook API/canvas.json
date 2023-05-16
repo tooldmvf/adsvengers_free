@@ -1,0 +1,2266 @@
+{
+  "unpublishedPage": {
+    "name": "Facebook API",
+    "slug": "facebook-api",
+    "layouts": [
+      {
+        "viewMode": false,
+        "dsl": {
+          "widgetName": "MainContainer",
+          "backgroundColor": "none",
+          "rightColumn": 1224,
+          "snapColumns": 64,
+          "detachFromLayout": true,
+          "widgetId": "0",
+          "topRow": 0,
+          "bottomRow": 1080,
+          "containerStyle": "none",
+          "snapRows": 87,
+          "parentRowSpace": 1,
+          "type": "CANVAS_WIDGET",
+          "canExtend": true,
+          "version": 77,
+          "minHeight": 880,
+          "parentColumnSpace": 1,
+          "dynamicBindingPathList": [],
+          "leftColumn": 0,
+          "children": [
+            {
+              "boxShadow": "0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)",
+              "widgetName": "ButtonGroup1",
+              "isCanvas": false,
+              "displayName": "Button Group",
+              "iconSVG": "/static/media/icon.d6773218cfb61dcfa5f460d43371e30d.svg",
+              "searchTags": [
+                "click",
+                "submit"
+              ],
+              "topRow": 1,
+              "bottomRow": 7,
+              "parentRowSpace": 10,
+              "groupButtons": {
+                "groupButton1": {
+                  "label": "Monitoring",
+                  "id": "groupButton1",
+                  "widgetId": "",
+                  "buttonType": "SIMPLE",
+                  "placement": "CENTER",
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "index": 0,
+                  "menuItems": {},
+                  "buttonColor": "#bbf7d0",
+                  "onClick": "{{navigateTo('Monitoring', {}, 'SAME_WINDOW')}}"
+                }
+              },
+              "type": "BUTTON_GROUP_WIDGET",
+              "hideCard": false,
+              "animateLoading": true,
+              "parentColumnSpace": 19.4375,
+              "dynamicTriggerPathList": [
+                {
+                  "key": "groupButtons.groupButton1.onClick"
+                }
+              ],
+              "leftColumn": 19,
+              "dynamicBindingPathList": [
+                {
+                  "key": "borderRadius"
+                }
+              ],
+              "key": "t82ou8sfj2",
+              "orientation": "horizontal",
+              "isDeprecated": false,
+              "rightColumn": 24,
+              "widgetId": "fbb1gqyfvg",
+              "minWidth": 450,
+              "isVisible": true,
+              "version": 1,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "responsiveBehavior": "fill",
+              "childStylesheet": {
+                "button": {
+                  "buttonColor": "{{appsmith.theme.colors.primaryColor}}"
+                }
+              },
+              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+              "buttonVariant": "PRIMARY"
+            },
+            {
+              "boxShadow": "0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)",
+              "widgetName": "ButtonGroup1Copy1",
+              "isCanvas": false,
+              "dynamicPropertyPathList": [
+                {
+                  "key": "groupButtons.groupButton70kdvvujia.onClick"
+                },
+                {
+                  "key": "groupButtons.groupButtonjink2bzzms.buttonColor"
+                },
+                {
+                  "key": "groupButtons.groupButtonoh0l7stppj.buttonColor"
+                },
+                {
+                  "key": "groupButtons.groupButtonl755tlm16y.buttonColor"
+                },
+                {
+                  "key": "groupButtons.groupButtonz40p7cz8uy.isVisible"
+                },
+                {
+                  "key": "groupButtons.groupButton1.buttonColor"
+                },
+                {
+                  "key": "groupButtons.groupButtonz40p7cz8uy.menuItems.menuItemy66xiw4eao.backgroundColor"
+                },
+                {
+                  "key": "groupButtons.groupButtonenmx60lrah.buttonColor"
+                },
+                {
+                  "key": "groupButtons.groupButtonz40p7cz8uy.buttonColor"
+                }
+              ],
+              "displayName": "Button Group",
+              "iconSVG": "/static/media/icon.d6773218cfb61dcfa5f460d43371e30d.svg",
+              "searchTags": [
+                "click",
+                "submit"
+              ],
+              "topRow": 1,
+              "bottomRow": 7,
+              "parentRowSpace": 10,
+              "groupButtons": {
+                "groupButton1": {
+                  "label": "Dashboard",
+                  "id": "groupButton1",
+                  "widgetId": "",
+                  "buttonType": "SIMPLE",
+                  "placement": "CENTER",
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "index": 0,
+                  "menuItems": {},
+                  "buttonColor": "{{appsmith.URL.pathname.includes('dashboard') ? '#D6D6D6' : '#E4E4E4'}}",
+                  "iconAlign": "left",
+                  "onClick": "{{navigateTo('Dashboard', {}, 'SAME_WINDOW')}}"
+                },
+                "groupButtonjink2bzzms": {
+                  "id": "groupButtonjink2bzzms",
+                  "index": 1,
+                  "label": "Day by Day",
+                  "menuItems": {},
+                  "buttonType": "SIMPLE",
+                  "placement": "CENTER",
+                  "widgetId": "z47cmbaodr",
+                  "isDisabled": false,
+                  "isVisible": true,
+                  "buttonColor": "{{appsmith.URL.pathname.includes('day-by-day') ? '#D6D6D6' : '#E4E4E4'}}",
+                  "onClick": "{{navigateTo('Day by Day', {}, 'SAME_WINDOW')}}",
+                  "iconAlign": "left"
+                },
+                "groupButtonl755tlm16y": {
+                  "id": "groupButtonl755tlm16y",
+                  "index": 2,
+                  "label": "Offers",
+                  "menuItems": {
+                    "menuItemaih5a9o4do": {
+                      "id": "menuItemaih5a9o4do",
+                      "index": 0,
+                      "label": "My Profit",
+                      "widgetId": "z2jyryalal",
+                      "isDisabled": false,
+                      "isVisible": true,
+                      "onClick": "{{navigateTo('My Profit Offer', {}, 'SAME_WINDOW')}}",
+                      "backgroundColor": "#f4f4f5"
+                    },
+                    "menuItem0rhhnxfpby": {
+                      "id": "menuItem0rhhnxfpby",
+                      "index": 1,
+                      "label": "My Offer Analysis",
+                      "widgetId": "isq1op8y1g",
+                      "isDisabled": false,
+                      "isVisible": true,
+                      "onClick": "{{navigateTo('Offer Detail', {}, 'SAME_WINDOW')}}",
+                      "backgroundColor": "#f4f4f5"
+                    },
+                    "menuItem4fllqug7hs": {
+                      "id": "menuItem4fllqug7hs",
+                      "index": 2,
+                      "label": "Factory Offers",
+                      "widgetId": "251z32lmtc",
+                      "isDisabled": false,
+                      "isVisible": true,
+                      "onClick": "{{navigateTo('Offers Analysis', {}, 'SAME_WINDOW')}}",
+                      "backgroundColor": "#f4f4f5"
+                    },
+                    "menuItemka4ib47veg": {
+                      "id": "menuItemka4ib47veg",
+                      "index": 3,
+                      "label": "Balance Check",
+                      "widgetId": "1jn877wegg",
+                      "isDisabled": false,
+                      "isVisible": true,
+                      "onClick": "{{navigateTo('Balance Check Offer', {}, 'SAME_WINDOW')}}",
+                      "backgroundColor": "#f4f4f5"
+                    }
+                  },
+                  "buttonType": "MENU",
+                  "placement": "CENTER",
+                  "widgetId": "l8d3iznecp",
+                  "isDisabled": false,
+                  "isVisible": true,
+                  "buttonColor": "{{appsmith.URL.pathname.includes('offer') ? '#D6D6D6' : '#E4E4E4'}}",
+                  "onClick": "{{navigateTo('Offers Analysis', {}, 'SAME_WINDOW')}}",
+                  "iconName": "chevron-down",
+                  "iconAlign": "right"
+                },
+                "groupButtonoh0l7stppj": {
+                  "id": "groupButtonoh0l7stppj",
+                  "index": 3,
+                  "label": "Pivot",
+                  "menuItems": {},
+                  "buttonType": "SIMPLE",
+                  "placement": "CENTER",
+                  "widgetId": "44mx0hg26e",
+                  "isDisabled": false,
+                  "isVisible": true,
+                  "buttonColor": "{{appsmith.URL.pathname.includes('pivot') ? '#D6D6D6' : '#E4E4E4'}}",
+                  "onClick": "{{navigateTo('Pivot', {}, 'SAME_WINDOW')}}"
+                },
+                "groupButtonenmx60lrah": {
+                  "id": "groupButtonenmx60lrah",
+                  "index": 4,
+                  "label": "Utility",
+                  "menuItems": {
+                    "menuItem4frcjhbtq1": {
+                      "id": "menuItem4frcjhbtq1",
+                      "index": 0,
+                      "label": "Linked Network",
+                      "widgetId": "21brbafka7",
+                      "isDisabled": false,
+                      "isVisible": true,
+                      "onClick": "{{navigateTo('Linked Network Utility', {}, 'SAME_WINDOW')}}",
+                      "backgroundColor": "#f4f4f5"
+                    },
+                    "menuItemhu0vpqm5i2": {
+                      "id": "menuItemhu0vpqm5i2",
+                      "index": 1,
+                      "label": "Linked Ad Act",
+                      "widgetId": "cheiksxmfr",
+                      "isDisabled": false,
+                      "isVisible": true,
+                      "onClick": "{{navigateTo('LInked FB Act Utility', {}, 'SAME_WINDOW')}}",
+                      "backgroundColor": "#f4f4f5"
+                    },
+                    "menuItem2d18e7ktzk": {
+                      "id": "menuItem2d18e7ktzk",
+                      "index": 2,
+                      "label": "CampName Builder",
+                      "widgetId": "a25wkibfj7",
+                      "isDisabled": false,
+                      "isVisible": true,
+                      "onClick": "{{navigateTo('Campaign Name Builder Utility', {}, 'SAME_WINDOW')}}",
+                      "backgroundColor": "#f4f4f5"
+                    },
+                    "menuItemxaf52rzr57": {
+                      "id": "menuItemxaf52rzr57",
+                      "index": 3,
+                      "label": "AdAccount Credit",
+                      "widgetId": "wzmh0fk127",
+                      "isDisabled": false,
+                      "isVisible": true,
+                      "onClick": "{{navigateTo('AdAccount Credit Utility', {}, 'SAME_WINDOW')}}",
+                      "backgroundColor": "#f4f4f5"
+                    },
+                    "menuItemjo1jexl24o": {
+                      "id": "menuItemjo1jexl24o",
+                      "index": 4,
+                      "label": "Recharge History",
+                      "widgetId": "37h8vy8dic",
+                      "isDisabled": false,
+                      "isVisible": true,
+                      "onClick": "{{navigateTo('Recharge Requests', {}, 'SAME_WINDOW')}}",
+                      "backgroundColor": "#f4f4f5"
+                    },
+                    "menuItemy7np5lz2w8": {
+                      "id": "menuItemy7np5lz2w8",
+                      "index": 5,
+                      "label": "Invoices",
+                      "widgetId": "9lx79zdw64",
+                      "isDisabled": false,
+                      "isVisible": true,
+                      "onClick": "{{navigateTo('Invoices Utility', {}, 'SAME_WINDOW')}}",
+                      "backgroundColor": "#f4f4f5"
+                    }
+                  },
+                  "buttonType": "MENU",
+                  "placement": "CENTER",
+                  "widgetId": "cgod2vhcsx",
+                  "isDisabled": false,
+                  "isVisible": true,
+                  "buttonColor": "{{appsmith.URL.pathname.includes('utility') ? '#D6D6D6' : '#E4E4E4'}}",
+                  "onClick": "{{navigateTo('LInked FB Act', {}, 'SAME_WINDOW')}}",
+                  "iconName": "chevron-down",
+                  "iconAlign": "right"
+                },
+                "groupButtonz40p7cz8uy": {
+                  "id": "groupButtonz40p7cz8uy",
+                  "index": 5,
+                  "label": "Admin",
+                  "menuItems": {
+                    "menuItemy66xiw4eao": {
+                      "id": "menuItemy66xiw4eao",
+                      "index": 0,
+                      "label": "Users Profit",
+                      "widgetId": "9elkpcs5h9",
+                      "isDisabled": false,
+                      "isVisible": true,
+                      "onClick": "{{navigateTo('Users Profit Admin', {}, 'SAME_WINDOW')}}",
+                      "backgroundColor": "#f4f4f5"
+                    },
+                    "menuItem8uotiiku3d": {
+                      "id": "menuItem8uotiiku3d",
+                      "index": 1,
+                      "label": "Offer Analysis",
+                      "widgetId": "gfvajw2mbq",
+                      "isDisabled": false,
+                      "isVisible": true,
+                      "onClick": "{{navigateTo('Off Detail Admin', {}, 'SAME_WINDOW')}}",
+                      "backgroundColor": "#f4f4f5"
+                    },
+                    "menuItemq0wvfgti97": {
+                      "id": "menuItemq0wvfgti97",
+                      "index": 2,
+                      "label": "Network Analysis",
+                      "widgetId": "lo9cvdz5u8",
+                      "isDisabled": false,
+                      "isVisible": true,
+                      "onClick": "{{navigateTo('Network Analysis Admin', {}, 'SAME_WINDOW')}}",
+                      "backgroundColor": "#f4f4f5"
+                    },
+                    "menuItema5dve7zx6p": {
+                      "id": "menuItema5dve7zx6p",
+                      "index": 3,
+                      "label": "Offers Admin",
+                      "widgetId": "q1rrq7bdi3",
+                      "isDisabled": false,
+                      "isVisible": true,
+                      "onClick": "{{navigateTo('Offers Analysis Admin', {}, 'SAME_WINDOW')}}",
+                      "backgroundColor": "#f4f4f5"
+                    },
+                    "menuItem1rbff8b8r7": {
+                      "id": "menuItem1rbff8b8r7",
+                      "index": 4,
+                      "label": "Ad Acccount List",
+                      "widgetId": "16t72zwyaz",
+                      "isDisabled": false,
+                      "isVisible": true,
+                      "backgroundColor": "#f4f4f5",
+                      "onClick": "{{navigateTo('LInked Act Admin', {}, 'SAME_WINDOW')}}"
+                    },
+                    "menuItem23gqu4kave": {
+                      "id": "menuItem23gqu4kave",
+                      "index": 5,
+                      "label": "Users Log",
+                      "widgetId": "7498dfb6r7",
+                      "isDisabled": false,
+                      "isVisible": true,
+                      "onClick": "{{navigateTo('Users SW Log Admin', {}, 'SAME_WINDOW')}}",
+                      "backgroundColor": "#f4f4f5"
+                    }
+                  },
+                  "buttonType": "MENU",
+                  "placement": "CENTER",
+                  "widgetId": "fr8hqslsci",
+                  "isDisabled": false,
+                  "isVisible": "{{appsmith.store.role_level> 100 && appsmith.store.access_token.length>0 }}",
+                  "buttonColor": "{{appsmith.URL.pathname.includes('admin') ? '#D6D6D6' : '#E4E4E4'}}",
+                  "iconName": "chevron-down",
+                  "iconAlign": "right"
+                },
+                "groupButton70kdvvujia": {
+                  "id": "groupButton70kdvvujia",
+                  "index": 6,
+                  "label": "LogOut",
+                  "menuItems": {},
+                  "buttonType": "SIMPLE",
+                  "placement": "CENTER",
+                  "widgetId": "igopogrci3",
+                  "isDisabled": false,
+                  "isVisible": true,
+                  "buttonColor": "#71717a",
+                  "iconName": "log-out",
+                  "iconAlign": "right",
+                  "onClick": "{{js_logout.logout_process()}}"
+                }
+              },
+              "type": "BUTTON_GROUP_WIDGET",
+              "hideCard": false,
+              "animateLoading": true,
+              "parentColumnSpace": 20.0625,
+              "dynamicTriggerPathList": [
+                {
+                  "key": "groupButtons.groupButtonjink2bzzms.onClick"
+                },
+                {
+                  "key": "groupButtons.groupButton1.onClick"
+                },
+                {
+                  "key": "groupButtons.groupButtonoh0l7stppj.onClick"
+                },
+                {
+                  "key": "groupButtons.groupButtonenmx60lrah.onClick"
+                },
+                {
+                  "key": "groupButtons.groupButton70kdvvujia.onClick"
+                },
+                {
+                  "key": "groupButtons.groupButtonenmx60lrah.menuItems.menuItem4frcjhbtq1.onClick"
+                },
+                {
+                  "key": "groupButtons.groupButtonenmx60lrah.menuItems.menuItemhu0vpqm5i2.onClick"
+                },
+                {
+                  "key": "groupButtons.groupButtonenmx60lrah.menuItems.menuItemy7np5lz2w8.onClick"
+                },
+                {
+                  "key": "groupButtons.groupButtonenmx60lrah.menuItems.menuItem2d18e7ktzk.onClick"
+                },
+                {
+                  "key": "groupButtons.groupButtonenmx60lrah.menuItems.menuItemxaf52rzr57.onClick"
+                },
+                {
+                  "key": "groupButtons.groupButtonl755tlm16y.onClick"
+                },
+                {
+                  "key": "groupButtons.groupButtonz40p7cz8uy.menuItems.menuItemy66xiw4eao.onClick"
+                },
+                {
+                  "key": "groupButtons.groupButtonz40p7cz8uy.menuItems.menuItema5dve7zx6p.onClick"
+                },
+                {
+                  "key": "groupButtons.groupButtonz40p7cz8uy.menuItems.menuItem23gqu4kave.onClick"
+                },
+                {
+                  "key": "groupButtons.groupButtonl755tlm16y.menuItems.menuItemaih5a9o4do.onClick"
+                },
+                {
+                  "key": "groupButtons.groupButtonl755tlm16y.menuItems.menuItem0rhhnxfpby.onClick"
+                },
+                {
+                  "key": "groupButtons.groupButtonl755tlm16y.menuItems.menuItem4fllqug7hs.onClick"
+                },
+                {
+                  "key": "groupButtons.groupButtonl755tlm16y.menuItems.menuItemka4ib47veg.onClick"
+                },
+                {
+                  "key": "groupButtons.groupButtonenmx60lrah.menuItems.menuItemjo1jexl24o.onClick"
+                },
+                {
+                  "key": "groupButtons.groupButtonz40p7cz8uy.menuItems.menuItem1rbff8b8r7.onClick"
+                },
+                {
+                  "key": "groupButtons.groupButtonz40p7cz8uy.menuItems.menuItemq0wvfgti97.onClick"
+                },
+                {
+                  "key": "groupButtons.groupButtonz40p7cz8uy.menuItems.menuItem8uotiiku3d.onClick"
+                }
+              ],
+              "leftColumn": 24,
+              "dynamicBindingPathList": [
+                {
+                  "key": "groupButtons.groupButtonenmx60lrah.onClick"
+                },
+                {
+                  "key": "groupButtons.groupButtonz40p7cz8uy.isVisible"
+                },
+                {
+                  "key": "groupButtons.groupButton1.buttonColor"
+                },
+                {
+                  "key": "groupButtons.groupButtonjink2bzzms.buttonColor"
+                },
+                {
+                  "key": "groupButtons.groupButtonl755tlm16y.buttonColor"
+                },
+                {
+                  "key": "groupButtons.groupButtonoh0l7stppj.buttonColor"
+                },
+                {
+                  "key": "groupButtons.groupButtonenmx60lrah.buttonColor"
+                },
+                {
+                  "key": "groupButtons.groupButtonz40p7cz8uy.buttonColor"
+                }
+              ],
+              "key": "zq7t27bhdi",
+              "orientation": "horizontal",
+              "isDeprecated": false,
+              "rightColumn": 64,
+              "widgetId": "1os3vy9rpo",
+              "isVisible": true,
+              "version": 1,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "childStylesheet": {
+                "button": {
+                  "buttonColor": "{{appsmith.theme.colors.primaryColor}}"
+                }
+              },
+              "originalTopRow": 7,
+              "borderRadius": "0.375rem",
+              "originalBottomRow": 30,
+              "buttonVariant": "PRIMARY"
+            },
+            {
+              "boxShadow": "none",
+              "widgetName": "LogoFactory",
+              "onClick": "{{navigateTo('Dashboard', {}, 'SAME_WINDOW')}}",
+              "displayName": "Image",
+              "iconSVG": "/static/media/icon.52d8fb963abcb95c79b10f1553389f22.svg",
+              "topRow": 0,
+              "bottomRow": 6,
+              "parentRowSpace": 10,
+              "type": "IMAGE_WIDGET",
+              "hideCard": false,
+              "animateLoading": true,
+              "parentColumnSpace": 19.8125,
+              "dynamicTriggerPathList": [
+                {
+                  "key": "onClick"
+                }
+              ],
+              "imageShape": "RECTANGLE",
+              "leftColumn": 0,
+              "dynamicBindingPathList": [
+                {
+                  "key": "borderRadius"
+                }
+              ],
+              "defaultImage": "https://assets.appsmith.com/widgets/default.png",
+              "key": "z2qfo8m3yy",
+              "image": "https://powercbo.com/wp-content/uploads/2021/01/Adsvengers-Logo.png",
+              "isDeprecated": false,
+              "rightColumn": 7,
+              "objectFit": "contain",
+              "widgetId": "1vlk5bsmsx",
+              "isVisible": true,
+              "version": 1,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "maxZoomLevel": 1,
+              "enableDownload": false,
+              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+              "enableRotation": false
+            },
+            {
+              "resetFormOnClick": false,
+              "boxShadow": "none",
+              "widgetName": "Button2",
+              "onClick": "{{navigateTo('https://wizonobmnahltambwyuz.supabase.co/auth/v1/authorize',{\n\tprovider: 'facebook',\n\tredirect_to: 'https://tool.theadsvengers.com/app/adsvengers-tool/facebook-api-63ce3b17f0df7a5c0ff1966b/edit?branch=master'\n}, 'SAME_WINDOW')}}",
+              "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+              "dynamicPropertyPathList": [
+                {
+                  "key": "isVisible"
+                }
+              ],
+              "displayName": "Button",
+              "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
+              "searchTags": [
+                "click",
+                "submit"
+              ],
+              "topRow": 2,
+              "bottomRow": 6,
+              "parentRowSpace": 10,
+              "type": "BUTTON_WIDGET",
+              "hideCard": false,
+              "animateLoading": true,
+              "parentColumnSpace": 20.0625,
+              "dynamicTriggerPathList": [
+                {
+                  "key": "onClick"
+                }
+              ],
+              "leftColumn": 12,
+              "dynamicBindingPathList": [
+                {
+                  "key": "buttonColor"
+                },
+                {
+                  "key": "borderRadius"
+                },
+                {
+                  "key": "isVisible"
+                }
+              ],
+              "text": "fb login",
+              "isDisabled": false,
+              "key": "ygb3vh0a1v",
+              "isDeprecated": false,
+              "rightColumn": 17,
+              "isDefaultClickDisabled": true,
+              "widgetId": "7jmkhg0rte",
+              "isVisible": "{{appsmith.user.email == 'tool@dmvf.net'}}",
+              "recaptchaType": "V3",
+              "version": 1,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "disabledWhenInvalid": false,
+              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+              "buttonVariant": "PRIMARY",
+              "placement": "CENTER"
+            },
+            {
+              "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+              "widgetName": "Tabs1",
+              "borderColor": "#E0DEDE",
+              "isCanvas": true,
+              "displayName": "Tabs",
+              "iconSVG": "/static/media/icon.74a6d653c8201e66f1cd367a3fba2657.svg",
+              "topRow": 8,
+              "bottomRow": 97,
+              "parentRowSpace": 10,
+              "type": "TABS_WIDGET",
+              "hideCard": false,
+              "shouldScrollContents": true,
+              "animateLoading": true,
+              "parentColumnSpace": 20.0625,
+              "dynamicTriggerPathList": [],
+              "leftColumn": 0,
+              "dynamicBindingPathList": [
+                {
+                  "key": "accentColor"
+                },
+                {
+                  "key": "borderRadius"
+                },
+                {
+                  "key": "boxShadow"
+                }
+              ],
+              "children": [
+                {
+                  "tabId": "tab1",
+                  "widgetName": "Canvas2",
+                  "displayName": "Canvas",
+                  "bottomRow": 850,
+                  "topRow": 0,
+                  "parentRowSpace": 1,
+                  "type": "CANVAS_WIDGET",
+                  "canExtend": true,
+                  "hideCard": true,
+                  "shouldScrollContents": false,
+                  "minHeight": 850,
+                  "parentColumnSpace": 1,
+                  "dynamicTriggerPathList": [],
+                  "leftColumn": 0,
+                  "dynamicBindingPathList": [],
+                  "children": [
+                    {
+                      "boxShadow": "none",
+                      "widgetName": "Switch1",
+                      "dynamicPropertyPathList": [
+                        {
+                          "key": "onChange"
+                        }
+                      ],
+                      "displayName": "Switch",
+                      "iconSVG": "/static/media/icon.a3115bc1c224776de2846985c8819f99.svg",
+                      "searchTags": [
+                        "boolean"
+                      ],
+                      "topRow": 1,
+                      "bottomRow": 5,
+                      "parentRowSpace": 10,
+                      "type": "SWITCH_WIDGET",
+                      "alignWidget": "LEFT",
+                      "hideCard": false,
+                      "animateLoading": true,
+                      "parentColumnSpace": 17.5625,
+                      "dynamicTriggerPathList": [
+                        {
+                          "key": "onChange"
+                        }
+                      ],
+                      "leftColumn": 0,
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "accentColor"
+                        }
+                      ],
+                      "labelPosition": "Right",
+                      "isDisabled": false,
+                      "key": "l18rvix7yo",
+                      "isDeprecated": false,
+                      "rightColumn": 8,
+                      "onChange": "{{(() => {\n\tconst id = 'autoupdate';\n\tif(Switch1.isSwitchedOn) {\n\t\tsetInterval(() => { get_raw_user_fb_campaign.run() }, 5000, id);\n\t} else{\n\t\tclearInterval(id);\n\t}\n}\n)()}}",
+                      "dynamicHeight": "AUTO_HEIGHT",
+                      "widgetId": "flhf4xkqnm",
+                      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                      "isVisible": true,
+                      "label": "Auto Update",
+                      "defaultSwitchState": false,
+                      "version": 1,
+                      "parentId": "kjwwtfnxfu",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "originalTopRow": 0,
+                      "maxDynamicHeight": 9000,
+                      "originalBottomRow": 19,
+                      "minDynamicHeight": 4
+                    },
+                    {
+                      "widgetName": "Progress0",
+                      "progressType": "linear",
+                      "isCanvas": false,
+                      "displayName": "Progress",
+                      "iconSVG": "/static/media/icon.9b0d7b96a0223e8120bf6f14aca4154a.svg",
+                      "searchTags": [
+                        "percent"
+                      ],
+                      "topRow": 1,
+                      "bottomRow": 5,
+                      "parentRowSpace": 10,
+                      "type": "PROGRESS_WIDGET",
+                      "isIndeterminate": false,
+                      "hideCard": false,
+                      "fillColor": "{{appsmith.theme.colors.primaryColor}}",
+                      "parentColumnSpace": 19.75,
+                      "dynamicTriggerPathList": [],
+                      "leftColumn": 8,
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "fillColor"
+                        },
+                        {
+                          "key": "borderRadius"
+                        },
+                        {
+                          "key": "progress"
+                        }
+                      ],
+                      "key": "84wn5d7fzm",
+                      "showResult": true,
+                      "isDeprecated": false,
+                      "rightColumn": 29,
+                      "counterClosewise": false,
+                      "widgetId": "ron4xuja1t",
+                      "isVisible": true,
+                      "steps": "1",
+                      "version": 1,
+                      "parentId": "kjwwtfnxfu",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                      "progress": "{{appsmith.store.myProgress1.toFixed(0)}}"
+                    },
+                    {
+                      "boxShadow": "none",
+                      "dateFormat": "LL",
+                      "iconSVG": "/static/media/icon.300e5ab8e2e1c26c7a0bad06116842b7.svg",
+                      "topRow": 1,
+                      "labelWidth": "7",
+                      "type": "DATE_PICKER_WIDGET2",
+                      "animateLoading": true,
+                      "leftColumn": 32,
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "accentColor"
+                        },
+                        {
+                          "key": "borderRadius"
+                        },
+                        {
+                          "key": "defaultDate"
+                        }
+                      ],
+                      "isDisabled": false,
+                      "isRequired": false,
+                      "dynamicHeight": "AUTO_HEIGHT",
+                      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                      "isVisible": true,
+                      "datePickerType": "DATE_PICKER",
+                      "version": 2,
+                      "isLoading": false,
+                      "timePrecision": "None",
+                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                      "originalBottomRow": 8,
+                      "closeOnSelection": true,
+                      "widgetName": "DatePicker1",
+                      "minDate": "1920-12-31T18:30:00.000Z",
+                      "dynamicPropertyPathList": [
+                        {
+                          "key": "defaultDate"
+                        }
+                      ],
+                      "displayName": "DatePicker",
+                      "searchTags": [
+                        "calendar"
+                      ],
+                      "bottomRow": 5,
+                      "shortcuts": false,
+                      "parentRowSpace": 10,
+                      "hideCard": false,
+                      "shouldScrollContents": true,
+                      "parentColumnSpace": 11.9130859375,
+                      "dynamicTriggerPathList": [],
+                      "labelPosition": "Left",
+                      "key": "s6rs7q1427",
+                      "labelTextSize": "0.875rem",
+                      "defaultDate": "{{moment().add('days',-1)}}",
+                      "isDeprecated": false,
+                      "rightColumn": 50,
+                      "widgetId": "7g21xjjg1v",
+                      "label": "Starting from date",
+                      "parentId": "kjwwtfnxfu",
+                      "labelAlignment": "left",
+                      "renderMode": "CANVAS",
+                      "originalTopRow": 0,
+                      "maxDynamicHeight": 9000,
+                      "firstDayOfWeek": 0,
+                      "maxDate": "2121-12-31T18:29:00.000Z",
+                      "minDynamicHeight": 4
+                    },
+                    {
+                      "resetFormOnClick": false,
+                      "boxShadow": "none",
+                      "widgetName": "Button1",
+                      "onClick": "{{FB_Api_get_campaigns.fill_camp_table();}}",
+                      "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+                      "dynamicPropertyPathList": [
+                        {
+                          "key": "onClick"
+                        }
+                      ],
+                      "displayName": "Button",
+                      "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
+                      "searchTags": [
+                        "click",
+                        "submit"
+                      ],
+                      "topRow": 1,
+                      "bottomRow": 5,
+                      "parentRowSpace": 10,
+                      "type": "BUTTON_WIDGET",
+                      "hideCard": false,
+                      "animateLoading": true,
+                      "parentColumnSpace": 15.0478515625,
+                      "dynamicTriggerPathList": [
+                        {
+                          "key": "onClick"
+                        }
+                      ],
+                      "leftColumn": 52,
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "buttonColor"
+                        },
+                        {
+                          "key": "borderRadius"
+                        }
+                      ],
+                      "text": "List all Fb Campaigns",
+                      "isDisabled": false,
+                      "key": "m8nuq5egzm",
+                      "isDeprecated": false,
+                      "rightColumn": 64,
+                      "isDefaultClickDisabled": true,
+                      "widgetId": "u36n4rb8nu",
+                      "isVisible": true,
+                      "recaptchaType": "V3",
+                      "version": 1,
+                      "parentId": "kjwwtfnxfu",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "disabledWhenInvalid": false,
+                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                      "buttonVariant": "PRIMARY",
+                      "placement": "CENTER"
+                    },
+                    {
+                      "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+                      "borderColor": "#E0DEDE",
+                      "isVisibleDownload": true,
+                      "iconSVG": "/static/media/icon.db8a9cbd2acd22a31ea91cc37ea2a46c.svg",
+                      "topRow": 6,
+                      "isSortable": true,
+                      "type": "TABLE_WIDGET_V2",
+                      "inlineEditingSaveOption": "ROW_LEVEL",
+                      "animateLoading": true,
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "tableData"
+                        },
+                        {
+                          "key": "accentColor"
+                        },
+                        {
+                          "key": "borderRadius"
+                        },
+                        {
+                          "key": "boxShadow"
+                        },
+                        {
+                          "key": "primaryColumns.fk_user_id.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.fk_ad_account_id.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.campaign_name.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.campaign_offer_id.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.campaign_id.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.fk_bm_id.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.spent_rate_fees.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.off_cat_short.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.net_name_short.computedValue"
+                        }
+                      ],
+                      "leftColumn": 0,
+                      "delimiter": ",",
+                      "defaultSelectedRowIndex": 0,
+                      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                      "isVisibleFilters": true,
+                      "isVisible": true,
+                      "enableClientSideSearch": true,
+                      "version": 1,
+                      "totalRecordsCount": 0,
+                      "isLoading": false,
+                      "childStylesheet": {
+                        "button": {
+                          "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+                          "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                          "boxShadow": "none"
+                        },
+                        "menuButton": {
+                          "menuColor": "{{appsmith.theme.colors.primaryColor}}",
+                          "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                          "boxShadow": "none"
+                        },
+                        "iconButton": {
+                          "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+                          "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                          "boxShadow": "none"
+                        },
+                        "editActions": {
+                          "saveButtonColor": "{{appsmith.theme.colors.primaryColor}}",
+                          "saveBorderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                          "discardButtonColor": "{{appsmith.theme.colors.primaryColor}}",
+                          "discardBorderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}"
+                        }
+                      },
+                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                      "originalBottomRow": 92,
+                      "columnUpdatedAt": 1678477623615,
+                      "defaultSelectedRowIndices": [
+                        0
+                      ],
+                      "widgetName": "Table1",
+                      "defaultPageSize": 0,
+                      "columnOrder": [
+                        "fk_bm_id",
+                        "fk_ad_account_id",
+                        "campaign_name",
+                        "campaign_offer_id",
+                        "fk_user_id",
+                        "campaign_id",
+                        "spent_rate_fees",
+                        "off_cat_short",
+                        "net_name_short"
+                      ],
+                      "dynamicPropertyPathList": [],
+                      "compactMode": "SHORT",
+                      "displayName": "Table",
+                      "bottomRow": 83,
+                      "columnWidthMap": {
+                        "task": 245,
+                        "step": 62,
+                        "status": 75,
+                        "fk_user_id": 148,
+                        "fk_bm_id": 182,
+                        "campaign_name": 488
+                      },
+                      "parentRowSpace": 10,
+                      "hideCard": false,
+                      "dynamicTriggerPathList": [],
+                      "borderWidth": "1",
+                      "primaryColumns": {
+                        "fk_user_id": {
+                          "allowCellWrapping": false,
+                          "index": 0,
+                          "width": 150,
+                          "originalId": "fk_user_id",
+                          "id": "fk_user_id",
+                          "alias": "fk_user_id",
+                          "horizontalAlignment": "LEFT",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "text",
+                          "textColor": "",
+                          "textSize": "0.875rem",
+                          "fontStyle": "",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": true,
+                          "isDisabled": false,
+                          "isCellEditable": false,
+                          "isEditable": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "fk_user_id",
+                          "isSaveVisible": true,
+                          "isDiscardVisible": true,
+                          "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"fk_user_id\"]))}}",
+                          "validation": {},
+                          "cellBackground": "",
+                          "sticky": ""
+                        },
+                        "fk_ad_account_id": {
+                          "allowCellWrapping": false,
+                          "index": 1,
+                          "width": 150,
+                          "originalId": "fk_ad_account_id",
+                          "id": "fk_ad_account_id",
+                          "alias": "fk_ad_account_id",
+                          "horizontalAlignment": "LEFT",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "text",
+                          "textColor": "",
+                          "textSize": "0.875rem",
+                          "fontStyle": "",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": true,
+                          "isDisabled": false,
+                          "isCellEditable": false,
+                          "isEditable": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "fk_ad_account_id",
+                          "isSaveVisible": true,
+                          "isDiscardVisible": true,
+                          "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"fk_ad_account_id\"]))}}",
+                          "validation": {},
+                          "cellBackground": "",
+                          "sticky": ""
+                        },
+                        "campaign_name": {
+                          "allowCellWrapping": false,
+                          "index": 2,
+                          "width": 150,
+                          "originalId": "campaign_name",
+                          "id": "campaign_name",
+                          "alias": "campaign_name",
+                          "horizontalAlignment": "LEFT",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "text",
+                          "textColor": "",
+                          "textSize": "0.875rem",
+                          "fontStyle": "",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": true,
+                          "isDisabled": false,
+                          "isCellEditable": false,
+                          "isEditable": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "campaign_name",
+                          "isSaveVisible": true,
+                          "isDiscardVisible": true,
+                          "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"campaign_name\"]))}}",
+                          "validation": {},
+                          "cellBackground": "",
+                          "sticky": ""
+                        },
+                        "campaign_offer_id": {
+                          "allowCellWrapping": false,
+                          "index": 3,
+                          "width": 150,
+                          "originalId": "campaign_offer_id",
+                          "id": "campaign_offer_id",
+                          "alias": "campaign_offer_id",
+                          "horizontalAlignment": "LEFT",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "text",
+                          "textColor": "",
+                          "textSize": "0.875rem",
+                          "fontStyle": "",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": true,
+                          "isDisabled": false,
+                          "isCellEditable": false,
+                          "isEditable": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "campaign_offer_id",
+                          "isSaveVisible": true,
+                          "isDiscardVisible": true,
+                          "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"campaign_offer_id\"]))}}",
+                          "validation": {},
+                          "cellBackground": "",
+                          "sticky": ""
+                        },
+                        "campaign_id": {
+                          "allowCellWrapping": false,
+                          "index": 4,
+                          "width": 150,
+                          "originalId": "campaign_id",
+                          "id": "campaign_id",
+                          "alias": "campaign_id",
+                          "horizontalAlignment": "LEFT",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "text",
+                          "textColor": "",
+                          "textSize": "0.875rem",
+                          "fontStyle": "",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": true,
+                          "isDisabled": false,
+                          "isCellEditable": false,
+                          "isEditable": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "campaign_id",
+                          "isSaveVisible": true,
+                          "isDiscardVisible": true,
+                          "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"campaign_id\"]))}}",
+                          "validation": {},
+                          "cellBackground": "",
+                          "sticky": ""
+                        },
+                        "fk_bm_id": {
+                          "allowCellWrapping": false,
+                          "index": 5,
+                          "width": 150,
+                          "originalId": "fk_bm_id",
+                          "id": "fk_bm_id",
+                          "alias": "fk_bm_id",
+                          "horizontalAlignment": "LEFT",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "text",
+                          "textColor": "",
+                          "textSize": "0.875rem",
+                          "fontStyle": "",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": true,
+                          "isDisabled": false,
+                          "isCellEditable": false,
+                          "isEditable": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "fk_bm_id",
+                          "isSaveVisible": true,
+                          "isDiscardVisible": true,
+                          "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"fk_bm_id\"]))}}",
+                          "validation": {},
+                          "cellBackground": "",
+                          "sticky": ""
+                        },
+                        "spent_rate_fees": {
+                          "allowCellWrapping": false,
+                          "index": 6,
+                          "width": 150,
+                          "originalId": "spent_rate_fees",
+                          "id": "spent_rate_fees",
+                          "alias": "spent_rate_fees",
+                          "horizontalAlignment": "LEFT",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "number",
+                          "textColor": "",
+                          "textSize": "0.875rem",
+                          "fontStyle": "",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": true,
+                          "isDisabled": false,
+                          "isCellEditable": false,
+                          "isEditable": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "spent_rate_fees",
+                          "isSaveVisible": true,
+                          "isDiscardVisible": true,
+                          "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"spent_rate_fees\"]))}}",
+                          "validation": {},
+                          "cellBackground": "",
+                          "sticky": ""
+                        },
+                        "off_cat_short": {
+                          "allowCellWrapping": false,
+                          "index": 7,
+                          "width": 150,
+                          "originalId": "off_cat_short",
+                          "id": "off_cat_short",
+                          "alias": "off_cat_short",
+                          "horizontalAlignment": "LEFT",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "text",
+                          "textColor": "",
+                          "textSize": "0.875rem",
+                          "fontStyle": "",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": true,
+                          "isDisabled": false,
+                          "isCellEditable": false,
+                          "isEditable": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "off_cat_short",
+                          "isSaveVisible": true,
+                          "isDiscardVisible": true,
+                          "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"off_cat_short\"]))}}",
+                          "validation": {},
+                          "cellBackground": "",
+                          "sticky": ""
+                        },
+                        "net_name_short": {
+                          "allowCellWrapping": false,
+                          "index": 8,
+                          "width": 150,
+                          "originalId": "net_name_short",
+                          "id": "net_name_short",
+                          "alias": "net_name_short",
+                          "horizontalAlignment": "LEFT",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "text",
+                          "textColor": "",
+                          "textSize": "0.875rem",
+                          "fontStyle": "",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": true,
+                          "isDisabled": false,
+                          "isCellEditable": false,
+                          "isEditable": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "net_name_short",
+                          "isSaveVisible": true,
+                          "isDiscardVisible": true,
+                          "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"net_name_short\"]))}}",
+                          "validation": {},
+                          "cellBackground": "",
+                          "sticky": ""
+                        }
+                      },
+                      "key": "fvu9vro3as",
+                      "canFreezeColumn": false,
+                      "isDeprecated": false,
+                      "rightColumn": 64,
+                      "textSize": "0.875rem",
+                      "widgetId": "qkdzere4sp",
+                      "tableData": "{{get_raw_user_fb_campaign.data}}",
+                      "label": "Data",
+                      "searchKey": "",
+                      "parentId": "kjwwtfnxfu",
+                      "renderMode": "CANVAS",
+                      "horizontalAlignment": "LEFT",
+                      "isVisibleSearch": true,
+                      "originalTopRow": 20,
+                      "isVisiblePagination": true,
+                      "verticalAlignment": "CENTER"
+                    }
+                  ],
+                  "isDisabled": false,
+                  "key": "ffi5ebpy9h",
+                  "isDeprecated": false,
+                  "tabName": "Campaign List",
+                  "rightColumn": 481.5,
+                  "detachFromLayout": true,
+                  "widgetId": "kjwwtfnxfu",
+                  "isVisible": true,
+                  "version": 1,
+                  "parentId": "i0b4w0pz7k",
+                  "renderMode": "CANVAS",
+                  "isLoading": false
+                },
+                {
+                  "tabId": "tab2",
+                  "widgetName": "Canvas3",
+                  "displayName": "Canvas",
+                  "bottomRow": 850,
+                  "topRow": 0,
+                  "parentRowSpace": 1,
+                  "type": "CANVAS_WIDGET",
+                  "canExtend": true,
+                  "hideCard": true,
+                  "shouldScrollContents": false,
+                  "minHeight": 850,
+                  "parentColumnSpace": 1,
+                  "dynamicTriggerPathList": [],
+                  "leftColumn": 0,
+                  "dynamicBindingPathList": [],
+                  "children": [
+                    {
+                      "boxShadow": "none",
+                      "widgetName": "Switch2",
+                      "dynamicPropertyPathList": [
+                        {
+                          "key": "onChange"
+                        }
+                      ],
+                      "displayName": "Switch",
+                      "iconSVG": "/static/media/icon.a3115bc1c224776de2846985c8819f99.svg",
+                      "searchTags": [
+                        "boolean"
+                      ],
+                      "topRow": 1,
+                      "bottomRow": 5,
+                      "parentRowSpace": 10,
+                      "type": "SWITCH_WIDGET",
+                      "alignWidget": "LEFT",
+                      "hideCard": false,
+                      "animateLoading": true,
+                      "parentColumnSpace": 17.5625,
+                      "dynamicTriggerPathList": [
+                        {
+                          "key": "onChange"
+                        }
+                      ],
+                      "leftColumn": 0,
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "accentColor"
+                        }
+                      ],
+                      "labelPosition": "Right",
+                      "isDisabled": false,
+                      "key": "l18rvix7yo",
+                      "labelTextSize": "0.875rem",
+                      "isDeprecated": false,
+                      "rightColumn": 8,
+                      "onChange": "{{(() => {\n\tconst id = 'autoupdate';\n\tif(Switch2.isSwitchedOn) {\n\t\tsetInterval(() => { get_raw_user_fb_financial_data.run() }, 5000, id);\n\t} else{\n\t\tclearInterval(id);\n\t}\n}\n)()}}",
+                      "dynamicHeight": "FIXED",
+                      "widgetId": "4oj84qe5hh",
+                      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                      "isVisible": true,
+                      "label": "Auto Update",
+                      "defaultSwitchState": false,
+                      "version": 1,
+                      "parentId": "ekwwu68xmt",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "maxDynamicHeight": 9000,
+                      "minDynamicHeight": 4
+                    },
+                    {
+                      "widgetName": "Progress1",
+                      "progressType": "linear",
+                      "isCanvas": false,
+                      "displayName": "Progress",
+                      "iconSVG": "/static/media/icon.9b0d7b96a0223e8120bf6f14aca4154a.svg",
+                      "searchTags": [
+                        "percent"
+                      ],
+                      "topRow": 1,
+                      "bottomRow": 5,
+                      "parentRowSpace": 10,
+                      "type": "PROGRESS_WIDGET",
+                      "isIndeterminate": false,
+                      "hideCard": false,
+                      "fillColor": "{{appsmith.theme.colors.primaryColor}}",
+                      "parentColumnSpace": 19.75,
+                      "dynamicTriggerPathList": [],
+                      "leftColumn": 8,
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "fillColor"
+                        },
+                        {
+                          "key": "borderRadius"
+                        },
+                        {
+                          "key": "progress"
+                        }
+                      ],
+                      "key": "84wn5d7fzm",
+                      "showResult": true,
+                      "isDeprecated": false,
+                      "rightColumn": 29,
+                      "counterClosewise": false,
+                      "widgetId": "kdxldyjijz",
+                      "isVisible": true,
+                      "steps": "1",
+                      "version": 1,
+                      "parentId": "ekwwu68xmt",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                      "progress": "{{appsmith.store.myProgress2.toFixed(0)}}"
+                    },
+                    {
+                      "boxShadow": "none",
+                      "dateFormat": "LL",
+                      "iconSVG": "/static/media/icon.300e5ab8e2e1c26c7a0bad06116842b7.svg",
+                      "topRow": 1,
+                      "labelWidth": "9",
+                      "type": "DATE_PICKER_WIDGET2",
+                      "animateLoading": true,
+                      "leftColumn": 31,
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "accentColor"
+                        },
+                        {
+                          "key": "borderRadius"
+                        },
+                        {
+                          "key": "defaultDate"
+                        }
+                      ],
+                      "isDisabled": false,
+                      "isRequired": false,
+                      "dynamicHeight": "AUTO_HEIGHT",
+                      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                      "isVisible": true,
+                      "datePickerType": "DATE_PICKER",
+                      "version": 2,
+                      "isLoading": false,
+                      "timePrecision": "None",
+                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                      "originalBottomRow": 7,
+                      "closeOnSelection": true,
+                      "widgetName": "DatePicker2",
+                      "minDate": "1920-12-31T18:30:00.000Z",
+                      "dynamicPropertyPathList": [
+                        {
+                          "key": "defaultDate"
+                        }
+                      ],
+                      "displayName": "DatePicker",
+                      "searchTags": [
+                        "calendar"
+                      ],
+                      "bottomRow": 5,
+                      "shortcuts": false,
+                      "parentRowSpace": 10,
+                      "hideCard": false,
+                      "shouldScrollContents": true,
+                      "parentColumnSpace": 11.9130859375,
+                      "dynamicTriggerPathList": [],
+                      "labelPosition": "Left",
+                      "key": "s6rs7q1427",
+                      "labelTextSize": "0.875rem",
+                      "defaultDate": "{{DatePicker1?.selectedDate || moment().add('days',-1)}}",
+                      "isDeprecated": false,
+                      "rightColumn": 52,
+                      "widgetId": "sa64q111fj",
+                      "label": "Starting from date",
+                      "parentId": "ekwwu68xmt",
+                      "labelAlignment": "left",
+                      "renderMode": "CANVAS",
+                      "originalTopRow": 0,
+                      "maxDynamicHeight": 9000,
+                      "firstDayOfWeek": 0,
+                      "maxDate": "2121-12-31T18:29:00.000Z",
+                      "minDynamicHeight": 4
+                    },
+                    {
+                      "resetFormOnClick": false,
+                      "boxShadow": "none",
+                      "widgetName": "Button1CopyCopy",
+                      "onClick": "{{FB_Api_update_financial.after_make_com()}}",
+                      "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+                      "displayName": "Button",
+                      "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
+                      "searchTags": [
+                        "click",
+                        "submit"
+                      ],
+                      "topRow": 1,
+                      "bottomRow": 5,
+                      "parentRowSpace": 10,
+                      "type": "BUTTON_WIDGET",
+                      "hideCard": false,
+                      "animateLoading": true,
+                      "parentColumnSpace": 15.0478515625,
+                      "dynamicTriggerPathList": [
+                        {
+                          "key": "onClick"
+                        }
+                      ],
+                      "leftColumn": 52,
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "buttonColor"
+                        },
+                        {
+                          "key": "borderRadius"
+                        }
+                      ],
+                      "text": "Update User Financial",
+                      "isDisabled": false,
+                      "key": "m8nuq5egzm",
+                      "isDeprecated": false,
+                      "rightColumn": 64,
+                      "isDefaultClickDisabled": true,
+                      "widgetId": "4lrip3w92s",
+                      "isVisible": true,
+                      "recaptchaType": "V3",
+                      "version": 1,
+                      "parentId": "ekwwu68xmt",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "disabledWhenInvalid": false,
+                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                      "buttonVariant": "PRIMARY",
+                      "placement": "CENTER"
+                    },
+                    {
+                      "widgetName": "Progress1Copy",
+                      "progressType": "linear",
+                      "isCanvas": false,
+                      "displayName": "Progress",
+                      "iconSVG": "/static/media/icon.9b0d7b96a0223e8120bf6f14aca4154a.svg",
+                      "searchTags": [
+                        "percent"
+                      ],
+                      "topRow": 5,
+                      "bottomRow": 9,
+                      "parentRowSpace": 10,
+                      "type": "PROGRESS_WIDGET",
+                      "isIndeterminate": false,
+                      "hideCard": false,
+                      "fillColor": "#4ade80",
+                      "parentColumnSpace": 19.75,
+                      "dynamicTriggerPathList": [],
+                      "leftColumn": 8,
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "borderRadius"
+                        },
+                        {
+                          "key": "progress"
+                        }
+                      ],
+                      "key": "84wn5d7fzm",
+                      "showResult": true,
+                      "isDeprecated": false,
+                      "rightColumn": 29,
+                      "counterClosewise": false,
+                      "widgetId": "g3vrbnlx4b",
+                      "isVisible": true,
+                      "steps": "1",
+                      "version": 1,
+                      "parentId": "ekwwu68xmt",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                      "progress": "{{appsmith.store.myProgress3.toFixed(0)}}"
+                    },
+                    {
+                      "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+                      "borderColor": "#E0DEDE",
+                      "isVisibleDownload": true,
+                      "iconSVG": "/static/media/icon.db8a9cbd2acd22a31ea91cc37ea2a46c.svg",
+                      "topRow": 9,
+                      "isSortable": true,
+                      "type": "TABLE_WIDGET_V2",
+                      "inlineEditingSaveOption": "ROW_LEVEL",
+                      "animateLoading": true,
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "tableData"
+                        },
+                        {
+                          "key": "accentColor"
+                        },
+                        {
+                          "key": "borderRadius"
+                        },
+                        {
+                          "key": "boxShadow"
+                        },
+                        {
+                          "key": "primaryColumns.fk_user_id.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.fk_bm_id.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.fk_ad_account_id.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.financial_date.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.campaign_id.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.campaign_name.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.amount_spent.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.campaign_offer_id.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.creation_date.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.spent_rate_fees.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.off_cat_short.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.net_name_short.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.insert_or_update.computedValue"
+                        }
+                      ],
+                      "leftColumn": 0,
+                      "delimiter": ",",
+                      "defaultSelectedRowIndex": 0,
+                      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                      "isVisibleFilters": true,
+                      "isVisible": true,
+                      "enableClientSideSearch": true,
+                      "version": 1,
+                      "totalRecordsCount": 0,
+                      "isLoading": false,
+                      "childStylesheet": {
+                        "button": {
+                          "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+                          "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                          "boxShadow": "none"
+                        },
+                        "menuButton": {
+                          "menuColor": "{{appsmith.theme.colors.primaryColor}}",
+                          "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                          "boxShadow": "none"
+                        },
+                        "iconButton": {
+                          "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+                          "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                          "boxShadow": "none"
+                        },
+                        "editActions": {
+                          "saveButtonColor": "{{appsmith.theme.colors.primaryColor}}",
+                          "saveBorderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                          "discardButtonColor": "{{appsmith.theme.colors.primaryColor}}",
+                          "discardBorderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}"
+                        }
+                      },
+                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                      "originalBottomRow": 216,
+                      "columnUpdatedAt": 1678477623615,
+                      "defaultSelectedRowIndices": [
+                        0
+                      ],
+                      "widgetName": "Table2",
+                      "defaultPageSize": 0,
+                      "columnOrder": [
+                        "fk_user_id",
+                        "fk_bm_id",
+                        "fk_ad_account_id",
+                        "financial_date",
+                        "campaign_name",
+                        "amount_spent",
+                        "spent_rate_fees",
+                        "campaign_id",
+                        "campaign_offer_id",
+                        "creation_date",
+                        "off_cat_short",
+                        "net_name_short",
+                        "insert_or_update"
+                      ],
+                      "dynamicPropertyPathList": [],
+                      "compactMode": "SHORT",
+                      "displayName": "Table",
+                      "bottomRow": 80,
+                      "columnWidthMap": {
+                        "task": 245,
+                        "step": 62,
+                        "status": 75,
+                        "campaign_name": 470,
+                        "financial_date": 115,
+                        "fk_bm_id": 167,
+                        "fk_ad_account_id": 198,
+                        "campaign_id": 175
+                      },
+                      "parentRowSpace": 10,
+                      "hideCard": false,
+                      "dynamicTriggerPathList": [],
+                      "borderWidth": "1",
+                      "primaryColumns": {
+                        "fk_user_id": {
+                          "allowCellWrapping": false,
+                          "index": 0,
+                          "width": 150,
+                          "originalId": "fk_user_id",
+                          "id": "fk_user_id",
+                          "alias": "fk_user_id",
+                          "horizontalAlignment": "LEFT",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "text",
+                          "textColor": "",
+                          "textSize": "0.875rem",
+                          "fontStyle": "",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": false,
+                          "isDisabled": false,
+                          "isCellEditable": false,
+                          "isEditable": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "fk_user_id",
+                          "isSaveVisible": true,
+                          "isDiscardVisible": true,
+                          "computedValue": "{{Table2.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"fk_user_id\"]))}}",
+                          "validation": {},
+                          "cellBackground": "",
+                          "sticky": ""
+                        },
+                        "fk_bm_id": {
+                          "allowCellWrapping": false,
+                          "index": 1,
+                          "width": 150,
+                          "originalId": "fk_bm_id",
+                          "id": "fk_bm_id",
+                          "alias": "fk_bm_id",
+                          "horizontalAlignment": "LEFT",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "text",
+                          "textColor": "",
+                          "textSize": "0.875rem",
+                          "fontStyle": "",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": false,
+                          "isDisabled": false,
+                          "isCellEditable": false,
+                          "isEditable": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "fk_bm_id",
+                          "isSaveVisible": true,
+                          "isDiscardVisible": true,
+                          "computedValue": "{{Table2.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"fk_bm_id\"]))}}",
+                          "validation": {},
+                          "cellBackground": "",
+                          "sticky": ""
+                        },
+                        "fk_ad_account_id": {
+                          "allowCellWrapping": false,
+                          "index": 2,
+                          "width": 150,
+                          "originalId": "fk_ad_account_id",
+                          "id": "fk_ad_account_id",
+                          "alias": "fk_ad_account_id",
+                          "horizontalAlignment": "LEFT",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "text",
+                          "textColor": "",
+                          "textSize": "0.875rem",
+                          "fontStyle": "",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": false,
+                          "isDisabled": false,
+                          "isCellEditable": false,
+                          "isEditable": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "fk_ad_account_id",
+                          "isSaveVisible": true,
+                          "isDiscardVisible": true,
+                          "computedValue": "{{Table2.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"fk_ad_account_id\"]))}}",
+                          "validation": {},
+                          "cellBackground": "",
+                          "sticky": ""
+                        },
+                        "financial_date": {
+                          "allowCellWrapping": false,
+                          "index": 3,
+                          "width": 150,
+                          "originalId": "financial_date",
+                          "id": "financial_date",
+                          "alias": "financial_date",
+                          "horizontalAlignment": "LEFT",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "date",
+                          "textColor": "",
+                          "textSize": "0.875rem",
+                          "fontStyle": "",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": true,
+                          "isDisabled": false,
+                          "isCellEditable": false,
+                          "isEditable": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "Date",
+                          "isSaveVisible": true,
+                          "isDiscardVisible": true,
+                          "computedValue": "{{Table2.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"financial_date\"]))}}",
+                          "validation": {},
+                          "cellBackground": "",
+                          "outputFormat": "YYYY-MM-DD",
+                          "sticky": ""
+                        },
+                        "campaign_id": {
+                          "allowCellWrapping": false,
+                          "index": 4,
+                          "width": 150,
+                          "originalId": "campaign_id",
+                          "id": "campaign_id",
+                          "alias": "campaign_id",
+                          "horizontalAlignment": "LEFT",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "text",
+                          "textColor": "",
+                          "textSize": "0.875rem",
+                          "fontStyle": "",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": true,
+                          "isDisabled": false,
+                          "isCellEditable": false,
+                          "isEditable": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "campaign_id",
+                          "isSaveVisible": true,
+                          "isDiscardVisible": true,
+                          "computedValue": "{{Table2.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"campaign_id\"]))}}",
+                          "validation": {},
+                          "cellBackground": "",
+                          "sticky": ""
+                        },
+                        "campaign_name": {
+                          "allowCellWrapping": false,
+                          "index": 5,
+                          "width": 150,
+                          "originalId": "campaign_name",
+                          "id": "campaign_name",
+                          "alias": "campaign_name",
+                          "horizontalAlignment": "LEFT",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "text",
+                          "textColor": "",
+                          "textSize": "0.875rem",
+                          "fontStyle": "",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": true,
+                          "isDisabled": false,
+                          "isCellEditable": false,
+                          "isEditable": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "Campaign Name",
+                          "isSaveVisible": true,
+                          "isDiscardVisible": true,
+                          "computedValue": "{{Table2.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"campaign_name\"]))}}",
+                          "validation": {},
+                          "cellBackground": "",
+                          "sticky": ""
+                        },
+                        "amount_spent": {
+                          "allowCellWrapping": false,
+                          "index": 6,
+                          "width": 150,
+                          "originalId": "amount_spent",
+                          "id": "amount_spent",
+                          "alias": "amount_spent",
+                          "horizontalAlignment": "LEFT",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "number",
+                          "textColor": "",
+                          "textSize": "0.875rem",
+                          "fontStyle": "",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": true,
+                          "isDisabled": false,
+                          "isCellEditable": false,
+                          "isEditable": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "Spent",
+                          "isSaveVisible": true,
+                          "isDiscardVisible": true,
+                          "computedValue": "{{Table2.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"amount_spent\"]))}}",
+                          "validation": {},
+                          "cellBackground": "",
+                          "sticky": ""
+                        },
+                        "campaign_offer_id": {
+                          "allowCellWrapping": false,
+                          "index": 7,
+                          "width": 150,
+                          "originalId": "campaign_offer_id",
+                          "id": "campaign_offer_id",
+                          "alias": "campaign_offer_id",
+                          "horizontalAlignment": "LEFT",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "text",
+                          "textColor": "",
+                          "textSize": "0.875rem",
+                          "fontStyle": "",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": true,
+                          "isDisabled": false,
+                          "isCellEditable": false,
+                          "isEditable": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "campaign_offer_id",
+                          "isSaveVisible": true,
+                          "isDiscardVisible": true,
+                          "computedValue": "{{Table2.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"campaign_offer_id\"]))}}",
+                          "validation": {},
+                          "cellBackground": "",
+                          "sticky": ""
+                        },
+                        "creation_date": {
+                          "allowCellWrapping": false,
+                          "index": 8,
+                          "width": 150,
+                          "originalId": "creation_date",
+                          "id": "creation_date",
+                          "alias": "creation_date",
+                          "horizontalAlignment": "LEFT",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "date",
+                          "textColor": "",
+                          "textSize": "0.875rem",
+                          "fontStyle": "",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": true,
+                          "isDisabled": false,
+                          "isCellEditable": false,
+                          "isEditable": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "creation_date",
+                          "isSaveVisible": true,
+                          "isDiscardVisible": true,
+                          "computedValue": "{{Table2.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"creation_date\"]))}}",
+                          "validation": {},
+                          "cellBackground": "",
+                          "sticky": ""
+                        },
+                        "spent_rate_fees": {
+                          "allowCellWrapping": false,
+                          "index": 9,
+                          "width": 150,
+                          "originalId": "spent_rate_fees",
+                          "id": "spent_rate_fees",
+                          "alias": "spent_rate_fees",
+                          "horizontalAlignment": "LEFT",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "number",
+                          "textColor": "",
+                          "textSize": "0.875rem",
+                          "fontStyle": "",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": true,
+                          "isDisabled": false,
+                          "isCellEditable": false,
+                          "isEditable": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "Spent Fees",
+                          "isSaveVisible": true,
+                          "isDiscardVisible": true,
+                          "computedValue": "{{Table2.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"spent_rate_fees\"]))}}",
+                          "validation": {},
+                          "cellBackground": "",
+                          "sticky": ""
+                        },
+                        "off_cat_short": {
+                          "allowCellWrapping": false,
+                          "index": 10,
+                          "width": 150,
+                          "originalId": "off_cat_short",
+                          "id": "off_cat_short",
+                          "alias": "off_cat_short",
+                          "horizontalAlignment": "LEFT",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "text",
+                          "textColor": "",
+                          "textSize": "0.875rem",
+                          "fontStyle": "",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": true,
+                          "isDisabled": false,
+                          "isCellEditable": false,
+                          "isEditable": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "off_cat_short",
+                          "isSaveVisible": true,
+                          "isDiscardVisible": true,
+                          "computedValue": "{{Table2.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"off_cat_short\"]))}}",
+                          "validation": {},
+                          "cellBackground": "",
+                          "sticky": ""
+                        },
+                        "net_name_short": {
+                          "allowCellWrapping": false,
+                          "index": 11,
+                          "width": 150,
+                          "originalId": "net_name_short",
+                          "id": "net_name_short",
+                          "alias": "net_name_short",
+                          "horizontalAlignment": "LEFT",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "text",
+                          "textColor": "",
+                          "textSize": "0.875rem",
+                          "fontStyle": "",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": true,
+                          "isDisabled": false,
+                          "isCellEditable": false,
+                          "isEditable": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "net_name_short",
+                          "isSaveVisible": true,
+                          "isDiscardVisible": true,
+                          "computedValue": "{{Table2.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"net_name_short\"]))}}",
+                          "validation": {},
+                          "cellBackground": "",
+                          "sticky": ""
+                        },
+                        "insert_or_update": {
+                          "allowCellWrapping": false,
+                          "index": 12,
+                          "width": 150,
+                          "originalId": "insert_or_update",
+                          "id": "insert_or_update",
+                          "alias": "insert_or_update",
+                          "horizontalAlignment": "LEFT",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "text",
+                          "textColor": "",
+                          "textSize": "0.875rem",
+                          "fontStyle": "",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": true,
+                          "isDisabled": false,
+                          "isCellEditable": false,
+                          "isEditable": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "insert_or_update",
+                          "isSaveVisible": true,
+                          "isDiscardVisible": true,
+                          "computedValue": "{{Table2.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"insert_or_update\"]))}}",
+                          "sticky": "",
+                          "validation": {},
+                          "cellBackground": ""
+                        }
+                      },
+                      "key": "fvu9vro3as",
+                      "canFreezeColumn": false,
+                      "isDeprecated": false,
+                      "rightColumn": 64,
+                      "textSize": "0.875rem",
+                      "widgetId": "p3jv1zwyxt",
+                      "tableData": "{{get_raw_user_fb_financial_data.data}}",
+                      "label": "Data",
+                      "searchKey": "",
+                      "parentId": "ekwwu68xmt",
+                      "renderMode": "CANVAS",
+                      "horizontalAlignment": "LEFT",
+                      "isVisibleSearch": true,
+                      "originalTopRow": 188,
+                      "isVisiblePagination": true,
+                      "verticalAlignment": "CENTER"
+                    }
+                  ],
+                  "isDisabled": false,
+                  "key": "ffi5ebpy9h",
+                  "isDeprecated": false,
+                  "tabName": "Update Financial",
+                  "rightColumn": 481.5,
+                  "detachFromLayout": true,
+                  "widgetId": "ekwwu68xmt",
+                  "isVisible": true,
+                  "version": 1,
+                  "parentId": "i0b4w0pz7k",
+                  "renderMode": "CANVAS",
+                  "isLoading": false
+                }
+              ],
+              "borderWidth": 1,
+              "key": "fne3mws8dc",
+              "backgroundColor": "#FFFFFF",
+              "isDeprecated": false,
+              "rightColumn": 64,
+              "dynamicHeight": "AUTO_HEIGHT",
+              "widgetId": "i0b4w0pz7k",
+              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+              "defaultTab": "Campaign List",
+              "shouldShowTabs": true,
+              "tabsObj": {
+                "tab1": {
+                  "label": "Campaign List",
+                  "id": "tab1",
+                  "widgetId": "kjwwtfnxfu",
+                  "isVisible": true,
+                  "index": 0
+                },
+                "tab2": {
+                  "label": "Update Financial",
+                  "id": "tab2",
+                  "widgetId": "ekwwu68xmt",
+                  "isVisible": true,
+                  "index": 1
+                }
+              },
+              "isVisible": true,
+              "version": 3,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "originalTopRow": 8,
+              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+              "maxDynamicHeight": 9000,
+              "originalBottomRow": 97,
+              "minDynamicHeight": 10
+            },
+            {
+              "widgetName": "Text1",
+              "displayName": "Text",
+              "iconSVG": "/static/media/icon.97c59b523e6f70ba6f40a10fc2c7c5b5.svg",
+              "searchTags": [
+                "typography",
+                "paragraph",
+                "label"
+              ],
+              "topRow": 101,
+              "bottomRow": 108,
+              "parentRowSpace": 10,
+              "type": "TEXT_WIDGET",
+              "hideCard": false,
+              "animateLoading": true,
+              "overflow": "NONE",
+              "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
+              "parentColumnSpace": 20.0625,
+              "dynamicTriggerPathList": [],
+              "leftColumn": 8,
+              "dynamicBindingPathList": [
+                {
+                  "key": "truncateButtonColor"
+                },
+                {
+                  "key": "fontFamily"
+                },
+                {
+                  "key": "borderRadius"
+                },
+                {
+                  "key": "text"
+                }
+              ],
+              "shouldTruncate": false,
+              "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
+              "text": "{{appsmith.store.provider_token}}",
+              "key": "9lns9q8c1k",
+              "isDeprecated": false,
+              "rightColumn": 57,
+              "textAlign": "LEFT",
+              "dynamicHeight": "AUTO_HEIGHT",
+              "widgetId": "zs1eox3tob",
+              "isVisible": true,
+              "fontStyle": "BOLD",
+              "textColor": "#231F20",
+              "version": 1,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "originalTopRow": 101,
+              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+              "maxDynamicHeight": 9000,
+              "originalBottomRow": 108,
+              "fontSize": "1rem",
+              "minDynamicHeight": 4
+            }
+          ]
+        },
+        "layoutOnLoadActions": [
+          [
+            {
+              "id": "Facebook API_fb_login.login_fb",
+              "name": "fb_login.login_fb",
+              "collectionId": "Facebook API_fb_login",
+              "confirmBeforeExecute": false,
+              "pluginType": "JS",
+              "jsonPathKeys": [
+                "async () => {\n  if (!appsmith.URL.fullPath.includes('#access_token')) return;\n  appsmith.URL.fullPath.split('#')[1].split('&').forEach(i => {\n    const [key, value] = i.split('=');\n    if (key == 'provider_token') {\n      console.log(key, value);\n      storeValue(key, value);\n    }\n  });\n}"
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "Facebook API_get_raw_user_fb_campaign",
+              "name": "get_raw_user_fb_campaign",
+              "confirmBeforeExecute": false,
+              "pluginType": "API",
+              "jsonPathKeys": [
+                "appsmith.store.access_token"
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "Facebook API_get_raw_user_fb_financial_data",
+              "name": "get_raw_user_fb_financial_data",
+              "confirmBeforeExecute": false,
+              "pluginType": "API",
+              "jsonPathKeys": [
+                "appsmith.store.access_token"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ]
+        ],
+        "layoutOnLoadActionErrors": [],
+        "validOnPageLoadActions": true,
+        "id": "Facebook API",
+        "deleted": false,
+        "policies": [],
+        "userPermissions": []
+      }
+    ],
+    "userPermissions": [],
+    "policies": [],
+    "isHidden": true
+  },
+  "deleted": false,
+  "gitSyncId": "63c3151532584b547fffe91b_63ce3b17f0df7a5c0ff1966a"
+}

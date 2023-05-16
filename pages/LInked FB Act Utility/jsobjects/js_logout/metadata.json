@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "js_logout",
+    "pageId": "LInked FB Act Utility",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "LInked FB Act Utility_js_logout",
+  "deleted": false,
+  "gitSyncId": "63936c0b4b95806da2da5de7_63b326a60bc0a80b3001849c"
+}

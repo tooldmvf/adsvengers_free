@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "Utils2",
+    "pageId": "Day by Day",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "Day by Day_Utils2",
+  "deleted": false,
+  "gitSyncId": "63936c0b4b95806da2da5de7_6395c10ee77ccb59f68819be"
+}

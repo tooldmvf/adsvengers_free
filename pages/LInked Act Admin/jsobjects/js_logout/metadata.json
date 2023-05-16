@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "js_logout",
+    "pageId": "LInked Act Admin",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "LInked Act Admin_js_logout",
+  "deleted": false,
+  "gitSyncId": "63c3151532584b547fffe91b_641553218f7e5b7bc5ddc776"
+}

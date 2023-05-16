@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "fb_login",
+    "pageId": "AdAccount Credit Utility",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "AdAccount Credit Utility_fb_login",
+  "deleted": false,
+  "gitSyncId": "63936c0b4b95806da2da5de7_63c1efd804ebd9156341ee77"
+}

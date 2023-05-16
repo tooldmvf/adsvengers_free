@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "js_logout",
+    "pageId": "OLD Commissions Admin",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "OLD Commissions Admin_js_logout",
+  "deleted": false,
+  "gitSyncId": "63c3151532584b547fffe91b_63ca502540c6ec5d3546a8cc"
+}

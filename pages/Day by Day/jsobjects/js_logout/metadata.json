@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "js_logout",
+    "pageId": "Day by Day",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "Day by Day_js_logout",
+  "deleted": false,
+  "gitSyncId": "63936c0b4b95806da2da5de7_63b32696f276cd0745e94cf0"
+}

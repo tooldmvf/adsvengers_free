@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "Utils2",
+    "pageId": "Balance Check Offer",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "Balance Check Offer_Utils2",
+  "deleted": false,
+  "gitSyncId": "63c3151532584b547fffe91b_640caf8924fa922192431edb"
+}

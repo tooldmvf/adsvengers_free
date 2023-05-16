@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "OnLoad",
+    "pageId": "Campaign Name Builder Utility",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "Campaign Name Builder Utility_OnLoad",
+  "deleted": false,
+  "gitSyncId": "63c3151532584b547fffe91b_63cacddd40c6ec5d3546a91b"
+}

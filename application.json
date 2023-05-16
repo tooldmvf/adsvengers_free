@@ -1,0 +1,146 @@
+{
+  "pages": [
+    {
+      "id": "Login",
+      "isDefault": true
+    },
+    {
+      "id": "Dashboard",
+      "isDefault": false
+    },
+    {
+      "id": "Day by Day",
+      "isDefault": false
+    },
+    {
+      "id": "My Profit Offer",
+      "isDefault": false
+    },
+    {
+      "id": "Offers Analysis",
+      "isDefault": false
+    },
+    {
+      "id": "Pivot",
+      "isDefault": false
+    },
+    {
+      "id": "Linked Network Utility",
+      "isDefault": false
+    },
+    {
+      "id": "LInked FB Act Utility",
+      "isDefault": false
+    },
+    {
+      "id": "Invoices Utility",
+      "isDefault": false
+    },
+    {
+      "id": "Campaign Name Builder Utility",
+      "isDefault": false
+    },
+    {
+      "id": "AdAccount Credit Utility",
+      "isDefault": false
+    },
+    {
+      "id": "Facebook API",
+      "isDefault": false
+    },
+    {
+      "id": "Offers Analysis Admin",
+      "isDefault": false
+    },
+    {
+      "id": "Recharge Requests",
+      "isDefault": false
+    },
+    {
+      "id": "Users Profit Admin",
+      "isDefault": false
+    },
+    {
+      "id": "Users SW Log Admin",
+      "isDefault": false
+    },
+    {
+      "id": "Slack Management Admin",
+      "isDefault": false
+    },
+    {
+      "id": "OLD Commissions Admin",
+      "isDefault": false
+    },
+    {
+      "id": "Balance Check Offer",
+      "isDefault": false
+    },
+    {
+      "id": "Campaign List Admin",
+      "isDefault": false
+    },
+    {
+      "id": "BKP AdAccount Credit Utility",
+      "isDefault": false
+    },
+    {
+      "id": "LInked Act Admin",
+      "isDefault": false
+    },
+    {
+      "id": "Monitoring",
+      "isDefault": false
+    },
+    {
+      "id": "Balance Check Live",
+      "isDefault": false
+    },
+    {
+      "id": "Network Analysis Admin",
+      "isDefault": false
+    },
+    {
+      "id": "Off Detail Admin",
+      "isDefault": false
+    },
+    {
+      "id": "Ai20 Revenue",
+      "isDefault": false
+    },
+    {
+      "id": "Spent Check",
+      "isDefault": false
+    },
+    {
+      "id": "Commissions Admin",
+      "isDefault": false
+    },
+    {
+      "id": "Offer Detail",
+      "isDefault": false
+    }
+  ],
+  "viewMode": false,
+  "appIsExample": false,
+  "unreadCommentThreads": 0,
+  "color": "#ECECEC",
+  "icon": "dollar",
+  "unpublishedAppLayout": {
+    "type": "FLUID"
+  },
+  "publishedAppLayout": {
+    "type": "FLUID"
+  },
+  "unpublishedCustomJSLibs": [],
+  "publishedCustomJSLibs": [],
+  "evaluationVersion": 2,
+  "applicationVersion": 2,
+  "embedSetting": {
+    "height": "720px",
+    "width": "1024px",
+    "showNavigationBar": false
+  },
+  "isManualUpdate": false,
+  "deleted": false
+}

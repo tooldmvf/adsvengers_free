@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "js_logout",
+    "pageId": "Invoices Utility",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "Invoices Utility_js_logout",
+  "deleted": false,
+  "gitSyncId": "63936c0b4b95806da2da5de7_63b326ad3c0da0138a06a98b"
+}

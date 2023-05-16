@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "js_logout",
+    "pageId": "AdAccount Credit Utility",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "AdAccount Credit Utility_js_logout",
+  "deleted": false,
+  "gitSyncId": "63936c0b4b95806da2da5de7_63c1dccfe7dc2311e6832420"
+}

@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "js_insert_new_offer",
+    "pageId": "Day by Day",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "Day by Day_js_insert_new_offer",
+  "deleted": false,
+  "gitSyncId": "63936c0b4b95806da2da5de7_63af6e27fcb7cc4992ae3f8c"
+}

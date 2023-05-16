@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "js_logout",
+    "pageId": "Recharge Requests",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "Recharge Requests_js_logout",
+  "deleted": false,
+  "gitSyncId": "63c3151532584b547fffe91b_63f78b998c13072a89953a98"
+}

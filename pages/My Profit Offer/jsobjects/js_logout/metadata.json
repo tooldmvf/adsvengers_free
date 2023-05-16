@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "js_logout",
+    "pageId": "My Profit Offer",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "My Profit Offer_js_logout",
+  "deleted": false,
+  "gitSyncId": "63c3151532584b547fffe91b_640a19c29c8aee70a4468805"
+}

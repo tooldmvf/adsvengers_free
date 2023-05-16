@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "js_logout",
+    "pageId": "Balance Check Live",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "Balance Check Live_js_logout",
+  "deleted": false,
+  "gitSyncId": "63c3151532584b547fffe91b_6418b3d28f7e5b7bc5de1a12"
+}
