@@ -3578,18 +3578,6 @@
         "layoutOnLoadActions": [
           [
             {
-              "id": "Monitoring_get_all_users",
-              "name": "get_all_users",
-              "confirmBeforeExecute": false,
-              "pluginType": "API",
-              "jsonPathKeys": [
-                "appsmith.store.access_token"
-              ],
-              "timeoutInMillisecond": 10000
-            }
-          ],
-          [
-            {
               "id": "Monitoring_Utils2.onLoadPage",
               "name": "Utils2.onLoadPage",
               "collectionId": "Monitoring_Utils2",
@@ -3597,6 +3585,16 @@
               "pluginType": "JS",
               "jsonPathKeys": [
                 "async () => {\n  storeValue('row_selected', -1);\n  await get_all_users.run();\n  await SelectFinancialTot.run();\n  await SelectOFFERSUser.run();\n  await SelectUSERS.run();\n}"
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "Monitoring_get_all_users",
+              "name": "get_all_users",
+              "confirmBeforeExecute": false,
+              "pluginType": "API",
+              "jsonPathKeys": [
+                "appsmith.store.access_token"
               ],
               "timeoutInMillisecond": 10000
             }

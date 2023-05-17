@@ -2,7 +2,7 @@
   "pluginType": "API",
   "pluginId": "restapi-plugin",
   "unpublishedAction": {
-    "name": "get_all_bm",
+    "name": "get_bm",
     "datasource": {
       "name": "Auth",
       "pluginId": "restapi-plugin",
@@ -32,8 +32,8 @@
           "value": "*"
         },
         {
-          "key": "fk_ts_id",
-          "value": "eq.{{SelectTs.selectedOptionValue}}"
+          "key": "bm_id",
+          "value": "eq.{{SelectBM.selectedOptionValue}}"
         }
       ],
       "httpMethod": "GET",
@@ -42,7 +42,7 @@
         "apiContentType": "none"
       }
     },
-    "executeOnLoad": false,
+    "executeOnLoad": true,
     "dynamicBindingPathList": [
       {
         "key": "headers[0].value"
@@ -55,15 +55,15 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "SelectTs.selectedOptionValue",
+      "SelectBM.selectedOptionValue",
       "appsmith.store.access_token"
     ],
-    "userSetOnLoad": true,
+    "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "AdAccount Credit Utility_get_all_bm",
+  "id": "AdAccount Credit Utility_get_bm",
   "deleted": false,
-  "gitSyncId": "63936c0b4b95806da2da5de7_63c1dccfe7dc2311e6832407"
+  "gitSyncId": "646331cd28902b71518db22a_64646280341f950482984a7d"
 }

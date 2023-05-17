@@ -2,7 +2,7 @@
   "pluginType": "API",
   "pluginId": "restapi-plugin",
   "unpublishedAction": {
-    "name": "SALV1_GetAccountsCredit",
+    "name": "SALV_GetAccountsCredit",
     "datasource": {
       "name": "DEFAULT_REST_DATASOURCE",
       "pluginId": "restapi-plugin",
@@ -32,7 +32,7 @@
         },
         {
           "key": "access_token",
-          "value": "EAALZCNCZClZALABAKSaM4xeid3oIXZA9rz37L7faDbhZBr1Ub98op1jq9b3XBc0vbV0zmYGZBvuyrSsmDUTtD86WBHQsGRSDKAqQwFgfvmGNT6sZBtrULdTG4m066Ctecb2abDacPKeL6H63nzHZCnZAHDTPgcqG9mXZAr3d3U9bxRkdhXBY2g4YGUezioysPa1X9vC71SVEnj1sjSxj85aLc24lqdcMnBIygZD"
+          "value": "{{get_bm.data[0].bm_token}}"
         },
         {
           "key": "limit",
@@ -41,8 +41,8 @@
       ],
       "bodyFormData": [],
       "httpMethod": "GET",
-      "next": "{{SALV1_GetAccountsCredit.data.paging.next}}",
-      "prev": "{{SALV1_GetAccountsCredit.data.paging.previous}}",
+      "next": "{{SALV_GetAccountsCredit.data.paging.next}}",
+      "prev": "{{SALV_GetAccountsCredit.data.paging.previous}}",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
@@ -63,21 +63,25 @@
       },
       {
         "key": "prev"
+      },
+      {
+        "key": "queryParameters[1].value"
       }
     ],
     "isValid": true,
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "SALV1_GetAccountsCredit.data.paging.next",
-      "SALV1_GetAccountsCredit.data.paging.previous"
+      "SALV_GetAccountsCredit.data.paging.next",
+      "SALV_GetAccountsCredit.data.paging.previous",
+      "get_bm.data[0].bm_token"
     ],
     "userSetOnLoad": true,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "AdAccount Credit Utility_SALV1_GetAccountsCredit",
+  "id": "AdAccount Credit Utility_SALV_GetAccountsCredit",
   "deleted": false,
   "gitSyncId": "63c3151532584b547fffe91b_63f788e18c13072a89953a87"
 }
