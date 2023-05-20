@@ -27,6 +27,7 @@ export default {
 					result['fk_bm_id'] = new_Arr[i].bm_id;
 					arr_act.push(result);					
 				}	
+				await console.log(arr_act);
 				await insert_all_AdAct.run({act_json: arr_act});	
 
 				if (act_id[client_owner].paging.next) {					
