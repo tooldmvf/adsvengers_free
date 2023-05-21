@@ -20,7 +20,7 @@
           "parentRowSpace": 1,
           "type": "CANVAS_WIDGET",
           "canExtend": true,
-          "version": 78,
+          "version": 79,
           "minHeight": 1292,
           "dynamicTriggerPathList": [],
           "parentColumnSpace": 1,
@@ -1227,7 +1227,7 @@
                                 "task": 245,
                                 "step": 70,
                                 "status": 85,
-                                "bm_name": 260,
+                                "bm_name": 221,
                                 "spent": 97,
                                 "spent_rate_fees": 90,
                                 "spent_wfees": 117
