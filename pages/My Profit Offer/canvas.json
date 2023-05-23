@@ -825,11 +825,7 @@
                                     {
                                       "boxShadow": "none",
                                       "widgetName": "Text17CopyCopy1Copy1CopyCopy1",
-                                      "dynamicPropertyPathList": [
-                                        {
-                                          "key": "textColor"
-                                        }
-                                      ],
+                                      "dynamicPropertyPathList": [],
                                       "displayName": "Text",
                                       "iconSVG": "/static/media/icon.97c59b523e6f70ba6f40a10fc2c7c5b5.svg",
                                       "searchTags": [
@@ -857,9 +853,6 @@
                                         },
                                         {
                                           "key": "borderRadius"
-                                        },
-                                        {
-                                          "key": "textColor"
                                         }
                                       ],
                                       "leftColumn": 60,
@@ -913,7 +906,7 @@
                                       },
                                       "isVisible": true,
                                       "fontStyle": "BOLD",
-                                      "textColor": "{{(currentItem.Rejected_Rate).toFixed(2) >20 ? '#eab308' : 'black'}}",
+                                      "textColor": "",
                                       "version": 1,
                                       "parentId": "gmmydqtb1b",
                                       "renderMode": "CANVAS",
@@ -1666,7 +1659,7 @@
                                       "leftColumn": 38,
                                       "shouldTruncate": false,
                                       "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-                                      "text": "{{Utils2.myCurrency(currentItem.amount_revenue)}}",
+                                      "text": "{{Utils2.myCurrency(currentItem.amount_revenue_h)}}",
                                       "key": "fak4xyb0hu",
                                       "isDeprecated": false,
                                       "rightColumn": 43,
@@ -1768,7 +1761,7 @@
                                       "leftColumn": 43,
                                       "shouldTruncate": false,
                                       "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-                                      "text": "{{Utils2.myCurrency(currentItem.amount_revenue - currentItem.amount_spent_plus_fee)}}",
+                                      "text": "{{Utils2.myCurrency(currentItem.amount_revenue_h - currentItem.amount_spent_plus_fee)}}",
                                       "key": "fak4xyb0hu",
                                       "isDeprecated": false,
                                       "rightColumn": 48,
@@ -1816,7 +1809,7 @@
                                       },
                                       "isVisible": true,
                                       "fontStyle": "BOLD",
-                                      "textColor": "{{(currentItem.amount_revenue - currentItem.amount_spent_plus_fee)>0 ? 'green' : 'red'}}",
+                                      "textColor": "{{(currentItem.amount_revenue_h - currentItem.amount_spent_plus_fee)>0 ? 'green' : 'red'}}",
                                       "version": 1,
                                       "parentId": "gmmydqtb1b",
                                       "renderMode": "CANVAS",
@@ -1870,7 +1863,7 @@
                                       "leftColumn": 48,
                                       "shouldTruncate": false,
                                       "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-                                      "text": "{{((currentItem.amount_revenue - currentItem.amount_spent_plus_fee)/(currentItem.amount_spent_plus_fee)*100).toFixed(2)}} %",
+                                      "text": "{{((currentItem.amount_revenue_h - currentItem.amount_spent_plus_fee)/(currentItem.amount_spent_plus_fee)*100).toFixed(2)}} %",
                                       "key": "fak4xyb0hu",
                                       "isDeprecated": false,
                                       "rightColumn": 52,
@@ -1921,7 +1914,7 @@
                                       },
                                       "isVisible": true,
                                       "fontStyle": "BOLD",
-                                      "textColor": "{{((currentItem.amount_revenue - currentItem.amount_spent_plus_fee)/(currentItem.amount_spent_plus_fee)*100).toFixed(2) < 0 ? 'red' : (((currentItem.amount_revenue - currentItem.amount_spent_plus_fee)/(currentItem.amount_spent_plus_fee)*100).toFixed(2)<20 ? '#eab308' :'green') }}",
+                                      "textColor": "{{((currentItem.amount_revenue_h - currentItem.amount_spent_plus_fee)/(currentItem.amount_spent_plus_fee)*100).toFixed(2) < 0 ? 'red' : (((currentItem.amount_revenue_h - currentItem.amount_spent_plus_fee)/(currentItem.amount_spent_plus_fee)*100).toFixed(2)<20 ? '#eab308' :'green') }}",
                                       "version": 1,
                                       "parentId": "gmmydqtb1b",
                                       "renderMode": "CANVAS",
@@ -2338,7 +2331,7 @@
                       "leftColumn": 49,
                       "shouldTruncate": false,
                       "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-                      "text": "Tot.ROI    ",
+                      "text": "1st ROI    ",
                       "key": "fak4xyb0hu",
                       "isDeprecated": false,
                       "rightColumn": 52,
@@ -2432,7 +2425,7 @@
                       "leftColumn": 43,
                       "shouldTruncate": false,
                       "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-                      "text": "Tot.Profit ",
+                      "text": "1st Profit ",
                       "key": "fak4xyb0hu",
                       "isDeprecated": false,
                       "rightColumn": 48,
@@ -2525,7 +2518,7 @@
                       "leftColumn": 38,
                       "shouldTruncate": false,
                       "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-                      "text": "Tot.Rev ",
+                      "text": "1st Rev.",
                       "key": "fak4xyb0hu",
                       "isDeprecated": false,
                       "rightColumn": 43,
@@ -3399,11 +3392,7 @@
                             {
                               "boxShadow": "none",
                               "widgetName": "Text17CopyCopy1Copy1CopyCopyCopy",
-                              "dynamicPropertyPathList": [
-                                {
-                                  "key": "textColor"
-                                }
-                              ],
+                              "dynamicPropertyPathList": [],
                               "displayName": "Text",
                               "iconSVG": "/static/media/icon.97c59b523e6f70ba6f40a10fc2c7c5b5.svg",
                               "searchTags": [
@@ -3431,9 +3420,6 @@
                                 },
                                 {
                                   "key": "borderRadius"
-                                },
-                                {
-                                  "key": "textColor"
                                 }
                               ],
                               "leftColumn": 61,
@@ -3487,7 +3473,7 @@
                               },
                               "isVisible": true,
                               "fontStyle": "BOLD",
-                              "textColor": "{{(TotalLine.data[0].Rejected_Rate).toFixed(2) >20 ? '#eab308' : 'black'}}",
+                              "textColor": "",
                               "version": 1,
                               "parentId": "42b7hkiv6p",
                               "renderMode": "CANVAS",
@@ -3541,7 +3527,7 @@
                               "leftColumn": 48,
                               "shouldTruncate": false,
                               "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-                              "text": "{{((TotalLine.data[0].amount_revenue - TotalLine.data[0].amount_spent_plus_fee)/(TotalLine.data[0].amount_spent_plus_fee)*100).toFixed(2)}} %",
+                              "text": "{{((TotalLine.data[0].amount_revenue_h - TotalLine.data[0].amount_spent_plus_fee)/(TotalLine.data[0].amount_spent_plus_fee)*100).toFixed(2)}} %",
                               "key": "fak4xyb0hu",
                               "isDeprecated": false,
                               "rightColumn": 52,
@@ -3592,7 +3578,7 @@
                               },
                               "isVisible": true,
                               "fontStyle": "BOLD",
-                              "textColor": "{{((TotalLine.data[0].amount_revenue - TotalLine.data[0].amount_spent_plus_fee)/(TotalLine.data[0].amount_spent_plus_fee)*100).toFixed(2) < 0 ? 'red' : (((TotalLine.data[0].amount_revenue - TotalLine.data[0].amount_spent_plus_fee)/(TotalLine.data[0].amount_spent_plus_fee)*100).toFixed(2)<20 ? '#eab308' :'green') }}",
+                              "textColor": "{{((TotalLine.data[0].amount_revenue_h - TotalLine.data[0].amount_spent_plus_fee)/(TotalLine.data[0].amount_spent_plus_fee)*100).toFixed(2) < 0 ? 'red' : (((TotalLine.data[0].amount_revenue_h - TotalLine.data[0].amount_spent_plus_fee)/(TotalLine.data[0].amount_spent_plus_fee)*100).toFixed(2)<20 ? '#eab308' :'green') }}",
                               "version": 1,
                               "parentId": "42b7hkiv6p",
                               "renderMode": "CANVAS",
@@ -3814,7 +3800,7 @@
                               "leftColumn": 43,
                               "shouldTruncate": false,
                               "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-                              "text": "{{Utils2.myCurrency(TotalLine.data[0].amount_revenue - TotalLine.data[0].amount_spent_plus_fee)}}",
+                              "text": "{{Utils2.myCurrency(TotalLine.data[0].amount_revenue_h - TotalLine.data[0].amount_spent_plus_fee)}}",
                               "key": "fak4xyb0hu",
                               "isDeprecated": false,
                               "rightColumn": 48,
@@ -3862,7 +3848,7 @@
                               },
                               "isVisible": true,
                               "fontStyle": "BOLD",
-                              "textColor": "{{(TotalLine.data[0].amount_revenue - TotalLine.data[0].amount_spent_plus_fee)>0 ? 'green' : 'red'}}",
+                              "textColor": "{{(TotalLine.data[0].amount_revenue_h - TotalLine.data[0].amount_spent_plus_fee)>0 ? 'green' : 'red'}}",
                               "version": 1,
                               "parentId": "42b7hkiv6p",
                               "renderMode": "CANVAS",
@@ -3909,7 +3895,7 @@
                               "leftColumn": 38,
                               "shouldTruncate": false,
                               "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-                              "text": "{{Utils2.myCurrency(TotalLine.data[0].amount_revenue)}}",
+                              "text": "{{Utils2.myCurrency(TotalLine.data[0].amount_revenue_h)}}",
                               "key": "fak4xyb0hu",
                               "isDeprecated": false,
                               "rightColumn": 43,

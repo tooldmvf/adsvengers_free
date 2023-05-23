@@ -1,15 +1,17 @@
 SELECT count(distinct a.fk_offer_id) as "act_off",
 	sum(a.amount_revenue) as "amount_revenue",
+	sum(a.amount_revenue_h) as "amount_revenue_h",
 	sum(a.amount_revenue_pending) as "Pending_Rev",
 	sum(a.amount_revenue_approved) as "Approved_Rev",
 	sum(a.amount_revenue_rejected) as "Rejected_Rev",
 	sum(a.amount_spent) as "amount_spent",
 	sum(a.amount_spent_plus_fee) as "amount_spent_plus_fee",
+	sum(a.conversions_total_h) as "1stLeads",
 	sum(a.amount_conversion) as "amount_conversion",
 	sum(a.conversions_pending) as "Pending_Conv",
 	sum(a.conversions_approved) as "Approved_Conv",
 	sum(a.conversions_rejected) as "Rejected_Conv",
-	sum(a.conversions_rejected)/((case when sum(a.amount_conversion) = 0 then 1 else sum(a.amount_conversion) end)+sum(a.conversions_rejected))*100 as "Rejected_Rate"
+	sum(a.conversions_rejected)/((case when sum(a.conversions_total_h) = 0 then 1 else sum(a.conversions_total_h) end)+sum(a.conversions_rejected))*100 as "Rejected_Rate"
 from public.user_financial a
 INNER JOIN public.user_network b ON (a.fk_user_id = b.fk_user_id and a.fk_user_network_id = b.user_network_id)
 INNER JOIN public.traffic_source c ON (b.fk_ts_id = c.ts_id)
