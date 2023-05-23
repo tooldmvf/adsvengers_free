@@ -7,7 +7,7 @@ SELECT
 	sum(a.amount_revenue_rejected) as "Rejected_Rev",
 	sum(a.amount_spent),
 	sum(a.amount_spent_plus_fee) as amount_spent_plus_fee,
-	sum(a.amount_conversion),
+	sum(a.amount_conversion) as tot_conv,
 	sum(a.conversions_pending) as "Pending_Conv",
 	sum(a.conversions_approved) as "Approved_Conv",
 	sum(a.conversions_rejected) as "Rejected_Conv",
