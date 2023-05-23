@@ -5397,21 +5397,6 @@
                           "key": "primaryColumns.TOT_ROI_h.computedValue"
                         },
                         {
-                          "key": "primaryColumns.EditActions1.saveButtonColor"
-                        },
-                        {
-                          "key": "primaryColumns.EditActions1.saveBorderRadius"
-                        },
-                        {
-                          "key": "primaryColumns.EditActions1.discardBorderRadius"
-                        },
-                        {
-                          "key": "primaryColumns.EditActions1.isSaveDisabled"
-                        },
-                        {
-                          "key": "primaryColumns.EditActions1.isDiscardDisabled"
-                        },
-                        {
                           "key": "primaryColumns.approved_leads.computedValue"
                         },
                         {
@@ -5454,7 +5439,7 @@
                         }
                       },
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                      "columnUpdatedAt": 1684846326189,
+                      "columnUpdatedAt": 1684846588921,
                       "originalBottomRow": 218,
                       "defaultSelectedRowIndices": [
                         0
@@ -5475,8 +5460,7 @@
                         "Rejected_Rate",
                         "amount_revenue_h",
                         "TOT_profit_h",
-                        "TOT_ROI_h",
-                        "EditActions1"
+                        "TOT_ROI_h"
                       ],
                       "dynamicPropertyPathList": [
                         {
@@ -5493,12 +5477,6 @@
                         },
                         {
                           "key": "primaryColumns.Rejected_Rate.textColor"
-                        },
-                        {
-                          "key": "primaryColumns.EditActions1.isSaveDisabled"
-                        },
-                        {
-                          "key": "primaryColumns.EditActions1.isDiscardDisabled"
                         }
                       ],
                       "compactMode": "SHORT",
@@ -5795,10 +5773,10 @@
                           "textSize": "0.875rem",
                           "enableFilter": true,
                           "enableSort": true,
-                          "isVisible": true,
+                          "isVisible": false,
                           "isDisabled": false,
-                          "isCellEditable": true,
-                          "isEditable": true,
+                          "isCellEditable": false,
+                          "isEditable": false,
                           "isCellVisible": true,
                           "isDerived": false,
                           "label": "amount_revenue_h",
@@ -5822,10 +5800,10 @@
                           "textSize": "0.875rem",
                           "enableFilter": true,
                           "enableSort": true,
-                          "isVisible": true,
+                          "isVisible": false,
                           "isDisabled": false,
-                          "isCellEditable": true,
-                          "isEditable": true,
+                          "isCellEditable": false,
+                          "isEditable": false,
                           "isCellVisible": true,
                           "isDerived": false,
                           "label": "TOT_profit_h",
@@ -5849,10 +5827,10 @@
                           "textSize": "0.875rem",
                           "enableFilter": true,
                           "enableSort": true,
-                          "isVisible": true,
+                          "isVisible": false,
                           "isDisabled": false,
-                          "isCellEditable": true,
-                          "isEditable": true,
+                          "isCellEditable": false,
+                          "isEditable": false,
                           "isCellVisible": true,
                           "isDerived": false,
                           "label": "TOT_ROI_h",
@@ -5861,45 +5839,6 @@
                           "computedValue": "{{Table2Copy.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"TOT_ROI_h\"]))}}",
                           "sticky": "",
                           "validation": {}
-                        },
-                        "EditActions1": {
-                          "allowCellWrapping": false,
-                          "allowSameOptionsInNewRow": true,
-                          "index": 10,
-                          "width": 150,
-                          "originalId": "EditActions1",
-                          "id": "EditActions1",
-                          "alias": "EditActions1",
-                          "horizontalAlignment": "RIGHT",
-                          "verticalAlignment": "CENTER",
-                          "columnType": "editActions",
-                          "textSize": "0.875rem",
-                          "enableFilter": true,
-                          "enableSort": true,
-                          "isVisible": true,
-                          "isDisabled": false,
-                          "isCellEditable": false,
-                          "isEditable": false,
-                          "isCellVisible": true,
-                          "isDerived": true,
-                          "label": "Save / Discard",
-                          "isSaveVisible": true,
-                          "isDiscardVisible": true,
-                          "computedValue": "",
-                          "sticky": "right",
-                          "validation": {},
-                          "buttonStyle": "rgb(3, 179, 101)",
-                          "saveIconAlign": "left",
-                          "discardIconAlign": "left",
-                          "saveActionLabel": "Save",
-                          "discardActionLabel": "Discard",
-                          "saveButtonColor": "{{Table2Copy.processedTableData.map((currentRow, currentIndex) => ( (appsmith.theme.colors.primaryColor)))}}",
-                          "discardButtonColor": "#F22B2B",
-                          "saveBorderRadius": "{{Table2Copy.processedTableData.map((currentRow, currentIndex) => ( (appsmith.theme.borderRadius.appBorderRadius)))}}",
-                          "discardBorderRadius": "{{Table2Copy.processedTableData.map((currentRow, currentIndex) => ( (appsmith.theme.borderRadius.appBorderRadius)))}}",
-                          "discardButtonVariant": "TERTIARY",
-                          "isSaveDisabled": "{{Table2Copy.processedTableData.map((currentRow, currentIndex) => ( !Table2Copy.updatedRowIndices.includes(currentIndex)))}}",
-                          "isDiscardDisabled": "{{Table2Copy.processedTableData.map((currentRow, currentIndex) => ( !Table2Copy.updatedRowIndices.includes(currentIndex)))}}"
                         },
                         "approved_leads": {
                           "allowCellWrapping": false,
