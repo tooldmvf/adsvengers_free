@@ -5360,31 +5360,37 @@
                           "key": "primaryColumns.Appr_ROI.computedValue"
                         },
                         {
-                          "key": "primaryColumns.amount_revenue.computedValue"
-                        },
-                        {
-                          "key": "primaryColumns.TOT_profit.computedValue"
-                        },
-                        {
-                          "key": "primaryColumns.TOT_ROI.computedValue"
-                        },
-                        {
                           "key": "primaryColumns.Rejected_Rate.computedValue"
                         },
                         {
                           "key": "primaryColumns.Appr_profit.textColor"
                         },
                         {
-                          "key": "primaryColumns.TOT_profit.textColor"
-                        },
-                        {
                           "key": "primaryColumns.Appr_ROI.textColor"
                         },
                         {
-                          "key": "primaryColumns.TOT_ROI.textColor"
+                          "key": "primaryColumns.Rejected_Rate.textColor"
                         },
                         {
-                          "key": "primaryColumns.Rejected_Rate.textColor"
+                          "key": "primaryColumns.amount_revenue_h.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.TOT_profit_h.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.TOT_ROI_h.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.TOT_profit_h.textColor"
+                        },
+                        {
+                          "key": "primaryColumns.TOT_ROI_h.textColor"
+                        },
+                        {
+                          "key": "primaryColumns.approved_leads.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.leads_h.computedValue"
                         }
                       ],
                       "needsHeightForContent": true,
@@ -5422,7 +5428,7 @@
                         }
                       },
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                      "columnUpdatedAt": 1678801780489,
+                      "columnUpdatedAt": 1684846094824,
                       "originalBottomRow": 218,
                       "defaultSelectedRowIndices": [
                         0
@@ -5435,26 +5441,28 @@
                         "Approved_Rev",
                         "Appr_profit",
                         "Appr_ROI",
-                        "amount_revenue",
-                        "TOT_profit",
-                        "TOT_ROI",
-                        "Rejected_Rate"
+                        "approved_leads",
+                        "Rejected_Rate",
+                        "amount_revenue_h",
+                        "TOT_profit_h",
+                        "TOT_ROI_h",
+                        "leads_h"
                       ],
                       "dynamicPropertyPathList": [
                         {
                           "key": "primaryColumns.Appr_profit.textColor"
                         },
                         {
-                          "key": "primaryColumns.TOT_profit.textColor"
-                        },
-                        {
                           "key": "primaryColumns.Appr_ROI.textColor"
                         },
                         {
-                          "key": "primaryColumns.TOT_ROI.textColor"
+                          "key": "primaryColumns.Rejected_Rate.textColor"
                         },
                         {
-                          "key": "primaryColumns.Rejected_Rate.textColor"
+                          "key": "primaryColumns.TOT_profit_h.textColor"
+                        },
+                        {
+                          "key": "primaryColumns.TOT_ROI_h.textColor"
                         }
                       ],
                       "compactMode": "SHORT",
@@ -5471,7 +5479,10 @@
                         "Appr_ROI": 109,
                         "amount_revenue": 100,
                         "TOT_profit": 107,
-                        "TOT_ROI": 108
+                        "TOT_ROI": 108,
+                        "amount_revenue_h": 132,
+                        "TOT_profit_h": 117,
+                        "Rejected_Rate": 112
                       },
                       "parentRowSpace": 10,
                       "hideCard": false,
@@ -5623,93 +5634,6 @@
                           "validation": {},
                           "cellBackground": ""
                         },
-                        "amount_revenue": {
-                          "allowCellWrapping": false,
-                          "index": 5,
-                          "width": 150,
-                          "originalId": "amount_revenue",
-                          "id": "amount_revenue",
-                          "alias": "amount_revenue",
-                          "horizontalAlignment": "RIGHT",
-                          "verticalAlignment": "CENTER",
-                          "columnType": "number",
-                          "textColor": "",
-                          "textSize": "0.875rem",
-                          "fontStyle": "",
-                          "enableFilter": true,
-                          "enableSort": true,
-                          "isVisible": true,
-                          "isDisabled": false,
-                          "isCellEditable": false,
-                          "isEditable": false,
-                          "isCellVisible": true,
-                          "isDerived": false,
-                          "label": "Tot Rev.",
-                          "isSaveVisible": true,
-                          "isDiscardVisible": true,
-                          "computedValue": "{{Table2Copy.processedTableData.map((currentRow, currentIndex) => ( Utils2.myCurrency(currentRow[\"amount_revenue\"])))}}",
-                          "sticky": "",
-                          "validation": {},
-                          "cellBackground": ""
-                        },
-                        "TOT_profit": {
-                          "allowCellWrapping": false,
-                          "index": 6,
-                          "width": 150,
-                          "originalId": "TOT_profit",
-                          "id": "TOT_profit",
-                          "alias": "TOT_profit",
-                          "horizontalAlignment": "RIGHT",
-                          "verticalAlignment": "CENTER",
-                          "columnType": "number",
-                          "textColor": "{{Table2Copy.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"TOT_profit\"] < 0 ? 'red' : 'green'))}}",
-                          "textSize": "0.875rem",
-                          "fontStyle": "BOLD",
-                          "enableFilter": true,
-                          "enableSort": true,
-                          "isVisible": true,
-                          "isDisabled": false,
-                          "isCellEditable": false,
-                          "isEditable": false,
-                          "isCellVisible": true,
-                          "isDerived": false,
-                          "label": "Tot Profit",
-                          "isSaveVisible": true,
-                          "isDiscardVisible": true,
-                          "computedValue": "{{Table2Copy.processedTableData.map((currentRow, currentIndex) => ( Utils2.myCurrency(currentRow[\"TOT_profit\"])))}}",
-                          "sticky": "",
-                          "validation": {},
-                          "cellBackground": ""
-                        },
-                        "TOT_ROI": {
-                          "allowCellWrapping": false,
-                          "index": 7,
-                          "width": 150,
-                          "originalId": "TOT_ROI",
-                          "id": "TOT_ROI",
-                          "alias": "TOT_ROI",
-                          "horizontalAlignment": "RIGHT",
-                          "verticalAlignment": "CENTER",
-                          "columnType": "number",
-                          "textColor": "{{Table2Copy.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"TOT_ROI\"].toFixed(2) < 0 ? 'red' : (currentRow[\"TOT_ROI\"].toFixed(2)<20 ? '#eab308' :'green') ))}}",
-                          "textSize": "0.875rem",
-                          "fontStyle": "BOLD",
-                          "enableFilter": true,
-                          "enableSort": true,
-                          "isVisible": true,
-                          "isDisabled": false,
-                          "isCellEditable": false,
-                          "isEditable": false,
-                          "isCellVisible": true,
-                          "isDerived": false,
-                          "label": "Tot ROI",
-                          "isSaveVisible": true,
-                          "isDiscardVisible": true,
-                          "computedValue": "{{Table2Copy.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"TOT_ROI\"].toFixed(2) + ' %'))}}",
-                          "sticky": "",
-                          "validation": {},
-                          "cellBackground": ""
-                        },
                         "Rejected_Rate": {
                           "allowCellWrapping": false,
                           "index": 8,
@@ -5735,6 +5659,156 @@
                           "isSaveVisible": true,
                           "isDiscardVisible": true,
                           "computedValue": "{{Table2Copy.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Rejected_Rate\"].toFixed(2) + ' %'))}}",
+                          "sticky": "",
+                          "validation": {},
+                          "cellBackground": ""
+                        },
+                        "amount_revenue_h": {
+                          "allowCellWrapping": false,
+                          "allowSameOptionsInNewRow": true,
+                          "index": 5,
+                          "width": 150,
+                          "originalId": "amount_revenue_h",
+                          "id": "amount_revenue_h",
+                          "alias": "amount_revenue_h",
+                          "horizontalAlignment": "RIGHT",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "number",
+                          "textColor": "",
+                          "textSize": "0.875rem",
+                          "fontStyle": "",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": true,
+                          "isDisabled": false,
+                          "isCellEditable": false,
+                          "isEditable": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "1st Day Rev",
+                          "isSaveVisible": true,
+                          "isDiscardVisible": true,
+                          "computedValue": "{{Table2Copy.processedTableData.map((currentRow, currentIndex) => ( Utils2.myCurrency(currentRow[\"amount_revenue_h\"])))}}",
+                          "sticky": "",
+                          "validation": {},
+                          "cellBackground": ""
+                        },
+                        "TOT_profit_h": {
+                          "allowCellWrapping": false,
+                          "allowSameOptionsInNewRow": true,
+                          "index": 6,
+                          "width": 150,
+                          "originalId": "TOT_profit_h",
+                          "id": "TOT_profit_h",
+                          "alias": "TOT_profit_h",
+                          "horizontalAlignment": "RIGHT",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "number",
+                          "textColor": "{{Table2Copy.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"TOT_profit_h\"] < 0 ? 'red' : 'green'))}}",
+                          "textSize": "0.875rem",
+                          "fontStyle": "BOLD",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": true,
+                          "isDisabled": false,
+                          "isCellEditable": false,
+                          "isEditable": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "1st Day Profit",
+                          "isSaveVisible": true,
+                          "isDiscardVisible": true,
+                          "computedValue": "{{Table2Copy.processedTableData.map((currentRow, currentIndex) => ( Utils2.myCurrency(currentRow[\"TOT_profit_h\"])))}}",
+                          "sticky": "",
+                          "validation": {},
+                          "cellBackground": ""
+                        },
+                        "TOT_ROI_h": {
+                          "allowCellWrapping": false,
+                          "allowSameOptionsInNewRow": true,
+                          "index": 7,
+                          "width": 150,
+                          "originalId": "TOT_ROI_h",
+                          "id": "TOT_ROI_h",
+                          "alias": "TOT_ROI_h",
+                          "horizontalAlignment": "RIGHT",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "number",
+                          "textColor": "{{Table2Copy.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"TOT_ROI_h\"].toFixed(2) < 0 ? 'red' : (currentRow[\"TOT_ROI_h\"].toFixed(2)<20 ? '#eab308' :'green') ))}}",
+                          "textSize": "0.875rem",
+                          "fontStyle": "BOLD",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": true,
+                          "isDisabled": false,
+                          "isCellEditable": false,
+                          "isEditable": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "1st Day ROI",
+                          "isSaveVisible": true,
+                          "isDiscardVisible": true,
+                          "computedValue": "{{Table2Copy.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"TOT_ROI_h\"].toFixed(2) + ' %'))}}",
+                          "sticky": "",
+                          "validation": {},
+                          "cellBackground": ""
+                        },
+                        "approved_leads": {
+                          "allowCellWrapping": false,
+                          "allowSameOptionsInNewRow": true,
+                          "index": 5,
+                          "width": 150,
+                          "originalId": "approved_leads",
+                          "id": "approved_leads",
+                          "alias": "approved_leads",
+                          "horizontalAlignment": "RIGHT",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "number",
+                          "textColor": "",
+                          "textSize": "0.875rem",
+                          "fontStyle": "",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": true,
+                          "isDisabled": false,
+                          "isCellEditable": false,
+                          "isEditable": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "Appr. Leads",
+                          "isSaveVisible": true,
+                          "isDiscardVisible": true,
+                          "computedValue": "{{Table2Copy.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"approved_leads\"]))}}",
+                          "sticky": "",
+                          "validation": {},
+                          "cellBackground": ""
+                        },
+                        "leads_h": {
+                          "allowCellWrapping": false,
+                          "allowSameOptionsInNewRow": true,
+                          "index": 9,
+                          "width": 150,
+                          "originalId": "leads_h",
+                          "id": "leads_h",
+                          "alias": "leads_h",
+                          "horizontalAlignment": "RIGHT",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "number",
+                          "textColor": "",
+                          "textSize": "0.875rem",
+                          "fontStyle": "",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": true,
+                          "isDisabled": false,
+                          "isCellEditable": false,
+                          "isEditable": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "1st Day Leads",
+                          "isSaveVisible": true,
+                          "isDiscardVisible": true,
+                          "computedValue": "{{Table2Copy.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"leads_h\"]))}}",
                           "sticky": "",
                           "validation": {},
                           "cellBackground": ""

@@ -5,6 +5,9 @@ SELECT
 	sum(a.amount_revenue_approved)-sum(a.amount_spent_plus_fee) as "Appr_profit",
 	(sum(a.amount_revenue_approved)-sum(a.amount_spent_plus_fee))/(case when sum(a.amount_spent_plus_fee) = 0 then 1 else sum(a.amount_spent_plus_fee) end)*100 as "Appr_ROI",
 	sum(a.conversions_approved) as approved_leads,
+	sum(a.amount_revenue) as "amount_revenue",
+	sum(a.amount_revenue)-sum(a.amount_spent_plus_fee) as "TOT_profit",
+	(sum(a.amount_revenue)-sum(a.amount_spent_plus_fee))/(case when sum(a.amount_spent_plus_fee) = 0 then 1 else sum(a.amount_spent_plus_fee) end)*100 as "TOT_ROI",
 	sum(a.amount_revenue_h) as "amount_revenue_h",
 	sum(a.amount_revenue_h)-sum(a.amount_spent_plus_fee) as "TOT_profit_h",
 	(sum(a.amount_revenue_h)-sum(a.amount_spent_plus_fee))/(case when sum(a.amount_spent_plus_fee) = 0 then 1 else sum(a.amount_spent_plus_fee) end)*100 as "TOT_ROI_h",
@@ -18,13 +21,11 @@ INNER JOIN public.offer_category d1 on (d1.off_cat_id = d.fk_off_cat_id)
 INNER JOIN public.traffic_source c ON (b.fk_ts_id = c.ts_id)
 INNER JOIN public.user_profiles e ON (e.fk_user_id = a. fk_user_id)
 where 1=1
-and a.fk_user_id = '{{List2.triggeredItem.fk_user_id}}'
-and c.ts_id = '{{List2.triggeredItem.ts_id}}'
+and ({{ !SelectUserFBPage.selectedOptionValue}} OR text(a.fk_user_id) = text('{{SelectUserFBPage.selectedOptionValue}}'))
 and a.financial_date >= to_date('{{moment(DateFrom.selectedDate).format('YYYY-DD-MM')}}','YYYY-DD-MM')
 and a.financial_date <= to_date('{{moment(DateTo.selectedDate).format('YYYY-DD-MM')}}','YYYY-DD-MM')
 and ({{!SelectNetwork.selectedOptionValue}} OR text(b.fk_network_id) = text('{{SelectNetwork.selectedOptionValue}}'))
 and ({{SelectTSFront.selectedOptionValues.length == 0}} OR text(c.ts_id) IN ({{"'" + SelectTSFront.selectedOptionValues.join("', '") + "'"}}))
-and ({{MSUserNet.selectedOptionValues.length == 0}} OR text(a.fk_user_network_id) IN ({{"'" + MSUserNet.selectedOptionValues.join("', '") + "'"}}))
 group by 
   f.network_name_short||'|'||d1.off_cat_short||'|'||d.offer_id||' - '||d.offer_name
 order by sum(a.amount_revenue) desc
