@@ -19,7 +19,7 @@
           "parentRowSpace": 1,
           "type": "CANVAS_WIDGET",
           "canExtend": true,
-          "version": 78,
+          "version": 79,
           "minHeight": 900,
           "parentColumnSpace": 1,
           "dynamicBindingPathList": [],
@@ -2212,9 +2212,7 @@
                 "async () => {\n  await get_all_users.run();\n  await get_user_offers_table.run();\n}"
               ],
               "timeoutInMillisecond": 10000
-            }
-          ],
-          [
+            },
             {
               "id": "Campaign Name Builder Utility_get_all_networks",
               "name": "get_all_networks",
