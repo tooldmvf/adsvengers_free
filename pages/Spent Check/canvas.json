@@ -20,7 +20,7 @@
           "parentRowSpace": 1,
           "type": "CANVAS_WIDGET",
           "canExtend": true,
-          "version": 78,
+          "version": 79,
           "minHeight": 900,
           "parentColumnSpace": 1,
           "dynamicTriggerPathList": [],
@@ -1293,7 +1293,7 @@
                         "user": 169,
                         "customColumn1": 80,
                         "bm_name": 233,
-                        "ad_account_name": 236,
+                        "ad_account_name": 336,
                         "spent": 175
                       },
                       "parentRowSpace": 10,
@@ -2653,9 +2653,7 @@
                 "async () => {\n  await get_all_users.run();\n  await BMTOT.run();\n  await BM.run();\n}"
               ],
               "timeoutInMillisecond": 10000
-            }
-          ],
-          [
+            },
             {
               "id": "Spent Check_get_ts",
               "name": "get_ts",

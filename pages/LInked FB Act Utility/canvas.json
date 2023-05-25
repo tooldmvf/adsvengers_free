@@ -112,7 +112,7 @@
                           "key": "onClick"
                         }
                       ],
-                      "leftColumn": 55,
+                      "leftColumn": 57,
                       "dynamicBindingPathList": [
                         {
                           "key": "buttonColor"
@@ -159,6 +159,9 @@
                         },
                         {
                           "key": "borderRadius"
+                        },
+                        {
+                          "key": "isVisible"
                         }
                       ],
                       "labelStyle": "",
@@ -168,7 +171,7 @@
                       "dynamicHeight": "AUTO_HEIGHT",
                       "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                       "showStepArrows": false,
-                      "isVisible": "",
+                      "isVisible": "{{appsmith.store.myEmail == 'tool@dmvf.net'}}\t",
                       "version": 2,
                       "isLoading": false,
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
@@ -199,7 +202,7 @@
                       "key": "u2v2s0nm6g",
                       "labelTextSize": "0.875rem",
                       "isDeprecated": false,
-                      "rightColumn": 55.11111111111111,
+                      "rightColumn": 57,
                       "widgetId": "rjhb2y4zem",
                       "minWidth": 450,
                       "label": "New FB Token",

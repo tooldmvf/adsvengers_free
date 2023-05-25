@@ -19,7 +19,7 @@
           "parentRowSpace": 1,
           "type": "CANVAS_WIDGET",
           "canExtend": true,
-          "version": 78,
+          "version": 79,
           "minHeight": 880,
           "parentColumnSpace": 1,
           "dynamicBindingPathList": [],
@@ -662,7 +662,7 @@
                               "resetFormOnClick": false,
                               "boxShadow": "none",
                               "widgetName": "Button1",
-                              "onClick": "{{navigateTo('https://n8n.theadsvengers.com/webhook/ffcd0ad9-bf1e-4e85-aaf2-9f0b0c293be2',{'date_from':Select1.selectedOptionValue},'NEW_WINDOW')}}",
+                              "onClick": "{{navigateTo('https://n8n.theadsvengers.com/webhook/ffcd0ad9-bf1e-4e85-aaf2-9f0b0c293be2?date_from=' + Select1.selectedOptionValue, {}, 'NEW_WINDOW');}}",
                               "buttonColor": "#15803d",
                               "dynamicPropertyPathList": [
                                 {
@@ -687,7 +687,7 @@
                                   "key": "onClick"
                                 }
                               ],
-                              "leftColumn": 50.666666666666664,
+                              "leftColumn": 51,
                               "dynamicBindingPathList": [
                                 {
                                   "key": "borderRadius"
@@ -729,7 +729,7 @@
                                 "dropdown"
                               ],
                               "topRow": 0,
-                              "bottomRow": 5,
+                              "bottomRow": 4,
                               "parentRowSpace": 10,
                               "labelWidth": "22",
                               "type": "SELECT_WIDGET",
@@ -775,7 +775,7 @@
                               "originalTopRow": 0,
                               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                               "maxDynamicHeight": 9000,
-                              "originalBottomRow": 4,
+                              "originalBottomRow": 5,
                               "minDynamicHeight": 4
                             }
                           ]

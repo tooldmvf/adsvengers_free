@@ -20,7 +20,7 @@
           "parentRowSpace": 1,
           "type": "CANVAS_WIDGET",
           "canExtend": true,
-          "version": 78,
+          "version": 79,
           "minHeight": 1292,
           "dynamicTriggerPathList": [],
           "parentColumnSpace": 1,
@@ -2215,6 +2215,28 @@
         "layoutOnLoadActions": [
           [
             {
+              "id": "OLD Commissions Admin_get_all_users",
+              "name": "get_all_users",
+              "confirmBeforeExecute": false,
+              "pluginType": "API",
+              "jsonPathKeys": [
+                "appsmith.store.access_token"
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "OLD Commissions Admin_get_comm_type",
+              "name": "get_comm_type",
+              "confirmBeforeExecute": false,
+              "pluginType": "API",
+              "jsonPathKeys": [
+                "appsmith.store.access_token"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
               "id": "OLD Commissions Admin_user_commissions",
               "name": "user_commissions",
               "confirmBeforeExecute": false,
@@ -2254,28 +2276,6 @@
                 "moment(DateTo.selectedDate).format('YYYY-DD-MM')",
                 "\"'\" + SelectNetwork.selectedOptionValues.join(\"', '\") + \"'\"",
                 "moment(DateFrom.selectedDate).format('YYYY-DD-MM')"
-              ],
-              "timeoutInMillisecond": 10000
-            }
-          ],
-          [
-            {
-              "id": "OLD Commissions Admin_get_all_users",
-              "name": "get_all_users",
-              "confirmBeforeExecute": false,
-              "pluginType": "API",
-              "jsonPathKeys": [
-                "appsmith.store.access_token"
-              ],
-              "timeoutInMillisecond": 10000
-            },
-            {
-              "id": "OLD Commissions Admin_get_comm_type",
-              "name": "get_comm_type",
-              "confirmBeforeExecute": false,
-              "pluginType": "API",
-              "jsonPathKeys": [
-                "appsmith.store.access_token"
               ],
               "timeoutInMillisecond": 10000
             }
