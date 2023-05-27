@@ -1,4 +1,4 @@
-select distinct
+select
  b.fk_ad_account_id
 ,d.ad_account_name
 ,e.bm_name

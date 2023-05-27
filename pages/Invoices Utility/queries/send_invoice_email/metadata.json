@@ -30,7 +30,8 @@
           "attachments": "{{FilePicker1.files}}",
           "replyTo": "{{appsmith.store.myEmail}}",
           "cc": "",
-          "bcc": "{{appsmith.store.myEmail}}"
+          "bcc": "{{appsmith.store.myEmail}}",
+          "bodyType": "text/html"
         }
       }
     },

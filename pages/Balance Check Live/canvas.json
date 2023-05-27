@@ -20,7 +20,7 @@
           "parentRowSpace": 1,
           "type": "CANVAS_WIDGET",
           "canExtend": true,
-          "version": 78,
+          "version": 79,
           "minHeight": 900,
           "parentColumnSpace": 1,
           "dynamicTriggerPathList": [],
@@ -2620,22 +2620,6 @@
         "layoutOnLoadActions": [
           [
             {
-              "id": "Balance Check Live_Tab4User",
-              "name": "Tab4User",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [
-                "!SelectNetwork.selectedOptionValue",
-                "SelectTSFront.selectedOptionValues.length == 0",
-                "!SelectUser.selectedOptionValue",
-                "SelectUser.selectedOptionValue",
-                "SelectNetwork.selectedOptionValue",
-                "moment().add(1, 'hour')",
-                "\"'\" + SelectTSFront.selectedOptionValues.join(\"', '\") + \"'\""
-              ],
-              "timeoutInMillisecond": 10000
-            },
-            {
               "id": "Balance Check Live_Utils2.onLoad",
               "name": "Utils2.onLoad",
               "collectionId": "Balance Check Live_Utils2",
@@ -2645,9 +2629,7 @@
                 "async () => {\n  await get_all_users.run();\n  await TotalLine.run();\n  await Tab4Offer.run();\n}"
               ],
               "timeoutInMillisecond": 10000
-            }
-          ],
-          [
+            },
             {
               "id": "Balance Check Live_get_all_networks",
               "name": "get_all_networks",
@@ -2665,6 +2647,24 @@
               "pluginType": "API",
               "jsonPathKeys": [
                 "appsmith.store.access_token"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
+              "id": "Balance Check Live_Tab4User",
+              "name": "Tab4User",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "!SelectNetwork.selectedOptionValue",
+                "SelectTSFront.selectedOptionValues.length == 0",
+                "!SelectUser.selectedOptionValue",
+                "SelectUser.selectedOptionValue",
+                "SelectNetwork.selectedOptionValue",
+                "moment().add(1, 'hour')",
+                "\"'\" + SelectTSFront.selectedOptionValues.join(\"', '\") + \"'\""
               ],
               "timeoutInMillisecond": 10000
             }
