@@ -1,5 +1,0 @@
-SELECT b.network_name,a.fk_network_id,a.fk_user_id,a.financial_month,amount_revenue_approved
-FROM public.user_financial_month a
-inner join public.network b on (b.network_id = a.fk_network_id)
-where b.network_name_short != 'AW'
-order by 1 asc

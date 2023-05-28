@@ -1,0 +1,4 @@
+{
+	"amount_revenue_approved": "{{OtherRevInput.value}}",
+	"amount_spent_wfees": "{{OtherSpentInput.value}}"
+}
