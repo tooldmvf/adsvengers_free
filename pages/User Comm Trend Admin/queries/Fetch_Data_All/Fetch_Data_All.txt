@@ -1,13 +1,48 @@
-SELECT 'Revenue', a.fk_user_id, a.financial_month, sum(amount_revenue_approved) as appr_rev
-FROM public.user_financial_month a
-inner join public.network b on (b.network_id = a.fk_network_id)
-where 1 = 1
-and b.network_name_short != 'AW'
-GROUP By a.fk_user_id, a.financial_month
-UNION ALL
-SELECT 'Spent', a.fk_user_id, a.financial_month, SUM(amount_spent)*(1+(a.spent_rate_fees/100::float))
-FROM public.user_spent_month a
-inner join public.facebook_bm b on (b.bm_id = a.fk_bm_id)
-where 1 = 1
-and fk_bm_id != 'Ai20-Google'
-group by a.fk_user_id, a.financial_month,a.spent_rate_fees 
+select * from crosstab('SELECT ''Revenue'', substring(financial_month,5,2)::integer m,  sum(amount_revenue_approved) 
+FROM public.user_totals_month a
+Where 1=1
+and ({{!SelectUser.selectedOptionValue}} OR (text(a.fk_user_id) IN ({{"''" + SelectUser.selectedOptionValue + "''"}})))
+and substring(financial_month,1,4) = ''{{SelectYear.selectedOptionValue}}''
+GROUP By a.financial_month
+union All
+SELECT ''Spent'' , substring(financial_month,5,2)::integer m,  sum(amount_spent)
+FROM public.user_totals_month a
+Where 1=1
+and ({{!SelectUser.selectedOptionValue}} OR (text(a.fk_user_id) IN ({{"''" + SelectUser.selectedOptionValue + "''"}})))
+and substring(financial_month,1,4) = ''{{SelectYear.selectedOptionValue}}''
+GROUP By a.financial_month
+union All
+SELECT ''Profit'' , substring(financial_month,5,2)::integer m,  sum(amount_revenue_approved) -sum(amount_spent)
+FROM public.user_totals_month a
+Where 1=1
+and ({{!SelectUser.selectedOptionValue}} OR (text(a.fk_user_id) IN ({{"''" + SelectUser.selectedOptionValue + "''"}})))
+and substring(financial_month,1,4) = ''{{SelectYear.selectedOptionValue}}''
+GROUP By a.financial_month
+union All
+SELECT ''Roi %'' , substring(financial_month,5,2)::integer m,  (sum(amount_revenue_approved) -sum(amount_spent))/sum(amount_spent)
+FROM public.user_totals_month a
+Where 1=1
+and ({{!SelectUser.selectedOptionValue}} OR (text(a.fk_user_id) IN ({{"''" + SelectUser.selectedOptionValue + "''"}})))
+and substring(financial_month,1,4) = ''{{SelectYear.selectedOptionValue}}''
+GROUP By a.financial_month
+union All
+SELECT ''Invoice'' , substring(financial_month,5,2)::integer m,  sum(amount_invoice)
+FROM public.user_totals_month a
+Where 1=1
+and ({{!SelectUser.selectedOptionValue}} OR (text(a.fk_user_id) IN ({{"''" + SelectUser.selectedOptionValue + "''"}})))
+and substring(financial_month,1,4) = ''{{SelectYear.selectedOptionValue}}''
+GROUP By a.financial_month' 
+, 'select m from generate_series(1,12) m')
+AS ct("Type" TEXT, 
+  "Jan" float,
+  "Feb" float,
+  "Mar" float,
+  "Apr" float,
+  "May" float,
+  "Jun" float,
+  "Jul" float,
+  "Aug" float,
+  "Sep" float,
+  "Oct" float,
+  "Nov" float,
+  "Dec" float)

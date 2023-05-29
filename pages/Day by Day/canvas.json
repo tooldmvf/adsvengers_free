@@ -20,7 +20,7 @@
           "parentRowSpace": 1,
           "type": "CANVAS_WIDGET",
           "canExtend": true,
-          "version": 78,
+          "version": 79,
           "minHeight": 900,
           "parentColumnSpace": 1,
           "dynamicTriggerPathList": [],
@@ -294,6 +294,15 @@
                       "isVisible": true,
                       "onClick": "{{navigateTo('Invoices Utility', {}, 'SAME_WINDOW')}}",
                       "backgroundColor": "#f4f4f5"
+                    },
+                    "menuItemkogom9qp7k": {
+                      "id": "menuItemkogom9qp7k",
+                      "index": 6,
+                      "label": "Accounting",
+                      "widgetId": "ornyty4diq",
+                      "isDisabled": false,
+                      "isVisible": true,
+                      "onClick": "{{navigateTo('Accounting', {}, 'SAME_WINDOW');}}"
                     }
                   },
                   "buttonType": "MENU",
@@ -467,6 +476,9 @@
                 },
                 {
                   "key": "groupButtons.groupButtonz40p7cz8uy.menuItems.menuItem8uotiiku3d.onClick"
+                },
+                {
+                  "key": "groupButtons.groupButtonenmx60lrah.menuItems.menuItemkogom9qp7k.onClick"
                 }
               ],
               "leftColumn": 24,
@@ -7817,25 +7829,7 @@
                 "async () => {\n  await storeValue('custom_off', 'false');\n  await storeValue('custom_off2', 'false');\n  await get_all_users.run();\n  await TableTotal.tblSummary();\n}"
               ],
               "timeoutInMillisecond": 10000
-            }
-          ],
-          [
-            {
-              "id": "Day by Day_GetUserAccount",
-              "name": "GetUserAccount",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [
-                "\"'\" + SelectNetworkDbd.selectedOptionValues.join(\"', '\") + \"'\"",
-                "SelectTSFront.selectedOptionValues.length == 0",
-                "\"'\" + MultiSelectUsers.selectedOptionValues.join(\"', '\") + \"'\"",
-                "SelectNetworkDbd.selectedOptionValues.length == 0",
-                "\"'\" + SelectTSFront.selectedOptionValues.join(\"', '\") + \"'\""
-              ],
-              "timeoutInMillisecond": 10000
-            }
-          ],
-          [
+            },
             {
               "id": "Day by Day_get_all_networks",
               "name": "get_all_networks",
@@ -7853,6 +7847,22 @@
               "pluginType": "API",
               "jsonPathKeys": [
                 "appsmith.store.access_token"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
+              "id": "Day by Day_GetUserAccount",
+              "name": "GetUserAccount",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "\"'\" + SelectNetworkDbd.selectedOptionValues.join(\"', '\") + \"'\"",
+                "SelectTSFront.selectedOptionValues.length == 0",
+                "\"'\" + MultiSelectUsers.selectedOptionValues.join(\"', '\") + \"'\"",
+                "SelectNetworkDbd.selectedOptionValues.length == 0",
+                "\"'\" + SelectTSFront.selectedOptionValues.join(\"', '\") + \"'\""
               ],
               "timeoutInMillisecond": 10000
             }

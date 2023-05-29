@@ -1,0 +1,7 @@
+{ 
+	"fk_user_id": "{{SelectUser.selectedOptionValue}}", 
+	"financial_month": "{{SelectYear.selectedOptionValue.concat(SelectMonth.selectedOptionValue)}}",
+	"amount_revenue_approved": "{{Hidden_rev.text}}",
+	"amount_invoice": "{{HiddenAmountInvoice.text}}",
+	"amount_spent": "{{Hidden_spent.text}}"
+}

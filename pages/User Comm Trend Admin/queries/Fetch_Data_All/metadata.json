@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "SELECT 'Revenue', a.fk_user_id, a.financial_month, sum(amount_revenue_approved) as appr_rev\nFROM public.user_financial_month a\ninner join public.network b on (b.network_id = a.fk_network_id)\nwhere 1 = 1\nand b.network_name_short != 'AW'\nGROUP By a.fk_user_id, a.financial_month\nUNION ALL\nSELECT 'Spent', a.fk_user_id, a.financial_month, SUM(amount_spent)*(1+(a.spent_rate_fees/100::float))\nFROM public.user_spent_month a\ninner join public.facebook_bm b on (b.bm_id = a.fk_bm_id)\nwhere 1 = 1\nand fk_bm_id != 'Ai20-Google'\ngroup by a.fk_user_id, a.financial_month,a.spent_rate_fees \n",
+      "body": "select * from crosstab('SELECT ''Revenue'', substring(financial_month,5,2)::integer m,  sum(amount_revenue_approved) \nFROM public.user_totals_month a\nWhere 1=1\nand ({{!SelectUser.selectedOptionValue}} OR (text(a.fk_user_id) IN ({{\"''\" + SelectUser.selectedOptionValue + \"''\"}})))\nand substring(financial_month,1,4) = ''{{SelectYear.selectedOptionValue}}''\nGROUP By a.financial_month\nunion All\nSELECT ''Spent'' , substring(financial_month,5,2)::integer m,  sum(amount_spent)\nFROM public.user_totals_month a\nWhere 1=1\nand ({{!SelectUser.selectedOptionValue}} OR (text(a.fk_user_id) IN ({{\"''\" + SelectUser.selectedOptionValue + \"''\"}})))\nand substring(financial_month,1,4) = ''{{SelectYear.selectedOptionValue}}''\nGROUP By a.financial_month\nunion All\nSELECT ''Profit'' , substring(financial_month,5,2)::integer m,  sum(amount_revenue_approved) -sum(amount_spent)\nFROM public.user_totals_month a\nWhere 1=1\nand ({{!SelectUser.selectedOptionValue}} OR (text(a.fk_user_id) IN ({{\"''\" + SelectUser.selectedOptionValue + \"''\"}})))\nand substring(financial_month,1,4) = ''{{SelectYear.selectedOptionValue}}''\nGROUP By a.financial_month\nunion All\nSELECT ''Roi %'' , substring(financial_month,5,2)::integer m,  (sum(amount_revenue_approved) -sum(amount_spent))/sum(amount_spent)\nFROM public.user_totals_month a\nWhere 1=1\nand ({{!SelectUser.selectedOptionValue}} OR (text(a.fk_user_id) IN ({{\"''\" + SelectUser.selectedOptionValue + \"''\"}})))\nand substring(financial_month,1,4) = ''{{SelectYear.selectedOptionValue}}''\nGROUP By a.financial_month\nunion All\nSELECT ''Invoice'' , substring(financial_month,5,2)::integer m,  sum(amount_invoice)\nFROM public.user_totals_month a\nWhere 1=1\nand ({{!SelectUser.selectedOptionValue}} OR (text(a.fk_user_id) IN ({{\"''\" + SelectUser.selectedOptionValue + \"''\"}})))\nand substring(financial_month,1,4) = ''{{SelectYear.selectedOptionValue}}''\nGROUP By a.financial_month' \n, 'select m from generate_series(1,12) m')\nAS ct(\"Type\" TEXT, \n  \"Jan\" float,\n  \"Feb\" float,\n  \"Mar\" float,\n  \"Apr\" float,\n  \"May\" float,\n  \"Jun\" float,\n  \"Jul\" float,\n  \"Aug\" float,\n  \"Sep\" float,\n  \"Oct\" float,\n  \"Nov\" float,\n  \"Dec\" float)\n",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
@@ -27,11 +27,19 @@
       ]
     },
     "executeOnLoad": true,
-    "dynamicBindingPathList": [],
+    "dynamicBindingPathList": [
+      {
+        "key": "body"
+      }
+    ],
     "isValid": true,
     "invalids": [],
     "messages": [],
-    "jsonPathKeys": [],
+    "jsonPathKeys": [
+      "!SelectUser.selectedOptionValue",
+      "\"''\" + SelectUser.selectedOptionValue + \"''\"",
+      "SelectYear.selectedOptionValue"
+    ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],

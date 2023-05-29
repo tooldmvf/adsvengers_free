@@ -1,1 +1,0 @@
-{ "amount_spent": "{{this.params.currentRow.amount_spent}}" }

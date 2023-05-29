@@ -1,7 +1,0 @@
-{ 
-	"fk_user_id": "{{SelectUser.selectedOptionValue}}", 
-	"financial_month": "{{SelectMonth.selectedOptionValue}}",
-	"amount_revenue_approved": "{{Hidden_rev.text}}",
-	"commissions_fee": "{{NumberSlider1.value}}",
-	"amount_spent": "{{Hidden_spent.text}}"
-}

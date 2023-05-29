@@ -1,1 +1,0 @@
-{ "amount_revenue_approved": "{{this.params.currentRow.amount_revenue_approved}}" }

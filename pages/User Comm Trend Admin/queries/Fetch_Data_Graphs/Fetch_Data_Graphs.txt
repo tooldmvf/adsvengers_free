@@ -1,0 +1,12 @@
+SELECT financial_month
+,sum(amount_revenue_approved) amount_revenue_approved
+,sum(amount_spent) amount_spent
+,sum(amount_revenue_approved)-sum(amount_spent) amount_profit
+,sum(amount_invoice) amount_invoice
+,(sum(amount_revenue_approved)-sum(amount_spent))/sum(amount_spent)*100 roi
+FROM public.user_totals_month a
+Where 1=1
+and ({{!SelectUser.selectedOptionValue}} OR (text(a.fk_user_id) IN ({{"'" + SelectUser.selectedOptionValue + "'"}})))
+and substring(financial_month,1,4) = '{{SelectYear.selectedOptionValue}}'
+group BY financial_month
+ORDER BY 1 asc

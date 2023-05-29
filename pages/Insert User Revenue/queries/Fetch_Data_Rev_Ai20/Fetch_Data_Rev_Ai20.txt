@@ -1,5 +1,0 @@
-SELECT a.fk_user_id,a.financial_month,amount_revenue_approved,commissions_fee
-FROM public.user_ai20google_month a
-where 1 = 1
-and ({{!SelectUser.selectedOptionValue}} OR (text(a.fk_user_id) IN ({{"'" + SelectUser.selectedOptionValue + "'"}})))
-AND a.financial_month = '{{SelectMonth.selectedOptionValue}}'
