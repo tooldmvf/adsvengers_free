@@ -1246,7 +1246,7 @@
                       "widgetId": "0mnccj9n89",
                       "containerStyle": "card",
                       "minWidth": 450,
-                      "isVisible": "{{SelectMonth.selectedOptionValue.length >0 && SelectYear.selectedOptionValue.length >0}}",
+                      "isVisible": "{{SelectMonth.selectedOptionValue.length >0 && SelectYear.selectedOptionValue.length >0 && SelectUser.selectedOptionValue.length >0}}",
                       "version": 1,
                       "parentId": "qd74yy4u3t",
                       "renderMode": "CANVAS",
@@ -1857,7 +1857,7 @@
                       "widgetId": "34oq8af7zp",
                       "containerStyle": "card",
                       "minWidth": 450,
-                      "isVisible": "{{SelectMonth.selectedOptionValue.length >0 && SelectYear.selectedOptionValue.length >0}}",
+                      "isVisible": "{{SelectMonth.selectedOptionValue.length >0 && SelectYear.selectedOptionValue.length >0 && SelectUser.selectedOptionValue.length >0}}",
                       "version": 1,
                       "parentId": "qd74yy4u3t",
                       "renderMode": "CANVAS",
@@ -2476,7 +2476,7 @@
                       "widgetId": "tz6q6z3cm1",
                       "containerStyle": "card",
                       "minWidth": 450,
-                      "isVisible": "{{SelectMonth.selectedOptionValue.length >0 && SelectYear.selectedOptionValue.length >0}}",
+                      "isVisible": "{{SelectMonth.selectedOptionValue.length >0 && SelectYear.selectedOptionValue.length >0 && SelectUser.selectedOptionValue.length >0}}",
                       "version": 1,
                       "parentId": "qd74yy4u3t",
                       "renderMode": "CANVAS",
@@ -2902,7 +2902,7 @@
                       "widgetId": "2ibk9sc735",
                       "containerStyle": "card",
                       "minWidth": 450,
-                      "isVisible": "{{SelectMonth.selectedOptionValue.length >0 && SelectYear.selectedOptionValue.length >0}}",
+                      "isVisible": "{{SelectMonth.selectedOptionValue.length >0 && SelectYear.selectedOptionValue.length >0 && SelectUser.selectedOptionValue.length >0}}",
                       "version": 1,
                       "parentId": "qd74yy4u3t",
                       "renderMode": "CANVAS",
@@ -3989,6 +3989,11 @@
                             {
                               "mobileBottomRow": 13,
                               "widgetName": "Text11Copy1CopyCopyCopyCopy3",
+                              "dynamicPropertyPathList": [
+                                {
+                                  "key": "isVisible"
+                                }
+                              ],
                               "displayName": "Text",
                               "iconSVG": "/static/media/icon.97c59b523e6f70ba6f40a10fc2c7c5b5.svg",
                               "searchTags": [
@@ -4017,6 +4022,9 @@
                                 },
                                 {
                                   "key": "borderRadius"
+                                },
+                                {
+                                  "key": "isVisible"
                                 }
                               ],
                               "shouldTruncate": false,
@@ -4029,7 +4037,7 @@
                               "dynamicHeight": "AUTO_HEIGHT",
                               "widgetId": "3e9c33a4tz",
                               "minWidth": 450,
-                              "isVisible": true,
+                              "isVisible": "{{appsmith.store.role_level>100}}",
                               "fontStyle": "BOLD",
                               "textColor": "#231F20",
                               "version": 1,
@@ -4358,7 +4366,7 @@
                       "widgetId": "1e2grhacpy",
                       "containerStyle": "card",
                       "minWidth": 450,
-                      "isVisible": "{{SelectMonth.selectedOptionValue.length >0 && SelectYear.selectedOptionValue.length >0}}",
+                      "isVisible": "{{SelectMonth.selectedOptionValue.length >0 && SelectYear.selectedOptionValue.length >0 && SelectUser.selectedOptionValue.length >0}}",
                       "version": 1,
                       "parentId": "qd74yy4u3t",
                       "renderMode": "CANVAS",
