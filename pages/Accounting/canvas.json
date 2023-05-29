@@ -753,7 +753,7 @@
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "mobileLeftColumn": 0,
               "maxDynamicHeight": 9000,
-              "originalBottomRow": 82,
+              "originalBottomRow": 83,
               "fontSize": "0.875rem",
               "minDynamicHeight": 4
             },
@@ -4303,7 +4303,7 @@
                               "boxShadow": "none",
                               "mobileBottomRow": 56,
                               "widgetName": "Button1",
-                              "onClick": "{{save_monthly_data.run()}}",
+                              "onClick": "{{save_monthly_data.run().then(() => {\n  showAlert('Data Saved on Monthly Table', 'success');\n}).catch(() => {});}}",
                               "buttonColor": "#fde047",
                               "dynamicPropertyPathList": [
                                 {
@@ -4497,7 +4497,7 @@
                       "serverSideFiltering": false,
                       "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( appsmith.store.myUser))(SelectUser.options, SelectUser.serverSideFiltering) }}",
                       "animateLoading": true,
-                      "leftColumn": 25,
+                      "leftColumn": 22,
                       "dynamicBindingPathList": [
                         {
                           "key": "accentColor"
