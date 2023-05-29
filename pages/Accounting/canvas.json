@@ -4305,6 +4305,11 @@
                               "widgetName": "Button1",
                               "onClick": "{{save_monthly_data.run()}}",
                               "buttonColor": "#fde047",
+                              "dynamicPropertyPathList": [
+                                {
+                                  "key": "isVisible"
+                                }
+                              ],
                               "displayName": "Button",
                               "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
                               "searchTags": [
@@ -4328,6 +4333,9 @@
                               "dynamicBindingPathList": [
                                 {
                                   "key": "borderRadius"
+                                },
+                                {
+                                  "key": "isVisible"
                                 }
                               ],
                               "text": "Save Data",
@@ -4338,7 +4346,7 @@
                               "isDefaultClickDisabled": true,
                               "widgetId": "1f19iia9tf",
                               "minWidth": 120,
-                              "isVisible": true,
+                              "isVisible": "{{appsmith.store.role_level>100}}",
                               "recaptchaType": "V3",
                               "version": 1,
                               "parentId": "lvya69kw4u",
