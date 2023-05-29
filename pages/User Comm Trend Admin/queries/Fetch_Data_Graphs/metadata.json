@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "SELECT financial_month\n,sum(amount_revenue_approved) amount_revenue_approved\n,sum(amount_spent) amount_spent\n,sum(amount_revenue_approved)-sum(amount_spent) amount_profit\n,sum(amount_invoice) amount_invoice\n,(sum(amount_revenue_approved)-sum(amount_spent))/sum(amount_spent)*100 roi\nFROM public.user_totals_month a\nWhere 1=1\nand ({{!SelectUser.selectedOptionValue}} OR (text(a.fk_user_id) IN ({{\"'\" + SelectUser.selectedOptionValue + \"'\"}})))\nand substring(financial_month,1,4) = '{{SelectYear.selectedOptionValue}}'\ngroup BY financial_month\nORDER BY 1 asc\n",
+      "body": "SELECT financial_month\n,sum(amount_revenue_approved) amount_revenue_approved\n,sum(amount_spent) amount_spent\n,sum(amount_revenue_approved)-sum(amount_spent) amount_profit\n,sum(amount_invoice) amount_invoice\n,(sum(amount_revenue_approved)-sum(amount_spent))/(case when sum(amount_spent) = 0 then 1 else sum(amount_spent) end)*100 roi\nFROM public.user_totals_month a\nWhere 1=1\nand ({{!SelectUser.selectedOptionValue}} OR (text(a.fk_user_id) IN ({{\"'\" + SelectUser.selectedOptionValue + \"'\"}})))\nand substring(financial_month,1,4) = '{{SelectYear.selectedOptionValue}}'\ngroup BY financial_month\nORDER BY 1 asc\n",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
@@ -26,7 +26,7 @@
         }
       ]
     },
-    "executeOnLoad": true,
+    "executeOnLoad": false,
     "dynamicBindingPathList": [
       {
         "key": "body"
@@ -40,7 +40,7 @@
       "\"'\" + SelectUser.selectedOptionValue + \"'\"",
       "SelectYear.selectedOptionValue"
     ],
-    "userSetOnLoad": false,
+    "userSetOnLoad": true,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []

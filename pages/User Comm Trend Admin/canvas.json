@@ -1732,34 +1732,6 @@
               ],
               "timeoutInMillisecond": 10000
             }
-          ],
-          [
-            {
-              "id": "User Comm Trend Admin_Fetch_Data_All",
-              "name": "Fetch_Data_All",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [
-                "!SelectUser.selectedOptionValue",
-                "\"''\" + SelectUser.selectedOptionValue + \"''\"",
-                "SelectYear.selectedOptionValue"
-              ],
-              "timeoutInMillisecond": 10000
-            }
-          ],
-          [
-            {
-              "id": "User Comm Trend Admin_Fetch_Data_Graphs",
-              "name": "Fetch_Data_Graphs",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [
-                "!SelectUser.selectedOptionValue",
-                "\"'\" + SelectUser.selectedOptionValue + \"'\"",
-                "SelectYear.selectedOptionValue"
-              ],
-              "timeoutInMillisecond": 10000
-            }
           ]
         ],
         "layoutOnLoadActionErrors": [],

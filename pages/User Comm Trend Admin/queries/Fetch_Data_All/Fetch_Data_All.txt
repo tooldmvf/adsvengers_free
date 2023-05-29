@@ -1,4 +1,5 @@
-select * from crosstab('SELECT ''Revenue'', substring(financial_month,5,2)::integer m,  sum(amount_revenue_approved) 
+select * from crosstab(
+'SELECT ''Revenue'', substring(financial_month,5,2)::integer m,  sum(amount_revenue_approved) 
 FROM public.user_totals_month a
 Where 1=1
 and ({{!SelectUser.selectedOptionValue}} OR (text(a.fk_user_id) IN ({{"''" + SelectUser.selectedOptionValue + "''"}})))
@@ -19,7 +20,7 @@ and ({{!SelectUser.selectedOptionValue}} OR (text(a.fk_user_id) IN ({{"''" + Sel
 and substring(financial_month,1,4) = ''{{SelectYear.selectedOptionValue}}''
 GROUP By a.financial_month
 union All
-SELECT ''Roi %'' , substring(financial_month,5,2)::integer m,  (sum(amount_revenue_approved) -sum(amount_spent))/sum(amount_spent)
+SELECT ''Roi %'' , substring(financial_month,5,2)::integer m,  (sum(amount_revenue_approved) -sum(amount_spent))/(case when sum(amount_spent) = 0 then 1 else sum(amount_spent) end)
 FROM public.user_totals_month a
 Where 1=1
 and ({{!SelectUser.selectedOptionValue}} OR (text(a.fk_user_id) IN ({{"''" + SelectUser.selectedOptionValue + "''"}})))
