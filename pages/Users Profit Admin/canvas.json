@@ -14,7 +14,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 2350,
+          "bottomRow": 1930,
           "containerStyle": "none",
           "snapRows": 125,
           "parentRowSpace": 1,
@@ -4837,7 +4837,7 @@
                       "chartData": {
                         "z2suajj0gw": {
                           "seriesName": "ROI%",
-                          "data": "{{SelectFinancial.data.filter(f => (f.tot_revenue-f.spent_wfees)>0).map( (obj) =>{ return  {'x': obj.User_name, 'y': ((obj.tot_revenue-obj.spent_wfees)/obj.spent_wfees*100).toFixed(0)} })}}"
+                          "data": "{{SelectFinancial.data.filter(f => (f.tot_revenue-f.spent_wfees)>0 && f.spent_wfees>0).map( (obj) =>{ return  {'x': obj.User_name, 'y': ((obj.tot_revenue-obj.spent_wfees)/obj.spent_wfees*100).toFixed(0)} })}}"
                         }
                       },
                       "animateLoading": true,
@@ -6852,85 +6852,6 @@
               "maxDynamicHeight": 9000,
               "width": 1231.2,
               "minDynamicHeight": 24
-            },
-            {
-              "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
-              "widgetName": "Chart2",
-              "allowScroll": false,
-              "displayName": "Chart",
-              "iconSVG": "/static/media/icon.6adbe31ed817fc4bfd66f9f0a6fc105c.svg",
-              "searchTags": [
-                "graph",
-                "visuals",
-                "visualisations"
-              ],
-              "topRow": 203,
-              "bottomRow": 235,
-              "parentRowSpace": 10,
-              "type": "CHART_WIDGET",
-              "hideCard": false,
-              "chartData": {
-                "614utlqlen": {
-                  "seriesName": "Sales",
-                  "data": [
-                    {
-                      "x": "Product1",
-                      "y": 20000
-                    },
-                    {
-                      "x": "Product2",
-                      "y": 22000
-                    },
-                    {
-                      "x": "Product3",
-                      "y": 32000
-                    }
-                  ]
-                }
-              },
-              "animateLoading": true,
-              "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
-              "parentColumnSpace": 20.0625,
-              "dynamicTriggerPathList": [],
-              "leftColumn": 8,
-              "dynamicBindingPathList": [
-                {
-                  "key": "borderRadius"
-                },
-                {
-                  "key": "boxShadow"
-                },
-                {
-                  "key": "accentColor"
-                },
-                {
-                  "key": "fontFamily"
-                },
-                {
-                  "key": "customFusionChartConfig"
-                }
-              ],
-              "customFusionChartConfig": "{{{\n  \"type\": \"column2d\",\n  \"dataSource\": {\n    \"chart\": {\n      \"caption\": \"Sales Report\",\n      \"xAxisName\": \"Product Line\",\n      \"yAxisName\": \"Revenue($)\",\n      \"theme\": \"fusion\",\n      \"alignCaptionWithCanvas\": 1,\n      \"captionFontSize\": \"24\",\n      \"captionAlignment\": \"center\",\n      \"captionPadding\": \"20\",\n      \"captionFontColor\": \"#231F20\",\n      \"legendIconSides\": \"4\",\n      \"legendIconBgAlpha\": \"100\",\n      \"legendIconAlpha\": \"100\",\n      \"legendPosition\": \"top\",\n      \"canvasPadding\": \"0\",\n      \"chartLeftMargin\": \"20\",\n      \"chartTopMargin\": \"10\",\n      \"chartRightMargin\": \"40\",\n      \"chartBottomMargin\": \"10\",\n      \"xAxisNameFontSize\": \"14\",\n      \"labelFontSize\": \"12\",\n      \"labelFontColor\": \"#716e6e\",\n      \"xAxisNameFontColor\": \"#716e6e\",\n      \"yAxisNameFontSize\": \"14\",\n      \"yAxisValueFontSize\": \"12\",\n      \"yAxisValueFontColor\": \"#716e6e\",\n      \"yAxisNameFontColor\": \"#716e6e\"\n    },\n\t\t...Utils2.chart()\n  },\n}}}",
-              "key": "coehgypg29",
-              "isDeprecated": false,
-              "rightColumn": 56,
-              "widgetId": "r0rikswpam",
-              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-              "minWidth": 450,
-              "isVisible": true,
-              "version": 1,
-              "parentId": "0",
-              "labelOrientation": "auto",
-              "renderMode": "CANVAS",
-              "isLoading": false,
-              "responsiveBehavior": "fill",
-              "yAxisName": "Revenue($)",
-              "originalTopRow": 203,
-              "chartName": "Sales Report",
-              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-              "xAxisName": "Product Line",
-              "originalBottomRow": 235,
-              "chartType": "CUSTOM_FUSION_CHART"
             }
           ]
         },
@@ -7004,25 +6925,6 @@
               "pluginType": "API",
               "jsonPathKeys": [
                 "appsmith.store.access_token"
-              ],
-              "timeoutInMillisecond": 10000
-            }
-          ],
-          [
-            {
-              "id": "Users Profit Admin_TotalLineDaysUser",
-              "name": "TotalLineDaysUser",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [
-                "!SelectNetwork.selectedOptionValue",
-                "SelectTSFront.selectedOptionValues.length == 0",
-                "\"'\" + MSUserNet.selectedOptionValues.join(\"', '\") + \"'\"",
-                "SelectNetwork.selectedOptionValue",
-                "moment(DateTo.selectedDate).format('YYYY-DD-MM')",
-                "moment(DateFrom.selectedDate).format('YYYY-DD-MM')",
-                "MSUserNet.selectedOptionValues.length == 0",
-                "\"'\" + SelectTSFront.selectedOptionValues.join(\"', '\") + \"'\""
               ],
               "timeoutInMillisecond": 10000
             }
