@@ -14,7 +14,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 1930,
+          "bottomRow": 2190,
           "containerStyle": "none",
           "snapRows": 125,
           "parentRowSpace": 1,
@@ -4783,7 +4783,7 @@
                 "group"
               ],
               "topRow": 105,
-              "bottomRow": 193,
+              "bottomRow": 219,
               "parentRowSpace": 10,
               "type": "CONTAINER_WIDGET",
               "hideCard": false,
@@ -4798,7 +4798,7 @@
                   "detachFromLayout": true,
                   "widgetId": "8tmrr0dbbe",
                   "containerStyle": "none",
-                  "bottomRow": 880,
+                  "bottomRow": 1140,
                   "topRow": 0,
                   "parentRowSpace": 1,
                   "isVisible": true,
@@ -4829,8 +4829,8 @@
                         "visuals",
                         "visualisations"
                       ],
-                      "topRow": 43,
-                      "bottomRow": 86,
+                      "topRow": 55,
+                      "bottomRow": 112,
                       "parentRowSpace": 10,
                       "type": "CHART_WIDGET",
                       "hideCard": false,
@@ -4939,8 +4939,8 @@
                         "visuals",
                         "visualisations"
                       ],
-                      "topRow": 43,
-                      "bottomRow": 86,
+                      "topRow": 55,
+                      "bottomRow": 111,
                       "parentRowSpace": 10,
                       "type": "CHART_WIDGET",
                       "hideCard": false,
@@ -5050,7 +5050,7 @@
                         "visualisations"
                       ],
                       "topRow": 0,
-                      "bottomRow": 43,
+                      "bottomRow": 55,
                       "parentRowSpace": 10,
                       "type": "CHART_WIDGET",
                       "hideCard": false,
@@ -5160,7 +5160,7 @@
                         "visualisations"
                       ],
                       "topRow": 0,
-                      "bottomRow": 43,
+                      "bottomRow": 55,
                       "parentRowSpace": 10,
                       "type": "CHART_WIDGET",
                       "hideCard": false,
@@ -5276,7 +5276,7 @@
               "isLoading": false,
               "originalTopRow": 105,
               "maxDynamicHeight": 9000,
-              "originalBottomRow": 193,
+              "originalBottomRow": 219,
               "minDynamicHeight": 10
             },
             {
@@ -5291,7 +5291,7 @@
                 "notification"
               ],
               "topRow": 254,
-              "bottomRow": 1534,
+              "bottomRow": 1604,
               "parentRowSpace": 10,
               "type": "MODAL_WIDGET",
               "hideCard": false,
@@ -5310,7 +5310,7 @@
                   "widgetName": "Canvas18",
                   "displayName": "Canvas",
                   "topRow": 0,
-                  "bottomRow": 1280,
+                  "bottomRow": 1350,
                   "parentRowSpace": 1,
                   "type": "CANVAS_WIDGET",
                   "canExtend": true,
@@ -5903,7 +5903,7 @@
                         "visualisations"
                       ],
                       "topRow": 100,
-                      "bottomRow": 126,
+                      "bottomRow": 135,
                       "parentRowSpace": 10,
                       "type": "CHART_WIDGET",
                       "hideCard": false,
@@ -6241,7 +6241,7 @@
                 }
               ],
               "key": "u84xc8px5u",
-              "height": 1280,
+              "height": 1350,
               "isDeprecated": false,
               "rightColumn": 13,
               "detachFromLayout": true,
