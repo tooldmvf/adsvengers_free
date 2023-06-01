@@ -13,7 +13,8 @@ SELECT
 		when (((sum(a.amount_revenue) - sum(a.amount_spent_plus_fee))/case when sum(a.amount_spent_plus_fee) = 0 then 1 else sum(a.amount_spent_plus_fee) end) *100) <0 then '#fef2f2'
 		when (((sum(a.amount_revenue) - sum(a.amount_spent_plus_fee))/case when sum(a.amount_spent_plus_fee) = 0 then 1 else sum(a.amount_spent_plus_fee) end) *100) <30 then '#fefce8'
 		else '#f0fdf4' end as "row_color",
-sum(a.amount_spent_plus_fee)/(case when sum(a.amount_conversion) = 0 then 1 else sum(a.amount_conversion) end) as "CPA"
+sum(a.amount_spent_plus_fee)/(case when sum(a.amount_conversion) = 0 then 1 else sum(a.amount_conversion) end) as "CPA",
+max(c.offer_payout) as offer_payout
 from public.user_financial_live a
 INNER JOIN public.user_network b ON (a.fk_user_id = b.fk_user_id and a.fk_user_network_id = b.user_network_id)
 INNER JOIN public.offer c ON (b.user_network_id = c.fk_user_network_id and a.fk_offer_id = c.offer_id)
