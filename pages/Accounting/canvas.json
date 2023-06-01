@@ -589,7 +589,7 @@
               "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
               "parentColumnSpace": 6.767578125,
               "dynamicTriggerPathList": [],
-              "leftColumn": 57,
+              "leftColumn": 56,
               "dynamicBindingPathList": [
                 {
                   "key": "truncateButtonColor"
@@ -672,7 +672,7 @@
               "text": "{{Fetch_Data_Rev_TOT.data[0].appr_rev}}",
               "key": "k0zn3vv2el",
               "isDeprecated": false,
-              "rightColumn": 55,
+              "rightColumn": 56,
               "textAlign": "RIGHT",
               "dynamicHeight": "AUTO_HEIGHT",
               "widgetId": "pz3n2vednn",
@@ -753,7 +753,7 @@
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "mobileLeftColumn": 0,
               "maxDynamicHeight": 9000,
-              "originalBottomRow": 83,
+              "originalBottomRow": 82,
               "fontSize": "0.875rem",
               "minDynamicHeight": 4
             },
@@ -972,7 +972,7 @@
                                 "status": 85,
                                 "network_name": 185,
                                 "amount_spent": 199,
-                                "bm_name": 264
+                                "bm_name": 315
                               },
                               "parentRowSpace": 10,
                               "hideCard": false,
@@ -3822,10 +3822,10 @@
                               ],
                               "shouldTruncate": false,
                               "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-                              "text": "Profit Ai20",
+                              "text": "Profit Ai20 Google",
                               "key": "k0zn3vv2el",
                               "isDeprecated": false,
-                              "rightColumn": 22,
+                              "rightColumn": 27,
                               "textAlign": "LEFT",
                               "dynamicHeight": "AUTO_HEIGHT",
                               "widgetId": "eri9m7uacv",
@@ -4579,7 +4579,7 @@
                       "serverSideFiltering": false,
                       "defaultOptionValue": "",
                       "animateLoading": true,
-                      "leftColumn": 47,
+                      "leftColumn": 48,
                       "dynamicBindingPathList": [
                         {
                           "key": "accentColor"
@@ -4625,7 +4625,7 @@
                       "key": "1rliem7or9",
                       "labelTextSize": "0.875rem",
                       "isDeprecated": false,
-                      "rightColumn": 60,
+                      "rightColumn": 63,
                       "widgetId": "m9iuwke9du",
                       "minWidth": 450,
                       "parentId": "qd74yy4u3t",
@@ -4698,7 +4698,7 @@
                       "key": "1rliem7or9",
                       "labelTextSize": "0.875rem",
                       "isDeprecated": false,
-                      "rightColumn": 47,
+                      "rightColumn": 48,
                       "widgetId": "tl0265rlvy",
                       "minWidth": 450,
                       "parentId": "qd74yy4u3t",

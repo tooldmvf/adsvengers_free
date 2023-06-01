@@ -745,7 +745,7 @@
                               "resetFormOnClick": true,
                               "boxShadow": "none",
                               "widgetName": "Button3CopyCopy",
-                              "onClick": "{{\nresetWidget(\"SelectBM\",true);resetWidget(\"SelectAct\",true);resetWidget(\"SelectUser\",true);\n}}",
+                              "onClick": "",
                               "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
                               "dynamicPropertyPathList": [
                                 {
@@ -1123,15 +1123,15 @@
                         "paragraph",
                         "label"
                       ],
-                      "topRow": 1,
-                      "bottomRow": 5,
+                      "topRow": 0,
+                      "bottomRow": 4,
                       "type": "TEXT_WIDGET",
                       "hideCard": false,
                       "animateLoading": true,
                       "overflow": "NONE",
                       "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
                       "dynamicTriggerPathList": [],
-                      "leftColumn": 2,
+                      "leftColumn": 1,
                       "dynamicBindingPathList": [
                         {
                           "key": "truncateButtonColor"
@@ -1148,7 +1148,7 @@
                       "text": "Invoices History",
                       "key": "943elwrbty",
                       "isDeprecated": false,
-                      "rightColumn": 18,
+                      "rightColumn": 17,
                       "textAlign": "LEFT",
                       "dynamicHeight": "AUTO_HEIGHT",
                       "widgetId": "4jhegz95do",
@@ -1212,9 +1212,12 @@
                         },
                         {
                           "key": "primaryColumns.fk_user_id.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.customColumn1.isCellVisible"
                         }
                       ],
-                      "leftColumn": 1,
+                      "leftColumn": 0,
                       "delimiter": ",",
                       "defaultSelectedRowIndex": 0,
                       "showInlineEditingOptionDropdown": true,
@@ -1250,7 +1253,7 @@
                       },
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                       "originalBottomRow": 76,
-                      "columnUpdatedAt": 1678477586348,
+                      "columnUpdatedAt": 1685526175472,
                       "primaryColumnId": "bm_id",
                       "defaultSelectedRowIndices": [
                         0
@@ -1265,9 +1268,14 @@
                         "invoice_id",
                         "fk_user_id"
                       ],
-                      "dynamicPropertyPathList": [],
+                      "dynamicPropertyPathList": [
+                        {
+                          "key": "primaryColumns.customColumn1.isCellVisible"
+                        }
+                      ],
+                      "compactMode": "SHORT",
                       "displayName": "Table",
-                      "bottomRow": 74,
+                      "bottomRow": 75,
                       "columnWidthMap": {
                         "task": 245,
                         "step": 62,
@@ -1276,7 +1284,7 @@
                         "fk_ad_account_id": 193,
                         "invoice_file_url": 535,
                         "invoice_date": 127,
-                        "customColumn1": 83
+                        "customColumn1": 85
                       },
                       "parentRowSpace": 10,
                       "hideCard": false,
@@ -1393,7 +1401,7 @@
                           "isDisabled": false,
                           "isCellEditable": false,
                           "isEditable": false,
-                          "isCellVisible": true,
+                          "isCellVisible": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( appsmith.store.role_level>100))}}",
                           "isDerived": true,
                           "label": "Delete",
                           "isSaveVisible": true,
@@ -1425,7 +1433,7 @@
                           "fontStyle": "",
                           "enableFilter": true,
                           "enableSort": true,
-                          "isVisible": true,
+                          "isVisible": false,
                           "isDisabled": false,
                           "isCellEditable": false,
                           "isEditable": false,
@@ -1472,7 +1480,7 @@
                       "key": "n8ch7om36d",
                       "canFreezeColumn": false,
                       "isDeprecated": false,
-                      "rightColumn": 63,
+                      "rightColumn": 64,
                       "textSize": "0.875rem",
                       "widgetId": "ot0wzqzrnz",
                       "tableData": "{{get_invoices.data\n}}",
@@ -1501,8 +1509,8 @@
                       "searchTags": [
                         "dropdown"
                       ],
-                      "topRow": 1,
-                      "bottomRow": 5,
+                      "topRow": 0,
+                      "bottomRow": 4,
                       "parentRowSpace": 10,
                       "labelWidth": "5",
                       "type": "SELECT_WIDGET",
