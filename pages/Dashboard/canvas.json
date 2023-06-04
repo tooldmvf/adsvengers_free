@@ -5197,6 +5197,11 @@
                                     {
                                       "widgetName": "RevenueTextCopyCopy3",
                                       "borderColor": "",
+                                      "dynamicPropertyPathList": [
+                                        {
+                                          "key": "textColor"
+                                        }
+                                      ],
                                       "displayName": "Text",
                                       "iconSVG": "/static/media/icon.97c59b523e6f70ba6f40a10fc2c7c5b5.svg",
                                       "searchTags": [
@@ -5225,12 +5230,15 @@
                                         },
                                         {
                                           "key": "text"
+                                        },
+                                        {
+                                          "key": "textColor"
                                         }
                                       ],
                                       "shouldTruncate": false,
                                       "borderWidth": "",
                                       "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-                                      "text": "{{Utils.myCurrency(user_financial_period.data[0]?.profit_h)}} €",
+                                      "text": "{{Utils.myCurrency(user_financial_period.data[0].profit_h)}} €",
                                       "key": "nk7g1uvbwm",
                                       "isDeprecated": false,
                                       "rightColumn": 24,
@@ -5241,7 +5249,7 @@
                                       "widgetId": "hdk9vil8uj",
                                       "isVisible": true,
                                       "fontStyle": "BOLD",
-                                      "textColor": "#231F20",
+                                      "textColor": "{{user_financial_period.data[0].profit_h<0 ? 'red' : 'green'}}",
                                       "version": 1,
                                       "parentId": "ynnw8tn134",
                                       "renderMode": "CANVAS",
@@ -5315,6 +5323,11 @@
                                     {
                                       "widgetName": "RevenueTextCopyCopy3Copy",
                                       "borderColor": "",
+                                      "dynamicPropertyPathList": [
+                                        {
+                                          "key": "textColor"
+                                        }
+                                      ],
                                       "displayName": "Text",
                                       "iconSVG": "/static/media/icon.97c59b523e6f70ba6f40a10fc2c7c5b5.svg",
                                       "searchTags": [
@@ -5343,12 +5356,15 @@
                                         },
                                         {
                                           "key": "text"
+                                        },
+                                        {
+                                          "key": "textColor"
                                         }
                                       ],
                                       "shouldTruncate": false,
                                       "borderWidth": "",
                                       "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-                                      "text": "{{Utils.myCurrency(user_financial_period.data[0]?.profit)}} €",
+                                      "text": "{{Utils.myCurrency(user_financial_period.data[0].profit)}} €",
                                       "key": "nk7g1uvbwm",
                                       "isDeprecated": false,
                                       "rightColumn": 38,
@@ -5359,7 +5375,7 @@
                                       "widgetId": "nng0kftkps",
                                       "isVisible": true,
                                       "fontStyle": "BOLD",
-                                      "textColor": "#231F20",
+                                      "textColor": "{{user_financial_period.data[0].profit<0 ? 'red' : 'green'}}",
                                       "version": 1,
                                       "parentId": "ynnw8tn134",
                                       "renderMode": "CANVAS",
