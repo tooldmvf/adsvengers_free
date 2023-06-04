@@ -11,7 +11,8 @@ SELECT
 sum(a.amount_conversion) convs,
 sum(a.amount_spent_plus_fee)/(case when sum(a.amount_conversion)= 0 then 1 else sum(a.amount_conversion) end) "CPA",
 sum(a.amount_revenue)/(case when sum(a.amount_conversion)= 0 then 1 else sum(a.amount_conversion) end) "Payout",
-f.network_name_short
+f.network_name_short,
+(sum(a.amount_revenue)-sum(a.amount_spent_plus_fee))/(case when sum(a.amount_spent_plus_fee) = 0 then 1 else sum(a.amount_spent_plus_fee) END)*100 as ROI
 from public.user_financial a
 INNER JOIN public.user_network b ON (a.fk_user_id = b.fk_user_id and a.fk_user_network_id = b.user_network_id)
 INNER JOIN public.offer c ON (b.user_network_id = c.fk_user_network_id and a.fk_offer_id = c.offer_id)
