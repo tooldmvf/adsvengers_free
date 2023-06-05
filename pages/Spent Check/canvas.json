@@ -1001,7 +1001,7 @@
                         "user": 169,
                         "customColumn1": 80,
                         "bm_name": 233,
-                        "spent": 179,
+                        "spent": 141,
                         "bm_id": 109
                       },
                       "parentRowSpace": 10,
@@ -1159,11 +1159,11 @@
                           "cellBackground": ""
                         }
                       },
-                      "onRowSelected": "{{AdAccounts.run()}}",
+                      "onRowSelected": "{{AdAccounts.run();\nMbuyers.run()}}",
                       "key": "stxh2vmeqq",
                       "canFreezeColumn": true,
                       "isDeprecated": false,
-                      "rightColumn": 30,
+                      "rightColumn": 26,
                       "textSize": "0.875rem",
                       "widgetId": "066gobijhi",
                       "minWidth": 450,
@@ -1225,7 +1225,7 @@
                         }
                       ],
                       "needsHeightForContent": true,
-                      "leftColumn": 30,
+                      "leftColumn": 26,
                       "delimiter": ",",
                       "defaultSelectedRowIndex": 0,
                       "accentColor": "{{appsmith.theme.colors.primaryColor}}",
@@ -1293,8 +1293,8 @@
                         "user": 169,
                         "customColumn1": 80,
                         "bm_name": 233,
-                        "ad_account_name": 336,
-                        "spent": 175
+                        "ad_account_name": 179,
+                        "spent": 115
                       },
                       "parentRowSpace": 10,
                       "hideCard": false,
@@ -1479,11 +1479,292 @@
                       "key": "stxh2vmeqq",
                       "canFreezeColumn": true,
                       "isDeprecated": false,
-                      "rightColumn": 64,
+                      "rightColumn": 46,
                       "textSize": "0.875rem",
                       "widgetId": "r5ei445gx9",
                       "minWidth": 450,
                       "tableData": "{{AdAccounts.data}}",
+                      "label": "Data",
+                      "searchKey": "",
+                      "parentId": "59rw5mx0bq",
+                      "renderMode": "CANVAS",
+                      "horizontalAlignment": "LEFT",
+                      "isVisibleSearch": true,
+                      "responsiveBehavior": "fill",
+                      "originalTopRow": 23,
+                      "isVisiblePagination": true,
+                      "verticalAlignment": "CENTER"
+                    },
+                    {
+                      "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+                      "borderColor": "#E0DEDE",
+                      "isVisibleDownload": true,
+                      "iconSVG": "/static/media/icon.db8a9cbd2acd22a31ea91cc37ea2a46c.svg",
+                      "topRow": 10,
+                      "isSortable": true,
+                      "type": "TABLE_WIDGET_V2",
+                      "inlineEditingSaveOption": "ROW_LEVEL",
+                      "animateLoading": true,
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "tableData"
+                        },
+                        {
+                          "key": "accentColor"
+                        },
+                        {
+                          "key": "borderRadius"
+                        },
+                        {
+                          "key": "boxShadow"
+                        },
+                        {
+                          "key": "primaryColumns.spent.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.count.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.bm_name.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.spent_wfees.computedValue"
+                        },
+                        {
+                          "key": "isVisible"
+                        },
+                        {
+                          "key": "primaryColumns.last_name.computedValue"
+                        }
+                      ],
+                      "needsHeightForContent": true,
+                      "leftColumn": 46,
+                      "delimiter": ",",
+                      "defaultSelectedRowIndex": 0,
+                      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                      "isVisibleFilters": true,
+                      "isVisible": "{{Table1.selectedRow.bm_id.length >0}}",
+                      "enableClientSideSearch": true,
+                      "version": 1,
+                      "totalRecordsCount": 0,
+                      "isLoading": false,
+                      "childStylesheet": {
+                        "button": {
+                          "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+                          "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                          "boxShadow": "none"
+                        },
+                        "menuButton": {
+                          "menuColor": "{{appsmith.theme.colors.primaryColor}}",
+                          "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                          "boxShadow": "none"
+                        },
+                        "iconButton": {
+                          "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+                          "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                          "boxShadow": "none"
+                        },
+                        "editActions": {
+                          "saveButtonColor": "{{appsmith.theme.colors.primaryColor}}",
+                          "saveBorderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                          "discardButtonColor": "{{appsmith.theme.colors.primaryColor}}",
+                          "discardBorderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}"
+                        }
+                      },
+                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                      "columnUpdatedAt": 1685960234015,
+                      "originalBottomRow": 97,
+                      "primaryColumnId": "user",
+                      "defaultSelectedRowIndices": [
+                        0
+                      ],
+                      "widgetName": "Table1CopyCopy",
+                      "defaultPageSize": 0,
+                      "columnOrder": [
+                        "last_name",
+                        "bm_name",
+                        "spent",
+                        "spent_wfees",
+                        "count"
+                      ],
+                      "dynamicPropertyPathList": [
+                        {
+                          "key": "isVisible"
+                        }
+                      ],
+                      "compactMode": "SHORT",
+                      "displayName": "Table",
+                      "bottomRow": 80,
+                      "columnWidthMap": {
+                        "task": 245,
+                        "step": 70,
+                        "status": 85,
+                        "offer": 328,
+                        "User": 211,
+                        "Traffic_Source": 337,
+                        "user": 169,
+                        "customColumn1": 80,
+                        "bm_name": 233,
+                        "ad_account_name": 336,
+                        "spent": 114
+                      },
+                      "parentRowSpace": 10,
+                      "hideCard": false,
+                      "dynamicTriggerPathList": [],
+                      "borderWidth": "1",
+                      "primaryColumns": {
+                        "spent": {
+                          "allowCellWrapping": false,
+                          "index": 3,
+                          "width": 150,
+                          "originalId": "spent",
+                          "id": "spent",
+                          "alias": "spent",
+                          "horizontalAlignment": "RIGHT",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "number",
+                          "textColor": "",
+                          "textSize": "0.875rem",
+                          "fontStyle": "BOLD",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": true,
+                          "isDisabled": false,
+                          "isCellEditable": false,
+                          "isEditable": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "Spent",
+                          "isSaveVisible": true,
+                          "isDiscardVisible": true,
+                          "computedValue": "{{Table1CopyCopy.processedTableData.map((currentRow, currentIndex) => ( Utils2.myCurrency( currentRow[\"spent\"])))}}",
+                          "sticky": "",
+                          "validation": {},
+                          "cellBackground": ""
+                        },
+                        "count": {
+                          "allowCellWrapping": false,
+                          "index": 0,
+                          "width": 150,
+                          "originalId": "count",
+                          "id": "count",
+                          "alias": "count",
+                          "horizontalAlignment": "LEFT",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "number",
+                          "textColor": "",
+                          "textSize": "0.875rem",
+                          "fontStyle": "",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": false,
+                          "isDisabled": false,
+                          "isCellEditable": false,
+                          "isEditable": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "count",
+                          "isSaveVisible": true,
+                          "isDiscardVisible": true,
+                          "computedValue": "{{Table1CopyCopy.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"count\"]))}}",
+                          "sticky": "",
+                          "validation": {},
+                          "cellBackground": ""
+                        },
+                        "bm_name": {
+                          "allowCellWrapping": false,
+                          "index": 1,
+                          "width": 150,
+                          "originalId": "bm_name",
+                          "id": "bm_name",
+                          "alias": "bm_name",
+                          "horizontalAlignment": "LEFT",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "text",
+                          "textColor": "",
+                          "textSize": "0.875rem",
+                          "fontStyle": "",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": false,
+                          "isDisabled": false,
+                          "isCellEditable": false,
+                          "isEditable": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "bm_name",
+                          "isSaveVisible": true,
+                          "isDiscardVisible": true,
+                          "computedValue": "{{Table1CopyCopy.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"bm_name\"]))}}",
+                          "sticky": "",
+                          "validation": {},
+                          "cellBackground": ""
+                        },
+                        "spent_wfees": {
+                          "allowCellWrapping": false,
+                          "index": 3,
+                          "width": 150,
+                          "originalId": "spent_wfees",
+                          "id": "spent_wfees",
+                          "alias": "spent_wfees",
+                          "horizontalAlignment": "RIGHT",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "number",
+                          "textColor": "",
+                          "textSize": "0.875rem",
+                          "fontStyle": "",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": true,
+                          "isDisabled": false,
+                          "isCellEditable": false,
+                          "isEditable": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "Spent +Fees",
+                          "isSaveVisible": true,
+                          "isDiscardVisible": true,
+                          "computedValue": "{{Table1CopyCopy.processedTableData.map((currentRow, currentIndex) => ( Utils2.myCurrency(currentRow[\"spent_wfees\"])))}}",
+                          "sticky": "",
+                          "validation": {},
+                          "cellBackground": ""
+                        },
+                        "last_name": {
+                          "allowCellWrapping": false,
+                          "allowSameOptionsInNewRow": true,
+                          "index": 2,
+                          "width": 150,
+                          "originalId": "last_name",
+                          "id": "last_name",
+                          "alias": "last_name",
+                          "horizontalAlignment": "LEFT",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "text",
+                          "textSize": "0.875rem",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": true,
+                          "isDisabled": false,
+                          "isCellEditable": false,
+                          "isEditable": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "MBuyer",
+                          "isSaveVisible": true,
+                          "isDiscardVisible": true,
+                          "computedValue": "{{Table1CopyCopy.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"last_name\"]))}}",
+                          "sticky": "",
+                          "validation": {}
+                        }
+                      },
+                      "key": "stxh2vmeqq",
+                      "canFreezeColumn": true,
+                      "isDeprecated": false,
+                      "rightColumn": 64,
+                      "textSize": "0.875rem",
+                      "widgetId": "0b0i74yhc3",
+                      "minWidth": 450,
+                      "tableData": "{{Mbuyers.data}}",
                       "label": "Data",
                       "searchKey": "",
                       "parentId": "59rw5mx0bq",
@@ -1846,7 +2127,7 @@
                       "key": "zy0mxa11cl",
                       "backgroundColor": "white",
                       "isDeprecated": false,
-                      "rightColumn": 15,
+                      "rightColumn": 13,
                       "dynamicHeight": "AUTO_HEIGHT",
                       "widgetId": "jcpqomhmrq",
                       "isVisible": true,
@@ -1874,7 +2155,7 @@
                       "shouldScrollContents": true,
                       "animateLoading": true,
                       "parentColumnSpace": 19.75,
-                      "leftColumn": 15,
+                      "leftColumn": 13,
                       "dynamicBindingPathList": [
                         {
                           "key": "borderRadius"
@@ -2129,7 +2410,7 @@
                       "key": "zy0mxa11cl",
                       "backgroundColor": "white",
                       "isDeprecated": false,
-                      "rightColumn": 30,
+                      "rightColumn": 26,
                       "dynamicHeight": "AUTO_HEIGHT",
                       "widgetId": "b5ne9qct44",
                       "isVisible": true,
@@ -2159,7 +2440,7 @@
               "originalTopRow": 8,
               "borderRadius": "0.375rem",
               "maxDynamicHeight": 9000,
-              "originalBottomRow": 90,
+              "originalBottomRow": 160,
               "minDynamicHeight": 4
             },
             {
@@ -2661,6 +2942,22 @@
               "pluginType": "API",
               "jsonPathKeys": [
                 "appsmith.store.access_token"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
+              "id": "Spent Check_Mbuyers",
+              "name": "Mbuyers",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "SelectTSFront.selectedOptionValues.length == 0",
+                "Table1.selectedRow.bm_id",
+                "moment(DateTo.selectedDate).format('YYYY-DD-MM')",
+                "moment(DateFrom.selectedDate).format('YYYY-DD-MM')",
+                "\"'\" + SelectTSFront.selectedOptionValues.join(\"', '\") + \"'\""
               ],
               "timeoutInMillisecond": 10000
             }
