@@ -760,7 +760,7 @@
                                       "originalTopRow": 5,
                                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                                       "maxDynamicHeight": 9000,
-                                      "originalBottomRow": 10,
+                                      "originalBottomRow": 9,
                                       "fontSize": "1rem",
                                       "minDynamicHeight": 4
                                     },
@@ -814,7 +814,7 @@
                                       "originalTopRow": 5,
                                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                                       "maxDynamicHeight": 9000,
-                                      "originalBottomRow": 10,
+                                      "originalBottomRow": 9,
                                       "fontSize": "1rem",
                                       "minDynamicHeight": 4
                                     },
@@ -7593,6 +7593,12 @@
                 },
                 {
                   "key": "menuItems.menuItemyf8q144z6c.onClick"
+                },
+                {
+                  "key": "menuItems.menuItem0wpqlyd4zd.onClick"
+                },
+                {
+                  "key": "menuItems.menuItemsodth1rp2m.onClick"
                 }
               ],
               "leftColumn": 11,
@@ -7671,6 +7677,24 @@
                   "isDisabled": false,
                   "isVisible": true,
                   "onClick": "{{navigateTo('Commissions Admin', {}, 'SAME_WINDOW');}}"
+                },
+                "menuItem0wpqlyd4zd": {
+                  "id": "menuItem0wpqlyd4zd",
+                  "index": 6,
+                  "label": "Accounting",
+                  "widgetId": "b5t5xp18qg",
+                  "isDisabled": false,
+                  "isVisible": true,
+                  "onClick": "{{navigateTo('Accounting', {}, 'SAME_WINDOW');}}"
+                },
+                "menuItemsodth1rp2m": {
+                  "id": "menuItemsodth1rp2m",
+                  "index": 7,
+                  "label": "User Monthly Trend",
+                  "widgetId": "ohvtlneqse",
+                  "isDisabled": false,
+                  "isVisible": true,
+                  "onClick": "{{navigateTo('User Comm Trend Admin', {}, 'SAME_WINDOW');}}"
                 }
               },
               "isVisible": "{{appsmith.store.myEmail == 'tool@dmvf.net'}}",
