@@ -13,8 +13,8 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "Offer Detail",
-    "collectionId": "Offer Detail_Utils",
+    "pageId": "NetworkOffers",
+    "collectionId": "NetworkOffers_Utils",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
@@ -41,7 +41,7 @@
     "policies": [],
     "userPermissions": []
   },
-  "id": "Offer Detail_Utils.myCurrencyK",
+  "id": "NetworkOffers_Utils.myCurrencyK",
   "deleted": false,
-  "gitSyncId": "63c3151532584b547fffe91b_6453629c31cbfd3f2cf26e7d"
+  "gitSyncId": "646331cd28902b71518db22a_647efe42270e40370738da27"
 }

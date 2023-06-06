@@ -1,0 +1,35 @@
+SELECT 	
+	sum(a.amount_spent_plus_fee) spent,
+	sum(a.amount_revenue) revenue,
+	sum(a.amount_revenue)-sum(a.amount_spent_plus_fee) profit,
+	sum(a.amount_spent) spent_no_fees,
+	case 
+		when (((sum(a.amount_revenue) - sum(a.amount_spent_plus_fee))/case when sum(a.amount_spent_plus_fee) = 0 then 1 else sum(a.amount_spent_plus_fee) end) *100) <0 then '#fef2f2'
+		when (((sum(a.amount_revenue) - sum(a.amount_spent_plus_fee))/case when sum(a.amount_spent_plus_fee) = 0 then 1 else sum(a.amount_spent_plus_fee) end) *100) <30 then '#fefce8'
+		else '#f0fdf4' end as "row_color",
+sum(a.amount_conversion) convs,
+sum(a.amount_spent_plus_fee)/(case when sum(a.amount_conversion)= 0 then 1 else sum(a.amount_conversion) end) "CPA",
+sum(a.amount_revenue)/(case when sum(a.amount_conversion)= 0 then 1 else sum(a.amount_conversion) end) "Payout",
+f.network_name_short,
+(sum(a.amount_revenue)-sum(a.amount_spent_plus_fee))/(case when sum(a.amount_spent_plus_fee) = 0 then 1 else sum(a.amount_spent_plus_fee) END)*100 as ROI,
+b.user_email_network
+from public.user_financial a
+INNER JOIN public.user_network b ON (a.fk_user_id = b.fk_user_id and a.fk_user_network_id = b.user_network_id)
+INNER JOIN public.offer c ON (b.user_network_id = c.fk_user_network_id and a.fk_offer_id = c.offer_id)
+INNER JOIN public.offer_category d ON (d.off_cat_id = c.fk_off_cat_id)
+inner join public.traffic_source e on (e.ts_id = b.fk_ts_id)
+inner join public.network f on (f.network_id = b.fk_network_id)
+inner join public.user_profiles g on (g.fk_user_id = a.fk_user_id)
+where 1 = 1
+AND (lower(c.offer_name) like lower('%{{SearchCamp.inputText}}%') OR lower(c.offer_name_suffix) like lower('%{{SearchCamp.inputText}}%'))
+and c.offer_id != 'WU'
+and ({{!SelectUser.selectedOptionValue}} OR (text(a.fk_user_id) IN ({{"'" + SelectUser.selectedOptionValue + "'"}})))
+and a.financial_date >= to_date('{{moment(DateFrom.selectedDate).format('YYYY-DD-MM')}}','YYYY-DD-MM')
+and a.financial_date <= to_date('{{moment(DateTo.selectedDate).format('YYYY-DD-MM')}}','YYYY-DD-MM')
+and ({{MSNetwork.selectedOptionValues.length == 0}} OR text(b.fk_network_id) IN ({{"'" + MSNetwork.selectedOptionValues.join("', '") + "'"}}))
+and ({{MSTrSource.selectedOptionValues.length == 0}} OR text(e.ts_id) IN ({{"'" + MSTrSource.selectedOptionValues.join("', '") + "'"}}))
+group by 
+	f.network_name_short,
+	b.user_email_network
+	having (sum(a.amount_revenue)>0 OR sum(a.amount_spent_plus_fee)>0)
+order by {{!Select1.selectedOptionValue ? '3 desc' : Select1.selectedOptionValue}}

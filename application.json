@@ -127,6 +127,10 @@
     {
       "id": "User Comm Trend Admin",
       "isDefault": false
+    },
+    {
+      "id": "NetworkOffers",
+      "isDefault": false
     }
   ],
   "viewMode": false,
