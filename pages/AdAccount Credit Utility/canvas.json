@@ -918,7 +918,7 @@
                           "key": "onOptionChange"
                         }
                       ],
-                      "leftColumn": 21,
+                      "leftColumn": 24,
                       "dynamicBindingPathList": [
                         {
                           "key": "accentColor"
@@ -945,7 +945,7 @@
                       "isVisible": true,
                       "version": 1,
                       "parentId": "y7bc0brmf3",
-                      "labelAlignment": "left",
+                      "labelAlignment": "right",
                       "renderMode": "CANVAS",
                       "isLoading": false,
                       "originalTopRow": 5,
