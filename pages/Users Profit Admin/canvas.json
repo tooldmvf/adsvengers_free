@@ -771,7 +771,7 @@
                       "leftColumn": 49,
                       "shouldTruncate": false,
                       "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-                      "text": "Tot.ROI  ",
+                      "text": "1st D. ROI  ",
                       "key": "fak4xyb0hu",
                       "isDeprecated": false,
                       "rightColumn": 53,
@@ -865,7 +865,7 @@
                       "leftColumn": 44,
                       "shouldTruncate": false,
                       "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-                      "text": "Tot.Profit ",
+                      "text": "1st D. Profit ",
                       "key": "fak4xyb0hu",
                       "isDeprecated": false,
                       "rightColumn": 49,
@@ -958,7 +958,7 @@
                       "leftColumn": 39,
                       "shouldTruncate": false,
                       "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-                      "text": "Tot.Rev ",
+                      "text": "1st Day Rev ",
                       "key": "fak4xyb0hu",
                       "isDeprecated": false,
                       "rightColumn": 44,
@@ -2751,7 +2751,7 @@
                                       "leftColumn": 39,
                                       "shouldTruncate": false,
                                       "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-                                      "text": "{{Utils2.myCurrency(currentItem.amount_revenue)}}",
+                                      "text": "{{Utils2.myCurrency(currentItem.amount_revenue_h)}}",
                                       "key": "fak4xyb0hu",
                                       "isDeprecated": false,
                                       "rightColumn": 44,
@@ -2853,7 +2853,7 @@
                                       "leftColumn": 44,
                                       "shouldTruncate": false,
                                       "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-                                      "text": "{{Utils2.myCurrency(currentItem.amount_revenue - currentItem.amount_spent_plus_fee)}}",
+                                      "text": "{{Utils2.myCurrency(currentItem.amount_revenue_h - currentItem.amount_spent_plus_fee)}}",
                                       "key": "fak4xyb0hu",
                                       "isDeprecated": false,
                                       "rightColumn": 49,
@@ -2955,7 +2955,7 @@
                                       "leftColumn": 49,
                                       "shouldTruncate": false,
                                       "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-                                      "text": "{{((currentItem.amount_revenue - currentItem.amount_spent_plus_fee)/(currentItem.amount_spent_plus_fee)*100).toFixed(2)}} %",
+                                      "text": "{{((currentItem.amount_revenue_h - currentItem.amount_spent_plus_fee)/(currentItem.amount_spent_plus_fee)*100).toFixed(2)}} %",
                                       "key": "fak4xyb0hu",
                                       "isDeprecated": false,
                                       "rightColumn": 53,
@@ -3439,7 +3439,7 @@
                               "leftColumn": 49,
                               "shouldTruncate": false,
                               "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-                              "text": "{{((TotalLine.data[0].amount_revenue - TotalLine.data[0].amount_spent_plus_fee)/(TotalLine.data[0].amount_spent_plus_fee)*100).toFixed(2)}} %",
+                              "text": "{{((TotalLine.data[0].amount_revenue_h - TotalLine.data[0].amount_spent_plus_fee)/(TotalLine.data[0].amount_spent_plus_fee)*100).toFixed(2)}} %",
                               "key": "fak4xyb0hu",
                               "isDeprecated": false,
                               "rightColumn": 53,
@@ -3814,7 +3814,7 @@
                               "leftColumn": 44,
                               "shouldTruncate": false,
                               "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-                              "text": "{{Utils2.myCurrency(TotalLine.data[0].amount_revenue - TotalLine.data[0].amount_spent_plus_fee)}}",
+                              "text": "{{Utils2.myCurrency(TotalLine.data[0].amount_revenue_h - TotalLine.data[0].amount_spent_plus_fee)}}",
                               "key": "fak4xyb0hu",
                               "isDeprecated": false,
                               "rightColumn": 49,
@@ -3909,7 +3909,7 @@
                               "leftColumn": 39,
                               "shouldTruncate": false,
                               "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-                              "text": "{{Utils2.myCurrency(TotalLine.data[0].amount_revenue)}}",
+                              "text": "{{Utils2.myCurrency(TotalLine.data[0].amount_revenue_h)}}",
                               "key": "fak4xyb0hu",
                               "isDeprecated": false,
                               "rightColumn": 44,
@@ -5291,7 +5291,7 @@
                 "notification"
               ],
               "topRow": 254,
-              "bottomRow": 1604,
+              "bottomRow": 1624,
               "parentRowSpace": 10,
               "type": "MODAL_WIDGET",
               "hideCard": false,
@@ -5310,7 +5310,7 @@
                   "widgetName": "Canvas18",
                   "displayName": "Canvas",
                   "topRow": 0,
-                  "bottomRow": 1350,
+                  "bottomRow": 1370,
                   "parentRowSpace": 1,
                   "type": "CANVAS_WIDGET",
                   "canExtend": true,
@@ -6241,7 +6241,7 @@
                 }
               ],
               "key": "u84xc8px5u",
-              "height": 1350,
+              "height": 1370,
               "isDeprecated": false,
               "rightColumn": 13,
               "detachFromLayout": true,
@@ -6883,8 +6883,8 @@
                 "!SelectNetwork.selectedOptionValue",
                 "SelectTSFront.selectedOptionValues.length == 0",
                 "\"'\" + MSUserNet.selectedOptionValues.join(\"', '\") + \"'\"",
-                "SelectNetwork.selectedOptionValue",
                 "moment(DateTo.selectedDate).format('YYYY-DD-MM')",
+                "SelectNetwork.selectedOptionValue",
                 "moment(DateFrom.selectedDate).format('YYYY-DD-MM')",
                 "MSUserNet.selectedOptionValues.length == 0",
                 "\"'\" + SelectTSFront.selectedOptionValues.join(\"', '\") + \"'\""
@@ -6907,7 +6907,28 @@
                 "\"'\" + SelectTSFront.selectedOptionValues.join(\"', '\") + \"'\""
               ],
               "timeoutInMillisecond": 10000
-            },
+            }
+          ],
+          [
+            {
+              "id": "Users Profit Admin_TotalLine",
+              "name": "TotalLine",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "!SelectNetwork.selectedOptionValue",
+                "SelectTSFront.selectedOptionValues.length == 0",
+                "\"'\" + MSUserNet.selectedOptionValues.join(\"', '\") + \"'\"",
+                "moment(DateTo.selectedDate).format('YYYY-DD-MM')",
+                "SelectNetwork.selectedOptionValue",
+                "moment(DateFrom.selectedDate).format('YYYY-DD-MM')",
+                "MSUserNet.selectedOptionValues.length == 0",
+                "\"'\" + SelectTSFront.selectedOptionValues.join(\"', '\") + \"'\""
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
             {
               "id": "Users Profit Admin_get_all_networks",
               "name": "get_all_networks",
@@ -6925,25 +6946,6 @@
               "pluginType": "API",
               "jsonPathKeys": [
                 "appsmith.store.access_token"
-              ],
-              "timeoutInMillisecond": 10000
-            }
-          ],
-          [
-            {
-              "id": "Users Profit Admin_TotalLine",
-              "name": "TotalLine",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [
-                "!SelectNetwork.selectedOptionValue",
-                "SelectTSFront.selectedOptionValues.length == 0",
-                "\"'\" + MSUserNet.selectedOptionValues.join(\"', '\") + \"'\"",
-                "SelectNetwork.selectedOptionValue",
-                "moment(DateTo.selectedDate).format('YYYY-DD-MM')",
-                "moment(DateFrom.selectedDate).format('YYYY-DD-MM')",
-                "MSUserNet.selectedOptionValues.length == 0",
-                "\"'\" + SelectTSFront.selectedOptionValues.join(\"', '\") + \"'\""
               ],
               "timeoutInMillisecond": 10000
             }
