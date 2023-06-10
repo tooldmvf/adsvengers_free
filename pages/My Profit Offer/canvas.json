@@ -6877,19 +6877,6 @@
         "layoutOnLoadActions": [
           [
             {
-              "id": "My Profit Offer_Utils2.onLoadPage",
-              "name": "Utils2.onLoadPage",
-              "collectionId": "My Profit Offer_Utils2",
-              "confirmBeforeExecute": false,
-              "pluginType": "JS",
-              "jsonPathKeys": [
-                "async () => {\n  await get_all_users.run();\n  await TotalLine.run();\n  await Tab4OfferDay.run();\n  SelectFinancial.run();\n  get_all_networks.run();\n  get_ts.run();\n}"
-              ],
-              "timeoutInMillisecond": 10000
-            }
-          ],
-          [
-            {
               "id": "My Profit Offer_Tab4OfferDayOffersTOT",
               "name": "Tab4OfferDayOffersTOT",
               "confirmBeforeExecute": false,
@@ -6903,6 +6890,17 @@
                 "moment(DateFrom.selectedDate).format('YYYY-DD-MM')",
                 "\"'\" + SelectTSFront.selectedOptionValues.join(\"', '\") + \"'\"",
                 "SelectUserFBPage.selectedOptionValue"
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "My Profit Offer_Utils2.onLoadPage",
+              "name": "Utils2.onLoadPage",
+              "collectionId": "My Profit Offer_Utils2",
+              "confirmBeforeExecute": false,
+              "pluginType": "JS",
+              "jsonPathKeys": [
+                "async () => {\n  await get_all_users.run();\n  await TotalLine.run();\n  await Tab4OfferDay.run();\n  SelectFinancial.run();\n  get_all_networks.run();\n  get_ts.run();\n}"
               ],
               "timeoutInMillisecond": 10000
             }
