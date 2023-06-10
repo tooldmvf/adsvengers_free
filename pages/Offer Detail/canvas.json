@@ -5154,9 +5154,6 @@
                           "key": "tableData"
                         },
                         {
-                          "key": "primaryColumns.offer_name.computedValue"
-                        },
-                        {
                           "key": "primaryColumns.offer_id.computedValue"
                         },
                         {
@@ -5167,9 +5164,6 @@
                         },
                         {
                           "key": "primaryColumns.row_color.computedValue"
-                        },
-                        {
-                          "key": "primaryColumns.offer_name.cellBackground"
                         },
                         {
                           "key": "primaryColumns.spent.cellBackground"
@@ -5209,6 +5203,12 @@
                         },
                         {
                           "key": "primaryColumns.roi.cellBackground"
+                        },
+                        {
+                          "key": "primaryColumns.offer_name.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.offer_name.cellBackground"
                         }
                       ],
                       "needsHeightForContent": true,
@@ -5246,7 +5246,7 @@
                         }
                       },
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                      "columnUpdatedAt": 1685893553680,
+                      "columnUpdatedAt": 1686398463589,
                       "originalBottomRow": 393,
                       "defaultSelectedRowIndices": [
                         0
@@ -5271,9 +5271,6 @@
                           "key": "onRowSelected"
                         },
                         {
-                          "key": "primaryColumns.offer_name.cellBackground"
-                        },
-                        {
                           "key": "primaryColumns.spent.cellBackground"
                         },
                         {
@@ -5296,6 +5293,9 @@
                         },
                         {
                           "key": "primaryColumns.roi.cellBackground"
+                        },
+                        {
+                          "key": "primaryColumns.offer_name.cellBackground"
                         }
                       ],
                       "compactMode": "DEFAULT",
@@ -5324,35 +5324,6 @@
                       ],
                       "borderWidth": "1",
                       "primaryColumns": {
-                        "offer_name": {
-                          "allowCellWrapping": true,
-                          "index": 0,
-                          "width": 150,
-                          "originalId": "offer_name",
-                          "id": "offer_name",
-                          "alias": "offer_name",
-                          "horizontalAlignment": "LEFT",
-                          "verticalAlignment": "CENTER",
-                          "columnType": "text",
-                          "textColor": "",
-                          "textSize": "0.8rem",
-                          "fontStyle": "",
-                          "enableFilter": true,
-                          "enableSort": true,
-                          "isVisible": true,
-                          "isDisabled": false,
-                          "isCellEditable": false,
-                          "isEditable": false,
-                          "isCellVisible": true,
-                          "isDerived": false,
-                          "label": "Select Offer",
-                          "isSaveVisible": true,
-                          "isDiscardVisible": true,
-                          "computedValue": "{{TableOffers.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"offer_name\"]))}}",
-                          "sticky": "left",
-                          "validation": {},
-                          "cellBackground": "{{TableOffers.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"row_color\"]))}}"
-                        },
                         "offer_id": {
                           "allowCellWrapping": false,
                           "index": 1,
@@ -5647,6 +5618,36 @@
                           "sticky": "",
                           "validation": {},
                           "cellBackground": "{{TableOffers.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"row_color\"]))}}"
+                        },
+                        "offer_name": {
+                          "allowCellWrapping": false,
+                          "allowSameOptionsInNewRow": true,
+                          "index": 10,
+                          "width": 150,
+                          "originalId": "offer_name",
+                          "id": "offer_name",
+                          "alias": "offer_name",
+                          "horizontalAlignment": "LEFT",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "text",
+                          "textColor": "",
+                          "textSize": "0.8rem",
+                          "fontStyle": "",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": true,
+                          "isDisabled": false,
+                          "isCellEditable": false,
+                          "isEditable": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "Select Offer",
+                          "isSaveVisible": true,
+                          "isDiscardVisible": true,
+                          "computedValue": "{{TableOffers.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"offer_name\"]))}}",
+                          "sticky": "left",
+                          "validation": {},
+                          "cellBackground": "{{TableOffers.processedTableData.map((currentRow, currentIndex) => ( (currentRow[\"row_color\"])))}}"
                         }
                       },
                       "onRowSelected": "{{SelectFinancialTot.run();SelectFinancialList.run()}}",
@@ -5910,18 +5911,20 @@
               "jsonPathKeys": [
                 "!Select1.selectedOptionValue ? '3 desc' : Select1.selectedOptionValue",
                 "MSTrSource.selectedOptionValues.length == 0",
-                "!SelectUser.selectedOptionValue",
                 "\"'\" + SelectUser.selectedOptionValue + \"'\"",
+                "!SelectUser.selectedOptionValue",
                 "moment(DateTo.selectedDate).format('YYYY-DD-MM')",
                 "MSCategory.selectedOptionValues.length == 0",
-                "MSNetwork.selectedOptionValues.length == 0",
-                "\"'\" + MSTrSource.selectedOptionValues.join(\"', '\") + \"'\"",
-                "\"'\" + MSNetwork.selectedOptionValues.join(\"', '\") + \"'\"",
                 "moment(DateFrom.selectedDate).format('YYYY-DD-MM')",
+                "\"'\" + MSTrSource.selectedOptionValues.join(\"', '\") + \"'\"",
+                "MSNetwork.selectedOptionValues.length == 0",
+                "\"'\" + MSNetwork.selectedOptionValues.join(\"', '\") + \"'\"",
                 "\"'\" + MSCategory.selectedOptionValues.join(\"', '\") + \"'\""
               ],
               "timeoutInMillisecond": 10000
-            },
+            }
+          ],
+          [
             {
               "id": "Offer Detail_get_all_networks",
               "name": "get_all_networks",

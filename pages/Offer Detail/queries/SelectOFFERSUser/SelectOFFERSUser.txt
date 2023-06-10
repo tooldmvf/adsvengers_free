@@ -1,5 +1,5 @@
 SELECT 	
-	c.offer_name,
+	c.offer_id||' - '||c.offer_name as offer_name,
 	c.offer_id,
 	sum(a.amount_spent_plus_fee) spent,
 	sum(a.amount_revenue) revenue,
