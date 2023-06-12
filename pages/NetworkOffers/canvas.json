@@ -716,7 +716,7 @@
                     {
                       "boxShadow": "none",
                       "widgetName": "refresh_btn",
-                      "onClick": "{{SelectOFFERSUser.run();\n}}",
+                      "onClick": "{{SelectOFFERSUser.run();\nSelectOFFERSTot.run();\n}}",
                       "buttonColor": "#facc15",
                       "dynamicPropertyPathList": [
                         {
@@ -819,7 +819,7 @@
                       "borderColor": "#E0DEDE",
                       "isVisibleDownload": true,
                       "iconSVG": "/static/media/icon.db8a9cbd2acd22a31ea91cc37ea2a46c.svg",
-                      "topRow": 24,
+                      "topRow": 22,
                       "isSortable": true,
                       "type": "TABLE_WIDGET_V2",
                       "inlineEditingSaveOption": "ROW_LEVEL",
@@ -954,9 +954,6 @@
                         "network_name_short"
                       ],
                       "dynamicPropertyPathList": [
-                        {
-                          "key": "onRowSelected"
-                        },
                         {
                           "key": "primaryColumns.spent.cellBackground"
                         },
@@ -1342,7 +1339,7 @@
                           "cellBackground": "{{TableOffers.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"row_color\"]))}}"
                         }
                       },
-                      "onRowSelected": "{{SelectFinancialTot.run();SelectFinancialList.run()}}",
+                      "onRowSelected": "",
                       "key": "4sy675irq3",
                       "canFreezeColumn": false,
                       "isDeprecated": false,
@@ -1780,7 +1777,7 @@
                       "minDynamicHeight": 4
                     },
                     {
-                      "boxShadow": "none",
+                      "boxShadow": "0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)",
                       "borderColor": "#E0DEDE",
                       "isVisibleDownload": false,
                       "iconSVG": "/static/media/icon.db8a9cbd2acd22a31ea91cc37ea2a46c.svg",
@@ -1931,9 +1928,9 @@
                           "key": "primaryColumns.spent_no_fees.cellBackground"
                         }
                       ],
-                      "compactMode": "TALL",
+                      "compactMode": "DEFAULT",
                       "displayName": "Table",
-                      "bottomRow": 24,
+                      "bottomRow": 22,
                       "columnWidthMap": {
                         "task": 245,
                         "step": 70,
@@ -1957,7 +1954,7 @@
                           "key": "onRowSelected"
                         }
                       ],
-                      "borderWidth": "0",
+                      "borderWidth": "1",
                       "primaryColumns": {
                         "revenue": {
                           "allowCellWrapping": false,
@@ -1970,7 +1967,7 @@
                           "verticalAlignment": "CENTER",
                           "columnType": "number",
                           "textColor": "",
-                          "textSize": "1rem",
+                          "textSize": "0.875rem",
                           "fontStyle": "",
                           "enableFilter": true,
                           "enableSort": true,
@@ -1999,7 +1996,7 @@
                           "verticalAlignment": "CENTER",
                           "columnType": "number",
                           "textColor": "",
-                          "textSize": "1rem",
+                          "textSize": "0.875rem",
                           "fontStyle": "ITALIC",
                           "enableFilter": true,
                           "enableSort": true,
@@ -2028,7 +2025,7 @@
                           "verticalAlignment": "CENTER",
                           "columnType": "text",
                           "textColor": "",
-                          "textSize": "1rem",
+                          "textSize": "0.875rem",
                           "fontStyle": "",
                           "enableFilter": true,
                           "enableSort": true,
@@ -2057,7 +2054,7 @@
                           "verticalAlignment": "CENTER",
                           "columnType": "number",
                           "textColor": "",
-                          "textSize": "1rem",
+                          "textSize": "0.875rem",
                           "fontStyle": "BOLD",
                           "enableFilter": true,
                           "enableSort": true,
@@ -2087,7 +2084,7 @@
                           "verticalAlignment": "CENTER",
                           "columnType": "number",
                           "textColor": "",
-                          "textSize": "1rem",
+                          "textSize": "0.875rem",
                           "fontStyle": "",
                           "enableFilter": true,
                           "enableSort": true,
@@ -2117,7 +2114,7 @@
                           "verticalAlignment": "CENTER",
                           "columnType": "number",
                           "textColor": "",
-                          "textSize": "1rem",
+                          "textSize": "0.875rem",
                           "fontStyle": "BOLD",
                           "enableFilter": true,
                           "enableSort": true,
@@ -2147,7 +2144,7 @@
                           "verticalAlignment": "CENTER",
                           "columnType": "number",
                           "textColor": "",
-                          "textSize": "1rem",
+                          "textSize": "0.875rem",
                           "fontStyle": "",
                           "enableFilter": true,
                           "enableSort": true,
@@ -2177,7 +2174,7 @@
                           "verticalAlignment": "CENTER",
                           "columnType": "number",
                           "textColor": "",
-                          "textSize": "1rem",
+                          "textSize": "0.875rem",
                           "fontStyle": "",
                           "enableFilter": true,
                           "enableSort": true,
@@ -2206,7 +2203,7 @@
                           "horizontalAlignment": "LEFT",
                           "verticalAlignment": "CENTER",
                           "columnType": "number",
-                          "textSize": "1rem",
+                          "textSize": "0.875rem",
                           "fontStyle": "ITALIC",
                           "enableFilter": true,
                           "enableSort": true,
@@ -2230,7 +2227,7 @@
                       "canFreezeColumn": false,
                       "isDeprecated": false,
                       "rightColumn": 64,
-                      "textSize": "1rem",
+                      "textSize": "0.875rem",
                       "widgetId": "6bk2a21cqz",
                       "tableData": "{{SelectOFFERSTot.data}}",
                       "label": "Data",
