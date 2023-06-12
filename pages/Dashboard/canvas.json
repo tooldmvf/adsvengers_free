@@ -230,6 +230,15 @@
                       "isVisible": true,
                       "onClick": "{{navigateTo('Invoices Utility', {}, 'SAME_WINDOW')}}",
                       "backgroundColor": "#f4f4f5"
+                    },
+                    "menuItemj1yh4lfdes": {
+                      "id": "menuItemj1yh4lfdes",
+                      "index": 6,
+                      "label": "Comment moderation",
+                      "widgetId": "3lgfo8m75l",
+                      "isDisabled": false,
+                      "isVisible": true,
+                      "onClick": "{{navigateTo('Comment moderation', {}, 'SAME_WINDOW');}}"
                     }
                   },
                   "buttonType": "MENU",
@@ -403,6 +412,9 @@
                 },
                 {
                   "key": "groupButtons.groupButtonz40p7cz8uy.menuItems.menuItem8uotiiku3d.onClick"
+                },
+                {
+                  "key": "groupButtons.groupButtonenmx60lrah.menuItems.menuItemj1yh4lfdes.onClick"
                 }
               ],
               "leftColumn": 24,

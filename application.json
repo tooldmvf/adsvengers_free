@@ -131,6 +131,10 @@
     {
       "id": "NetworkOffers",
       "isDefault": false
+    },
+    {
+      "id": "Comment moderation",
+      "isDefault": false
     }
   ],
   "viewMode": false,
