@@ -874,7 +874,7 @@
                   "widgetName": "Canvas4",
                   "displayName": "Canvas",
                   "topRow": 0,
-                  "bottomRow": 780,
+                  "bottomRow": 770,
                   "parentRowSpace": 1,
                   "type": "CANVAS_WIDGET",
                   "canExtend": false,
@@ -894,7 +894,7 @@
                         "label"
                       ],
                       "topRow": 1,
-                      "bottomRow": 6,
+                      "bottomRow": 5,
                       "type": "TEXT_WIDGET",
                       "hideCard": false,
                       "animateLoading": true,
@@ -918,9 +918,9 @@
                       "text": "Campaign Name Builder",
                       "key": "943elwrbty",
                       "isDeprecated": false,
-                      "rightColumn": 28,
+                      "rightColumn": 17,
                       "textAlign": "LEFT",
-                      "dynamicHeight": "AUTO_HEIGHT",
+                      "dynamicHeight": "FIXED",
                       "widgetId": "iuqbgfk4su",
                       "isVisible": true,
                       "fontStyle": "",
@@ -929,11 +929,9 @@
                       "parentId": "9n4813zity",
                       "renderMode": "CANVAS",
                       "isLoading": false,
-                      "originalTopRow": 1,
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                       "maxDynamicHeight": 9000,
-                      "originalBottomRow": 6,
-                      "fontSize": "1.875rem",
+                      "fontSize": "1.25rem",
                       "minDynamicHeight": 4
                     },
                     {
@@ -941,7 +939,7 @@
                       "borderColor": "#E0DEDE",
                       "isVisibleDownload": true,
                       "iconSVG": "/static/media/icon.db8a9cbd2acd22a31ea91cc37ea2a46c.svg",
-                      "topRow": 7,
+                      "topRow": 6,
                       "isSortable": true,
                       "type": "TABLE_WIDGET_V2",
                       "inlineEditingSaveOption": "ROW_LEVEL",
@@ -1042,7 +1040,7 @@
                       ],
                       "compactMode": "SHORT",
                       "displayName": "Table",
-                      "bottomRow": 78,
+                      "bottomRow": 77,
                       "columnWidthMap": {
                         "task": 245,
                         "step": 62,
@@ -1339,7 +1337,7 @@
                           "key": "onClick"
                         }
                       ],
-                      "leftColumn": 50,
+                      "leftColumn": 53,
                       "dynamicBindingPathList": [
                         {
                           "key": "buttonColor"
@@ -1352,7 +1350,7 @@
                       "isDisabled": false,
                       "key": "i64rfcqlvd",
                       "isDeprecated": false,
-                      "rightColumn": 63,
+                      "rightColumn": 64,
                       "isDefaultClickDisabled": true,
                       "widgetId": "jpbfjp6uti",
                       "isVisible": true,
@@ -1432,7 +1430,7 @@
                       "topRow": 1,
                       "bottomRow": 5,
                       "parentRowSpace": 10,
-                      "labelWidth": 5,
+                      "labelWidth": "3",
                       "type": "MULTI_SELECT_WIDGET_V2",
                       "serverSideFiltering": false,
                       "hideCard": false,
@@ -1445,7 +1443,7 @@
                           "key": "onOptionChange"
                         }
                       ],
-                      "leftColumn": 31,
+                      "leftColumn": 37,
                       "dynamicBindingPathList": [
                         {
                           "key": "accentColor"
@@ -1471,7 +1469,7 @@
                       "labelTextSize": "0.875rem",
                       "isRequired": false,
                       "isDeprecated": false,
-                      "rightColumn": 48,
+                      "rightColumn": 53,
                       "dynamicHeight": "AUTO_HEIGHT",
                       "widgetId": "vgpmdesn0s",
                       "accentColor": "{{appsmith.theme.colors.primaryColor}}",

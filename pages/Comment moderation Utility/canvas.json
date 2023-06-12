@@ -320,7 +320,7 @@
                           "widgetId": "1ttraqiw8n",
                           "isDisabled": false,
                           "isVisible": true,
-                          "buttonColor": "{{appsmith.URL.pathname.includes('utility') ? '#D6D6D6' : '#E4E4E4'}}",
+                          "buttonColor": "{{appsmith.URL.pathname.includes('Accounting') ? '#D6D6D6' : '#E4E4E4'}}",
                           "iconName": "chevron-down",
                           "iconAlign": "right"
                         },
@@ -958,11 +958,7 @@
                     {
                       "boxShadow": "none",
                       "widgetName": "Text16",
-                      "dynamicPropertyPathList": [
-                        {
-                          "key": "fontSize"
-                        }
-                      ],
+                      "dynamicPropertyPathList": [],
                       "topRow": 1,
                       "bottomRow": 5,
                       "parentRowSpace": 10,
@@ -991,7 +987,7 @@
                       "isLoading": false,
                       "borderRadius": "0px",
                       "maxDynamicHeight": 9000,
-                      "fontSize": "1.5rem",
+                      "fontSize": "1.25rem",
                       "minDynamicHeight": 4
                     },
                     {
@@ -1042,7 +1038,7 @@
                         "paragraph",
                         "label"
                       ],
-                      "topRow": 8,
+                      "topRow": 6,
                       "bottomRow": 33,
                       "parentRowSpace": 10,
                       "type": "TEXT_WIDGET",

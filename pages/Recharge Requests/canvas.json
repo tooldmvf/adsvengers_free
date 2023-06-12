@@ -1112,11 +1112,7 @@
                     {
                       "boxShadow": "none",
                       "widgetName": "Text16",
-                      "dynamicPropertyPathList": [
-                        {
-                          "key": "fontSize"
-                        }
-                      ],
+                      "dynamicPropertyPathList": [],
                       "topRow": 1,
                       "bottomRow": 5,
                       "parentRowSpace": 10,
@@ -1145,7 +1141,7 @@
                       "isLoading": false,
                       "borderRadius": "0px",
                       "maxDynamicHeight": 9000,
-                      "fontSize": "1.5rem",
+                      "fontSize": "1.25rem",
                       "minDynamicHeight": 4
                     },
                     {

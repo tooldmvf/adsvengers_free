@@ -1193,7 +1193,7 @@
                       "serverSideFiltering": false,
                       "hideCard": false,
                       "shouldScrollContents": true,
-                      "defaultOptionValue": "",
+                      "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( `6719b3bc-e4b5-41dd-a04c-4323dc921a42`))(SelectTs.options, SelectTs.serverSideFiltering) }}",
                       "animateLoading": true,
                       "parentColumnSpace": 20.0625,
                       "dynamicTriggerPathList": [
@@ -1211,6 +1211,9 @@
                         },
                         {
                           "key": "options"
+                        },
+                        {
+                          "key": "defaultOptionValue"
                         }
                       ],
                       "labelPosition": "Left",
@@ -1348,7 +1351,7 @@
                       "isDeprecated": false,
                       "rightColumn": 21,
                       "textAlign": "LEFT",
-                      "dynamicHeight": "AUTO_HEIGHT",
+                      "dynamicHeight": "FIXED",
                       "widgetId": "4jhegz95do",
                       "isVisible": true,
                       "fontStyle": "",
@@ -1357,10 +1360,8 @@
                       "parentId": "y7bc0brmf3",
                       "renderMode": "CANVAS",
                       "isLoading": false,
-                      "originalTopRow": 1,
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                       "maxDynamicHeight": 9000,
-                      "originalBottomRow": 5,
                       "fontSize": "1.25rem",
                       "minDynamicHeight": 4
                     },

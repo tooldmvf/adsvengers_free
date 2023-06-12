@@ -1240,7 +1240,7 @@
                           "key": "onDateSelected"
                         }
                       ],
-                      "leftColumn": 36,
+                      "leftColumn": 40,
                       "dynamicBindingPathList": [
                         {
                           "key": "accentColor"
@@ -1257,7 +1257,7 @@
                       "isRequired": false,
                       "defaultDate": "{{moment().subtract(1, 'days')}}",
                       "isDeprecated": false,
-                      "rightColumn": 50,
+                      "rightColumn": 52,
                       "dynamicHeight": "FIXED",
                       "widgetId": "ebyq4b4fyo",
                       "accentColor": "{{appsmith.theme.colors.primaryColor}}",
@@ -1315,7 +1315,7 @@
                           "key": "onDateSelected"
                         }
                       ],
-                      "leftColumn": 50,
+                      "leftColumn": 52,
                       "dynamicBindingPathList": [
                         {
                           "key": "accentColor"
@@ -1560,7 +1560,7 @@
                           "key": "onDropdownClose"
                         }
                       ],
-                      "leftColumn": 17,
+                      "leftColumn": 28,
                       "dynamicBindingPathList": [
                         {
                           "key": "accentColor"
@@ -1584,14 +1584,14 @@
                       "labelTextSize": "0.875rem",
                       "isRequired": true,
                       "isDeprecated": false,
-                      "rightColumn": 36,
+                      "rightColumn": 40,
                       "dynamicHeight": "FIXED",
                       "widgetId": "5bjqjg35hx",
                       "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                       "isVisible": "{{appsmith.store.role_level> 100 && appsmith.store.access_token.length>0 }}",
                       "version": 1,
                       "parentId": "59rw5mx0bq",
-                      "labelAlignment": "left",
+                      "labelAlignment": "right",
                       "renderMode": "CANVAS",
                       "isLoading": false,
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",

@@ -1974,7 +1974,7 @@
                           "key": "onDropdownClose"
                         }
                       ],
-                      "leftColumn": 32,
+                      "leftColumn": 42,
                       "dynamicBindingPathList": [
                         {
                           "key": "accentColor"
@@ -2008,7 +2008,7 @@
                       "isVisible": "{{appsmith.store.role_level> 100 && appsmith.store.access_token.length>0 }}",
                       "version": 1,
                       "parentId": "9n4813zity",
-                      "labelAlignment": "left",
+                      "labelAlignment": "right",
                       "renderMode": "CANVAS",
                       "isLoading": false,
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
