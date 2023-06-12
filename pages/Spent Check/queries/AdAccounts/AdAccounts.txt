@@ -7,6 +7,7 @@ inner join public.user_fb_account b on (b.fk_user_id = a.fk_user_id and b.fk_ad_
 inner join public.fb_ad_account c on (c.ad_account_id = b.fk_ad_account_id)
 inner join public.facebook_bm d on (d.bm_id = c.fk_bm_id)
 where 1 = 1
+and ({{!SelectUser.selectedOptionValue}} OR (text(a.fk_user_id) IN ({{"'" + SelectUser.selectedOptionValue + "'"}})))
 and a.financial_date >= to_date('{{moment(DateFrom.selectedDate).format('YYYY-DD-MM')}}','YYYY-DD-MM')
 and a.financial_date <= to_date('{{moment(DateTo.selectedDate).format('YYYY-DD-MM')}}','YYYY-DD-MM')
 and ({{SelectTSFront.selectedOptionValues.length == 0}} OR text(d.fk_ts_id) IN ({{"'" + SelectTSFront.selectedOptionValues.join("', '") + "'"}}))

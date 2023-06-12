@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "Select count(*)\n,bm_name, E.Last_name\n,sum(a.amount_spent) as spent \n,sum(a.amount_spent)+ (sum(a.amount_spent)/100 * a.spent_rate_fees) as spent_wfees\nfrom public.raw_user_fb_financial_data a\ninner join public.user_fb_account b on (b.fk_user_id = a.fk_user_id and b.fk_ad_account_id = a.fk_ad_account_id)\ninner join public.fb_ad_account c on (c.ad_account_id = b.fk_ad_account_id)\ninner join public.facebook_bm d on (d.bm_id = c.fk_bm_id)\nINNER JOIN PUblic.user_profiles e on (e.fk_user_id = a.fk_user_id)\nwhere 1 = 1\nand a.financial_date >= to_date('{{moment(DateFrom.selectedDate).format('YYYY-DD-MM')}}','YYYY-DD-MM')\nand a.financial_date <= to_date('{{moment(DateTo.selectedDate).format('YYYY-DD-MM')}}','YYYY-DD-MM')\nand ({{SelectTSFront.selectedOptionValues.length == 0}} OR text(d.fk_ts_id) IN ({{\"'\" + SelectTSFront.selectedOptionValues.join(\"', '\") + \"'\"}}))\nand d.bm_id = '{{Table1.selectedRow.bm_id}}'\ngroup by bm_name, E.Last_name, a.spent_rate_fees\norder by 2\n",
+      "body": "Select count(*)\n,bm_name, E.Last_name\n,sum(a.amount_spent) as spent \n,sum(a.amount_spent)+ (sum(a.amount_spent)/100 * a.spent_rate_fees) as spent_wfees\nfrom public.raw_user_fb_financial_data a\ninner join public.user_fb_account b on (b.fk_user_id = a.fk_user_id and b.fk_ad_account_id = a.fk_ad_account_id)\ninner join public.fb_ad_account c on (c.ad_account_id = b.fk_ad_account_id)\ninner join public.facebook_bm d on (d.bm_id = c.fk_bm_id)\nINNER JOIN PUblic.user_profiles e on (e.fk_user_id = a.fk_user_id)\nwhere 1 = 1\nand ({{!SelectUser.selectedOptionValue}} OR (text(a.fk_user_id) IN ({{\"'\" + SelectUser.selectedOptionValue + \"'\"}})))\nand a.financial_date >= to_date('{{moment(DateFrom.selectedDate).format('YYYY-DD-MM')}}','YYYY-DD-MM')\nand a.financial_date <= to_date('{{moment(DateTo.selectedDate).format('YYYY-DD-MM')}}','YYYY-DD-MM')\nand ({{SelectTSFront.selectedOptionValues.length == 0}} OR text(d.fk_ts_id) IN ({{\"'\" + SelectTSFront.selectedOptionValues.join(\"', '\") + \"'\"}}))\nand d.bm_id = '{{Table1.selectedRow.bm_id}}'\ngroup by bm_name, E.Last_name, a.spent_rate_fees\norder by 2\n",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
@@ -36,7 +36,9 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
+      "!SelectUser.selectedOptionValue",
       "\"'\" + SelectTSFront.selectedOptionValues.join(\"', '\") + \"'\"",
+      "\"'\" + SelectUser.selectedOptionValue + \"'\"",
       "SelectTSFront.selectedOptionValues.length == 0",
       "Table1.selectedRow.bm_id",
       "moment(DateFrom.selectedDate).format('YYYY-DD-MM')",

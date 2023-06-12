@@ -1,5 +1,0 @@
-SELECT distinct c.fk_user_id, d.ad_account_id, d.fk_bm_id, c.spent_rate_fees
-from public.user_fb_account c
-inner join public.fb_ad_account d on (c.fk_ad_account_id = d.ad_account_id)
-inner join public.facebook_bm e on (e.bm_id = d.fk_bm_id)
-where e.fk_ts_id = '6719b3bc-e4b5-41dd-a04c-4323dc921a42'

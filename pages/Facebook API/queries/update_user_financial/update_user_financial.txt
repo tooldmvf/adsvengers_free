@@ -1,5 +1,0 @@
-{
-	"spent_rate_fees": "{{this.params.spent_rate_fees}}",
-	"amount_spent": "{{this.params.amount_spent}}",
-	"amount_spent_plus_fee": "{{this.params.amount_spent_plus_fee}}"
-}

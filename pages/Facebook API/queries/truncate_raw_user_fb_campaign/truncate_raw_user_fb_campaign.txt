@@ -1,1 +1,0 @@
-truncate table public.raw_user_fb_campaign
