@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 820,
+          "bottomRow": 900,
           "containerStyle": "none",
           "snapRows": 86,
           "parentRowSpace": 1,
@@ -3691,8 +3691,8 @@
                                 "paragraph",
                                 "label"
                               ],
-                              "topRow": 47,
-                              "bottomRow": 51,
+                              "topRow": 48,
+                              "bottomRow": 52,
                               "parentRowSpace": 10,
                               "type": "TEXT_WIDGET",
                               "hideCard": false,
@@ -4065,8 +4065,8 @@
                                 "paragraph",
                                 "label"
                               ],
-                              "topRow": 35,
-                              "bottomRow": 39,
+                              "topRow": 36,
+                              "bottomRow": 40,
                               "parentRowSpace": 10,
                               "type": "TEXT_WIDGET",
                               "hideCard": false,
@@ -4133,8 +4133,8 @@
                                 "paragraph",
                                 "label"
                               ],
-                              "topRow": 39,
-                              "bottomRow": 43,
+                              "topRow": 40,
+                              "bottomRow": 44,
                               "parentRowSpace": 10,
                               "type": "TEXT_WIDGET",
                               "hideCard": false,
@@ -4202,7 +4202,7 @@
                                 "label"
                               ],
                               "topRow": 31,
-                              "bottomRow": 35,
+                              "bottomRow": 36,
                               "parentRowSpace": 10,
                               "type": "TEXT_WIDGET",
                               "hideCard": false,
@@ -4272,8 +4272,8 @@
                                 "paragraph",
                                 "label"
                               ],
-                              "topRow": 47,
-                              "bottomRow": 51,
+                              "topRow": 48,
+                              "bottomRow": 52,
                               "parentRowSpace": 10,
                               "type": "TEXT_WIDGET",
                               "hideCard": false,
@@ -4326,7 +4326,7 @@
                               "minDynamicHeight": 4
                             },
                             {
-                              "defaultValue": "30",
+                              "defaultValue": "",
                               "iconSVG": "/static/media/icon.f122000eb591fcd1410a4775a54f9f0d.svg",
                               "tooltipAlwaysOn": false,
                               "labelText": "Profit Percentage",
@@ -4395,8 +4395,8 @@
                               "searchTags": [
                                 "line"
                               ],
-                              "topRow": 43,
-                              "bottomRow": 47,
+                              "topRow": 44,
+                              "bottomRow": 48,
                               "parentRowSpace": 10,
                               "type": "DIVIDER_WIDGET",
                               "capType": "nc",
@@ -4587,8 +4587,8 @@
                                 "click",
                                 "submit"
                               ],
-                              "topRow": 52,
-                              "bottomRow": 56,
+                              "topRow": 53,
+                              "bottomRow": 57,
                               "parentRowSpace": 10,
                               "type": "BUTTON_WIDGET",
                               "hideCard": false,

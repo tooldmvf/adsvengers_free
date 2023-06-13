@@ -1,4 +1,4 @@
-SELECT b.network_name,a.fk_network_id,a.fk_user_id,a.financial_month,amount_revenue_approved
+SELECT b.network_name,a.fk_network_id,a.fk_user_id,a.financial_month,amount_revenue_approved, a.commissions_fee
 FROM public.user_financial_month a
 inner join public.network b on (b.network_id = a.fk_network_id)
 where 1 = 1
