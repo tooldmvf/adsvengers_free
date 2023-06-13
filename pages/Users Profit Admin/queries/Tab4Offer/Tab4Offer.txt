@@ -26,4 +26,4 @@ and ({{MSUserNet.selectedOptionValues.length == 0}} OR text(a.fk_user_network_id
 group by e.first_name, e.last_name, c.ts_name,
 	a.fk_user_id, c.ts_id
 having (sum(a.amount_spent) > 0 or sum(a.amount_revenue) > 0)
-order by sum(a.amount_revenue)-sum(a.amount_spent_plus_fee) desc
+order by sum(a.amount_revenue_h)-sum(a.amount_spent_plus_fee) desc
