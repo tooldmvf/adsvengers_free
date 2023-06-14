@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "SELECT b.network_name,a.fk_network_id,a.fk_user_id,a.financial_month,amount_revenue_approved, a.commissions_fee\nFROM public.user_financial_month a\ninner join public.network b on (b.network_id = a.fk_network_id)\nwhere 1 = 1\nand b.network_name_short != 'AW'\nand ({{!SelectUser.selectedOptionValue}} OR (text(a.fk_user_id) IN ({{\"'\" + SelectUser.selectedOptionValue + \"'\"}})))\nAND SUBSTRING(a.financial_month,1,4) = '{{SelectYear.selectedOptionValue}}'\nAND SUBSTRING(a.financial_month,5,2) = '{{SelectMonth.selectedOptionValue}}'\norder by 1 asc",
+      "body": "SELECT b.network_name,a.fk_network_id,a.fk_user_id,a.financial_month,amount_revenue_approved\nFROM public.user_financial_month a\ninner join public.network b on (b.network_id = a.fk_network_id)\nwhere 1 = 1\nand b.network_name_short != 'AW'\nand ({{!SelectUser.selectedOptionValue}} OR (text(a.fk_user_id) IN ({{\"'\" + SelectUser.selectedOptionValue + \"'\"}})))\nAND SUBSTRING(a.financial_month,1,4) = '{{SelectYear.selectedOptionValue}}'\nAND SUBSTRING(a.financial_month,5,2) = '{{SelectMonth.selectedOptionValue}}'\norder by 1 asc",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {

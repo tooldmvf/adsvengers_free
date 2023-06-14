@@ -1193,7 +1193,7 @@
                       "serverSideFiltering": false,
                       "hideCard": false,
                       "shouldScrollContents": true,
-                      "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( `6719b3bc-e4b5-41dd-a04c-4323dc921a42`))(SelectTs.options, SelectTs.serverSideFiltering) }}",
+                      "defaultOptionValue": "",
                       "animateLoading": true,
                       "parentColumnSpace": 20.0625,
                       "dynamicTriggerPathList": [
@@ -1211,9 +1211,6 @@
                         },
                         {
                           "key": "options"
-                        },
-                        {
-                          "key": "defaultOptionValue"
                         }
                       ],
                       "labelPosition": "Left",
