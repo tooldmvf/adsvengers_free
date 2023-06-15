@@ -4914,7 +4914,7 @@
                       ],
                       "borderWidth": "1",
                       "key": "i4ja19lakx",
-                      "backgroundColor": "{{SelectFinancialTot.data[0].Tot_Profit > 0 ? '#f0fdf4' : '#fef2f2'}}",
+                      "backgroundColor": "{{SelectFinancialTot.data[0].Tot_ROI < 0 ? '#fef2f2' : \n(SelectFinancialTot.data[0].Tot_ROI <30 ? '#fefce8' : '#f0fdf4') }}",
                       "isDeprecated": false,
                       "rightColumn": 64,
                       "dynamicHeight": "FIXED",

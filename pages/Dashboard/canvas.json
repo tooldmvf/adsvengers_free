@@ -13,13 +13,13 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 1840,
+          "bottomRow": 1760,
           "containerStyle": "none",
           "snapRows": 125,
           "parentRowSpace": 1,
           "type": "CANVAS_WIDGET",
           "canExtend": true,
-          "version": 79,
+          "version": 80,
           "minHeight": 1292,
           "dynamicTriggerPathList": [],
           "parentColumnSpace": 1,
@@ -1265,7 +1265,7 @@
                               "fontFamily": "System Default",
                               "parentColumnSpace": 4.021484375,
                               "dynamicTriggerPathList": [],
-                              "leftColumn": 23,
+                              "leftColumn": 10,
                               "dynamicBindingPathList": [
                                 {
                                   "key": "truncateButtonColor"
@@ -2833,7 +2833,7 @@
                                       "fontFamily": "System Default",
                                       "parentColumnSpace": 2.008636474609375,
                                       "dynamicTriggerPathList": [],
-                                      "leftColumn": 21,
+                                      "leftColumn": 4,
                                       "dynamicBindingPathList": [
                                         {
                                           "key": "truncateButtonColor"
@@ -2867,7 +2867,7 @@
                                       "originalTopRow": 0,
                                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                                       "maxDynamicHeight": 9000,
-                                      "originalBottomRow": 6,
+                                      "originalBottomRow": 8,
                                       "fontSize": "0.875rem",
                                       "minDynamicHeight": 4
                                     }
