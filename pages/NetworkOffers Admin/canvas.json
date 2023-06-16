@@ -1005,7 +1005,7 @@
                         }
                       },
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                      "columnUpdatedAt": 1686907203150,
+                      "columnUpdatedAt": 1686934135936,
                       "originalBottomRow": 85,
                       "defaultSelectedRowIndices": [
                         0
@@ -1014,8 +1014,8 @@
                       "defaultPageSize": 0,
                       "columnOrder": [
                         "user_email_network",
-                        "spent",
                         "spent_no_fees",
+                        "spent",
                         "revenue",
                         "convs",
                         "profit",
@@ -1138,7 +1138,7 @@
                           "isEditable": false,
                           "isCellVisible": true,
                           "isDerived": false,
-                          "label": "Spent",
+                          "label": "Spent +Fees",
                           "isSaveVisible": true,
                           "isDiscardVisible": true,
                           "computedValue": "{{TableOffers.processedTableData.map((currentRow, currentIndex) => ( Utils2.myCurrency( currentRow[\"spent\"])))}}",
@@ -1406,7 +1406,7 @@
                           "isEditable": false,
                           "isCellVisible": true,
                           "isDerived": false,
-                          "label": "Spent (no Fees)",
+                          "label": "Spent",
                           "isSaveVisible": true,
                           "isDiscardVisible": true,
                           "computedValue": "{{TableOffers.processedTableData.map((currentRow, currentIndex) => ( Utils2.myCurrency( currentRow[\"spent_no_fees\"])))}}",
@@ -1966,7 +1966,7 @@
                         }
                       },
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                      "columnUpdatedAt": 1686907259242,
+                      "columnUpdatedAt": 1686934140979,
                       "originalBottomRow": 22,
                       "defaultSelectedRowIndices": [
                         0
@@ -1975,8 +1975,8 @@
                       "defaultPageSize": 0,
                       "columnOrder": [
                         "total",
-                        "spent",
                         "spent_no_fees",
+                        "spent",
                         "revenue",
                         "convs",
                         "profit",
@@ -2096,7 +2096,7 @@
                           "isEditable": false,
                           "isCellVisible": true,
                           "isDerived": false,
-                          "label": "Spent",
+                          "label": "Spent +Fees",
                           "isSaveVisible": true,
                           "isDiscardVisible": true,
                           "computedValue": "{{TableOffersCopy.processedTableData.map((currentRow, currentIndex) => ( Utils2.myCurrency( currentRow[\"spent\"])))}}",
@@ -2303,7 +2303,7 @@
                           "isEditable": false,
                           "isCellVisible": true,
                           "isDerived": false,
-                          "label": "Spent (no Fees)",
+                          "label": "Spent",
                           "isSaveVisible": true,
                           "isDiscardVisible": true,
                           "computedValue": "{{TableOffersCopy.processedTableData.map((currentRow, currentIndex) => ( Utils2.myCurrency( currentRow[\"spent_no_fees\"])))}}",
