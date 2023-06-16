@@ -947,7 +947,7 @@
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                       "maxDynamicHeight": 9000,
                       "originalBottomRow": 5,
-                      "onOptionChange": "{{SelectOFFERSUser.run()}}",
+                      "onOptionChange": "{{SelectOFFERSUser.run();\nSelectOFFERSUserTOT.run()}}",
                       "minDynamicHeight": 4
                     },
                     {
@@ -4925,7 +4925,7 @@
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                       "maxDynamicHeight": 9000,
                       "originalBottomRow": 5,
-                      "onOptionChange": "{{SelectOFFERSUser.run()}}",
+                      "onOptionChange": "{{SelectOFFERSUser.run();\nSelectOFFERSUserTOT.run()}}",
                       "minDynamicHeight": 4
                     },
                     {
@@ -4989,7 +4989,7 @@
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                       "maxDynamicHeight": 9000,
                       "originalBottomRow": 5,
-                      "onOptionChange": "{{SelectOFFERSUser.run()}}",
+                      "onOptionChange": "{{SelectOFFERSUser.run();\nSelectOFFERSUserTOT.run()}}",
                       "minDynamicHeight": 4
                     }
                   ],
