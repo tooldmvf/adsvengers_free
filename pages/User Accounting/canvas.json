@@ -13,13 +13,13 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 900,
+          "bottomRow": 820,
           "containerStyle": "none",
           "snapRows": 86,
           "parentRowSpace": 1,
           "type": "CANVAS_WIDGET",
           "canExtend": true,
-          "version": 79,
+          "version": 80,
           "minHeight": 880,
           "parentColumnSpace": 1,
           "dynamicBindingPathList": [],
@@ -1233,7 +1233,11 @@
                                 "amount_spent",
                                 "spent_rate_fees"
                               ],
-                              "dynamicPropertyPathList": [],
+                              "dynamicPropertyPathList": [
+                                {
+                                  "key": "tableData"
+                                }
+                              ],
                               "compactMode": "SHORT",
                               "displayName": "Table",
                               "bottomRow": 37,
@@ -2909,7 +2913,11 @@
                                 "fk_network_id",
                                 "fk_user_id"
                               ],
-                              "dynamicPropertyPathList": [],
+                              "dynamicPropertyPathList": [
+                                {
+                                  "key": "tableData"
+                                }
+                              ],
                               "compactMode": "SHORT",
                               "displayName": "Table",
                               "bottomRow": 57,

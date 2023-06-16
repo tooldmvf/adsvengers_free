@@ -20,7 +20,7 @@
           "parentRowSpace": 1,
           "type": "CANVAS_WIDGET",
           "canExtend": true,
-          "version": 79,
+          "version": 80,
           "minHeight": 900,
           "parentColumnSpace": 1,
           "dynamicTriggerPathList": [],
@@ -2298,6 +2298,9 @@
                                 },
                                 {
                                   "key": "primaryColumns.offer_payout.cellBackground"
+                                },
+                                {
+                                  "key": "tableData"
                                 }
                               ],
                               "compactMode": "SHORT",
@@ -2308,7 +2311,7 @@
                                 "step": 70,
                                 "status": 85,
                                 "offer_name": 362,
-                                "revenue": 115,
+                                "revenue": 125,
                                 "spent": 108,
                                 "profit": 113,
                                 "Tot_ROI": 131,
@@ -2407,10 +2410,10 @@
                                   "isEditable": false,
                                   "isCellVisible": true,
                                   "isDerived": false,
-                                  "label": "Revenue",
+                                  "label": "Revenue (€)",
                                   "isSaveVisible": true,
                                   "isDiscardVisible": true,
-                                  "computedValue": "{{TableOffers.processedTableData.map((currentRow, currentIndex) => ( Utils2.myCurrency( currentRow[\"revenue\"])))}}",
+                                  "computedValue": "{{TableOffers.processedTableData.map((currentRow, currentIndex) => ( ( currentRow[\"revenue\"]).toFixed(2)))}}",
                                   "sticky": "",
                                   "validation": {},
                                   "cellBackground": "{{TableOffers.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"row_color\"]))}}"
@@ -2436,10 +2439,10 @@
                                   "isEditable": false,
                                   "isCellVisible": true,
                                   "isDerived": false,
-                                  "label": "Spent",
+                                  "label": "Spent (€)",
                                   "isSaveVisible": true,
                                   "isDiscardVisible": true,
-                                  "computedValue": "{{TableOffers.processedTableData.map((currentRow, currentIndex) => ( Utils2.myCurrency( currentRow[\"spent\"])))}}",
+                                  "computedValue": "{{TableOffers.processedTableData.map((currentRow, currentIndex) => ( (currentRow[\"spent\"]).toFixed(2)))}}",
                                   "sticky": "",
                                   "validation": {},
                                   "cellBackground": "{{TableOffers.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"row_color\"]))}}"
@@ -2494,10 +2497,10 @@
                                   "isEditable": false,
                                   "isCellVisible": true,
                                   "isDerived": false,
-                                  "label": "Profit",
+                                  "label": "Profit (€)",
                                   "isSaveVisible": true,
                                   "isDiscardVisible": true,
-                                  "computedValue": "{{TableOffers.processedTableData.map((currentRow, currentIndex) => ( Utils2.myCurrency( currentRow[\"profit\"])))}}",
+                                  "computedValue": "{{TableOffers.processedTableData.map((currentRow, currentIndex) => ( (currentRow[\"profit\"]).toFixed(2)))}}",
                                   "sticky": "",
                                   "validation": {},
                                   "cellBackground": "{{TableOffers.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"row_color\"]))}}"
@@ -2552,10 +2555,10 @@
                                   "isEditable": false,
                                   "isCellVisible": true,
                                   "isDerived": false,
-                                  "label": "ROI",
+                                  "label": "ROI (%)",
                                   "isSaveVisible": true,
                                   "isDiscardVisible": true,
-                                  "computedValue": "{{TableOffers.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Tot_ROI\"].toFixed(2) + ' %'))}}",
+                                  "computedValue": "{{TableOffers.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Tot_ROI\"].toFixed(2)))}}",
                                   "sticky": "",
                                   "validation": {},
                                   "cellBackground": "{{TableOffers.processedTableData.map((currentRow, currentIndex) => ( currentRow.row_color))}}"
@@ -2671,10 +2674,10 @@
                                   "isEditable": false,
                                   "isCellVisible": true,
                                   "isDerived": false,
-                                  "label": "CPA",
+                                  "label": "CPA (€)",
                                   "isSaveVisible": true,
                                   "isDiscardVisible": true,
-                                  "computedValue": "{{TableOffers.processedTableData.map((currentRow, currentIndex) => ( Utils2.myCurrency( currentRow[\"CPA\"])))}}",
+                                  "computedValue": "{{TableOffers.processedTableData.map((currentRow, currentIndex) => ( (currentRow[\"CPA\"]).toFixed(2)))}}",
                                   "sticky": "",
                                   "validation": {},
                                   "cellBackground": "{{TableOffers.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"row_color\"]))}}"
@@ -2701,10 +2704,10 @@
                                   "isEditable": false,
                                   "isCellVisible": true,
                                   "isDerived": false,
-                                  "label": "Payout",
+                                  "label": "Payout (€)",
                                   "isSaveVisible": true,
                                   "isDiscardVisible": true,
-                                  "computedValue": "{{TableOffers.processedTableData.map((currentRow, currentIndex) => ( Utils2.myCurrency( currentRow[\"offer_payout\"])))}}",
+                                  "computedValue": "{{TableOffers.processedTableData.map((currentRow, currentIndex) => ( (currentRow[\"offer_payout\"]).toFixed(2)))}}",
                                   "sticky": "",
                                   "validation": {},
                                   "cellBackground": "{{TableOffers.processedTableData.map((currentRow, currentIndex) => ( currentRow.row_color))}}"
@@ -3646,6 +3649,9 @@
                                 },
                                 {
                                   "key": "primaryColumns.tot_conv.textColor"
+                                },
+                                {
+                                  "key": "tableData"
                                 }
                               ],
                               "compactMode": "DEFAULT",
