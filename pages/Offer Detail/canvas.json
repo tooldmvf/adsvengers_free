@@ -5183,13 +5183,9 @@
                     {
                       "boxShadow": "none",
                       "widgetName": "refresh_btn",
-                      "onClick": "{{SelectOFFERSUser.run();\n}}",
+                      "onClick": "{{SelectOFFERSUser.run();\nSelectOFFERSUserTOT.run()}}",
                       "buttonColor": "#facc15",
-                      "dynamicPropertyPathList": [
-                        {
-                          "key": "onClick"
-                        }
-                      ],
+                      "dynamicPropertyPathList": [],
                       "topRow": 1,
                       "bottomRow": 5,
                       "parentRowSpace": 10,
