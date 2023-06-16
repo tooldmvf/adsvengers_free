@@ -42,8 +42,8 @@ inner join public.traffic_source e on (e.ts_id = b.fk_ts_id)
 inner join public.network f on (f.network_id = b.fk_network_id)
 inner join public.user_profiles g on (g.fk_user_id = a.fk_user_id)
 where 1 = 1
-and fk_offer_id = '{{TableOffers.selectedRow.offer_id}}'
-and f.network_name_short = '{{TableOffers.selectedRow.network_name_short}}'
+and fk_offer_id = '{{TableOffersCopy.selectedRow.offer_id}}'
+and f.network_name_short = '{{TableOffersCopy.selectedRow.network_name_short}}'
 and ({{!SelectUser.selectedOptionValue}} OR (text(a.fk_user_id) IN ({{"'" + SelectUser.selectedOptionValue + "'"}})))
 and a.financial_date >= to_date('{{moment(DateFrom.selectedDate).format('YYYY-DD-MM')}}','YYYY-DD-MM')
 and a.financial_date <= to_date('{{moment(DateTo.selectedDate).format('YYYY-DD-MM')}}','YYYY-DD-MM')
