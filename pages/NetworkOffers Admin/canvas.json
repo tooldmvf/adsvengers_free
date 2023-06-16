@@ -1216,7 +1216,7 @@
                         }
                       },
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                      "columnUpdatedAt": 1686128520416,
+                      "columnUpdatedAt": 1686907203150,
                       "originalBottomRow": 80,
                       "defaultSelectedRowIndices": [
                         0
@@ -2132,6 +2132,12 @@
                         },
                         {
                           "key": "primaryColumns.spent_no_fees.cellBackground"
+                        },
+                        {
+                          "key": "primaryColumns.total.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.total.cellBackground"
                         }
                       ],
                       "needsHeightForContent": true,
@@ -2170,7 +2176,7 @@
                         }
                       },
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                      "columnUpdatedAt": 1686128510275,
+                      "columnUpdatedAt": 1686907259242,
                       "originalBottomRow": 112,
                       "defaultSelectedRowIndices": [
                         0
@@ -2178,6 +2184,7 @@
                       "widgetName": "TableOffersCopy",
                       "defaultPageSize": 0,
                       "columnOrder": [
+                        "total",
                         "spent",
                         "spent_no_fees",
                         "revenue",
@@ -2215,6 +2222,9 @@
                         },
                         {
                           "key": "tableData"
+                        },
+                        {
+                          "key": "primaryColumns.total.cellBackground"
                         }
                       ],
                       "compactMode": "DEFAULT",
@@ -2225,15 +2235,16 @@
                         "step": 70,
                         "status": 85,
                         "offer_name": 210,
-                        "revenue": 221,
-                        "spent": 196,
+                        "revenue": 153,
+                        "spent": 153,
                         "profit": 170,
-                        "convs": 202,
+                        "convs": 141,
                         "CPA": 159,
                         "Payout": 76,
-                        "roi": 125,
+                        "roi": 171,
                         "user_email_network": 252,
-                        "spent_no_fees": 210
+                        "spent_no_fees": 147,
+                        "total": 197
                       },
                       "parentRowSpace": 10,
                       "hideCard": false,
@@ -2252,7 +2263,7 @@
                           "originalId": "revenue",
                           "id": "revenue",
                           "alias": "revenue",
-                          "horizontalAlignment": "LEFT",
+                          "horizontalAlignment": "RIGHT",
                           "verticalAlignment": "CENTER",
                           "columnType": "number",
                           "textColor": "",
@@ -2281,7 +2292,7 @@
                           "originalId": "spent",
                           "id": "spent",
                           "alias": "spent",
-                          "horizontalAlignment": "LEFT",
+                          "horizontalAlignment": "RIGHT",
                           "verticalAlignment": "CENTER",
                           "columnType": "number",
                           "textColor": "",
@@ -2310,7 +2321,7 @@
                           "originalId": "row_color",
                           "id": "row_color",
                           "alias": "row_color",
-                          "horizontalAlignment": "LEFT",
+                          "horizontalAlignment": "RIGHT",
                           "verticalAlignment": "CENTER",
                           "columnType": "text",
                           "textColor": "",
@@ -2339,7 +2350,7 @@
                           "originalId": "profit",
                           "id": "profit",
                           "alias": "profit",
-                          "horizontalAlignment": "LEFT",
+                          "horizontalAlignment": "RIGHT",
                           "verticalAlignment": "CENTER",
                           "columnType": "number",
                           "textColor": "",
@@ -2369,7 +2380,7 @@
                           "originalId": "convs",
                           "id": "convs",
                           "alias": "convs",
-                          "horizontalAlignment": "LEFT",
+                          "horizontalAlignment": "RIGHT",
                           "verticalAlignment": "CENTER",
                           "columnType": "number",
                           "textColor": "",
@@ -2399,7 +2410,7 @@
                           "originalId": "CPA",
                           "id": "CPA",
                           "alias": "CPA",
-                          "horizontalAlignment": "LEFT",
+                          "horizontalAlignment": "RIGHT",
                           "verticalAlignment": "CENTER",
                           "columnType": "number",
                           "textColor": "",
@@ -2429,7 +2440,7 @@
                           "originalId": "Payout",
                           "id": "Payout",
                           "alias": "Payout",
-                          "horizontalAlignment": "LEFT",
+                          "horizontalAlignment": "RIGHT",
                           "verticalAlignment": "CENTER",
                           "columnType": "number",
                           "textColor": "",
@@ -2459,7 +2470,7 @@
                           "originalId": "roi",
                           "id": "roi",
                           "alias": "roi",
-                          "horizontalAlignment": "LEFT",
+                          "horizontalAlignment": "RIGHT",
                           "verticalAlignment": "CENTER",
                           "columnType": "number",
                           "textColor": "",
@@ -2489,7 +2500,7 @@
                           "originalId": "spent_no_fees",
                           "id": "spent_no_fees",
                           "alias": "spent_no_fees",
-                          "horizontalAlignment": "LEFT",
+                          "horizontalAlignment": "RIGHT",
                           "verticalAlignment": "CENTER",
                           "columnType": "number",
                           "textSize": "0.875rem",
@@ -2509,6 +2520,36 @@
                           "sticky": "",
                           "validation": {},
                           "cellBackground": "{{TableOffersCopy.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"row_color\"]))}}"
+                        },
+                        "total": {
+                          "allowCellWrapping": false,
+                          "allowSameOptionsInNewRow": true,
+                          "index": 0,
+                          "width": 150,
+                          "originalId": "total",
+                          "id": "total",
+                          "alias": "total",
+                          "horizontalAlignment": "LEFT",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "text",
+                          "textColor": "",
+                          "textSize": "0.875rem",
+                          "fontStyle": "BOLD",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": true,
+                          "isDisabled": false,
+                          "isCellEditable": false,
+                          "isEditable": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "",
+                          "isSaveVisible": true,
+                          "isDiscardVisible": true,
+                          "computedValue": "{{TableOffersCopy.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"total\"]))}}",
+                          "sticky": "",
+                          "validation": {},
+                          "cellBackground": "{{TableOffersCopy.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"row_color\"]))}}"
                         }
                       },
                       "onRowSelected": "",
@@ -2523,7 +2564,7 @@
                       "searchKey": "",
                       "parentId": "h80egwa789",
                       "renderMode": "CANVAS",
-                      "horizontalAlignment": "LEFT",
+                      "horizontalAlignment": "RIGHT",
                       "isVisibleSearch": false,
                       "originalTopRow": 99,
                       "isVisiblePagination": false,
@@ -2645,14 +2686,14 @@
               "pluginType": "DB",
               "jsonPathKeys": [
                 "MSTrSource.selectedOptionValues.length == 0",
-                "!SelectUser.selectedOptionValue",
                 "\"'\" + SelectUser.selectedOptionValue + \"'\"",
+                "!SelectUser.selectedOptionValue",
                 "moment(DateTo.selectedDate).format('YYYY-DD-MM')",
                 "SearchCamp.inputText",
-                "MSNetwork.selectedOptionValues.length == 0",
-                "moment(DateFrom.selectedDate).format('YYYY-DD-MM')",
                 "\"'\" + MSTrSource.selectedOptionValues.join(\"', '\") + \"'\"",
-                "\"'\" + MSNetwork.selectedOptionValues.join(\"', '\") + \"'\""
+                "MSNetwork.selectedOptionValues.length == 0",
+                "\"'\" + MSNetwork.selectedOptionValues.join(\"', '\") + \"'\"",
+                "moment(DateFrom.selectedDate).format('YYYY-DD-MM')"
               ],
               "timeoutInMillisecond": 10000
             }

@@ -1,4 +1,4 @@
-SELECT 	
+SELECT 	'Total' as Total,
 	sum(a.amount_spent_plus_fee) spent,
 	sum(a.amount_revenue) revenue,
 	sum(a.amount_revenue)-sum(a.amount_spent_plus_fee) profit,
