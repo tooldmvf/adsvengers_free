@@ -20,7 +20,7 @@
           "parentRowSpace": 1,
           "type": "CANVAS_WIDGET",
           "canExtend": true,
-          "version": 79,
+          "version": 80,
           "minHeight": 900,
           "parentColumnSpace": 1,
           "dynamicTriggerPathList": [],
@@ -5746,6 +5746,9 @@
                         },
                         {
                           "key": "primaryColumns.TOT_ROI_h.textColor"
+                        },
+                        {
+                          "key": "tableData"
                         }
                       ],
                       "compactMode": "SHORT",
@@ -5756,16 +5759,17 @@
                         "step": 70,
                         "status": 85,
                         "offer": 329,
-                        "amount_spent_plus_fee": 95,
-                        "Approved_Rev": 106,
-                        "Appr_profit": 116,
-                        "Appr_ROI": 109,
+                        "amount_spent_plus_fee": 118,
+                        "Approved_Rev": 132,
+                        "Appr_profit": 144,
+                        "Appr_ROI": 138,
                         "amount_revenue": 100,
                         "TOT_profit": 107,
                         "TOT_ROI": 108,
                         "amount_revenue_h": 132,
                         "TOT_profit_h": 117,
-                        "Rejected_Rate": 112
+                        "Rejected_Rate": 130,
+                        "approved_leads": 120
                       },
                       "parentRowSpace": 10,
                       "hideCard": false,
@@ -5822,10 +5826,10 @@
                           "isEditable": false,
                           "isCellVisible": true,
                           "isDerived": false,
-                          "label": "Spent",
+                          "label": "Spent (€)",
                           "isSaveVisible": true,
                           "isDiscardVisible": true,
-                          "computedValue": "{{Table2Copy.processedTableData.map((currentRow, currentIndex) => ( Utils2.myCurrency(currentRow[\"amount_spent_plus_fee\"])))}}",
+                          "computedValue": "{{Table2Copy.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"amount_spent_plus_fee\"].toFixed(2)))}}",
                           "sticky": "",
                           "validation": {},
                           "cellBackground": ""
@@ -5851,10 +5855,10 @@
                           "isEditable": false,
                           "isCellVisible": true,
                           "isDerived": false,
-                          "label": "Appr. Rev",
+                          "label": "Appr. Rev (€)",
                           "isSaveVisible": true,
                           "isDiscardVisible": true,
-                          "computedValue": "{{Table2Copy.processedTableData.map((currentRow, currentIndex) => ( Utils2.myCurrency(currentRow[\"Approved_Rev\"])))}}",
+                          "computedValue": "{{Table2Copy.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Approved_Rev\"].toFixed(2)))}}",
                           "sticky": "",
                           "validation": {},
                           "cellBackground": ""
@@ -5880,10 +5884,10 @@
                           "isEditable": false,
                           "isCellVisible": true,
                           "isDerived": false,
-                          "label": "Appr. Profit",
+                          "label": "Appr. Profit (€)",
                           "isSaveVisible": true,
                           "isDiscardVisible": true,
-                          "computedValue": "{{Table2Copy.processedTableData.map((currentRow, currentIndex) => ( Utils2.myCurrency(currentRow[\"Appr_profit\"])))}}",
+                          "computedValue": "{{Table2Copy.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Appr_profit\"].toFixed(2)))}}",
                           "sticky": "",
                           "validation": {},
                           "cellBackground": ""
@@ -5909,10 +5913,10 @@
                           "isEditable": false,
                           "isCellVisible": true,
                           "isDerived": false,
-                          "label": "Appr. ROI",
+                          "label": "Appr. ROI (%)",
                           "isSaveVisible": true,
                           "isDiscardVisible": true,
-                          "computedValue": "{{Table2Copy.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Appr_ROI\"].toFixed(2) + ' %'))}}",
+                          "computedValue": "{{Table2Copy.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Appr_ROI\"].toFixed(2)))}}",
                           "sticky": "",
                           "validation": {},
                           "cellBackground": ""
@@ -5938,10 +5942,10 @@
                           "isEditable": false,
                           "isCellVisible": true,
                           "isDerived": false,
-                          "label": "Rej. Rate",
+                          "label": "Rej. Rate (%)",
                           "isSaveVisible": true,
                           "isDiscardVisible": true,
-                          "computedValue": "{{Table2Copy.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Rejected_Rate\"].toFixed(2) + ' %'))}}",
+                          "computedValue": "{{Table2Copy.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Rejected_Rate\"].toFixed(2)))}}",
                           "sticky": "",
                           "validation": {},
                           "cellBackground": ""
@@ -5968,10 +5972,10 @@
                           "isEditable": false,
                           "isCellVisible": true,
                           "isDerived": false,
-                          "label": "1st Day Rev",
+                          "label": "1st Day Rev (€)",
                           "isSaveVisible": true,
                           "isDiscardVisible": true,
-                          "computedValue": "{{Table2Copy.processedTableData.map((currentRow, currentIndex) => ( Utils2.myCurrency(currentRow[\"amount_revenue_h\"])))}}",
+                          "computedValue": "{{Table2Copy.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"amount_revenue_h\"].toFixed(2)))}}",
                           "sticky": "",
                           "validation": {},
                           "cellBackground": ""
@@ -5998,10 +6002,10 @@
                           "isEditable": false,
                           "isCellVisible": true,
                           "isDerived": false,
-                          "label": "1st Day Profit",
+                          "label": "1st Day Profit (€)",
                           "isSaveVisible": true,
                           "isDiscardVisible": true,
-                          "computedValue": "{{Table2Copy.processedTableData.map((currentRow, currentIndex) => ( Utils2.myCurrency(currentRow[\"TOT_profit_h\"])))}}",
+                          "computedValue": "{{Table2Copy.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"TOT_profit_h\"].toFixed(2)))}}",
                           "sticky": "",
                           "validation": {},
                           "cellBackground": ""
@@ -6028,10 +6032,10 @@
                           "isEditable": false,
                           "isCellVisible": true,
                           "isDerived": false,
-                          "label": "1st Day ROI",
+                          "label": "1st Day ROI (%)",
                           "isSaveVisible": true,
                           "isDiscardVisible": true,
-                          "computedValue": "{{Table2Copy.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"TOT_ROI_h\"].toFixed(2) + ' %'))}}",
+                          "computedValue": "{{Table2Copy.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"TOT_ROI_h\"].toFixed(2)))}}",
                           "sticky": "",
                           "validation": {},
                           "cellBackground": ""
@@ -6805,6 +6809,9 @@
                         },
                         {
                           "key": "primaryColumns.Rejected_Rate.textColor"
+                        },
+                        {
+                          "key": "tableData"
                         }
                       ],
                       "compactMode": "SHORT",

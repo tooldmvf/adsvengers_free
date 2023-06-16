@@ -20,7 +20,7 @@
           "parentRowSpace": 1,
           "type": "CANVAS_WIDGET",
           "canExtend": true,
-          "version": 79,
+          "version": 80,
           "minHeight": 900,
           "parentColumnSpace": 1,
           "dynamicBindingPathList": [],
@@ -1599,7 +1599,11 @@
                         "fk_user_id",
                         "fk_bm_id"
                       ],
-                      "dynamicPropertyPathList": [],
+                      "dynamicPropertyPathList": [
+                        {
+                          "key": "tableData"
+                        }
+                      ],
                       "compactMode": "SHORT",
                       "displayName": "Table",
                       "bottomRow": 76,
@@ -2250,7 +2254,11 @@
                         "id",
                         "campaigns"
                       ],
-                      "dynamicPropertyPathList": [],
+                      "dynamicPropertyPathList": [
+                        {
+                          "key": "tableData"
+                        }
+                      ],
                       "displayName": "Table",
                       "bottomRow": 34,
                       "columnWidthMap": {

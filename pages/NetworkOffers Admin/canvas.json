@@ -20,7 +20,7 @@
           "parentRowSpace": 1,
           "type": "CANVAS_WIDGET",
           "canExtend": true,
-          "version": 79,
+          "version": 80,
           "minHeight": 900,
           "parentColumnSpace": 1,
           "dynamicTriggerPathList": [],
@@ -1266,6 +1266,9 @@
                         },
                         {
                           "key": "primaryColumns.spent_no_fees.cellBackground"
+                        },
+                        {
+                          "key": "tableData"
                         }
                       ],
                       "compactMode": "DEFAULT",
@@ -2209,6 +2212,9 @@
                         },
                         {
                           "key": "primaryColumns.spent_no_fees.cellBackground"
+                        },
+                        {
+                          "key": "tableData"
                         }
                       ],
                       "compactMode": "DEFAULT",

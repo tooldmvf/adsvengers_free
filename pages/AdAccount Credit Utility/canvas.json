@@ -19,7 +19,7 @@
           "parentRowSpace": 1,
           "type": "CANVAS_WIDGET",
           "canExtend": true,
-          "version": 79,
+          "version": 80,
           "minHeight": 900,
           "parentColumnSpace": 1,
           "dynamicBindingPathList": [],
@@ -2136,6 +2136,9 @@
                         },
                         {
                           "key": "primaryColumns.id.cellBackground"
+                        },
+                        {
+                          "key": "tableData"
                         }
                       ],
                       "compactMode": "SHORT",
@@ -3005,6 +3008,9 @@
                       "dynamicPropertyPathList": [
                         {
                           "key": "onPageChange"
+                        },
+                        {
+                          "key": "tableData"
                         }
                       ],
                       "compactMode": "SHORT",

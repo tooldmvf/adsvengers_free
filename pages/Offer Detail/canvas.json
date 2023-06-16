@@ -5592,8 +5592,8 @@
                         "step": 70,
                         "status": 85,
                         "offer_name": 210,
-                        "revenue": 104,
-                        "spent": 101,
+                        "revenue": 119,
+                        "spent": 111,
                         "profit": 87,
                         "convs": 87,
                         "CPA": 87,
@@ -5660,10 +5660,10 @@
                           "isEditable": false,
                           "isCellVisible": true,
                           "isDerived": false,
-                          "label": "Revenue",
+                          "label": "Revenue (€)",
                           "isSaveVisible": true,
                           "isDiscardVisible": true,
-                          "computedValue": "{{TableOffers.processedTableData.map((currentRow, currentIndex) => ( Utils2.myCurrency( currentRow[\"revenue\"])))}}",
+                          "computedValue": "{{TableOffers.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"revenue\"].toFixed(2)))}}",
                           "sticky": "",
                           "validation": {},
                           "cellBackground": "{{TableOffers.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"row_color\"]))}}"
@@ -5689,10 +5689,10 @@
                           "isEditable": false,
                           "isCellVisible": true,
                           "isDerived": false,
-                          "label": "Spent",
+                          "label": "Spent  (€)",
                           "isSaveVisible": true,
                           "isDiscardVisible": true,
-                          "computedValue": "{{TableOffers.processedTableData.map((currentRow, currentIndex) => ( Utils2.myCurrency( currentRow[\"spent\"])))}}",
+                          "computedValue": "{{TableOffers.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"spent\"].toFixed(2)))}}",
                           "sticky": "",
                           "validation": {},
                           "cellBackground": "{{TableOffers.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"row_color\"]))}}"
@@ -5747,10 +5747,10 @@
                           "isEditable": false,
                           "isCellVisible": true,
                           "isDerived": false,
-                          "label": "Profit",
+                          "label": "Profit (€)",
                           "isSaveVisible": true,
                           "isDiscardVisible": true,
-                          "computedValue": "{{TableOffers.processedTableData.map((currentRow, currentIndex) => ( Utils2.myCurrency( currentRow[\"profit\"])))}}",
+                          "computedValue": "{{TableOffers.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"profit\"].toFixed(2)))}}",
                           "sticky": "",
                           "validation": {},
                           "cellBackground": "{{TableOffers.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"row_color\"]))}}"
@@ -5807,10 +5807,10 @@
                           "isEditable": false,
                           "isCellVisible": true,
                           "isDerived": false,
-                          "label": "CPA",
+                          "label": "CPA (€)",
                           "isSaveVisible": true,
                           "isDiscardVisible": true,
-                          "computedValue": "{{TableOffers.processedTableData.map((currentRow, currentIndex) => ( Utils2.myCurrency( currentRow[\"CPA\"])))}}",
+                          "computedValue": "{{TableOffers.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"CPA\"].toFixed(2)))}}",
                           "sticky": "",
                           "validation": {},
                           "cellBackground": "{{TableOffers.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"row_color\"]))}}"
@@ -5837,10 +5837,10 @@
                           "isEditable": false,
                           "isCellVisible": true,
                           "isDerived": false,
-                          "label": "Payout",
+                          "label": "Payout (€)",
                           "isSaveVisible": true,
                           "isDiscardVisible": true,
-                          "computedValue": "{{TableOffers.processedTableData.map((currentRow, currentIndex) => ( Utils2.myCurrency(currentRow[\"Payout\"])))}}",
+                          "computedValue": "{{TableOffers.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Payout\"].toFixed(2)))}}",
                           "sticky": "",
                           "validation": {},
                           "cellBackground": "{{TableOffers.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"row_color\"]))}}"
@@ -5897,10 +5897,10 @@
                           "isEditable": false,
                           "isCellVisible": true,
                           "isDerived": false,
-                          "label": "ROI",
+                          "label": "ROI (%)",
                           "isSaveVisible": true,
                           "isDiscardVisible": true,
-                          "computedValue": "{{TableOffers.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"roi\"].toFixed(1) + ' %'))}}",
+                          "computedValue": "{{TableOffers.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"roi\"].toFixed(1)))}}",
                           "sticky": "",
                           "validation": {},
                           "cellBackground": "{{TableOffers.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"row_color\"]))}}"
@@ -6177,6 +6177,17 @@
         },
         "layoutOnLoadActions": [
           [
+            {
+              "id": "Offer Detail_Utils2.onLoadPage",
+              "name": "Utils2.onLoadPage",
+              "collectionId": "Offer Detail_Utils2",
+              "confirmBeforeExecute": false,
+              "pluginType": "JS",
+              "jsonPathKeys": [
+                "async () => {\n  await get_all_users.run();\n  await SelectOFFERSUser.run();\n}"
+              ],
+              "timeoutInMillisecond": 10000
+            },
             {
               "id": "Offer Detail_get_all_users",
               "name": "get_all_users",
