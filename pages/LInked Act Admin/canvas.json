@@ -19,7 +19,7 @@
           "parentRowSpace": 1,
           "type": "CANVAS_WIDGET",
           "canExtend": true,
-          "version": 79,
+          "version": 80,
           "minHeight": 900,
           "parentColumnSpace": 1,
           "dynamicBindingPathList": [],
@@ -960,7 +960,7 @@
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                       "maxDynamicHeight": 9000,
                       "originalBottomRow": 9,
-                      "onOptionChange": "{{(() => {\nstoreValue('myUsers',MultiSelectUsers.selectedOptionValues);\nfbAccountAll.run();\n})()}}",
+                      "onOptionChange": "{{(() => {\nstoreValue('myUsers',MultiSelectUsers.selectedOptionValues);\nfbAccountAll.run();\nfbAccountAllCopy.run();\n})()}}",
                       "minDynamicHeight": 4
                     },
                     {
@@ -1130,6 +1130,9 @@
                       "dynamicPropertyPathList": [
                         {
                           "key": "primaryColumns.customColumn1.onClick"
+                        },
+                        {
+                          "key": "tableData"
                         }
                       ],
                       "compactMode": "SHORT",
@@ -1549,6 +1552,11 @@
                       "originalBottomRow": 5,
                       "widgetName": "MultiSelectBM",
                       "isFilterable": true,
+                      "dynamicPropertyPathList": [
+                        {
+                          "key": "onOptionChange"
+                        }
+                      ],
                       "displayName": "MultiSelect",
                       "searchTags": [
                         "dropdown",
@@ -1577,7 +1585,7 @@
                       "responsiveBehavior": "fill",
                       "originalTopRow": 1,
                       "maxDynamicHeight": 9000,
-                      "onOptionChange": "{{fbAccountAll.run()}}",
+                      "onOptionChange": "{{fbAccountAll.run();fbAccountAllCopy.run();}}",
                       "minDynamicHeight": 4
                     }
                   ],
@@ -1855,6 +1863,9 @@
                       "dynamicPropertyPathList": [
                         {
                           "key": "primaryColumns.account_status.textColor"
+                        },
+                        {
+                          "key": "tableData"
                         }
                       ],
                       "compactMode": "SHORT",
@@ -2242,7 +2253,11 @@
                 "bm_id",
                 "ts_name"
               ],
-              "dynamicPropertyPathList": [],
+              "dynamicPropertyPathList": [
+                {
+                  "key": "tableData"
+                }
+              ],
               "compactMode": "SHORT",
               "displayName": "Table",
               "bottomRow": 150,
