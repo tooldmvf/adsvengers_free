@@ -908,7 +908,7 @@
                       "bottomRow": 5,
                       "shortcuts": true,
                       "parentRowSpace": 10,
-                      "labelWidth": "5",
+                      "labelWidth": "4",
                       "type": "DATE_PICKER_WIDGET2",
                       "hideCard": false,
                       "animateLoading": true,
@@ -918,7 +918,7 @@
                           "key": "onDateSelected"
                         }
                       ],
-                      "leftColumn": 36,
+                      "leftColumn": 42,
                       "dynamicBindingPathList": [
                         {
                           "key": "accentColor"
@@ -930,12 +930,12 @@
                       "labelPosition": "Left",
                       "isDisabled": false,
                       "key": "ukgniyfotd",
-                      "onDateSelected": "{{(() => {\nstoreValue('dateFrom',DateFrom4.selectedDate);\nUsersLog.run();UsersLogTot.run();\n})()}}  ",
+                      "onDateSelected": "{{(() => {\nstoreValue('dateFrom',DateFrom4.selectedDate);\nUsersLog.run();UsersLogTot.run();Utils2.myCurrency3();\n})()}}  ",
                       "labelTextSize": "0.875rem",
                       "isRequired": false,
                       "defaultDate": "{{moment().subtract(1, 'days')}}",
                       "isDeprecated": false,
-                      "rightColumn": 50,
+                      "rightColumn": 53,
                       "dynamicHeight": "FIXED",
                       "widgetId": "q1h59sntzz",
                       "accentColor": "{{appsmith.theme.colors.primaryColor}}",
@@ -983,7 +983,7 @@
                       "bottomRow": 5,
                       "shortcuts": true,
                       "parentRowSpace": 10,
-                      "labelWidth": "4",
+                      "labelWidth": "3",
                       "type": "DATE_PICKER_WIDGET2",
                       "hideCard": false,
                       "animateLoading": true,
@@ -993,7 +993,7 @@
                           "key": "onDateSelected"
                         }
                       ],
-                      "leftColumn": 50,
+                      "leftColumn": 53,
                       "dynamicBindingPathList": [
                         {
                           "key": "accentColor"
@@ -1008,7 +1008,7 @@
                       "labelPosition": "Left",
                       "isDisabled": false,
                       "key": "ukgniyfotd",
-                      "onDateSelected": "{{(() => {\nstoreValue('dateTo',DateTo4.selectedDate);\nUsersLog.run();UsersLogTot.run();\n})()}}  \n",
+                      "onDateSelected": "{{(() => {\nstoreValue('dateTo',DateTo4.selectedDate);\nUsersLog.run();UsersLogTot.run();Utils2.myCurrency3();\n})()}}  \n",
                       "labelTextSize": "0.875rem",
                       "isRequired": false,
                       "defaultDate": "{{appsmith.store?.dateTo || moment().add(1, 'days')}}",
@@ -1067,7 +1067,7 @@
                           "key": "onDropdownClose"
                         }
                       ],
-                      "leftColumn": 38,
+                      "leftColumn": 43,
                       "dynamicBindingPathList": [
                         {
                           "key": "accentColor"
@@ -1106,7 +1106,7 @@
                       "isLoading": false,
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                       "maxDynamicHeight": 9000,
-                      "onOptionChange": "{{UsersLog.run();\nUsersLogTot.run()}}",
+                      "onOptionChange": "{{UsersLog.run();\nUsersLogTot.run().then(() => {\n  Utils2.myCurrency3();\n});}}",
                       "minDynamicHeight": 4
                     },
                     {
@@ -1147,7 +1147,7 @@
                     {
                       "boxShadow": "none",
                       "widgetName": "refresh_btn",
-                      "onClick": "{{UsersLog.run();\nUsersLogTot.run()}}",
+                      "onClick": "{{UsersLog.run();\nUsersLogTot.run().then(() => {\n  Utils2.myCurrency3();\n});}}",
                       "buttonColor": "#eab308",
                       "dynamicPropertyPathList": [],
                       "topRow": 1,
@@ -1798,7 +1798,7 @@
                           "key": "onChange"
                         }
                       ],
-                      "leftColumn": 29,
+                      "leftColumn": 35,
                       "dynamicBindingPathList": [
                         {
                           "key": "accentColor"
@@ -1808,8 +1808,8 @@
                       "isDisabled": false,
                       "key": "ti9112ytsr",
                       "isDeprecated": false,
-                      "rightColumn": 36,
-                      "onChange": "{{UsersLog.run();\nUsersLogTot.run()}}",
+                      "rightColumn": 42,
+                      "onChange": "{{UsersLog.run();\nUsersLogTot.run().then(() => {\n  Utils2.myCurrency3();\n});}}",
                       "dynamicHeight": "AUTO_HEIGHT",
                       "widgetId": "ye9ftcuz6r",
                       "accentColor": "{{appsmith.theme.colors.primaryColor}}",
@@ -1948,7 +1948,7 @@
                                 "submit"
                               ],
                               "topRow": 0,
-                              "bottomRow": 7,
+                              "bottomRow": 6,
                               "type": "ICON_BUTTON_WIDGET",
                               "hideCard": false,
                               "mobileRightColumn": 62,
@@ -2410,7 +2410,7 @@
                                 "submit"
                               ],
                               "topRow": 0,
-                              "bottomRow": 7,
+                              "bottomRow": 6,
                               "type": "ICON_BUTTON_WIDGET",
                               "hideCard": false,
                               "mobileRightColumn": 62,
@@ -2851,6 +2851,19 @@
           ]
         },
         "layoutOnLoadActions": [
+          [
+            {
+              "id": "Recharge Requests_Utils2.onloadRes",
+              "name": "Utils2.onloadRes",
+              "collectionId": "Recharge Requests_Utils2",
+              "confirmBeforeExecute": false,
+              "pluginType": "JS",
+              "jsonPathKeys": [
+                "async () => {\n  storeValue('myTot', undefined);\n}"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ],
           [
             {
               "id": "Recharge Requests_UsersLog",

@@ -17,6 +17,10 @@ export default {
     return formatter.format(num); 
 	},
 	
+	onloadRes: async () => {
+		storeValue('myTot',undefined)
+	},
+	
 	myCurrency3: async () => {
 		var num = UsersLogTot.data.filter(t => t.recharge_currency == 'USD')[0].recharge_amount
 		const val = await Eur_value.run();
@@ -25,7 +29,7 @@ export default {
 			currency: 'EUR',
 		});
 		num *= val.eur;
-		num += UsersLogTot.data.filter(t => t.recharge_currency == 'EUR')[0].recharge_amount
+		num += UsersLogTot.data.filter(t => t.recharge_currency == 'EUR')[0].recharge_amount;
 		await storeValue('myTot',formatter.format(num))
     //return formatter.format(num); 
 	}
