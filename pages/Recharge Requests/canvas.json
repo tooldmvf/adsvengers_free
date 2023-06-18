@@ -2859,23 +2859,7 @@
               "confirmBeforeExecute": false,
               "pluginType": "JS",
               "jsonPathKeys": [
-                "async () => {\n  storeValue('myTot', undefined);\n}"
-              ],
-              "timeoutInMillisecond": 10000
-            }
-          ],
-          [
-            {
-              "id": "Recharge Requests_UsersLog",
-              "name": "UsersLog",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [
-                "moment(DateFrom4.selectedDate).format('YYYY-MM-DD')",
-                "SelectUserFBPage?.selectedOptionValue || appsmith.store.myUser",
-                "moment(DateTo4.selectedDate).add(1, 'day')",
-                "Switch1.isSwitchedOn",
-                "!SelectUserFBPage.selectedOptionValue"
+                "async () => {\n  await storeValue('myTot', undefined);\n  await get_all_users.run();\n  await UsersLog.run();\n  await UsersLogTot.run();\n}"
               ],
               "timeoutInMillisecond": 10000
             }

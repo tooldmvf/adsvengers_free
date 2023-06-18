@@ -18,7 +18,10 @@ export default {
 	},
 	
 	onloadRes: async () => {
-		storeValue('myTot',undefined)
+		await storeValue('myTot',undefined);
+		await get_all_users.run();
+		await UsersLog.run();
+		await UsersLogTot.run();
 	},
 	
 	myCurrency3: async () => {
