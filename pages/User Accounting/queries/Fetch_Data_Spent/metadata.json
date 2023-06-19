@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "SELECT b.bm_name,a.fk_bm_id,a.fk_user_id,a.financial_month,amount_spent,spent_rate_fees\nFROM public.user_spent_month a\ninner join public.facebook_bm b on (b.bm_id = a.fk_bm_id)\nwhere 1=1\nand ({{!SelectUser.selectedOptionValue}} OR (text(a.fk_user_id) IN ({{\"'\" + SelectUser.selectedOptionValue + \"'\"}})))\nAND SUBSTRING(a.financial_month,1,4) = '{{SelectYear.selectedOptionValue}}'\nAND SUBSTRING(a.financial_month,5,2) = '{{SelectMonth.selectedOptionValue}}'\norder by 1 asc",
+      "body": "SELECT b.bm_name||' (+'||spent_rate_fees||'%)' as bm_name\n,a.fk_bm_id,a.fk_user_id,a.financial_month,amount_spent,spent_rate_fees\nFROM public.user_spent_month a\ninner join public.facebook_bm b on (b.bm_id = a.fk_bm_id)\nwhere 1=1\nand ({{!SelectUser.selectedOptionValue}} OR (text(a.fk_user_id) IN ({{\"'\" + SelectUser.selectedOptionValue + \"'\"}})))\nAND SUBSTRING(a.financial_month,1,4) = '{{SelectYear.selectedOptionValue}}'\nAND SUBSTRING(a.financial_month,5,2) = '{{SelectMonth.selectedOptionValue}}'\norder by 1 asc",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {

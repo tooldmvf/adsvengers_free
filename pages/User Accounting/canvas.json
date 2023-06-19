@@ -1169,9 +1169,6 @@
                                   "key": "primaryColumns.fk_user_id.computedValue"
                                 },
                                 {
-                                  "key": "primaryColumns.bm_name.computedValue"
-                                },
-                                {
                                   "key": "primaryColumns.fk_bm_id.computedValue"
                                 },
                                 {
@@ -1179,6 +1176,9 @@
                                 },
                                 {
                                   "key": "primaryColumns.spent_rate_fees.computedValue"
+                                },
+                                {
+                                  "key": "primaryColumns.bm_name.computedValue"
                                 }
                               ],
                               "needsHeightForContent": true,
@@ -1217,7 +1217,7 @@
                                 }
                               },
                               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                              "columnUpdatedAt": 1685377941598,
+                              "columnUpdatedAt": 1687180598637,
                               "originalBottomRow": 51,
                               "defaultSelectedRowIndices": [
                                 0
@@ -1226,9 +1226,9 @@
                               "widgetName": "Table1CopyCopyCopy",
                               "defaultPageSize": 0,
                               "columnOrder": [
+                                "bm_name",
                                 "financial_month",
                                 "fk_user_id",
-                                "bm_name",
                                 "fk_bm_id",
                                 "amount_spent",
                                 "spent_rate_fees"
@@ -1319,33 +1319,6 @@
                                   "validation": {},
                                   "cellBackground": ""
                                 },
-                                "bm_name": {
-                                  "allowCellWrapping": false,
-                                  "allowSameOptionsInNewRow": true,
-                                  "index": 0,
-                                  "width": 150,
-                                  "originalId": "bm_name",
-                                  "id": "bm_name",
-                                  "alias": "bm_name",
-                                  "horizontalAlignment": "LEFT",
-                                  "verticalAlignment": "CENTER",
-                                  "columnType": "text",
-                                  "textSize": "0.875rem",
-                                  "enableFilter": true,
-                                  "enableSort": true,
-                                  "isVisible": true,
-                                  "isDisabled": false,
-                                  "isCellEditable": false,
-                                  "isEditable": false,
-                                  "isCellVisible": true,
-                                  "isDerived": false,
-                                  "label": "BM",
-                                  "isSaveVisible": true,
-                                  "isDiscardVisible": true,
-                                  "computedValue": "{{Table1CopyCopyCopy.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"bm_name\"]))}}",
-                                  "sticky": "",
-                                  "validation": {}
-                                },
                                 "fk_bm_id": {
                                   "allowCellWrapping": false,
                                   "allowSameOptionsInNewRow": true,
@@ -1427,6 +1400,36 @@
                                   "computedValue": "{{Table1CopyCopyCopy.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"spent_rate_fees\"]))}}",
                                   "sticky": "",
                                   "validation": {}
+                                },
+                                "bm_name": {
+                                  "allowCellWrapping": false,
+                                  "allowSameOptionsInNewRow": true,
+                                  "index": 0,
+                                  "width": 150,
+                                  "originalId": "bm_name",
+                                  "id": "bm_name",
+                                  "alias": "bm_name",
+                                  "horizontalAlignment": "LEFT",
+                                  "verticalAlignment": "CENTER",
+                                  "columnType": "text",
+                                  "textColor": "",
+                                  "textSize": "0.875rem",
+                                  "fontStyle": "",
+                                  "enableFilter": true,
+                                  "enableSort": true,
+                                  "isVisible": true,
+                                  "isDisabled": false,
+                                  "isCellEditable": false,
+                                  "isEditable": false,
+                                  "isCellVisible": true,
+                                  "isDerived": false,
+                                  "label": "BM",
+                                  "isSaveVisible": true,
+                                  "isDiscardVisible": true,
+                                  "computedValue": "{{Table1CopyCopyCopy.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"bm_name\"]))}}",
+                                  "sticky": "",
+                                  "validation": {},
+                                  "cellBackground": ""
                                 }
                               },
                               "key": "c7rr9s6m4a",
@@ -1777,7 +1780,7 @@
                                       "minWidth": 450,
                                       "isVisible": true,
                                       "fontStyle": "BOLD",
-                                      "textColor": "{{(( user_commissions_GADS_Ai20.data[0].amount_revenue_approved - BM_Ai20.data[0].spent_wfees)*0.25)<0 ? 'red' : 'green'}}",
+                                      "textColor": "{{( (Ai20GRevInput.value - Number(TotSpentGAi20.text.replace(/[^0-9.-]+/g,\"\")))/(100/Fetch_Data_Rev_Ai20.data[0]?.commissions_fee||1))<0 ? 'red' : 'green'}}",
                                       "version": 1,
                                       "parentId": "uq1k6g7hdy",
                                       "renderMode": "CANVAS",
@@ -2459,7 +2462,7 @@
                                       "minWidth": 450,
                                       "isVisible": true,
                                       "fontStyle": "BOLD",
-                                      "textColor": "{{(( user_commissions_GADS_Ai20.data[0].amount_revenue_approved - BM_Ai20.data[0].spent_wfees)*0.25)<0 ? 'red' : 'green'}}",
+                                      "textColor": "{{( (OtherRevInput.value - OtherSpentInput.value)/(100/Fetch_Data_Other_Prj.data[0]?.commissions_fee||0))<0 ? 'red' : 'green'}}",
                                       "version": 1,
                                       "parentId": "yf5byhx0mi",
                                       "renderMode": "CANVAS",
@@ -3455,9 +3458,6 @@
                               "widgetName": "Text11CopyCopyCopyCopyCopy1",
                               "dynamicPropertyPathList": [
                                 {
-                                  "key": "textColor"
-                                },
-                                {
                                   "key": "isVisible"
                                 }
                               ],
@@ -3468,8 +3468,8 @@
                                 "paragraph",
                                 "label"
                               ],
-                              "topRow": 35,
-                              "bottomRow": 39,
+                              "topRow": 34,
+                              "bottomRow": 38,
                               "parentRowSpace": 10,
                               "type": "TEXT_WIDGET",
                               "hideCard": false,
@@ -3491,18 +3491,15 @@
                                   "key": "borderRadius"
                                 },
                                 {
-                                  "key": "text"
-                                },
-                                {
-                                  "key": "textColor"
-                                },
-                                {
                                   "key": "isVisible"
+                                },
+                                {
+                                  "key": "text"
                                 }
                               ],
                               "shouldTruncate": false,
                               "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-                              "text": "{{ProfitGooAi20.text}}",
+                              "text": "{{Number(ProfitGooAi20.text.replace(/[^0-9.-]+/g,\"\")) >0 ? ProfitGooAi20.text : '€0.00'}}",
                               "key": "k0zn3vv2el",
                               "isDeprecated": false,
                               "rightColumn": 62,
@@ -3512,7 +3509,7 @@
                               "minWidth": 450,
                               "isVisible": "{{appsmith.store.role_level>100}}",
                               "fontStyle": "BOLD",
-                              "textColor": "{{(Number(ProfitGooAi20.text.replace(/[^0-9.-]+/g,\"\")))<0 ? 'red' : 'green' }}",
+                              "textColor": "#15803d",
                               "version": 1,
                               "parentId": "lvya69kw4u",
                               "renderMode": "CANVAS",
@@ -3532,9 +3529,6 @@
                               "widgetName": "Text11CopyCopyCopyCopyCopy1Copy",
                               "dynamicPropertyPathList": [
                                 {
-                                  "key": "textColor"
-                                },
-                                {
                                   "key": "isVisible"
                                 }
                               ],
@@ -3545,8 +3539,8 @@
                                 "paragraph",
                                 "label"
                               ],
-                              "topRow": 39,
-                              "bottomRow": 43,
+                              "topRow": 38,
+                              "bottomRow": 42,
                               "parentRowSpace": 10,
                               "type": "TEXT_WIDGET",
                               "hideCard": false,
@@ -3571,15 +3565,12 @@
                                   "key": "text"
                                 },
                                 {
-                                  "key": "textColor"
-                                },
-                                {
                                   "key": "isVisible"
                                 }
                               ],
                               "shouldTruncate": false,
                               "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-                              "text": "{{ProfitOther.text}}",
+                              "text": "{{Number(ProfitOther.text.replace(/[^0-9.-]+/g,\"\")) >0 ? ProfitOther.text : '€0.00'}}",
                               "key": "k0zn3vv2el",
                               "isDeprecated": false,
                               "rightColumn": 62,
@@ -3589,7 +3580,7 @@
                               "minWidth": 450,
                               "isVisible": "{{appsmith.store.role_level>100}}",
                               "fontStyle": "BOLD",
-                              "textColor": "{{(Number(ProfitOther.text.replace(/[^0-9.-]+/g,\"\")))<0 ? 'red' : 'green' }}",
+                              "textColor": "#15803d",
                               "version": 1,
                               "parentId": "lvya69kw4u",
                               "renderMode": "CANVAS",
@@ -3622,8 +3613,8 @@
                                 "paragraph",
                                 "label"
                               ],
-                              "topRow": 31,
-                              "bottomRow": 35,
+                              "topRow": 30,
+                              "bottomRow": 34,
                               "parentRowSpace": 10,
                               "type": "TEXT_WIDGET",
                               "hideCard": false,
@@ -3699,8 +3690,8 @@
                                 "paragraph",
                                 "label"
                               ],
-                              "topRow": 48,
-                              "bottomRow": 52,
+                              "topRow": 47,
+                              "bottomRow": 51,
                               "parentRowSpace": 10,
                               "type": "TEXT_WIDGET",
                               "hideCard": false,
@@ -4073,8 +4064,8 @@
                                 "paragraph",
                                 "label"
                               ],
-                              "topRow": 36,
-                              "bottomRow": 40,
+                              "topRow": 34,
+                              "bottomRow": 38,
                               "parentRowSpace": 10,
                               "type": "TEXT_WIDGET",
                               "hideCard": false,
@@ -4141,8 +4132,8 @@
                                 "paragraph",
                                 "label"
                               ],
-                              "topRow": 40,
-                              "bottomRow": 44,
+                              "topRow": 38,
+                              "bottomRow": 42,
                               "parentRowSpace": 10,
                               "type": "TEXT_WIDGET",
                               "hideCard": false,
@@ -4209,8 +4200,8 @@
                                 "paragraph",
                                 "label"
                               ],
-                              "topRow": 31,
-                              "bottomRow": 36,
+                              "topRow": 30,
+                              "bottomRow": 34,
                               "parentRowSpace": 10,
                               "type": "TEXT_WIDGET",
                               "hideCard": false,
@@ -4280,8 +4271,8 @@
                                 "paragraph",
                                 "label"
                               ],
-                              "topRow": 48,
-                              "bottomRow": 52,
+                              "topRow": 47,
+                              "bottomRow": 51,
                               "parentRowSpace": 10,
                               "type": "TEXT_WIDGET",
                               "hideCard": false,
@@ -4338,7 +4329,7 @@
                               "iconSVG": "/static/media/icon.f122000eb591fcd1410a4775a54f9f0d.svg",
                               "tooltipAlwaysOn": false,
                               "labelText": "Profit Percentage",
-                              "topRow": 22,
+                              "topRow": 21,
                               "labelWidth": 8,
                               "type": "NUMBER_SLIDER_WIDGET",
                               "animateLoading": true,
@@ -4365,7 +4356,7 @@
                               "searchTags": [
                                 "range"
                               ],
-                              "bottomRow": 30,
+                              "bottomRow": 29,
                               "parentRowSpace": 10,
                               "hideCard": false,
                               "mobileRightColumn": 53,
@@ -4379,7 +4370,7 @@
                               "labelTextSize": "0.875rem",
                               "isDeprecated": false,
                               "rightColumn": 64,
-                              "max": "35",
+                              "max": "30",
                               "widgetId": "gd79krxd94",
                               "marks": "[\n  {\n    \"value\": 5,\n    \"label\": \"5%\"\n  },\n  {\n    \"value\": 10,\n    \"label\": \"10%\"\n  },\n  {\n    \"value\": 15,\n    \"label\": \"15%\"\n  },\n  {\n    \"value\": 20,\n    \"label\": \"20%\"\n  },\n  {\n    \"value\": 25,\n    \"label\": \"25%\"\n  },\n  {\n    \"value\": 30,\n    \"label\": \"30%\"\n  },\n  {\n    \"value\": 35,\n    \"label\": \"35%\"\n  }\n]",
                               "sliderSize": "m",
@@ -4403,8 +4394,8 @@
                               "searchTags": [
                                 "line"
                               ],
-                              "topRow": 44,
-                              "bottomRow": 48,
+                              "topRow": 42,
+                              "bottomRow": 46,
                               "parentRowSpace": 10,
                               "type": "DIVIDER_WIDGET",
                               "capType": "nc",
@@ -4413,14 +4404,14 @@
                               "animateLoading": true,
                               "parentColumnSpace": 20.03125,
                               "dynamicTriggerPathList": [],
-                              "leftColumn": 1,
+                              "leftColumn": 2,
                               "dynamicBindingPathList": [],
                               "key": "jo6rk26s6e",
                               "dividerColor": "#d4d4d8",
                               "orientation": "horizontal",
                               "strokeStyle": "solid",
                               "isDeprecated": false,
-                              "rightColumn": 63,
+                              "rightColumn": 64,
                               "widgetId": "4rx8un7szt",
                               "capSide": 0,
                               "minWidth": 450,
@@ -4595,8 +4586,8 @@
                                 "click",
                                 "submit"
                               ],
-                              "topRow": 53,
-                              "bottomRow": 57,
+                              "topRow": 52,
+                              "bottomRow": 56,
                               "parentRowSpace": 10,
                               "type": "BUTTON_WIDGET",
                               "hideCard": false,

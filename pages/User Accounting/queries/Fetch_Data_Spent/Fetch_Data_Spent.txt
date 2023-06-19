@@ -1,4 +1,5 @@
-SELECT b.bm_name,a.fk_bm_id,a.fk_user_id,a.financial_month,amount_spent,spent_rate_fees
+SELECT b.bm_name||' (+'||spent_rate_fees||'%)' as bm_name
+,a.fk_bm_id,a.fk_user_id,a.financial_month,amount_spent,spent_rate_fees
 FROM public.user_spent_month a
 inner join public.facebook_bm b on (b.bm_id = a.fk_bm_id)
 where 1=1
