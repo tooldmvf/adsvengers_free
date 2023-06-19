@@ -1031,9 +1031,6 @@
                       "isFilterable": true,
                       "dynamicPropertyPathList": [
                         {
-                          "key": "onOptionChange"
-                        },
-                        {
                           "key": "isVisible"
                         }
                       ],
@@ -1066,7 +1063,7 @@
                       "originalTopRow": 71,
                       "mobileLeftColumn": 14,
                       "maxDynamicHeight": 9000,
-                      "onOptionChange": "{{Fetch_Data_All.run();\nFetch_Data_Graphs.run();}}",
+                      "onOptionChange": "{{Fetch_Data_All.run();\nFetch_Data_Graphs.run();\nFetch_Data_Tot.run()}}",
                       "minDynamicHeight": 4
                     },
                     {
@@ -1105,11 +1102,7 @@
                       "mobileBottomRow": 86,
                       "widgetName": "SelectYear",
                       "isFilterable": true,
-                      "dynamicPropertyPathList": [
-                        {
-                          "key": "onOptionChange"
-                        }
-                      ],
+                      "dynamicPropertyPathList": [],
                       "displayName": "Select",
                       "searchTags": [
                         "dropdown"
@@ -1139,7 +1132,7 @@
                       "originalTopRow": 79,
                       "mobileLeftColumn": 9,
                       "maxDynamicHeight": 9000,
-                      "onOptionChange": "{{Fetch_Data_All.run();\nFetch_Data_Graphs.run();}}",
+                      "onOptionChange": "{{Fetch_Data_All.run();\nFetch_Data_Graphs.run();\nFetch_Data_Tot.run()}}",
                       "minDynamicHeight": 4
                     },
                     {
@@ -1695,7 +1688,7 @@
                       "key": "yiwwszt300",
                       "canFreezeColumn": true,
                       "isDeprecated": false,
-                      "rightColumn": 58,
+                      "rightColumn": 57,
                       "textSize": "0.875rem",
                       "widgetId": "kxb4komlrc",
                       "minWidth": 450,
@@ -1741,7 +1734,7 @@
                         }
                       ],
                       "needsHeightForContent": true,
-                      "leftColumn": 58,
+                      "leftColumn": 57,
                       "delimiter": ",",
                       "defaultSelectedRowIndex": 0,
                       "accentColor": "{{appsmith.theme.colors.primaryColor}}",
@@ -1865,7 +1858,7 @@
               "originalTopRow": 8,
               "borderRadius": "0.375rem",
               "maxDynamicHeight": 9000,
-              "originalBottomRow": 45,
+              "originalBottomRow": 42,
               "minDynamicHeight": 10
             },
             {
@@ -1890,7 +1883,7 @@
               "chartData": {
                 "t7wjzuzuso": {
                   "seriesName": "Revenue",
-                  "data": "{{Fetch_Data_Graphs.data.map( (obj) =>{ return  {'x': obj.financial_month, 'y': obj.amount_revenue_approved } })}}",
+                  "data": "{{Fetch_Data_Graphs.data.map( (obj) =>{ return  {'x': obj.financial_month2, 'y': obj.amount_revenue_approved } })}}",
                   "color": "#2563eb"
                 },
                 "5xcsj6bv3t": {
@@ -2001,12 +1994,12 @@
               "mobileTopRow": 58,
               "responsiveBehavior": "fill",
               "yAxisName": "Amount(€)",
-              "originalTopRow": 45,
+              "originalTopRow": 42,
               "chartName": "Sales Report",
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "mobileLeftColumn": 0,
               "xAxisName": "Months",
-              "originalBottomRow": 80,
+              "originalBottomRow": 77,
               "chartType": "LINE_CHART"
             },
             {
@@ -2032,7 +2025,7 @@
               "chartData": {
                 "t7wjzuzuso": {
                   "seriesName": "Roi",
-                  "data": "{{Fetch_Data_Graphs.data.map( (obj) =>{ return  {'x': obj.financial_month, 'y': obj.roi } })}}",
+                  "data": "{{Fetch_Data_Graphs.data.map( (obj) =>{ return  {'x': obj.financial_month2, 'y': obj.roi } })}}",
                   "color": "#facc15"
                 }
               },
@@ -2119,31 +2112,17 @@
               "mobileTopRow": 58,
               "responsiveBehavior": "fill",
               "yAxisName": "Roi (%)",
-              "originalTopRow": 45,
+              "originalTopRow": 42,
               "chartName": "Roi",
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "mobileLeftColumn": 0,
               "xAxisName": "Months",
-              "originalBottomRow": 80,
+              "originalBottomRow": 77,
               "chartType": "LINE_CHART"
             }
           ]
         },
         "layoutOnLoadActions": [
-          [
-            {
-              "id": "User Comm Trend Admin_Fetch_Data_Tot",
-              "name": "Fetch_Data_Tot",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [
-                "\"'\" + SelectUser.selectedOptionValue + \"'\"",
-                "!SelectUser.selectedOptionValue",
-                "SelectYear.selectedOptionValue"
-              ],
-              "timeoutInMillisecond": 10000
-            }
-          ],
           [
             {
               "id": "User Comm Trend Admin_get_all_users",
