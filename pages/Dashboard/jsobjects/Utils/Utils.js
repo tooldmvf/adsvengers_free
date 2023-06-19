@@ -3,19 +3,19 @@ export default {
 	ROI: () => {
     const roi =
       ((user_financial_period.data[0]?.amount_revenue_approved || 1) - (user_financial_period.data[0]?.spent_wfees || 0))/(user_financial_period.data[0]?.spent_wfees || 1) *100;
-    return parseFloat(roi).toFixed(0);
+    return parseFloat(roi).toFixed(1);
   },
 	
 	GrossROI: () => {
     const roi =
       ((user_financial_period.data[0]?.tot_revenue || 1) - (user_financial_period.data[0]?.spent_wfees || 0))/(user_financial_period.data[0]?.spent_wfees || 1) *100;
-    return parseFloat(roi).toFixed(0);
+    return parseFloat(roi).toFixed(1);
   },
 	
 	GrossROI_h: () => {
     const roi =
       ((user_financial_period.data[0]?.tot_revenue_h || 1) - (user_financial_period.data[0]?.spent_wfees || 0))/(user_financial_period.data[0]?.spent_wfees || 1) *100;
-    return parseFloat(roi).toFixed(0);
+    return parseFloat(roi).toFixed(1);
   },
 	
 	RejRate: () => {
