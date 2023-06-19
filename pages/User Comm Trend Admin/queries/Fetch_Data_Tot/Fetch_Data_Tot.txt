@@ -1,0 +1,29 @@
+SELECT sum(amount_revenue_approved) as Revenue
+FROM public.user_totals_month a
+Where 1=1
+and ({{!SelectUser.selectedOptionValue}} OR (text(a.fk_user_id) IN ({{"'" + SelectUser.selectedOptionValue + "'"}})))
+and substring(financial_month,1,4) = '{{SelectYear.selectedOptionValue}}'
+union All
+SELECT sum(amount_spent) as spent
+FROM public.user_totals_month a
+Where 1=1
+and ({{!SelectUser.selectedOptionValue}} OR (text(a.fk_user_id) IN ({{"'" + SelectUser.selectedOptionValue + "'"}})))
+and substring(financial_month,1,4) = '{{SelectYear.selectedOptionValue}}'
+union All
+SELECT sum(amount_revenue_approved) -sum(amount_spent) as Profit
+FROM public.user_totals_month a
+Where 1=1
+and ({{!SelectUser.selectedOptionValue}} OR (text(a.fk_user_id) IN ({{"'" + SelectUser.selectedOptionValue + "'"}})))
+and substring(financial_month,1,4) = '{{SelectYear.selectedOptionValue}}'
+union All
+SELECT (sum(amount_revenue_approved) -sum(amount_spent))/(case when sum(amount_spent) = 0 then 1 else sum(amount_spent) end) as Roi
+FROM public.user_totals_month a
+Where 1=1
+and ({{!SelectUser.selectedOptionValue}} OR (text(a.fk_user_id) IN ({{"'" + SelectUser.selectedOptionValue + "'"}})))
+and substring(financial_month,1,4) = '{{SelectYear.selectedOptionValue}}'
+union All
+SELECT sum(amount_invoice) as Invoice
+FROM public.user_totals_month a
+Where 1=1
+and ({{!SelectUser.selectedOptionValue}} OR (text(a.fk_user_id) IN ({{"'" + SelectUser.selectedOptionValue + "'"}})))
+and substring(financial_month,1,4) = '{{SelectYear.selectedOptionValue}}'
