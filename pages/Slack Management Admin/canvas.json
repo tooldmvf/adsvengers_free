@@ -19,7 +19,7 @@
           "parentRowSpace": 1,
           "type": "CANVAS_WIDGET",
           "canExtend": true,
-          "version": 79,
+          "version": 80,
           "minHeight": 880,
           "parentColumnSpace": 1,
           "dynamicBindingPathList": [],
@@ -915,7 +915,7 @@
                       "text": "Connect Slack user to Tool",
                       "key": "1xw5znizy1",
                       "isDeprecated": false,
-                      "rightColumn": 62,
+                      "rightColumn": 52,
                       "textAlign": "LEFT",
                       "dynamicHeight": "AUTO_HEIGHT",
                       "widgetId": "yo9d4cjquc",
@@ -1101,6 +1101,62 @@
                       "maxDynamicHeight": 9000,
                       "originalBottomRow": 20,
                       "minDynamicHeight": 4
+                    },
+                    {
+                      "resetFormOnClick": false,
+                      "boxShadow": "none",
+                      "mobileBottomRow": 58,
+                      "widgetName": "Button2",
+                      "onClick": "{{navigateTo('https://n8n.theadsvengers.com/webhook/we', {}, 'NEW_WINDOW').then(() => {\n  get_slack_users.run();\n});}}",
+                      "buttonColor": "#622d64",
+                      "displayName": "Button",
+                      "iconSVG": "/static/media/icon.7beb9123fb53027d9d6b778cdfe4caed.svg",
+                      "searchTags": [
+                        "click",
+                        "submit"
+                      ],
+                      "topRow": 1,
+                      "bottomRow": 5,
+                      "parentRowSpace": 10,
+                      "type": "BUTTON_WIDGET",
+                      "hideCard": false,
+                      "mobileRightColumn": 64,
+                      "animateLoading": true,
+                      "parentColumnSpace": 20.078125,
+                      "dynamicTriggerPathList": [
+                        {
+                          "key": "onClick"
+                        }
+                      ],
+                      "leftColumn": 55,
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "borderRadius"
+                        }
+                      ],
+                      "text": "API call",
+                      "isDisabled": false,
+                      "key": "kui1i9ctqo",
+                      "isDeprecated": false,
+                      "rightColumn": 62,
+                      "isDefaultClickDisabled": true,
+                      "widgetId": "afjpv3yrdk",
+                      "minWidth": 120,
+                      "isVisible": true,
+                      "recaptchaType": "V3",
+                      "version": 1,
+                      "parentId": "6us31ygba8",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "mobileTopRow": 54,
+                      "responsiveBehavior": "hug",
+                      "originalTopRow": 54,
+                      "disabledWhenInvalid": false,
+                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                      "mobileLeftColumn": 48,
+                      "originalBottomRow": 58,
+                      "buttonVariant": "PRIMARY",
+                      "placement": "CENTER"
                     }
                   ],
                   "key": "38o596bbcd",
