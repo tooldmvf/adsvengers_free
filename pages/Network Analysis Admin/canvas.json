@@ -2705,7 +2705,7 @@
                                               "fontFamily": "System Default",
                                               "parentColumnSpace": 3.31396484375,
                                               "dynamicTriggerPathList": [],
-                                              "leftColumn": 27,
+                                              "leftColumn": 26,
                                               "dynamicBindingPathList": [
                                                 {
                                                   "key": "truncateButtonColor"
@@ -2720,7 +2720,7 @@
                                               "shouldTruncate": false,
                                               "borderWidth": "1",
                                               "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-                                              "text": "{{Utils.myCurrency( currentItem.amount_revenue_rejected)}} €",
+                                              "text": "{{Utils.myCurrency( currentItem.amount_revenue_rejected)}} € ({{currentItem.rej_rate.toFixed(1)}} %)",
                                               "key": "nk7g1uvbwm",
                                               "isDeprecated": false,
                                               "rightColumn": 40,
@@ -2892,7 +2892,7 @@
                                               "fontFamily": "System Default",
                                               "parentColumnSpace": 3.31396484375,
                                               "dynamicTriggerPathList": [],
-                                              "leftColumn": 13,
+                                              "leftColumn": 11,
                                               "dynamicBindingPathList": [
                                                 {
                                                   "key": "truncateButtonColor"
@@ -2907,7 +2907,7 @@
                                               "shouldTruncate": false,
                                               "borderWidth": "1",
                                               "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-                                              "text": "{{Utils.myCurrency( currentItem.amount_revenue_rejected_h)}} €",
+                                              "text": "{{Utils.myCurrency( currentItem.amount_revenue_rejected_h)}} € ({{currentItem.rej_rate_h.toFixed(1)}} %)",
                                               "key": "nk7g1uvbwm",
                                               "isDeprecated": false,
                                               "rightColumn": 26,
