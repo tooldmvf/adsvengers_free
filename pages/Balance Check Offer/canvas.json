@@ -20,7 +20,7 @@
           "parentRowSpace": 1,
           "type": "CANVAS_WIDGET",
           "canExtend": true,
-          "version": 79,
+          "version": 80,
           "minHeight": 900,
           "parentColumnSpace": 1,
           "dynamicTriggerPathList": [],
@@ -1432,7 +1432,7 @@
                               "iconSVG": "/static/media/icon.9925ee17dee37bf1ba7374412563a8a7.svg",
                               "topRow": 7,
                               "bottomRow": 68,
-                              "pageSize": 9,
+                              "pageSize": 10,
                               "parentRowSpace": 10,
                               "type": "LIST_WIDGET_V2",
                               "itemSpacing": 8,
@@ -1992,6 +1992,9 @@
                       "dynamicPropertyPathList": [
                         {
                           "key": "primaryColumns.customColumn1.onClick"
+                        },
+                        {
+                          "key": "tableData"
                         }
                       ],
                       "compactMode": "SHORT",
@@ -2547,7 +2550,11 @@
                         "tot_revenue",
                         "spent"
                       ],
-                      "dynamicPropertyPathList": [],
+                      "dynamicPropertyPathList": [
+                        {
+                          "key": "tableData"
+                        }
+                      ],
                       "compactMode": "SHORT",
                       "displayName": "Table",
                       "bottomRow": 61,
@@ -2810,6 +2817,17 @@
                 "moment(DateTo.selectedDate).format('YYYY-DD-MM')",
                 "moment(DateFrom.selectedDate).format('YYYY-DD-MM')",
                 "\"'\" + SelectTSFront.selectedOptionValues.join(\"', '\") + \"'\""
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "Balance Check Offer_Utils2.onLoad",
+              "name": "Utils2.onLoad",
+              "collectionId": "Balance Check Offer_Utils2",
+              "confirmBeforeExecute": false,
+              "pluginType": "JS",
+              "jsonPathKeys": [
+                "async () => {\n  await get_all_users.run();\n  await Tab4User.run();\n  await TotalLine.run();\n  await Tab4Offer.run();\n}"
               ],
               "timeoutInMillisecond": 10000
             }

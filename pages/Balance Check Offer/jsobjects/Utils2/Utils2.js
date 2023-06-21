@@ -10,6 +10,7 @@ export default {
 	
 	onLoad: async () => {
 		await get_all_users.run();
+		await Tab4User.run();
 		await TotalLine.run();
 		await Tab4Offer.run();
 	}
