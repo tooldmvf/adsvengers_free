@@ -1148,11 +1148,7 @@
                       "widgetName": "Container3",
                       "borderColor": "#E0DEDE",
                       "isCanvas": true,
-                      "dynamicPropertyPathList": [
-                        {
-                          "key": "isVisible"
-                        }
-                      ],
+                      "dynamicPropertyPathList": [],
                       "displayName": "Container",
                       "iconSVG": "/static/media/icon.1977dca3370505e2db3a8e44cfd54907.svg",
                       "searchTags": [
@@ -1170,11 +1166,7 @@
                       "parentColumnSpace": 8.3056640625,
                       "dynamicTriggerPathList": [],
                       "leftColumn": 20,
-                      "dynamicBindingPathList": [
-                        {
-                          "key": "isVisible"
-                        }
-                      ],
+                      "dynamicBindingPathList": [],
                       "children": [
                         {
                           "rightColumn": 531.5625,
@@ -1587,7 +1579,7 @@
                       "widgetId": "0mnccj9n89",
                       "containerStyle": "card",
                       "minWidth": 450,
-                      "isVisible": "{{SelectMonth.selectedOptionValue.length >0 && SelectYear.selectedOptionValue.length >0 && SelectUser.selectedOptionValue.length >0}}",
+                      "isVisible": true,
                       "version": 1,
                       "parentId": "qd74yy4u3t",
                       "renderMode": "CANVAS",
@@ -1605,11 +1597,7 @@
                       "widgetName": "Container2",
                       "borderColor": "#E0DEDE",
                       "isCanvas": true,
-                      "dynamicPropertyPathList": [
-                        {
-                          "key": "isVisible"
-                        }
-                      ],
+                      "dynamicPropertyPathList": [],
                       "displayName": "Container",
                       "iconSVG": "/static/media/icon.1977dca3370505e2db3a8e44cfd54907.svg",
                       "searchTags": [
@@ -1627,11 +1615,7 @@
                       "parentColumnSpace": 6.15234375,
                       "dynamicTriggerPathList": [],
                       "leftColumn": 20,
-                      "dynamicBindingPathList": [
-                        {
-                          "key": "isVisible"
-                        }
-                      ],
+                      "dynamicBindingPathList": [],
                       "children": [
                         {
                           "rightColumn": 393.75,
@@ -2188,7 +2172,7 @@
                       "widgetId": "34oq8af7zp",
                       "containerStyle": "card",
                       "minWidth": 450,
-                      "isVisible": "{{SelectMonth.selectedOptionValue.length >0 && SelectYear.selectedOptionValue.length >0 && SelectUser.selectedOptionValue.length >0}}",
+                      "isVisible": true,
                       "version": 1,
                       "parentId": "qd74yy4u3t",
                       "renderMode": "CANVAS",
@@ -2206,11 +2190,7 @@
                       "widgetName": "Container2Copy",
                       "borderColor": "#E0DEDE",
                       "isCanvas": true,
-                      "dynamicPropertyPathList": [
-                        {
-                          "key": "isVisible"
-                        }
-                      ],
+                      "dynamicPropertyPathList": [],
                       "displayName": "Container",
                       "iconSVG": "/static/media/icon.1977dca3370505e2db3a8e44cfd54907.svg",
                       "searchTags": [
@@ -2228,11 +2208,7 @@
                       "parentColumnSpace": 6.15234375,
                       "dynamicTriggerPathList": [],
                       "leftColumn": 33,
-                      "dynamicBindingPathList": [
-                        {
-                          "key": "isVisible"
-                        }
-                      ],
+                      "dynamicBindingPathList": [],
                       "children": [
                         {
                           "rightColumn": 393.75,
@@ -2799,7 +2775,7 @@
                       "widgetId": "tz6q6z3cm1",
                       "containerStyle": "card",
                       "minWidth": 450,
-                      "isVisible": "{{SelectMonth.selectedOptionValue.length >0 && SelectYear.selectedOptionValue.length >0 && SelectUser.selectedOptionValue.length >0}}",
+                      "isVisible": true,
                       "version": 1,
                       "parentId": "qd74yy4u3t",
                       "renderMode": "CANVAS",
@@ -2817,11 +2793,7 @@
                       "widgetName": "Container1",
                       "borderColor": "#E0DEDE",
                       "isCanvas": true,
-                      "dynamicPropertyPathList": [
-                        {
-                          "key": "isVisible"
-                        }
-                      ],
+                      "dynamicPropertyPathList": [],
                       "displayName": "Container",
                       "iconSVG": "/static/media/icon.1977dca3370505e2db3a8e44cfd54907.svg",
                       "searchTags": [
@@ -2839,11 +2811,7 @@
                       "parentColumnSpace": 6.15234375,
                       "dynamicTriggerPathList": [],
                       "leftColumn": 0,
-                      "dynamicBindingPathList": [
-                        {
-                          "key": "isVisible"
-                        }
-                      ],
+                      "dynamicBindingPathList": [],
                       "children": [
                         {
                           "rightColumn": 393.75,
@@ -3270,7 +3238,7 @@
                       "widgetId": "2ibk9sc735",
                       "containerStyle": "card",
                       "minWidth": 450,
-                      "isVisible": "{{SelectMonth.selectedOptionValue.length >0 && SelectYear.selectedOptionValue.length >0 && SelectUser.selectedOptionValue.length >0}}",
+                      "isVisible": true,
                       "version": 1,
                       "parentId": "qd74yy4u3t",
                       "renderMode": "CANVAS",
@@ -3310,11 +3278,7 @@
                       "parentColumnSpace": 6.767578125,
                       "dynamicTriggerPathList": [],
                       "leftColumn": 46,
-                      "dynamicBindingPathList": [
-                        {
-                          "key": "isVisible"
-                        }
-                      ],
+                      "dynamicBindingPathList": [],
                       "children": [
                         {
                           "rightColumn": 433.125,
@@ -3839,7 +3803,7 @@
                               "isDeprecated": false,
                               "rightColumn": 63,
                               "textAlign": "RIGHT",
-                              "dynamicHeight": "AUTO_HEIGHT",
+                              "dynamicHeight": "FIXED",
                               "widgetId": "phf8ayug0h",
                               "minWidth": 450,
                               "isVisible": true,
@@ -3851,11 +3815,9 @@
                               "isLoading": false,
                               "mobileTopRow": 9,
                               "responsiveBehavior": "fill",
-                              "originalTopRow": 53,
                               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                               "mobileLeftColumn": 0,
                               "maxDynamicHeight": 9000,
-                              "originalBottomRow": 57,
                               "fontSize": "1rem",
                               "minDynamicHeight": 4
                             },
@@ -4488,7 +4450,7 @@
                               "isDeprecated": false,
                               "rightColumn": 32,
                               "textAlign": "LEFT",
-                              "dynamicHeight": "AUTO_HEIGHT",
+                              "dynamicHeight": "FIXED",
                               "widgetId": "3e9c33a4tz",
                               "minWidth": 450,
                               "isVisible": true,
@@ -4500,11 +4462,9 @@
                               "isLoading": false,
                               "mobileTopRow": 9,
                               "responsiveBehavior": "fill",
-                              "originalTopRow": 53,
                               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                               "mobileLeftColumn": 0,
                               "maxDynamicHeight": 9000,
-                              "originalBottomRow": 57,
                               "fontSize": "1rem",
                               "minDynamicHeight": 4
                             },
@@ -4864,6 +4824,9 @@
                               "dynamicPropertyPathList": [
                                 {
                                   "key": "isVisible"
+                                },
+                                {
+                                  "key": "isDisabled"
                                 }
                               ],
                               "displayName": "Button",
@@ -4892,10 +4855,13 @@
                                 },
                                 {
                                   "key": "isVisible"
+                                },
+                                {
+                                  "key": "isDisabled"
                                 }
                               ],
                               "text": "Save Data",
-                              "isDisabled": false,
+                              "isDisabled": "{{appsmith.store.role_level<1000}}",
                               "key": "3xi9orpbxd",
                               "isDeprecated": false,
                               "rightColumn": 63,
@@ -4930,7 +4896,7 @@
                       "widgetId": "1e2grhacpy",
                       "containerStyle": "card",
                       "minWidth": 450,
-                      "isVisible": "{{SelectMonth.selectedOptionValue.length >0 && SelectYear.selectedOptionValue.length >0 && SelectUser.selectedOptionValue.length >0}}",
+                      "isVisible": "true",
                       "version": 1,
                       "parentId": "qd74yy4u3t",
                       "renderMode": "CANVAS",
