@@ -6666,14 +6666,14 @@
               "pluginType": "DB",
               "jsonPathKeys": [
                 "MSTrSource.selectedOptionValues.length == 0",
-                "\"'\" + SelectUser.selectedOptionValue + \"'\"",
                 "!SelectUser.selectedOptionValue",
+                "\"'\" + SelectUser.selectedOptionValue + \"'\"",
                 "moment(DateTo.selectedDate).format('YYYY-DD-MM')",
                 "TableOffersCopy.searchText",
                 "MSCategory.selectedOptionValues.length == 0",
-                "MSNetwork.selectedOptionValues.length == 0",
                 "moment(DateFrom.selectedDate).format('YYYY-DD-MM')",
                 "\"'\" + MSTrSource.selectedOptionValues.join(\"', '\") + \"'\"",
+                "MSNetwork.selectedOptionValues.length == 0",
                 "\"'\" + MSNetwork.selectedOptionValues.join(\"', '\") + \"'\"",
                 "\"'\" + MSCategory.selectedOptionValues.join(\"', '\") + \"'\""
               ],
