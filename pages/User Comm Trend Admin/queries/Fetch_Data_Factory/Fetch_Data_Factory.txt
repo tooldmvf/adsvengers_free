@@ -3,7 +3,7 @@ select * from crosstab(
 FROM public.user_totals_month a
 	INNER JOIN PUBLIC.USER_PROFILES B ON (B.FK_USER_ID = A.FK_USER_ID)
 Where 1=1
-and ({{!SelectUser.selectedOptionValue}} OR (text(a.fk_user_id) IN ({{"''" + SelectUser.selectedOptionValue + "''"}})))
+and (text(a.fk_user_id) IN ({{"''" + MultiSelectUsers.selectedOptionValues.join("'', ''") + "''"}}) OR text(a.fk_user_id) = ''{{appsmith.store.myUser}}'' )
 and substring(financial_month,1,4) = ''{{SelectYear.selectedOptionValue}}''
 GROUP By B.LAST_NAME ,a.financial_month
 having sum(amount_revenue_approved)-sum(amount_spent) <> 0' 

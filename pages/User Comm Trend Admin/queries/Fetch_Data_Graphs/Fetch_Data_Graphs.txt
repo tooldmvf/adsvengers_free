@@ -6,7 +6,7 @@ SELECT substring(financial_month,1,4)||'-'||to_char(to_date(financial_month,'YYY
 ,(sum(amount_revenue_approved)-sum(amount_spent))/(case when sum(amount_spent) = 0 then 1 else sum(amount_spent) end)*100 roi
 FROM public.user_totals_month a
 Where 1=1
-and ({{!SelectUser.selectedOptionValue}} OR (text(a.fk_user_id) IN ({{"'" + SelectUser.selectedOptionValue + "'"}})))
+and (text(a.fk_user_id) IN ({{"'" + MultiSelectUsers.selectedOptionValues.join("', '") + "'"}}) OR text(a.fk_user_id) = '{{appsmith.store.myUser}}' )
 and substring(financial_month,1,4) = '{{SelectYear.selectedOptionValue}}'
 group BY financial_month
 ORDER BY financial_month asc
