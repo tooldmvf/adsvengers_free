@@ -4307,7 +4307,7 @@
                               ],
                               "isDisabled": "{{appsmith.store.role_level<500}}",
                               "accentColor": "#22c55e",
-                              "isVisible": false,
+                              "isVisible": true,
                               "version": 1,
                               "isLoading": false,
                               "originalBottomRow": 30,
