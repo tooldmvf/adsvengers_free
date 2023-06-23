@@ -5053,7 +5053,7 @@
                       "serverSideFiltering": false,
                       "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( appsmith.store.myUser))(SelectUser.options, SelectUser.serverSideFiltering) }}",
                       "animateLoading": true,
-                      "leftColumn": 31,
+                      "leftColumn": 26,
                       "dynamicBindingPathList": [
                         {
                           "key": "accentColor"
@@ -5111,7 +5111,7 @@
                       "key": "v5onvlal5t",
                       "labelTextSize": "0.875rem",
                       "isDeprecated": false,
-                      "rightColumn": 44,
+                      "rightColumn": 39,
                       "widgetId": "whhn9887vc",
                       "minWidth": 450,
                       "parentId": "qd74yy4u3t",
@@ -5135,7 +5135,7 @@
                       "serverSideFiltering": false,
                       "defaultOptionValue": "",
                       "animateLoading": true,
-                      "leftColumn": 52,
+                      "leftColumn": 49,
                       "dynamicBindingPathList": [
                         {
                           "key": "accentColor"
@@ -5181,7 +5181,7 @@
                       "key": "1rliem7or9",
                       "labelTextSize": "0.875rem",
                       "isDeprecated": false,
-                      "rightColumn": 61,
+                      "rightColumn": 64,
                       "widgetId": "m9iuwke9du",
                       "minWidth": 450,
                       "parentId": "qd74yy4u3t",
@@ -5205,7 +5205,7 @@
                       "serverSideFiltering": false,
                       "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( moment().format('YYYY')))(SelectYear.options, SelectYear.serverSideFiltering) }}",
                       "animateLoading": true,
-                      "leftColumn": 44,
+                      "leftColumn": 40,
                       "dynamicBindingPathList": [
                         {
                           "key": "accentColor"
@@ -5254,7 +5254,7 @@
                       "key": "1rliem7or9",
                       "labelTextSize": "0.875rem",
                       "isDeprecated": false,
-                      "rightColumn": 52,
+                      "rightColumn": 49,
                       "widgetId": "tl0265rlvy",
                       "minWidth": 450,
                       "parentId": "qd74yy4u3t",
@@ -5295,6 +5295,18 @@
         "layoutOnLoadActions": [
           [
             {
+              "id": "User Accounting_get_all_users",
+              "name": "get_all_users",
+              "confirmBeforeExecute": false,
+              "pluginType": "API",
+              "jsonPathKeys": [
+                "appsmith.store.access_token"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
               "id": "User Accounting_Fetch_Adjustments",
               "name": "Fetch_Adjustments",
               "confirmBeforeExecute": false,
@@ -5304,18 +5316,6 @@
                 "\"'\" + SelectUser.selectedOptionValue + \"'\"",
                 "SelectMonth.selectedOptionValue",
                 "SelectYear.selectedOptionValue"
-              ],
-              "timeoutInMillisecond": 10000
-            }
-          ],
-          [
-            {
-              "id": "User Accounting_get_all_users",
-              "name": "get_all_users",
-              "confirmBeforeExecute": false,
-              "pluginType": "API",
-              "jsonPathKeys": [
-                "appsmith.store.access_token"
               ],
               "timeoutInMillisecond": 10000
             }
