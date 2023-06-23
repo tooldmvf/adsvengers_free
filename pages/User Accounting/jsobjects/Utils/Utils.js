@@ -23,7 +23,9 @@ export default {
 	},
 	
 	async reload () {
-		await resetWidget('NumberSlider1');
+		await resetWidget('NumberSlider1'); 
+		await resetWidget('Adjust');
+		await resetWidget('AdjustProfit');
 		await Fetch_Adjustments.run();
 		await Fetch_Commission_fee.run();
 		await Fetch_Debt_Prev_Month.run();
