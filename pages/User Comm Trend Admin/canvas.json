@@ -997,7 +997,7 @@
                       "serverSideFiltering": false,
                       "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( appsmith.store.myUser))(SelectUser.options, SelectUser.serverSideFiltering) }}",
                       "animateLoading": true,
-                      "leftColumn": 30,
+                      "leftColumn": 34,
                       "dynamicBindingPathList": [
                         {
                           "key": "accentColor"
@@ -1052,7 +1052,7 @@
                       "key": "v5onvlal5t",
                       "labelTextSize": "0.875rem",
                       "isDeprecated": false,
-                      "rightColumn": 46,
+                      "rightColumn": 48,
                       "widgetId": "whhn9887vc",
                       "minWidth": 450,
                       "parentId": "qd74yy4u3t",
@@ -1076,7 +1076,7 @@
                       "serverSideFiltering": false,
                       "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( moment().format('YYYY')))(SelectYear.options, SelectYear.serverSideFiltering) }}",
                       "animateLoading": true,
-                      "leftColumn": 48,
+                      "leftColumn": 50,
                       "dynamicBindingPathList": [
                         {
                           "key": "accentColor"
