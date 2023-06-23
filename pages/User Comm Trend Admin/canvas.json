@@ -3006,7 +3006,7 @@
               "confirmBeforeExecute": false,
               "pluginType": "JS",
               "jsonPathKeys": [
-                "async () => {\n  await get_all_users.run();\n  await Fetch_Data_All.run();\n  await Fetch_Data_Graphs.run();\n  await Fetch_Data_Factory.run();\n  await Fetch_Data_Factory_Tot.run();\n}"
+                "async () => {\n  await get_all_users.run();\n  await Fetch_Data_All.run();\n  await Fetch_Data_Graphs.run();\n  await Fetch_Data_Factory.run();\n  await Fetch_Data_Tot.run();\n  await Fetch_Data_Factory_Tot.run();\n}"
               ],
               "timeoutInMillisecond": 10000
             }
