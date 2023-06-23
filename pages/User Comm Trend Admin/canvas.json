@@ -924,7 +924,7 @@
                       ],
                       "shouldTruncate": false,
                       "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-                      "text": "{{MultiSelectUsers.selectedOptionValues.length > 0 ? MultiSelectUsers.selectedOptionLabels[0] : 'Team'}}",
+                      "text": "{{MultiSelectUsers.selectedOptionValues.length == 1 ? MultiSelectUsers.selectedOptionLabels[0] : 'Team'}}",
                       "key": "czi7sw6u7v",
                       "isDeprecated": false,
                       "rightColumn": 17,
@@ -4555,7 +4555,7 @@
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "mobileLeftColumn": 0,
               "maxDynamicHeight": 9000,
-              "originalBottomRow": 170,
+              "originalBottomRow": 171,
               "minDynamicHeight": 15
             }
           ]
