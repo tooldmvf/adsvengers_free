@@ -27,9 +27,13 @@ FROM public.user_totals_month a
 Where 1=1
 and ({{!SelectUser.selectedOptionValue}} OR (text(a.fk_user_id) IN ({{"'" + SelectUser.selectedOptionValue + "'"}})))
 and substring(financial_month,1,4) = '{{SelectYear.selectedOptionValue}}'
-union All
-SELECT sum(amount_debt) as Debt
+union All(
+SELECT max(amount_debt)
 FROM public.user_totals_month a
 Where 1=1
 and ({{!SelectUser.selectedOptionValue}} OR (text(a.fk_user_id) IN ({{"'" + SelectUser.selectedOptionValue + "'"}})))
 and substring(financial_month,1,4) = '{{SelectYear.selectedOptionValue}}'
+group by financial_month
+having max(amount_debt) < 0
+order by financial_month desc
+limit 1)

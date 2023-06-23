@@ -46,7 +46,7 @@
         },
         {
           "key": "financial_month",
-          "value": "eq.{{SelectMonth.selectedOptionValue}}"
+          "value": "eq.{{SelectYear.selectedOptionValue}}{{SelectMonth.selectedOptionValue}}"
         }
       ],
       "body": "{\n\t\"amount_revenue_approved\": \"{{Ai20GRevInput.value}}\"\n}",
@@ -81,6 +81,7 @@
       "Ai20GRevInput.value",
       "SelectMonth.selectedOptionValue",
       "SelectUser.selectedOptionValue",
+      "SelectYear.selectedOptionValue",
       "appsmith.store.access_token"
     ],
     "userSetOnLoad": false,
