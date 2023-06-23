@@ -6,7 +6,7 @@ Where 1=1
 and ({{!SelectUser.selectedOptionValue}} OR (text(a.fk_user_id) IN ({{"''" + SelectUser.selectedOptionValue + "''"}})))
 and substring(financial_month,1,4) = ''{{SelectYear.selectedOptionValue}}''
 GROUP By B.LAST_NAME ,a.financial_month
-having sum(amount_spent) >0' 
+having sum(amount_revenue_approved)-sum(amount_spent) <> 0' 
 , 'select m from generate_series(1,12) m')
 AS ct("Type" TEXT, 
   "Jan" float,

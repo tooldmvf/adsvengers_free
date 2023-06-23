@@ -5,5 +5,5 @@ Where 1=1
 and ({{!SelectUser.selectedOptionValue}} OR (text(a.fk_user_id) IN ({{"'" + SelectUser.selectedOptionValue + "'"}})))
 and substring(financial_month,1,4) = '{{SelectYear.selectedOptionValue}}'
 group by last_name 
-HAVING sum(amount_spent) > 0
+HAVING (sum(amount_revenue_approved)-sum(amount_spent) <> 0)
 order by 1
