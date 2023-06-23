@@ -1,4 +1,4 @@
-SELECT a.fk_user_id,a.financial_month,comm_value
+SELECT a.fk_user_id,a.financial_month,comm_value,fk_comm_type_id
 FROM public.user_commission_month a
 where 1 = 1
 and ({{!SelectUser.selectedOptionValue}} OR (text(a.fk_user_id) IN ({{"'" + SelectUser.selectedOptionValue + "'"}})))

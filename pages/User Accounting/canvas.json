@@ -1066,7 +1066,7 @@
               ],
               "shouldTruncate": false,
               "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-              "text": "{{(Number(Profit.text.replace(/[^0-9.-]+/g,\"\")) + Number(ProfitGooAi20.text.replace(/[^0-9.-]+/g,\"\"))+\tNumber(ProfitOther.text.replace(/[^0-9.-]+/g,\"\")))}}",
+              "text": "{{(Number(Profit.text.replace(/[^0-9.-]+/g,\"\")) + Number(ProfitGooAi20.text.replace(/[^0-9.-]+/g,\"\"))+\tNumber(ProfitOther.text.replace(/[^0-9.-]+/g,\"\"))) <0 ? (Number(Profit.text.replace(/[^0-9.-]+/g,\"\")) + Number(ProfitGooAi20.text.replace(/[^0-9.-]+/g,\"\"))+\tNumber(ProfitOther.text.replace(/[^0-9.-]+/g,\"\"))) : 0}}",
               "key": "k0zn3vv2el",
               "isDeprecated": false,
               "rightColumn": 59,
@@ -1280,7 +1280,7 @@
                                 }
                               },
                               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                              "columnUpdatedAt": 1687180598637,
+                              "columnUpdatedAt": 1687508404998,
                               "originalBottomRow": 51,
                               "defaultSelectedRowIndices": [
                                 0
@@ -2952,7 +2952,7 @@
                                 }
                               },
                               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                              "columnUpdatedAt": 1687498743192,
+                              "columnUpdatedAt": 1687508405008,
                               "originalBottomRow": 51,
                               "defaultSelectedRowIndices": [
                                 0
@@ -3595,11 +3595,11 @@
                               "isLoading": false,
                               "mobileTopRow": 9,
                               "responsiveBehavior": "fill",
-                              "originalTopRow": 35,
+                              "originalTopRow": 34,
                               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                               "mobileLeftColumn": 0,
                               "maxDynamicHeight": 9000,
-                              "originalBottomRow": 39,
+                              "originalBottomRow": 38,
                               "fontSize": "0.875rem",
                               "minDynamicHeight": 4
                             },
@@ -3659,11 +3659,11 @@
                               "isLoading": false,
                               "mobileTopRow": 9,
                               "responsiveBehavior": "fill",
-                              "originalTopRow": 39,
+                              "originalTopRow": 38,
                               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                               "mobileLeftColumn": 0,
                               "maxDynamicHeight": 9000,
-                              "originalBottomRow": 43,
+                              "originalBottomRow": 42,
                               "fontSize": "0.875rem",
                               "minDynamicHeight": 4
                             },
@@ -3730,22 +3730,18 @@
                               "isLoading": false,
                               "mobileTopRow": 9,
                               "responsiveBehavior": "fill",
-                              "originalTopRow": 31,
+                              "originalTopRow": 30,
                               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                               "mobileLeftColumn": 0,
                               "maxDynamicHeight": 9000,
-                              "originalBottomRow": 35,
+                              "originalBottomRow": 34,
                               "fontSize": "0.875rem",
                               "minDynamicHeight": 4
                             },
                             {
                               "mobileBottomRow": 13,
                               "widgetName": "AmountInvoice",
-                              "dynamicPropertyPathList": [
-                                {
-                                  "key": "textColor"
-                                }
-                              ],
+                              "dynamicPropertyPathList": [],
                               "displayName": "Text",
                               "iconSVG": "/static/media/icon.97c59b523e6f70ba6f40a10fc2c7c5b5.svg",
                               "searchTags": [
@@ -3777,14 +3773,11 @@
                                 },
                                 {
                                   "key": "text"
-                                },
-                                {
-                                  "key": "textColor"
                                 }
                               ],
                               "shouldTruncate": false,
                               "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-                              "text": "{{Utils.myCurrency(\nNumber(Profit30.text.replace(/[^0-9.-]+/g,\"\")) + Number(ProfitGooAi20.text.replace(/[^0-9.-]+/g,\"\"))+\tNumber(ProfitOther.text.replace(/[^0-9.-]+/g,\"\"))\n)}} ",
+                              "text": "{{Utils.myCurrency((\nNumber(Profit30.text.replace(/[^0-9.-]+/g,\"\")) + Number(ProfitGooAi20.text.replace(/[^0-9.-]+/g,\"\"))+\tNumber(ProfitOther.text.replace(/[^0-9.-]+/g,\"\"))) > 0 ? (\nNumber(Profit30.text.replace(/[^0-9.-]+/g,\"\")) + Number(ProfitGooAi20.text.replace(/[^0-9.-]+/g,\"\"))+\tNumber(ProfitOther.text.replace(/[^0-9.-]+/g,\"\") )): 0)\n}} ",
                               "key": "k0zn3vv2el",
                               "isDeprecated": false,
                               "rightColumn": 63,
@@ -3794,7 +3787,7 @@
                               "minWidth": 450,
                               "isVisible": true,
                               "fontStyle": "BOLD",
-                              "textColor": "{{(\nNumber(Profit30.text.replace(/[^0-9.-]+/g,\"\")) + Number(ProfitGooAi20.text.replace(/[^0-9.-]+/g,\"\"))\t\t\n) < 0 ? 'red' : 'green'}}",
+                              "textColor": "",
                               "version": 1,
                               "parentId": "lvya69kw4u",
                               "renderMode": "CANVAS",
@@ -4375,11 +4368,12 @@
                                 }
                               ],
                               "isDisabled": "{{appsmith.store.role_level<500}}",
+                              "onChange": "{{Save_Data_Comm_Fee.run()}}",
                               "accentColor": "#22c55e",
                               "isVisible": true,
                               "version": 1,
                               "isLoading": false,
-                              "originalBottomRow": 30,
+                              "originalBottomRow": 29,
                               "mobileBottomRow": 31,
                               "widgetName": "NumberSlider1",
                               "dynamicPropertyPathList": [
@@ -4397,7 +4391,11 @@
                               "mobileRightColumn": 53,
                               "min": "10",
                               "parentColumnSpace": 6.15771484375,
-                              "dynamicTriggerPathList": [],
+                              "dynamicTriggerPathList": [
+                                {
+                                  "key": "onChange"
+                                }
+                              ],
                               "shouldTruncate": false,
                               "labelPosition": "Top",
                               "labelTextColor": "#71717a",
@@ -4415,7 +4413,7 @@
                               "renderMode": "CANVAS",
                               "mobileTopRow": 23,
                               "responsiveBehavior": "fill",
-                              "originalTopRow": 22,
+                              "originalTopRow": 21,
                               "mobileLeftColumn": 13,
                               "step": "5",
                               "showMarksLabel": true
