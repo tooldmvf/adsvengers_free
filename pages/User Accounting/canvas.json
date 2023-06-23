@@ -1106,7 +1106,7 @@
                       "animateLoading": true,
                       "parentColumnSpace": 8.3056640625,
                       "dynamicTriggerPathList": [],
-                      "leftColumn": 18,
+                      "leftColumn": 20,
                       "dynamicBindingPathList": [
                         {
                           "key": "isVisible"
@@ -1563,7 +1563,7 @@
                       "animateLoading": true,
                       "parentColumnSpace": 6.15234375,
                       "dynamicTriggerPathList": [],
-                      "leftColumn": 18,
+                      "leftColumn": 20,
                       "dynamicBindingPathList": [
                         {
                           "key": "isVisible"
@@ -1775,7 +1775,7 @@
                                       "isDeprecated": false,
                                       "rightColumn": 63,
                                       "textAlign": "RIGHT",
-                                      "dynamicHeight": "AUTO_HEIGHT",
+                                      "dynamicHeight": "FIXED",
                                       "widgetId": "3micw5h66o",
                                       "minWidth": 450,
                                       "isVisible": true,
@@ -1787,11 +1787,9 @@
                                       "isLoading": false,
                                       "mobileTopRow": 7,
                                       "responsiveBehavior": "fill",
-                                      "originalTopRow": 8,
                                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                                       "mobileLeftColumn": 0,
                                       "maxDynamicHeight": 9000,
-                                      "originalBottomRow": 12,
                                       "fontSize": "0.875rem",
                                       "minDynamicHeight": 4
                                     },
@@ -1835,7 +1833,7 @@
                                       "isDeprecated": false,
                                       "rightColumn": 26,
                                       "textAlign": "LEFT",
-                                      "dynamicHeight": "AUTO_HEIGHT",
+                                      "dynamicHeight": "FIXED",
                                       "widgetId": "ph3hscrkni",
                                       "minWidth": 450,
                                       "isVisible": true,
@@ -1847,11 +1845,9 @@
                                       "isLoading": false,
                                       "mobileTopRow": 7,
                                       "responsiveBehavior": "fill",
-                                      "originalTopRow": 8,
                                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                                       "mobileLeftColumn": 0,
                                       "maxDynamicHeight": 9000,
-                                      "originalBottomRow": 13,
                                       "fontSize": "0.875rem",
                                       "minDynamicHeight": 4
                                     },
@@ -1895,7 +1891,7 @@
                                       "isDeprecated": false,
                                       "rightColumn": 20,
                                       "textAlign": "LEFT",
-                                      "dynamicHeight": "AUTO_HEIGHT",
+                                      "dynamicHeight": "FIXED",
                                       "widgetId": "ykr9qsh14l",
                                       "minWidth": 450,
                                       "isVisible": true,
@@ -1907,11 +1903,9 @@
                                       "isLoading": false,
                                       "mobileTopRow": 7,
                                       "responsiveBehavior": "fill",
-                                      "originalTopRow": 0,
                                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                                       "mobileLeftColumn": 0,
                                       "maxDynamicHeight": 9000,
-                                      "originalBottomRow": 5,
                                       "fontSize": "0.875rem",
                                       "minDynamicHeight": 4
                                     },
@@ -1958,7 +1952,7 @@
                                       "isDeprecated": false,
                                       "rightColumn": 63,
                                       "textAlign": "RIGHT",
-                                      "dynamicHeight": "AUTO_HEIGHT",
+                                      "dynamicHeight": "FIXED",
                                       "widgetId": "mo8qbppk9y",
                                       "minWidth": 450,
                                       "isVisible": true,
@@ -1970,11 +1964,9 @@
                                       "isLoading": false,
                                       "mobileTopRow": 7,
                                       "responsiveBehavior": "fill",
-                                      "originalTopRow": 4,
                                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                                       "mobileLeftColumn": 0,
                                       "maxDynamicHeight": 9000,
-                                      "originalBottomRow": 8,
                                       "fontSize": "0.875rem",
                                       "minDynamicHeight": 4
                                     },
@@ -2016,9 +2008,9 @@
                                       "text": "Spent +Fees",
                                       "key": "wmtrt5wcg7",
                                       "isDeprecated": false,
-                                      "rightColumn": 25,
+                                      "rightColumn": 28,
                                       "textAlign": "LEFT",
-                                      "dynamicHeight": "AUTO_HEIGHT",
+                                      "dynamicHeight": "FIXED",
                                       "widgetId": "pi1n5vrt7s",
                                       "minWidth": 450,
                                       "isVisible": true,
@@ -2030,11 +2022,9 @@
                                       "isLoading": false,
                                       "mobileTopRow": 7,
                                       "responsiveBehavior": "fill",
-                                      "originalTopRow": 4,
                                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                                       "mobileLeftColumn": 0,
                                       "maxDynamicHeight": 9000,
-                                      "originalBottomRow": 9,
                                       "fontSize": "0.875rem",
                                       "minDynamicHeight": 4
                                     }
@@ -2130,7 +2120,7 @@
                       "key": "dtbk6h5m0v",
                       "backgroundColor": "#f0fdf4",
                       "isDeprecated": false,
-                      "rightColumn": 32,
+                      "rightColumn": 33,
                       "dynamicHeight": "AUTO_HEIGHT",
                       "widgetId": "34oq8af7zp",
                       "containerStyle": "card",
@@ -2174,7 +2164,7 @@
                       "animateLoading": true,
                       "parentColumnSpace": 6.15234375,
                       "dynamicTriggerPathList": [],
-                      "leftColumn": 32,
+                      "leftColumn": 33,
                       "dynamicBindingPathList": [
                         {
                           "key": "isVisible"
@@ -2457,7 +2447,7 @@
                                       "isDeprecated": false,
                                       "rightColumn": 63,
                                       "textAlign": "RIGHT",
-                                      "dynamicHeight": "AUTO_HEIGHT",
+                                      "dynamicHeight": "FIXED",
                                       "widgetId": "poe7m7w302",
                                       "minWidth": 450,
                                       "isVisible": true,
@@ -2469,11 +2459,9 @@
                                       "isLoading": false,
                                       "mobileTopRow": 7,
                                       "responsiveBehavior": "fill",
-                                      "originalTopRow": 8,
                                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                                       "mobileLeftColumn": 0,
                                       "maxDynamicHeight": 9000,
-                                      "originalBottomRow": 12,
                                       "fontSize": "0.875rem",
                                       "minDynamicHeight": 4
                                     },
@@ -2517,7 +2505,7 @@
                                       "isDeprecated": false,
                                       "rightColumn": 26,
                                       "textAlign": "LEFT",
-                                      "dynamicHeight": "AUTO_HEIGHT",
+                                      "dynamicHeight": "FIXED",
                                       "widgetId": "aipk3j1m8r",
                                       "minWidth": 450,
                                       "isVisible": true,
@@ -2529,11 +2517,9 @@
                                       "isLoading": false,
                                       "mobileTopRow": 7,
                                       "responsiveBehavior": "fill",
-                                      "originalTopRow": 8,
                                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                                       "mobileLeftColumn": 0,
                                       "maxDynamicHeight": 9000,
-                                      "originalBottomRow": 13,
                                       "fontSize": "0.875rem",
                                       "minDynamicHeight": 4
                                     },
@@ -2577,7 +2563,7 @@
                                       "isDeprecated": false,
                                       "rightColumn": 20,
                                       "textAlign": "LEFT",
-                                      "dynamicHeight": "AUTO_HEIGHT",
+                                      "dynamicHeight": "FIXED",
                                       "widgetId": "w9y02clqpa",
                                       "minWidth": 450,
                                       "isVisible": true,
@@ -2589,11 +2575,9 @@
                                       "isLoading": false,
                                       "mobileTopRow": 7,
                                       "responsiveBehavior": "fill",
-                                      "originalTopRow": 0,
                                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                                       "mobileLeftColumn": 0,
                                       "maxDynamicHeight": 9000,
-                                      "originalBottomRow": 5,
                                       "fontSize": "0.875rem",
                                       "minDynamicHeight": 4
                                     },
@@ -2635,9 +2619,9 @@
                                       "text": "Spent +Fees",
                                       "key": "wmtrt5wcg7",
                                       "isDeprecated": false,
-                                      "rightColumn": 25,
+                                      "rightColumn": 27,
                                       "textAlign": "LEFT",
-                                      "dynamicHeight": "AUTO_HEIGHT",
+                                      "dynamicHeight": "FIXED",
                                       "widgetId": "tydve1khf0",
                                       "minWidth": 450,
                                       "isVisible": true,
@@ -2649,11 +2633,9 @@
                                       "isLoading": false,
                                       "mobileTopRow": 7,
                                       "responsiveBehavior": "fill",
-                                      "originalTopRow": 4,
                                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                                       "mobileLeftColumn": 0,
                                       "maxDynamicHeight": 9000,
-                                      "originalBottomRow": 9,
                                       "fontSize": "0.875rem",
                                       "minDynamicHeight": 4
                                     }
@@ -2863,6 +2845,9 @@
                                 },
                                 {
                                   "key": "primaryColumns.fk_network_id.computedValue"
+                                },
+                                {
+                                  "key": "primaryColumns.amount_revenue_fixed.computedValue"
                                 }
                               ],
                               "needsHeightForContent": true,
@@ -2901,7 +2886,7 @@
                                 }
                               },
                               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                              "columnUpdatedAt": 1686726204764,
+                              "columnUpdatedAt": 1687498743192,
                               "originalBottomRow": 51,
                               "defaultSelectedRowIndices": [
                                 0
@@ -2913,6 +2898,7 @@
                                 "financial_month",
                                 "network_name",
                                 "amount_revenue_approved",
+                                "amount_revenue_fixed",
                                 "fk_network_id",
                                 "fk_user_id"
                               ],
@@ -2928,7 +2914,8 @@
                                 "task": 245,
                                 "step": 70,
                                 "status": 85,
-                                "network_name": 170
+                                "network_name": 118,
+                                "amount_revenue_approved": 131
                               },
                               "parentRowSpace": 10,
                               "hideCard": false,
@@ -2988,8 +2975,8 @@
                                   "enableSort": true,
                                   "isVisible": true,
                                   "isDisabled": false,
-                                  "isCellEditable": true,
-                                  "isEditable": true,
+                                  "isCellEditable": false,
+                                  "isEditable": false,
                                   "isCellVisible": true,
                                   "isDerived": false,
                                   "label": "Approved Revenue",
@@ -3090,6 +3077,36 @@
                                   "sticky": "",
                                   "validation": {},
                                   "cellBackground": ""
+                                },
+                                "amount_revenue_fixed": {
+                                  "allowCellWrapping": false,
+                                  "allowSameOptionsInNewRow": true,
+                                  "index": 5,
+                                  "width": 150,
+                                  "originalId": "amount_revenue_fixed",
+                                  "id": "amount_revenue_fixed",
+                                  "alias": "amount_revenue_fixed",
+                                  "horizontalAlignment": "RIGHT",
+                                  "verticalAlignment": "CENTER",
+                                  "columnType": "number",
+                                  "textColor": "",
+                                  "textSize": "0.875rem",
+                                  "fontStyle": "",
+                                  "enableFilter": true,
+                                  "enableSort": true,
+                                  "isVisible": true,
+                                  "isDisabled": false,
+                                  "isCellEditable": true,
+                                  "isEditable": true,
+                                  "isCellVisible": true,
+                                  "isDerived": false,
+                                  "label": "Should Be",
+                                  "isSaveVisible": true,
+                                  "isDiscardVisible": true,
+                                  "computedValue": "{{TableRevModCopy.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"amount_revenue_fixed\"]))}}",
+                                  "sticky": "",
+                                  "validation": {},
+                                  "cellBackground": ""
                                 }
                               },
                               "key": "c7rr9s6m4a",
@@ -3179,7 +3196,7 @@
                       "key": "dtbk6h5m0v",
                       "backgroundColor": "#eff6ff",
                       "isDeprecated": false,
-                      "rightColumn": 18,
+                      "rightColumn": 20,
                       "dynamicHeight": "AUTO_HEIGHT",
                       "widgetId": "2ibk9sc735",
                       "containerStyle": "card",
@@ -3456,11 +3473,7 @@
                             {
                               "mobileBottomRow": 13,
                               "widgetName": "Text11CopyCopyCopyCopyCopy1",
-                              "dynamicPropertyPathList": [
-                                {
-                                  "key": "isVisible"
-                                }
-                              ],
+                              "dynamicPropertyPathList": [],
                               "displayName": "Text",
                               "iconSVG": "/static/media/icon.97c59b523e6f70ba6f40a10fc2c7c5b5.svg",
                               "searchTags": [
@@ -3491,9 +3504,6 @@
                                   "key": "borderRadius"
                                 },
                                 {
-                                  "key": "isVisible"
-                                },
-                                {
                                   "key": "text"
                                 }
                               ],
@@ -3507,7 +3517,7 @@
                               "dynamicHeight": "AUTO_HEIGHT",
                               "widgetId": "vft5kdy43e",
                               "minWidth": 450,
-                              "isVisible": "{{appsmith.store.role_level>100}}",
+                              "isVisible": true,
                               "fontStyle": "BOLD",
                               "textColor": "#15803d",
                               "version": 1,
@@ -3527,11 +3537,7 @@
                             {
                               "mobileBottomRow": 13,
                               "widgetName": "Text11CopyCopyCopyCopyCopy1Copy",
-                              "dynamicPropertyPathList": [
-                                {
-                                  "key": "isVisible"
-                                }
-                              ],
+                              "dynamicPropertyPathList": [],
                               "displayName": "Text",
                               "iconSVG": "/static/media/icon.97c59b523e6f70ba6f40a10fc2c7c5b5.svg",
                               "searchTags": [
@@ -3563,9 +3569,6 @@
                                 },
                                 {
                                   "key": "text"
-                                },
-                                {
-                                  "key": "isVisible"
                                 }
                               ],
                               "shouldTruncate": false,
@@ -3578,7 +3581,7 @@
                               "dynamicHeight": "AUTO_HEIGHT",
                               "widgetId": "yatnir37w1",
                               "minWidth": 450,
-                              "isVisible": "{{appsmith.store.role_level>100}}",
+                              "isVisible": true,
                               "fontStyle": "BOLD",
                               "textColor": "#15803d",
                               "version": 1,
@@ -3601,9 +3604,6 @@
                               "dynamicPropertyPathList": [
                                 {
                                   "key": "textColor"
-                                },
-                                {
-                                  "key": "isVisible"
                                 }
                               ],
                               "displayName": "Text",
@@ -3640,9 +3640,6 @@
                                 },
                                 {
                                   "key": "textColor"
-                                },
-                                {
-                                  "key": "isVisible"
                                 }
                               ],
                               "shouldTruncate": false,
@@ -3655,7 +3652,7 @@
                               "dynamicHeight": "AUTO_HEIGHT",
                               "widgetId": "1ozosw9hm0",
                               "minWidth": 450,
-                              "isVisible": "{{appsmith.store.role_level>100}}",
+                              "isVisible": true,
                               "fontStyle": "BOLD",
                               "textColor": "{{Number(Profit.text.replace(/[^0-9.-]+/g,\"\") + Adjust.value\n)<0 ? 'red' : 'green' }}",
                               "version": 1,
@@ -3678,9 +3675,6 @@
                               "dynamicPropertyPathList": [
                                 {
                                   "key": "textColor"
-                                },
-                                {
-                                  "key": "isVisible"
                                 }
                               ],
                               "displayName": "Text",
@@ -3717,9 +3711,6 @@
                                 },
                                 {
                                   "key": "textColor"
-                                },
-                                {
-                                  "key": "isVisible"
                                 }
                               ],
                               "shouldTruncate": false,
@@ -3732,7 +3723,7 @@
                               "dynamicHeight": "AUTO_HEIGHT",
                               "widgetId": "phf8ayug0h",
                               "minWidth": 450,
-                              "isVisible": "{{appsmith.store.role_level>100}}",
+                              "isVisible": true,
                               "fontStyle": "BOLD",
                               "textColor": "{{(\nNumber(Profit30.text.replace(/[^0-9.-]+/g,\"\")) + Number(ProfitGooAi20.text.replace(/[^0-9.-]+/g,\"\"))\t\t\n) < 0 ? 'red' : 'green'}}",
                               "version": 1,
@@ -4052,11 +4043,7 @@
                             {
                               "mobileBottomRow": 13,
                               "widgetName": "Text11Copy1CopyCopyCopyCopy1",
-                              "dynamicPropertyPathList": [
-                                {
-                                  "key": "isVisible"
-                                }
-                              ],
+                              "dynamicPropertyPathList": [],
                               "displayName": "Text",
                               "iconSVG": "/static/media/icon.97c59b523e6f70ba6f40a10fc2c7c5b5.svg",
                               "searchTags": [
@@ -4085,9 +4072,6 @@
                                 },
                                 {
                                   "key": "borderRadius"
-                                },
-                                {
-                                  "key": "isVisible"
                                 }
                               ],
                               "shouldTruncate": false,
@@ -4100,7 +4084,7 @@
                               "dynamicHeight": "AUTO_HEIGHT",
                               "widgetId": "eri9m7uacv",
                               "minWidth": 450,
-                              "isVisible": "{{appsmith.store.role_level>100}}",
+                              "isVisible": true,
                               "fontStyle": "",
                               "textColor": "#231F20",
                               "version": 1,
@@ -4109,22 +4093,18 @@
                               "isLoading": false,
                               "mobileTopRow": 9,
                               "responsiveBehavior": "fill",
-                              "originalTopRow": 36,
+                              "originalTopRow": 35,
                               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                               "mobileLeftColumn": 0,
                               "maxDynamicHeight": 9000,
-                              "originalBottomRow": 40,
+                              "originalBottomRow": 39,
                               "fontSize": "0.875rem",
                               "minDynamicHeight": 4
                             },
                             {
                               "mobileBottomRow": 13,
                               "widgetName": "Text11Copy1CopyCopyCopyCopy1Copy1",
-                              "dynamicPropertyPathList": [
-                                {
-                                  "key": "isVisible"
-                                }
-                              ],
+                              "dynamicPropertyPathList": [],
                               "displayName": "Text",
                               "iconSVG": "/static/media/icon.97c59b523e6f70ba6f40a10fc2c7c5b5.svg",
                               "searchTags": [
@@ -4153,9 +4133,6 @@
                                 },
                                 {
                                   "key": "borderRadius"
-                                },
-                                {
-                                  "key": "isVisible"
                                 }
                               ],
                               "shouldTruncate": false,
@@ -4168,7 +4145,7 @@
                               "dynamicHeight": "AUTO_HEIGHT",
                               "widgetId": "39jp6fb4z4",
                               "minWidth": 450,
-                              "isVisible": "{{appsmith.store.role_level>100}}",
+                              "isVisible": true,
                               "fontStyle": "",
                               "textColor": "#231F20",
                               "version": 1,
@@ -4177,22 +4154,18 @@
                               "isLoading": false,
                               "mobileTopRow": 9,
                               "responsiveBehavior": "fill",
-                              "originalTopRow": 40,
+                              "originalTopRow": 39,
                               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                               "mobileLeftColumn": 0,
                               "maxDynamicHeight": 9000,
-                              "originalBottomRow": 44,
+                              "originalBottomRow": 43,
                               "fontSize": "0.875rem",
                               "minDynamicHeight": 4
                             },
                             {
                               "mobileBottomRow": 13,
                               "widgetName": "Text11Copy1CopyCopyCopyCopy1Copy",
-                              "dynamicPropertyPathList": [
-                                {
-                                  "key": "isVisible"
-                                }
-                              ],
+                              "dynamicPropertyPathList": [],
                               "displayName": "Text",
                               "iconSVG": "/static/media/icon.97c59b523e6f70ba6f40a10fc2c7c5b5.svg",
                               "searchTags": [
@@ -4224,9 +4197,6 @@
                                 },
                                 {
                                   "key": "text"
-                                },
-                                {
-                                  "key": "isVisible"
                                 }
                               ],
                               "shouldTruncate": false,
@@ -4239,7 +4209,7 @@
                               "dynamicHeight": "AUTO_HEIGHT",
                               "widgetId": "74i0hiwuxs",
                               "minWidth": 450,
-                              "isVisible": "{{appsmith.store.role_level>100}}",
+                              "isVisible": true,
                               "fontStyle": "",
                               "textColor": "#231F20",
                               "version": 1,
@@ -4248,22 +4218,18 @@
                               "isLoading": false,
                               "mobileTopRow": 9,
                               "responsiveBehavior": "fill",
-                              "originalTopRow": 31,
+                              "originalTopRow": 30,
                               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                               "mobileLeftColumn": 0,
                               "maxDynamicHeight": 9000,
-                              "originalBottomRow": 36,
+                              "originalBottomRow": 35,
                               "fontSize": "0.875rem",
                               "minDynamicHeight": 4
                             },
                             {
                               "mobileBottomRow": 13,
                               "widgetName": "Text11Copy1CopyCopyCopyCopy3",
-                              "dynamicPropertyPathList": [
-                                {
-                                  "key": "isVisible"
-                                }
-                              ],
+                              "dynamicPropertyPathList": [],
                               "displayName": "Text",
                               "iconSVG": "/static/media/icon.97c59b523e6f70ba6f40a10fc2c7c5b5.svg",
                               "searchTags": [
@@ -4292,9 +4258,6 @@
                                 },
                                 {
                                   "key": "borderRadius"
-                                },
-                                {
-                                  "key": "isVisible"
                                 }
                               ],
                               "shouldTruncate": false,
@@ -4307,7 +4270,7 @@
                               "dynamicHeight": "AUTO_HEIGHT",
                               "widgetId": "3e9c33a4tz",
                               "minWidth": 450,
-                              "isVisible": "{{appsmith.store.role_level>100}}",
+                              "isVisible": true,
                               "fontStyle": "BOLD",
                               "textColor": "#231F20",
                               "version": 1,
@@ -4325,7 +4288,7 @@
                               "minDynamicHeight": 4
                             },
                             {
-                              "defaultValue": "",
+                              "defaultValue": "{{Fetch_Commission_fee.data[0].comm_value}}",
                               "iconSVG": "/static/media/icon.f122000eb591fcd1410a4775a54f9f0d.svg",
                               "tooltipAlwaysOn": false,
                               "labelText": "Profit Percentage",
@@ -4336,12 +4299,15 @@
                               "leftColumn": 2,
                               "dynamicBindingPathList": [
                                 {
-                                  "key": "isVisible"
+                                  "key": "defaultValue"
+                                },
+                                {
+                                  "key": "isDisabled"
                                 }
                               ],
-                              "isDisabled": false,
+                              "isDisabled": "{{appsmith.store.role_level<500}}",
                               "accentColor": "#22c55e",
-                              "isVisible": "{{appsmith.store.role_level>100}}",
+                              "isVisible": false,
                               "version": 1,
                               "isLoading": false,
                               "originalBottomRow": 30,
@@ -4349,7 +4315,7 @@
                               "widgetName": "NumberSlider1",
                               "dynamicPropertyPathList": [
                                 {
-                                  "key": "isVisible"
+                                  "key": "isDisabled"
                                 }
                               ],
                               "displayName": "Number Slider",
@@ -4422,9 +4388,9 @@
                               "isLoading": false,
                               "mobileTopRow": 71,
                               "responsiveBehavior": "fill",
-                              "originalTopRow": 44,
+                              "originalTopRow": 43,
                               "mobileLeftColumn": 15,
-                              "originalBottomRow": 48
+                              "originalBottomRow": 47
                             },
                             {
                               "boxShadow": "none",
@@ -5007,6 +4973,21 @@
           ]
         },
         "layoutOnLoadActions": [
+          [
+            {
+              "id": "User Accounting_Fetch_Commission_fee",
+              "name": "Fetch_Commission_fee",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "!SelectUser.selectedOptionValue",
+                "\"'\" + SelectUser.selectedOptionValue + \"'\"",
+                "SelectMonth.selectedOptionValue",
+                "SelectYear.selectedOptionValue"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ],
           [
             {
               "id": "User Accounting_get_all_users",
