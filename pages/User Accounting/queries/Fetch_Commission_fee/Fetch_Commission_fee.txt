@@ -2,6 +2,5 @@ SELECT a.fk_user_id,a.financial_month,comm_value
 FROM public.user_commission_month a
 where 1 = 1
 and ({{!SelectUser.selectedOptionValue}} OR (text(a.fk_user_id) IN ({{"'" + SelectUser.selectedOptionValue + "'"}})))
-AND SUBSTRING(a.financial_month,1,4) = '{{SelectYear.selectedOptionValue}}'
-AND SUBSTRING(a.financial_month,5,2) = '{{SelectMonth.selectedOptionValue}}'
+AND a.financial_month = '{{SelectYear.selectedOptionValue}}{{SelectMonth.selectedOptionValue}}'
 order by 1 asc

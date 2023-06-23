@@ -32,6 +32,13 @@ FROM public.user_totals_month a
 Where 1=1
 and ({{!SelectUser.selectedOptionValue}} OR (text(a.fk_user_id) IN ({{"''" + SelectUser.selectedOptionValue + "''"}})))
 and substring(financial_month,1,4) = ''{{SelectYear.selectedOptionValue}}''
+GROUP By a.financial_month
+union All
+SELECT ''Debt'' , substring(financial_month,5,2)::integer m,  sum(amount_debt)
+FROM public.user_totals_month a
+Where 1=1
+and ({{!SelectUser.selectedOptionValue}} OR (text(a.fk_user_id) IN ({{"''" + SelectUser.selectedOptionValue + "''"}})))
+and substring(financial_month,1,4) = ''{{SelectYear.selectedOptionValue}}''
 GROUP By a.financial_month' 
 , 'select m from generate_series(1,12) m')
 AS ct("Type" TEXT, 

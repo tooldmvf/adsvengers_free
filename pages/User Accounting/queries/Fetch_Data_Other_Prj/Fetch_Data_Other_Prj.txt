@@ -2,5 +2,4 @@ SELECT a.fk_user_id,a.financial_month,amount_revenue_approved,commissions_fee,am
 FROM public.user_other_project_month a
 where 1 = 1
 and ({{!SelectUser.selectedOptionValue}} OR (text(a.fk_user_id) IN ({{"'" + SelectUser.selectedOptionValue + "'"}})))
-AND SUBSTRING(a.financial_month,1,4) = '{{SelectYear.selectedOptionValue}}'
-AND SUBSTRING(a.financial_month,5,2) = '{{SelectMonth.selectedOptionValue}}'
+AND a.financial_month = '{{SelectYear.selectedOptionValue}}{{SelectMonth.selectedOptionValue}}'

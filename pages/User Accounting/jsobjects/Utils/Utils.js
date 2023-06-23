@@ -24,6 +24,7 @@ export default {
 	
 	async reload () {
 		await Fetch_Commission_fee.run();
+		await Fetch_Debt_Prev_Month.run();
 		await Fetch_Data_Other_Prj.run();
 		await Fetch_Data_Rev_Ai20.run();
 		await Fetch_Data_Rev_TOT.run();

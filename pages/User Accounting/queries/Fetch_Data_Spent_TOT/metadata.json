@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "SELECT SUM(amount_spent) tot_spent, a.spent_rate_fees \nFROM public.user_spent_month a\ninner join public.facebook_bm b on (b.bm_id = a.fk_bm_id)\nwhere 1=1\nand ({{!SelectUser.selectedOptionValue}} OR (text(a.fk_user_id) IN ({{\"'\" + SelectUser.selectedOptionValue + \"'\"}})))\nAND SUBSTRING(a.financial_month,1,4) = '{{SelectYear.selectedOptionValue}}'\nAND SUBSTRING(a.financial_month,5,2) = '{{SelectMonth.selectedOptionValue}}'\nand fk_bm_id != 'Ai20-Google'\ngroup by a.spent_rate_fees \n",
+      "body": "SELECT SUM(amount_spent) tot_spent, a.spent_rate_fees \nFROM public.user_spent_month a\ninner join public.facebook_bm b on (b.bm_id = a.fk_bm_id)\nwhere 1=1\nand ({{!SelectUser.selectedOptionValue}} OR (text(a.fk_user_id) IN ({{\"'\" + SelectUser.selectedOptionValue + \"'\"}})))\nAND a.financial_month = '{{SelectYear.selectedOptionValue}}{{SelectMonth.selectedOptionValue}}'\nand fk_bm_id != 'Ai20-Google'\ngroup by a.spent_rate_fees \n",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {

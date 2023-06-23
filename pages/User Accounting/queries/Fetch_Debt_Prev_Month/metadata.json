@@ -2,7 +2,7 @@
   "pluginType": "DB",
   "pluginId": "postgres-plugin",
   "unpublishedAction": {
-    "name": "Fetch_Data_Rev",
+    "name": "Fetch_Debt_Prev_Month",
     "datasource": {
       "name": "DO_db-postgresql-adsv",
       "pluginId": "postgres-plugin",
@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "SELECT b.network_name,a.fk_network_id,a.fk_user_id,a.financial_month,amount_revenue_approved,amount_revenue_fixed\nFROM public.user_financial_month a\ninner join public.network b on (b.network_id = a.fk_network_id)\nwhere 1 = 1\nand b.network_name_short != 'AW'\nand ({{!SelectUser.selectedOptionValue}} OR (text(a.fk_user_id) IN ({{\"'\" + SelectUser.selectedOptionValue + \"'\"}})))\nAND a.financial_month = '{{SelectYear.selectedOptionValue}}{{SelectMonth.selectedOptionValue}}'\norder by 1 asc",
+      "body": "SELECT a.fk_user_id,a.financial_month\n,case when amount_debt <0 then amount_debt else 0 end as debt\nFROM public.user_totals_month a\nwhere 1 = 1\nand ({{!SelectUser.selectedOptionValue}} OR (text(a.fk_user_id) IN ({{\"'\" + SelectUser.selectedOptionValue + \"'\"}})))\nAND a.financial_month = to_char(to_Date('{{SelectYear.selectedOptionValue}}{{SelectMonth.selectedOptionValue}}','YYYYMM')- interval '1 months','YYYYMM')",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
@@ -44,9 +44,10 @@
     "userSetOnLoad": true,
     "confirmBeforeExecute": false,
     "policies": [],
-    "userPermissions": []
+    "userPermissions": [],
+    "createdAt": "2023-06-23T06:24:28Z"
   },
-  "id": "User Accounting_Fetch_Data_Rev",
+  "id": "User Accounting_Fetch_Debt_Prev_Month",
   "deleted": false,
-  "gitSyncId": "646331cd28902b71518db22a_647195544bdc0705211d940a"
+  "gitSyncId": "646331cd28902b71518db22a_64953a9c41b6277e9b5bee9b"
 }
