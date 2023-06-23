@@ -3158,9 +3158,9 @@
                                   "horizontalAlignment": "RIGHT",
                                   "verticalAlignment": "CENTER",
                                   "columnType": "number",
-                                  "textColor": "",
+                                  "textColor": "#eab308",
                                   "textSize": "0.875rem",
-                                  "fontStyle": "",
+                                  "fontStyle": "BOLD",
                                   "enableFilter": true,
                                   "enableSort": true,
                                   "isVisible": true,
@@ -5053,7 +5053,7 @@
                       "serverSideFiltering": false,
                       "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( appsmith.store.myUser))(SelectUser.options, SelectUser.serverSideFiltering) }}",
                       "animateLoading": true,
-                      "leftColumn": 22,
+                      "leftColumn": 31,
                       "dynamicBindingPathList": [
                         {
                           "key": "accentColor"
@@ -5111,7 +5111,7 @@
                       "key": "v5onvlal5t",
                       "labelTextSize": "0.875rem",
                       "isDeprecated": false,
-                      "rightColumn": 37,
+                      "rightColumn": 44,
                       "widgetId": "whhn9887vc",
                       "minWidth": 450,
                       "parentId": "qd74yy4u3t",
@@ -5135,7 +5135,7 @@
                       "serverSideFiltering": false,
                       "defaultOptionValue": "",
                       "animateLoading": true,
-                      "leftColumn": 48,
+                      "leftColumn": 52,
                       "dynamicBindingPathList": [
                         {
                           "key": "accentColor"
@@ -5181,7 +5181,7 @@
                       "key": "1rliem7or9",
                       "labelTextSize": "0.875rem",
                       "isDeprecated": false,
-                      "rightColumn": 63,
+                      "rightColumn": 61,
                       "widgetId": "m9iuwke9du",
                       "minWidth": 450,
                       "parentId": "qd74yy4u3t",
@@ -5200,12 +5200,12 @@
                       "iconSVG": "/static/media/icon.bd99caba5853ad71e4b3d8daffacb3a2.svg",
                       "labelText": "Year",
                       "topRow": 1,
-                      "labelWidth": "3",
+                      "labelWidth": "2",
                       "type": "SELECT_WIDGET",
                       "serverSideFiltering": false,
                       "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( moment().format('YYYY')))(SelectYear.options, SelectYear.serverSideFiltering) }}",
                       "animateLoading": true,
-                      "leftColumn": 37,
+                      "leftColumn": 44,
                       "dynamicBindingPathList": [
                         {
                           "key": "accentColor"
@@ -5254,7 +5254,7 @@
                       "key": "1rliem7or9",
                       "labelTextSize": "0.875rem",
                       "isDeprecated": false,
-                      "rightColumn": 48,
+                      "rightColumn": 52,
                       "widgetId": "tl0265rlvy",
                       "minWidth": 450,
                       "parentId": "qd74yy4u3t",
