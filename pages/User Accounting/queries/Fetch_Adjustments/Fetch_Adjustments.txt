@@ -1,0 +1,5 @@
+SELECT a.fk_user_id,a.financial_month,amount_adjustment,amount_profit_adjst
+FROM public.user_totals_month a
+where 1 = 1
+and ({{!SelectUser.selectedOptionValue}} OR (text(a.fk_user_id) IN ({{"'" + SelectUser.selectedOptionValue + "'"}})))
+AND a.financial_month = '{{SelectYear.selectedOptionValue}}{{SelectMonth.selectedOptionValue}}'

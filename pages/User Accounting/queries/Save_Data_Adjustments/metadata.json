@@ -2,7 +2,7 @@
   "pluginType": "API",
   "pluginId": "restapi-plugin",
   "unpublishedAction": {
-    "name": "Save_Data_Spent",
+    "name": "Save_Data_Adjustments",
     "datasource": {
       "name": "Auth",
       "pluginId": "restapi-plugin",
@@ -17,7 +17,7 @@
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
-      "path": "/rest/v1/user_spent_month",
+      "path": "/rest/v1/user_totals_month",
       "headers": [
         {
           "key": "Authorization",
@@ -42,20 +42,21 @@
       "queryParameters": [
         {
           "key": "fk_user_id",
-          "value": "eq.{{this.params.currentRow.fk_user_id}}"
-        },
-        {
-          "key": "fk_bm_id",
-          "value": "eq.{{this.params.currentRow.fk_bm_id}}"
+          "value": "eq.{{SelectUser.selectedOptionValue}}"
         },
         {
           "key": "financial_month",
-          "value": "eq.{{this.params.currentRow.financial_month}}"
+          "value": "eq.{{SelectYear.selectedOptionValue}}{{SelectMonth.selectedOptionValue}}"
         }
       ],
-      "body": "{ \"amount_spent\": \"{{this.params.currentRow.amount_spent}}\"}",
+      "body": "{\n\t\"amount_adjustment\": \"{{Adjust.value}}\",\n\t\"amount_profit_adjst\": \"{{AdjustProfit.value}}\"\n}",
       "httpMethod": "PATCH",
       "selfReferencingDataPaths": [],
+      "pluginSpecifiedTemplates": [
+        {
+          "value": true
+        }
+      ],
       "formData": {
         "apiContentType": "application/json"
       }
@@ -76,27 +77,26 @@
       },
       {
         "key": "queryParameters[1].value"
-      },
-      {
-        "key": "queryParameters[2].value"
       }
     ],
     "isValid": true,
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "appsmith.store.access_token",
-      "this.params.currentRow.amount_spent",
-      "this.params.currentRow.financial_month",
-      "this.params.currentRow.fk_bm_id",
-      "this.params.currentRow.fk_user_id"
+      "Adjust.value",
+      "AdjustProfit.value",
+      "SelectMonth.selectedOptionValue",
+      "SelectUser.selectedOptionValue",
+      "SelectYear.selectedOptionValue",
+      "appsmith.store.access_token"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
-    "userPermissions": []
+    "userPermissions": [],
+    "createdAt": "2023-06-23T13:30:31Z"
   },
-  "id": "User Accounting_Save_Data_Spent",
+  "id": "User Accounting_Save_Data_Adjustments",
   "deleted": false,
-  "gitSyncId": "646331cd28902b71518db22a_6471aa924bdc0705211d941f"
+  "gitSyncId": "646331cd28902b71518db22a_64959e7741b6277e9b5beeef"
 }

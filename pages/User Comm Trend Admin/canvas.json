@@ -1318,7 +1318,7 @@
                           "label": "Jan",
                           "isSaveVisible": true,
                           "isDiscardVisible": true,
-                          "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Jan\"].toLocaleString(undefined, {minimumFractionDigits: 2}) ))}}",
+                          "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Jan\"].toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2}) ))}}",
                           "sticky": "",
                           "validation": {},
                           "cellBackground": ""
@@ -1348,7 +1348,7 @@
                           "label": "Feb",
                           "isSaveVisible": true,
                           "isDiscardVisible": true,
-                          "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Feb\"].toLocaleString(undefined, {minimumFractionDigits: 2}) ))}}",
+                          "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Feb\"].toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2}) ))}}",
                           "sticky": "",
                           "validation": {},
                           "cellBackground": ""
@@ -1378,7 +1378,7 @@
                           "label": "Mar",
                           "isSaveVisible": true,
                           "isDiscardVisible": true,
-                          "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Mar\"].toLocaleString(undefined, {minimumFractionDigits: 2}) ))}}",
+                          "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Mar\"].toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2}) ))}}",
                           "sticky": "",
                           "validation": {},
                           "cellBackground": ""
@@ -1408,7 +1408,7 @@
                           "label": "Apr",
                           "isSaveVisible": true,
                           "isDiscardVisible": true,
-                          "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Apr\"].toLocaleString(undefined, {minimumFractionDigits: 2}) ))}}",
+                          "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Apr\"].toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2}) ))}}",
                           "sticky": "",
                           "validation": {},
                           "cellBackground": ""
@@ -1438,7 +1438,7 @@
                           "label": "May",
                           "isSaveVisible": true,
                           "isDiscardVisible": true,
-                          "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"May\"].toLocaleString(undefined, {minimumFractionDigits: 2}) ))}}",
+                          "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"May\"].toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2}) ))}}",
                           "sticky": "",
                           "validation": {},
                           "cellBackground": ""
@@ -1468,7 +1468,7 @@
                           "label": "Jun",
                           "isSaveVisible": true,
                           "isDiscardVisible": true,
-                          "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Jun\"].toLocaleString(undefined, {minimumFractionDigits: 2}) ))}}",
+                          "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Jun\"].toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2}) ))}}",
                           "sticky": "",
                           "validation": {},
                           "cellBackground": ""
@@ -1498,7 +1498,7 @@
                           "label": "Jul",
                           "isSaveVisible": true,
                           "isDiscardVisible": true,
-                          "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Jul\"].toLocaleString(undefined, {minimumFractionDigits: 2}) ))}}",
+                          "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Jul\"].toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2}) ))}}",
                           "sticky": "",
                           "validation": {},
                           "cellBackground": ""
@@ -1528,7 +1528,7 @@
                           "label": "Aug",
                           "isSaveVisible": true,
                           "isDiscardVisible": true,
-                          "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Aug\"].toLocaleString(undefined, {minimumFractionDigits: 2}) ))}}",
+                          "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Aug\"].toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2}) ))}}",
                           "sticky": "",
                           "validation": {},
                           "cellBackground": ""
@@ -1558,7 +1558,7 @@
                           "label": "Sep",
                           "isSaveVisible": true,
                           "isDiscardVisible": true,
-                          "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Sep\"].toLocaleString(undefined, {minimumFractionDigits: 2}) ))}}",
+                          "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Sep\"].toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2}) ))}}",
                           "sticky": "",
                           "validation": {},
                           "cellBackground": ""
@@ -1588,7 +1588,7 @@
                           "label": "Oct",
                           "isSaveVisible": true,
                           "isDiscardVisible": true,
-                          "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Oct\"].toLocaleString(undefined, {minimumFractionDigits: 2}) ))}}",
+                          "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Oct\"].toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2}) ))}}",
                           "sticky": "",
                           "validation": {},
                           "cellBackground": ""
@@ -1618,7 +1618,7 @@
                           "label": "Nov",
                           "isSaveVisible": true,
                           "isDiscardVisible": true,
-                          "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Nov\"].toLocaleString(undefined, {minimumFractionDigits: 2}) ))}}",
+                          "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Nov\"].toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2}) ))}}",
                           "sticky": "",
                           "validation": {},
                           "cellBackground": ""
@@ -1648,7 +1648,7 @@
                           "label": "Dec",
                           "isSaveVisible": true,
                           "isDiscardVisible": true,
-                          "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Dec\"].toLocaleString(undefined, {minimumFractionDigits: 2}) ))}}",
+                          "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Dec\"].toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2}) ))}}",
                           "sticky": "",
                           "validation": {},
                           "cellBackground": ""
@@ -1820,7 +1820,7 @@
                           "label": "Totals",
                           "isSaveVisible": true,
                           "isDiscardVisible": true,
-                          "computedValue": "{{Table2.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"revenue\"].toLocaleString(undefined, {minimumFractionDigits: 2}) ))}}",
+                          "computedValue": "{{Table2.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"revenue\"].toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2}) ))}}",
                           "sticky": "",
                           "validation": {},
                           "textColor": "{{Table2.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"revenue\"]<0 ? 'red' : 'green' ))}}"
