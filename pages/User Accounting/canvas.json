@@ -2848,6 +2848,9 @@
                                 },
                                 {
                                   "key": "primaryColumns.amount_revenue_fixed.computedValue"
+                                },
+                                {
+                                  "key": "primaryColumns.amount_revenue_approved.isCellEditable"
                                 }
                               ],
                               "needsHeightForContent": true,
@@ -2905,6 +2908,9 @@
                               "dynamicPropertyPathList": [
                                 {
                                   "key": "tableData"
+                                },
+                                {
+                                  "key": "primaryColumns.amount_revenue_approved.isCellEditable"
                                 }
                               ],
                               "compactMode": "SHORT",
@@ -2914,8 +2920,8 @@
                                 "task": 245,
                                 "step": 70,
                                 "status": 85,
-                                "network_name": 118,
-                                "amount_revenue_approved": 131
+                                "network_name": 142,
+                                "amount_revenue_approved": 151
                               },
                               "parentRowSpace": 10,
                               "hideCard": false,
@@ -2975,11 +2981,11 @@
                                   "enableSort": true,
                                   "isVisible": true,
                                   "isDisabled": false,
-                                  "isCellEditable": false,
+                                  "isCellEditable": "{{TableRevModCopy.processedTableData.map((currentRow, currentIndex) => ( appsmith.store.role_level>100))}}",
                                   "isEditable": false,
                                   "isCellVisible": true,
                                   "isDerived": false,
-                                  "label": "Approved Revenue",
+                                  "label": "Approved Rev.",
                                   "isSaveVisible": true,
                                   "isDiscardVisible": true,
                                   "computedValue": "{{TableRevModCopy.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"amount_revenue_approved\"]))}}",
