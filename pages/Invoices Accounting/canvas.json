@@ -19,7 +19,7 @@
           "parentRowSpace": 1,
           "type": "CANVAS_WIDGET",
           "canExtend": true,
-          "version": 79,
+          "version": 80,
           "minHeight": 900,
           "parentColumnSpace": 1,
           "dynamicBindingPathList": [],
@@ -1553,6 +1553,9 @@
                       "dynamicPropertyPathList": [
                         {
                           "key": "primaryColumns.customColumn1.isCellVisible"
+                        },
+                        {
+                          "key": "tableData"
                         }
                       ],
                       "compactMode": "SHORT",
@@ -1890,18 +1893,15 @@
         "layoutOnLoadActions": [
           [
             {
-              "id": "Invoices Accounting_get_invoices",
-              "name": "get_invoices",
+              "id": "Invoices Accounting_get_all_users",
+              "name": "get_all_users",
               "confirmBeforeExecute": false,
               "pluginType": "API",
               "jsonPathKeys": [
-                "appsmith.store.access_token",
-                "SelectUserCopy1?.selectedOptionValue || appsmith.store.myUser"
+                "appsmith.store.access_token"
               ],
               "timeoutInMillisecond": 10000
-            }
-          ],
-          [
+            },
             {
               "id": "Invoices Accounting_get_user",
               "name": "get_user",
@@ -1915,12 +1915,13 @@
           ],
           [
             {
-              "id": "Invoices Accounting_get_all_users",
-              "name": "get_all_users",
+              "id": "Invoices Accounting_get_invoices",
+              "name": "get_invoices",
               "confirmBeforeExecute": false,
               "pluginType": "API",
               "jsonPathKeys": [
-                "appsmith.store.access_token"
+                "appsmith.store.access_token",
+                "SelectUserCopy1?.selectedOptionValue || appsmith.store.myUser"
               ],
               "timeoutInMillisecond": 10000
             }

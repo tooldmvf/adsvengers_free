@@ -1787,7 +1787,7 @@
                               ],
                               "shouldTruncate": false,
                               "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-                              "text": "{{Utils.myCurrency( Fetch_MB_shares_TOT.data[0].mb_commissions)}}",
+                              "text": "{{Utils.myCurrency( Fetch_MB_shares_TOT.data[0].mb_commissions>0 ?Fetch_MB_shares_TOT.data[0].mb_commissions :0 )}}",
                               "key": "k0zn3vv2el",
                               "isDeprecated": false,
                               "rightColumn": 62,
