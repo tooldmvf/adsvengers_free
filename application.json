@@ -131,6 +131,10 @@
     {
       "id": "ZZZ OLD Pivot",
       "isDefault": false
+    },
+    {
+      "id": "Manager Admin",
+      "isDefault": false
     }
   ],
   "viewMode": false,

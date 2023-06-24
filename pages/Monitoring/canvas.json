@@ -14,7 +14,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 1040,
+          "bottomRow": 1030,
           "containerStyle": "none",
           "snapRows": 125,
           "parentRowSpace": 1,
@@ -854,7 +854,7 @@
                 "group"
               ],
               "topRow": 8,
-              "bottomRow": 104,
+              "bottomRow": 103,
               "parentRowSpace": 10,
               "type": "CONTAINER_WIDGET",
               "hideCard": false,
@@ -876,7 +876,7 @@
                   "widgetName": "Canvas5",
                   "displayName": "Canvas",
                   "topRow": 0,
-                  "bottomRow": 960,
+                  "bottomRow": 950,
                   "parentRowSpace": 1,
                   "type": "CANVAS_WIDGET",
                   "canExtend": false,
@@ -2072,7 +2072,7 @@
                       "displayName": "Tabs",
                       "iconSVG": "/static/media/icon.74a6d653c8201e66f1cd367a3fba2657.svg",
                       "topRow": 18,
-                      "bottomRow": 94,
+                      "bottomRow": 93,
                       "parentRowSpace": 10,
                       "type": "TABS_WIDGET",
                       "hideCard": false,
@@ -2097,7 +2097,7 @@
                           "tabId": "tab1",
                           "widgetName": "Canvas13",
                           "displayName": "Canvas",
-                          "bottomRow": 720,
+                          "bottomRow": 710,
                           "topRow": 0,
                           "parentRowSpace": 1,
                           "type": "CANVAS_WIDGET",
@@ -3114,7 +3114,7 @@
                           "tabId": "tab2",
                           "widgetName": "Canvas14",
                           "displayName": "Canvas",
-                          "bottomRow": 720,
+                          "bottomRow": 710,
                           "topRow": 0,
                           "parentRowSpace": 1,
                           "type": "CANVAS_WIDGET",
@@ -3563,9 +3563,6 @@
                                 },
                                 {
                                   "key": "primaryColumns.tot_conv.cellBackground"
-                                },
-                                {
-                                  "key": "primaryColumns.tot_conv.textColor"
                                 }
                               ],
                               "needsHeightForContent": true,
@@ -3575,6 +3572,7 @@
                               "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                               "isVisibleFilters": false,
                               "isVisible": true,
+                              "fontStyle": "",
                               "enableClientSideSearch": true,
                               "version": 1,
                               "totalRecordsCount": 0,
@@ -3721,7 +3719,7 @@
                                   "columnType": "number",
                                   "textColor": "",
                                   "textSize": "0.875rem",
-                                  "fontStyle": "ITALIC,BOLD",
+                                  "fontStyle": "BOLD,ITALIC",
                                   "enableFilter": true,
                                   "enableSort": true,
                                   "isVisible": true,
@@ -3923,9 +3921,9 @@
                                   "horizontalAlignment": "RIGHT",
                                   "verticalAlignment": "CENTER",
                                   "columnType": "number",
-                                  "textColor": "{{TableUsers.processedTableData.map((currentRow, currentIndex) => ( currentRow.Tot_ROI < 0 ? 'red' : (currentRow.Tot_ROI <30 ? '#eab308' : 'green')))}}",
+                                  "textColor": "",
                                   "textSize": "0.875rem",
-                                  "fontStyle": "BOLD",
+                                  "fontStyle": "",
                                   "enableFilter": true,
                                   "enableSort": true,
                                   "isVisible": true,
@@ -4058,18 +4056,6 @@
         "layoutOnLoadActions": [
           [
             {
-              "id": "Monitoring_get_all_users",
-              "name": "get_all_users",
-              "confirmBeforeExecute": false,
-              "pluginType": "API",
-              "jsonPathKeys": [
-                "appsmith.store.access_token"
-              ],
-              "timeoutInMillisecond": 10000
-            }
-          ],
-          [
-            {
               "id": "Monitoring_Utils2.onLoadPage",
               "name": "Utils2.onLoadPage",
               "collectionId": "Monitoring_Utils2",
@@ -4077,6 +4063,16 @@
               "pluginType": "JS",
               "jsonPathKeys": [
                 "async () => {\n  storeValue('row_selected', -1);\n  await get_all_users.run();\n  await SelectFinancialTot.run();\n  await SelectOFFERSUser.run();\n  await SelectUSERS.run();\n}"
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "Monitoring_get_all_users",
+              "name": "get_all_users",
+              "confirmBeforeExecute": false,
+              "pluginType": "API",
+              "jsonPathKeys": [
+                "appsmith.store.access_token"
               ],
               "timeoutInMillisecond": 10000
             }

@@ -1800,7 +1800,7 @@
                       },
                       "borderRadius": "0.375rem",
                       "originalBottomRow": 20,
-                      "columnUpdatedAt": 1677953109560,
+                      "columnUpdatedAt": 1687594310627,
                       "primaryColumnId": "financial_date",
                       "defaultSelectedRowIndices": "",
                       "widgetName": "Table1CopyCopy",
@@ -2742,7 +2742,7 @@
                           "fontStyle": "BOLD",
                           "enableFilter": true,
                           "enableSort": true,
-                          "isVisible": true,
+                          "isVisible": false,
                           "isDisabled": false,
                           "isCellEditable": false,
                           "isEditable": false,
@@ -8114,25 +8114,7 @@
                 "async () => {\n  await storeValue('custom_off', 'false');\n  await storeValue('custom_off2', 'false');\n  await get_all_users.run();\n  await TableTotal.tblSummary();\n}"
               ],
               "timeoutInMillisecond": 10000
-            }
-          ],
-          [
-            {
-              "id": "Day by Day_GetUserAccount",
-              "name": "GetUserAccount",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [
-                "\"'\" + SelectNetworkDbd.selectedOptionValues.join(\"', '\") + \"'\"",
-                "SelectTSFront.selectedOptionValues.length == 0",
-                "\"'\" + MultiSelectUsers.selectedOptionValues.join(\"', '\") + \"'\"",
-                "SelectNetworkDbd.selectedOptionValues.length == 0",
-                "\"'\" + SelectTSFront.selectedOptionValues.join(\"', '\") + \"'\""
-              ],
-              "timeoutInMillisecond": 10000
-            }
-          ],
-          [
+            },
             {
               "id": "Day by Day_get_all_networks",
               "name": "get_all_networks",
@@ -8150,6 +8132,22 @@
               "pluginType": "API",
               "jsonPathKeys": [
                 "appsmith.store.access_token"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
+              "id": "Day by Day_GetUserAccount",
+              "name": "GetUserAccount",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "\"'\" + SelectNetworkDbd.selectedOptionValues.join(\"', '\") + \"'\"",
+                "SelectTSFront.selectedOptionValues.length == 0",
+                "\"'\" + MultiSelectUsers.selectedOptionValues.join(\"', '\") + \"'\"",
+                "SelectNetworkDbd.selectedOptionValues.length == 0",
+                "\"'\" + SelectTSFront.selectedOptionValues.join(\"', '\") + \"'\""
               ],
               "timeoutInMillisecond": 10000
             }
