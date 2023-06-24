@@ -1708,7 +1708,7 @@
                               "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
                               "parentColumnSpace": 6.767578125,
                               "dynamicTriggerPathList": [],
-                              "leftColumn": 33,
+                              "leftColumn": 39,
                               "dynamicBindingPathList": [
                                 {
                                   "key": "truncateButtonColor"
@@ -2216,10 +2216,10 @@
                               ],
                               "shouldTruncate": false,
                               "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-                              "text": "Rateable Value",
+                              "text": "Calculation Profit Base",
                               "key": "k0zn3vv2el",
                               "isDeprecated": false,
-                              "rightColumn": 28,
+                              "rightColumn": 36,
                               "textAlign": "LEFT",
                               "dynamicHeight": "FIXED",
                               "widgetId": "ob9rr7o0te",
