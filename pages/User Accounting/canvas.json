@@ -3568,7 +3568,7 @@
                             },
                             {
                               "mobileBottomRow": 13,
-                              "widgetName": "Text11CopyCopyCopyCopyCopy1",
+                              "widgetName": "Ai20Google",
                               "dynamicPropertyPathList": [],
                               "displayName": "Text",
                               "iconSVG": "/static/media/icon.97c59b523e6f70ba6f40a10fc2c7c5b5.svg",
@@ -3630,7 +3630,7 @@
                             },
                             {
                               "mobileBottomRow": 13,
-                              "widgetName": "Text11CopyCopyCopyCopyCopy1Copy",
+                              "widgetName": "Others",
                               "dynamicPropertyPathList": [],
                               "displayName": "Text",
                               "iconSVG": "/static/media/icon.97c59b523e6f70ba6f40a10fc2c7c5b5.svg",
@@ -3798,7 +3798,7 @@
                               ],
                               "shouldTruncate": false,
                               "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-                              "text": "{{Utils.myCurrency((\nNumber(Profit30.text.replace(/[^0-9.-]+/g,\"\")) + Number(ProfitGooAi20.text.replace(/[^0-9.-]+/g,\"\"))+\tNumber(ProfitOther.text.replace(/[^0-9.-]+/g,\"\")) + Number(AdjustProfit.text.replace(/[^0-9.-]+/g,\"\"))) > 0 ? (\nNumber(Profit30.text.replace(/[^0-9.-]+/g,\"\")) + Number(ProfitGooAi20.text.replace(/[^0-9.-]+/g,\"\"))+\tNumber(ProfitOther.text.replace(/[^0-9.-]+/g,\"\")) + Number(AdjustProfit.text.replace(/[^0-9.-]+/g,\"\"))): 0)\n}} ",
+                              "text": "{{Utils.myCurrency((\nNumber(Profit30.text.replace(/[^0-9.-]+/g,\"\")) + Number(Ai20Google.text.replace(/[^0-9.-]+/g,\"\"))+\tNumber(Others.text.replace(/[^0-9.-]+/g,\"\")) + AdjustProfit.value) > 0 ? (\nNumber(Profit30.text.replace(/[^0-9.-]+/g,\"\")) + Number(Ai20Google.text.replace(/[^0-9.-]+/g,\"\"))+\tNumber(Others.text.replace(/[^0-9.-]+/g,\"\")) + AdjustProfit.value): 0)\n}} ",
                               "key": "k0zn3vv2el",
                               "isDeprecated": false,
                               "rightColumn": 63,

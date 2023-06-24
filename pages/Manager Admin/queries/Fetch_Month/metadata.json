@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "SELECT financial_month\n,SUM(amount_revenue_approved) as revenue\n,SUM(amount_spent) as spent\n,SUM(amount_invoice) as mb_commissions\nFROM public.user_totals_month a\nwhere 1 = 1\nAND a.financial_month = '{{SelectYear.selectedOptionValue}}{{SelectMonth.selectedOptionValue}}'\nGROUP BY financial_month",
+      "body": "SELECT financial_month\n,SUM(amount_revenue_approved) as revenue\n,SUM(amount_spent) as spent\n,SUM(amount_invoice) as mb_commissions\n,SUM(amount_adjustment) as adjustment\nFROM public.user_totals_month a\nwhere 1 = 1\nAND a.financial_month = '{{SelectYear.selectedOptionValue}}{{SelectMonth.selectedOptionValue}}'\nGROUP BY financial_month",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {

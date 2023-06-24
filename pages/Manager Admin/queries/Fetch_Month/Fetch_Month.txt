@@ -2,6 +2,7 @@ SELECT financial_month
 ,SUM(amount_revenue_approved) as revenue
 ,SUM(amount_spent) as spent
 ,SUM(amount_invoice) as mb_commissions
+,SUM(amount_adjustment) as adjustment
 FROM public.user_totals_month a
 where 1 = 1
 AND a.financial_month = '{{SelectYear.selectedOptionValue}}{{SelectMonth.selectedOptionValue}}'
