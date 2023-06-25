@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "SELECT a.fk_user_id,a.financial_month\n,case when amount_debt <0 then amount_debt else 0 end as debt\n,notes\nFROM public.user_totals_month a\nwhere 1 = 1\nand ({{!SelectUser.selectedOptionValue}} OR (text(a.fk_user_id) IN ({{\"'\" + SelectUser.selectedOptionValue + \"'\"}})))\nAND a.financial_month = to_char(to_Date('{{SelectYear.selectedOptionValue}}{{SelectMonth.selectedOptionValue}}','YYYYMM')- interval '1 months','YYYYMM')",
+      "body": "SELECT a.fk_user_id,a.financial_month\n,case when amount_debt <0 then amount_debt else 0 end as debt\nFROM public.user_totals_month a\nwhere 1 = 1\nand ({{!SelectUser.selectedOptionValue}} OR (text(a.fk_user_id) IN ({{\"'\" + SelectUser.selectedOptionValue + \"'\"}})))\nAND a.financial_month = to_char(to_Date('{{SelectYear.selectedOptionValue}}{{SelectMonth.selectedOptionValue}}','YYYYMM')- interval '1 months','YYYYMM')",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
