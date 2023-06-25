@@ -1,4 +1,5 @@
 {
 	"amount_adjustment": "{{Adjust.value}}",
-	"amount_profit_adjst": "{{AdjustProfit.value}}"
+	"amount_profit_adjst": "{{AdjustProfit.value}}",
+	"notes": "{{InputNotes.text}}"
 }

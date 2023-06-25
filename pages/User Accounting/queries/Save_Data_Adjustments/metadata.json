@@ -49,7 +49,7 @@
           "value": "eq.{{SelectYear.selectedOptionValue}}{{SelectMonth.selectedOptionValue}}"
         }
       ],
-      "body": "{\n\t\"amount_adjustment\": \"{{Adjust.value}}\",\n\t\"amount_profit_adjst\": \"{{AdjustProfit.value}}\"\n}",
+      "body": "{\n\t\"amount_adjustment\": \"{{Adjust.value}}\",\n\t\"amount_profit_adjst\": \"{{AdjustProfit.value}}\",\n\t\"notes\": \"{{InputNotes.text}}\"\n}",
       "httpMethod": "PATCH",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
@@ -85,6 +85,7 @@
     "jsonPathKeys": [
       "Adjust.value",
       "AdjustProfit.value",
+      "InputNotes.text",
       "SelectMonth.selectedOptionValue",
       "SelectUser.selectedOptionValue",
       "SelectYear.selectedOptionValue",

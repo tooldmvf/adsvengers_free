@@ -1,5 +1,6 @@
 SELECT a.fk_user_id,a.financial_month
 ,case when amount_debt <0 then amount_debt else 0 end as debt
+,notes
 FROM public.user_totals_month a
 where 1 = 1
 and ({{!SelectUser.selectedOptionValue}} OR (text(a.fk_user_id) IN ({{"'" + SelectUser.selectedOptionValue + "'"}})))
