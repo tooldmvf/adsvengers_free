@@ -961,7 +961,7 @@
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "mobileLeftColumn": 0,
               "maxDynamicHeight": 9000,
-              "originalBottomRow": 93,
+              "originalBottomRow": 95,
               "fontSize": "0.875rem",
               "minDynamicHeight": 4
             },
@@ -1243,7 +1243,7 @@
                                 }
                               ],
                               "needsHeightForContent": true,
-                              "leftColumn": 0,
+                              "leftColumn": 1,
                               "delimiter": ",",
                               "defaultSelectedRowIndex": 0,
                               "showInlineEditingOptionDropdown": true,
@@ -2607,7 +2607,7 @@
                                       "maxDynamicHeight": 9000,
                                       "decimals": 2,
                                       "iconAlign": "left",
-                                      "defaultText": "{{Fetch_Data_Other_Prj.data[0]?.amount_spent_wfees||0}}",
+                                      "defaultText": "{{  Fetch_Data_Spent.data.filter(e => e.fk_bm_id == '377343377466914')[0].amount_spent * (1+(Fetch_Data_Spent.data.filter(e => e.fk_bm_id == '377343377466914')[0].spent_rate_fees /100))*2}}",
                                       "minDynamicHeight": 4
                                     },
                                     {
@@ -2725,7 +2725,7 @@
                                       ],
                                       "shouldTruncate": false,
                                       "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-                                      "text": "{{Utils.myCurrency( (OtherRevInput.value - OtherSpentInput.value)/(100/50))}}",
+                                      "text": "{{Utils.myCurrency( (OtherRevInput.value - OtherSpentInput.value)/2)}}",
                                       "key": "wmtrt5wcg7",
                                       "isDeprecated": false,
                                       "rightColumn": 62,
