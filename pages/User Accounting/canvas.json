@@ -1311,8 +1311,8 @@
                                 "step": 70,
                                 "status": 85,
                                 "network_name": 185,
-                                "amount_spent": 168,
-                                "bm_name": 199
+                                "amount_spent": 152,
+                                "bm_name": 250
                               },
                               "parentRowSpace": 10,
                               "hideCard": false,
@@ -3254,7 +3254,7 @@
                                 "task": 245,
                                 "step": 70,
                                 "status": 85,
-                                "network_name": 142,
+                                "network_name": 167,
                                 "amount_revenue_approved": 118
                               },
                               "parentRowSpace": 10,
