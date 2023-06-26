@@ -6,21 +6,21 @@ and (text(a.fk_user_id) IN ({{"''" + MultiSelectUsers.selectedOptionValues.join(
 and substring(financial_month,1,4) = ''{{SelectYear.selectedOptionValue}}''
 GROUP By a.financial_month
 union All
-SELECT ''Spent (€)'' , substring(financial_month,5,2)::integer m,  sum(amount_spent)
+SELECT ''Spent (€)'' , substring(financial_month,5,2)::integer m,  sum(amount_spent)-sum(amount_adjustment)
 FROM public.user_totals_month a
 Where 1=1
 and (text(a.fk_user_id) IN ({{"''" + MultiSelectUsers.selectedOptionValues.join("'', ''") + "''"}}) OR text(a.fk_user_id) = ''{{appsmith.store.myUser}}'' )
 and substring(financial_month,1,4) = ''{{SelectYear.selectedOptionValue}}''
 GROUP By a.financial_month
 union All
-SELECT ''Profit (€)'' , substring(financial_month,5,2)::integer m,  sum(amount_revenue_approved) -sum(amount_spent)
+SELECT ''Profit (€)'' , substring(financial_month,5,2)::integer m,  sum(amount_revenue_approved) -sum(amount_spent)+sum(amount_adjustment)
 FROM public.user_totals_month a
 Where 1=1
 and (text(a.fk_user_id) IN ({{"''" + MultiSelectUsers.selectedOptionValues.join("'', ''") + "''"}}) OR text(a.fk_user_id) = ''{{appsmith.store.myUser}}'' )
 and substring(financial_month,1,4) = ''{{SelectYear.selectedOptionValue}}''
 GROUP By a.financial_month
 union All
-SELECT ''Roi (%)'' , substring(financial_month,5,2)::integer m,  (sum(amount_revenue_approved) -sum(amount_spent))/(case when sum(amount_spent) = 0 then 1 else sum(amount_spent) end)*100
+SELECT ''Roi (%)'' , substring(financial_month,5,2)::integer m,  (sum(amount_revenue_approved) -sum(amount_spent)+sum(amount_adjustment))/(case when sum(amount_spent)-sum(amount_adjustment) = 0 then 1 else sum(amount_spent)-sum(amount_adjustment) end)*100
 FROM public.user_totals_month a
 Where 1=1
 and (text(a.fk_user_id) IN ({{"''" + MultiSelectUsers.selectedOptionValues.join("'', ''") + "''"}}) OR text(a.fk_user_id) = ''{{appsmith.store.myUser}}'' )

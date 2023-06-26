@@ -1,8 +1,8 @@
 SELECT b.last_name
 ,sum(amount_revenue_approved) as revenue
-,sum(amount_spent) as spent
-,sum(amount_revenue_approved)-sum(amount_spent) as Profit
-,(sum(amount_revenue_approved) -sum(amount_spent))/(case when sum(amount_spent) = 0 then 1 else sum(amount_spent) end)*100 as Roi
+,sum(amount_spent)-sum(amount_adjustment) as spent
+,sum(amount_revenue_approved)-sum(amount_spent)+sum(amount_adjustment) as Profit
+,(sum(amount_revenue_approved) -sum(amount_spent)+sum(amount_adjustment))/(case when sum(amount_spent)-sum(amount_adjustment) = 0 then 1 else sum(amount_spent)-sum(amount_adjustment) end)*100 as Roi
 ,sum(amount_invoice) as invoices
 FROM public.user_totals_month a
 INNER JOIN public.user_profiles b ON (B.fk_user_id = a.fk_user_id)

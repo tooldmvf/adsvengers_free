@@ -1,5 +1,5 @@
 select * from crosstab(
-'SELECT B.LAST_NAME , substring(financial_month,5,2)::integer m,  sum(amount_revenue_approved) -sum(amount_spent)
+'SELECT B.LAST_NAME , substring(financial_month,5,2)::integer m,  sum(amount_revenue_approved) -sum(amount_spent)+sum(amount_adjustment)
 FROM public.user_totals_month a
 	INNER JOIN PUBLIC.USER_PROFILES B ON (B.FK_USER_ID = A.FK_USER_ID)
 Where 1=1

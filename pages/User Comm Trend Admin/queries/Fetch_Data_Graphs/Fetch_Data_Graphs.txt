@@ -1,9 +1,9 @@
 SELECT substring(financial_month,1,4)||'-'||to_char(to_date(financial_month,'YYYYMM'),'Mon') as financial_month2
 ,sum(amount_revenue_approved) amount_revenue_approved
-,sum(amount_spent) amount_spent
-,sum(amount_revenue_approved)-sum(amount_spent) amount_profit
+,sum(amount_spent)-sum(amount_adjustment) amount_spent
+,sum(amount_revenue_approved)-sum(amount_spent)+sum(amount_adjustment) amount_profit
 ,sum(amount_invoice) amount_invoice
-,(sum(amount_revenue_approved)-sum(amount_spent))/(case when sum(amount_spent) = 0 then 1 else sum(amount_spent) end)*100 roi
+,(sum(amount_revenue_approved)-sum(amount_spent)+sum(amount_adjustment))/(case when sum(amount_spent)-sum(amount_adjustment) = 0 then 1 else sum(amount_spent)-sum(amount_adjustment) end)*100 roi
 FROM public.user_totals_month a
 Where 1=1
 and (text(a.fk_user_id) IN ({{"'" + MultiSelectUsers.selectedOptionValues.join("', '") + "'"}}) OR text(a.fk_user_id) = '{{appsmith.store.myUser}}' )

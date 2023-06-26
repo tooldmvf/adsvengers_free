@@ -877,7 +877,7 @@
               ],
               "shouldTruncate": false,
               "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-              "text": "{{Number(Total_spent.text.replace(/[^0-9.-]+/g,\"\")) - Adjust.value \n}}",
+              "text": "{{Number(Total_spent.text.replace(/[^0-9.-]+/g,\"\"))\n}}",
               "key": "k0zn3vv2el",
               "isDeprecated": false,
               "rightColumn": 64,
@@ -898,7 +898,7 @@
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "mobileLeftColumn": 0,
               "maxDynamicHeight": 9000,
-              "originalBottomRow": 94,
+              "originalBottomRow": 93,
               "fontSize": "0.875rem",
               "minDynamicHeight": 4
             },
@@ -961,7 +961,7 @@
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "mobileLeftColumn": 0,
               "maxDynamicHeight": 9000,
-              "originalBottomRow": 95,
+              "originalBottomRow": 93,
               "fontSize": "0.875rem",
               "minDynamicHeight": 4
             },
