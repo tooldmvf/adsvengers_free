@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 1720,
+          "bottomRow": 1800,
           "containerStyle": "none",
           "snapRows": 125,
           "parentRowSpace": 1,
@@ -666,6 +666,9 @@
                         },
                         {
                           "key": "menuItems.menuItemsodth1rp2m.onClick"
+                        },
+                        {
+                          "key": "menuItems.menuItemwb8e8btycj.onClick"
                         }
                       ],
                       "leftColumn": 11,
@@ -762,6 +765,15 @@
                           "isDisabled": false,
                           "isVisible": true,
                           "onClick": "{{navigateTo('User Comm Trend Admin', {}, 'SAME_WINDOW');}}"
+                        },
+                        "menuItemwb8e8btycj": {
+                          "id": "menuItemwb8e8btycj",
+                          "index": 8,
+                          "label": "Manager Commissions",
+                          "widgetId": "9tvixmwm2u",
+                          "isDisabled": false,
+                          "isVisible": true,
+                          "onClick": "{{navigateTo('Manager Admin', {}, 'SAME_WINDOW');}}"
                         }
                       },
                       "isVisible": "{{appsmith.store.myEmail == 'tool@dmvf.net'}}",

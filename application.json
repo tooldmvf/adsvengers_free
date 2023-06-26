@@ -135,14 +135,6 @@
     {
       "id": "ZZZ OLD Pivot",
       "isDefault": false
-    },
-    {
-      "id": "Header Menu",
-      "isDefault": false
-    },
-    {
-      "id": "Test iframe menu",
-      "isDefault": false
     }
   ],
   "viewMode": false,
