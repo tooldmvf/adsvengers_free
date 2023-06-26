@@ -1,1 +1,2 @@
-{ "amount_spent": "{{this.params.currentRow.amount_spent}}"}
+{ "amount_spent": "{{this.params.currentRow.amount_spent}}",
+"amount_spent_fixed": "{{this.params.currentRow.amount_spent_fixed}}"}

@@ -1732,9 +1732,6 @@
                         },
                         {
                           "key": "primaryColumns.revenue.computedValue"
-                        },
-                        {
-                          "key": "primaryColumns.revenue.textColor"
                         }
                       ],
                       "needsHeightForContent": true,
@@ -1783,11 +1780,7 @@
                       "columnOrder": [
                         "revenue"
                       ],
-                      "dynamicPropertyPathList": [
-                        {
-                          "key": "primaryColumns.revenue.textColor"
-                        }
-                      ],
+                      "dynamicPropertyPathList": [],
                       "displayName": "Table",
                       "bottomRow": 35,
                       "columnWidthMap": {},
@@ -1824,7 +1817,7 @@
                           "computedValue": "{{Table2.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"revenue\"].toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2}) ))}}",
                           "sticky": "",
                           "validation": {},
-                          "textColor": "{{Table2.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"revenue\"]<0 ? 'red' : 'green' ))}}"
+                          "textColor": ""
                         }
                       },
                       "key": "7pru7qa4bw",
@@ -7534,7 +7527,7 @@
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "mobileLeftColumn": 0,
               "maxDynamicHeight": 9000,
-              "originalBottomRow": 100,
+              "originalBottomRow": 171,
               "minDynamicHeight": 15
             }
           ]

@@ -53,7 +53,7 @@
           "value": "eq.{{this.params.currentRow.financial_month}}"
         }
       ],
-      "body": "{ \"amount_spent\": \"{{this.params.currentRow.amount_spent}}\"}",
+      "body": "{ \"amount_spent\": \"{{this.params.currentRow.amount_spent}}\",\n\"amount_spent_fixed\": \"{{this.params.currentRow.amount_spent_fixed}}\"}",
       "httpMethod": "PATCH",
       "selfReferencingDataPaths": [],
       "formData": {
@@ -87,6 +87,7 @@
     "jsonPathKeys": [
       "appsmith.store.access_token",
       "this.params.currentRow.amount_spent",
+      "this.params.currentRow.amount_spent_fixed",
       "this.params.currentRow.financial_month",
       "this.params.currentRow.fk_bm_id",
       "this.params.currentRow.fk_user_id"
