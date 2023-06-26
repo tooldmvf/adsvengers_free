@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 380,
+          "bottomRow": 570,
           "containerStyle": "none",
           "snapRows": 86,
           "parentRowSpace": 1,
@@ -39,7 +39,7 @@
                 "group"
               ],
               "topRow": 0,
-              "bottomRow": 8,
+              "bottomRow": 57,
               "parentRowSpace": 10,
               "type": "CONTAINER_WIDGET",
               "hideCard": false,
@@ -56,7 +56,7 @@
                   "detachFromLayout": true,
                   "widgetId": "e1r68m92zb",
                   "containerStyle": "none",
-                  "bottomRow": 80,
+                  "bottomRow": 570,
                   "topRow": 0,
                   "parentRowSpace": 1,
                   "isVisible": true,
@@ -115,8 +115,8 @@
                         "click",
                         "submit"
                       ],
-                      "topRow": 0,
-                      "bottomRow": 6,
+                      "topRow": 17,
+                      "bottomRow": 55,
                       "parentRowSpace": 10,
                       "groupButtons": {
                         "groupButton1": {
@@ -493,7 +493,7 @@
                           "key": "groupButtons.groupButton3d0sb7a9e2.menuItems.menuItemwufrmm1ddd.onClick"
                         }
                       ],
-                      "leftColumn": 19,
+                      "leftColumn": 0,
                       "dynamicBindingPathList": [
                         {
                           "key": "groupButtons.groupButtonenmx60lrah.onClick"
@@ -524,9 +524,9 @@
                         }
                       ],
                       "key": "zq7t27bhdi",
-                      "orientation": "horizontal",
+                      "orientation": "vertical",
                       "isDeprecated": false,
-                      "rightColumn": 58,
+                      "rightColumn": 62,
                       "widgetId": "lyyilfiy40",
                       "isVisible": true,
                       "version": 1,
@@ -553,8 +553,8 @@
                         "click",
                         "submit"
                       ],
-                      "topRow": 0,
-                      "bottomRow": 6,
+                      "topRow": 11,
+                      "bottomRow": 17,
                       "parentRowSpace": 10,
                       "groupButtons": {
                         "groupButton1": {
@@ -580,7 +580,7 @@
                           "key": "groupButtons.groupButton1.onClick"
                         }
                       ],
-                      "leftColumn": 14,
+                      "leftColumn": 0,
                       "dynamicBindingPathList": [
                         {
                           "key": "borderRadius"
@@ -589,7 +589,7 @@
                       "key": "t82ou8sfj2",
                       "orientation": "horizontal",
                       "isDeprecated": false,
-                      "rightColumn": 19,
+                      "rightColumn": 62,
                       "widgetId": "4bwcqozz2k",
                       "minWidth": 450,
                       "isVisible": true,
@@ -631,8 +631,8 @@
                       ],
                       "displayName": "Menu Button",
                       "iconSVG": "/static/media/icon.0341d17d67020c8bfc560cc5928af2a7.svg",
-                      "topRow": 1,
-                      "bottomRow": 5,
+                      "topRow": 7,
+                      "bottomRow": 11,
                       "parentRowSpace": 10,
                       "type": "MENU_BUTTON_WIDGET",
                       "hideCard": false,
@@ -667,7 +667,7 @@
                           "key": "menuItems.menuItemsodth1rp2m.onClick"
                         }
                       ],
-                      "leftColumn": 8,
+                      "leftColumn": 0,
                       "dynamicBindingPathList": [
                         {
                           "key": "menuColor"
@@ -686,7 +686,7 @@
                       "sourceData": "[\"suca1\", \"suca2\"]",
                       "key": "i3fdkxvkmd",
                       "isDeprecated": false,
-                      "rightColumn": 14,
+                      "rightColumn": 62,
                       "menuVariant": "PRIMARY",
                       "widgetId": "n0i39z9nsm",
                       "menuItems": {
@@ -804,7 +804,7 @@
                       "key": "z2qfo8m3yy",
                       "image": "https://powercbo.com/wp-content/uploads/2021/01/Adsvengers-Logo.png",
                       "isDeprecated": false,
-                      "rightColumn": 7,
+                      "rightColumn": 62,
                       "objectFit": "contain",
                       "widgetId": "pvwo201o2b",
                       "isVisible": true,
@@ -825,8 +825,8 @@
               "key": "j1ek7dzsm7",
               "backgroundColor": "transparent",
               "isDeprecated": false,
-              "rightColumn": 64,
-              "dynamicHeight": "FIXED",
+              "rightColumn": 8,
+              "dynamicHeight": "AUTO_HEIGHT",
               "widgetId": "x81opdufqp",
               "containerStyle": "card",
               "minWidth": 450,
@@ -836,7 +836,9 @@
               "renderMode": "CANVAS",
               "isLoading": false,
               "responsiveBehavior": "fill",
+              "originalTopRow": 0,
               "maxDynamicHeight": 9000,
+              "originalBottomRow": 56,
               "minDynamicHeight": 10
             }
           ]

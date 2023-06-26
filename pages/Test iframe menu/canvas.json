@@ -26,9 +26,10 @@
           "leftColumn": 0,
           "children": [
             {
-              "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+              "boxShadow": "none",
               "mobileBottomRow": 37,
               "widgetName": "Iframe1",
+              "srcDoc": "",
               "displayName": "Iframe",
               "iconSVG": "/static/media/icon.19c3fa45ba777cc28a04f390d5703b53.svg",
               "searchTags": [
@@ -39,6 +40,7 @@
               "parentRowSpace": 10,
               "source": "https://tool.theadsvengers.com/app/adsvengers-tool/header-menu-64974815a695192a7f456afb?embed=true",
               "type": "IFRAME_WIDGET",
+              "title": "",
               "hideCard": false,
               "mobileRightColumn": 41,
               "borderOpacity": 100,
@@ -49,12 +51,9 @@
               "dynamicBindingPathList": [
                 {
                   "key": "borderRadius"
-                },
-                {
-                  "key": "boxShadow"
                 }
               ],
-              "borderWidth": 1,
+              "borderWidth": "0",
               "key": "urluh9kqxp",
               "isDeprecated": false,
               "rightColumn": 64,
