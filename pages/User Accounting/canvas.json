@@ -1237,6 +1237,9 @@
                                 },
                                 {
                                   "key": "primaryColumns.amount_spent_fixed.computedValue"
+                                },
+                                {
+                                  "key": "primaryColumns.amount_spent.isCellEditable"
                                 }
                               ],
                               "needsHeightForContent": true,
@@ -1295,6 +1298,9 @@
                               "dynamicPropertyPathList": [
                                 {
                                   "key": "tableData"
+                                },
+                                {
+                                  "key": "primaryColumns.amount_spent.isCellEditable"
                                 }
                               ],
                               "compactMode": "SHORT",
@@ -1424,7 +1430,7 @@
                                   "enableSort": true,
                                   "isVisible": true,
                                   "isDisabled": false,
-                                  "isCellEditable": true,
+                                  "isCellEditable": "{{TableSpentBM.processedTableData.map((currentRow, currentIndex) => ( appsmith.store.role_level>100))}}",
                                   "isEditable": true,
                                   "isCellVisible": true,
                                   "isDerived": false,
