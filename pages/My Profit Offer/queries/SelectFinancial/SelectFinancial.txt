@@ -6,14 +6,15 @@ SELECT
   sum(a.amount_revenue_rejected) as amount_revenue_rejected, 
   sum(a.amount_spent) as spent, 
   sum(a.amount_spent_plus_fee) as spent_wfees, 
-  sum(a.amount_revenue)- sum(amount_spent) as profit, 
-  sum(a.amount_revenue_approved)- sum(amount_spent_plus_fee) as net_profit, 
+  case when c1.network_name_short != 'WL' then sum(a.amount_revenue)-sum(a.amount_spent_plus_fee) else (sum(a.amount_revenue)-sum(a.amount_spent_plus_fee))/2 end as profit,
+  case when c1.network_name_short != 'WL' then sum(a.amount_revenue_approved)-sum(a.amount_spent_plus_fee) else (sum(a.amount_revenue_approved)-sum(a.amount_spent_plus_fee))/2 end as net_profit, 
   sum(a.amount_conversion) as tot_conversions,
   sum(a.conversions_pending) as conversions_pending,
   sum(a.conversions_approved) as conversions_approved,
   sum(a.conversions_rejected) as conversions_rejected
 from public.user_financial a
 INNER JOIN public.user_network b ON (a.fk_user_id = b.fk_user_id and a.fk_user_network_id = b.user_network_id)
+INNER JOIN public.network c1 on (c1.network_id = b.fk_network_id)
 INNER JOIN public.offer c ON (b.user_network_id = c.fk_user_network_id and a.fk_offer_id = c.offer_id)
 INNER JOIN public.offer_category d ON (d.off_cat_id = c.fk_off_cat_id)
 INNER JOIN public.user_profiles e ON (e.fk_user_id = a.fk_user_id)
@@ -23,6 +24,6 @@ and ({{!SelectNetwork.selectedOptionValue}} OR text(b.fk_network_id) = text('{{S
 and ({{SelectTSFront.selectedOptionValues.length == 0}} OR text(b.fk_ts_id) IN ({{"'" + SelectTSFront.selectedOptionValues.join("', '") + "'"}}))
 and a.financial_date >= to_date('{{moment(DateFrom.selectedDate).format('YYYY-DD-MM')}}','YYYY-DD-MM')
 and a.financial_date <= to_date('{{moment(DateTo.selectedDate).format('YYYY-DD-MM')}}','YYYY-DD-MM')
-group by c.offer_name
+group by c.offer_name, c1.network_name_short
 order by 2 desc
 limit 6 

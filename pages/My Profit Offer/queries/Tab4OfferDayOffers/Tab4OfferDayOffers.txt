@@ -2,14 +2,14 @@ SELECT
   f.network_name_short||'|'||d1.off_cat_short||'|'||d.offer_id||' - '||d.offer_name,
 	sum(a.amount_spent_plus_fee) as "amount_spent_plus_fee",
 	sum(a.amount_revenue_approved) as "Approved_Rev",
-	sum(a.amount_revenue_approved)-sum(a.amount_spent_plus_fee) as "Appr_profit",
+	case when f.network_name_short != 'WL' then sum(a.amount_revenue_approved)-sum(a.amount_spent_plus_fee) else (sum(a.amount_revenue_approved)-sum(a.amount_spent_plus_fee))/2 end as "Appr_profit",
 	(sum(a.amount_revenue_approved)-sum(a.amount_spent_plus_fee))/(case when sum(a.amount_spent_plus_fee) = 0 then 1 else sum(a.amount_spent_plus_fee) end)*100 as "Appr_ROI",
 	sum(a.conversions_approved) as approved_leads,
 	sum(a.amount_revenue) as "amount_revenue",
-	sum(a.amount_revenue)-sum(a.amount_spent_plus_fee) as "TOT_profit",
+	case when f.network_name_short != 'WL' then sum(a.amount_revenue)-sum(a.amount_spent_plus_fee) else (sum(a.amount_revenue)-sum(a.amount_spent_plus_fee))/2 end as "TOT_profit",
 	(sum(a.amount_revenue)-sum(a.amount_spent_plus_fee))/(case when sum(a.amount_spent_plus_fee) = 0 then 1 else sum(a.amount_spent_plus_fee) end)*100 as "TOT_ROI",
 	sum(a.amount_revenue_h) as "amount_revenue_h",
-	sum(a.amount_revenue_h)-sum(a.amount_spent_plus_fee) as "TOT_profit_h",
+	case when f.network_name_short != 'WL' then sum(a.amount_revenue_h)-sum(a.amount_spent_plus_fee) else (sum(a.amount_revenue_h)-sum(a.amount_spent_plus_fee))/2 end as "TOT_profit_h",
 	(sum(a.amount_revenue_h)-sum(a.amount_spent_plus_fee))/(case when sum(a.amount_spent_plus_fee) = 0 then 1 else sum(a.amount_spent_plus_fee) end)*100 as "TOT_ROI_h",
 	sum(a.conversions_total_h) as leads_h,
 	sum(a.conversions_rejected)/((case when sum(a.conversions_approved) = 0 then 1 else sum(a.conversions_approved) end)+sum(a.conversions_rejected))*100 as "Rejected_Rate"
@@ -26,5 +26,5 @@ and a.financial_date = '{{List2.triggeredItem.financial_date}}'
 and c.ts_name = '{{List2.triggeredItem.ts_name}}'
 and ({{!SelectNetwork.selectedOptionValue}} OR text(b.fk_network_id) = text('{{SelectNetwork.selectedOptionValue}}'))
 group by 
-  f.network_name_short||'|'||d1.off_cat_short||'|'||d.offer_id||' - '||d.offer_name
+  f.network_name_short||'|'||d1.off_cat_short||'|'||d.offer_id||' - '||d.offer_name,f.network_name_short
 order by sum(a.amount_revenue) desc
