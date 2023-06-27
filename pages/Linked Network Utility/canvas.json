@@ -2394,13 +2394,13 @@
               "timeoutInMillisecond": 10000
             },
             {
-              "id": "Linked Network Utility_get_user_network",
-              "name": "get_user_network",
+              "id": "Linked Network Utility_js_logout.check_login",
+              "name": "js_logout.check_login",
+              "collectionId": "Linked Network Utility_js_logout",
               "confirmBeforeExecute": false,
-              "pluginType": "API",
+              "pluginType": "JS",
               "jsonPathKeys": [
-                "SelectUser?.selectedOptionValue || appsmith.store.myUser",
-                "appsmith.store.access_token"
+                "async () => {\n  if (!appsmith.store.access_token) navigateTo('Login');\n}"
               ],
               "timeoutInMillisecond": 10000
             }
@@ -2422,6 +2422,19 @@
               "confirmBeforeExecute": false,
               "pluginType": "API",
               "jsonPathKeys": [
+                "appsmith.store.access_token"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
+              "id": "Linked Network Utility_get_user_network",
+              "name": "get_user_network",
+              "confirmBeforeExecute": false,
+              "pluginType": "API",
+              "jsonPathKeys": [
+                "SelectUser?.selectedOptionValue || appsmith.store.myUser",
                 "appsmith.store.access_token"
               ],
               "timeoutInMillisecond": 10000

@@ -5358,6 +5358,37 @@
                 "SelectUserFBPage.selectedOptionValue"
               ],
               "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "Offers Analysis Admin_get_all_users",
+              "name": "get_all_users",
+              "confirmBeforeExecute": false,
+              "pluginType": "API",
+              "jsonPathKeys": [
+                "appsmith.store.access_token"
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "Offers Analysis Admin_get_ts",
+              "name": "get_ts",
+              "confirmBeforeExecute": false,
+              "pluginType": "API",
+              "jsonPathKeys": [
+                "appsmith.store.access_token"
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "Offers Analysis Admin_js_logout.check_login",
+              "name": "js_logout.check_login",
+              "collectionId": "Offers Analysis Admin_js_logout",
+              "confirmBeforeExecute": false,
+              "pluginType": "JS",
+              "jsonPathKeys": [
+                "async () => {\n  if (!appsmith.store.access_token) navigateTo('Login');\n}"
+              ],
+              "timeoutInMillisecond": 10000
             }
           ],
           [
@@ -5404,28 +5435,6 @@
                 "SelectTSFront.selectedOptionValues.length == 0",
                 "List1.selectedItem.offer_id",
                 "\"'\" + SelectTSFront.selectedOptionValues.join(\"', '\") + \"'\""
-              ],
-              "timeoutInMillisecond": 10000
-            }
-          ],
-          [
-            {
-              "id": "Offers Analysis Admin_get_all_users",
-              "name": "get_all_users",
-              "confirmBeforeExecute": false,
-              "pluginType": "API",
-              "jsonPathKeys": [
-                "appsmith.store.access_token"
-              ],
-              "timeoutInMillisecond": 10000
-            },
-            {
-              "id": "Offers Analysis Admin_get_ts",
-              "name": "get_ts",
-              "confirmBeforeExecute": false,
-              "pluginType": "API",
-              "jsonPathKeys": [
-                "appsmith.store.access_token"
               ],
               "timeoutInMillisecond": 10000
             }

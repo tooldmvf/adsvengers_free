@@ -19,7 +19,7 @@
           "parentRowSpace": 1,
           "type": "CANVAS_WIDGET",
           "canExtend": true,
-          "version": 79,
+          "version": 80,
           "minHeight": 880,
           "parentColumnSpace": 1,
           "dynamicBindingPathList": [],
@@ -1187,7 +1187,11 @@
                         "pending",
                         "trash"
                       ],
-                      "dynamicPropertyPathList": [],
+                      "dynamicPropertyPathList": [
+                        {
+                          "key": "tableData"
+                        }
+                      ],
                       "displayName": "Table",
                       "bottomRow": 58,
                       "columnWidthMap": {
@@ -1784,6 +1788,17 @@
               "pluginType": "JS",
               "jsonPathKeys": [
                 "async () => {\n  await MonthlyRev.run();\n}"
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "Ai20 Revenue_js_logout.check_login",
+              "name": "js_logout.check_login",
+              "collectionId": "Ai20 Revenue_js_logout",
+              "confirmBeforeExecute": false,
+              "pluginType": "JS",
+              "jsonPathKeys": [
+                "async () => {\n  if (!appsmith.store.access_token) navigateTo('Login');\n}"
               ],
               "timeoutInMillisecond": 10000
             }

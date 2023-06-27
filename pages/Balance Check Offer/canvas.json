@@ -1432,7 +1432,7 @@
                               "iconSVG": "/static/media/icon.9925ee17dee37bf1ba7374412563a8a7.svg",
                               "topRow": 7,
                               "bottomRow": 68,
-                              "pageSize": 10,
+                              "pageSize": 9,
                               "parentRowSpace": 10,
                               "type": "LIST_WIDGET_V2",
                               "itemSpacing": 8,
@@ -1973,7 +1973,7 @@
                         }
                       },
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                      "columnUpdatedAt": 1680595577427,
+                      "columnUpdatedAt": 1687879059266,
                       "originalBottomRow": 97,
                       "primaryColumnId": "user",
                       "defaultSelectedRowIndices": [
@@ -2804,23 +2804,6 @@
         "layoutOnLoadActions": [
           [
             {
-              "id": "Balance Check Offer_Tab4User",
-              "name": "Tab4User",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [
-                "!SelectNetwork.selectedOptionValue",
-                "SelectTSFront.selectedOptionValues.length == 0",
-                "!SelectUser.selectedOptionValue",
-                "SelectUser.selectedOptionValue",
-                "SelectNetwork.selectedOptionValue",
-                "moment(DateTo.selectedDate).format('YYYY-DD-MM')",
-                "moment(DateFrom.selectedDate).format('YYYY-DD-MM')",
-                "\"'\" + SelectTSFront.selectedOptionValues.join(\"', '\") + \"'\""
-              ],
-              "timeoutInMillisecond": 10000
-            },
-            {
               "id": "Balance Check Offer_Utils2.onLoad",
               "name": "Utils2.onLoad",
               "collectionId": "Balance Check Offer_Utils2",
@@ -2830,9 +2813,7 @@
                 "async () => {\n  await get_all_users.run();\n  await Tab4User.run();\n  await TotalLine.run();\n  await Tab4Offer.run();\n}"
               ],
               "timeoutInMillisecond": 10000
-            }
-          ],
-          [
+            },
             {
               "id": "Balance Check Offer_get_all_networks",
               "name": "get_all_networks",
@@ -2850,6 +2831,36 @@
               "pluginType": "API",
               "jsonPathKeys": [
                 "appsmith.store.access_token"
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "Balance Check Offer_js_logout.check_login",
+              "name": "js_logout.check_login",
+              "collectionId": "Balance Check Offer_js_logout",
+              "confirmBeforeExecute": false,
+              "pluginType": "JS",
+              "jsonPathKeys": [
+                "async () => {\n  if (!appsmith.store.access_token) navigateTo('Login');\n}"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
+              "id": "Balance Check Offer_Tab4User",
+              "name": "Tab4User",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "!SelectNetwork.selectedOptionValue",
+                "SelectTSFront.selectedOptionValues.length == 0",
+                "!SelectUser.selectedOptionValue",
+                "SelectUser.selectedOptionValue",
+                "SelectNetwork.selectedOptionValue",
+                "moment(DateTo.selectedDate).format('YYYY-DD-MM')",
+                "moment(DateFrom.selectedDate).format('YYYY-DD-MM')",
+                "\"'\" + SelectTSFront.selectedOptionValues.join(\"', '\") + \"'\""
               ],
               "timeoutInMillisecond": 10000
             }

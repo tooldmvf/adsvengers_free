@@ -20,7 +20,7 @@
           "parentRowSpace": 1,
           "type": "CANVAS_WIDGET",
           "canExtend": true,
-          "version": 79,
+          "version": 80,
           "minHeight": 900,
           "parentColumnSpace": 1,
           "dynamicTriggerPathList": [],
@@ -1270,7 +1270,11 @@
                         "bm_id",
                         "count"
                       ],
-                      "dynamicPropertyPathList": [],
+                      "dynamicPropertyPathList": [
+                        {
+                          "key": "tableData"
+                        }
+                      ],
                       "compactMode": "SHORT",
                       "displayName": "Table",
                       "bottomRow": 80,
@@ -1562,6 +1566,9 @@
                       "dynamicPropertyPathList": [
                         {
                           "key": "isVisible"
+                        },
+                        {
+                          "key": "tableData"
                         }
                       ],
                       "compactMode": "SHORT",
@@ -1874,6 +1881,9 @@
                       "dynamicPropertyPathList": [
                         {
                           "key": "isVisible"
+                        },
+                        {
+                          "key": "tableData"
                         }
                       ],
                       "compactMode": "SHORT",
@@ -2959,7 +2969,11 @@
                         "tot_revenue",
                         "spent"
                       ],
-                      "dynamicPropertyPathList": [],
+                      "dynamicPropertyPathList": [
+                        {
+                          "key": "tableData"
+                        }
+                      ],
                       "compactMode": "SHORT",
                       "displayName": "Table",
                       "bottomRow": 61,
@@ -3209,6 +3223,40 @@
         "layoutOnLoadActions": [
           [
             {
+              "id": "Spent Check_Utils2.onLoad",
+              "name": "Utils2.onLoad",
+              "collectionId": "Spent Check_Utils2",
+              "confirmBeforeExecute": false,
+              "pluginType": "JS",
+              "jsonPathKeys": [
+                "async () => {\n  await get_all_users.run();\n  await BMTOT.run();\n  await BM.run();\n}"
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "Spent Check_get_ts",
+              "name": "get_ts",
+              "confirmBeforeExecute": false,
+              "pluginType": "API",
+              "jsonPathKeys": [
+                "appsmith.store.access_token"
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "Spent Check_js_logout.check_login",
+              "name": "js_logout.check_login",
+              "collectionId": "Spent Check_js_logout",
+              "confirmBeforeExecute": false,
+              "pluginType": "JS",
+              "jsonPathKeys": [
+                "async () => {\n  if (!appsmith.store.access_token) navigateTo('Login');\n}"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
               "id": "Spent Check_Mbuyers",
               "name": "Mbuyers",
               "confirmBeforeExecute": false,
@@ -3221,29 +3269,6 @@
                 "moment(DateTo.selectedDate).format('YYYY-DD-MM')",
                 "moment(DateFrom.selectedDate).format('YYYY-DD-MM')",
                 "\"'\" + SelectTSFront.selectedOptionValues.join(\"', '\") + \"'\""
-              ],
-              "timeoutInMillisecond": 10000
-            },
-            {
-              "id": "Spent Check_Utils2.onLoad",
-              "name": "Utils2.onLoad",
-              "collectionId": "Spent Check_Utils2",
-              "confirmBeforeExecute": false,
-              "pluginType": "JS",
-              "jsonPathKeys": [
-                "async () => {\n  await get_all_users.run();\n  await BMTOT.run();\n  await BM.run();\n}"
-              ],
-              "timeoutInMillisecond": 10000
-            }
-          ],
-          [
-            {
-              "id": "Spent Check_get_ts",
-              "name": "get_ts",
-              "confirmBeforeExecute": false,
-              "pluginType": "API",
-              "jsonPathKeys": [
-                "appsmith.store.access_token"
               ],
               "timeoutInMillisecond": 10000
             }
