@@ -23,7 +23,10 @@ SELECT
 	d.off_cat_name,
   e.ts_name,
 	b.fk_network_id,
-	concat(g.last_name,' ',g.first_name) as MediaBuyer
+	concat(g.last_name,' ',g.first_name) as MediaBuyer,
+	case when f.network_name_short != 'WL' then a.amount_revenue-a.amount_spent_plus_fee else (a.amount_revenue-a.amount_spent_plus_fee)/2 end as profit, 
+	case when f.network_name_short != 'WL' then a.amount_revenue_approved-a.amount_spent_plus_fee else (a.amount_revenue_approved-a.amount_spent_plus_fee)/2 end as profit_appr, 
+	case when f.network_name_short != 'WL' then a.amount_revenue_pending-a.amount_spent_plus_fee else (a.amount_revenue_pending-a.amount_spent_plus_fee)/2 end as profit_pend
 from public.user_financial a
 INNER JOIN public.user_network b ON (a.fk_user_id = b.fk_user_id and a.fk_user_network_id = b.user_network_id)
 INNER JOIN public.offer c ON (b.user_network_id = c.fk_user_network_id and a.fk_offer_id = c.offer_id and c.offer_name_suffix = b.offer_name_suffix)
