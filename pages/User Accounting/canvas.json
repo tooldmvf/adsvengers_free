@@ -961,7 +961,7 @@
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "mobileLeftColumn": 0,
               "maxDynamicHeight": 9000,
-              "originalBottomRow": 95,
+              "originalBottomRow": 93,
               "fontSize": "0.875rem",
               "minDynamicHeight": 4
             },
@@ -1243,7 +1243,7 @@
                                 }
                               ],
                               "needsHeightForContent": true,
-                              "leftColumn": 1,
+                              "leftColumn": 0,
                               "delimiter": ",",
                               "defaultSelectedRowIndex": 0,
                               "showInlineEditingOptionDropdown": true,
@@ -3452,7 +3452,7 @@
                               "key": "c7rr9s6m4a",
                               "canFreezeColumn": false,
                               "isDeprecated": false,
-                              "rightColumn": 63,
+                              "rightColumn": 64,
                               "textSize": "0.875rem",
                               "widgetId": "qcuzyuvcjk",
                               "minWidth": 450,
