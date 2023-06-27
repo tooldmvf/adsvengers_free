@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 930,
+          "bottomRow": 950,
           "containerStyle": "none",
           "snapRows": 86,
           "parentRowSpace": 1,
@@ -913,7 +913,7 @@
                 "label"
               ],
               "topRow": 89,
-              "bottomRow": 93,
+              "bottomRow": 95,
               "parentRowSpace": 10,
               "type": "TEXT_WIDGET",
               "hideCard": false,
@@ -1437,7 +1437,7 @@
                                   "label": "Spent",
                                   "isSaveVisible": true,
                                   "isDiscardVisible": true,
-                                  "computedValue": "{{TableSpentBM.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"amount_spent\"]))}}",
+                                  "computedValue": "{{TableSpentBM.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"amount_spent\"].toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2})))}}",
                                   "sticky": "",
                                   "validation": {},
                                   "onSubmit": "{{Utils.myFun2(currentRow);}}"
@@ -1524,7 +1524,7 @@
                                   "label": "User Input",
                                   "isSaveVisible": true,
                                   "isDiscardVisible": true,
-                                  "computedValue": "{{TableSpentBM.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"amount_spent_fixed\"]))}}",
+                                  "computedValue": "{{TableSpentBM.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"amount_spent_fixed\"].toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2})))}}",
                                   "sticky": "",
                                   "validation": {},
                                   "onSubmit": "{{Utils.myFun2(currentRow);}}"
@@ -3322,7 +3322,7 @@
                                   "label": "Approved Rev.",
                                   "isSaveVisible": true,
                                   "isDiscardVisible": true,
-                                  "computedValue": "{{TableRevModCopy.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"amount_revenue_approved\"]))}}",
+                                  "computedValue": "{{TableRevModCopy.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"amount_revenue_approved\"].toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2})))}}",
                                   "sticky": "",
                                   "validation": {},
                                   "cellBackground": "",
@@ -3443,7 +3443,7 @@
                                   "label": "User Input",
                                   "isSaveVisible": true,
                                   "isDiscardVisible": true,
-                                  "computedValue": "{{TableRevModCopy.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"amount_revenue_fixed\"]))}}",
+                                  "computedValue": "{{TableRevModCopy.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"amount_revenue_fixed\"].toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2})))}}",
                                   "sticky": "",
                                   "validation": {},
                                   "cellBackground": ""
