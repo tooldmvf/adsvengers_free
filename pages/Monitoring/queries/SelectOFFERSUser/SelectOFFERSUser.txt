@@ -8,7 +8,7 @@ SELECT
 	((sum(a.amount_revenue) - sum(a.amount_spent_plus_fee))/case when sum(a.amount_spent_plus_fee) = 0 then 1 else sum(a.amount_spent_plus_fee) end)*100 as "Tot_ROI",
 	((sum(a.amount_revenue_approved) - sum(a.amount_spent_plus_fee))/case when sum(a.amount_spent_plus_fee) = 0 then 1 else sum(a.amount_spent_plus_fee) end)*100 as "Appr_ROI",
 	sum(a.amount_conversion) as tot_conv,
-	sum(a.amount_spent_plus_fee)/(case when sum(a.amount_conversion) > 0 then sum(a.amount_conversion) else 1 end) as cpa,
+	sum(a.amount_spent_plus_fee)/(case when sum(a.amount_conversion) > 0 then sum(a.amount_conversion) else 1 end) as "CPA",
 	f.network_name_short,
 	case 
 		when (((sum(a.amount_revenue) - sum(a.amount_spent_plus_fee))/case when sum(a.amount_spent_plus_fee) = 0 then 1 else sum(a.amount_spent_plus_fee) end) *100) <0 then '#fef2f2'
