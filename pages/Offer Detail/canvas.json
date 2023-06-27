@@ -6634,6 +6634,17 @@
                 "appsmith.store.access_token"
               ],
               "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "Offer Detail_js_logout.check_login",
+              "name": "js_logout.check_login",
+              "collectionId": "Offer Detail_js_logout",
+              "confirmBeforeExecute": false,
+              "pluginType": "JS",
+              "jsonPathKeys": [
+                "async () => {\n  if (!appsmith.store.access_token) navigateTo('Login');\n}"
+              ],
+              "timeoutInMillisecond": 10000
             }
           ],
           [
@@ -6656,31 +6667,7 @@
                 "\"'\" + MSCategory.selectedOptionValues.join(\"', '\") + \"'\""
               ],
               "timeoutInMillisecond": 10000
-            }
-          ],
-          [
-            {
-              "id": "Offer Detail_SelectOFFERSUserTOT",
-              "name": "SelectOFFERSUserTOT",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [
-                "MSTrSource.selectedOptionValues.length == 0",
-                "!SelectUser.selectedOptionValue",
-                "\"'\" + SelectUser.selectedOptionValue + \"'\"",
-                "moment(DateTo.selectedDate).format('YYYY-DD-MM')",
-                "TableOffersCopy.searchText",
-                "MSCategory.selectedOptionValues.length == 0",
-                "moment(DateFrom.selectedDate).format('YYYY-DD-MM')",
-                "\"'\" + MSTrSource.selectedOptionValues.join(\"', '\") + \"'\"",
-                "MSNetwork.selectedOptionValues.length == 0",
-                "\"'\" + MSNetwork.selectedOptionValues.join(\"', '\") + \"'\"",
-                "\"'\" + MSCategory.selectedOptionValues.join(\"', '\") + \"'\""
-              ],
-              "timeoutInMillisecond": 10000
-            }
-          ],
-          [
+            },
             {
               "id": "Offer Detail_get_all_networks",
               "name": "get_all_networks",
@@ -6708,6 +6695,28 @@
               "pluginType": "API",
               "jsonPathKeys": [
                 "appsmith.store.access_token"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
+              "id": "Offer Detail_SelectOFFERSUserTOT",
+              "name": "SelectOFFERSUserTOT",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "MSTrSource.selectedOptionValues.length == 0",
+                "!SelectUser.selectedOptionValue",
+                "\"'\" + SelectUser.selectedOptionValue + \"'\"",
+                "moment(DateTo.selectedDate).format('YYYY-DD-MM')",
+                "TableOffersCopy.searchText",
+                "MSCategory.selectedOptionValues.length == 0",
+                "moment(DateFrom.selectedDate).format('YYYY-DD-MM')",
+                "\"'\" + MSTrSource.selectedOptionValues.join(\"', '\") + \"'\"",
+                "MSNetwork.selectedOptionValues.length == 0",
+                "\"'\" + MSNetwork.selectedOptionValues.join(\"', '\") + \"'\"",
+                "\"'\" + MSCategory.selectedOptionValues.join(\"', '\") + \"'\""
               ],
               "timeoutInMillisecond": 10000
             }

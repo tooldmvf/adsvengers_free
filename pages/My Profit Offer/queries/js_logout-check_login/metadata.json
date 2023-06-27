@@ -2,8 +2,8 @@
   "pluginType": "JS",
   "pluginId": "js-plugin",
   "unpublishedAction": {
-    "name": "logout_process",
-    "fullyQualifiedName": "js_logout.logout_process",
+    "name": "check_login",
+    "fullyQualifiedName": "js_logout.check_login",
     "datasource": {
       "name": "UNUSED_DATASOURCE",
       "pluginId": "js-plugin",
@@ -13,18 +13,17 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "Dashboard",
-    "collectionId": "Dashboard_js_logout",
+    "pageId": "My Profit Offer",
+    "collectionId": "My Profit Offer_js_logout",
     "actionConfiguration": {
-      "timeoutInMillisecond": 10000,
+      "timeoutInMillisecond": 0,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
       "selfReferencingDataPaths": [],
       "jsArguments": [],
       "isAsync": true
     },
-    "executeOnLoad": false,
-    "clientSideExecution": true,
+    "executeOnLoad": true,
     "dynamicBindingPathList": [
       {
         "key": "body"
@@ -38,7 +37,7 @@
     "policies": [],
     "userPermissions": []
   },
-  "id": "Dashboard_js_logout.logout_process",
+  "id": "My Profit Offer_js_logout.check_login",
   "deleted": false,
-  "gitSyncId": "63936c0b4b95806da2da5de7_63b325b4f276cd0745e94ce5"
+  "gitSyncId": "646331cd28902b71518db22a_649afbc0a695192a7f456cc3"
 }

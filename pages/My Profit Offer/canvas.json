@@ -990,7 +990,7 @@
                       "iconSVG": "/static/media/icon.9925ee17dee37bf1ba7374412563a8a7.svg",
                       "topRow": 24,
                       "bottomRow": 91,
-                      "pageSize": 11,
+                      "pageSize": 10,
                       "parentRowSpace": 10,
                       "type": "LIST_WIDGET_V2",
                       "itemSpacing": 8,
@@ -5036,7 +5036,7 @@
               "originalTopRow": 8,
               "borderRadius": "0.375rem",
               "maxDynamicHeight": 9000,
-              "originalBottomRow": 107,
+              "originalBottomRow": 101,
               "minDynamicHeight": 4
             },
             {
@@ -5544,9 +5544,9 @@
               "parentId": "0",
               "renderMode": "CANVAS",
               "isLoading": false,
-              "originalTopRow": 108,
+              "originalTopRow": 102,
               "maxDynamicHeight": 9000,
-              "originalBottomRow": 196,
+              "originalBottomRow": 190,
               "minDynamicHeight": 10
             },
             {
@@ -7346,6 +7346,17 @@
               "pluginType": "JS",
               "jsonPathKeys": [
                 "async () => {\n  await get_all_users.run();\n  await TotalLine.run();\n  await Tab4OfferDay.run();\n  SelectFinancial.run();\n  get_all_networks.run();\n  get_ts.run();\n}"
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "My Profit Offer_js_logout.check_login",
+              "name": "js_logout.check_login",
+              "collectionId": "My Profit Offer_js_logout",
+              "confirmBeforeExecute": false,
+              "pluginType": "JS",
+              "jsonPathKeys": [
+                "async () => {\n  if (!appsmith.store.access_token) navigateTo('Login');\n}"
               ],
               "timeoutInMillisecond": 10000
             }

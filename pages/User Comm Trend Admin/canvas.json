@@ -1939,7 +1939,7 @@
               "originalTopRow": 8,
               "borderRadius": "0.375rem",
               "maxDynamicHeight": 9000,
-              "originalBottomRow": 45,
+              "originalBottomRow": 46,
               "minDynamicHeight": 10
             },
             {
@@ -2075,12 +2075,12 @@
               "mobileTopRow": 58,
               "responsiveBehavior": "fill",
               "yAxisName": "Amount(€)",
-              "originalTopRow": 45,
+              "originalTopRow": 46,
               "chartName": "Sales Report",
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "mobileLeftColumn": 0,
               "xAxisName": "Months",
-              "originalBottomRow": 80,
+              "originalBottomRow": 81,
               "chartType": "LINE_CHART"
             },
             {
@@ -2193,12 +2193,12 @@
               "mobileTopRow": 58,
               "responsiveBehavior": "fill",
               "yAxisName": "Roi (%)",
-              "originalTopRow": 45,
+              "originalTopRow": 46,
               "chartName": "Roi",
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "mobileLeftColumn": 0,
               "xAxisName": "Months",
-              "originalBottomRow": 80,
+              "originalBottomRow": 81,
               "chartType": "LINE_CHART"
             },
             {
@@ -7523,11 +7523,11 @@
               "isLoading": false,
               "mobileTopRow": 81,
               "responsiveBehavior": "fill",
-              "originalTopRow": 81,
+              "originalTopRow": 82,
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "mobileLeftColumn": 0,
               "maxDynamicHeight": 9000,
-              "originalBottomRow": 171,
+              "originalBottomRow": 172,
               "minDynamicHeight": 15
             }
           ]
