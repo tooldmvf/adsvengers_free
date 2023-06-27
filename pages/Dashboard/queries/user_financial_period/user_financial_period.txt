@@ -1,5 +1,29 @@
+select count (DISTINCT fk_offer_id) as active_offers,
+sum(tot_revenue) as tot_revenue, 
+sum(amount_revenue_pending) as amount_revenue_pending, 
+sum(amount_revenue_approved) as amount_revenue_approved, 
+sum(amount_revenue_rejected) as amount_revenue_rejected, 
+sum(tot_revenue_h) as tot_revenue_h, 
+sum(amount_revenue_pending_h) as amount_revenue_pending_h, 
+sum(amount_revenue_approved_h) as amount_revenue_approved_h, 
+sum(amount_revenue_rejected_h) as amount_revenue_rejected_h, 
+sum(spent) as spent, 
+sum(spent_wfees) as spent_wfees, 
+sum(profit) as profit, 
+sum(profit_h) as profit_h, 
+sum(net_profit) as net_profit, 
+sum(net_profit_h) as net_profit_h, 
+sum(tot_conversions) as tot_conversions,
+sum(conversions_pending) as conversions_pending,
+sum(conversions_approved) as conversions_approved,
+sum(conversions_rejected) as conversions_rejected,
+sum(tot_conversions_h) as tot_conversions_h,
+sum(conversions_pending_h) as conversions_pending_h,
+sum(conversions_approved_h) as conversions_approved_h,
+sum(conversions_rejected_h) as conversions_rejected_h
+from (
 SELECT 
-  count (DISTINCT a.fk_offer_id) as active_offers,
+  a.fk_offer_id,
   sum(a.amount_revenue) as tot_revenue, 
   sum(a.amount_revenue_pending) as amount_revenue_pending, 
   sum(a.amount_revenue_approved) as amount_revenue_approved, 
@@ -10,10 +34,10 @@ SELECT
   sum(a.amount_revenue_rejected_h) as amount_revenue_rejected_h, 
   sum(a.amount_spent) as spent, 
   sum(a.amount_spent_plus_fee) as spent_wfees, 
-  sum(a.amount_revenue)- sum(amount_spent_plus_fee) as profit, 
-  sum(a.amount_revenue_h)- sum(amount_spent_plus_fee) as profit_h, 
-  sum(a.amount_revenue_approved)- sum(amount_spent_plus_fee) as net_profit,
-  sum(a.amount_revenue_approved_h)- sum(amount_spent_plus_fee) as net_profit_h, 
+  case when c.network_name_short != 'WL' then sum(a.amount_revenue)-sum(a.amount_spent_plus_fee) else (sum(a.amount_revenue)-sum(a.amount_spent_plus_fee))/2 end as profit, 
+  case when c.network_name_short != 'WL' then sum(a.amount_revenue_h)-sum(a.amount_spent_plus_fee) else (sum(a.amount_revenue_h)-sum(a.amount_spent_plus_fee))/2 end as profit_h,
+  case when c.network_name_short != 'WL' then sum(a.amount_revenue_approved)-sum(a.amount_spent_plus_fee) else (sum(a.amount_revenue_approved)-sum(a.amount_spent_plus_fee))/2 end as net_profit,
+  case when c.network_name_short != 'WL' then sum(a.amount_revenue_approved_h)-sum(a.amount_spent_plus_fee) else (sum(a.amount_revenue_approved_h)-sum(a.amount_spent_plus_fee))/2 end as net_profit_h,
   sum(a.amount_conversion) as tot_conversions,
   sum(a.conversions_pending) as conversions_pending,
   sum(a.conversions_approved) as conversions_approved,
@@ -23,11 +47,13 @@ SELECT
   sum(a.conversions_approved_h) as conversions_approved_h,
   sum(a.conversions_rejected_h) as conversions_rejected_h
 FROM 
-  public."user_financial" a
-	INNER JOIN public."user_network" b on (a.fk_user_network_id = b.user_network_id)
+  public.user_financial a
+	INNER JOIN public.user_network b on (a.fk_user_network_id = b.user_network_id)
+	INNER JOIN public.network c on (c.network_id = b.fk_network_id)
 where 1 = 1
 and a.financial_date >= to_date('{{moment(DateFrom.selectedDate).format('YYYY-DD-MM')}}','YYYY-DD-MM')
 and a.financial_date <= to_date('{{moment(DateTo.selectedDate).format('YYYY-DD-MM')}}','YYYY-DD-MM')
 and (text(a.fk_user_id) IN ({{"'" + MultiSelectUsers.selectedOptionValues.join("', '") + "'"}}) OR text(a.fk_user_id) = '{{appsmith.store.myUser}}' )
 and ({{SelectNetwork.selectedOptionValues.length == 0}} OR text(b.fk_network_id) IN ({{"'" + SelectNetwork.selectedOptionValues.join("', '") + "'"}}))
 and ({{SelectTSFront.selectedOptionValues.length == 0}} OR text(b.fk_ts_id) IN ({{"'" + SelectTSFront.selectedOptionValues.join("', '") + "'"}}))
+group by c.network_name_short,a.fk_offer_id) z

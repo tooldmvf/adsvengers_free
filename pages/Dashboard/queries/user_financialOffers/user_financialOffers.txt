@@ -3,9 +3,10 @@ SELECT
 ,b.network_other_name
 ,sum(amount_revenue) as revenue
 ,sum(amount_spent_plus_fee) as spent
-,sum(amount_revenue - amount_spent_plus_fee) as profit
+,case when c1.network_name_short != 'WL' then sum(a.amount_revenue)-sum(a.amount_spent_plus_fee) else (sum(a.amount_revenue)-sum(a.amount_spent_plus_fee))/2 end as profit
 FROM public."user_financial" a
 INNER JOIN public."user_network" b ON (b.user_network_id = a.fk_user_network_id and a.fk_user_id = b.fk_user_id)
+INNER JOIN public.network c1 on (c1.network_id = b.fk_network_id)
 INNER JOIN public."offer" c  ON (a.fk_offer_id = c.offer_id and c.fk_user_network_id = b.user_network_id and c.offer_name_suffix = b.offer_name_suffix)
 INNER JOIN public."offer_category" z  ON z.off_cat_id = c.fk_off_cat_id 
 where 1 = 1
@@ -15,5 +16,5 @@ and (text(a.fk_user_id) IN ({{"'" + MultiSelectUsers.selectedOptionValues.join("
 and ({{SelectNetwork.selectedOptionValues.length == 0}} OR text(b.fk_network_id) IN ({{"'" + SelectNetwork.selectedOptionValues.join("', '") + "'"}}))
 and ({{SelectTSFront.selectedOptionValues.length == 0}} OR text(b.fk_ts_id) IN ({{"'" + SelectTSFront.selectedOptionValues.join("', '") + "'"}}))
 and b.network_other_name not like '%For Ad Account Warming%'
-group by b.network_other_name,z.off_cat_name
+group by b.network_other_name,z.off_cat_name,c1.network_name_short
 order by b.network_other_name,z.off_cat_name
