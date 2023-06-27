@@ -2194,16 +2194,7 @@
                                   "key": "primaryColumns.network_name_short.computedValue"
                                 },
                                 {
-                                  "key": "primaryColumns.CPA.computedValue"
-                                },
-                                {
-                                  "key": "primaryColumns.CPA.cellBackground"
-                                },
-                                {
-                                  "key": "primaryColumns.offer_payout.computedValue"
-                                },
-                                {
-                                  "key": "primaryColumns.offer_payout.cellBackground"
+                                  "key": "primaryColumns.cpa.computedValue"
                                 }
                               ],
                               "needsHeightForContent": true,
@@ -2242,7 +2233,7 @@
                                 }
                               },
                               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                              "columnUpdatedAt": 1685629690098,
+                              "columnUpdatedAt": 1687852848797,
                               "originalBottomRow": 210,
                               "defaultSelectedRowIndices": [
                                 0
@@ -2255,14 +2246,13 @@
                                 "revenue",
                                 "profit",
                                 "Tot_ROI",
-                                "CPA",
                                 "tot_conv",
-                                "offer_payout",
                                 "offer_id",
                                 "row_color",
                                 "offer",
                                 "Appr_ROI",
-                                "network_name_short"
+                                "network_name_short",
+                                "cpa"
                               ],
                               "dynamicPropertyPathList": [
                                 {
@@ -2294,12 +2284,6 @@
                                 },
                                 {
                                   "key": "primaryColumns.tot_conv.textColor"
-                                },
-                                {
-                                  "key": "primaryColumns.CPA.cellBackground"
-                                },
-                                {
-                                  "key": "primaryColumns.offer_payout.cellBackground"
                                 },
                                 {
                                   "key": "tableData"
@@ -2654,15 +2638,15 @@
                                   "validation": {},
                                   "cellBackground": ""
                                 },
-                                "CPA": {
+                                "cpa": {
                                   "allowCellWrapping": false,
                                   "allowSameOptionsInNewRow": true,
                                   "index": 11,
                                   "width": 150,
-                                  "originalId": "CPA",
-                                  "id": "CPA",
-                                  "alias": "CPA",
-                                  "horizontalAlignment": "RIGHT",
+                                  "originalId": "cpa",
+                                  "id": "cpa",
+                                  "alias": "cpa",
+                                  "horizontalAlignment": "LEFT",
                                   "verticalAlignment": "CENTER",
                                   "columnType": "number",
                                   "textColor": "",
@@ -2676,43 +2660,13 @@
                                   "isEditable": false,
                                   "isCellVisible": true,
                                   "isDerived": false,
-                                  "label": "CPA (€)",
+                                  "label": "cpa",
                                   "isSaveVisible": true,
                                   "isDiscardVisible": true,
-                                  "computedValue": "{{TableOffers.processedTableData.map((currentRow, currentIndex) => ( (currentRow[\"CPA\"]).toFixed(2)))}}",
+                                  "computedValue": "{{TableOffers.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"cpa\"]))}}",
                                   "sticky": "",
                                   "validation": {},
-                                  "cellBackground": "{{TableOffers.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"row_color\"]))}}"
-                                },
-                                "offer_payout": {
-                                  "allowCellWrapping": false,
-                                  "allowSameOptionsInNewRow": true,
-                                  "index": 12,
-                                  "width": 150,
-                                  "originalId": "offer_payout",
-                                  "id": "offer_payout",
-                                  "alias": "offer_payout",
-                                  "horizontalAlignment": "RIGHT",
-                                  "verticalAlignment": "CENTER",
-                                  "columnType": "number",
-                                  "textColor": "",
-                                  "textSize": "0.875rem",
-                                  "fontStyle": "",
-                                  "enableFilter": true,
-                                  "enableSort": true,
-                                  "isVisible": true,
-                                  "isDisabled": false,
-                                  "isCellEditable": false,
-                                  "isEditable": false,
-                                  "isCellVisible": true,
-                                  "isDerived": false,
-                                  "label": "Payout (€)",
-                                  "isSaveVisible": true,
-                                  "isDiscardVisible": true,
-                                  "computedValue": "{{TableOffers.processedTableData.map((currentRow, currentIndex) => ( (currentRow[\"offer_payout\"]).toFixed(2)))}}",
-                                  "sticky": "",
-                                  "validation": {},
-                                  "cellBackground": "{{TableOffers.processedTableData.map((currentRow, currentIndex) => ( currentRow.row_color))}}"
+                                  "cellBackground": ""
                                 }
                               },
                               "onRowSelected": "{{WhereRunned.run();\nstoreValue('row_selected',TableOffers.selectedRowIndex)}}",
@@ -3538,9 +3492,6 @@
                                   "key": "primaryColumns.Tot_ROI.computedValue"
                                 },
                                 {
-                                  "key": "primaryColumns.Appr_ROI.computedValue"
-                                },
-                                {
                                   "key": "primaryColumns.Tot_ROI.textColor"
                                 },
                                 {
@@ -3601,7 +3552,7 @@
                                 }
                               },
                               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                              "columnUpdatedAt": 1682491226826,
+                              "columnUpdatedAt": 1687852852833,
                               "originalBottomRow": 210,
                               "defaultSelectedRowIndices": [
                                 0
@@ -3616,7 +3567,6 @@
                                 "Tot_ROI",
                                 "tot_conv",
                                 "row_color",
-                                "Appr_ROI",
                                 "fk_user_id"
                               ],
                               "dynamicPropertyPathList": [
@@ -3823,35 +3773,6 @@
                                   "validation": {},
                                   "cellBackground": "{{TableUsers.processedTableData.map((currentRow, currentIndex) => ( currentRow.row_color))}}"
                                 },
-                                "Appr_ROI": {
-                                  "allowCellWrapping": false,
-                                  "index": 8,
-                                  "width": 150,
-                                  "originalId": "Appr_ROI",
-                                  "id": "Appr_ROI",
-                                  "alias": "Appr_ROI",
-                                  "horizontalAlignment": "LEFT",
-                                  "verticalAlignment": "CENTER",
-                                  "columnType": "number",
-                                  "textColor": "",
-                                  "textSize": "0.875rem",
-                                  "fontStyle": "",
-                                  "enableFilter": true,
-                                  "enableSort": true,
-                                  "isVisible": false,
-                                  "isDisabled": false,
-                                  "isCellEditable": false,
-                                  "isEditable": false,
-                                  "isCellVisible": true,
-                                  "isDerived": false,
-                                  "label": "Appr_ROI",
-                                  "isSaveVisible": true,
-                                  "isDiscardVisible": true,
-                                  "computedValue": "{{TableUsers.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Appr_ROI\"]))}}",
-                                  "sticky": "",
-                                  "validation": {},
-                                  "cellBackground": ""
-                                },
                                 "mbuyer": {
                                   "allowCellWrapping": false,
                                   "index": 6,
@@ -4015,7 +3936,7 @@
                       "originalTopRow": 18,
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                       "maxDynamicHeight": 9000,
-                      "originalBottomRow": 94,
+                      "originalBottomRow": 93,
                       "minDynamicHeight": 15
                     }
                   ],
@@ -4048,7 +3969,7 @@
               "originalTopRow": 8,
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "maxDynamicHeight": 9000,
-              "originalBottomRow": 104,
+              "originalBottomRow": 103,
               "minDynamicHeight": 10
             }
           ]

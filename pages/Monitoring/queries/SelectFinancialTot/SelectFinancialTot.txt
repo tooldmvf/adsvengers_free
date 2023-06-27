@@ -1,21 +1,16 @@
+Select max(last_update) as last_update
+,sum(amount_revenue) as amount_revenue
+,sum(spent) as amount_spent_plus_fee
+,sum(profit) as "Tot_Profit"
+,(sum(profit)/case when sum(spent) = 0 then 1 else sum(spent) end)*100 as "Tot_ROI"
+,sum(tot_conv) as tot_conv
+from (
 SELECT
-	a.financial_date,
 	max(a.creation_date) as last_update,
 	sum(a.amount_revenue) as amount_revenue,
-	sum(a.amount_revenue_pending) as "Pending_Rev",
-	sum(a.amount_revenue_approved) as "Approved_Rev",
-	sum(a.amount_revenue_rejected) as "Rejected_Rev",
-	sum(a.amount_spent),
-	sum(a.amount_spent_plus_fee) as amount_spent_plus_fee,
+	sum(a.amount_spent_plus_fee) as spent,
 	sum(a.amount_conversion) as tot_conv,
-	sum(a.conversions_pending) as "Pending_Conv",
-	sum(a.conversions_approved) as "Approved_Conv",
-	sum(a.conversions_rejected) as "Rejected_Conv",
-	cast(sum(a.conversions_rejected) as decimal(7,2))/(case when sum(a.amount_conversion) = 0 then 1 else (cast(sum(a.amount_conversion) as decimal(7,2)) + cast(sum(a.conversions_rejected) as decimal(7,2))) end)*100 as "Rejected_Rate",
-	sum(a.amount_revenue) - sum(a.amount_spent_plus_fee) as "Tot_Profit",
-	sum(a.amount_revenue_approved)- sum(a.amount_spent_plus_fee) as "Appr_Profit",
-	((sum(a.amount_revenue) - sum(a.amount_spent_plus_fee))/case when sum(a.amount_spent_plus_fee) = 0 then 1 else sum(a.amount_spent_plus_fee) end)*100 as "Tot_ROI",
-	((sum(a.amount_revenue_approved) - sum(a.amount_spent_plus_fee))/case when sum(a.amount_spent_plus_fee) = 0 then 1 else sum(a.amount_spent_plus_fee) end)*100 as "Appr_ROI"
+	case when f.network_name_short != 'WL' then sum(a.amount_revenue)-sum(a.amount_spent_plus_fee) else (sum(a.amount_revenue)-sum(a.amount_spent_plus_fee))/2 end as profit
 from public.user_financial_live a
 INNER JOIN public.user_network b ON (a.fk_user_id = b.fk_user_id and a.fk_user_network_id = b.user_network_id)
 INNER JOIN public.offer c ON (b.user_network_id = c.fk_user_network_id and a.fk_offer_id = c.offer_id)
@@ -31,4 +26,4 @@ and a.financial_date = '{{moment().format('yyyy-MM-DD')}}'
 and ({{MSNetwork.selectedOptionValues.length == 0}} OR text(b.fk_network_id) IN ({{"'" + MSNetwork.selectedOptionValues.join("', '") + "'"}}))
 and ({{MSTrSource.selectedOptionValues.length == 0}} OR text(e.ts_id) IN ({{"'" + MSTrSource.selectedOptionValues.join("', '") + "'"}}))
 group by 
-	a.financial_date
+	a.financial_date, f.network_name_short) z
