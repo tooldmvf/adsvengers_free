@@ -14,6 +14,7 @@ SELECT
 	d.off_cat_name
 from public.user_financial a
 INNER JOIN public.user_network b ON (a.fk_user_id = b.fk_user_id and a.fk_user_network_id = b.user_network_id)
+INNER JOIN public.network c1 on (c1.network_id = b.fk_network_id)
 INNER JOIN public.offer c ON (b.user_network_id = c.fk_user_network_id and a.fk_offer_id = c.offer_id)
 INNER JOIN public.offer_category d ON (d.off_cat_id = c.fk_off_cat_id)
 where 1=1

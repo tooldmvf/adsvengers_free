@@ -3435,6 +3435,28 @@
         "layoutOnLoadActions": [
           [
             {
+              "id": "Offers Analysis_get_ts",
+              "name": "get_ts",
+              "confirmBeforeExecute": false,
+              "pluginType": "API",
+              "jsonPathKeys": [
+                "appsmith.store.access_token"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
+              "id": "Offers Analysis_OfferDetailTS",
+              "name": "OfferDetailTS",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "List1.selectedItem.offer_id"
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
               "id": "Offers Analysis_Tab4Offer",
               "name": "Tab4Offer",
               "confirmBeforeExecute": false,
@@ -3450,16 +3472,14 @@
                 "SelectUserFBPage.selectedOptionValue"
               ],
               "timeoutInMillisecond": 10000
-            }
-          ],
-          [
+            },
             {
-              "id": "Offers Analysis_OfferDetailTS",
-              "name": "OfferDetailTS",
+              "id": "Offers Analysis_get_all_users",
+              "name": "get_all_users",
               "confirmBeforeExecute": false,
-              "pluginType": "DB",
+              "pluginType": "API",
               "jsonPathKeys": [
-                "List1.selectedItem.offer_id"
+                "appsmith.store.access_token"
               ],
               "timeoutInMillisecond": 10000
             }
@@ -3472,28 +3492,6 @@
               "pluginType": "DB",
               "jsonPathKeys": [
                 "List1.selectedItem.offer_id"
-              ],
-              "timeoutInMillisecond": 10000
-            },
-            {
-              "id": "Offers Analysis_get_ts",
-              "name": "get_ts",
-              "confirmBeforeExecute": false,
-              "pluginType": "API",
-              "jsonPathKeys": [
-                "appsmith.store.access_token"
-              ],
-              "timeoutInMillisecond": 10000
-            }
-          ],
-          [
-            {
-              "id": "Offers Analysis_get_all_users",
-              "name": "get_all_users",
-              "confirmBeforeExecute": false,
-              "pluginType": "API",
-              "jsonPathKeys": [
-                "appsmith.store.access_token"
               ],
               "timeoutInMillisecond": 10000
             }

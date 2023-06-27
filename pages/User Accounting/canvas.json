@@ -5796,6 +5796,17 @@
         "layoutOnLoadActions": [
           [
             {
+              "id": "User Accounting_Utils.reload",
+              "name": "Utils.reload",
+              "collectionId": "User Accounting_Utils",
+              "confirmBeforeExecute": false,
+              "pluginType": "JS",
+              "jsonPathKeys": [
+                "async function () {\n  await resetWidget('NumberSlider1');\n  await resetWidget('Adjust');\n  await Fetch_Adjustments.run();\n  await resetWidget('AdjustProfit');\n  await Fetch_Commission_fee.run();\n  await Fetch_Debt_Prev_Month.run();\n  await Fetch_Data_Rev_TOT.run();\n  await Fetch_Data_Spent_TOT.run();\n  await Fetch_Data_Rev.run();\n  await Fetch_Data_Spent.run();\n  await Fetch_Data_Other_Prj.run();\n  await Fetch_Data_Rev_Ai20.run();\n}"
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
               "id": "User Accounting_get_all_users",
               "name": "get_all_users",
               "confirmBeforeExecute": false,
