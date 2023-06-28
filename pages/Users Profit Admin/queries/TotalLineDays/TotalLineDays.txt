@@ -1,14 +1,36 @@
-SELECT a.financial_date,
-	sum(a.amount_spent_plus_fee) as "amount_spent_plus_fee",
-	sum(a.amount_revenue_approved) as "Approved_Rev",
-	sum(a.amount_revenue_approved)-sum(a.amount_spent_plus_fee) as "Appr_profit",
-	(sum(a.amount_revenue_approved)-sum(a.amount_spent_plus_fee))/(case when sum(a.amount_spent_plus_fee) = 0 then 1 else sum(a.amount_spent_plus_fee) end)*100 as "Appr_ROI",
-	sum(a.amount_revenue) as "amount_revenue",
-	sum(a.amount_revenue)-sum(a.amount_spent_plus_fee) as "TOT_profit",
-	(sum(a.amount_revenue)-sum(a.amount_spent_plus_fee))/(case when sum(a.amount_spent_plus_fee) = 0 then 1 else sum(a.amount_spent_plus_fee) end)*100 as "TOT_ROI",
-	sum(a.conversions_rejected)/(case when sum(a.amount_conversion) = 0 then 1 else sum(a.amount_conversion)+sum(a.conversions_rejected) end)*100 as "Rejected_Rate"
+select financial_date
+,sum(amount_spent_plus_fee) as amount_spent_plus_fee
+,sum(amount_revenue_approved) as "Approved_Rev"
+,sum(net_profit) as "Appr_Profit"
+,sum(net_profit)/(case when sum(amount_spent_plus_fee) = 0 then 1 else sum(amount_spent_plus_fee) end)*100 as "Appr_Roi"
+,sum(amount_revenue_h) as amount_revenue_h
+,sum(profit_h) as profit_h
+,sum(profit_h)/(case when sum(amount_spent_plus_fee) = 0 then 1 else sum(amount_spent_plus_fee) end)*100 as "Tot_Roi_h"
+,sum(conversions_rejected)/((case when sum(conversions_total_h) = 0 then 1 else sum(conversions_total_h) end)+sum(conversions_rejected))*100 as "Rejected_Rate"
+from (
+	SELECT a.financial_date,
+	sum(a.amount_revenue) as amount_revenue,
+	sum(a.amount_revenue_h) as amount_revenue_h,
+	sum(a.amount_revenue_pending) as amount_revenue_pending,
+	sum(a.amount_revenue_approved) as amount_revenue_approved,
+	sum(a.amount_revenue_rejected) as amount_revenue_rejected,
+	sum(a.amount_spent) as amount_spent,
+	sum(a.amount_spent_plus_fee) as amount_spent_plus_fee,
+	sum(a.amount_conversion) as "amount_conversion",
+	sum(a.conversions_total_h) as conversions_total_h,
+	sum(a.conversions_pending) as conversions_pending,
+	sum(a.conversions_approved) as conversions_approved,
+	sum(a.conversions_rejected) as conversions_rejected,
+	sum(a.conversions_rejected)/((case when sum(a.conversions_total_h) = 0 then 1 else sum(a.conversions_total_h) end)+sum(a.conversions_rejected))*100 as "Rejected_Rate",
+	(sum(a.amount_revenue)-sum(a.amount_spent_plus_fee))/(case when sum(a.amount_spent_plus_fee) = 0 then 1 else sum(a.amount_spent_plus_fee) end)*100 as "Tot_Roi",
+	(sum(a.amount_revenue_approved)-sum(a.amount_spent_plus_fee))/(case when sum(a.amount_spent_plus_fee) = 0 then 1 else sum(a.amount_spent_plus_fee) end)*100 as "Appr_Roi",
+	case when c1.network_name_short != 'WL' then sum(a.amount_revenue)-sum(a.amount_spent_plus_fee) else (sum(a.amount_revenue)-sum(a.amount_spent_plus_fee))/2 end as profit, 
+	case when c1.network_name_short != 'WL' then sum(a.amount_revenue_h)-sum(a.amount_spent_plus_fee) else (sum(a.amount_revenue_h)-sum(a.amount_spent_plus_fee))/2 end as profit_h,
+	case when c1.network_name_short != 'WL' then sum(a.amount_revenue_approved)-sum(a.amount_spent_plus_fee) else (sum(a.amount_revenue_approved)-sum(a.amount_spent_plus_fee))/2 end as net_profit,
+	case when c1.network_name_short != 'WL' then sum(a.amount_revenue_approved_h)-sum(a.amount_spent_plus_fee) else (sum(a.amount_revenue_approved_h)-sum(a.amount_spent_plus_fee))/2 end as net_profit_h
 from public.user_financial a
 INNER JOIN public.user_network b ON (a.fk_user_id = b.fk_user_id and a.fk_user_network_id = b.user_network_id)
+INNER JOIN public.network c1 on (c1.network_id = b.fk_network_id)
 INNER JOIN public.traffic_source c ON (b.fk_ts_id = c.ts_id)
 INNER JOIN public.user_profiles e ON (e.fk_user_id = a. fk_user_id)
 where 1=1
@@ -17,5 +39,6 @@ and ({{SelectTSFront.selectedOptionValues.length == 0}} OR text(c.ts_id) IN ({{"
 and a.financial_date >= to_date('{{moment(DateFrom.selectedDate).format('YYYY-DD-MM')}}','YYYY-DD-MM')
 and a.financial_date <= to_date('{{moment(DateTo.selectedDate).format('YYYY-DD-MM')}}','YYYY-DD-MM')
 and ({{MSUserNet.selectedOptionValues.length == 0}} OR text(a.fk_user_network_id) IN ({{"'" + MSUserNet.selectedOptionValues.join("', '") + "'"}}))
-group by a.financial_date
-order by a.financial_date desc
+group by a.financial_date,c1.network_name_short) z
+group by financial_date
+order by financial_date desc

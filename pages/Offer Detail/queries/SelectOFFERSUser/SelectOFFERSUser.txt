@@ -3,7 +3,7 @@ SELECT
 	c.offer_id,
 	sum(a.amount_spent_plus_fee) spent,
 	sum(a.amount_revenue) revenue,
-	sum(a.amount_revenue)-sum(a.amount_spent_plus_fee) profit,
+	case when f.network_name_short != 'WL' then sum(a.amount_revenue)-sum(a.amount_spent_plus_fee) else (sum(a.amount_revenue)-sum(a.amount_spent_plus_fee))/2 end as profit, 
 	case 
 		when (((sum(a.amount_revenue) - sum(a.amount_spent_plus_fee))/case when sum(a.amount_spent_plus_fee) = 0 then 1 else sum(a.amount_spent_plus_fee) end) *100) <0 then '#fef2f2'
 		when (((sum(a.amount_revenue) - sum(a.amount_spent_plus_fee))/case when sum(a.amount_spent_plus_fee) = 0 then 1 else sum(a.amount_spent_plus_fee) end) *100) <30 then '#fefce8'

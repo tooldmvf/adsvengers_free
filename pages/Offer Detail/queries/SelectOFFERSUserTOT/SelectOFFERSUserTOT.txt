@@ -1,8 +1,20 @@
+select offer_name
+,sum(spent) as spent
+,sum(revenue) as revenue
+,sum(profit) as profit
+,sum(convs) as convs
+,((sum(profit))/case when sum(spent) = 0 then 1 else sum(spent) end)*100 as ROI
+,sum(spent)/(case when sum(convs) =0 then 1 else sum(convs) end) as "CPA"
+,sum(revenue)/(case when sum(convs)= 0 then 1 else sum(convs) end) "Payout"
+,case when ((sum(profit))/case when sum(spent) = 0 then 1 else sum(spent) end)*100 <0 then '#fef2f2'
+	when ((sum(profit))/case when sum(spent) = 0 then 1 else sum(spent) end)*100 <30 then '#fefce8'
+	else '#f0fdf4' end as "row_color" 
+from (
 SELECT 	
 	'Total' as offer_name,
 	sum(a.amount_spent_plus_fee) spent,
 	sum(a.amount_revenue) revenue,
-	sum(a.amount_revenue)-sum(a.amount_spent_plus_fee) profit,
+	case when f.network_name_short != 'WL' then sum(a.amount_revenue)-sum(a.amount_spent_plus_fee) else (sum(a.amount_revenue)-sum(a.amount_spent_plus_fee))/2 end as profit, 
 	case 
 		when (((sum(a.amount_revenue) - sum(a.amount_spent_plus_fee))/case when sum(a.amount_spent_plus_fee) = 0 then 1 else sum(a.amount_spent_plus_fee) end) *100) <0 then '#fef2f2'
 		when (((sum(a.amount_revenue) - sum(a.amount_spent_plus_fee))/case when sum(a.amount_spent_plus_fee) = 0 then 1 else sum(a.amount_spent_plus_fee) end) *100) <30 then '#fefce8'
@@ -27,5 +39,6 @@ and a.financial_date <= to_date('{{moment(DateTo.selectedDate).format('YYYY-DD-M
 and ({{MSNetwork.selectedOptionValues.length == 0}} OR text(b.fk_network_id) IN ({{"'" + MSNetwork.selectedOptionValues.join("', '") + "'"}}))
 and ({{MSTrSource.selectedOptionValues.length == 0}} OR text(e.ts_id) IN ({{"'" + MSTrSource.selectedOptionValues.join("', '") + "'"}}))
 and ({{MSCategory.selectedOptionValues.length == 0}} OR text(d.off_cat_id) IN ({{"'" + MSCategory.selectedOptionValues.join("', '") + "'"}}))
-having (sum(a.amount_revenue)>0 OR sum(a.amount_spent_plus_fee)>0)
-
+group by f.network_name_short
+having (sum(a.amount_revenue)>0 OR sum(a.amount_spent_plus_fee)>0)) z
+group by offer_name

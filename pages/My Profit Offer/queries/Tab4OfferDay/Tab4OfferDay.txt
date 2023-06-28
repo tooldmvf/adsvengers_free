@@ -16,8 +16,8 @@ select financial_date, count(distinct fk_offer_id) as "act_off", ts_name
 ,sum(net_profit)/(case when sum(amount_spent_plus_fee) = 0 then 1 else sum(amount_spent_plus_fee) end)*100 as "Appr_Roi"
 ,sum(profit) as profit
 ,sum(profit_h) as profit_h
-,sum(profit) as profit_appr
-,sum(profit_h) as profit_appr_h
+,sum(net_profit) as net_profit
+,sum(net_profit_h) as net_profit_h
 from (
 SELECT a.financial_date, a.fk_offer_id, c.ts_name,
 	sum(a.amount_revenue) as amount_revenue,

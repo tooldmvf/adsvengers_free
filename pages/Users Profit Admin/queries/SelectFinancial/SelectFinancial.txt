@@ -1,19 +1,34 @@
+select mb as "User_name"
+,sum(tot_revenue) as tot_revenue
+,sum(amount_revenue_pending) as amount_revenue_pending
+,sum(amount_revenue_approved) as amount_revenue_approved
+,sum(amount_revenue_rejected) as amount_revenue_rejected
+,sum(spent) as spent
+,sum(spent_wfees) as spent_wfees
+,sum(profit) as profit
+,sum(net_profit) as net_profit
+,sum(tot_conversions) as tot_conversions
+,sum(conversions_pending) as conversions_pending
+,sum(conversions_approved) as conversions_approved
+,sum(conversions_rejected) as conversions_rejected
+from (
 SELECT
-	e.last_name||' '||substring(e.first_name,1,1)||'.' as "User_name",
+	e.last_name||' '||substring(e.first_name,1,1)||'.' as mb,
 	sum(a.amount_revenue) as tot_revenue, 
   sum(a.amount_revenue_pending) as amount_revenue_pending, 
   sum(a.amount_revenue_approved) as amount_revenue_approved, 
   sum(a.amount_revenue_rejected) as amount_revenue_rejected, 
   sum(a.amount_spent) as spent, 
   sum(a.amount_spent_plus_fee) as spent_wfees, 
-  sum(a.amount_revenue)- sum(amount_spent) as profit, 
-  sum(a.amount_revenue_approved)- sum(amount_spent_plus_fee) as net_profit, 
+  case when f.network_name_short != 'WL' then sum(a.amount_revenue)-sum(a.amount_spent_plus_fee) else (sum(a.amount_revenue)-sum(a.amount_spent_plus_fee))/2 end as profit,
+  case when f.network_name_short != 'WL' then sum(a.amount_revenue_approved)-sum(a.amount_spent_plus_fee) else (sum(a.amount_revenue_approved)-sum(a.amount_spent_plus_fee))/2 end as net_profit,
   sum(a.amount_conversion) as tot_conversions,
   sum(a.conversions_pending) as conversions_pending,
   sum(a.conversions_approved) as conversions_approved,
   sum(a.conversions_rejected) as conversions_rejected
 from public.user_financial a
 INNER JOIN public.user_network b ON (a.fk_user_id = b.fk_user_id and a.fk_user_network_id = b.user_network_id)
+inner join public.network f on (f.network_id = b.fk_network_id)
 INNER JOIN public.offer c ON (b.user_network_id = c.fk_user_network_id and a.fk_offer_id = c.offer_id)
 INNER JOIN public.offer_category d ON (d.off_cat_id = c.fk_off_cat_id)
 INNER JOIN public.user_profiles e ON (e.fk_user_id = a.fk_user_id)
@@ -23,4 +38,5 @@ and ({{SelectTSFront.selectedOptionValues.length == 0}} OR text(b.fk_ts_id) IN (
 and a.financial_date >= to_date('{{moment(DateFrom.selectedDate).format('YYYY-DD-MM')}}','YYYY-DD-MM')
 and a.financial_date <= to_date('{{moment(DateTo.selectedDate).format('YYYY-DD-MM')}}','YYYY-DD-MM')
 and ({{MSUserNet.selectedOptionValues.length == 0}} OR text(a.fk_user_network_id) IN ({{"'" + MSUserNet.selectedOptionValues.join("', '") + "'"}}))
-group by e.last_name||' '||substring(e.first_name,1,1)||'.'
+group by e.last_name||' '||substring(e.first_name,1,1)||'.', f.network_name_short) z
+group by mb

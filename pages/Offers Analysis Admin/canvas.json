@@ -2100,7 +2100,7 @@
                                       "leftColumn": 43,
                                       "shouldTruncate": false,
                                       "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-                                      "text": "{{Utils2.myCurrency(currentItem.amount_revenue-currentItem.amount_spent_plus_fee)}}",
+                                      "text": "{{Utils2.myCurrency(currentItem.tot_profit)}}",
                                       "key": "fak4xyb0hu",
                                       "isDeprecated": false,
                                       "rightColumn": 48,
@@ -3249,7 +3249,7 @@
                               ],
                               "shouldTruncate": false,
                               "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-                              "text": "{{Utils2.myCurrency(OfferDetail.data[0].amount_revenue-OfferDetail.data[0].amount_spent_plus_fee)}}",
+                              "text": "{{Utils2.myCurrency(OfferDetail.data[0].tot_profit)}}",
                               "key": "4m0sd6eaag",
                               "isDeprecated": false,
                               "rightColumn": 64,
@@ -3602,7 +3602,7 @@
                         },
                         "mixgdkr5hg": {
                           "seriesName": "Profit",
-                          "data": "{{OfferDetailTS.data.map( (obj) =>{ return  {'x': obj.ts_name, 'y': (obj.amount_revenue-obj.amount_spent_plus_fee) } })}}",
+                          "data": "{{OfferDetailTS.data.map( (obj) =>{ return  {'x': obj.ts_name, 'y': (obj.tot_profit) } })}}",
                           "color": "#60a5fa"
                         }
                       },
@@ -4455,7 +4455,7 @@
                                       "leftColumn": 41,
                                       "shouldTruncate": false,
                                       "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-                                      "text": "{{Utils2.myCurrency(currentItem.amount_revenue-currentItem.amount_spent_plus_fee)}}",
+                                      "text": "{{Utils2.myCurrency(currentItem.tot_profit)}}",
                                       "key": "fak4xyb0hu",
                                       "isDeprecated": false,
                                       "rightColumn": 48,
@@ -5403,10 +5403,10 @@
                 "moment(DateFrom4.selectedDate).format('YYYY-DD-MM')",
                 "SelectTSFront.selectedOptionValues.length == 0",
                 "List2.triggeredItem.offer_id",
-                "Input1.text",
                 "!SelectUserFBPage.selectedOptionValue",
-                "\"'\" + SelectTSFront.selectedOptionValues.join(\"', '\") + \"'\"",
-                "SelectUserFBPage.selectedOptionValue"
+                "Input1.text",
+                "SelectUserFBPage.selectedOptionValue",
+                "\"'\" + SelectTSFront.selectedOptionValues.join(\"', '\") + \"'\""
               ],
               "timeoutInMillisecond": 10000
             }

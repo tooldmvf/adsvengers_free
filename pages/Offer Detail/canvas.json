@@ -5555,7 +5555,7 @@
                           "label": "Revenue (€)",
                           "isSaveVisible": true,
                           "isDiscardVisible": true,
-                          "computedValue": "{{TableOffers.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"revenue\"].toFixed(2)))}}",
+                          "computedValue": "{{TableOffers.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"revenue\"].toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2})))}}",
                           "sticky": "",
                           "validation": {},
                           "cellBackground": "{{TableOffers.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"row_color\"]))}}"
@@ -5584,7 +5584,7 @@
                           "label": "Spent  (€)",
                           "isSaveVisible": true,
                           "isDiscardVisible": true,
-                          "computedValue": "{{TableOffers.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"spent\"].toFixed(2)))}}",
+                          "computedValue": "{{TableOffers.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"spent\"].toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2})))}}",
                           "sticky": "",
                           "validation": {},
                           "cellBackground": "{{TableOffers.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"row_color\"]))}}"
@@ -5642,7 +5642,7 @@
                           "label": "Profit (€)",
                           "isSaveVisible": true,
                           "isDiscardVisible": true,
-                          "computedValue": "{{TableOffers.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"profit\"].toFixed(2)))}}",
+                          "computedValue": "{{TableOffers.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"profit\"].toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2})))}}",
                           "sticky": "",
                           "validation": {},
                           "cellBackground": "{{TableOffers.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"row_color\"]))}}"
@@ -5702,7 +5702,7 @@
                           "label": "CPA (€)",
                           "isSaveVisible": true,
                           "isDiscardVisible": true,
-                          "computedValue": "{{TableOffers.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"CPA\"].toFixed(2)))}}",
+                          "computedValue": "{{TableOffers.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"CPA\"].toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2})))}}",
                           "sticky": "",
                           "validation": {},
                           "cellBackground": "{{TableOffers.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"row_color\"]))}}"
@@ -5732,7 +5732,7 @@
                           "label": "Payout (€)",
                           "isSaveVisible": true,
                           "isDiscardVisible": true,
-                          "computedValue": "{{TableOffers.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Payout\"].toFixed(2)))}}",
+                          "computedValue": "{{TableOffers.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Payout\"].toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2})))}}",
                           "sticky": "",
                           "validation": {},
                           "cellBackground": "{{TableOffers.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"row_color\"]))}}"
@@ -5762,7 +5762,7 @@
                           "label": "ROI (%)",
                           "isSaveVisible": true,
                           "isDiscardVisible": true,
-                          "computedValue": "{{TableOffers.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"roi\"].toFixed(1)))}}",
+                          "computedValue": "{{TableOffers.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"roi\"].toLocaleString(undefined, {minimumFractionDigits: 1, maximumFractionDigits: 1})))}}",
                           "sticky": "",
                           "validation": {},
                           "cellBackground": "{{TableOffers.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"row_color\"]))}}"
@@ -6067,7 +6067,7 @@
                           "label": "Revenue (€)",
                           "isSaveVisible": true,
                           "isDiscardVisible": true,
-                          "computedValue": "{{TableOffersCopy.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"revenue\"].toFixed(2)))}}",
+                          "computedValue": "{{TableOffersCopy.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"revenue\"].toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2})))}}",
                           "sticky": "",
                           "validation": {},
                           "cellBackground": "{{TableOffersCopy.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"row_color\"]))}}"
@@ -6096,7 +6096,7 @@
                           "label": "Spent  (€)",
                           "isSaveVisible": true,
                           "isDiscardVisible": true,
-                          "computedValue": "{{TableOffersCopy.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"spent\"].toFixed(2)))}}",
+                          "computedValue": "{{TableOffersCopy.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"spent\"].toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2})))}}",
                           "sticky": "",
                           "validation": {},
                           "cellBackground": "{{TableOffersCopy.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"row_color\"]))}}"
@@ -6154,7 +6154,7 @@
                           "label": "Profit (€)",
                           "isSaveVisible": true,
                           "isDiscardVisible": true,
-                          "computedValue": "{{TableOffersCopy.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"profit\"].toFixed(2)))}}",
+                          "computedValue": "{{TableOffersCopy.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"profit\"].toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2})))}}",
                           "sticky": "",
                           "validation": {},
                           "cellBackground": "{{TableOffersCopy.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"row_color\"]))}}"
@@ -6214,7 +6214,7 @@
                           "label": "CPA (€)",
                           "isSaveVisible": true,
                           "isDiscardVisible": true,
-                          "computedValue": "{{TableOffersCopy.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"CPA\"].toFixed(2)))}}",
+                          "computedValue": "{{TableOffersCopy.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"CPA\"].toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2})))}}",
                           "sticky": "",
                           "validation": {},
                           "cellBackground": "{{TableOffersCopy.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"row_color\"]))}}"
@@ -6244,7 +6244,7 @@
                           "label": "Payout (€)",
                           "isSaveVisible": true,
                           "isDiscardVisible": true,
-                          "computedValue": "{{TableOffersCopy.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Payout\"].toFixed(2)))}}",
+                          "computedValue": "{{TableOffersCopy.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Payout\"].toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2})))}}",
                           "sticky": "",
                           "validation": {},
                           "cellBackground": "{{TableOffersCopy.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"row_color\"]))}}"
@@ -6304,7 +6304,7 @@
                           "label": "ROI (%)",
                           "isSaveVisible": true,
                           "isDiscardVisible": true,
-                          "computedValue": "{{TableOffersCopy.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"roi\"].toFixed(1)))}}",
+                          "computedValue": "{{TableOffersCopy.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"roi\"].toLocaleString(undefined, {minimumFractionDigits: 1, maximumFractionDigits: 1})))}}",
                           "sticky": "",
                           "validation": {},
                           "cellBackground": "{{TableOffersCopy.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"row_color\"]))}}"
@@ -6656,13 +6656,13 @@
               "jsonPathKeys": [
                 "!Select1.selectedOptionValue ? '3 desc' : Select1.selectedOptionValue",
                 "MSTrSource.selectedOptionValues.length == 0",
-                "\"'\" + SelectUser.selectedOptionValue + \"'\"",
                 "!SelectUser.selectedOptionValue",
+                "\"'\" + SelectUser.selectedOptionValue + \"'\"",
                 "moment(DateTo.selectedDate).format('YYYY-DD-MM')",
                 "MSCategory.selectedOptionValues.length == 0",
+                "MSNetwork.selectedOptionValues.length == 0",
                 "moment(DateFrom.selectedDate).format('YYYY-DD-MM')",
                 "\"'\" + MSTrSource.selectedOptionValues.join(\"', '\") + \"'\"",
-                "MSNetwork.selectedOptionValues.length == 0",
                 "\"'\" + MSNetwork.selectedOptionValues.join(\"', '\") + \"'\"",
                 "\"'\" + MSCategory.selectedOptionValues.join(\"', '\") + \"'\""
               ],
@@ -6707,14 +6707,14 @@
               "pluginType": "DB",
               "jsonPathKeys": [
                 "MSTrSource.selectedOptionValues.length == 0",
-                "!SelectUser.selectedOptionValue",
                 "\"'\" + SelectUser.selectedOptionValue + \"'\"",
+                "!SelectUser.selectedOptionValue",
                 "moment(DateTo.selectedDate).format('YYYY-DD-MM')",
                 "TableOffersCopy.searchText",
                 "MSCategory.selectedOptionValues.length == 0",
-                "moment(DateFrom.selectedDate).format('YYYY-DD-MM')",
-                "\"'\" + MSTrSource.selectedOptionValues.join(\"', '\") + \"'\"",
                 "MSNetwork.selectedOptionValues.length == 0",
+                "\"'\" + MSTrSource.selectedOptionValues.join(\"', '\") + \"'\"",
+                "moment(DateFrom.selectedDate).format('YYYY-DD-MM')",
                 "\"'\" + MSNetwork.selectedOptionValues.join(\"', '\") + \"'\"",
                 "\"'\" + MSCategory.selectedOptionValues.join(\"', '\") + \"'\""
               ],

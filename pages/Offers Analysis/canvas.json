@@ -1616,7 +1616,7 @@
                       "iconSVG": "/static/media/icon.9925ee17dee37bf1ba7374412563a8a7.svg",
                       "topRow": 14,
                       "bottomRow": 82,
-                      "pageSize": 6,
+                      "pageSize": 10,
                       "parentRowSpace": 10,
                       "type": "LIST_WIDGET_V2",
                       "itemSpacing": 8,

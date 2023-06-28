@@ -9,7 +9,9 @@ export default {
 	},
 	
 	onLoadPage: async () => {
-		await SelectFinancial.run();
+		await GetUserAccount.run()
+		await Tab4Offer.run();
+		await TotalLine.run();
 	},
 	
 	chart : () => {

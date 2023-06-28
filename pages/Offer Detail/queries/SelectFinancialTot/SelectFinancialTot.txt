@@ -27,9 +27,9 @@ SELECT
   sum(a.amount_spent_plus_fee)/(case when sum(a.conversions_approved)= 0 then 1 else sum(a.conversions_approved) end) "ApprCPA",
   sum(a.amount_spent_plus_fee)/(case when sum(a.conversions_total_h)= 0 then 1 else sum(a.conversions_total_h) end) "CPA_h",
 	cast(sum(a.conversions_rejected) as decimal(7,2))/(case when sum(a.amount_conversion) = 0 then 1 else (cast(sum(a.amount_conversion) as decimal(7,2)) + cast(sum(a.conversions_rejected) as decimal(7,2))) end)*100 as "Rejected_Rate",
-	sum(a.amount_revenue) - sum(a.amount_spent_plus_fee) as "Tot_Profit",
-	sum(a.amount_revenue_h) - sum(a.amount_spent_plus_fee) as "Tot_Profit_h",
-	sum(a.amount_revenue_approved)- sum(a.amount_spent_plus_fee) as "Appr_Profit",
+	case when f.network_name_short != 'WL' then sum(a.amount_revenue)-sum(a.amount_spent_plus_fee) else (sum(a.amount_revenue)-sum(a.amount_spent_plus_fee))/2 end as "Tot_Profit", 
+	case when f.network_name_short != 'WL' then sum(a.amount_revenue_h)-sum(a.amount_spent_plus_fee) else (sum(a.amount_revenue_h)-sum(a.amount_spent_plus_fee))/2 end as "Tot_Profit_h", 
+	case when f.network_name_short != 'WL' then sum(a.amount_revenue_approved)-sum(a.amount_spent_plus_fee) else (sum(a.amount_revenue_approved)-sum(a.amount_spent_plus_fee))/2 end as "Appr_Profit", 
 	((sum(a.amount_revenue) - sum(a.amount_spent_plus_fee))/case when sum(a.amount_spent_plus_fee) = 0 then 1 else sum(a.amount_spent_plus_fee) end)*100 as "Tot_ROI",
 	((sum(a.amount_revenue_h) - sum(a.amount_spent_plus_fee))/case when sum(a.amount_spent_plus_fee) = 0 then 1 else sum(a.amount_spent_plus_fee) end)*100 as "Tot_ROI_h",
 	((sum(a.amount_revenue_approved) - sum(a.amount_spent_plus_fee))/case when sum(a.amount_spent_plus_fee) = 0 then 1 else sum(a.amount_spent_plus_fee) end)*100 as "Appr_ROI"
@@ -54,5 +54,6 @@ group by
 	c.offer_name,
 	a.fk_offer_id,
 	b.fk_network_id,
-	f.network_name
+	f.network_name,
+	f.network_name_short
 order by f.network_name,c.offer_name

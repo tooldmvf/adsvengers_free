@@ -5190,8 +5190,8 @@
               "confirmBeforeExecute": false,
               "pluginType": "DB",
               "jsonPathKeys": [
-                "SelectTSFront.selectedOptionValues.length == 0",
                 "appsmith.store.myUser",
+                "SelectTSFront.selectedOptionValues.length == 0",
                 "\"'\" + MultiSelectUsers.selectedOptionValues.join(\"', '\") + \"'\"",
                 "moment(DateTo.selectedDate).format('YYYY-DD-MM')",
                 "moment(DateFrom.selectedDate).format('YYYY-DD-MM')",
