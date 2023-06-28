@@ -1,0 +1,30 @@
+select 
+ sum(revenue) as revenue
+,sum(spent) as spent
+,sum(profit) as profit
+,(sum(profit)/case when sum(spent) = 0 then 1 else sum(spent) end)*100 as "Tot_ROI"
+,case when ((sum(profit))/case when sum(spent) = 0 then 1 else sum(spent) end)*100 <0 then '#fef2f2'
+	when ((sum(profit))/case when sum(spent) = 0 then 1 else sum(spent) end)*100 <30 then '#fefce8'
+	else '#f0fdf4' end as "row_color" 
+from (
+SELECT  	
+	a.financial_date,
+	sum(a.amount_revenue) revenue,
+	sum(a.amount_spent_plus_fee) spent,
+	case when f.network_name_short != 'WL' then sum(a.amount_revenue)-sum(a.amount_spent_plus_fee) else (sum(a.amount_revenue)-sum(a.amount_spent_plus_fee))/2 end as profit
+from public.user_financial a
+INNER JOIN public.user_network b ON (a.fk_user_id = b.fk_user_id and a.fk_user_network_id = b.user_network_id)
+INNER JOIN public.offer c ON (b.user_network_id = c.fk_user_network_id and a.fk_offer_id = c.offer_id)
+INNER JOIN public.offer_category d ON (d.off_cat_id = c.fk_off_cat_id)
+inner join public.traffic_source e on (e.ts_id = b.fk_ts_id)
+inner join public.network f on (f.network_id = b.fk_network_id)
+inner join public.user_profiles g on (g.fk_user_id = a.fk_user_id)
+where 1 = 1
+and a.fk_user_id = '{{TableUsers.triggeredRow.fk_user_id}}' 
+and a.financial_date >= '{{moment().startOf('month').add('hours',2)}}'
+and a.financial_date <= '{{moment().endOf('month').add('hours',2)}}'
+and ({{MSNetwork.selectedOptionValues.length == 0}} OR text(b.fk_network_id) IN ({{"'" + MSNetwork.selectedOptionValues.join("', '") + "'"}}))
+and ({{MSTrSource.selectedOptionValues.length == 0}} OR text(e.ts_id) IN ({{"'" + MSTrSource.selectedOptionValues.join("', '") + "'"}}))
+group by a.financial_date,f.network_name_short
+	having (sum(a.amount_revenue)>0 OR sum(a.amount_spent_plus_fee)>0)
+) z
