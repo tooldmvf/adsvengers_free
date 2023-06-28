@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 950,
+          "bottomRow": 930,
           "containerStyle": "none",
           "snapRows": 86,
           "parentRowSpace": 1,
@@ -913,7 +913,7 @@
                 "label"
               ],
               "topRow": 89,
-              "bottomRow": 95,
+              "bottomRow": 93,
               "parentRowSpace": 10,
               "type": "TEXT_WIDGET",
               "hideCard": false,
@@ -961,7 +961,7 @@
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "mobileLeftColumn": 0,
               "maxDynamicHeight": 9000,
-              "originalBottomRow": 93,
+              "originalBottomRow": 95,
               "fontSize": "0.875rem",
               "minDynamicHeight": 4
             },
@@ -1430,7 +1430,7 @@
                                   "enableSort": true,
                                   "isVisible": true,
                                   "isDisabled": false,
-                                  "isCellEditable": "{{TableSpentBM.processedTableData.map((currentRow, currentIndex) => ( appsmith.store.role_level>100))}}",
+                                  "isCellEditable": "{{TableSpentBM.processedTableData.map((currentRow, currentIndex) => ( appsmith.store.role_level>500))}}",
                                   "isEditable": true,
                                   "isCellVisible": true,
                                   "isDerived": false,
@@ -1756,10 +1756,13 @@
                                         },
                                         {
                                           "key": "defaultText"
+                                        },
+                                        {
+                                          "key": "isDisabled"
                                         }
                                       ],
                                       "labelStyle": "BOLD",
-                                      "isDisabled": false,
+                                      "isDisabled": "{{appsmith.store.role_level<=500}}",
                                       "isRequired": false,
                                       "dynamicHeight": "AUTO_HEIGHT",
                                       "accentColor": "{{appsmith.theme.colors.primaryColor}}",
@@ -1772,6 +1775,11 @@
                                       "originalBottomRow": 82,
                                       "mobileBottomRow": 85,
                                       "widgetName": "Ai20GRevInput",
+                                      "dynamicPropertyPathList": [
+                                        {
+                                          "key": "isDisabled"
+                                        }
+                                      ],
                                       "displayName": "Currency Input",
                                       "searchTags": [
                                         "amount",
@@ -2479,10 +2487,13 @@
                                         },
                                         {
                                           "key": "defaultText"
+                                        },
+                                        {
+                                          "key": "isDisabled"
                                         }
                                       ],
                                       "labelStyle": "BOLD",
-                                      "isDisabled": false,
+                                      "isDisabled": "{{appsmith.store.role_level<=500}}",
                                       "isRequired": false,
                                       "dynamicHeight": "AUTO_HEIGHT",
                                       "accentColor": "{{appsmith.theme.colors.primaryColor}}",
@@ -2495,6 +2506,11 @@
                                       "originalBottomRow": 82,
                                       "mobileBottomRow": 85,
                                       "widgetName": "OtherRevInput",
+                                      "dynamicPropertyPathList": [
+                                        {
+                                          "key": "isDisabled"
+                                        }
+                                      ],
                                       "displayName": "Currency Input",
                                       "searchTags": [
                                         "amount",
@@ -2554,10 +2570,13 @@
                                         },
                                         {
                                           "key": "defaultText"
+                                        },
+                                        {
+                                          "key": "isDisabled"
                                         }
                                       ],
                                       "labelStyle": "BOLD",
-                                      "isDisabled": false,
+                                      "isDisabled": "{{appsmith.store.role_level<=500}}",
                                       "isRequired": false,
                                       "dynamicHeight": "AUTO_HEIGHT",
                                       "accentColor": "{{appsmith.theme.colors.primaryColor}}",
@@ -2570,6 +2589,11 @@
                                       "originalBottomRow": 82,
                                       "mobileBottomRow": 85,
                                       "widgetName": "OtherSpentInput",
+                                      "dynamicPropertyPathList": [
+                                        {
+                                          "key": "isDisabled"
+                                        }
+                                      ],
                                       "displayName": "Currency Input",
                                       "searchTags": [
                                         "amount",
@@ -3315,7 +3339,7 @@
                                   "enableSort": true,
                                   "isVisible": true,
                                   "isDisabled": false,
-                                  "isCellEditable": "{{TableRevModCopy.processedTableData.map((currentRow, currentIndex) => ( appsmith.store.role_level>100))}}",
+                                  "isCellEditable": "{{TableRevModCopy.processedTableData.map((currentRow, currentIndex) => ( appsmith.store.role_level>=500))}}",
                                   "isEditable": true,
                                   "isCellVisible": true,
                                   "isDerived": false,
@@ -4789,7 +4813,7 @@
                                   "key": "isDisabled"
                                 }
                               ],
-                              "isDisabled": "{{appsmith.store.role_level<500}}",
+                              "isDisabled": "{{appsmith.store.role_level<=500}}",
                               "onChange": "{{Save_Data_Comm_Fee.run()}}",
                               "accentColor": "#22c55e",
                               "isVisible": true,
@@ -5164,7 +5188,7 @@
                                 }
                               ],
                               "text": "Save Monthly Data",
-                              "isDisabled": "{{appsmith.store.role_level<1000}}",
+                              "isDisabled": "{{appsmith.store.role_level<=500}}",
                               "key": "3xi9orpbxd",
                               "isDeprecated": false,
                               "rightColumn": 63,
