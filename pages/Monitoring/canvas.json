@@ -3587,9 +3587,6 @@
                               ],
                               "dynamicPropertyPathList": [
                                 {
-                                  "key": "onRowSelected"
-                                },
-                                {
                                   "key": "primaryColumns.spent.cellBackground"
                                 },
                                 {
@@ -3918,12 +3915,12 @@
                                   "boxShadow": "{{TableUsers.processedTableData.map((currentRow, currentIndex) => ( \"none\"))}}",
                                   "customAlias": "",
                                   "iconName": "calendar",
-                                  "onClick": "{{SelectDays.run();\nSelectDaysTOT.run().then(() => {\n  showModal('DaysUsersModal');\n});}}",
+                                  "onClick": "{{SelectDays.run();\nSelectDaysTOT.run().then(() => {\n  showModal('DaysUsersModal');\n});\nWhereRunnedUser.run()}}",
                                   "buttonVariant": "TERTIARY",
                                   "cellBackground": "{{TableUsers.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"row_color\"]))}}"
                                 }
                               },
-                              "onRowSelected": "{{WhereRunnedUser.run();}}",
+                              "onRowSelected": "\t",
                               "key": "4sy675irq3",
                               "canFreezeColumn": true,
                               "isDeprecated": false,
