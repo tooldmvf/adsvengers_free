@@ -1,4 +1,9 @@
-Select count(*)
+Select ts_name
+,sum(conta) as conta
+,sum(spent) as spent
+,sum(spent_wfees) as spent_wfees
+from (
+Select count(*) as conta
 ,e.ts_name
 ,sum(a.amount_spent) as spent 
 ,sum(a.amount_spent)+ (sum(a.amount_spent)/100 * a.spent_rate_fees) as spent_wfees
@@ -12,4 +17,5 @@ and ({{!SelectUser.selectedOptionValue}} OR (text(a.fk_user_id) IN ({{"'" + Sele
 and a.financial_date >= to_date('{{moment(DateFrom.selectedDate).format('YYYY-DD-MM')}}','YYYY-DD-MM')
 and a.financial_date <= to_date('{{moment(DateTo.selectedDate).format('YYYY-DD-MM')}}','YYYY-DD-MM')
 and ({{SelectTSFront.selectedOptionValues.length == 0}} OR text(d.fk_ts_id) IN ({{"'" + SelectTSFront.selectedOptionValues.join("', '") + "'"}}))
-group by a.spent_rate_fees, e.ts_name
+group by a.spent_rate_fees, e.ts_name) z
+group by ts_name

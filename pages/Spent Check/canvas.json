@@ -660,12 +660,6 @@
                           "key": "menuItems.menuItemluz74ga2mq.onClick"
                         },
                         {
-                          "key": "menuItems.menuItemyf8q144z6c.onClick"
-                        },
-                        {
-                          "key": "menuItems.menuItem0wpqlyd4zd.onClick"
-                        },
-                        {
                           "key": "menuItems.menuItemsodth1rp2m.onClick"
                         }
                       ],
@@ -737,27 +731,9 @@
                           "isVisible": true,
                           "onClick": "{{navigateTo('Slack Management Admin', {}, 'SAME_WINDOW')}}"
                         },
-                        "menuItemyf8q144z6c": {
-                          "id": "menuItemyf8q144z6c",
-                          "index": 5,
-                          "label": "User's Commissions",
-                          "widgetId": "py6ef50cpl",
-                          "isDisabled": false,
-                          "isVisible": true,
-                          "onClick": "{{navigateTo('Commissions Admin', {}, 'SAME_WINDOW');}}"
-                        },
-                        "menuItem0wpqlyd4zd": {
-                          "id": "menuItem0wpqlyd4zd",
-                          "index": 6,
-                          "label": "Accounting",
-                          "widgetId": "b5t5xp18qg",
-                          "isDisabled": false,
-                          "isVisible": true,
-                          "onClick": "{{navigateTo('Accounting', {}, 'SAME_WINDOW');}}"
-                        },
                         "menuItemsodth1rp2m": {
                           "id": "menuItemsodth1rp2m",
-                          "index": 7,
+                          "index": 5,
                           "label": "User Monthly Trend",
                           "widgetId": "ohvtlneqse",
                           "isDisabled": false,
@@ -1225,7 +1201,7 @@
                       "delimiter": ",",
                       "defaultSelectedRowIndex": 0,
                       "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-                      "isVisibleFilters": true,
+                      "isVisibleFilters": false,
                       "isVisible": true,
                       "enableClientSideSearch": true,
                       "version": 1,
@@ -1255,7 +1231,7 @@
                         }
                       },
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                      "columnUpdatedAt": 1680871857540,
+                      "columnUpdatedAt": 1687980200096,
                       "originalBottomRow": 80,
                       "primaryColumnId": "user",
                       "defaultSelectedRowIndices": [
@@ -1322,10 +1298,10 @@
                           "isEditable": false,
                           "isCellVisible": true,
                           "isDerived": false,
-                          "label": "Spent",
+                          "label": "Spent €",
                           "isSaveVisible": true,
                           "isDiscardVisible": true,
-                          "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( Utils2.myCurrency( currentRow[\"spent\"])))}}",
+                          "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"spent\"].toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2})))}}",
                           "sticky": "",
                           "validation": {},
                           "cellBackground": ""
@@ -1409,10 +1385,10 @@
                           "isEditable": false,
                           "isCellVisible": true,
                           "isDerived": false,
-                          "label": "Spent +Fees",
+                          "label": "Spent +Fees €",
                           "isSaveVisible": true,
                           "isDiscardVisible": true,
-                          "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( Utils2.myCurrency(currentRow[\"spent_wfees\"])))}}",
+                          "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"spent_wfees\"].toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2})))}}",
                           "sticky": "",
                           "validation": {},
                           "cellBackground": ""
@@ -1547,7 +1523,7 @@
                         }
                       },
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                      "columnUpdatedAt": 1680600171633,
+                      "columnUpdatedAt": 1687980551921,
                       "originalBottomRow": 97,
                       "primaryColumnId": "user",
                       "defaultSelectedRowIndices": [
@@ -1557,9 +1533,9 @@
                       "defaultPageSize": 0,
                       "columnOrder": [
                         "ad_account_name",
-                        "bm_name",
                         "spent",
                         "spent_wfees",
+                        "bm_name",
                         "count",
                         "ad_account_id"
                       ],
@@ -1613,10 +1589,10 @@
                           "isEditable": false,
                           "isCellVisible": true,
                           "isDerived": false,
-                          "label": "Spent",
+                          "label": "Spent €",
                           "isSaveVisible": true,
                           "isDiscardVisible": true,
-                          "computedValue": "{{Table1Copy.processedTableData.map((currentRow, currentIndex) => ( Utils2.myCurrency( currentRow[\"spent\"])))}}",
+                          "computedValue": "{{Table1Copy.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"spent\"].toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2})))}}",
                           "sticky": "",
                           "validation": {},
                           "cellBackground": ""
@@ -1700,10 +1676,10 @@
                           "isEditable": false,
                           "isCellVisible": true,
                           "isDerived": false,
-                          "label": "Spent +Fees",
+                          "label": "Spent +Fees €",
                           "isSaveVisible": true,
                           "isDiscardVisible": true,
-                          "computedValue": "{{Table1Copy.processedTableData.map((currentRow, currentIndex) => ( Utils2.myCurrency(currentRow[\"spent_wfees\"])))}}",
+                          "computedValue": "{{Table1Copy.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"spent_wfees\"].toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2})))}}",
                           "sticky": "",
                           "validation": {},
                           "cellBackground": ""
@@ -1833,7 +1809,7 @@
                       "delimiter": ",",
                       "defaultSelectedRowIndex": 0,
                       "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-                      "isVisibleFilters": true,
+                      "isVisibleFilters": false,
                       "isVisible": "{{Table1.selectedRow.bm_id.length >0}}",
                       "enableClientSideSearch": true,
                       "version": 1,
@@ -1863,7 +1839,7 @@
                         }
                       },
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                      "columnUpdatedAt": 1685960234015,
+                      "columnUpdatedAt": 1687980589923,
                       "originalBottomRow": 97,
                       "primaryColumnId": "user",
                       "defaultSelectedRowIndices": [
@@ -1873,9 +1849,9 @@
                       "defaultPageSize": 0,
                       "columnOrder": [
                         "last_name",
-                        "bm_name",
                         "spent",
                         "spent_wfees",
+                        "bm_name",
                         "count"
                       ],
                       "dynamicPropertyPathList": [
@@ -1928,10 +1904,10 @@
                           "isEditable": false,
                           "isCellVisible": true,
                           "isDerived": false,
-                          "label": "Spent",
+                          "label": "Spent €",
                           "isSaveVisible": true,
                           "isDiscardVisible": true,
-                          "computedValue": "{{Table1CopyCopy.processedTableData.map((currentRow, currentIndex) => ( Utils2.myCurrency( currentRow[\"spent\"])))}}",
+                          "computedValue": "{{Table1CopyCopy.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"spent\"].toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2})))}}",
                           "sticky": "",
                           "validation": {},
                           "cellBackground": ""
@@ -2015,10 +1991,10 @@
                           "isEditable": false,
                           "isCellVisible": true,
                           "isDerived": false,
-                          "label": "Spent +Fees",
+                          "label": "Spent +Fees €",
                           "isSaveVisible": true,
                           "isDiscardVisible": true,
-                          "computedValue": "{{Table1CopyCopy.processedTableData.map((currentRow, currentIndex) => ( Utils2.myCurrency(currentRow[\"spent_wfees\"])))}}",
+                          "computedValue": "{{Table1CopyCopy.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"spent_wfees\"].toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2})))}}",
                           "sticky": "",
                           "validation": {},
                           "cellBackground": ""
@@ -2657,6 +2633,7 @@
                               "type": "ICON_BUTTON_WIDGET",
                               "hideCard": false,
                               "animateLoading": true,
+                              "dynamicTriggerPathList": [],
                               "leftColumn": 46,
                               "dynamicBindingPathList": [
                                 {
