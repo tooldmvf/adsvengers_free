@@ -14,7 +14,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 1040,
+          "bottomRow": 1030,
           "containerStyle": "none",
           "snapRows": 125,
           "parentRowSpace": 1,
@@ -854,7 +854,7 @@
                 "group"
               ],
               "topRow": 8,
-              "bottomRow": 104,
+              "bottomRow": 103,
               "parentRowSpace": 10,
               "type": "CONTAINER_WIDGET",
               "hideCard": false,
@@ -876,7 +876,7 @@
                   "widgetName": "Canvas5",
                   "displayName": "Canvas",
                   "topRow": 0,
-                  "bottomRow": 960,
+                  "bottomRow": 950,
                   "parentRowSpace": 1,
                   "type": "CANVAS_WIDGET",
                   "canExtend": false,
@@ -2072,7 +2072,7 @@
                       "displayName": "Tabs",
                       "iconSVG": "/static/media/icon.74a6d653c8201e66f1cd367a3fba2657.svg",
                       "topRow": 18,
-                      "bottomRow": 94,
+                      "bottomRow": 93,
                       "parentRowSpace": 10,
                       "type": "TABS_WIDGET",
                       "hideCard": false,
@@ -2097,7 +2097,7 @@
                           "tabId": "tab1",
                           "widgetName": "Canvas13",
                           "displayName": "Canvas",
-                          "bottomRow": 720,
+                          "bottomRow": 710,
                           "topRow": 0,
                           "parentRowSpace": 1,
                           "type": "CANVAS_WIDGET",
@@ -2550,7 +2550,7 @@
                                   "label": "ROI %",
                                   "isSaveVisible": true,
                                   "isDiscardVisible": true,
-                                  "computedValue": "{{TableOffers.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Tot_ROI\"].toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2})))}}",
+                                  "computedValue": "{{TableOffers.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Tot_ROI\"].toLocaleString(undefined, {minimumFractionDigits: 1, maximumFractionDigits: 1})))}}",
                                   "sticky": "",
                                   "validation": {},
                                   "cellBackground": "{{TableOffers.processedTableData.map((currentRow, currentIndex) => ( currentRow.row_color))}}"
@@ -3074,7 +3074,7 @@
                           "tabId": "tab2",
                           "widgetName": "Canvas14",
                           "displayName": "Canvas",
-                          "bottomRow": 720,
+                          "bottomRow": 710,
                           "topRow": 0,
                           "parentRowSpace": 1,
                           "type": "CANVAS_WIDGET",
@@ -3806,7 +3806,7 @@
                                   "label": "ROI %",
                                   "isSaveVisible": true,
                                   "isDiscardVisible": true,
-                                  "computedValue": "{{TableUsers.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Tot_ROI\"].toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2})))}}",
+                                  "computedValue": "{{TableUsers.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Tot_ROI\"].toLocaleString(undefined, {minimumFractionDigits: 1, maximumFractionDigits: 1})))}}",
                                   "sticky": "",
                                   "validation": {},
                                   "cellBackground": "{{TableUsers.processedTableData.map((currentRow, currentIndex) => ( currentRow.row_color))}}"
@@ -4050,7 +4050,7 @@
                       "originalTopRow": 18,
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                       "maxDynamicHeight": 9000,
-                      "originalBottomRow": 93,
+                      "originalBottomRow": 94,
                       "minDynamicHeight": 15
                     }
                   ],
@@ -4083,7 +4083,7 @@
               "originalTopRow": 8,
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "maxDynamicHeight": 9000,
-              "originalBottomRow": 103,
+              "originalBottomRow": 104,
               "minDynamicHeight": 10
             },
             {
@@ -5695,7 +5695,7 @@
                           "label": "ROI %",
                           "isSaveVisible": true,
                           "isDiscardVisible": true,
-                          "computedValue": "{{TableOffersCopy.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Tot_ROI\"].toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2})))}}",
+                          "computedValue": "{{TableOffersCopy.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Tot_ROI\"].toLocaleString(undefined, {minimumFractionDigits: 1, maximumFractionDigits: 1})))}}",
                           "sticky": "",
                           "validation": {},
                           "cellBackground": "{{TableOffersCopy.processedTableData.map((currentRow, currentIndex) => ( currentRow.row_color))}}"

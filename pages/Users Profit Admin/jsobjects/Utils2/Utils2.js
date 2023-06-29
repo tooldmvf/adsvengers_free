@@ -9,7 +9,6 @@ export default {
 	},
 	
 	onLoadPage: async () => {
-		await GetUserAccount.run()
 		await Tab4Offer.run();
 		await TotalLine.run();
 	},
