@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 930,
+          "bottomRow": 950,
           "containerStyle": "none",
           "snapRows": 86,
           "parentRowSpace": 1,
@@ -913,7 +913,7 @@
                 "label"
               ],
               "topRow": 89,
-              "bottomRow": 93,
+              "bottomRow": 95,
               "parentRowSpace": 10,
               "type": "TEXT_WIDGET",
               "hideCard": false,
@@ -961,7 +961,7 @@
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "mobileLeftColumn": 0,
               "maxDynamicHeight": 9000,
-              "originalBottomRow": 93,
+              "originalBottomRow": 95,
               "fontSize": "0.875rem",
               "minDynamicHeight": 4
             },
@@ -1278,7 +1278,7 @@
                                 }
                               },
                               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                              "columnUpdatedAt": 1687760699773,
+                              "columnUpdatedAt": 1688058854618,
                               "originalBottomRow": 51,
                               "defaultSelectedRowIndices": [
                                 0
@@ -1311,8 +1311,8 @@
                                 "step": 70,
                                 "status": 85,
                                 "network_name": 185,
-                                "amount_spent": 152,
-                                "bm_name": 250
+                                "amount_spent": 125,
+                                "bm_name": 269
                               },
                               "parentRowSpace": 10,
                               "hideCard": false,
@@ -1424,7 +1424,7 @@
                                   "alias": "amount_spent",
                                   "horizontalAlignment": "RIGHT",
                                   "verticalAlignment": "CENTER",
-                                  "columnType": "number",
+                                  "columnType": "text",
                                   "textSize": "0.875rem",
                                   "enableFilter": true,
                                   "enableSort": true,
@@ -1509,7 +1509,7 @@
                                   "alias": "amount_spent_fixed",
                                   "horizontalAlignment": "RIGHT",
                                   "verticalAlignment": "CENTER",
-                                  "columnType": "number",
+                                  "columnType": "text",
                                   "textColor": "#eab308",
                                   "textSize": "0.875rem",
                                   "fontStyle": "BOLD",
@@ -2047,7 +2047,7 @@
                                       ],
                                       "shouldTruncate": false,
                                       "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-                                      "text": "{{Utils.myCurrency(  Fetch_Data_Spent.data.filter(e => e.fk_bm_id == 'Ai20-Google')[0].amount_spent * (1+(Fetch_Data_Spent.data.filter(e => e.fk_bm_id == 'Ai20-Google')[0].spent_rate_fees /100)))}}",
+                                      "text": "{{Utils.myCurrency(  Fetch_Data_Spent.data.filter(e => e.fk_bm_id == 'Ai20-Google')[0]?.amount_spent||0 * (1+(Fetch_Data_Spent.data.filter(e => e.fk_bm_id == 'Ai20-Google')[0]?.spent_rate_fees||0 /100)))}}",
                                       "key": "wmtrt5wcg7",
                                       "isDeprecated": false,
                                       "rightColumn": 63,
@@ -2631,7 +2631,7 @@
                                       "maxDynamicHeight": 9000,
                                       "decimals": 2,
                                       "iconAlign": "left",
-                                      "defaultText": "{{  Fetch_Data_Spent.data.filter(e => e.fk_bm_id == '377343377466914')[0].amount_spent * (1+(Fetch_Data_Spent.data.filter(e => e.fk_bm_id == '377343377466914')[0].spent_rate_fees /100))*2}}",
+                                      "defaultText": "{{Fetch_Data_Spent.data.filter(e => e.fk_bm_id == '377343377466914')[0]?.amount_spent||0 * (1+(Fetch_Data_Spent.data.filter(e => e.fk_bm_id == '377343377466914')[0]?.spent_rate_fees||0 /100))*2}}",
                                       "minDynamicHeight": 4
                                     },
                                     {
@@ -3247,7 +3247,7 @@
                                 }
                               },
                               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                              "columnUpdatedAt": 1687669044049,
+                              "columnUpdatedAt": 1688058854630,
                               "originalBottomRow": 51,
                               "defaultSelectedRowIndices": [
                                 0
@@ -3287,6 +3287,9 @@
                               "dynamicTriggerPathList": [
                                 {
                                   "key": "primaryColumns.amount_revenue_approved.onSubmit"
+                                },
+                                {
+                                  "key": "primaryColumns.amount_revenue_fixed.onSubmit"
                                 }
                               ],
                               "borderWidth": "1",
@@ -3331,7 +3334,7 @@
                                   "alias": "amount_revenue_approved",
                                   "horizontalAlignment": "RIGHT",
                                   "verticalAlignment": "CENTER",
-                                  "columnType": "number",
+                                  "columnType": "text",
                                   "textColor": "",
                                   "textSize": "0.875rem",
                                   "fontStyle": "",
@@ -3452,7 +3455,7 @@
                                   "alias": "amount_revenue_fixed",
                                   "horizontalAlignment": "RIGHT",
                                   "verticalAlignment": "CENTER",
-                                  "columnType": "number",
+                                  "columnType": "text",
                                   "textColor": "#eab308",
                                   "textSize": "0.875rem",
                                   "fontStyle": "BOLD",
@@ -3470,7 +3473,8 @@
                                   "computedValue": "{{TableRevModCopy.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"amount_revenue_fixed\"].toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2})))}}",
                                   "sticky": "",
                                   "validation": {},
-                                  "cellBackground": ""
+                                  "cellBackground": "",
+                                  "onSubmit": "{{Utils.myFun1(currentRow);}}"
                                 }
                               },
                               "key": "c7rr9s6m4a",

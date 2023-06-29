@@ -1,1 +1,4 @@
-{ "amount_revenue_approved": "{{this.params.currentRow.amount_revenue_approved}}" }
+{ 
+	"amount_revenue_approved": "{{Number(this.params.currentRow.amount_revenue_approved.replace(/[^0-9.-]+/g,""))}}" ,
+  "amount_revenue_fixed": "{{Number(this.params.currentRow.amount_revenue_fixed.replace(/[^0-9.-]+/g,""))}}" 
+}

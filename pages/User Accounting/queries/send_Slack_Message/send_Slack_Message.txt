@@ -1,0 +1,4 @@
+{
+  "channel": "C030F3UP4P8",
+  "text": "Hello world :tada:"
+}

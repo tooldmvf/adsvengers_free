@@ -1,2 +1,4 @@
-{ "amount_spent": "{{this.params.currentRow.amount_spent}}",
-"amount_spent_fixed": "{{this.params.currentRow.amount_spent_fixed}}"}
+{
+	"amount_spent": "{{Number(this.params.currentRow.amount_spent.replace(/[^0-9.-]+/g,""))}}",
+  "amount_spent_fixed": "{{Number(this.params.currentRow.amount_spent_fixed.replace(/[^0-9.-]+/g,""))}}"
+}
