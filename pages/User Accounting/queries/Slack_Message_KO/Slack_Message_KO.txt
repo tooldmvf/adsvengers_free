@@ -4,7 +4,7 @@
 			"type": "header",
 			"text": {
 				"type": "plain_text",
-				"text": "👍🏻 OK da {{SelectUser.selectedOptionLabel}}",
+				"text": "👎🏻 KO da {{SelectUser.selectedOptionLabel}}",
 				"emoji": true
 			}
 		},
@@ -12,7 +12,7 @@
 			"type": "section",
 			"text": {
 				"type": "mrkdwn",
-				"text": "✅ Confermato un importo di: *{{AmountInvoice.text}}* per il mese di *{{SelectMonth.selectedOptionLabel}} {{SelectYear.selectedOptionLabel}}*"
+				"text": "🛑 Importo di: *{{AmountInvoice.text}}* per il mese di *{{SelectMonth.selectedOptionLabel}} {{SelectYear.selectedOptionLabel}}* da verificare"
 			}
 		},
 		{
