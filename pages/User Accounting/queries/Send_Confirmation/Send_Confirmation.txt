@@ -1,4 +1,4 @@
-<p>Ciao {{appsmith.store.first_name}},&nbsp;</p>
+<p>Ciao {{SelectUser.selectedOptionLabel}},</p>
 <p>abbiamo verificato i dati e confermiamo l&apos;importo da fatturare di<strong>&nbsp;{{AmountInvoice.text}}&nbsp;</strong>per il periodo <strong>{{SelectYear.selectedOptionLabel}} - {{SelectMonth.selectedOptionLabel}}.</strong></p>
 <p>Puoi inviare fattura a <a href="mailto:accounting@dmvfltd.com">accounting@dmvfltd.com</a></p>
 <table style="width: 400px; border-collapse: collapse; border: 1px solid rgb(173, 173, 173);">

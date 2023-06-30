@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "<p>Ciao {{appsmith.store.first_name}},&nbsp;</p>\n<p>abbiamo verificato i dati e confermiamo l&apos;importo negativo di<strong>&nbsp;<span style=\"color: rgb(184, 49, 47);\">{{AmountInvoice.text}}</span>&nbsp;</strong>per il periodo <strong>{{SelectYear.selectedOptionLabel}} - {{SelectMonth.selectedOptionLabel}}.</strong></p>\n<p>Di seguito i dettagli:</p>\n<table style=\"width: 400px; border-collapse: collapse; border: 1px solid rgb(173, 173, 173);\">\n    <thead>\n        <tr>\n            <th style=\"padding: 10px; text-align: left; border-bottom: 1px solid rgb(173, 173, 173); border-right: 1px solid rgb(173, 173, 173);\"><br></th>\n            <th style=\"text-align: right; padding: 10px; border: 1px solid rgb(173, 173, 173);\">Amount</th>\n        </tr>\n    </thead>\n    <tbody>\n        <tr>\n            <td style=\"width: 50%; padding: 10px; border: 1px solid rgb(173, 173, 173);\">Revenue</td>\n            <td style=\"width: 50%; text-align: right; padding: 10px; border: 1px solid rgb(173, 173, 173);\">{{Total_rev.text}}</td>\n        </tr>\n        <tr>\n            <td style=\"width: 50%; padding: 10px; border: 1px solid rgb(173, 173, 173);\">Spent (+ Fees)</td>\n            <td style=\"width: 50%; text-align: right; padding: 10px; border: 1px solid rgb(173, 173, 173);\">{{Total_spent.text}}</td>\n        </tr>\n        <tr>\n            <td style=\"width: 50%; padding: 10px; border: 1px solid rgb(173, 173, 173);\">Previous Debt<br></td>\n            <td style=\"width: 50%; text-align: right; padding: 10px; border: 1px solid rgb(173, 173, 173);\">{{Debt2.text}}</td>\n        </tr>\n        <tr>\n            <td style=\"width: 50%; padding: 10px; border: 1px solid rgb(173, 173, 173);\"><strong>Profit</strong></td>\n            <td style=\"width: 50%; text-align: right; padding: 10px; border: 1px solid rgb(173, 173, 173);\"><strong>{{Profit.text}}</strong></td>\n        </tr>\n        <tr>\n            <td style=\"width: 50%; padding: 10px; border: 1px solid rgb(173, 173, 173);\">Other Project or Extra</td>\n            <td style=\"width: 50%; text-align: right; padding: 10px; border: 1px solid rgb(173, 173, 173);\">{{Others.text}}</td>\n        </tr>\n    </tbody>\n</table>\n<p>Certi di un tuo recupero ti auguriamo un miglior ROI 🚀</p>",
+      "body": "<p>Ciao {{SelectUser.selectedOptionLabel}},</p>\n<p>abbiamo verificato i dati e confermiamo l&apos;importo negativo di<strong>&nbsp;<span style=\"color: rgb(184, 49, 47);\">{{Profit.text}}</span>&nbsp;</strong>per il periodo <strong>{{SelectYear.selectedOptionLabel}} - {{SelectMonth.selectedOptionLabel}}.</strong></p>\n<p>Di seguito i dettagli:</p>\n<table style=\"width: 400px; border-collapse: collapse; border: 1px solid rgb(173, 173, 173);\">\n    <thead>\n        <tr>\n            <th style=\"padding: 10px; text-align: left; border-bottom: 1px solid rgb(173, 173, 173); border-right: 1px solid rgb(173, 173, 173);\"><br></th>\n            <th style=\"text-align: right; padding: 10px; border: 1px solid rgb(173, 173, 173);\">Amount</th>\n        </tr>\n    </thead>\n    <tbody>\n        <tr>\n            <td style=\"width: 50%; padding: 10px; border: 1px solid rgb(173, 173, 173);\">Revenue</td>\n            <td style=\"width: 50%; text-align: right; padding: 10px; border: 1px solid rgb(173, 173, 173);\">{{Total_rev.text}}</td>\n        </tr>\n        <tr>\n            <td style=\"width: 50%; padding: 10px; border: 1px solid rgb(173, 173, 173);\">Spent (+ Fees)</td>\n            <td style=\"width: 50%; text-align: right; padding: 10px; border: 1px solid rgb(173, 173, 173);\">{{Total_spent.text}}</td>\n        </tr>\n        <tr>\n            <td style=\"width: 50%; padding: 10px; border: 1px solid rgb(173, 173, 173);\">Previous Debt<br></td>\n            <td style=\"width: 50%; text-align: right; padding: 10px; border: 1px solid rgb(173, 173, 173);\">{{Debt2.text}}</td>\n        </tr>\n        <tr>\n            <td style=\"width: 50%; padding: 10px; border: 1px solid rgb(173, 173, 173);\"><strong>Profit</strong></td>\n            <td style=\"width: 50%; text-align: right; padding: 10px; border: 1px solid rgb(173, 173, 173);\"><strong>{{Profit.text}}</strong></td>\n        </tr>\n        <tr>\n            <td style=\"width: 50%; padding: 10px; border: 1px solid rgb(173, 173, 173);\">Other Project or Extra</td>\n            <td style=\"width: 50%; text-align: right; padding: 10px; border: 1px solid rgb(173, 173, 173);\">{{Others.text}}</td>\n        </tr>\n    </tbody>\n</table>\n<p>Certi di un tuo recupero ti auguriamo un miglior ROI 🚀</p>",
       "selfReferencingDataPaths": [],
       "formData": {
         "command": "SEND",
@@ -54,16 +54,15 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "AmountInvoice.text",
       "Debt2.text",
       "Fetch_Adjustments.data[0].email",
       "Others.text",
       "Profit.text",
       "SelectMonth.selectedOptionLabel",
+      "SelectUser.selectedOptionLabel",
       "SelectYear.selectedOptionLabel",
       "Total_rev.text",
       "Total_spent.text",
-      "appsmith.store.first_name",
       "appsmith.store.myEmail"
     ],
     "userSetOnLoad": false,

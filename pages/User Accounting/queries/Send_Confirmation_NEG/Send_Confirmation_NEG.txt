@@ -1,5 +1,5 @@
-<p>Ciao {{appsmith.store.first_name}},&nbsp;</p>
-<p>abbiamo verificato i dati e confermiamo l&apos;importo negativo di<strong>&nbsp;<span style="color: rgb(184, 49, 47);">{{AmountInvoice.text}}</span>&nbsp;</strong>per il periodo <strong>{{SelectYear.selectedOptionLabel}} - {{SelectMonth.selectedOptionLabel}}.</strong></p>
+<p>Ciao {{SelectUser.selectedOptionLabel}},</p>
+<p>abbiamo verificato i dati e confermiamo l&apos;importo negativo di<strong>&nbsp;<span style="color: rgb(184, 49, 47);">{{Profit.text}}</span>&nbsp;</strong>per il periodo <strong>{{SelectYear.selectedOptionLabel}} - {{SelectMonth.selectedOptionLabel}}.</strong></p>
 <p>Di seguito i dettagli:</p>
 <table style="width: 400px; border-collapse: collapse; border: 1px solid rgb(173, 173, 173);">
     <thead>
