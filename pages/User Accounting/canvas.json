@@ -4800,7 +4800,7 @@
                               "minDynamicHeight": 4
                             },
                             {
-                              "defaultValue": "{{Fetch_Commission_fee.data[0].comm_value}}",
+                              "defaultValue": "{{Fetch_Commission_fee.data[0]?.comm_value||10}}",
                               "iconSVG": "/static/media/icon.f122000eb591fcd1410a4775a54f9f0d.svg",
                               "tooltipAlwaysOn": false,
                               "labelText": "Profit Percentage",
@@ -4989,7 +4989,7 @@
                               "maxDynamicHeight": 9000,
                               "decimals": 2,
                               "iconAlign": "left",
-                              "defaultText": "{{Fetch_Adjustments.data[0].amount_adjustment}}",
+                              "defaultText": "{{Fetch_Adjustments.data[0]?.amount_adjustment||0}}",
                               "minDynamicHeight": 4
                             },
                             {
