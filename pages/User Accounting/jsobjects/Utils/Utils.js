@@ -8,6 +8,14 @@ export default {
     return formatter.format(num); 
 	},
 	
+	async sendEmail () {
+		if(Number(AmountInvoice.text.replace(/[^0-9.-]+/g,"")) > 0) {
+		  await Send_Confirmation.run();
+		} else {
+		  await Send_Confirmation_NEG.run();
+		}
+	},
+	
 	async myFun1 (currentRow) {
 		await storeValue("rowUpdate",currentRow);
 		await Save_Data_Rev.run({currentRow});

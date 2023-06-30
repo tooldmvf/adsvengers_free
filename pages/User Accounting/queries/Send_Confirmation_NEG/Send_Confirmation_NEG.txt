@@ -1,0 +1,34 @@
+<p>Ciao {{appsmith.store.first_name}},&nbsp;</p>
+<p>abbiamo verificato i dati e confermiamo l&apos;importo negativo di<strong>&nbsp;<span style="color: rgb(184, 49, 47);">{{AmountInvoice.text}}</span>&nbsp;</strong>per il periodo <strong>{{SelectYear.selectedOptionLabel}} - {{SelectMonth.selectedOptionLabel}}.</strong></p>
+<p>Di seguito i dettagli:</p>
+<table style="width: 400px; border-collapse: collapse; border: 1px solid rgb(173, 173, 173);">
+    <thead>
+        <tr>
+            <th style="padding: 10px; text-align: left; border-bottom: 1px solid rgb(173, 173, 173); border-right: 1px solid rgb(173, 173, 173);"><br></th>
+            <th style="text-align: right; padding: 10px; border: 1px solid rgb(173, 173, 173);">Amount</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td style="width: 50%; padding: 10px; border: 1px solid rgb(173, 173, 173);">Revenue</td>
+            <td style="width: 50%; text-align: right; padding: 10px; border: 1px solid rgb(173, 173, 173);">{{Total_rev.text}}</td>
+        </tr>
+        <tr>
+            <td style="width: 50%; padding: 10px; border: 1px solid rgb(173, 173, 173);">Spent (+ Fees)</td>
+            <td style="width: 50%; text-align: right; padding: 10px; border: 1px solid rgb(173, 173, 173);">{{Total_spent.text}}</td>
+        </tr>
+        <tr>
+            <td style="width: 50%; padding: 10px; border: 1px solid rgb(173, 173, 173);">Previous Debt<br></td>
+            <td style="width: 50%; text-align: right; padding: 10px; border: 1px solid rgb(173, 173, 173);">{{Debt2.text}}</td>
+        </tr>
+        <tr>
+            <td style="width: 50%; padding: 10px; border: 1px solid rgb(173, 173, 173);"><strong>Profit</strong></td>
+            <td style="width: 50%; text-align: right; padding: 10px; border: 1px solid rgb(173, 173, 173);"><strong>{{Profit.text}}</strong></td>
+        </tr>
+        <tr>
+            <td style="width: 50%; padding: 10px; border: 1px solid rgb(173, 173, 173);">Other Project or Extra</td>
+            <td style="width: 50%; text-align: right; padding: 10px; border: 1px solid rgb(173, 173, 173);">{{Others.text}}</td>
+        </tr>
+    </tbody>
+</table>
+<p>Certi di un tuo recupero ti auguriamo un miglior ROI 🚀</p>
