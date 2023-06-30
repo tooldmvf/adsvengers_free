@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 950,
+          "bottomRow": 930,
           "containerStyle": "none",
           "snapRows": 86,
           "parentRowSpace": 1,
@@ -913,7 +913,7 @@
                 "label"
               ],
               "topRow": 89,
-              "bottomRow": 95,
+              "bottomRow": 93,
               "parentRowSpace": 10,
               "type": "TEXT_WIDGET",
               "hideCard": false,
@@ -961,7 +961,7 @@
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "mobileLeftColumn": 0,
               "maxDynamicHeight": 9000,
-              "originalBottomRow": 95,
+              "originalBottomRow": 93,
               "fontSize": "0.875rem",
               "minDynamicHeight": 4
             },
@@ -3675,7 +3675,7 @@
                               ],
                               "shouldTruncate": false,
                               "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-                              "text": "{{Utils.myCurrency(( Fetch_Data_Spent_TOT.data[0].spent_wfees)+ (Fetch_Data_Spent_TOT.data[1]?.spent_wfees||0)\n)}}",
+                              "text": "{{Utils.myCurrency(( Fetch_Data_Spent_TOT.data[0]?.spent_wfees||0)+ (Fetch_Data_Spent_TOT.data[1]?.spent_wfees||0)\n)}}",
                               "key": "k0zn3vv2el",
                               "isDeprecated": false,
                               "rightColumn": 62,
@@ -3815,7 +3815,7 @@
                               "minWidth": 450,
                               "isVisible": true,
                               "fontStyle": "BOLD",
-                              "textColor": "{{((user_commissions_tot.data[0].amount_revenue_approved+user_commissions_tot.data[1]?.amount_revenue_approved||0) - (BM_tot.data[0].spent_wfees + (BM_tot.data[1]?.spent_wfees||0)) + Adjust.value\n)<0 ? 'red' : 'green' }}",
+                              "textColor": "{{(\nNumber(Total_rev.text.replace(/[^0-9.-]+/g,\"\")) - Number(Total_spent.text.replace(/[^0-9.-]+/g,\"\")) + Adjust.value + Debt.value\n)<0 ? 'red' : 'green' }}",
                               "version": 1,
                               "parentId": "lvya69kw4u",
                               "renderMode": "CANVAS",
@@ -3884,7 +3884,7 @@
                               "minWidth": 450,
                               "isVisible": true,
                               "fontStyle": "BOLD",
-                              "textColor": "{{((user_commissions_tot.data[0].amount_revenue_approved+user_commissions_tot.data[1]?.amount_revenue_approved||0) - (BM_tot.data[0].spent_wfees + (BM_tot.data[1]?.spent_wfees||0)) + Adjust.value\n)<0 ? 'red' : 'green' }}",
+                              "textColor": "{{(\nNumber(Total_rev.text.replace(/[^0-9.-]+/g,\"\")) - Number(Total_spent.text.replace(/[^0-9.-]+/g,\"\")))<0 ? 'red' : 'green' }}",
                               "version": 1,
                               "parentId": "lvya69kw4u",
                               "renderMode": "CANVAS",
@@ -5150,7 +5150,7 @@
                               "boxShadow": "none",
                               "mobileBottomRow": 56,
                               "widgetName": "Button1",
-                              "onClick": "{{save_monthly_data.run().then(() => {\n  showAlert('Data Saved on Monthly Table', 'success');\n}).catch(() => {\n  showAlert('Error: ' + save_monthly_data.responseMeta, 'error');\n});}}",
+                              "onClick": "{{save_monthly_data.run().then(() => {\n  showAlert('Data Saved on Monthly Table', 'success');\n  Send_Confirmation.run();\n}).catch(() => {\n  showAlert('Error: ' + save_monthly_data.responseMeta, 'error');\n});}}",
                               "buttonColor": "#fde047",
                               "dynamicPropertyPathList": [
                                 {
@@ -5158,6 +5158,9 @@
                                 },
                                 {
                                   "key": "isDisabled"
+                                },
+                                {
+                                  "key": "animateLoading"
                                 }
                               ],
                               "displayName": "Button",
@@ -5168,11 +5171,12 @@
                               ],
                               "topRow": 63,
                               "bottomRow": 67,
+                              "tooltip": "",
                               "parentRowSpace": 10,
                               "type": "BUTTON_WIDGET",
                               "hideCard": false,
                               "mobileRightColumn": 37,
-                              "animateLoading": true,
+                              "animateLoading": "{{(Fetch_Adjustments.data[0].approved_by_user)}}",
                               "parentColumnSpace": 5.2421875,
                               "dynamicTriggerPathList": [
                                 {
@@ -5189,10 +5193,13 @@
                                 },
                                 {
                                   "key": "isDisabled"
+                                },
+                                {
+                                  "key": "animateLoading"
                                 }
                               ],
                               "text": "Save Monthly Data",
-                              "isDisabled": "{{appsmith.store.role_level<=500}}",
+                              "isDisabled": "{{!(Fetch_Adjustments.data[0].approved_by_user) ? true : (!(Fetch_Adjustments.data[0].approved_by_user) && appsmith.store.role_level<=500)}}",
                               "key": "3xi9orpbxd",
                               "isDeprecated": false,
                               "rightColumn": 63,
@@ -5929,8 +5936,8 @@
               "confirmBeforeExecute": false,
               "pluginType": "DB",
               "jsonPathKeys": [
-                "\"'\" + SelectUser.selectedOptionValue + \"'\"",
                 "!SelectUser.selectedOptionValue",
+                "\"'\" + SelectUser.selectedOptionValue + \"'\"",
                 "SelectMonth.selectedOptionValue",
                 "SelectYear.selectedOptionValue"
               ],
