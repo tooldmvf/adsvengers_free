@@ -12,7 +12,7 @@
 			"type": "section",
 			"text": {
 				"type": "mrkdwn",
-				"text": "🛑 Importo di: *{{AmountInvoice.text}}* per il mese di *{{SelectMonth.selectedOptionLabel}} {{SelectYear.selectedOptionLabel}}* da verificare"
+				"text": "🛑 Importo di: *{{AmountInvoice.text}}* per il mese di *{{SelectMonth.selectedOptionLabel}} {{SelectYear.selectedOptionLabel}}* da verificare. \n Note: {{InputNotes.text}}"
 			}
 		},
 		{
