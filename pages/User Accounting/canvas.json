@@ -5328,7 +5328,7 @@
                                   "key": "isDisabled"
                                 }
                               ],
-                              "text": "Ask Review",
+                              "text": "Ask Revision",
                               "isDisabled": "{{Fetch_Adjustments.data[0].approved_by_user}}",
                               "key": "jnui8t42sp",
                               "isDeprecated": false,
