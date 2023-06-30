@@ -14,7 +14,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 1030,
+          "bottomRow": 1040,
           "containerStyle": "none",
           "snapRows": 125,
           "parentRowSpace": 1,
@@ -854,7 +854,7 @@
                 "group"
               ],
               "topRow": 8,
-              "bottomRow": 103,
+              "bottomRow": 104,
               "parentRowSpace": 10,
               "type": "CONTAINER_WIDGET",
               "hideCard": false,
@@ -876,7 +876,7 @@
                   "widgetName": "Canvas5",
                   "displayName": "Canvas",
                   "topRow": 0,
-                  "bottomRow": 950,
+                  "bottomRow": 960,
                   "parentRowSpace": 1,
                   "type": "CANVAS_WIDGET",
                   "canExtend": false,
@@ -2062,7 +2062,7 @@
                     {
                       "boxShadow": "none",
                       "widgetName": "Tabs1",
-                      "borderColor": "#E0DEDE",
+                      "borderColor": "transparent",
                       "isCanvas": true,
                       "dynamicPropertyPathList": [
                         {
@@ -2072,7 +2072,7 @@
                       "displayName": "Tabs",
                       "iconSVG": "/static/media/icon.74a6d653c8201e66f1cd367a3fba2657.svg",
                       "topRow": 18,
-                      "bottomRow": 93,
+                      "bottomRow": 94,
                       "parentRowSpace": 10,
                       "type": "TABS_WIDGET",
                       "hideCard": false,
@@ -2097,7 +2097,7 @@
                           "tabId": "tab1",
                           "widgetName": "Canvas13",
                           "displayName": "Canvas",
-                          "bottomRow": 710,
+                          "bottomRow": 720,
                           "topRow": 0,
                           "parentRowSpace": 1,
                           "type": "CANVAS_WIDGET",
@@ -2111,8 +2111,8 @@
                           "dynamicBindingPathList": [],
                           "children": [
                             {
-                              "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
-                              "borderColor": "#E0DEDE",
+                              "boxShadow": "0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)",
+                              "borderColor": "#fafafa",
                               "isVisibleDownload": false,
                               "iconSVG": "/static/media/icon.db8a9cbd2acd22a31ea91cc37ea2a46c.svg",
                               "topRow": 0,
@@ -2126,9 +2126,6 @@
                                 },
                                 {
                                   "key": "borderRadius"
-                                },
-                                {
-                                  "key": "boxShadow"
                                 },
                                 {
                                   "key": "tableData"
@@ -2203,6 +2200,7 @@
                               "needsHeightForContent": true,
                               "leftColumn": 0,
                               "delimiter": ",",
+                              "variant": "DEFAULT",
                               "defaultSelectedRowIndex": "{{appsmith.store.row_selected}}",
                               "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                               "isVisibleFilters": false,
@@ -2694,7 +2692,7 @@
                               "verticalAlignment": "CENTER"
                             },
                             {
-                              "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+                              "boxShadow": "none",
                               "currentItemsView": "{{[]}}",
                               "triggeredItemView": "{{{}}}",
                               "widgetName": "List1",
@@ -2708,7 +2706,7 @@
                               "pageSize": 8,
                               "parentRowSpace": 10,
                               "type": "LIST_WIDGET_V2",
-                              "itemSpacing": 8,
+                              "itemSpacing": "8",
                               "hideCard": false,
                               "templateBottomRow": 16,
                               "mainContainerId": "wcmg0fuslb",
@@ -2734,9 +2732,6 @@
                                 },
                                 {
                                   "key": "borderRadius"
-                                },
-                                {
-                                  "key": "boxShadow"
                                 },
                                 {
                                   "key": "listData"
@@ -3074,7 +3069,7 @@
                           "tabId": "tab2",
                           "widgetName": "Canvas14",
                           "displayName": "Canvas",
-                          "bottomRow": 710,
+                          "bottomRow": 720,
                           "topRow": 0,
                           "parentRowSpace": 1,
                           "type": "CANVAS_WIDGET",
@@ -4050,7 +4045,7 @@
                       "originalTopRow": 18,
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                       "maxDynamicHeight": 9000,
-                      "originalBottomRow": 94,
+                      "originalBottomRow": 93,
                       "minDynamicHeight": 15
                     }
                   ],
@@ -4083,7 +4078,7 @@
               "originalTopRow": 8,
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "maxDynamicHeight": 9000,
-              "originalBottomRow": 104,
+              "originalBottomRow": 103,
               "minDynamicHeight": 10
             },
             {
