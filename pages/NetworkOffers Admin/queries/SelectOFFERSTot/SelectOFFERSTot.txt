@@ -1,16 +1,21 @@
-SELECT 	'Total' as Total,
+select Total
+,sum(spent) as spent
+,sum(revenue) as revenue
+,sum(profit) as profit
+,sum(spent_no_fees) as spent_no_fees
+,sum(convs) as convs
+,case when ((sum(profit))/case when sum(spent) = 0 then 1 else sum(spent) end)*100 <0 then '#fef2f2'
+	when ((sum(profit))/case when sum(spent) = 0 then 1 else sum(spent) end)*100 <30 then '#fefce8'
+	else '#f0fdf4' end as "row_color" 
+,sum(spent)/(case when sum(convs)= 0 then 1 else sum(convs) end) "CPA"
+,sum(revenue)/(case when sum(convs)= 0 then 1 else sum(convs) end) "Payout"
+,(sum(profit))/(case when sum(spent) = 0 then 1 else sum(spent) END)*100 as ROI
+from (SELECT 	'Total' as Total,
 	sum(a.amount_spent_plus_fee) spent,
 	sum(a.amount_revenue) revenue,
-	sum(a.amount_revenue)-sum(a.amount_spent_plus_fee) profit,
+	case when f.network_name_short != 'WL' then sum(a.amount_revenue)-sum(a.amount_spent_plus_fee) else (sum(a.amount_revenue)-sum(a.amount_spent_plus_fee))/2 end as profit,
 	sum(a.amount_spent) spent_no_fees,
-	case 
-		when (((sum(a.amount_revenue) - sum(a.amount_spent_plus_fee))/case when sum(a.amount_spent_plus_fee) = 0 then 1 else sum(a.amount_spent_plus_fee) end) *100) <0 then '#fef2f2'
-		when (((sum(a.amount_revenue) - sum(a.amount_spent_plus_fee))/case when sum(a.amount_spent_plus_fee) = 0 then 1 else sum(a.amount_spent_plus_fee) end) *100) <30 then '#fefce8'
-		else '#f0fdf4' end as "row_color",
-sum(a.amount_conversion) convs,
-sum(a.amount_spent_plus_fee)/(case when sum(a.amount_conversion)= 0 then 1 else sum(a.amount_conversion) end) "CPA",
-sum(a.amount_revenue)/(case when sum(a.amount_conversion)= 0 then 1 else sum(a.amount_conversion) end) "Payout",
-(sum(a.amount_revenue)-sum(a.amount_spent_plus_fee))/(case when sum(a.amount_spent_plus_fee) = 0 then 1 else sum(a.amount_spent_plus_fee) END)*100 as ROI
+sum(a.amount_conversion) convs
 from public.user_financial a
 INNER JOIN public.user_network b ON (a.fk_user_id = b.fk_user_id and a.fk_user_network_id = b.user_network_id)
 INNER JOIN public.offer c ON (b.user_network_id = c.fk_user_network_id and a.fk_offer_id = c.offer_id)
@@ -26,4 +31,6 @@ and a.financial_date >= to_date('{{moment(DateFrom.selectedDate).format('YYYY-DD
 and a.financial_date <= to_date('{{moment(DateTo.selectedDate).format('YYYY-DD-MM')}}','YYYY-DD-MM')
 and ({{MSNetwork.selectedOptionValues.length == 0}} OR text(b.fk_network_id) IN ({{"'" + MSNetwork.selectedOptionValues.join("', '") + "'"}}))
 and ({{MSTrSource.selectedOptionValues.length == 0}} OR text(e.ts_id) IN ({{"'" + MSTrSource.selectedOptionValues.join("', '") + "'"}}))
-having (sum(a.amount_revenue)>0 OR sum(a.amount_spent_plus_fee)>0)
+group by f.network_name_short
+having (sum(a.amount_revenue)>0 OR sum(a.amount_spent_plus_fee)>0)) z
+group by Total

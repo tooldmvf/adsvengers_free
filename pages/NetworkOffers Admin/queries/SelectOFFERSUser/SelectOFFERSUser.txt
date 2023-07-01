@@ -1,7 +1,7 @@
 SELECT 	
 	sum(a.amount_spent_plus_fee) spent,
 	sum(a.amount_revenue) revenue,
-	sum(a.amount_revenue)-sum(a.amount_spent_plus_fee) profit,
+	case when f.network_name_short != 'WL' then sum(a.amount_revenue)-sum(a.amount_spent_plus_fee) else (sum(a.amount_revenue)-sum(a.amount_spent_plus_fee))/2 end as profit,
 	sum(a.amount_spent) spent_no_fees,
 	case 
 		when (((sum(a.amount_revenue) - sum(a.amount_spent_plus_fee))/case when sum(a.amount_spent_plus_fee) = 0 then 1 else sum(a.amount_spent_plus_fee) end) *100) <0 then '#fef2f2'
@@ -32,4 +32,4 @@ group by
 	f.network_name_short,
 	b.user_email_network
 	having (sum(a.amount_revenue)>0 OR sum(a.amount_spent_plus_fee)>0)
-order by {{!Select1.selectedOptionValue ? '3 desc' : Select1.selectedOptionValue}}
+order by 1

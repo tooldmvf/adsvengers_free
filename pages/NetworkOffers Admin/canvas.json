@@ -1006,7 +1006,7 @@
                       },
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                       "columnUpdatedAt": 1686934135936,
-                      "originalBottomRow": 85,
+                      "originalBottomRow": 86,
                       "defaultSelectedRowIndices": [
                         0
                       ],
@@ -1109,10 +1109,10 @@
                           "isEditable": false,
                           "isCellVisible": true,
                           "isDerived": false,
-                          "label": "Revenue",
+                          "label": "Revenue €",
                           "isSaveVisible": true,
                           "isDiscardVisible": true,
-                          "computedValue": "{{TableOffers.processedTableData.map((currentRow, currentIndex) => ( Utils2.myCurrency( currentRow[\"revenue\"])))}}",
+                          "computedValue": "{{TableOffers.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"revenue\"].toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2})))}}",
                           "sticky": "",
                           "validation": {},
                           "cellBackground": "{{TableOffers.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"row_color\"]))}}"
@@ -1138,10 +1138,10 @@
                           "isEditable": false,
                           "isCellVisible": true,
                           "isDerived": false,
-                          "label": "Spent +Fees",
+                          "label": "Spent +Fees €",
                           "isSaveVisible": true,
                           "isDiscardVisible": true,
-                          "computedValue": "{{TableOffers.processedTableData.map((currentRow, currentIndex) => ( Utils2.myCurrency( currentRow[\"spent\"])))}}",
+                          "computedValue": "{{TableOffers.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"spent\"].toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2})))}}",
                           "sticky": "",
                           "validation": {},
                           "cellBackground": "{{TableOffers.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"row_color\"]))}}"
@@ -1196,10 +1196,10 @@
                           "isEditable": false,
                           "isCellVisible": true,
                           "isDerived": false,
-                          "label": "Profit",
+                          "label": "Profit €",
                           "isSaveVisible": true,
                           "isDiscardVisible": true,
-                          "computedValue": "{{TableOffers.processedTableData.map((currentRow, currentIndex) => ( Utils2.myCurrency( currentRow[\"profit\"])))}}",
+                          "computedValue": "{{TableOffers.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"profit\"].toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2})))}}",
                           "sticky": "",
                           "validation": {},
                           "cellBackground": "{{TableOffers.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"row_color\"]))}}"
@@ -1256,10 +1256,10 @@
                           "isEditable": false,
                           "isCellVisible": true,
                           "isDerived": false,
-                          "label": "CPA",
+                          "label": "CPA €",
                           "isSaveVisible": true,
                           "isDiscardVisible": true,
-                          "computedValue": "{{TableOffers.processedTableData.map((currentRow, currentIndex) => ( Utils2.myCurrency( currentRow[\"CPA\"])))}}",
+                          "computedValue": "{{TableOffers.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"CPA\"].toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2})))}}",
                           "sticky": "",
                           "validation": {},
                           "cellBackground": "{{TableOffers.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"row_color\"]))}}"
@@ -1286,7 +1286,7 @@
                           "isEditable": false,
                           "isCellVisible": true,
                           "isDerived": false,
-                          "label": "Payout",
+                          "label": "Payout €",
                           "isSaveVisible": true,
                           "isDiscardVisible": true,
                           "computedValue": "{{TableOffers.processedTableData.map((currentRow, currentIndex) => ( Utils2.myCurrency(currentRow[\"Payout\"])))}}",
@@ -1346,7 +1346,7 @@
                           "isEditable": false,
                           "isCellVisible": true,
                           "isDerived": false,
-                          "label": "ROI",
+                          "label": "ROI %",
                           "isSaveVisible": true,
                           "isDiscardVisible": true,
                           "computedValue": "{{TableOffers.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"roi\"].toFixed(1) + ' %'))}}",
@@ -1406,10 +1406,10 @@
                           "isEditable": false,
                           "isCellVisible": true,
                           "isDerived": false,
-                          "label": "Spent",
+                          "label": "Spent €",
                           "isSaveVisible": true,
                           "isDiscardVisible": true,
-                          "computedValue": "{{TableOffers.processedTableData.map((currentRow, currentIndex) => ( Utils2.myCurrency( currentRow[\"spent_no_fees\"])))}}",
+                          "computedValue": "{{TableOffers.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"spent_no_fees\"].toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2})))}}",
                           "sticky": "",
                           "validation": {},
                           "cellBackground": "{{TableOffers.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"row_color\"]))}}"
@@ -1429,7 +1429,7 @@
                       "renderMode": "CANVAS",
                       "horizontalAlignment": "LEFT",
                       "isVisibleSearch": true,
-                      "originalTopRow": 22,
+                      "originalTopRow": 23,
                       "isVisiblePagination": true,
                       "verticalAlignment": "CENTER"
                     },
@@ -1461,7 +1461,7 @@
                       "bottomRow": 5,
                       "shortcuts": false,
                       "parentRowSpace": 10,
-                      "labelWidth": "3",
+                      "labelWidth": "4",
                       "type": "DATE_PICKER_WIDGET2",
                       "hideCard": false,
                       "animateLoading": true,
@@ -1471,7 +1471,7 @@
                           "key": "onDateSelected"
                         }
                       ],
-                      "leftColumn": 54,
+                      "leftColumn": 53,
                       "dynamicBindingPathList": [
                         {
                           "key": "accentColor"
@@ -1539,7 +1539,7 @@
                       "bottomRow": 5,
                       "shortcuts": true,
                       "parentRowSpace": 10,
-                      "labelWidth": "4",
+                      "labelWidth": "5",
                       "type": "DATE_PICKER_WIDGET2",
                       "hideCard": false,
                       "animateLoading": true,
@@ -1549,7 +1549,7 @@
                           "key": "onDateSelected"
                         }
                       ],
-                      "leftColumn": 42,
+                      "leftColumn": 41,
                       "dynamicBindingPathList": [
                         {
                           "key": "accentColor"
@@ -1613,7 +1613,7 @@
                           "key": "onOptionChange"
                         }
                       ],
-                      "leftColumn": 28,
+                      "leftColumn": 27,
                       "dynamicBindingPathList": [
                         {
                           "key": "accentColor"
@@ -1633,7 +1633,7 @@
                       "labelTextSize": "0.875rem",
                       "isRequired": false,
                       "isDeprecated": false,
-                      "rightColumn": 42,
+                      "rightColumn": 41,
                       "dynamicHeight": "AUTO_HEIGHT",
                       "widgetId": "ywzmhaqm8z",
                       "accentColor": "{{appsmith.theme.colors.primaryColor}}",
@@ -1677,7 +1677,7 @@
                           "key": "onOptionChange"
                         }
                       ],
-                      "leftColumn": 28,
+                      "leftColumn": 27,
                       "dynamicBindingPathList": [
                         {
                           "key": "accentColor"
@@ -1697,7 +1697,7 @@
                       "labelTextSize": "0.875rem",
                       "isRequired": false,
                       "isDeprecated": false,
-                      "rightColumn": 42,
+                      "rightColumn": 41,
                       "dynamicHeight": "AUTO_HEIGHT",
                       "widgetId": "mokvhv1d5f",
                       "accentColor": "{{appsmith.theme.colors.primaryColor}}",
@@ -1716,79 +1716,14 @@
                     },
                     {
                       "boxShadow": "none",
-                      "widgetName": "Select1",
-                      "isFilterable": true,
-                      "displayName": "Select",
-                      "iconSVG": "/static/media/icon.bd99caba5853ad71e4b3d8daffacb3a2.svg",
-                      "labelText": "Order By",
-                      "searchTags": [
-                        "dropdown"
-                      ],
-                      "topRow": 5,
-                      "bottomRow": 9,
-                      "parentRowSpace": 10,
-                      "labelWidth": "4",
-                      "type": "SELECT_WIDGET",
-                      "serverSideFiltering": false,
-                      "hideCard": false,
-                      "shouldScrollContents": true,
-                      "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( `3 desc`))(Select1.options, Select1.serverSideFiltering) }}",
-                      "animateLoading": true,
-                      "parentColumnSpace": 19.75,
-                      "dynamicTriggerPathList": [
-                        {
-                          "key": "onOptionChange"
-                        }
-                      ],
-                      "leftColumn": 53,
-                      "dynamicBindingPathList": [
-                        {
-                          "key": "accentColor"
-                        },
-                        {
-                          "key": "borderRadius"
-                        },
-                        {
-                          "key": "defaultOptionValue"
-                        }
-                      ],
-                      "labelPosition": "Left",
-                      "options": "[\n  {\n    \"label\": \"Spent\",\n    \"value\": \"1 desc\"\n  },\n  {\n    \"label\": \"Revenue\",\n    \"value\": \"2 desc\"\n  },\n  {\n    \"label\": \"Profit\",\n    \"value\": \"3 desc\"\n  },\n  {\n    \"label\": \"Profit asc\",\n    \"value\": \"3 asc\"\n  }\n]",
-                      "placeholderText": "Select option",
-                      "isDisabled": false,
-                      "key": "hwxfd7hidt",
-                      "labelTextSize": "0.875rem",
-                      "isRequired": false,
-                      "isDeprecated": false,
-                      "rightColumn": 64,
-                      "dynamicHeight": "AUTO_HEIGHT",
-                      "widgetId": "06oxlj9x8f",
-                      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-                      "minWidth": 450,
-                      "isVisible": true,
-                      "version": 1,
-                      "parentId": "h80egwa789",
-                      "labelAlignment": "right",
-                      "renderMode": "CANVAS",
-                      "isLoading": false,
-                      "responsiveBehavior": "fill",
-                      "originalTopRow": 4,
-                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                      "maxDynamicHeight": 9000,
-                      "originalBottomRow": 8,
-                      "onOptionChange": "{{SelectOFFERSUser.run();}}",
-                      "minDynamicHeight": 4
-                    },
-                    {
-                      "boxShadow": "none",
                       "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
                       "topRow": 5,
                       "tooltip": "",
-                      "labelWidth": "4",
+                      "labelWidth": "5",
                       "type": "INPUT_WIDGET_V2",
                       "animateLoading": true,
                       "resetOnSubmit": true,
-                      "leftColumn": 42,
+                      "leftColumn": 41,
                       "dynamicBindingPathList": [
                         {
                           "key": "accentColor"
@@ -1809,7 +1744,7 @@
                       "version": 2,
                       "isLoading": false,
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                      "originalBottomRow": 7,
+                      "originalBottomRow": 10,
                       "mobileBottomRow": 7,
                       "widgetName": "SearchCamp",
                       "displayName": "Input",
@@ -1836,7 +1771,7 @@
                       "labelTextSize": "0.875rem",
                       "onTextChanged": "{{SelectOFFERSUser.run();\nSelectOFFERSTot.run()}}",
                       "isDeprecated": false,
-                      "rightColumn": 53,
+                      "rightColumn": 64,
                       "widgetId": "v8czkqdben",
                       "minWidth": 450,
                       "label": "Campaign",
@@ -1845,7 +1780,7 @@
                       "renderMode": "CANVAS",
                       "mobileTopRow": 0,
                       "responsiveBehavior": "fill",
-                      "originalTopRow": 0,
+                      "originalTopRow": 5,
                       "mobileLeftColumn": 0,
                       "maxDynamicHeight": 9000,
                       "iconAlign": "left",
@@ -1873,9 +1808,6 @@
                           "key": "tableData"
                         },
                         {
-                          "key": "primaryColumns.revenue.computedValue"
-                        },
-                        {
                           "key": "primaryColumns.spent.computedValue"
                         },
                         {
@@ -1886,9 +1818,6 @@
                         },
                         {
                           "key": "primaryColumns.profit.computedValue"
-                        },
-                        {
-                          "key": "primaryColumns.revenue.cellBackground"
                         },
                         {
                           "key": "primaryColumns.profit.cellBackground"
@@ -1928,6 +1857,12 @@
                         },
                         {
                           "key": "primaryColumns.total.cellBackground"
+                        },
+                        {
+                          "key": "primaryColumns.revenue.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.revenue.cellBackground"
                         }
                       ],
                       "needsHeightForContent": true,
@@ -1966,8 +1901,8 @@
                         }
                       },
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                      "columnUpdatedAt": 1686934140979,
-                      "originalBottomRow": 22,
+                      "columnUpdatedAt": 1688197418405,
+                      "originalBottomRow": 23,
                       "defaultSelectedRowIndices": [
                         0
                       ],
@@ -1988,9 +1923,6 @@
                       "dynamicPropertyPathList": [
                         {
                           "key": "primaryColumns.spent.cellBackground"
-                        },
-                        {
-                          "key": "primaryColumns.revenue.cellBackground"
                         },
                         {
                           "key": "primaryColumns.profit.cellBackground"
@@ -2015,6 +1947,9 @@
                         },
                         {
                           "key": "primaryColumns.total.cellBackground"
+                        },
+                        {
+                          "key": "primaryColumns.revenue.cellBackground"
                         }
                       ],
                       "compactMode": "DEFAULT",
@@ -2046,35 +1981,6 @@
                       ],
                       "borderWidth": "1",
                       "primaryColumns": {
-                        "revenue": {
-                          "allowCellWrapping": false,
-                          "index": 2,
-                          "width": 150,
-                          "originalId": "revenue",
-                          "id": "revenue",
-                          "alias": "revenue",
-                          "horizontalAlignment": "RIGHT",
-                          "verticalAlignment": "CENTER",
-                          "columnType": "number",
-                          "textColor": "",
-                          "textSize": "0.875rem",
-                          "fontStyle": "",
-                          "enableFilter": true,
-                          "enableSort": true,
-                          "isVisible": true,
-                          "isDisabled": false,
-                          "isCellEditable": false,
-                          "isEditable": false,
-                          "isCellVisible": true,
-                          "isDerived": false,
-                          "label": "Revenue",
-                          "isSaveVisible": true,
-                          "isDiscardVisible": true,
-                          "computedValue": "{{TableOffersCopy.processedTableData.map((currentRow, currentIndex) => ( Utils2.myCurrency( currentRow[\"revenue\"])))}}",
-                          "sticky": "",
-                          "validation": {},
-                          "cellBackground": "{{TableOffersCopy.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"row_color\"]))}}"
-                        },
                         "spent": {
                           "allowCellWrapping": false,
                           "index": 3,
@@ -2340,6 +2246,36 @@
                           "sticky": "",
                           "validation": {},
                           "cellBackground": "{{TableOffersCopy.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"row_color\"]))}}"
+                        },
+                        "revenue": {
+                          "allowCellWrapping": false,
+                          "allowSameOptionsInNewRow": true,
+                          "index": 9,
+                          "width": 150,
+                          "originalId": "revenue",
+                          "id": "revenue",
+                          "alias": "revenue",
+                          "horizontalAlignment": "RIGHT",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "number",
+                          "textColor": "",
+                          "textSize": "0.875rem",
+                          "fontStyle": "",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": true,
+                          "isDisabled": false,
+                          "isCellEditable": false,
+                          "isEditable": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "Revenue",
+                          "isSaveVisible": true,
+                          "isDiscardVisible": true,
+                          "computedValue": "{{TableOffersCopy.processedTableData.map((currentRow, currentIndex) => ( Utils2.myCurrency( currentRow[\"revenue\"])))}}",
+                          "sticky": "",
+                          "validation": {},
+                          "cellBackground": "{{TableOffersCopy.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"row_color\"]))}}"
                         }
                       },
                       "onRowSelected": "",
@@ -2356,7 +2292,7 @@
                       "renderMode": "CANVAS",
                       "horizontalAlignment": "RIGHT",
                       "isVisibleSearch": false,
-                      "originalTopRow": 13,
+                      "originalTopRow": 14,
                       "isVisiblePagination": false,
                       "verticalAlignment": "CENTER"
                     },
@@ -2397,9 +2333,9 @@
                       "isLoading": false,
                       "mobileTopRow": 8,
                       "responsiveBehavior": "fill",
-                      "originalTopRow": 8,
+                      "originalTopRow": 10,
                       "mobileLeftColumn": 0,
-                      "originalBottomRow": 12
+                      "originalBottomRow": 14
                     },
                     {
                       "boxShadow": "none",
@@ -2421,7 +2357,7 @@
                       ],
                       "text": "Media Buyer Offers",
                       "labelTextSize": "0.875rem",
-                      "rightColumn": 13,
+                      "rightColumn": 15,
                       "textAlign": "LEFT",
                       "dynamicHeight": "FIXED",
                       "widgetId": "urzv99hdc8",
@@ -2508,7 +2444,7 @@
                           "key": "onDropdownClose"
                         }
                       ],
-                      "leftColumn": 16,
+                      "leftColumn": 15,
                       "dynamicBindingPathList": [
                         {
                           "key": "accentColor"
@@ -2536,7 +2472,7 @@
                       "labelTextSize": "0.875rem",
                       "isRequired": true,
                       "isDeprecated": false,
-                      "rightColumn": 28,
+                      "rightColumn": 27,
                       "dynamicHeight": "FIXED",
                       "widgetId": "waglpxkmss",
                       "accentColor": "{{appsmith.theme.colors.primaryColor}}",
@@ -2617,16 +2553,15 @@
               "confirmBeforeExecute": false,
               "pluginType": "DB",
               "jsonPathKeys": [
-                "!Select1.selectedOptionValue ? '3 desc' : Select1.selectedOptionValue",
                 "MSTrSource.selectedOptionValues.length == 0",
-                "!SelectUser.selectedOptionValue",
                 "\"'\" + SelectUser.selectedOptionValue + \"'\"",
+                "!SelectUser.selectedOptionValue",
                 "moment(DateTo.selectedDate).format('YYYY-DD-MM')",
                 "SearchCamp.inputText",
-                "MSNetwork.selectedOptionValues.length == 0",
+                "\"'\" + MSNetwork.selectedOptionValues.join(\"', '\") + \"'\"",
                 "\"'\" + MSTrSource.selectedOptionValues.join(\"', '\") + \"'\"",
-                "moment(DateFrom.selectedDate).format('YYYY-DD-MM')",
-                "\"'\" + MSNetwork.selectedOptionValues.join(\"', '\") + \"'\""
+                "MSNetwork.selectedOptionValues.length == 0",
+                "moment(DateFrom.selectedDate).format('YYYY-DD-MM')"
               ],
               "timeoutInMillisecond": 10000
             },
@@ -2663,10 +2598,10 @@
                 "!SelectUser.selectedOptionValue",
                 "moment(DateTo.selectedDate).format('YYYY-DD-MM')",
                 "SearchCamp.inputText",
-                "\"'\" + MSTrSource.selectedOptionValues.join(\"', '\") + \"'\"",
-                "MSNetwork.selectedOptionValues.length == 0",
                 "\"'\" + MSNetwork.selectedOptionValues.join(\"', '\") + \"'\"",
-                "moment(DateFrom.selectedDate).format('YYYY-DD-MM')"
+                "moment(DateFrom.selectedDate).format('YYYY-DD-MM')",
+                "MSNetwork.selectedOptionValues.length == 0",
+                "\"'\" + MSTrSource.selectedOptionValues.join(\"', '\") + \"'\""
               ],
               "timeoutInMillisecond": 10000
             }
