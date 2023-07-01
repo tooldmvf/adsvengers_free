@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 930,
+          "bottomRow": 950,
           "containerStyle": "none",
           "snapRows": 86,
           "parentRowSpace": 1,
@@ -978,7 +978,7 @@
                 "label"
               ],
               "topRow": 89,
-              "bottomRow": 93,
+              "bottomRow": 95,
               "parentRowSpace": 10,
               "type": "TEXT_WIDGET",
               "hideCard": false,
@@ -1026,7 +1026,7 @@
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "mobileLeftColumn": 0,
               "maxDynamicHeight": 9000,
-              "originalBottomRow": 93,
+              "originalBottomRow": 95,
               "fontSize": "0.875rem",
               "minDynamicHeight": 4
             },
@@ -1041,7 +1041,7 @@
                 "label"
               ],
               "topRow": 89,
-              "bottomRow": 93,
+              "bottomRow": 94,
               "parentRowSpace": 10,
               "type": "TEXT_WIDGET",
               "hideCard": false,
@@ -1089,7 +1089,7 @@
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "mobileLeftColumn": 0,
               "maxDynamicHeight": 9000,
-              "originalBottomRow": 93,
+              "originalBottomRow": 94,
               "fontSize": "0.875rem",
               "minDynamicHeight": 4
             },
@@ -2748,7 +2748,7 @@
                                       "text": "{{Utils.myCurrency( (OtherRevInput.value - OtherSpentInput.value)/(100/Fetch_Data_Other_Prj.data[0]?.commissions_fee||1))}}",
                                       "key": "wmtrt5wcg7",
                                       "isDeprecated": false,
-                                      "rightColumn": 62,
+                                      "rightColumn": 64,
                                       "textAlign": "RIGHT",
                                       "dynamicHeight": "FIXED",
                                       "widgetId": "poe7m7w302",
@@ -2794,7 +2794,7 @@
                                       "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
                                       "parentColumnSpace": 5.27288818359375,
                                       "dynamicTriggerPathList": [],
-                                      "leftColumn": 36,
+                                      "leftColumn": 35,
                                       "dynamicBindingPathList": [
                                         {
                                           "key": "truncateButtonColor"
@@ -2817,7 +2817,7 @@
                                       "text": "{{Utils.myCurrency( (OtherRevInput.value - OtherSpentInput.value)/2)}}",
                                       "key": "wmtrt5wcg7",
                                       "isDeprecated": false,
-                                      "rightColumn": 63,
+                                      "rightColumn": 64,
                                       "textAlign": "RIGHT",
                                       "dynamicHeight": "FIXED",
                                       "widgetId": "f4aavz93ot",
@@ -2875,7 +2875,7 @@
                                       "text": "Profit Factory",
                                       "key": "wmtrt5wcg7",
                                       "isDeprecated": false,
-                                      "rightColumn": 36,
+                                      "rightColumn": 34,
                                       "textAlign": "LEFT",
                                       "dynamicHeight": "FIXED",
                                       "widgetId": "aipk3j1m8r",
@@ -5211,6 +5211,9 @@
                               "dynamicPropertyPathList": [
                                 {
                                   "key": "isDisabled"
+                                },
+                                {
+                                  "key": "isVisible"
                                 }
                               ],
                               "displayName": "Button",
@@ -5239,6 +5242,9 @@
                                 },
                                 {
                                   "key": "isDisabled"
+                                },
+                                {
+                                  "key": "isVisible"
                                 }
                               ],
                               "text": "Confirm",
@@ -5250,7 +5256,7 @@
                               "iconName": "thumbs-up",
                               "widgetId": "xk7e55enei",
                               "minWidth": 120,
-                              "isVisible": true,
+                              "isVisible": "{{SelectMonth.selectedOptionValue.length>0}}",
                               "recaptchaType": "V3",
                               "version": 1,
                               "parentId": "lvya69kw4u",
@@ -5277,6 +5283,9 @@
                               "dynamicPropertyPathList": [
                                 {
                                   "key": "isDisabled"
+                                },
+                                {
+                                  "key": "isVisible"
                                 }
                               ],
                               "displayName": "Button",
@@ -5305,6 +5314,9 @@
                                 },
                                 {
                                   "key": "isDisabled"
+                                },
+                                {
+                                  "key": "isVisible"
                                 }
                               ],
                               "text": "Ask Revision",
@@ -5316,7 +5328,7 @@
                               "iconName": "help",
                               "widgetId": "39logs4l23",
                               "minWidth": 120,
-                              "isVisible": true,
+                              "isVisible": "{{SelectMonth.selectedOptionValue.length>0}}",
                               "recaptchaType": "V3",
                               "version": 1,
                               "parentId": "lvya69kw4u",
@@ -5424,7 +5436,7 @@
                                   "key": "onClick"
                                 }
                               ],
-                              "leftColumn": 34,
+                              "leftColumn": 33,
                               "dynamicBindingPathList": [
                                 {
                                   "key": "borderRadius"
