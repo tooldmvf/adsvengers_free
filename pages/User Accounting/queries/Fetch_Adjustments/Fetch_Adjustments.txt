@@ -1,5 +1,5 @@
 SELECT a.fk_user_id,a.financial_month,amount_adjustment,amount_profit_adjst
-,notes,approved_by_user,b.email
+,notes,approved_by_user,b.email,email_sent
 FROM public.user_totals_month a
 INNER join auth.users b on (b.id = a.fk_user_id)
 where 1 = 1

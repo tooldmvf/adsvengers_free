@@ -2,7 +2,7 @@
   "pluginType": "API",
   "pluginId": "restapi-plugin",
   "unpublishedAction": {
-    "name": "save_monthly_data",
+    "name": "save_monthly_data_no_email",
     "datasource": {
       "name": "Auth",
       "pluginId": "restapi-plugin",
@@ -40,7 +40,7 @@
       ],
       "encodeParamsToggle": true,
       "queryParameters": [],
-      "body": "{ \n\t\"fk_user_id\": \"{{SelectUser.selectedOptionValue}}\", \n\t\"financial_month\": \"{{SelectYear.selectedOptionValue.concat(SelectMonth.selectedOptionValue)}}\",\n\t\"amount_revenue_approved\": \"{{Hidden_rev.text}}\",\n\t\"amount_invoice\": \"{{HiddenAmountInvoice.text}}\",\n\t\"amount_spent\": \"{{Hidden_spent.text}}\",\n\t\"amount_debt\": \"{{HiddenAmountDebt.text}}\",\n\t\"notes\": \"{{InputNotes.text}}\",\n\t\"email_sent\": \"true\"\n}",
+      "body": "{ \n\t\"fk_user_id\": \"{{SelectUser.selectedOptionValue}}\", \n\t\"financial_month\": \"{{SelectYear.selectedOptionValue.concat(SelectMonth.selectedOptionValue)}}\",\n\t\"amount_revenue_approved\": \"{{Hidden_rev.text}}\",\n\t\"amount_invoice\": \"{{HiddenAmountInvoice.text}}\",\n\t\"amount_spent\": \"{{Hidden_spent.text}}\",\n\t\"amount_debt\": \"{{HiddenAmountDebt.text}}\",\n\t\"notes\": \"{{InputNotes.text}}\"\n}",
       "httpMethod": "POST",
       "selfReferencingDataPaths": [],
       "formData": {
@@ -72,9 +72,10 @@
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
-    "userPermissions": []
+    "userPermissions": [],
+    "createdAt": "2023-07-01T10:00:52Z"
   },
-  "id": "User Accounting_save_monthly_data",
+  "id": "User Accounting_save_monthly_data_no_email",
   "deleted": false,
-  "gitSyncId": "646331cd28902b71518db22a_6472e94a270e40370738d47b"
+  "gitSyncId": "646331cd28902b71518db22a_649ff954a695192a7f456f65"
 }
