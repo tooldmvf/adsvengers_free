@@ -2625,7 +2625,7 @@
                                       "type": "CURRENCY_INPUT_WIDGET",
                                       "animateLoading": true,
                                       "resetOnSubmit": false,
-                                      "leftColumn": 33,
+                                      "leftColumn": 32,
                                       "dynamicBindingPathList": [
                                         {
                                           "key": "accentColor"
@@ -3049,7 +3049,7 @@
                                       "text": "Spent +Fees",
                                       "key": "wmtrt5wcg7",
                                       "isDeprecated": false,
-                                      "rightColumn": 33,
+                                      "rightColumn": 32,
                                       "textAlign": "LEFT",
                                       "dynamicHeight": "FIXED",
                                       "widgetId": "tydve1khf0",
@@ -5410,9 +5410,6 @@
                               "dynamicPropertyPathList": [
                                 {
                                   "key": "defaultCheckedState"
-                                },
-                                {
-                                  "key": "isVisible"
                                 }
                               ],
                               "displayName": "Checkbox",
@@ -5437,9 +5434,6 @@
                                 },
                                 {
                                   "key": "defaultCheckedState"
-                                },
-                                {
-                                  "key": "isVisible"
                                 }
                               ],
                               "labelPosition": "Right",
@@ -5452,7 +5446,7 @@
                               "widgetId": "vhuwbxdahh",
                               "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                               "minWidth": 450,
-                              "isVisible": "{{appsmith.store.role_level>100}}",
+                              "isVisible": true,
                               "label": "Email sent",
                               "version": 1,
                               "parentId": "lvya69kw4u",
