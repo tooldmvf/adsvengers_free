@@ -5204,77 +5204,6 @@
                             {
                               "resetFormOnClick": false,
                               "boxShadow": "none",
-                              "mobileBottomRow": 56,
-                              "widgetName": "Button1",
-                              "onClick": "{{save_monthly_data.run().then(() => {\n  showAlert('Data Saved on Monthly Table', 'success');\n  Utils.sendEmail();\n}).catch(() => {\n  showAlert('Error: ' + save_monthly_data.responseMeta, 'error');\n});}}",
-                              "buttonColor": "#fde047",
-                              "dynamicPropertyPathList": [
-                                {
-                                  "key": "isVisible"
-                                },
-                                {
-                                  "key": "isDisabled"
-                                }
-                              ],
-                              "displayName": "Button",
-                              "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
-                              "searchTags": [
-                                "click",
-                                "submit"
-                              ],
-                              "topRow": 63,
-                              "bottomRow": 67,
-                              "tooltip": "",
-                              "parentRowSpace": 10,
-                              "type": "BUTTON_WIDGET",
-                              "hideCard": false,
-                              "mobileRightColumn": 37,
-                              "animateLoading": true,
-                              "parentColumnSpace": 5.2421875,
-                              "dynamicTriggerPathList": [
-                                {
-                                  "key": "onClick"
-                                }
-                              ],
-                              "leftColumn": 2,
-                              "dynamicBindingPathList": [
-                                {
-                                  "key": "borderRadius"
-                                },
-                                {
-                                  "key": "isVisible"
-                                },
-                                {
-                                  "key": "isDisabled"
-                                }
-                              ],
-                              "text": "Send Email",
-                              "isDisabled": "{{!(Fetch_Adjustments.data[0].approved_by_user) ? true : (!(Fetch_Adjustments.data[0].approved_by_user) && appsmith.store.role_level<=500)}}",
-                              "key": "3xi9orpbxd",
-                              "isDeprecated": false,
-                              "rightColumn": 33,
-                              "isDefaultClickDisabled": true,
-                              "widgetId": "1f19iia9tf",
-                              "minWidth": 120,
-                              "isVisible": "{{appsmith.store.role_level>100}}",
-                              "recaptchaType": "V3",
-                              "version": 1,
-                              "parentId": "lvya69kw4u",
-                              "renderMode": "CANVAS",
-                              "isLoading": false,
-                              "mobileTopRow": 52,
-                              "responsiveBehavior": "hug",
-                              "originalTopRow": 57,
-                              "disabledWhenInvalid": false,
-                              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                              "mobileLeftColumn": 21,
-                              "originalBottomRow": 61,
-                              "buttonVariant": "PRIMARY",
-                              "placement": "CENTER"
-                            },
-                            {
-                              "resetFormOnClick": false,
-                              "boxShadow": "none",
                               "mobileBottomRow": 90,
                               "widgetName": "Button2",
                               "onClick": "{{Save_Approvement.run().then(() => {\n  Fetch_Adjustments.run();\n  showAlert('Data Approved', 'success');\n  Slack_Message_OK.run();\n});}}",
@@ -5427,7 +5356,7 @@
                               "animateLoading": true,
                               "parentColumnSpace": 16.328125,
                               "dynamicTriggerPathList": [],
-                              "leftColumn": 34,
+                              "leftColumn": 2,
                               "dynamicBindingPathList": [
                                 {
                                   "key": "accentColor"
@@ -5441,7 +5370,7 @@
                               "key": "dpanryxfgd",
                               "isRequired": false,
                               "isDeprecated": false,
-                              "rightColumn": 62,
+                              "rightColumn": 27,
                               "dynamicHeight": "FIXED",
                               "widgetId": "vhuwbxdahh",
                               "accentColor": "{{appsmith.theme.colors.primaryColor}}",
@@ -5459,6 +5388,78 @@
                               "defaultCheckedState": "{{Fetch_Adjustments.data[0]?.email_sent||false}}",
                               "maxDynamicHeight": 9000,
                               "minDynamicHeight": 4
+                            },
+                            {
+                              "resetFormOnClick": false,
+                              "boxShadow": "none",
+                              "mobileBottomRow": 56,
+                              "widgetName": "Button1",
+                              "onClick": "{{save_monthly_data.run().then(() => {\n  showAlert('Data Saved on Monthly Table', 'success');\n  Utils.sendEmail();\n}).catch(() => {\n  showAlert('Error: ' + save_monthly_data.responseMeta, 'error');\n});}}",
+                              "buttonColor": "#fde047",
+                              "dynamicPropertyPathList": [
+                                {
+                                  "key": "isVisible"
+                                },
+                                {
+                                  "key": "isDisabled"
+                                }
+                              ],
+                              "displayName": "Button",
+                              "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
+                              "searchTags": [
+                                "click",
+                                "submit"
+                              ],
+                              "topRow": 63,
+                              "bottomRow": 67,
+                              "tooltip": "",
+                              "parentRowSpace": 10,
+                              "type": "BUTTON_WIDGET",
+                              "hideCard": false,
+                              "mobileRightColumn": 37,
+                              "animateLoading": true,
+                              "parentColumnSpace": 5.2421875,
+                              "dynamicTriggerPathList": [
+                                {
+                                  "key": "onClick"
+                                }
+                              ],
+                              "leftColumn": 34,
+                              "dynamicBindingPathList": [
+                                {
+                                  "key": "borderRadius"
+                                },
+                                {
+                                  "key": "isVisible"
+                                },
+                                {
+                                  "key": "isDisabled"
+                                }
+                              ],
+                              "text": "Send Email",
+                              "isDisabled": "{{!(Fetch_Adjustments.data[0].approved_by_user) ? true : (!(Fetch_Adjustments.data[0].approved_by_user) && appsmith.store.role_level<=500)}}",
+                              "key": "3xi9orpbxd",
+                              "isDeprecated": false,
+                              "rightColumn": 63,
+                              "isDefaultClickDisabled": true,
+                              "widgetId": "1f19iia9tf",
+                              "minWidth": 120,
+                              "isVisible": "{{appsmith.store.role_level>100}}",
+                              "recaptchaType": "V3",
+                              "version": 1,
+                              "parentId": "lvya69kw4u",
+                              "renderMode": "CANVAS",
+                              "isLoading": false,
+                              "mobileTopRow": 52,
+                              "responsiveBehavior": "hug",
+                              "originalTopRow": 97,
+                              "disabledWhenInvalid": false,
+                              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                              "mobileLeftColumn": 21,
+                              "originalBottomRow": 101,
+                              "buttonVariant": "PRIMARY",
+                              "iconAlign": "right",
+                              "placement": "CENTER"
                             }
                           ]
                         }
