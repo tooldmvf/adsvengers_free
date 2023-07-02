@@ -2843,13 +2843,13 @@
                                                   "key": "borderRadius"
                                                 }
                                               ],
-                                              "leftColumn": 0,
+                                              "leftColumn": 6,
                                               "shouldTruncate": false,
                                               "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
                                               "text": "{{currentItem.bm_name +'\\n'+ currentItem.ad_account_name+ (appsmith.store.role_level >100 ? ' | ' + currentItem.last_name : '')}}",
                                               "key": "xuxt86jfyp",
                                               "isDeprecated": false,
-                                              "rightColumn": 44,
+                                              "rightColumn": 48,
                                               "textAlign": "LEFT",
                                               "dynamicHeight": "FIXED",
                                               "widgetId": "ctzcaqaf15",
@@ -2900,13 +2900,13 @@
                                                   "key": "borderRadius"
                                                 }
                                               ],
-                                              "leftColumn": 44,
+                                              "leftColumn": 48,
                                               "shouldTruncate": false,
                                               "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
                                               "text": "Spent: {{Utils2.myCurrency( currentItem.amount_spent_plus_fee) }}",
                                               "key": "xuxt86jfyp",
                                               "isDeprecated": false,
-                                              "rightColumn": 63,
+                                              "rightColumn": 64,
                                               "textAlign": "RIGHT",
                                               "dynamicHeight": "FIXED",
                                               "widgetId": "ap7egb603x",
@@ -2924,6 +2924,56 @@
                                               "fontSize": "0.875rem",
                                               "textStyle": "HEADING",
                                               "minDynamicHeight": 4
+                                            },
+                                            {
+                                              "boxShadow": "none",
+                                              "mobileBottomRow": 4,
+                                              "widgetName": "IconButton4",
+                                              "onClick": "{{navigateTo('https://adsmanager.facebook.com/adsmanager/manage/campaigns?act=' + currentItem.fk_ad_account_id.substring(4, 20) + '&business_id=' + currentItem.bm_id, {}, 'NEW_WINDOW');}}",
+                                              "buttonColor": "#1e40af",
+                                              "displayName": "Icon button",
+                                              "iconSVG": "/static/media/icon.80fc7466c0d7181ec0271de7fda795ec.svg",
+                                              "searchTags": [
+                                                "click",
+                                                "submit"
+                                              ],
+                                              "topRow": 0,
+                                              "bottomRow": 5,
+                                              "parentRowSpace": 10,
+                                              "type": "ICON_BUTTON_WIDGET",
+                                              "hideCard": false,
+                                              "mobileRightColumn": 4,
+                                              "animateLoading": true,
+                                              "parentColumnSpace": 5.205810546875,
+                                              "dynamicTriggerPathList": [
+                                                {
+                                                  "key": "onClick"
+                                                }
+                                              ],
+                                              "leftColumn": 2,
+                                              "dynamicBindingPathList": [
+                                                {
+                                                  "key": "borderRadius"
+                                                }
+                                              ],
+                                              "isDisabled": false,
+                                              "key": "k8ejlf9cdh",
+                                              "isDeprecated": false,
+                                              "rightColumn": 5,
+                                              "iconName": "link",
+                                              "dynamicHeight": "FIXED",
+                                              "widgetId": "j6s8ahyyx6",
+                                              "minWidth": 50,
+                                              "isVisible": true,
+                                              "version": 1,
+                                              "parentId": "cynmffr352",
+                                              "renderMode": "CANVAS",
+                                              "isLoading": false,
+                                              "mobileTopRow": 0,
+                                              "responsiveBehavior": "hug",
+                                              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                                              "mobileLeftColumn": 0,
+                                              "buttonVariant": "TERTIARY"
                                             }
                                           ],
                                           "key": "iaxwy3kw8t",
