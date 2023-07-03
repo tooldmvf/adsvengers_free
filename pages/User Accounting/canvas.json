@@ -1104,7 +1104,7 @@
                 "label"
               ],
               "topRow": 89,
-              "bottomRow": 93,
+              "bottomRow": 94,
               "parentRowSpace": 10,
               "type": "TEXT_WIDGET",
               "hideCard": false,
@@ -1377,7 +1377,8 @@
                                 "status": 85,
                                 "network_name": 185,
                                 "amount_spent": 125,
-                                "bm_name": 269
+                                "bm_name": 288,
+                                "amount_spent_fixed": 94
                               },
                               "parentRowSpace": 10,
                               "hideCard": false,

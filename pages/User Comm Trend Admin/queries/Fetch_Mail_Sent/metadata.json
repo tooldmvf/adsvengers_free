@@ -2,7 +2,7 @@
   "pluginType": "DB",
   "pluginId": "postgres-plugin",
   "unpublishedAction": {
-    "name": "Fetch_Debt_Factory",
+    "name": "Fetch_Mail_Sent",
     "datasource": {
       "name": "DO_db-postgresql-adsv",
       "pluginId": "postgres-plugin",
@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "select * from crosstab(\n'SELECT B.LAST_NAME , substring(financial_month,5,2)::integer m, sum(amount_debt)\nFROM public.user_totals_month a\n\tINNER JOIN PUBLIC.USER_PROFILES B ON (B.FK_USER_ID = A.FK_USER_ID)\nWhere 1=1\nand (text(a.fk_user_id) IN ({{\"''\" + MultiSelectUsers.selectedOptionValues.join(\"'', ''\") + \"''\"}}) OR text(a.fk_user_id) = ''{{appsmith.store.myUser}}'' )\nand substring(financial_month,1,4) = ''{{SelectYear.selectedOptionValue}}''\nGROUP By B.LAST_NAME ,a.financial_month\nhaving sum(amount_debt) <> 0' \n, 'select m from generate_series(1,12) m')\nAS ct(\"Type\" TEXT, \n  \"Jan\" float,\n  \"Feb\" float,\n  \"Mar\" float,\n  \"Apr\" float,\n  \"May\" float,\n  \"Jun\" float,\n  \"Jul\" float,\n  \"Aug\" float,\n  \"Sep\" float,\n  \"Oct\" float,\n  \"Nov\" float,\n  \"Dec\" float)\n",
+      "body": "select * from crosstab(\n'SELECT B.last_name , substring(financial_month,5,2)::integer m, email_sent\nFROM public.user_totals_month a\n\tINNER JOIN PUBLIC.USER_PROFILES B ON (B.FK_USER_ID = A.FK_USER_ID)\nWhere 1=1\nand (text(a.fk_user_id) IN ({{\"''\" + MultiSelectUsers.selectedOptionValues.join(\"'', ''\") + \"''\"}}) OR text(a.fk_user_id) = ''{{appsmith.store.myUser}}'' )\nand substring(financial_month,1,4) = ''{{SelectYear.selectedOptionValue}}''\nGROUP By B.last_name ,a.financial_month, email_sent\nhaving sum(amount_revenue_approved)-sum(amount_spent) <> 0' \n, 'select m from generate_series(1,12) m')\nAS ct(\"Type\" TEXT, \n  \"Jan\" BOOLEAN,\n  \"Feb\" BOOLEAN,\n  \"Mar\" BOOLEAN,\n  \"Apr\" BOOLEAN,\n  \"May\" BOOLEAN,\n  \"Jun\" BOOLEAN,\n  \"Jul\" BOOLEAN,\n  \"Aug\" BOOLEAN,\n  \"Sep\" BOOLEAN,\n  \"Oct\" BOOLEAN,\n  \"Nov\" BOOLEAN,\n  \"Dec\" BOOLEAN)\n",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
@@ -44,9 +44,9 @@
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": [],
-    "createdAt": "2023-06-23T17:11:49Z"
+    "createdAt": "2023-07-03T13:13:58Z"
   },
-  "id": "User Comm Trend Admin_Fetch_Debt_Factory",
+  "id": "User Comm Trend Admin_Fetch_Mail_Sent",
   "deleted": false,
-  "gitSyncId": "646331cd28902b71518db22a_6495d255a695192a7f456a17"
+  "gitSyncId": "646331cd28902b71518db22a_64a2c9966eb8f2753fab2bdb"
 }

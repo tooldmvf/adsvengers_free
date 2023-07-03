@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "SELECT a.fk_user_id,a.financial_month,amount_revenue_approved*2 as amount_revenue_approved\n,commissions_fee\n,amount_spent_wfees*2 as amount_spent_wfees\nFROM public.user_other_project_month a\nwhere 1 = 1\nand ({{!SelectUser.selectedOptionValue}} OR (text(a.fk_user_id) IN ({{\"'\" + SelectUser.selectedOptionValue + \"'\"}})))\nAND a.financial_month = '{{SelectYear.selectedOptionValue}}{{SelectMonth.selectedOptionValue}}'\n",
+      "body": "SELECT a.fk_user_id,a.financial_month,amount_revenue_approved as amount_revenue_approved\n,commissions_fee\n,amount_spent_wfees as amount_spent_wfees\nFROM public.user_other_project_month a\nwhere 1 = 1\nand ({{!SelectUser.selectedOptionValue}} OR (text(a.fk_user_id) IN ({{\"'\" + SelectUser.selectedOptionValue + \"'\"}})))\nAND a.financial_month = '{{SelectYear.selectedOptionValue}}{{SelectMonth.selectedOptionValue}}'\n",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
