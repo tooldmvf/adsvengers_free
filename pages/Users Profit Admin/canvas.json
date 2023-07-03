@@ -7159,7 +7159,7 @@
               "confirmBeforeExecute": false,
               "pluginType": "JS",
               "jsonPathKeys": [
-                "async () => {\n  await Tab4Offer.run();\n  await TotalLine.run();\n}"
+                "async () => {\n  await Tab4Offer.run();\n  await TotalLine.run();\n  await SelectFinancial.run();\n}"
               ],
               "timeoutInMillisecond": 10000
             },
