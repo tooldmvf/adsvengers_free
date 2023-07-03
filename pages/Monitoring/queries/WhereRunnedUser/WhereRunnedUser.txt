@@ -4,6 +4,7 @@ select distinct
 ,e.bm_name
 ,f.last_name
 ,(sum(b.amount_spent)+(sum(b.amount_spent))/100 * b.spent_rate_fees) as amount_spent_plus_fee
+,e.bm_id
 from public.user_financial_live a
 inner join public.raw_user_fb_financial_data_live b on (b.campaign_offer_id = fk_offer_id and b.fk_user_id = a.fk_user_id and b.financial_date = a.financial_date )
 inner join public.user_network c on (c.user_network_id = a.fk_user_network_id)
@@ -19,4 +20,5 @@ group by b.fk_ad_account_id
 ,e.bm_name
 ,f.last_name
 ,b.spent_rate_fees
+,e.bm_id
 order by 5 desc
