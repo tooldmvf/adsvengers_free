@@ -2010,6 +2010,9 @@
                 },
                 {
                   "key": "chartData.r6p2boft0n.data"
+                },
+                {
+                  "key": "chartName"
                 }
               ],
               "leftColumn": 0,
@@ -2076,7 +2079,7 @@
               "responsiveBehavior": "fill",
               "yAxisName": "Amount(€)",
               "originalTopRow": 45,
-              "chartName": "Sales Report",
+              "chartName": "Sales Report - {{SelectYear.selectedOptionLabel}}",
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "mobileLeftColumn": 0,
               "xAxisName": "Months",
@@ -2105,7 +2108,7 @@
               "mobileRightColumn": 24,
               "chartData": {
                 "t7wjzuzuso": {
-                  "seriesName": "Roi",
+                  "seriesName": "ROI",
                   "data": "{{Fetch_Data_Graphs.data.map( (obj) =>{ return  {'x': obj.financial_month2, 'y': obj.roi } })}}",
                   "color": "#facc15"
                 }
@@ -2128,6 +2131,9 @@
                 },
                 {
                   "key": "fontFamily"
+                },
+                {
+                  "key": "chartName"
                 }
               ],
               "leftColumn": 32,
@@ -2194,7 +2200,7 @@
               "responsiveBehavior": "fill",
               "yAxisName": "Roi (%)",
               "originalTopRow": 45,
-              "chartName": "Roi",
+              "chartName": "Roi - {{SelectYear.selectedOptionLabel}}",
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "mobileLeftColumn": 0,
               "xAxisName": "Months",
@@ -8143,7 +8149,7 @@
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "mobileLeftColumn": 0,
               "maxDynamicHeight": 9000,
-              "originalBottomRow": 172,
+              "originalBottomRow": 171,
               "minDynamicHeight": 15
             }
           ]

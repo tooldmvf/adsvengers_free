@@ -1,4 +1,4 @@
-SELECT substring(financial_month,1,4)||'-'||to_char(to_date(financial_month,'YYYYMM'),'Mon') as financial_month2
+SELECT to_char(to_date(financial_month,'YYYYMM'),'Mon') as financial_month2
 ,sum(amount_revenue_approved) amount_revenue_approved
 ,sum(amount_spent)-sum(amount_adjustment) amount_spent
 ,sum(amount_revenue_approved)-sum(amount_spent)+sum(amount_adjustment) amount_profit
