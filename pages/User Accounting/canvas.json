@@ -1305,6 +1305,9 @@
                                 },
                                 {
                                   "key": "primaryColumns.amount_spent.isCellEditable"
+                                },
+                                {
+                                  "key": "primaryColumns.amount_spent_fixed.isCellEditable"
                                 }
                               ],
                               "needsHeightForContent": true,
@@ -1366,6 +1369,9 @@
                                 },
                                 {
                                   "key": "primaryColumns.amount_spent.isCellEditable"
+                                },
+                                {
+                                  "key": "primaryColumns.amount_spent_fixed.isCellEditable"
                                 }
                               ],
                               "compactMode": "SHORT",
@@ -1583,7 +1589,7 @@
                                   "enableSort": true,
                                   "isVisible": true,
                                   "isDisabled": false,
-                                  "isCellEditable": true,
+                                  "isCellEditable": "{{TableSpentBM.processedTableData.map((currentRow, currentIndex) => ( !(Fetch_Adjustments.data[0].approved_by_user)))}}",
                                   "isEditable": true,
                                   "isCellVisible": true,
                                   "isDerived": false,
@@ -3275,6 +3281,9 @@
                                 },
                                 {
                                   "key": "primaryColumns.amount_revenue_approved.isCellEditable"
+                                },
+                                {
+                                  "key": "primaryColumns.amount_revenue_fixed.isCellEditable"
                                 }
                               ],
                               "needsHeightForContent": true,
@@ -3335,6 +3344,9 @@
                                 },
                                 {
                                   "key": "primaryColumns.amount_revenue_approved.isCellEditable"
+                                },
+                                {
+                                  "key": "primaryColumns.amount_revenue_fixed.isCellEditable"
                                 }
                               ],
                               "compactMode": "SHORT",
@@ -3529,7 +3541,7 @@
                                   "enableSort": true,
                                   "isVisible": true,
                                   "isDisabled": false,
-                                  "isCellEditable": true,
+                                  "isCellEditable": "{{TableRevModCopy.processedTableData.map((currentRow, currentIndex) => ( !(Fetch_Adjustments.data[0].approved_by_user)))}}",
                                   "isEditable": true,
                                   "isCellVisible": true,
                                   "isDerived": false,
