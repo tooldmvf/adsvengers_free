@@ -53,7 +53,7 @@
           "value": "eq.{{this.params.currentRow.financial_month}}"
         }
       ],
-      "body": "{ \n\t\"amount_revenue_approved\": \"{{Number(this.params.currentRow.amount_revenue_approved.replace(/[^0-9.-]+/g,\"\"))}}\" ,\n  \"amount_revenue_fixed\": \"{{Number(this.params.currentRow.amount_revenue_fixed.replace(/[^0-9.-]+/g,\"\"))}}\" \n}",
+      "body": "{ \n\t\"amount_revenue_approved\": \"{{Number(this.params.currentRow.amount_revenue_approved)}}\" ,\n  \"amount_revenue_fixed\": \"{{Number(this.params.currentRow.amount_revenue_fixed)}}\" \n}",
       "bodyFormData": [],
       "httpMethod": "PATCH",
       "selfReferencingDataPaths": [],
@@ -83,8 +83,8 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "Number(this.params.currentRow.amount_revenue_approved.replace(/[^0-9.-]+/g,\"\"))",
-      "Number(this.params.currentRow.amount_revenue_fixed.replace(/[^0-9.-]+/g,\"\"))",
+      "Number(this.params.currentRow.amount_revenue_approved)",
+      "Number(this.params.currentRow.amount_revenue_fixed)",
       "appsmith.store.access_token",
       "this.params.currentRow.financial_month",
       "this.params.currentRow.fk_network_id",

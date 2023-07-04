@@ -14,6 +14,7 @@ export default {
 		} else {
 		  await Send_Confirmation_NEG.run();
 		}
+		Fetch_Adjustments.run();
 	},
 	
 	async myFun1 (currentRow) {
