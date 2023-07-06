@@ -3915,6 +3915,9 @@
                         },
                         {
                           "key": "tableData"
+                        },
+                        {
+                          "key": "primaryColumns.customColumn6.onClick"
                         }
                       ],
                       "compactMode": "SHORT",
@@ -4832,7 +4835,7 @@
                           "customAlias": "",
                           "buttonLabel": "Clone\tDay",
                           "buttonVariant": "SECONDARY",
-                          "onClick": "{{showModal('CloneModal');}}",
+                          "onClick": "{{showModal('CloneModal');\nget_user_networks.run();\nget_user_offers.run({user_net_id: Table1Copy.triggeredRow.fk_user_network_id});}}",
                           "sticky": ""
                         },
                         "mediabuyer": {
