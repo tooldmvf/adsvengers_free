@@ -1,0 +1,13 @@
+{
+	"fk_user_id": "{{MultiSelectUsers.selectedOptionValues.length > 1 ? appsmith.store.myUser : MultiSelectUsers.selectedOptionValues[0]}}",
+	"fk_user_network_id": "{{this.params.user_net_id}}",
+	"fk_offer_id": "{{this.params.off_id}}",
+	"financial_date": "{{DateClone.selectedDate}}",
+	"amount_spent": "{{parseFloat(SpentInputClone.value)}}",
+	"amount_spent_plus_fee": "{{ parseFloat(SpentInputClone.value)+(parseFloat(SpentInputClone.value)/100*parseInt(InputSpentFeesClone.value)) }}",
+	"amount_revenue": "{{parseFloat(RevenueInputClone.value)}}",
+	"amount_revenue_approved": "{{parseFloat(RevenueInputClone.value)}}",
+	"amount_conversion": "{{parseInt(ConversionInputClone.text)}}",
+	"conversions_approved": "{{parseInt(ConversionInputClone.text)}}",
+	"spent_rate_fees": "{{InputSpentFeesClone.text}}"
+}
