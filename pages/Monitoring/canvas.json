@@ -5791,7 +5791,7 @@
                           "label": "ROI %",
                           "isSaveVisible": true,
                           "isDiscardVisible": true,
-                          "computedValue": "{{TableOffersCopy.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Tot_ROI\"].toLocaleString(undefined, {minimumFractionDigits: 1, maximumFractionDigits: 1})))}}",
+                          "computedValue": "{{TableOffersCopy.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Tot_ROI\"].toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2})))}}",
                           "sticky": "",
                           "validation": {},
                           "cellBackground": "{{TableOffersCopy.processedTableData.map((currentRow, currentIndex) => ( currentRow.row_color))}}"
