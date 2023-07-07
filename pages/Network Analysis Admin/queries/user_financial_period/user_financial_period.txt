@@ -28,7 +28,8 @@ sum(amount_revenue_approved - amount_spent_plus_fee)/sum(case when amount_spent_
 sum(conversions_rejected)/(case when sum(amount_conversion+conversions_rejected) = 0 then 1 else sum(amount_conversion+conversions_rejected) end)*100 as rej_rate,
 (sum(conversions_approved)-sum(a.conversions_pending))/(case when sum(amount_conversion) = 0 then 1 else sum(amount_conversion) end)*100 as approv_rate,
 sum(conversions_rejected_h)/(case when sum(conversions_total_h+conversions_rejected_h) = 0 then 1 else sum(conversions_total_h+conversions_rejected_h) end)*100 as rej_rate_h,
-(sum(conversions_approved_h)-sum(a.conversions_pending_h))/(case when sum(conversions_total_h) = 0 then 1 else sum(conversions_total_h) end)*100 as approv_rate_h
+(sum(conversions_approved_h)-sum(a.conversions_pending_h))/(case when sum(conversions_total_h) = 0 then 1 else sum(conversions_total_h) end)*100 as approv_rate_h,
+b.fk_network_id
 FROM 
   public."user_financial" a
   INNER JOIN public."user_network" b  ON (a.fk_user_id = b.fk_user_id and a.fk_user_network_id = b.user_network_id)
@@ -39,5 +40,5 @@ and a.financial_date >= to_date('{{moment(DateFrom.selectedDate).format('YYYY-DD
 and a.financial_date <= to_date('{{moment(DateTo.selectedDate).format('YYYY-DD-MM')}}','YYYY-DD-MM')
 and (text(a.fk_user_id) IN ({{"'" + MultiSelectUsers.selectedOptionValues.join("', '") + "'"}}) OR text(a.fk_user_id) = '{{appsmith.store.myUser}}' )
 and ({{SelectTSFront.selectedOptionValues.length == 0}} OR text(b.fk_ts_id) IN ({{"'" + SelectTSFront.selectedOptionValues.join("', '") + "'"}}))
-group by b.network_other_name, c.net_logo, c.network_name_short
+group by b.network_other_name, c.net_logo, c.network_name_short, b.fk_network_id
 order by 3 desc

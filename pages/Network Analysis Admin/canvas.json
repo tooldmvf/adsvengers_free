@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 1510,
+          "bottomRow": 6360,
           "containerStyle": "none",
           "snapRows": 125,
           "parentRowSpace": 1,
@@ -1871,10 +1871,11 @@
                       "requiresFlatWidgetChildren": true,
                       "listData": "{{user_financial_period.data}}",
                       "isCanvas": true,
+                      "dynamicPropertyPathList": [],
                       "displayName": "List",
                       "iconSVG": "/static/media/icon.9925ee17dee37bf1ba7374412563a8a7.svg",
-                      "topRow": 10,
-                      "bottomRow": 54,
+                      "topRow": 11,
+                      "bottomRow": 55,
                       "pageSize": 1,
                       "parentRowSpace": 10,
                       "type": "LIST_WIDGET_V2",
@@ -1883,7 +1884,7 @@
                       "templateBottomRow": 16,
                       "mainContainerId": "n0ayrxc6nv",
                       "animateLoading": true,
-                      "primaryKeys": "{{List1.listData.map((currentItem, currentIndex) => currentItem[\"network_other_name\"] )}}",
+                      "primaryKeys": "{{List1.listData.map((currentItem, currentIndex) => currentItem[\"fk_network_id\"] )}}",
                       "parentColumnSpace": 19.75,
                       "dynamicTriggerPathList": [],
                       "dynamicBindingPathList": [
@@ -2031,7 +2032,7 @@
                                           "leftColumn": 0,
                                           "children": [
                                             {
-                                              "widgetName": "ApprovedLabelCopyCopy",
+                                              "widgetName": "NtwkName",
                                               "displayName": "Text",
                                               "iconSVG": "/static/media/icon.97c59b523e6f70ba6f40a10fc2c7c5b5.svg",
                                               "searchTags": [
@@ -2730,7 +2731,7 @@
                                               "widgetId": "0ywpciixe2",
                                               "isVisible": true,
                                               "fontStyle": "BOLD",
-                                              "textColor": "#dc2626",
+                                              "textColor": "#ff0000",
                                               "version": 1,
                                               "parentId": "45lhv2eg3g",
                                               "renderMode": "CANVAS",
@@ -2917,7 +2918,7 @@
                                               "widgetId": "fi7o7beuw7",
                                               "isVisible": true,
                                               "fontStyle": "BOLD",
-                                              "textColor": "#dc2626",
+                                              "textColor": "#ff0000",
                                               "version": 1,
                                               "parentId": "45lhv2eg3g",
                                               "renderMode": "CANVAS",
@@ -5098,6 +5099,7 @@
                       "itemBackgroundColor": "#FFFFFF",
                       "widgetId": "fiw8nn852h",
                       "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                      "onItemClick": "",
                       "isVisible": true,
                       "parentId": "kvdk6yenbb",
                       "hasMetaWidgets": true,
@@ -5135,6 +5137,69 @@
               "maxDynamicHeight": 9000,
               "originalBottomRow": 151,
               "minDynamicHeight": 10
+            },
+            {
+              "mobileBottomRow": 163,
+              "widgetName": "Text2",
+              "displayName": "Text",
+              "iconSVG": "/static/media/icon.c3b6033f570046f8c6288d911333a827.svg",
+              "searchTags": [
+                "typography",
+                "paragraph",
+                "label"
+              ],
+              "topRow": 159,
+              "bottomRow": 636,
+              "parentRowSpace": 10,
+              "type": "TEXT_WIDGET",
+              "hideCard": false,
+              "mobileRightColumn": 27,
+              "animateLoading": true,
+              "overflow": "NONE",
+              "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
+              "parentColumnSpace": 16.328125,
+              "dynamicTriggerPathList": [],
+              "leftColumn": 11,
+              "dynamicBindingPathList": [
+                {
+                  "key": "truncateButtonColor"
+                },
+                {
+                  "key": "fontFamily"
+                },
+                {
+                  "key": "borderRadius"
+                },
+                {
+                  "key": "text"
+                }
+              ],
+              "shouldTruncate": false,
+              "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
+              "text": "{{List1.currentItemsView}}",
+              "key": "eh99i5ihpk",
+              "isDeprecated": false,
+              "rightColumn": 27,
+              "textAlign": "LEFT",
+              "dynamicHeight": "AUTO_HEIGHT",
+              "widgetId": "9jma1tal67",
+              "minWidth": 450,
+              "isVisible": true,
+              "fontStyle": "BOLD",
+              "textColor": "#231F20",
+              "version": 1,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "mobileTopRow": 159,
+              "responsiveBehavior": "fill",
+              "originalTopRow": 159,
+              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+              "mobileLeftColumn": 11,
+              "maxDynamicHeight": 9000,
+              "originalBottomRow": 636,
+              "fontSize": "1rem",
+              "minDynamicHeight": 4
             }
           ]
         },

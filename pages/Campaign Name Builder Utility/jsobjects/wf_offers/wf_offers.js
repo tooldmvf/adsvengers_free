@@ -17,7 +17,6 @@ export default {
 	
 		for (let i = 0; i < Object.keys(res.data.readCampaigns).length; i++) {
 			let cat_short = 'G';
-			await console.log(res.data.readCampaigns[i].id);
 			
 			if (res.data.readCampaigns[i].categories.includes('nutra') 
 					|| res.data.readCampaigns[i].categories.includes('beauty') 

@@ -2554,8 +2554,8 @@
               "pluginType": "DB",
               "jsonPathKeys": [
                 "MSTrSource.selectedOptionValues.length == 0",
-                "\"'\" + SelectUser.selectedOptionValue + \"'\"",
                 "!SelectUser.selectedOptionValue",
+                "\"'\" + SelectUser.selectedOptionValue + \"'\"",
                 "moment(DateTo.selectedDate).format('YYYY-DD-MM')",
                 "SearchCamp.inputText",
                 "\"'\" + MSNetwork.selectedOptionValues.join(\"', '\") + \"'\"",

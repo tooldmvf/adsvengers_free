@@ -1,6 +1,7 @@
 SELECT 	
 	sum(a.amount_spent_plus_fee) spent,
 	sum(a.amount_revenue) revenue,
+	sum(a.amount_revenue_pending) revenue_pending,
 	case when f.network_name_short != 'WL' then sum(a.amount_revenue)-sum(a.amount_spent_plus_fee) else (sum(a.amount_revenue)-sum(a.amount_spent_plus_fee))/2 end as profit,
 	sum(a.amount_spent) spent_no_fees,
 	case 
