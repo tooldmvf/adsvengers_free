@@ -6138,57 +6138,6 @@
               ],
               "timeoutInMillisecond": 10000
             }
-          ],
-          [
-            {
-              "id": "Monitoring_SelectDays",
-              "name": "SelectDays",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [
-                "moment().startOf('month').add('hours',2)",
-                "MSTrSource.selectedOptionValues.length == 0",
-                "moment().endOf('month').add('hours',2)",
-                "MSNetwork.selectedOptionValues.length == 0",
-                "\"'\" + MSTrSource.selectedOptionValues.join(\"', '\") + \"'\"",
-                "\"'\" + MSNetwork.selectedOptionValues.join(\"', '\") + \"'\"",
-                "TableUsers.triggeredRow.fk_user_id"
-              ],
-              "timeoutInMillisecond": 10000
-            },
-            {
-              "id": "Monitoring_SelectOFFERSUserAdmin",
-              "name": "SelectOFFERSUserAdmin",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [
-                "MSTrSource.selectedOptionValues.length == 0",
-                "moment().format('yyyy-MM-DD')",
-                "MSNetwork.selectedOptionValues.length == 0",
-                "\"'\" + MSTrSource.selectedOptionValues.join(\"', '\") + \"'\"",
-                "\"'\" + MSNetwork.selectedOptionValues.join(\"', '\") + \"'\"",
-                "TableUsers.triggeredRow.fk_user_id"
-              ],
-              "timeoutInMillisecond": 10000
-            }
-          ],
-          [
-            {
-              "id": "Monitoring_SelectDaysTOT",
-              "name": "SelectDaysTOT",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [
-                "moment().startOf('month').add('hours',2)",
-                "MSTrSource.selectedOptionValues.length == 0",
-                "moment().endOf('month').add('hours',2)",
-                "MSNetwork.selectedOptionValues.length == 0",
-                "\"'\" + MSNetwork.selectedOptionValues.join(\"', '\") + \"'\"",
-                "\"'\" + MSTrSource.selectedOptionValues.join(\"', '\") + \"'\"",
-                "TableUsers.triggeredRow.fk_user_id"
-              ],
-              "timeoutInMillisecond": 10000
-            }
           ]
         ],
         "layoutOnLoadActionErrors": [],
