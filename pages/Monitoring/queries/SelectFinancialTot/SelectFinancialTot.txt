@@ -2,7 +2,7 @@ Select max(last_update) as last_update
 ,sum(amount_revenue) as amount_revenue
 ,sum(spent) as amount_spent_plus_fee
 ,sum(profit) as "Tot_Profit"
-,(sum(profit)/case when sum(spent) = 0 then 1 else sum(spent) end)*100 as "Tot_ROI"
+,((sum(amount_revenue)-sum(spent))/case when sum(spent) = 0 then 1 else sum(spent) end)*100 as "Tot_ROI"
 ,sum(tot_conv) as tot_conv
 from (
 SELECT
