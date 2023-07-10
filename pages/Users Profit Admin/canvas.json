@@ -983,8 +983,8 @@
                       "parentId": "59rw5mx0bq",
                       "renderMode": "CANVAS",
                       "isLoading": false,
-                      "originalTopRow": 27,
-                      "originalBottomRow": 31
+                      "originalTopRow": 24,
+                      "originalBottomRow": 28
                     },
                     {
                       "widgetName": "Divider2Copy1",
@@ -1018,8 +1018,8 @@
                       "parentId": "59rw5mx0bq",
                       "renderMode": "CANVAS",
                       "isLoading": false,
-                      "originalTopRow": 16,
-                      "originalBottomRow": 20
+                      "originalTopRow": 13,
+                      "originalBottomRow": 17
                     },
                     {
                       "boxShadow": "none",
@@ -1107,10 +1107,10 @@
                       "parentId": "59rw5mx0bq",
                       "renderMode": "CANVAS",
                       "isLoading": false,
-                      "originalTopRow": 16,
+                      "originalTopRow": 13,
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                       "maxDynamicHeight": 9000,
-                      "originalBottomRow": 20,
+                      "originalBottomRow": 17,
                       "fontSize": "0.875rem",
                       "textStyle": "HEADING",
                       "minDynamicHeight": 4
@@ -1201,10 +1201,10 @@
                       "parentId": "59rw5mx0bq",
                       "renderMode": "CANVAS",
                       "isLoading": false,
-                      "originalTopRow": 16,
+                      "originalTopRow": 13,
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                       "maxDynamicHeight": 9000,
-                      "originalBottomRow": 20,
+                      "originalBottomRow": 17,
                       "fontSize": "0.875rem",
                       "textStyle": "HEADING",
                       "minDynamicHeight": 4
@@ -1294,10 +1294,10 @@
                       "parentId": "59rw5mx0bq",
                       "renderMode": "CANVAS",
                       "isLoading": false,
-                      "originalTopRow": 16,
+                      "originalTopRow": 13,
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                       "maxDynamicHeight": 9000,
-                      "originalBottomRow": 20,
+                      "originalBottomRow": 17,
                       "fontSize": "0.875rem",
                       "textStyle": "HEADING",
                       "minDynamicHeight": 4
@@ -1387,10 +1387,10 @@
                       "parentId": "59rw5mx0bq",
                       "renderMode": "CANVAS",
                       "isLoading": false,
-                      "originalTopRow": 16,
+                      "originalTopRow": 13,
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                       "maxDynamicHeight": 9000,
-                      "originalBottomRow": 20,
+                      "originalBottomRow": 17,
                       "fontSize": "0.875rem",
                       "textStyle": "HEADING",
                       "minDynamicHeight": 4
@@ -1480,10 +1480,10 @@
                       "parentId": "59rw5mx0bq",
                       "renderMode": "CANVAS",
                       "isLoading": false,
-                      "originalTopRow": 16,
+                      "originalTopRow": 13,
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                       "maxDynamicHeight": 9000,
-                      "originalBottomRow": 20,
+                      "originalBottomRow": 17,
                       "fontSize": "0.875rem",
                       "textStyle": "HEADING",
                       "minDynamicHeight": 4
@@ -1573,10 +1573,10 @@
                       "parentId": "59rw5mx0bq",
                       "renderMode": "CANVAS",
                       "isLoading": false,
-                      "originalTopRow": 16,
+                      "originalTopRow": 13,
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                       "maxDynamicHeight": 9000,
-                      "originalBottomRow": 20,
+                      "originalBottomRow": 17,
                       "fontSize": "0.875rem",
                       "textStyle": "HEADING",
                       "minDynamicHeight": 4
@@ -1666,10 +1666,10 @@
                       "parentId": "59rw5mx0bq",
                       "renderMode": "CANVAS",
                       "isLoading": false,
-                      "originalTopRow": 16,
+                      "originalTopRow": 13,
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                       "maxDynamicHeight": 9000,
-                      "originalBottomRow": 20,
+                      "originalBottomRow": 17,
                       "fontSize": "0.875rem",
                       "textStyle": "HEADING",
                       "minDynamicHeight": 4
@@ -1759,10 +1759,10 @@
                       "parentId": "59rw5mx0bq",
                       "renderMode": "CANVAS",
                       "isLoading": false,
-                      "originalTopRow": 16,
+                      "originalTopRow": 13,
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                       "maxDynamicHeight": 9000,
-                      "originalBottomRow": 20,
+                      "originalBottomRow": 17,
                       "fontSize": "0.875rem",
                       "textStyle": "HEADING",
                       "minDynamicHeight": 4
@@ -1852,10 +1852,10 @@
                       "parentId": "59rw5mx0bq",
                       "renderMode": "CANVAS",
                       "isLoading": false,
-                      "originalTopRow": 16,
+                      "originalTopRow": 13,
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                       "maxDynamicHeight": 9000,
-                      "originalBottomRow": 20,
+                      "originalBottomRow": 17,
                       "fontSize": "0.875rem",
                       "textStyle": "HEADING",
                       "minDynamicHeight": 4
@@ -2114,7 +2114,7 @@
                       "orientation": "horizontal",
                       "strokeStyle": "solid",
                       "isDeprecated": false,
-                      "rightColumn": 63,
+                      "rightColumn": 64,
                       "widgetId": "pyvg0vhmf5",
                       "capSide": 0,
                       "isVisible": true,
@@ -2122,8 +2122,8 @@
                       "parentId": "59rw5mx0bq",
                       "renderMode": "CANVAS",
                       "isLoading": false,
-                      "originalTopRow": 12,
-                      "originalBottomRow": 16
+                      "originalTopRow": 9,
+                      "originalBottomRow": 13
                     },
                     {
                       "widgetName": "Divider2",
@@ -2157,8 +2157,8 @@
                       "parentId": "59rw5mx0bq",
                       "renderMode": "CANVAS",
                       "isLoading": false,
-                      "originalTopRow": 16,
-                      "originalBottomRow": 20
+                      "originalTopRow": 13,
+                      "originalBottomRow": 17
                     },
                     {
                       "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
@@ -2818,7 +2818,7 @@
                                       },
                                       "isVisible": true,
                                       "fontStyle": "BOLD",
-                                      "textColor": "{{(currentItem.Approved_Rev - currentItem.amount_spent_plus_fee) > 0 ? 'green' : 'red'}}",
+                                      "textColor": "{{(currentItem.net_profit) > 0 ? 'green' : 'red'}}",
                                       "version": 1,
                                       "parentId": "u2byc58pn7",
                                       "renderMode": "CANVAS",
@@ -3623,9 +3623,9 @@
                       "renderMode": "CANVAS",
                       "isLoading": false,
                       "mainCanvasId": "cvp8taeri4",
-                      "originalTopRow": 31,
+                      "originalTopRow": 28,
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                      "originalBottomRow": 97,
+                      "originalBottomRow": 94,
                       "additionalStaticProps": [
                         "level",
                         "levelData",
@@ -4881,10 +4881,10 @@
                       "parentId": "59rw5mx0bq",
                       "renderMode": "CANVAS",
                       "isLoading": false,
-                      "originalTopRow": 20,
+                      "originalTopRow": 17,
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                       "maxDynamicHeight": 9000,
-                      "originalBottomRow": 27,
+                      "originalBottomRow": 24,
                       "minDynamicHeight": 10
                     },
                     {
@@ -4960,12 +4960,12 @@
                       "iconSVG": "/static/media/icon.b3e28afbbceae59d6fe826fa409a4b4c.svg",
                       "labelText": "Act. Network",
                       "topRow": 5,
-                      "labelWidth": "5",
+                      "labelWidth": "6",
                       "type": "MULTI_SELECT_TREE_WIDGET",
                       "mode": "SHOW_ALL",
                       "defaultOptionValue": "",
                       "animateLoading": true,
-                      "leftColumn": 26,
+                      "leftColumn": 25,
                       "dynamicBindingPathList": [
                         {
                           "key": "accentColor"
@@ -4991,7 +4991,7 @@
                       "expandAll": false,
                       "isLoading": false,
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                      "originalBottomRow": 12,
+                      "originalBottomRow": 9,
                       "widgetName": "MSUserNet",
                       "dynamicPropertyPathList": [
                         {
