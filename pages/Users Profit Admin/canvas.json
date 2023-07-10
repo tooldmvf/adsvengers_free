@@ -1703,7 +1703,7 @@
                           "key": "borderRadius"
                         }
                       ],
-                      "leftColumn": 22,
+                      "leftColumn": 21,
                       "shouldTruncate": false,
                       "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
                       "text": "Appr.Rev",
@@ -1963,7 +1963,7 @@
                       "bottomRow": 5,
                       "shortcuts": false,
                       "parentRowSpace": 10,
-                      "labelWidth": "3",
+                      "labelWidth": "4",
                       "type": "DATE_PICKER_WIDGET2",
                       "hideCard": false,
                       "animateLoading": true,
@@ -2382,7 +2382,7 @@
                                       "text": "{{currentItem.last_name}} {{currentItem.first_name}}",
                                       "key": "fak4xyb0hu",
                                       "isDeprecated": false,
-                                      "rightColumn": 11,
+                                      "rightColumn": 10,
                                       "disableLink": false,
                                       "textAlign": "LEFT",
                                       "dynamicHeight": "FIXED",
@@ -2471,13 +2471,13 @@
                                           "key": "borderRadius"
                                         }
                                       ],
-                                      "leftColumn": 11,
+                                      "leftColumn": 10,
                                       "shouldTruncate": false,
                                       "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
                                       "text": "{{currentItem.ts_name}}",
                                       "key": "fak4xyb0hu",
                                       "isDeprecated": false,
-                                      "rightColumn": 16,
+                                      "rightColumn": 15,
                                       "textAlign": "LEFT",
                                       "dynamicHeight": "FIXED",
                                       "widgetId": "oonirl7i5e",
@@ -2570,7 +2570,7 @@
                                           "key": "borderRadius"
                                         }
                                       ],
-                                      "leftColumn": 16,
+                                      "leftColumn": 15,
                                       "shouldTruncate": false,
                                       "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
                                       "text": "{{Utils2.myCurrency(currentItem.amount_spent_plus_fee)}}{{' '}}",
@@ -2773,7 +2773,7 @@
                                       "text": "{{Utils2.myCurrency(currentItem.net_profit)}}",
                                       "key": "fak4xyb0hu",
                                       "isDeprecated": false,
-                                      "rightColumn": 32,
+                                      "rightColumn": 33,
                                       "textAlign": "RIGHT",
                                       "dynamicHeight": "FIXED",
                                       "widgetId": "cy6z1vk4n0",
@@ -2869,7 +2869,7 @@
                                           "key": "textColor"
                                         }
                                       ],
-                                      "leftColumn": 32,
+                                      "leftColumn": 33,
                                       "shouldTruncate": false,
                                       "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
                                       "text": "{{((currentItem.Approved_Rev - currentItem.amount_spent_plus_fee)/(currentItem.amount_spent_plus_fee)*100).toFixed(2)}} %",
