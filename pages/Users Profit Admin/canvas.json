@@ -1520,10 +1520,10 @@
                       "leftColumn": 27,
                       "shouldTruncate": false,
                       "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-                      "text": "Appr.Profit ",
+                      "text": "Appr.Profit",
                       "key": "fak4xyb0hu",
                       "isDeprecated": false,
-                      "rightColumn": 32,
+                      "rightColumn": 33,
                       "textAlign": "RIGHT",
                       "dynamicHeight": "FIXED",
                       "widgetId": "kghaw8cfl3",
@@ -1610,7 +1610,7 @@
                           "key": "borderRadius"
                         }
                       ],
-                      "leftColumn": 32,
+                      "leftColumn": 33,
                       "shouldTruncate": false,
                       "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
                       "text": "Appr.ROI",
@@ -4357,7 +4357,7 @@
                                   "key": "textColor"
                                 }
                               ],
-                              "leftColumn": 32,
+                              "leftColumn": 33,
                               "shouldTruncate": false,
                               "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
                               "text": "{{((TotalLine.data[0].Approved_Rev - TotalLine.data[0].amount_spent_plus_fee)/(TotalLine.data[0].amount_spent_plus_fee)*100).toFixed(2)}} %",
@@ -4466,7 +4466,7 @@
                               "text": "{{Utils2.myCurrency(TotalLine.data[0].profit_appr)}}",
                               "key": "fak4xyb0hu",
                               "isDeprecated": false,
-                              "rightColumn": 32,
+                              "rightColumn": 33,
                               "textAlign": "RIGHT",
                               "dynamicHeight": "FIXED",
                               "widgetId": "grqbeqorkl",
