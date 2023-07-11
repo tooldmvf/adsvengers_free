@@ -4898,7 +4898,7 @@
                                       },
                                       "isVisible": true,
                                       "fontStyle": "BOLD",
-                                      "textColor": "{{((currentItem.amount_revenue - currentItem.amount_spent_plus_fee)/(currentItem.amount_spent_plus_fee)*100).toFixed(0) < 0 ? 'red' : (((currentItem.amount_revenue - currentItem.amount_spent_plus_fee)/(currentItem.amount_spent_plus_fee)*100).toFixed(0) <20 ? '#eab308' : 'green')}}",
+                                      "textColor": "{{((currentItem.amount_revenue - currentItem.amount_spent_plus_fee)/(currentItem.amount_spent_plus_fee)*100).toFixed(0) < 0 ? 'red' : (((currentItem.amount_revenue - currentItem.amount_spent_plus_fee)/(currentItem.amount_spent_plus_fee)*100).toFixed(0) <30 ? '#eab308' : 'green')}}",
                                       "version": 1,
                                       "parentId": "yh7g7q4n16",
                                       "renderMode": "CANVAS",
