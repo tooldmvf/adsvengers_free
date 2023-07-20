@@ -1346,7 +1346,7 @@
                                 }
                               },
                               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                              "columnUpdatedAt": 1689757705144,
+                              "columnUpdatedAt": 1689867117815,
                               "originalBottomRow": 51,
                               "defaultSelectedRowIndices": [
                                 0
@@ -1599,7 +1599,7 @@
                                   "computedValue": "{{TableSpentBM.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"amount_spent_fixed\"].toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2})))}}",
                                   "sticky": "",
                                   "validation": {},
-                                  "onSubmit": "{{Utils.myFun2(currentRow);}}"
+                                  "onSubmit": "{{Utils.myFun2_User(currentRow);}}"
                                 }
                               },
                               "key": "c7rr9s6m4a",
@@ -2703,7 +2703,7 @@
                                       "maxDynamicHeight": 9000,
                                       "decimals": 2,
                                       "iconAlign": "left",
-                                      "defaultText": "{{Fetch_Data_Spent.data.filter(e => e.fk_bm_id == '377343377466914')[0]?.amount_spent||0 * (1+(Fetch_Data_Spent.data.filter(e => e.fk_bm_id == '377343377466914')[0]?.spent_rate_fees||0 /100))*2}}",
+                                      "defaultText": "{{Fetch_Data_Other_Prj.data[0]?.amount_spent_wfees||0}}",
                                       "minDynamicHeight": 4
                                     },
                                     {
@@ -3322,7 +3322,7 @@
                                 }
                               },
                               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                              "columnUpdatedAt": 1689356396118,
+                              "columnUpdatedAt": 1689867117826,
                               "originalBottomRow": 51,
                               "defaultSelectedRowIndices": [
                                 0
@@ -3552,7 +3552,7 @@
                                   "sticky": "",
                                   "validation": {},
                                   "cellBackground": "",
-                                  "onSubmit": "{{Utils.myFun1(currentRow);}}"
+                                  "onSubmit": "{{Utils.myFun1_User(currentRow);}}"
                                 }
                               },
                               "key": "c7rr9s6m4a",

@@ -53,7 +53,7 @@
           "value": "eq.{{this.params.currentRow.financial_month}}"
         }
       ],
-      "body": "{ \n\t\"amount_revenue_approved\": \"{{this.params.currentRow.amount_revenue_approved}}\" ,\n  \"amount_revenue_fixed\": \"{{this.params.currentRow.amount_revenue_fixed}}\" \n}",
+      "body": "{ \n\t\"amount_revenue_approved\": \"{{this.params.currentRow.amount_revenue_approved}}\"\n}",
       "bodyFormData": [],
       "httpMethod": "PATCH",
       "selfReferencingDataPaths": [],
@@ -85,7 +85,6 @@
     "jsonPathKeys": [
       "appsmith.store.access_token",
       "this.params.currentRow.amount_revenue_approved",
-      "this.params.currentRow.amount_revenue_fixed",
       "this.params.currentRow.financial_month",
       "this.params.currentRow.fk_network_id",
       "this.params.currentRow.fk_user_id"

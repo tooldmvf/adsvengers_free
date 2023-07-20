@@ -31,6 +31,18 @@ export default {
 		await Fetch_Data_Spent_TOT.run();
 	},
 	
+	async myFun1_User (currentRow) {
+		await storeValue("rowUpdate",currentRow);
+		await Save_Data_Rev_User.run({currentRow});
+		await Fetch_Data_Rev.run();
+	},
+	
+	async myFun2_User (currentRow) {
+		await storeValue("rowUpdate",currentRow);
+		await Save_Data_Spent_User.run({currentRow});
+		await Fetch_Data_Spent.run();
+	},
+	
 	async reload () {
 		if(SelectMonth.selectedOptionValue.length > 0) {
 			await resetWidget('NumberSlider1'); 

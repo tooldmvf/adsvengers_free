@@ -1,4 +1,3 @@
 { 
-	"amount_revenue_approved": "{{this.params.currentRow.amount_revenue_approved}}" ,
-  "amount_revenue_fixed": "{{this.params.currentRow.amount_revenue_fixed}}" 
+	"amount_revenue_approved": "{{this.params.currentRow.amount_revenue_approved}}"
 }

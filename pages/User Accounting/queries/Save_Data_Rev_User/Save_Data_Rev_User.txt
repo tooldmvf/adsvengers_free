@@ -1,0 +1,3 @@
+{ 
+  "amount_revenue_fixed": "{{this.params.currentRow.amount_revenue_fixed}}" 
+}

@@ -2,7 +2,7 @@
   "pluginType": "API",
   "pluginId": "restapi-plugin",
   "unpublishedAction": {
-    "name": "Save_Data_Spent",
+    "name": "Save_Data_Rev_User",
     "datasource": {
       "name": "Auth",
       "pluginId": "restapi-plugin",
@@ -17,7 +17,7 @@
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
-      "path": "/rest/v1/user_spent_month",
+      "path": "/rest/v1/user_financial_month",
       "headers": [
         {
           "key": "Authorization",
@@ -45,15 +45,16 @@
           "value": "eq.{{this.params.currentRow.fk_user_id}}"
         },
         {
-          "key": "fk_bm_id",
-          "value": "eq.{{this.params.currentRow.fk_bm_id}}"
+          "key": "fk_network_id",
+          "value": "eq.{{this.params.currentRow.fk_network_id}}"
         },
         {
           "key": "financial_month",
           "value": "eq.{{this.params.currentRow.financial_month}}"
         }
       ],
-      "body": "{\n\t\"amount_spent\": \"{{this.params.currentRow.amount_spent}}\"\n}",
+      "body": "{ \n  \"amount_revenue_fixed\": \"{{this.params.currentRow.amount_revenue_fixed}}\" \n}",
+      "bodyFormData": [],
       "httpMethod": "PATCH",
       "selfReferencingDataPaths": [],
       "formData": {
@@ -66,12 +67,6 @@
         "key": "headers[0].value"
       },
       {
-        "key": "body"
-      },
-      {
-        "key": "path"
-      },
-      {
         "key": "queryParameters[0].value"
       },
       {
@@ -79,6 +74,9 @@
       },
       {
         "key": "queryParameters[2].value"
+      },
+      {
+        "key": "body"
       }
     ],
     "isValid": true,
@@ -86,17 +84,18 @@
     "messages": [],
     "jsonPathKeys": [
       "appsmith.store.access_token",
-      "this.params.currentRow.amount_spent",
+      "this.params.currentRow.amount_revenue_fixed",
       "this.params.currentRow.financial_month",
-      "this.params.currentRow.fk_bm_id",
+      "this.params.currentRow.fk_network_id",
       "this.params.currentRow.fk_user_id"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
-    "userPermissions": []
+    "userPermissions": [],
+    "createdAt": "2023-07-20T15:31:02Z"
   },
-  "id": "User Accounting_Save_Data_Spent",
+  "id": "User Accounting_Save_Data_Rev_User",
   "deleted": false,
-  "gitSyncId": "646331cd28902b71518db22a_6471aa924bdc0705211d941f"
+  "gitSyncId": "646331cd28902b71518db22a_64b95336c08640241d2a3109"
 }
