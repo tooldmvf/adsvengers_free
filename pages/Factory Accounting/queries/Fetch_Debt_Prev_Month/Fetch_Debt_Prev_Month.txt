@@ -1,0 +1,6 @@
+SELECT a.financial_month
+,case when sum(amount_debt) <0 then sum(amount_debt) else 0 end as debt
+FROM public.user_totals_month a
+where 1 = 1
+AND a.financial_month = to_char(to_Date('{{SelectYear.selectedOptionValue}}{{SelectMonth.selectedOptionValue}}','YYYYMM')- interval '1 months','YYYYMM')
+group by a.financial_month

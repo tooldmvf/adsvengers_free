@@ -1,0 +1,9 @@
+SELECT a.financial_month,
+sum(amount_adjustment) as amount_adjustment,
+sum(amount_profit_adjst) as amount_profit_adjst,
+sum(amount_invoice) as amount_invoice
+FROM public.user_totals_month a
+INNER join auth.users b on (b.id = a.fk_user_id)
+where 1 = 1
+AND a.financial_month = '{{SelectYear.selectedOptionValue}}{{SelectMonth.selectedOptionValue}}'
+group by a.financial_month

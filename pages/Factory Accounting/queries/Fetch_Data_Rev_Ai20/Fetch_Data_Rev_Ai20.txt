@@ -1,0 +1,7 @@
+SELECT a.financial_month,
+sum(amount_revenue_approved) as amount_revenue_approved,
+commissions_fee
+FROM public.user_ai20google_month a
+where 1 = 1
+AND a.financial_month = '{{SelectYear.selectedOptionValue}}{{SelectMonth.selectedOptionValue}}'
+group by a.financial_month, commissions_fee

@@ -1,0 +1,11 @@
+SELECT c.last_name
+,sum(amount_revenue_approved) as amount_revenue_approved
+FROM public.user_financial_month a
+inner join public.network b on (b.network_id = a.fk_network_id)
+INNER join public.user_profiles c on (c.fk_user_id = a.fk_user_id)
+where 1 = 1
+and b.network_name_short != 'AW'
+and a.fk_network_id = '{{TableRevModCopy.triggeredRow.fk_network_id}}'
+AND a.financial_month = '{{SelectYear.selectedOptionValue}}{{SelectMonth.selectedOptionValue}}'
+group by c.last_name
+order by 1 asc

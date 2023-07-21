@@ -135,6 +135,10 @@
     {
       "id": "ZZZ OLD Pivot",
       "isDefault": false
+    },
+    {
+      "id": "Factory Accounting",
+      "isDefault": false
     }
   ],
   "viewMode": false,

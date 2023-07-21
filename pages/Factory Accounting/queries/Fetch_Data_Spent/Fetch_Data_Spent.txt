@@ -1,0 +1,9 @@
+SELECT b.bm_name||' (+'||spent_rate_fees||'%)' as bm_name,
+a.fk_bm_id, a.financial_month, spent_rate_fees,
+sum(amount_spent) as amount_spent
+FROM public.user_spent_month a
+inner join public.facebook_bm b on (b.bm_id = a.fk_bm_id)
+where 1 = 1
+AND a.financial_month = '{{SelectYear.selectedOptionValue}}{{SelectMonth.selectedOptionValue}}'
+group by b.bm_name||' (+'||spent_rate_fees||'%)', a.fk_bm_id, a.financial_month, spent_rate_fees
+order by 1 asc

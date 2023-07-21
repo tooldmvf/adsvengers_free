@@ -1,0 +1,11 @@
+SELECT c.last_name,
+sum(amount_spent) as amount_spent
+FROM public.user_spent_month a
+inner join public.facebook_bm b on (b.bm_id = a.fk_bm_id)
+INNER join public.user_profiles c on (c.fk_user_id = a.fk_user_id)
+where 1 = 1
+and a.fk_bm_id = '{{TableSpentBM.triggeredRow.fk_bm_id}}'
+and spent_rate_fees = {{TableSpentBM.triggeredRow.spent_rate_fees}}
+AND a.financial_month = '{{SelectYear.selectedOptionValue}}{{SelectMonth.selectedOptionValue}}'
+group by c.last_name
+order by 1 asc

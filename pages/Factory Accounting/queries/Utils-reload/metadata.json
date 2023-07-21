@@ -2,8 +2,8 @@
   "pluginType": "JS",
   "pluginId": "js-plugin",
   "unpublishedAction": {
-    "name": "sendEmail",
-    "fullyQualifiedName": "Utils.sendEmail",
+    "name": "reload",
+    "fullyQualifiedName": "Utils.reload",
     "datasource": {
       "name": "UNUSED_DATASOURCE",
       "pluginId": "js-plugin",
@@ -13,8 +13,8 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "User Accounting",
-    "collectionId": "User Accounting_Utils",
+    "pageId": "Factory Accounting",
+    "collectionId": "Factory Accounting_Utils",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
@@ -23,7 +23,7 @@
       "jsArguments": [],
       "isAsync": true
     },
-    "executeOnLoad": false,
+    "executeOnLoad": true,
     "dynamicBindingPathList": [
       {
         "key": "body"
@@ -32,12 +32,12 @@
     "isValid": true,
     "invalids": [],
     "messages": [],
-    "userSetOnLoad": false,
+    "userSetOnLoad": true,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "User Accounting_Utils.sendEmail",
+  "id": "Factory Accounting_Utils.reload",
   "deleted": false,
-  "gitSyncId": "646331cd28902b71518db22a_649efc9aa695192a7f456f0d"
+  "gitSyncId": "646331cd28902b71518db22a_64ba0ec0c08640241d2a3172"
 }
