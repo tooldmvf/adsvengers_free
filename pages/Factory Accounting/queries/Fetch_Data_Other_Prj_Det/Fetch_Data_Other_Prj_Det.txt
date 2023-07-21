@@ -1,0 +1,9 @@
+SELECT c.last_name, commissions_fee,
+sum(amount_revenue_approved) as amount_revenue_approved,
+sum(amount_spent_wfees) as amount_spent_wfees
+FROM public.user_other_project_month a
+INNER join public.user_profiles c on (c.fk_user_id = a.fk_user_id)
+where 1 = 1
+AND a.financial_month = '{{SelectYear.selectedOptionValue}}{{SelectMonth.selectedOptionValue}}'
+group by c.last_name, commissions_fee
+having sum(amount_revenue_approved)>0

@@ -2119,7 +2119,7 @@
                                       ],
                                       "shouldTruncate": false,
                                       "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-                                      "text": "{{Utils.myCurrency(  Fetch_Data_Spent.data.filter(e => e.fk_bm_id == 'Ai20-Google')[0]?.amount_spent||0 * (1+(Fetch_Data_Spent.data.filter(e => e.fk_bm_id == 'Ai20-Google')[0]?.spent_rate_fees||0 /100)))}}",
+                                      "text": "{{Utils.myCurrency(  Number(Fetch_Data_Spent.data.filter(e => e.fk_bm_id == 'Ai20-Google')[0]?.amount_spent||0) * (1+(Number(Fetch_Data_Spent.data.filter(e => e.fk_bm_id == 'Ai20-Google')[0]?.spent_rate_fees)||0)/100) )}}",
                                       "key": "wmtrt5wcg7",
                                       "isDeprecated": false,
                                       "rightColumn": 63,
@@ -6028,17 +6028,6 @@
         },
         "layoutOnLoadActions": [
           [
-            {
-              "id": "64970008a695192a7f456ace",
-              "name": "Utils.reload",
-              "collectionId": "User Accounting_Utils",
-              "confirmBeforeExecute": false,
-              "pluginType": "JS",
-              "jsonPathKeys": [
-                "async function () {\n  if (SelectMonth.selectedOptionValue.length > 0) {\n    await resetWidget('NumberSlider1');\n    await resetWidget('Adjust');\n    await Fetch_Adjustments.run();\n    await resetWidget('AdjustProfit');\n    await Fetch_Commission_fee.run();\n    await Fetch_Debt_Prev_Month.run();\n    await Fetch_Data_Rev_TOT.run();\n    await Fetch_Data_Spent_TOT.run();\n    await Fetch_Data_Rev.run();\n    await Fetch_Data_Spent.run();\n    await Fetch_Data_Other_Prj.run();\n    await Fetch_Data_Rev_Ai20.run();\n  }\n}"
-              ],
-              "timeoutInMillisecond": 10000
-            },
             {
               "id": "User Accounting_get_all_users",
               "name": "get_all_users",
