@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 1740,
+          "bottomRow": 900,
           "containerStyle": "none",
           "snapRows": 86,
           "parentRowSpace": 1,
@@ -945,7 +945,7 @@
                             {
                               "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
                               "borderColor": "#E0DEDE",
-                              "isVisibleDownload": false,
+                              "isVisibleDownload": true,
                               "iconSVG": "/static/media/icon.db8a9cbd2acd22a31ea91cc37ea2a46c.svg",
                               "topRow": 5,
                               "isSortable": false,
@@ -5300,7 +5300,7 @@
                 "notification"
               ],
               "topRow": 0,
-              "bottomRow": 480,
+              "bottomRow": 680,
               "parentRowSpace": 1,
               "type": "MODAL_WIDGET",
               "hideCard": false,
@@ -5321,7 +5321,7 @@
                   "widgetName": "Canvas23",
                   "displayName": "Canvas",
                   "topRow": 0,
-                  "bottomRow": 480,
+                  "bottomRow": 680,
                   "parentRowSpace": 1,
                   "type": "CANVAS_WIDGET",
                   "canExtend": true,
@@ -5418,7 +5418,7 @@
                       ],
                       "compactMode": "SHORT",
                       "displayName": "Table",
-                      "bottomRow": 46,
+                      "bottomRow": 66,
                       "columnWidthMap": {
                         "task": 245,
                         "step": 70,
@@ -5513,7 +5513,7 @@
                       "responsiveBehavior": "fill",
                       "originalTopRow": 7,
                       "mobileLeftColumn": 0,
-                      "isVisiblePagination": false,
+                      "isVisiblePagination": true,
                       "verticalAlignment": "CENTER"
                     },
                     {
@@ -5643,7 +5643,7 @@
                 }
               ],
               "key": "6rt1cce8qo",
-              "height": 480,
+              "height": 680,
               "isDeprecated": false,
               "rightColumn": 0,
               "detachFromLayout": true,
@@ -5661,176 +5661,6 @@
               "maxDynamicHeight": 9000,
               "width": 316,
               "minDynamicHeight": 24
-            },
-            {
-              "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
-              "borderColor": "#E0DEDE",
-              "isVisibleDownload": true,
-              "iconSVG": "/static/media/icon.24905525921dd6f5ff46d0dd843b9e12.svg",
-              "topRow": 91,
-              "isSortable": true,
-              "type": "TABLE_WIDGET_V2",
-              "inlineEditingSaveOption": "ROW_LEVEL",
-              "animateLoading": true,
-              "dynamicBindingPathList": [
-                {
-                  "key": "tableData"
-                },
-                {
-                  "key": "accentColor"
-                },
-                {
-                  "key": "borderRadius"
-                },
-                {
-                  "key": "boxShadow"
-                },
-                {
-                  "key": "primaryColumns.last_name.computedValue"
-                },
-                {
-                  "key": "primaryColumns.appr_rev.computedValue"
-                }
-              ],
-              "needsHeightForContent": true,
-              "leftColumn": 0,
-              "delimiter": ",",
-              "defaultSelectedRowIndex": 0,
-              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-              "isVisibleFilters": true,
-              "isVisible": true,
-              "enableClientSideSearch": true,
-              "version": 2,
-              "totalRecordsCount": 0,
-              "isLoading": false,
-              "childStylesheet": {
-                "button": {
-                  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
-                  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                  "boxShadow": "none"
-                },
-                "menuButton": {
-                  "menuColor": "{{appsmith.theme.colors.primaryColor}}",
-                  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                  "boxShadow": "none"
-                },
-                "iconButton": {
-                  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
-                  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                  "boxShadow": "none"
-                },
-                "editActions": {
-                  "saveButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-                  "saveBorderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                  "discardButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-                  "discardBorderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}"
-                }
-              },
-              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-              "columnUpdatedAt": 1689919118670,
-              "originalBottomRow": 174,
-              "defaultSelectedRowIndices": [
-                0
-              ],
-              "mobileBottomRow": 119,
-              "widgetName": "Table1",
-              "defaultPageSize": 0,
-              "columnOrder": [
-                "last_name",
-                "appr_rev"
-              ],
-              "dynamicPropertyPathList": [],
-              "compactMode": "SHORT",
-              "displayName": "Table",
-              "bottomRow": 174,
-              "columnWidthMap": {},
-              "parentRowSpace": 10,
-              "hideCard": false,
-              "mobileRightColumn": 34,
-              "dynamicTriggerPathList": [],
-              "borderWidth": "1",
-              "primaryColumns": {
-                "last_name": {
-                  "allowCellWrapping": false,
-                  "allowSameOptionsInNewRow": true,
-                  "index": 0,
-                  "width": 150,
-                  "originalId": "last_name",
-                  "id": "last_name",
-                  "alias": "last_name",
-                  "horizontalAlignment": "LEFT",
-                  "verticalAlignment": "CENTER",
-                  "columnType": "text",
-                  "textColor": "",
-                  "textSize": "0.875rem",
-                  "fontStyle": "",
-                  "enableFilter": true,
-                  "enableSort": true,
-                  "isVisible": true,
-                  "isDisabled": false,
-                  "isCellEditable": false,
-                  "isEditable": false,
-                  "isCellVisible": true,
-                  "isDerived": false,
-                  "label": "last_name",
-                  "isSaveVisible": true,
-                  "isDiscardVisible": true,
-                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"last_name\"]))}}",
-                  "sticky": "",
-                  "validation": {},
-                  "cellBackground": ""
-                },
-                "appr_rev": {
-                  "allowCellWrapping": false,
-                  "allowSameOptionsInNewRow": true,
-                  "index": 1,
-                  "width": 150,
-                  "originalId": "appr_rev",
-                  "id": "appr_rev",
-                  "alias": "appr_rev",
-                  "horizontalAlignment": "LEFT",
-                  "verticalAlignment": "CENTER",
-                  "columnType": "number",
-                  "textColor": "",
-                  "textSize": "0.875rem",
-                  "fontStyle": "",
-                  "enableFilter": true,
-                  "enableSort": true,
-                  "isVisible": true,
-                  "isDisabled": false,
-                  "isCellEditable": false,
-                  "isEditable": false,
-                  "isCellVisible": true,
-                  "isDerived": false,
-                  "label": "appr_rev",
-                  "isSaveVisible": true,
-                  "isDiscardVisible": true,
-                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"appr_rev\"]))}}",
-                  "sticky": "",
-                  "validation": {},
-                  "cellBackground": ""
-                }
-              },
-              "key": "rzpowo9jg9",
-              "canFreezeColumn": true,
-              "isDeprecated": false,
-              "rightColumn": 34,
-              "textSize": "0.875rem",
-              "widgetId": "dfkwxuy6bu",
-              "minWidth": 450,
-              "tableData": "{{Fetch_Data_Rev_TOTCopy.data}}",
-              "label": "Data",
-              "searchKey": "",
-              "parentId": "0",
-              "renderMode": "CANVAS",
-              "mobileTopRow": 91,
-              "horizontalAlignment": "LEFT",
-              "isVisibleSearch": true,
-              "responsiveBehavior": "fill",
-              "originalTopRow": 91,
-              "mobileLeftColumn": 0,
-              "isVisiblePagination": true,
-              "verticalAlignment": "CENTER"
             }
           ]
         },
@@ -5859,19 +5689,6 @@
           ],
           [
             {
-              "id": "Factory Accounting_Fetch_Data_Rev_TOTCopy",
-              "name": "Fetch_Data_Rev_TOTCopy",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [
-                "SelectMonth.selectedOptionValue",
-                "SelectYear.selectedOptionValue"
-              ],
-              "timeoutInMillisecond": 10000
-            }
-          ],
-          [
-            {
               "id": "Factory Accounting_Fetch_Adjustments",
               "name": "Fetch_Adjustments",
               "confirmBeforeExecute": false,
@@ -5894,7 +5711,7 @@
     ],
     "userPermissions": [],
     "policies": [],
-    "isHidden": false
+    "isHidden": true
   },
   "deleted": false,
   "gitSyncId": "646331cd28902b71518db22a_64ba0ec0c08640241d2a3149"

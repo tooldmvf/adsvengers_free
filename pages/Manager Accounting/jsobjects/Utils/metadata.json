@@ -1,7 +1,7 @@
 {
   "unpublishedCollection": {
-    "name": "js_logout",
-    "pageId": "Manager Admin",
+    "name": "Utils",
+    "pageId": "Manager Accounting",
     "pluginId": "js-plugin",
     "pluginType": "JS",
     "actions": [],
@@ -9,7 +9,7 @@
     "variables": [],
     "userPermissions": []
   },
-  "id": "Manager Admin_js_logout",
+  "id": "Manager Accounting_Utils",
   "deleted": false,
-  "gitSyncId": "646331cd28902b71518db22a_6496a599a695192a7f456a95"
+  "gitSyncId": "646331cd28902b71518db22a_6496a599a695192a7f456a93"
 }

@@ -13,7 +13,7 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "Manager Admin",
+    "pageId": "Manager Accounting",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
@@ -47,7 +47,7 @@
     "userPermissions": [],
     "createdAt": "2023-06-24T09:24:28Z"
   },
-  "id": "Manager Admin_Fetch_MB_shares",
+  "id": "Manager Accounting_Fetch_MB_shares",
   "deleted": false,
   "gitSyncId": "646331cd28902b71518db22a_6496b64ca695192a7f456a9e"
 }

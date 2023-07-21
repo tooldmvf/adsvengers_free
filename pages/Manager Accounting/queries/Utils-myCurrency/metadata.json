@@ -2,8 +2,8 @@
   "pluginType": "JS",
   "pluginId": "js-plugin",
   "unpublishedAction": {
-    "name": "check_login",
-    "fullyQualifiedName": "js_logout.check_login",
+    "name": "myCurrency",
+    "fullyQualifiedName": "Utils.myCurrency",
     "datasource": {
       "name": "UNUSED_DATASOURCE",
       "pluginId": "js-plugin",
@@ -13,17 +13,21 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "Manager Admin",
-    "collectionId": "Manager Admin_js_logout",
+    "pageId": "Manager Accounting",
+    "collectionId": "Manager Accounting_Utils",
     "actionConfiguration": {
-      "timeoutInMillisecond": 0,
+      "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
       "selfReferencingDataPaths": [],
-      "jsArguments": [],
-      "isAsync": true
+      "jsArguments": [
+        {
+          "name": "input"
+        }
+      ],
+      "isAsync": false
     },
-    "executeOnLoad": true,
+    "executeOnLoad": false,
     "dynamicBindingPathList": [
       {
         "key": "body"
@@ -32,12 +36,12 @@
     "isValid": true,
     "invalids": [],
     "messages": [],
-    "userSetOnLoad": true,
+    "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "Manager Admin_js_logout.check_login",
+  "id": "Manager Accounting_Utils.myCurrency",
   "deleted": false,
-  "gitSyncId": "646331cd28902b71518db22a_649afe56a695192a7f456cee"
+  "gitSyncId": "646331cd28902b71518db22a_6496a598a695192a7f456a69"
 }

@@ -2,8 +2,8 @@
   "pluginType": "JS",
   "pluginId": "js-plugin",
   "unpublishedAction": {
-    "name": "logout_process",
-    "fullyQualifiedName": "js_logout.logout_process",
+    "name": "reload",
+    "fullyQualifiedName": "Utils.reload",
     "datasource": {
       "name": "UNUSED_DATASOURCE",
       "pluginId": "js-plugin",
@@ -13,8 +13,8 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "Manager Admin",
-    "collectionId": "Manager Admin_js_logout",
+    "pageId": "Manager Accounting",
+    "collectionId": "Manager Accounting_Utils",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
@@ -24,7 +24,6 @@
       "isAsync": true
     },
     "executeOnLoad": false,
-    "clientSideExecution": true,
     "dynamicBindingPathList": [
       {
         "key": "body"
@@ -36,9 +35,10 @@
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
-    "userPermissions": []
+    "userPermissions": [],
+    "createdAt": "2023-06-24T08:13:13Z"
   },
-  "id": "Manager Admin_js_logout.logout_process",
+  "id": "Manager Accounting_Utils.reload",
   "deleted": false,
-  "gitSyncId": "646331cd28902b71518db22a_6496a599a695192a7f456a8e"
+  "gitSyncId": "646331cd28902b71518db22a_6496a598a695192a7f456a82"
 }

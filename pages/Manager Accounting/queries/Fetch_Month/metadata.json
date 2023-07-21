@@ -2,7 +2,7 @@
   "pluginType": "DB",
   "pluginId": "postgres-plugin",
   "unpublishedAction": {
-    "name": "Fetch_MB_shares_TOT",
+    "name": "Fetch_Month",
     "datasource": {
       "name": "DO_db-postgresql-adsv",
       "pluginId": "postgres-plugin",
@@ -13,12 +13,12 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "Manager Admin",
+    "pageId": "Manager Accounting",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "SELECT financial_month\n,SUM(amount_revenue_approved) as revenue\n,SUM(amount_spent) as spent\n,SUM(amount_revenue_approved)-SUM(amount_spent) as profit\n,(SUM(amount_revenue_approved)-SUM(amount_spent))*(0+({{ShareSlider.value}}::float/100)) as mb_commissions\nFROM public.user_totals_month a\nwhere 1 = 1\nAND a.financial_month = '{{SelectYear.selectedOptionValue}}{{SelectMonth.selectedOptionValue}}'\nAND text(a.fk_user_id) IN ({{\"'\" + CheckboxGroup1.selectedValues.join(\"', '\") + \"'\"}}) \nGROUP BY financial_month",
+      "body": "SELECT financial_month\n,SUM(amount_revenue_approved) as revenue\n,SUM(amount_spent) as spent\n,SUM(amount_invoice) as mb_commissions\n,SUM(amount_adjustment) as adjustment\nFROM public.user_totals_month a\nwhere 1 = 1\nAND a.financial_month = '{{SelectYear.selectedOptionValue}}{{SelectMonth.selectedOptionValue}}'\nGROUP BY financial_month",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
@@ -36,10 +36,8 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "\"'\" + CheckboxGroup1.selectedValues.join(\"', '\") + \"'\"",
       "SelectMonth.selectedOptionValue",
-      "SelectYear.selectedOptionValue",
-      "ShareSlider.value"
+      "SelectYear.selectedOptionValue"
     ],
     "userSetOnLoad": true,
     "confirmBeforeExecute": false,
@@ -47,7 +45,7 @@
     "userPermissions": [],
     "createdAt": "2023-06-24T08:13:13Z"
   },
-  "id": "Manager Admin_Fetch_MB_shares_TOT",
+  "id": "Manager Accounting_Fetch_Month",
   "deleted": false,
-  "gitSyncId": "646331cd28902b71518db22a_6496a599a695192a7f456a84"
+  "gitSyncId": "646331cd28902b71518db22a_6496a599a695192a7f456a8d"
 }

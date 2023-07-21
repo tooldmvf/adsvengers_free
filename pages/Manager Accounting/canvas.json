@@ -1,7 +1,7 @@
 {
   "unpublishedPage": {
-    "name": "Manager Admin",
-    "slug": "manager-admin",
+    "name": "Manager Accounting",
+    "slug": "manager-accounting",
     "layouts": [
       {
         "viewMode": false,
@@ -3751,7 +3751,7 @@
         "layoutOnLoadActions": [
           [
             {
-              "id": "Manager Admin_get_all_users",
+              "id": "Manager Accounting_get_all_users",
               "name": "get_all_users",
               "confirmBeforeExecute": false,
               "pluginType": "API",
@@ -3761,9 +3761,9 @@
               "timeoutInMillisecond": 10000
             },
             {
-              "id": "Manager Admin_js_logout.check_login",
+              "id": "Manager Accounting_js_logout.check_login",
               "name": "js_logout.check_login",
-              "collectionId": "Manager Admin_js_logout",
+              "collectionId": "Manager Accounting_js_logout",
               "confirmBeforeExecute": false,
               "pluginType": "JS",
               "jsonPathKeys": [
@@ -3774,7 +3774,7 @@
           ],
           [
             {
-              "id": "Manager Admin_Fetch_MB_shares",
+              "id": "Manager Accounting_Fetch_MB_shares",
               "name": "Fetch_MB_shares",
               "confirmBeforeExecute": false,
               "pluginType": "DB",
@@ -3790,7 +3790,7 @@
         ],
         "layoutOnLoadActionErrors": [],
         "validOnPageLoadActions": true,
-        "id": "Manager Admin",
+        "id": "Manager Accounting",
         "deleted": false,
         "policies": [],
         "userPermissions": []
