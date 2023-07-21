@@ -1602,7 +1602,7 @@
                               ],
                               "shouldTruncate": false,
                               "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-                              "text": "{{Utils.myCurrency(Fetch_Month.data[0].spent)}}",
+                              "text": "{{Utils.myCurrency(Fetch_Month.data[0].spent - Fetch_Month.data[0].adjustment)}}",
                               "key": "k0zn3vv2el",
                               "isDeprecated": false,
                               "rightColumn": 62,
