@@ -108,6 +108,12 @@
                         },
                         {
                           "key": "groupButtons.groupButton3d0sb7a9e2.buttonColor"
+                        },
+                        {
+                          "key": "groupButtons.groupButton3d0sb7a9e2.menuItems.menuItemw8ybg6pqbd.isVisible"
+                        },
+                        {
+                          "key": "groupButtons.groupButton3d0sb7a9e2.menuItems.menuItema9wfmmikrk.isVisible"
                         }
                       ],
                       "displayName": "Button Group",
@@ -314,6 +320,24 @@
                               "isVisible": true,
                               "onClick": "{{navigateTo('User Comm Trend Admin', {}, 'SAME_WINDOW');}}",
                               "backgroundColor": "#f4f4f5"
+                            },
+                            "menuItemw8ybg6pqbd": {
+                              "id": "menuItemw8ybg6pqbd",
+                              "index": 3,
+                              "label": "Factory Accounting",
+                              "widgetId": "b6ga6cwtdd",
+                              "isDisabled": false,
+                              "isVisible": "{{appsmith.store.role_level >100}}",
+                              "backgroundColor": "{{appsmith.theme.colors.backgroundColor}}"
+                            },
+                            "menuItema9wfmmikrk": {
+                              "id": "menuItema9wfmmikrk",
+                              "index": 4,
+                              "label": "Manager Commissions",
+                              "widgetId": "9fw9jv8pg9",
+                              "isDisabled": false,
+                              "isVisible": "{{appsmith.store.role_level>100}}",
+                              "backgroundColor": "{{appsmith.theme.colors.backgroundColor}}"
                             }
                           },
                           "buttonType": "MENU",
@@ -522,6 +546,18 @@
                         },
                         {
                           "key": "groupButtons.groupButton3d0sb7a9e2.buttonColor"
+                        },
+                        {
+                          "key": "groupButtons.groupButton3d0sb7a9e2.menuItems.menuItemw8ybg6pqbd.isVisible"
+                        },
+                        {
+                          "key": "groupButtons.groupButton3d0sb7a9e2.menuItems.menuItemw8ybg6pqbd.backgroundColor"
+                        },
+                        {
+                          "key": "groupButtons.groupButton3d0sb7a9e2.menuItems.menuItema9wfmmikrk.isVisible"
+                        },
+                        {
+                          "key": "groupButtons.groupButton3d0sb7a9e2.menuItems.menuItema9wfmmikrk.backgroundColor"
                         }
                       ],
                       "key": "zq7t27bhdi",
@@ -657,9 +693,6 @@
                         },
                         {
                           "key": "menuItems.menuItemluz74ga2mq.onClick"
-                        },
-                        {
-                          "key": "menuItems.menuItemwb8e8btycj.onClick"
                         }
                       ],
                       "leftColumn": 11,
@@ -729,15 +762,6 @@
                           "isDisabled": false,
                           "isVisible": true,
                           "onClick": "{{navigateTo('Slack Management Admin', {}, 'SAME_WINDOW')}}"
-                        },
-                        "menuItemwb8e8btycj": {
-                          "id": "menuItemwb8e8btycj",
-                          "index": 5,
-                          "label": "Manager Commissions",
-                          "widgetId": "9tvixmwm2u",
-                          "isDisabled": false,
-                          "isVisible": true,
-                          "onClick": "{{navigateTo('Manager Admin', {}, 'SAME_WINDOW');}}"
                         }
                       },
                       "isVisible": "{{appsmith.store.myEmail == 'tool@dmvf.net'}}",
@@ -1777,7 +1801,7 @@
                                 "label"
                               ],
                               "topRow": 5,
-                              "bottomRow": 10,
+                              "bottomRow": 9,
                               "parentRowSpace": 10,
                               "type": "TEXT_WIDGET",
                               "hideCard": false,
@@ -1814,7 +1838,7 @@
                               "originalTopRow": 5,
                               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                               "maxDynamicHeight": 9000,
-                              "originalBottomRow": 9,
+                              "originalBottomRow": 10,
                               "fontSize": "0.875rem",
                               "minDynamicHeight": 4
                             },
@@ -3089,8 +3113,8 @@
                                 "paragraph",
                                 "label"
                               ],
-                              "topRow": 13,
-                              "bottomRow": 17,
+                              "topRow": 12,
+                              "bottomRow": 16,
                               "parentRowSpace": 10,
                               "type": "TEXT_WIDGET",
                               "hideCard": false,
@@ -3124,10 +3148,10 @@
                               "parentId": "863c229ldz",
                               "renderMode": "CANVAS",
                               "isLoading": false,
-                              "originalTopRow": 12,
+                              "originalTopRow": 13,
                               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                               "maxDynamicHeight": 9000,
-                              "originalBottomRow": 16,
+                              "originalBottomRow": 17,
                               "fontSize": "0.875rem",
                               "minDynamicHeight": 4
                             }
