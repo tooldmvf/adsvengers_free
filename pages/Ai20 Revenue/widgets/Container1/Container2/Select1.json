@@ -32,7 +32,7 @@
     "labelTextSize": "0.875rem",
     "isRequired": false,
     "isDeprecated": false,
-    "rightColumn": 50.666666666666664,
+    "rightColumn": 51,
     "dynamicHeight": "AUTO_HEIGHT",
     "widgetId": "gqnsuiu878",
     "accentColor": "{{appsmith.theme.colors.primaryColor}}",

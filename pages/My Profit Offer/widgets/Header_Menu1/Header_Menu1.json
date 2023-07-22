@@ -1,7 +1,7 @@
 {
     "tabId": "",
     "boxShadow": "none",
-    "widgetName": "Header_Menu",
+    "widgetName": "Header_Menu1",
     "borderColor": "transparent",
     "isCanvas": true,
     "displayName": "Container",
@@ -24,9 +24,9 @@
     "dynamicBindingPathList": [],
     "children": [{
         "rightColumn": 904.921875,
-        "widgetName": "Canvas21",
+        "widgetName": "Canvas211",
         "detachFromLayout": true,
-        "widgetId": "g2wft6imwc",
+        "widgetId": "hvcc7x0kim",
         "containerStyle": "none",
         "bottomRow": 80,
         "topRow": 0,
@@ -35,7 +35,7 @@
         "type": "CANVAS_WIDGET",
         "canExtend": false,
         "version": 1,
-        "parentId": "9a5bt5v7vl",
+        "parentId": "se9ynnku91",
         "props": {
             "detachFromLayout": true,
             "children": [],
@@ -55,7 +55,7 @@
     "isDeprecated": false,
     "rightColumn": 64,
     "dynamicHeight": "FIXED",
-    "widgetId": "9a5bt5v7vl",
+    "widgetId": "se9ynnku91",
     "containerStyle": "card",
     "minWidth": 450,
     "isVisible": true,

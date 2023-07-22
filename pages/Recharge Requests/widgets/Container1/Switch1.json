@@ -5,7 +5,7 @@
     "iconSVG": "/static/media/icon.a3115bc1c224776de2846985c8819f99.svg",
     "searchTags": ["boolean"],
     "topRow": 1,
-    "bottomRow": 5,
+    "bottomRow": 6,
     "parentRowSpace": 10,
     "type": "SWITCH_WIDGET",
     "alignWidget": "RIGHT",

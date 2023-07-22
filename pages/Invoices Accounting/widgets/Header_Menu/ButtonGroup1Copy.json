@@ -11,7 +11,9 @@
         {"key": "groupButtons.groupButton1.buttonColor"},
         {"key": "groupButtons.groupButtonenmx60lrah.buttonColor"},
         {"key": "groupButtons.groupButtonz40p7cz8uy.buttonColor"},
-        {"key": "groupButtons.groupButton3d0sb7a9e2.buttonColor"}
+        {"key": "groupButtons.groupButton3d0sb7a9e2.buttonColor"},
+        {"key": "groupButtons.groupButton3d0sb7a9e2.menuItems.menuItemw8ybg6pqbd.isVisible"},
+        {"key": "groupButtons.groupButton3d0sb7a9e2.menuItems.menuItema9wfmmikrk.isVisible"}
     ],
     "displayName": "Button Group",
     "iconSVG": "/static/media/icon.d6773218cfb61dcfa5f460d43371e30d.svg",
@@ -44,6 +46,16 @@
             "iconName": "chevron-down",
             "widgetId": "1ttraqiw8n",
             "menuItems": {
+                "menuItema9wfmmikrk": {
+                    "backgroundColor": "{{appsmith.theme.colors.backgroundColor}}",
+                    "onClick": "{{navigateTo('Manager Accounting', {}, 'SAME_WINDOW');}}",
+                    "widgetId": "9fw9jv8pg9",
+                    "index": 4,
+                    "id": "menuItema9wfmmikrk",
+                    "label": "Manager Commissions",
+                    "isDisabled": false,
+                    "isVisible": "{{appsmith.store.role_level>100}}"
+                },
                 "menuItemugh8quu44s": {
                     "onClick": "{{navigateTo('User Accounting', {}, 'SAME_WINDOW');}}",
                     "backgroundColor": "#f4f4f5",
@@ -63,6 +75,16 @@
                     "label": "Monthly Trend",
                     "isDisabled": false,
                     "isVisible": true
+                },
+                "menuItemw8ybg6pqbd": {
+                    "backgroundColor": "{{appsmith.theme.colors.backgroundColor}}",
+                    "onClick": "{{navigateTo('Factory Accounting', {}, 'SAME_WINDOW');}}",
+                    "widgetId": "b6ga6cwtdd",
+                    "index": 3,
+                    "id": "menuItemw8ybg6pqbd",
+                    "label": "Factory Accounting",
+                    "isDisabled": false,
+                    "isVisible": "{{appsmith.store.role_level >100}}"
                 },
                 "menuItem944clqfotx": {
                     "onClick": "{{navigateTo('Invoices Accounting', {}, 'SAME_WINDOW');}}",
@@ -347,7 +369,9 @@
         {"key": "groupButtons.groupButtonz40p7cz8uy.menuItems.menuItem0aucgjeehz.onClick"},
         {"key": "groupButtons.groupButton3d0sb7a9e2.menuItems.menuItem944clqfotx.onClick"},
         {"key": "groupButtons.groupButton3d0sb7a9e2.menuItems.menuItemugh8quu44s.onClick"},
-        {"key": "groupButtons.groupButton3d0sb7a9e2.menuItems.menuItemwufrmm1ddd.onClick"}
+        {"key": "groupButtons.groupButton3d0sb7a9e2.menuItems.menuItemwufrmm1ddd.onClick"},
+        {"key": "groupButtons.groupButton3d0sb7a9e2.menuItems.menuItemw8ybg6pqbd.onClick"},
+        {"key": "groupButtons.groupButton3d0sb7a9e2.menuItems.menuItema9wfmmikrk.onClick"}
     ],
     "leftColumn": 24,
     "dynamicBindingPathList": [
@@ -359,16 +383,20 @@
         {"key": "groupButtons.groupButtonenmx60lrah.buttonColor"},
         {"key": "groupButtons.groupButtonz40p7cz8uy.buttonColor"},
         {"key": "groupButtons.groupButtonl755tlm16y.onClick"},
-        {"key": "groupButtons.groupButton3d0sb7a9e2.buttonColor"}
+        {"key": "groupButtons.groupButton3d0sb7a9e2.buttonColor"},
+        {"key": "groupButtons.groupButton3d0sb7a9e2.menuItems.menuItemw8ybg6pqbd.isVisible"},
+        {"key": "groupButtons.groupButton3d0sb7a9e2.menuItems.menuItemw8ybg6pqbd.backgroundColor"},
+        {"key": "groupButtons.groupButton3d0sb7a9e2.menuItems.menuItema9wfmmikrk.isVisible"},
+        {"key": "groupButtons.groupButton3d0sb7a9e2.menuItems.menuItema9wfmmikrk.backgroundColor"}
     ],
     "key": "zq7t27bhdi",
     "orientation": "horizontal",
     "isDeprecated": false,
     "rightColumn": 64,
-    "widgetId": "vrvo9ccf7f",
+    "widgetId": "3topqbf6bz",
     "isVisible": true,
     "version": 1,
-    "parentId": "pla9z9yl8u",
+    "parentId": "yny8qsuf3m",
     "renderMode": "CANVAS",
     "isLoading": false,
     "childStylesheet": {"button": {"buttonColor": "{{appsmith.theme.colors.primaryColor}}"}},

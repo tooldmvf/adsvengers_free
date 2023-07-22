@@ -14,7 +14,7 @@
     "dynamicBindingPathList": [{"key": "fontFamily"}],
     "text": "Balance Check",
     "labelTextSize": "0.875rem",
-    "rightColumn": 13,
+    "rightColumn": 17,
     "textAlign": "LEFT",
     "dynamicHeight": "FIXED",
     "widgetId": "urzv99hdc8",

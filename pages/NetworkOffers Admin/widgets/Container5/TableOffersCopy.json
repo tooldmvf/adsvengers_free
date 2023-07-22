@@ -3,7 +3,7 @@
     "borderColor": "#E0DEDE",
     "isVisibleDownload": false,
     "iconSVG": "/static/media/icon.db8a9cbd2acd22a31ea91cc37ea2a46c.svg",
-    "topRow": 13,
+    "topRow": 10,
     "isSortable": false,
     "type": "TABLE_WIDGET_V2",
     "inlineEditingSaveOption": "ROW_LEVEL",
@@ -99,7 +99,7 @@
     ],
     "compactMode": "DEFAULT",
     "displayName": "Table",
-    "bottomRow": 22,
+    "bottomRow": 19,
     "columnWidthMap": {
         "user_email_network": 252,
         "spent": 172,

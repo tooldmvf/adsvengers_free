@@ -32,8 +32,7 @@
         {"key": "menuItems.menuItem9xpfl0ir7r.onClick"},
         {"key": "menuItems.menuItemud1zlvp54x.onClick"},
         {"key": "menuItems.menuItemmsskf7467j.onClick"},
-        {"key": "menuItems.menuItemluz74ga2mq.onClick"},
-        {"key": "menuItems.menuItemsodth1rp2m.onClick"}
+        {"key": "menuItems.menuItemluz74ga2mq.onClick"}
     ],
     "leftColumn": 11,
     "dynamicBindingPathList": [
@@ -43,12 +42,12 @@
         {"key": "isVisible"}
     ],
     "isDisabled": false,
-    "sourceData": "[\"suca1\", \"suca2\"]",
+    "sourceData": "",
     "key": "i3fdkxvkmd",
     "isDeprecated": false,
     "rightColumn": 17,
     "menuVariant": "PRIMARY",
-    "widgetId": "by1gj61b80",
+    "widgetId": "dlt8qxjdrg",
     "menuItems": {
         "menuItem1": {
             "onClick": "{{navigateTo('Campaign List Admin', {}, 'SAME_WINDOW')}}",
@@ -94,21 +93,12 @@
             "label": "Spent Check",
             "isDisabled": false,
             "isVisible": true
-        },
-        "menuItemsodth1rp2m": {
-            "onClick": "{{navigateTo('User Comm Trend Admin', {}, 'SAME_WINDOW');}}",
-            "widgetId": "ohvtlneqse",
-            "index": 5,
-            "id": "menuItemsodth1rp2m",
-            "label": "User Monthly Trend",
-            "isDisabled": false,
-            "isVisible": true
         }
     },
     "isVisible": "{{appsmith.store.myEmail == 'tool@dmvf.net'}}",
     "label": "Admin Tools",
     "version": 1,
-    "parentId": "82uypael0h",
+    "parentId": "3f0mcysnci",
     "renderMode": "CANVAS",
     "isLoading": false,
     "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",

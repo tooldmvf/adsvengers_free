@@ -32,10 +32,7 @@
         {"key": "menuItems.menuItem9xpfl0ir7r.onClick"},
         {"key": "menuItems.menuItemud1zlvp54x.onClick"},
         {"key": "menuItems.menuItemmsskf7467j.onClick"},
-        {"key": "menuItems.menuItemluz74ga2mq.onClick"},
-        {"key": "menuItems.menuItemyf8q144z6c.onClick"},
-        {"key": "menuItems.menuItem0wpqlyd4zd.onClick"},
-        {"key": "menuItems.menuItemsodth1rp2m.onClick"}
+        {"key": "menuItems.menuItemluz74ga2mq.onClick"}
     ],
     "leftColumn": 11,
     "dynamicBindingPathList": [
@@ -45,31 +42,13 @@
         {"key": "isVisible"}
     ],
     "isDisabled": false,
-    "sourceData": "[\"suca1\", \"suca2\"]",
+    "sourceData": "",
     "key": "i3fdkxvkmd",
     "isDeprecated": false,
     "rightColumn": 17,
     "menuVariant": "PRIMARY",
-    "widgetId": "5mfx5aoic5",
+    "widgetId": "h30gecagbo",
     "menuItems": {
-        "menuItemyf8q144z6c": {
-            "onClick": "{{navigateTo('Commissions Admin', {}, 'SAME_WINDOW');}}",
-            "widgetId": "py6ef50cpl",
-            "index": 5,
-            "id": "menuItemyf8q144z6c",
-            "label": "User's Commissions",
-            "isDisabled": false,
-            "isVisible": true
-        },
-        "menuItem0wpqlyd4zd": {
-            "onClick": "{{navigateTo('Accounting', {}, 'SAME_WINDOW');}}",
-            "widgetId": "b5t5xp18qg",
-            "index": 6,
-            "id": "menuItem0wpqlyd4zd",
-            "label": "Accounting",
-            "isDisabled": false,
-            "isVisible": true
-        },
         "menuItem1": {
             "onClick": "{{navigateTo('Campaign List Admin', {}, 'SAME_WINDOW')}}",
             "widgetId": "",
@@ -114,21 +93,12 @@
             "label": "Spent Check",
             "isDisabled": false,
             "isVisible": true
-        },
-        "menuItemsodth1rp2m": {
-            "onClick": "{{navigateTo('User Comm Trend Admin', {}, 'SAME_WINDOW');}}",
-            "widgetId": "ohvtlneqse",
-            "index": 7,
-            "id": "menuItemsodth1rp2m",
-            "label": "User Monthly Trend",
-            "isDisabled": false,
-            "isVisible": true
         }
     },
     "isVisible": "{{appsmith.store.myEmail == 'tool@dmvf.net'}}",
     "label": "Admin Tools",
     "version": 1,
-    "parentId": "lnhibaw4t3",
+    "parentId": "lvxnl0hfo7",
     "renderMode": "CANVAS",
     "isLoading": false,
     "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
