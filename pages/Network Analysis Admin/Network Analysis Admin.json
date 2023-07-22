@@ -1,0 +1,106 @@
+{
+  "unpublishedPage": {
+    "name": "Network Analysis Admin",
+    "slug": "network-analysis-admin",
+    "layouts": [
+      {
+        "viewMode": false,
+        "dsl": {
+          "widgetName": "MainContainer",
+          "backgroundColor": "none",
+          "rightColumn": 4896,
+          "snapColumns": 64,
+          "detachFromLayout": true,
+          "widgetId": "0",
+          "topRow": 0,
+          "bottomRow": 6360,
+          "containerStyle": "none",
+          "snapRows": 125,
+          "parentRowSpace": 1,
+          "type": "CANVAS_WIDGET",
+          "canExtend": true,
+          "version": 80,
+          "minHeight": 1292,
+          "dynamicTriggerPathList": [],
+          "parentColumnSpace": 1,
+          "dynamicBindingPathList": [],
+          "leftColumn": 0
+        },
+        "layoutOnLoadActions": [
+          [
+            {
+              "id": "Network Analysis Admin_Utils.store_user_profile1",
+              "name": "Utils.store_user_profile1",
+              "collectionId": "Network Analysis Admin_Utils",
+              "confirmBeforeExecute": false,
+              "pluginType": "JS",
+              "jsonPathKeys": [
+                "async () => {\n  await get_all_users.run();\n  await setTimeout(() => {}, 1000);\n  await user_financial_period.run();\n  await user_financialNetwork.run();\n  await user_financial_trend.run();\n}"
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "Network Analysis Admin_get_all_users",
+              "name": "get_all_users",
+              "confirmBeforeExecute": false,
+              "pluginType": "API",
+              "jsonPathKeys": [
+                "appsmith.store.access_token"
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "Network Analysis Admin_get_ts",
+              "name": "get_ts",
+              "confirmBeforeExecute": false,
+              "pluginType": "API",
+              "jsonPathKeys": [
+                "appsmith.store.access_token"
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "Network Analysis Admin_js_logout.check_login",
+              "name": "js_logout.check_login",
+              "collectionId": "Network Analysis Admin_js_logout",
+              "confirmBeforeExecute": false,
+              "pluginType": "JS",
+              "jsonPathKeys": [
+                "async () => {\n  if (!appsmith.store.access_token) navigateTo('Login');\n}"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
+              "id": "Network Analysis Admin_user_financial_trend",
+              "name": "user_financial_trend",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "appsmith.store.myUser",
+                "SelectTSFront.selectedOptionValues.length == 0",
+                "\"'\" + MultiSelectUsers.selectedOptionValues.join(\"', '\") + \"'\"",
+                "moment(DateTo.selectedDate).format('YYYY-DD-MM')",
+                "moment(DateFrom.selectedDate).format('YYYY-DD-MM')",
+                "\"'\" + SelectTSFront.selectedOptionValues.join(\"', '\") + \"'\""
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ]
+        ],
+        "layoutOnLoadActionErrors": [],
+        "validOnPageLoadActions": true,
+        "id": "Network Analysis Admin",
+        "deleted": false,
+        "policies": [],
+        "userPermissions": []
+      }
+    ],
+    "userPermissions": [],
+    "policies": [],
+    "isHidden": true
+  },
+  "deleted": false,
+  "gitSyncId": "63c3151532584b547fffe91b_641c04808f7e5b7bc5de4f49"
+}

@@ -1,0 +1,126 @@
+{
+    "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+    "mobileBottomRow": 90,
+    "setAdaptiveYMin": true,
+    "widgetName": "Chart1",
+    "allowScroll": false,
+    "displayName": "Chart",
+    "iconSVG": "/static/media/icon.6adbe31ed817fc4bfd66f9f0a6fc105c.svg",
+    "searchTags": [
+        "graph",
+        "visuals",
+        "visualisations"
+    ],
+    "topRow": 45,
+    "bottomRow": 80,
+    "parentRowSpace": 10,
+    "type": "CHART_WIDGET",
+    "hideCard": false,
+    "mobileRightColumn": 24,
+    "chartData": {
+        "5xcsj6bv3t": {
+            "data": "{{Fetch_Data_Graphs.data.map( (obj) =>{ return  {'x': obj.financial_month2, 'y': obj.amount_spent } })}}",
+            "color": "#dc2626",
+            "seriesName": "Spent"
+        },
+        "r6p2boft0n": {
+            "data": "{{Fetch_Data_Graphs.data.map( (obj) =>{ return  {'x': obj.financial_month2, 'y': obj.amount_invoice } })}}",
+            "color": "#3f3f46",
+            "seriesName": "Invoice"
+        },
+        "g6vip8yzzi": {
+            "data": "{{Fetch_Data_Graphs.data.map( (obj) =>{ return  {'x': obj.financial_month2, 'y': obj.amount_profit } })}}",
+            "color": "#16a34a",
+            "seriesName": "Profit"
+        },
+        "t7wjzuzuso": {
+            "data": "{{Fetch_Data_Graphs.data.map( (obj) =>{ return  {'x': obj.financial_month2, 'y': obj.amount_revenue_approved } })}}",
+            "color": "#2563eb",
+            "seriesName": "Revenue"
+        }
+    },
+    "animateLoading": true,
+    "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
+    "dynamicTriggerPathList": [],
+    "dynamicBindingPathList": [
+        {"key": "chartData.t7wjzuzuso.data"},
+        {"key": "borderRadius"},
+        {"key": "boxShadow"},
+        {"key": "accentColor"},
+        {"key": "fontFamily"},
+        {"key": "chartData.5xcsj6bv3t.data"},
+        {"key": "chartData.g6vip8yzzi.data"},
+        {"key": "chartData.r6p2boft0n.data"},
+        {"key": "chartName"}
+    ],
+    "leftColumn": 0,
+    "customFusionChartConfig": {
+        "type": "column2d",
+        "dataSource": {
+            "data": [
+                {
+                    "label": "Product1",
+                    "value": 20000
+                },
+                {
+                    "label": "Product2",
+                    "value": 22000
+                },
+                {
+                    "label": "Product3",
+                    "value": 32000
+                }
+            ],
+            "chart": {
+                "legendIconSides": "4",
+                "canvasPadding": "0",
+                "captionAlignment": "center",
+                "yAxisNameFontSize": "14",
+                "caption": "Sales Report",
+                "labelFontColor": "#716e6e",
+                "chartLeftMargin": "20",
+                "captionFontSize": "24",
+                "chartTopMargin": "10",
+                "theme": "fusion",
+                "legendIconAlpha": "100",
+                "chartBottomMargin": "10",
+                "labelFontSize": "12",
+                "xAxisNameFontColor": "#716e6e",
+                "yAxisNameFontColor": "#716e6e",
+                "captionFontColor": "#231F20",
+                "yAxisValueFontColor": "#716e6e",
+                "captionPadding": "20",
+                "yAxisName": "Revenue($)",
+                "legendIconBgAlpha": "100",
+                "xAxisName": "Product Line",
+                "alignCaptionWithCanvas": 1,
+                "chartRightMargin": "40",
+                "legendPosition": "top",
+                "xAxisNameFontSize": "14",
+                "yAxisValueFontSize": "12"
+            }
+        }
+    },
+    "key": "cs1b3xopvo",
+    "isDeprecated": false,
+    "rightColumn": 32,
+    "widgetId": "ny5g4smcep",
+    "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+    "minWidth": 450,
+    "isVisible": true,
+    "version": 1,
+    "parentId": "0",
+    "labelOrientation": "auto",
+    "renderMode": "CANVAS",
+    "isLoading": false,
+    "mobileTopRow": 58,
+    "responsiveBehavior": "fill",
+    "yAxisName": "Amount(\u20ac)",
+    "originalTopRow": 45,
+    "chartName": "Sales Report - {{SelectYear.selectedOptionLabel}}",
+    "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+    "mobileLeftColumn": 0,
+    "xAxisName": "Months",
+    "originalBottomRow": 80,
+    "chartType": "LINE_CHART"
+}

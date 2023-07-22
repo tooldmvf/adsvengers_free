@@ -1,0 +1,112 @@
+{
+  "unpublishedPage": {
+    "name": "ZZZ OLD Off Detail Admin",
+    "slug": "zzz-old-off-detail-admin",
+    "customSlug": "",
+    "layouts": [
+      {
+        "viewMode": false,
+        "dsl": {
+          "widgetName": "MainContainer",
+          "backgroundColor": "none",
+          "rightColumn": 1174,
+          "snapColumns": 64,
+          "detachFromLayout": true,
+          "widgetId": "0",
+          "topRow": 0,
+          "bottomRow": 4480,
+          "containerStyle": "none",
+          "snapRows": 125,
+          "parentRowSpace": 1,
+          "type": "CANVAS_WIDGET",
+          "canExtend": true,
+          "version": 79,
+          "minHeight": 900,
+          "parentColumnSpace": 1,
+          "dynamicTriggerPathList": [],
+          "dynamicBindingPathList": [],
+          "leftColumn": 0
+        },
+        "layoutOnLoadActions": [
+          [
+            {
+              "id": "ZZZ OLD Off Detail Admin_get_all_users",
+              "name": "get_all_users",
+              "confirmBeforeExecute": false,
+              "pluginType": "API",
+              "jsonPathKeys": [
+                "appsmith.store.access_token"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
+              "id": "ZZZ OLD Off Detail Admin_SelectOFFERSUser",
+              "name": "SelectOFFERSUser",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "!Select1.selectedOptionValue ? '3 desc' : Select1.selectedOptionValue",
+                "MSTrSource.selectedOptionValues.length == 0",
+                "\"'\" + SelectUser.selectedOptionValue + \"'\"",
+                "!SelectUser.selectedOptionValue",
+                "moment(DateTo.selectedDate).format('YYYY-DD-MM')",
+                "MSCategory.selectedOptionValues.length == 0",
+                "\"'\" + MSTrSource.selectedOptionValues.join(\"', '\") + \"'\"",
+                "MSNetwork.selectedOptionValues.length == 0",
+                "\"'\" + MSNetwork.selectedOptionValues.join(\"', '\") + \"'\"",
+                "moment(DateFrom.selectedDate).format('YYYY-DD-MM')",
+                "\"'\" + MSCategory.selectedOptionValues.join(\"', '\") + \"'\""
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
+              "id": "ZZZ OLD Off Detail Admin_get_all_networks",
+              "name": "get_all_networks",
+              "confirmBeforeExecute": false,
+              "pluginType": "API",
+              "jsonPathKeys": [
+                "appsmith.store.access_token"
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "ZZZ OLD Off Detail Admin_get_category",
+              "name": "get_category",
+              "confirmBeforeExecute": false,
+              "pluginType": "API",
+              "jsonPathKeys": [
+                "appsmith.store.access_token"
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "ZZZ OLD Off Detail Admin_get_ts",
+              "name": "get_ts",
+              "confirmBeforeExecute": false,
+              "pluginType": "API",
+              "jsonPathKeys": [
+                "appsmith.store.access_token"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ]
+        ],
+        "layoutOnLoadActionErrors": [],
+        "validOnPageLoadActions": true,
+        "id": "ZZZ OLD Off Detail Admin",
+        "deleted": false,
+        "policies": [],
+        "userPermissions": []
+      }
+    ],
+    "userPermissions": [],
+    "policies": [],
+    "isHidden": true
+  },
+  "deleted": false,
+  "gitSyncId": "63c3151532584b547fffe91b_6422b6799e29566c0dd57570"
+}

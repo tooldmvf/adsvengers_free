@@ -1,0 +1,43 @@
+{
+    "boxShadow": "none",
+    "widgetName": "IconButton1Copy",
+    "onClick": "{{copyToClipboard(CamNameResult.text)}}",
+    "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+    "dynamicPropertyPathList": [{"key": "isVisible"}],
+    "displayName": "Icon Button",
+    "iconSVG": "/static/media/icon.1a0c634ac75f9fa6b6ae7a8df882a3ba.svg",
+    "searchTags": [
+        "click",
+        "submit"
+    ],
+    "topRow": 27,
+    "bottomRow": 31,
+    "tooltip": "Click here to copy",
+    "parentRowSpace": 10,
+    "type": "ICON_BUTTON_WIDGET",
+    "hideCard": false,
+    "animateLoading": true,
+    "parentColumnSpace": 7.3535614013671875,
+    "dynamicTriggerPathList": [{"key": "onClick"}],
+    "leftColumn": 57,
+    "dynamicBindingPathList": [
+        {"key": "buttonColor"},
+        {"key": "borderRadius"},
+        {"key": "isVisible"}
+    ],
+    "isDisabled": false,
+    "key": "f6bj1inc2j",
+    "isDeprecated": false,
+    "rightColumn": 64,
+    "iconName": "duplicate",
+    "widgetId": "e2tqab3v8s",
+    "isVisible": "{{OfferSel.selectedOptionValue.length>0}}",
+    "version": 1,
+    "parentId": "jixv5hbs7c",
+    "renderMode": "CANVAS",
+    "isLoading": false,
+    "originalTopRow": 44,
+    "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+    "originalBottomRow": 48,
+    "buttonVariant": "PRIMARY"
+}

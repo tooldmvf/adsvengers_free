@@ -1,0 +1,43 @@
+{
+    "boxShadow": "none",
+    "widgetName": "IconButton4",
+    "onClick": "{{removeValue('new_array');\nshowModal('ModalDuplicateDay');\nSubTable.updatedRowIndices=[];\n}}",
+    "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+    "dynamicPropertyPathList": [
+        {"key": "isDisabled"},
+        {"key": "onClick"}
+    ],
+    "displayName": "Icon Button",
+    "iconSVG": "/static/media/icon.1a0c634ac75f9fa6b6ae7a8df882a3ba.svg",
+    "searchTags": [
+        "click",
+        "submit"
+    ],
+    "topRow": 6,
+    "bottomRow": 10,
+    "parentRowSpace": 10,
+    "type": "ICON_BUTTON_WIDGET",
+    "hideCard": false,
+    "animateLoading": true,
+    "parentColumnSpace": 17.5556640625,
+    "dynamicTriggerPathList": [{"key": "onClick"}],
+    "leftColumn": 62,
+    "dynamicBindingPathList": [
+        {"key": "buttonColor"},
+        {"key": "borderRadius"},
+        {"key": "isDisabled"}
+    ],
+    "isDisabled": "{{Table1Copy.selectedRowIndices.length == 0}}",
+    "key": "ksogp0gojr",
+    "isDeprecated": false,
+    "rightColumn": 64,
+    "iconName": "duplicate",
+    "widgetId": "oo5ar039gn",
+    "isVisible": false,
+    "version": 1,
+    "parentId": "59rw5mx0bq",
+    "renderMode": "CANVAS",
+    "isLoading": false,
+    "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+    "buttonVariant": "PRIMARY"
+}

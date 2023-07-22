@@ -1,0 +1,79 @@
+{
+  "unpublishedPage": {
+    "name": "Ai20 Revenue",
+    "slug": "ai20-revenue",
+    "layouts": [
+      {
+        "viewMode": false,
+        "dsl": {
+          "widgetName": "MainContainer",
+          "backgroundColor": "none",
+          "rightColumn": 1224,
+          "snapColumns": 64,
+          "detachFromLayout": true,
+          "widgetId": "0",
+          "topRow": 0,
+          "bottomRow": 680,
+          "containerStyle": "none",
+          "snapRows": 86,
+          "parentRowSpace": 1,
+          "type": "CANVAS_WIDGET",
+          "canExtend": true,
+          "version": 80,
+          "minHeight": 880,
+          "parentColumnSpace": 1,
+          "dynamicBindingPathList": [],
+          "leftColumn": 0
+        },
+        "layoutOnLoadActions": [
+          [
+            {
+              "id": "Ai20 Revenue_MonthlyRev",
+              "name": "MonthlyRev",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "moment(DateTo.selectedDate).format('YYYY-DD-MM')",
+                "moment(DateFrom.selectedDate).format('YYYY-DD-MM')"
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "Ai20 Revenue_Utils2.onLoadPage",
+              "name": "Utils2.onLoadPage",
+              "collectionId": "Ai20 Revenue_Utils2",
+              "confirmBeforeExecute": false,
+              "pluginType": "JS",
+              "jsonPathKeys": [
+                "async () => {\n  await MonthlyRev.run();\n}"
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "Ai20 Revenue_js_logout.check_login",
+              "name": "js_logout.check_login",
+              "collectionId": "Ai20 Revenue_js_logout",
+              "confirmBeforeExecute": false,
+              "pluginType": "JS",
+              "jsonPathKeys": [
+                "async () => {\n  if (!appsmith.store.access_token) navigateTo('Login');\n}"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ]
+        ],
+        "layoutOnLoadActionErrors": [],
+        "validOnPageLoadActions": true,
+        "id": "Ai20 Revenue",
+        "deleted": false,
+        "policies": [],
+        "userPermissions": []
+      }
+    ],
+    "userPermissions": [],
+    "policies": [],
+    "isHidden": true
+  },
+  "deleted": false,
+  "gitSyncId": "63c3151532584b547fffe91b_642300179e29566c0dd581c4"
+}

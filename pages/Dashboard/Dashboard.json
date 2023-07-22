@@ -1,0 +1,118 @@
+{
+  "unpublishedPage": {
+    "name": "Dashboard",
+    "slug": "dashboard",
+    "layouts": [
+      {
+        "viewMode": false,
+        "dsl": {
+          "widgetName": "MainContainer",
+          "backgroundColor": "none",
+          "rightColumn": 4896,
+          "snapColumns": 64,
+          "detachFromLayout": true,
+          "widgetId": "0",
+          "topRow": 0,
+          "bottomRow": 1800,
+          "containerStyle": "none",
+          "snapRows": 125,
+          "parentRowSpace": 1,
+          "type": "CANVAS_WIDGET",
+          "canExtend": true,
+          "version": 80,
+          "minHeight": 1292,
+          "dynamicTriggerPathList": [],
+          "parentColumnSpace": 1,
+          "dynamicBindingPathList": [],
+          "leftColumn": 0
+        },
+        "layoutOnLoadActions": [
+          [
+            {
+              "id": "Dashboard_Utils.store_user_profile1",
+              "name": "Utils.store_user_profile1",
+              "collectionId": "Dashboard_Utils",
+              "confirmBeforeExecute": false,
+              "pluginType": "JS",
+              "jsonPathKeys": [
+                "async () => {\n  if (appsmith.store.from_page != 'login') {\n    const result = await get_all_users.run();\n    await setTimeout(() => {}, 2000);\n    await user_financial_period.run();\n    await user_financialNetwork.run();\n    await user_financialOffers.run();\n    await user_financial_rej_rate_24h.run();\n    await user_financial_active_offers.run();\n    await user_financial_trend.run();\n    return;\n  }\n  const user = await get_user.run();\n  storeValue('id', user.id);\n  storeValue('myUser', user.id);\n  storeValue('myUsers', [user.id]);\n  storeValue('myEmail', user.email);\n  const user_prof = await get_user_profile.run({\n    user_id: user.id\n  });\n  storeValue('first_name', user_prof[0].first_name ? user_prof[0].first_name : user.data.user_metadata.full_name.split(' ')[0]);\n  storeValue('last_name', user_prof[0].last_name ? user_prof[0].last_name : user.data.user_metadata.full_name.split(' ')[1]);\n  storeValue('role_level', user_prof[0].role_level);\n  await update_profile.run();\n  storeValue('type', undefined);\n  storeValue('from_page', undefined);\n  const result2 = await get_all_users.run();\n  await setTimeout(() => {}, 2000);\n  await user_financial_period.run();\n  await user_financialNetwork.run();\n  await user_financialOffers.run();\n  await user_financial_rej_rate_24h.run();\n  await user_financial_active_offers.run();\n  await user_financial_trend.run();\n}"
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "Dashboard_get_all_networks",
+              "name": "get_all_networks",
+              "confirmBeforeExecute": false,
+              "pluginType": "API",
+              "jsonPathKeys": [
+                "appsmith.store.access_token"
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "Dashboard_get_all_users",
+              "name": "get_all_users",
+              "confirmBeforeExecute": false,
+              "pluginType": "API",
+              "jsonPathKeys": [
+                "appsmith.store.access_token"
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "Dashboard_get_ts",
+              "name": "get_ts",
+              "confirmBeforeExecute": false,
+              "pluginType": "API",
+              "jsonPathKeys": [
+                "appsmith.store.access_token"
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "Dashboard_js_logout.check_login",
+              "name": "js_logout.check_login",
+              "collectionId": "Dashboard_js_logout",
+              "confirmBeforeExecute": false,
+              "pluginType": "JS",
+              "jsonPathKeys": [
+                "async () => {\n  if (!appsmith.store.access_token) navigateTo('Login');\n}"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
+              "id": "Dashboard_user_financial_trend",
+              "name": "user_financial_trend",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "SelectTSFront.selectedOptionValues.length == 0",
+                "appsmith.store.myUser",
+                "\"'\" + MultiSelectUsers.selectedOptionValues.join(\"', '\") + \"'\"",
+                "SelectNetwork.selectedOptionValues.length == 0",
+                "moment(DateTo.selectedDate).format('YYYY-DD-MM')",
+                "moment(DateFrom.selectedDate).format('YYYY-DD-MM')",
+                "\"'\" + SelectNetwork.selectedOptionValues.join(\"', '\") + \"'\"",
+                "\"'\" + SelectTSFront.selectedOptionValues.join(\"', '\") + \"'\""
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ]
+        ],
+        "layoutOnLoadActionErrors": [],
+        "validOnPageLoadActions": true,
+        "id": "Dashboard",
+        "deleted": false,
+        "policies": [],
+        "userPermissions": []
+      }
+    ],
+    "userPermissions": [],
+    "policies": [],
+    "isHidden": true
+  },
+  "deleted": false,
+  "gitSyncId": "63936c0b4b95806da2da5de7_63936c0b4b95806da2da5de9"
+}

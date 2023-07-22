@@ -1,0 +1,57 @@
+{
+  "unpublishedPage": {
+    "name": "Login",
+    "slug": "login",
+    "layouts": [
+      {
+        "viewMode": false,
+        "dsl": {
+          "widgetName": "MainContainer",
+          "backgroundColor": "none",
+          "rightColumn": 1224,
+          "snapColumns": 64,
+          "detachFromLayout": true,
+          "widgetId": "0",
+          "topRow": 0,
+          "bottomRow": 650,
+          "containerStyle": "none",
+          "snapRows": 89,
+          "parentRowSpace": 1,
+          "type": "CANVAS_WIDGET",
+          "canExtend": true,
+          "version": 80,
+          "minHeight": 900,
+          "parentColumnSpace": 1,
+          "dynamicBindingPathList": [],
+          "leftColumn": 0
+        },
+        "layoutOnLoadActions": [
+          [
+            {
+              "id": "Login_auth.sign_up_continue",
+              "name": "auth.sign_up_continue",
+              "collectionId": "Login_auth",
+              "confirmBeforeExecute": false,
+              "pluginType": "JS",
+              "jsonPathKeys": [
+                "async () => {\n  if (!appsmith.URL.fullPath.includes('#access_token')) {\n    if (!appsmith.store.access_token) {\n      return;\n    } else {\n      navigateTo('Dashboard');\n      return;\n    }\n  }\n  appsmith.URL.fullPath.split('#')[1].split('&').forEach(i => {\n    const [key, value] = i.split('=');\n    storeValue(key, value);\n  });\n  try {\n    if (appsmith.store.type === 'recovery') {\n      storeValue('loginTab', 'New Pass');\n    } else if (appsmith.store.type === 'signup') {\n      storeValue('loginTab', 'Other Info');\n    } else {\n      await get_user.run();\n      storeValue('from_page', 'login');\n      navigateTo('Dashboard');\n    }\n  } catch (e) {\n    showAlert(`${e.message}: ${sign_in.data.error_description}`, 'warning');\n  }\n}"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ]
+        ],
+        "layoutOnLoadActionErrors": [],
+        "validOnPageLoadActions": true,
+        "id": "Login",
+        "deleted": false,
+        "policies": [],
+        "userPermissions": []
+      }
+    ],
+    "userPermissions": [],
+    "policies": [],
+    "isHidden": false
+  },
+  "deleted": false,
+  "gitSyncId": "63936c0b4b95806da2da5de7_63b18082bc0e8334c72a300c"
+}

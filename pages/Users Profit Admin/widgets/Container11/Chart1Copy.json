@@ -1,0 +1,98 @@
+{
+    "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+    "widgetName": "Chart1Copy",
+    "allowScroll": false,
+    "displayName": "Chart",
+    "iconSVG": "/static/media/icon.6adbe31ed817fc4bfd66f9f0a6fc105c.svg",
+    "searchTags": [
+        "graph",
+        "visuals",
+        "visualisations"
+    ],
+    "topRow": 0,
+    "bottomRow": 55,
+    "parentRowSpace": 10,
+    "type": "CHART_WIDGET",
+    "hideCard": false,
+    "chartData": {"z2suajj0gw": {
+        "data": "{{SelectFinancial.data.filter(f => (f.tot_revenue-f.spent_wfees)>0).map( (obj) =>{ return  {'x': obj.User_name, 'y': obj.profit } })}}",
+        "seriesName": "Profit"
+    }},
+    "animateLoading": true,
+    "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
+    "dynamicTriggerPathList": [],
+    "parentColumnSpace": 17.4619140625,
+    "dynamicBindingPathList": [
+        {"key": "chartData.z2suajj0gw.data"},
+        {"key": "borderRadius"},
+        {"key": "boxShadow"},
+        {"key": "accentColor"},
+        {"key": "fontFamily"}
+    ],
+    "leftColumn": 32,
+    "customFusionChartConfig": {
+        "type": "column2d",
+        "dataSource": {
+            "data": [
+                {
+                    "label": "Product1",
+                    "value": 20000
+                },
+                {
+                    "label": "Product2",
+                    "value": 22000
+                },
+                {
+                    "label": "Product3",
+                    "value": 32000
+                }
+            ],
+            "chart": {
+                "legendIconSides": "4",
+                "canvasPadding": "0",
+                "captionAlignment": "center",
+                "yAxisNameFontSize": "14",
+                "caption": "Sales Report",
+                "labelFontColor": "#716e6e",
+                "chartLeftMargin": "20",
+                "captionFontSize": "24",
+                "chartTopMargin": "10",
+                "theme": "fusion",
+                "legendIconAlpha": "100",
+                "chartBottomMargin": "10",
+                "labelFontSize": "12",
+                "xAxisNameFontColor": "#716e6e",
+                "yAxisNameFontColor": "#716e6e",
+                "captionFontColor": "#231F20",
+                "yAxisValueFontColor": "#716e6e",
+                "captionPadding": "20",
+                "yAxisName": "Revenue($)",
+                "legendIconBgAlpha": "100",
+                "xAxisName": "Product Line",
+                "alignCaptionWithCanvas": 1,
+                "chartRightMargin": "40",
+                "legendPosition": "top",
+                "xAxisNameFontSize": "14",
+                "yAxisValueFontSize": "12"
+            }
+        }
+    },
+    "key": "rr2y77ag4q",
+    "isDeprecated": false,
+    "rightColumn": 64,
+    "widgetId": "h371g9g8mb",
+    "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+    "isVisible": true,
+    "version": 1,
+    "parentId": "8tmrr0dbbe",
+    "labelOrientation": "auto",
+    "renderMode": "CANVAS",
+    "isLoading": false,
+    "yAxisName": "Revenue($)",
+    "originalTopRow": 71,
+    "chartName": "Profit Report",
+    "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+    "xAxisName": "Profit",
+    "originalBottomRow": 114,
+    "chartType": "PIE_CHART"
+}

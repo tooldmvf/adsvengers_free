@@ -1,0 +1,129 @@
+{
+  "unpublishedPage": {
+    "name": "NetworkOffers Admin",
+    "slug": "networkoffers-admin",
+    "customSlug": "",
+    "layouts": [
+      {
+        "viewMode": false,
+        "dsl": {
+          "widgetName": "MainContainer",
+          "backgroundColor": "none",
+          "rightColumn": 1174,
+          "snapColumns": 64,
+          "detachFromLayout": true,
+          "widgetId": "0",
+          "topRow": 0,
+          "bottomRow": 950,
+          "containerStyle": "none",
+          "snapRows": 125,
+          "parentRowSpace": 1,
+          "type": "CANVAS_WIDGET",
+          "canExtend": true,
+          "version": 80,
+          "minHeight": 900,
+          "parentColumnSpace": 1,
+          "dynamicTriggerPathList": [],
+          "dynamicBindingPathList": [],
+          "leftColumn": 0
+        },
+        "layoutOnLoadActions": [
+          [
+            {
+              "id": "NetworkOffers Admin_get_all_users",
+              "name": "get_all_users",
+              "confirmBeforeExecute": false,
+              "pluginType": "API",
+              "jsonPathKeys": [
+                "appsmith.store.access_token"
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "NetworkOffers Admin_js_logout.check_login",
+              "name": "js_logout.check_login",
+              "collectionId": "NetworkOffers Admin_js_logout",
+              "confirmBeforeExecute": false,
+              "pluginType": "JS",
+              "jsonPathKeys": [
+                "async () => {\n  if (!appsmith.store.access_token) navigateTo('Login');\n}"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
+              "id": "NetworkOffers Admin_SelectOFFERSUser",
+              "name": "SelectOFFERSUser",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "MSTrSource.selectedOptionValues.length == 0",
+                "!SelectUser.selectedOptionValue",
+                "\"'\" + SelectUser.selectedOptionValue + \"'\"",
+                "moment(DateTo.selectedDate).format('YYYY-DD-MM')",
+                "SearchCamp.inputText",
+                "\"'\" + MSNetwork.selectedOptionValues.join(\"', '\") + \"'\"",
+                "\"'\" + MSTrSource.selectedOptionValues.join(\"', '\") + \"'\"",
+                "MSNetwork.selectedOptionValues.length == 0",
+                "moment(DateFrom.selectedDate).format('YYYY-DD-MM')"
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "NetworkOffers Admin_get_all_networks",
+              "name": "get_all_networks",
+              "confirmBeforeExecute": false,
+              "pluginType": "API",
+              "jsonPathKeys": [
+                "appsmith.store.access_token"
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "NetworkOffers Admin_get_ts",
+              "name": "get_ts",
+              "confirmBeforeExecute": false,
+              "pluginType": "API",
+              "jsonPathKeys": [
+                "appsmith.store.access_token"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
+              "id": "NetworkOffers Admin_SelectOFFERSTot",
+              "name": "SelectOFFERSTot",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "MSTrSource.selectedOptionValues.length == 0",
+                "\"'\" + SelectUser.selectedOptionValue + \"'\"",
+                "!SelectUser.selectedOptionValue",
+                "moment(DateTo.selectedDate).format('YYYY-DD-MM')",
+                "SearchCamp.inputText",
+                "\"'\" + MSNetwork.selectedOptionValues.join(\"', '\") + \"'\"",
+                "moment(DateFrom.selectedDate).format('YYYY-DD-MM')",
+                "MSNetwork.selectedOptionValues.length == 0",
+                "\"'\" + MSTrSource.selectedOptionValues.join(\"', '\") + \"'\""
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ]
+        ],
+        "layoutOnLoadActionErrors": [],
+        "validOnPageLoadActions": true,
+        "id": "NetworkOffers Admin",
+        "deleted": false,
+        "policies": [],
+        "userPermissions": []
+      }
+    ],
+    "userPermissions": [],
+    "policies": [],
+    "isHidden": true
+  },
+  "deleted": false,
+  "gitSyncId": "646331cd28902b71518db22a_647efe42270e40370738da1c"
+}

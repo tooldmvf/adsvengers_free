@@ -1,0 +1,78 @@
+{
+  "unpublishedPage": {
+    "name": "User Comm Trend Admin",
+    "slug": "user-comm-trend-admin",
+    "layouts": [
+      {
+        "viewMode": false,
+        "dsl": {
+          "widgetName": "MainContainer",
+          "backgroundColor": "none",
+          "rightColumn": 1224,
+          "snapColumns": 64,
+          "detachFromLayout": true,
+          "widgetId": "0",
+          "topRow": 0,
+          "bottomRow": 1710,
+          "containerStyle": "none",
+          "snapRows": 86,
+          "parentRowSpace": 1,
+          "type": "CANVAS_WIDGET",
+          "canExtend": true,
+          "version": 80,
+          "minHeight": 880,
+          "parentColumnSpace": 1,
+          "dynamicBindingPathList": [],
+          "leftColumn": 0
+        },
+        "layoutOnLoadActions": [
+          [
+            {
+              "id": "User Comm Trend Admin_Utils2.onLoadPage",
+              "name": "Utils2.onLoadPage",
+              "collectionId": "User Comm Trend Admin_Utils2",
+              "confirmBeforeExecute": false,
+              "pluginType": "JS",
+              "jsonPathKeys": [
+                "async () => {\n  await get_all_users.run();\n  await Fetch_Data_All.run();\n  await Fetch_Data_Graphs.run();\n  await Fetch_Data_Tot.run();\n  await Fetch_Debt_Factory.run();\n  await Fetch_Invoices_Factory.run();\n  await Fetch_Mail_Sent.run();\n  await Fetch_Profit_Factory.run();\n  await Fetch_Profit_Factory_Tot.run();\n  await Fetch_Revenue_Factory.run();\n  await Fetch_Roi_Factory.run();\n  await Fetch_Spent_Factory.run();\n}"
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "User Comm Trend Admin_get_all_users",
+              "name": "get_all_users",
+              "confirmBeforeExecute": false,
+              "pluginType": "API",
+              "jsonPathKeys": [
+                "appsmith.store.access_token"
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "User Comm Trend Admin_js_logout.check_login",
+              "name": "js_logout.check_login",
+              "collectionId": "User Comm Trend Admin_js_logout",
+              "confirmBeforeExecute": false,
+              "pluginType": "JS",
+              "jsonPathKeys": [
+                "async () => {\n  if (!appsmith.store.access_token) navigateTo('Login');\n}"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ]
+        ],
+        "layoutOnLoadActionErrors": [],
+        "validOnPageLoadActions": true,
+        "id": "User Comm Trend Admin",
+        "deleted": false,
+        "policies": [],
+        "userPermissions": []
+      }
+    ],
+    "userPermissions": [],
+    "policies": [],
+    "isHidden": true
+  },
+  "deleted": false,
+  "gitSyncId": "646331cd28902b71518db22a_6472e44e270e40370738d461"
+}

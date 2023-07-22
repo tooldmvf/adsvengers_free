@@ -1,0 +1,111 @@
+{
+    "boxShadow": "0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)",
+    "widgetName": "Chart1Copy1",
+    "allowScroll": false,
+    "displayName": "Chart",
+    "iconSVG": "/static/media/icon.6adbe31ed817fc4bfd66f9f0a6fc105c.svg",
+    "searchTags": [
+        "graph",
+        "visuals",
+        "visualisations"
+    ],
+    "topRow": 7,
+    "bottomRow": 40,
+    "parentRowSpace": 10,
+    "type": "CHART_WIDGET",
+    "hideCard": false,
+    "chartData": {
+        "q8bp8wl7lj": {
+            "data": "{{OfferDetailTS.data.map( (obj) =>{ return  {'x': obj.ts_name, 'y': obj.amount_spent_plus_fee } })}}",
+            "color": "#f87171",
+            "seriesName": "Spent"
+        },
+        "mixgdkr5hg": {
+            "data": "{{OfferDetailTS.data.map( (obj) =>{ return  {'x': obj.ts_name, 'y': (obj.tot_profit) } })}}",
+            "color": "#60a5fa",
+            "seriesName": "Profit"
+        },
+        "xycqbucfvm": {
+            "data": "{{OfferDetailTS.data.map( (obj) =>{ return  {'x': obj.ts_name, 'y': obj.amount_revenue } })}}",
+            "color": "#22c55e",
+            "seriesName": "Revenue"
+        }
+    },
+    "animateLoading": true,
+    "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
+    "dynamicTriggerPathList": [],
+    "dynamicBindingPathList": [
+        {"key": "chartData.xycqbucfvm.data"},
+        {"key": "borderRadius"},
+        {"key": "accentColor"},
+        {"key": "fontFamily"},
+        {"key": "chartData.q8bp8wl7lj.data"},
+        {"key": "chartData.mixgdkr5hg.data"}
+    ],
+    "leftColumn": 27,
+    "customFusionChartConfig": {
+        "type": "column2d",
+        "dataSource": {
+            "data": [
+                {
+                    "label": "Product1",
+                    "value": 20000
+                },
+                {
+                    "label": "Product2",
+                    "value": 22000
+                },
+                {
+                    "label": "Product3",
+                    "value": 32000
+                }
+            ],
+            "chart": {
+                "legendIconSides": "4",
+                "canvasPadding": "0",
+                "captionAlignment": "center",
+                "yAxisNameFontSize": "14",
+                "caption": "Sales Report",
+                "labelFontColor": "#716e6e",
+                "chartLeftMargin": "20",
+                "captionFontSize": "24",
+                "chartTopMargin": "10",
+                "theme": "fusion",
+                "legendIconAlpha": "100",
+                "chartBottomMargin": "10",
+                "labelFontSize": "12",
+                "xAxisNameFontColor": "#716e6e",
+                "yAxisNameFontColor": "#716e6e",
+                "captionFontColor": "#231F20",
+                "yAxisValueFontColor": "#716e6e",
+                "captionPadding": "20",
+                "yAxisName": "Revenue($)",
+                "legendIconBgAlpha": "100",
+                "xAxisName": "Product Line",
+                "alignCaptionWithCanvas": 1,
+                "chartRightMargin": "40",
+                "legendPosition": "top",
+                "xAxisNameFontSize": "14",
+                "yAxisValueFontSize": "12"
+            }
+        }
+    },
+    "key": "kzedvwkggc",
+    "isDeprecated": false,
+    "rightColumn": 60,
+    "widgetId": "6am20e1h7o",
+    "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+    "isVisible": true,
+    "version": 1,
+    "parentId": "jgnap0pw39",
+    "labelOrientation": "auto",
+    "renderMode": "CANVAS",
+    "isLoading": false,
+    "yAxisName": "Revenue(\u20ac)",
+    "originalTopRow": 9,
+    "chartName": "Traffic Source",
+    "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+    "xAxisName": "",
+    "originalBottomRow": 42,
+    "chartType": "COLUMN_CHART"
+}

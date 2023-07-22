@@ -1,0 +1,113 @@
+{
+    "boxShadow": "0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)",
+    "setAdaptiveYMin": true,
+    "widgetName": "ChartTrendCopy",
+    "allowScroll": false,
+    "dynamicPropertyPathList": [],
+    "displayName": "Chart",
+    "iconSVG": "/static/media/icon.6adbe31ed817fc4bfd66f9f0a6fc105c.svg",
+    "searchTags": [
+        "graph",
+        "visuals",
+        "visualisations"
+    ],
+    "topRow": 42,
+    "bottomRow": 84,
+    "parentRowSpace": 10,
+    "type": "CHART_WIDGET",
+    "hideCard": false,
+    "chartData": {
+        "ra358mnnbt": {
+            "data": "{{user_financial_trend.data.filter(e => {return e.network_name == 'Ai20'}).map( (obj) => { return  {'x': obj.financial_date, 'y': obj.rej_rate} })}}",
+            "color": "#27272a",
+            "seriesName": "Ai20"
+        },
+        "5f0unjkheo": {
+            "data": "{{user_financial_trend.data.filter(e => {return e.network_name == 'WorldFilia'}).map( (obj) => { return  {'x': obj.financial_date, 'y': obj.rej_rate} })}}",
+            "color": "#facc15",
+            "seriesName": "WorldFilia"
+        },
+        "58hammjicr": {
+            "data": "{{user_financial_trend.data.filter(e => {return e.network_name == 'SquidBomb'}).map( (obj) => { return  {'x': obj.financial_date, 'y': obj.rej_rate} })}}",
+            "color": "#ec4899",
+            "seriesName": "SquidBomb"
+        }
+    },
+    "animateLoading": true,
+    "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
+    "dynamicTriggerPathList": [],
+    "dynamicBindingPathList": [
+        {"key": "borderRadius"},
+        {"key": "accentColor"},
+        {"key": "fontFamily"},
+        {"key": "chartData.ra358mnnbt.data"},
+        {"key": "chartData.5f0unjkheo.data"},
+        {"key": "chartData.58hammjicr.data"}
+    ],
+    "leftColumn": 24,
+    "customFusionChartConfig": {
+        "type": "column2d",
+        "dataSource": {
+            "data": [
+                {
+                    "label": "Product1",
+                    "value": 20000
+                },
+                {
+                    "label": "Product2",
+                    "value": 22000
+                },
+                {
+                    "label": "Product3",
+                    "value": 32000
+                }
+            ],
+            "chart": {
+                "legendIconSides": "4",
+                "canvasPadding": "0",
+                "captionAlignment": "center",
+                "yAxisNameFontSize": "14",
+                "caption": "Sales Report",
+                "labelFontColor": "#716e6e",
+                "chartLeftMargin": "20",
+                "captionFontSize": "24",
+                "chartTopMargin": "10",
+                "theme": "fusion",
+                "legendIconAlpha": "100",
+                "chartBottomMargin": "10",
+                "labelFontSize": "12",
+                "xAxisNameFontColor": "#716e6e",
+                "yAxisNameFontColor": "#716e6e",
+                "captionFontColor": "#231F20",
+                "yAxisValueFontColor": "#716e6e",
+                "captionPadding": "20",
+                "yAxisName": "Revenue($)",
+                "legendIconBgAlpha": "100",
+                "xAxisName": "Product Line",
+                "alignCaptionWithCanvas": 1,
+                "chartRightMargin": "40",
+                "legendPosition": "top",
+                "xAxisNameFontSize": "14",
+                "yAxisValueFontSize": "12"
+            }
+        }
+    },
+    "key": "zjw5ajma2s",
+    "isDeprecated": false,
+    "rightColumn": 64,
+    "widgetId": "bjgpg35hhv",
+    "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+    "isVisible": true,
+    "version": 1,
+    "parentId": "sngwfl0pcx",
+    "labelOrientation": "auto",
+    "renderMode": "CANVAS",
+    "isLoading": false,
+    "yAxisName": "Values (%)",
+    "originalTopRow": 137,
+    "chartName": "Rej.Rate %",
+    "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+    "xAxisName": "Date",
+    "originalBottomRow": 178,
+    "chartType": "LINE_CHART"
+}
