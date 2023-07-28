@@ -8,7 +8,7 @@
         "label"
     ],
     "topRow": 1,
-    "bottomRow": 7,
+    "bottomRow": 5,
     "type": "TEXT_WIDGET",
     "hideCard": false,
     "animateLoading": true,
@@ -26,7 +26,7 @@
     "text": "BM & AdAccount linked",
     "key": "943elwrbty",
     "isDeprecated": false,
-    "rightColumn": 19,
+    "rightColumn": 26,
     "textAlign": "LEFT",
     "dynamicHeight": "AUTO_HEIGHT",
     "widgetId": "4jhegz95do",
@@ -40,7 +40,7 @@
     "originalTopRow": 1,
     "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
     "maxDynamicHeight": 9000,
-    "originalBottomRow": 5,
+    "originalBottomRow": 7,
     "fontSize": "1.25rem",
     "minDynamicHeight": 4
 }

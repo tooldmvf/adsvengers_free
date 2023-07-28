@@ -24,7 +24,7 @@
     "version": 2,
     "isLoading": false,
     "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-    "originalBottomRow": 4,
+    "originalBottomRow": 5,
     "mobileBottomRow": 108,
     "widgetName": "fbToken",
     "dynamicPropertyPathList": [{"key": "isVisible"}],
