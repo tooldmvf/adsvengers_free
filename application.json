@@ -139,6 +139,10 @@
     {
       "id": "Factory Accounting",
       "isDefault": false
+    },
+    {
+      "id": "Offers Success",
+      "isDefault": false
     }
   ],
   "viewMode": false,

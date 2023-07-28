@@ -1,8 +1,7 @@
 {
   "unpublishedPage": {
-    "name": "Monitoring",
-    "slug": "monitoring",
-    "customSlug": "",
+    "name": "Offers Success",
+    "slug": "offers-success",
     "layouts": [
       {
         "viewMode": false,
@@ -14,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 1030,
+          "bottomRow": 520,
           "containerStyle": "none",
           "snapRows": 125,
           "parentRowSpace": 1,
@@ -30,19 +29,8 @@
         "layoutOnLoadActions": [
           [
             {
-              "id": "Monitoring_Utils2.onLoadPage",
-              "name": "Utils2.onLoadPage",
-              "collectionId": "Monitoring_Utils2",
-              "confirmBeforeExecute": false,
-              "pluginType": "JS",
-              "jsonPathKeys": [
-                "async () => {\n  storeValue('row_selected', -1);\n  await get_all_users.run();\n  await SelectFinancialTot.run();\n  await SelectOFFERSUser.run();\n  await SelectUSERS.run();\n}"
-              ],
-              "timeoutInMillisecond": 10000
-            },
-            {
-              "id": "Monitoring_get_all_users",
-              "name": "get_all_users",
+              "id": "Offers Success_get_ts",
+              "name": "get_ts",
               "confirmBeforeExecute": false,
               "pluginType": "API",
               "jsonPathKeys": [
@@ -51,31 +39,36 @@
               "timeoutInMillisecond": 10000
             },
             {
-              "id": "Monitoring_js_logout.check_login",
+              "id": "Offers Success_js_logout.check_login",
               "name": "js_logout.check_login",
-              "collectionId": "Monitoring_js_logout",
+              "collectionId": "Offers Success_js_logout",
               "confirmBeforeExecute": false,
               "pluginType": "JS",
-              "jsonPathKeys": [
-                "async () => {\n  if (!appsmith.store.access_token) navigateTo('Login');\n}"
-              ],
+              "jsonPathKeys": [],
               "timeoutInMillisecond": 10000
             }
           ],
           [
             {
-              "id": "Monitoring_get_all_networks",
-              "name": "get_all_networks",
+              "id": "Offers Success_Tab4Offer",
+              "name": "Tab4Offer",
               "confirmBeforeExecute": false,
-              "pluginType": "API",
+              "pluginType": "DB",
               "jsonPathKeys": [
-                "appsmith.store.access_token"
+                "moment(DateTo4.selectedDate).format('YYYY-DD-MM')",
+                "Select1.selectedOptionValue",
+                "moment(DateFrom4.selectedDate).format('YYYY-DD-MM')",
+                "SelectTSFront.selectedOptionValues.length == 0",
+                "!SelectUserFBPage.selectedOptionValue",
+                "Input1.text",
+                "\"'\" + SelectTSFront.selectedOptionValues.join(\"', '\") + \"'\"",
+                "SelectUserFBPage.selectedOptionValue"
               ],
               "timeoutInMillisecond": 10000
             },
             {
-              "id": "Monitoring_get_ts",
-              "name": "get_ts",
+              "id": "Offers Success_get_all_users",
+              "name": "get_all_users",
               "confirmBeforeExecute": false,
               "pluginType": "API",
               "jsonPathKeys": [
@@ -87,7 +80,7 @@
         ],
         "layoutOnLoadActionErrors": [],
         "validOnPageLoadActions": true,
-        "id": "Monitoring",
+        "id": "Offers Success",
         "deleted": false,
         "policies": [],
         "userPermissions": []
@@ -95,8 +88,8 @@
     ],
     "userPermissions": [],
     "policies": [],
-    "isHidden": true
+    "isHidden": false
   },
   "deleted": false,
-  "gitSyncId": "63c3151532584b547fffe91b_6416052c8f7e5b7bc5ddd7ac"
+  "gitSyncId": "646331cd28902b71518db22a_64c0c808e6792242d112e7d2"
 }
