@@ -15,7 +15,7 @@
     "overflow": "NONE",
     "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
     "dynamicTriggerPathList": [],
-    "leftColumn": 3,
+    "leftColumn": 4,
     "dynamicBindingPathList": [
         {"key": "truncateButtonColor"},
         {"key": "fontFamily"},
