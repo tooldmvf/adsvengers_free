@@ -18,6 +18,11 @@
     "hideCard": false,
     "mobileRightColumn": 24,
     "chartData": {
+        "432rrszps2": {
+            "data": "{{Fetch_Data_Graphs.data.map( (obj) =>{ return  {'x': obj.financial_month2, 'y': obj.debt } })}}",
+            "color": "#9333ea",
+            "seriesName": "Debt"
+        },
         "5xcsj6bv3t": {
             "data": "{{Fetch_Data_Graphs.data.map( (obj) =>{ return  {'x': obj.financial_month2, 'y': obj.amount_spent } })}}",
             "color": "#dc2626",
@@ -51,7 +56,8 @@
         {"key": "chartData.5xcsj6bv3t.data"},
         {"key": "chartData.g6vip8yzzi.data"},
         {"key": "chartData.r6p2boft0n.data"},
-        {"key": "chartName"}
+        {"key": "chartName"},
+        {"key": "chartData.432rrszps2.data"}
     ],
     "leftColumn": 0,
     "customFusionChartConfig": {
