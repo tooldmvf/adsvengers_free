@@ -35,7 +35,9 @@
         {"key": "primaryColumns.customColumn1.cellBackground"},
         {"key": "primaryColumns.customColumn2.borderRadius"},
         {"key": "primaryColumns.customColumn2.boxShadow"},
-        {"key": "primaryColumns.customColumn2.cellBackground"}
+        {"key": "primaryColumns.customColumn2.cellBackground"},
+        {"key": "primaryColumns.count.computedValue"},
+        {"key": "primaryColumns.count.cellBackground"}
     ],
     "needsHeightForContent": true,
     "leftColumn": 0,
@@ -73,7 +75,7 @@
         }
     },
     "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-    "columnUpdatedAt": 1688026423988,
+    "columnUpdatedAt": 1691525133891,
     "originalBottomRow": 210,
     "defaultSelectedRowIndices": [0],
     "widgetName": "TableUsers",
@@ -87,6 +89,7 @@
         "profit",
         "Tot_ROI",
         "tot_conv",
+        "count",
         "row_color",
         "fk_user_id"
     ],
@@ -102,7 +105,8 @@
         {"key": "primaryColumns.tot_conv.textColor"},
         {"key": "tableData"},
         {"key": "primaryColumns.customColumn1.cellBackground"},
-        {"key": "primaryColumns.customColumn2.cellBackground"}
+        {"key": "primaryColumns.customColumn2.cellBackground"},
+        {"key": "primaryColumns.count.cellBackground"}
     ],
     "compactMode": "SHORT",
     "displayName": "Table",
@@ -216,6 +220,35 @@
             "sticky": "",
             "originalId": "spent",
             "cellBackground": "{{TableUsers.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"row_color\"]))}}",
+            "verticalAlignment": "CENTER"
+        },
+        "count": {
+            "computedValue": "{{TableUsers.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"count\"]))}}",
+            "isEditable": false,
+            "alias": "count",
+            "enableSort": true,
+            "isSaveVisible": true,
+            "id": "count",
+            "isDisabled": false,
+            "allowSameOptionsInNewRow": true,
+            "validation": {},
+            "isCellVisible": true,
+            "isDerived": false,
+            "textSize": "0.875rem",
+            "allowCellWrapping": false,
+            "index": 8,
+            "isDiscardVisible": true,
+            "isVisible": true,
+            "label": "Active Offs.",
+            "fontStyle": "",
+            "columnType": "number",
+            "horizontalAlignment": "RIGHT",
+            "isCellEditable": false,
+            "width": 150,
+            "enableFilter": true,
+            "sticky": "",
+            "originalId": "count",
+            "cellBackground": "{{TableUsers.processedTableData.map((currentRow, currentIndex) => ( (currentRow.row_color)))}}",
             "verticalAlignment": "CENTER"
         },
         "mbuyer": {
