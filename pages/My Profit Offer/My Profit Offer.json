@@ -20,7 +20,7 @@
           "parentRowSpace": 1,
           "type": "CANVAS_WIDGET",
           "canExtend": true,
-          "version": 80,
+          "version": 83,
           "minHeight": 900,
           "parentColumnSpace": 1,
           "dynamicTriggerPathList": [],
@@ -29,6 +29,23 @@
         },
         "layoutOnLoadActions": [
           [
+            {
+              "id": "My Profit Offer_Tab4OfferDayOffersTOT",
+              "name": "Tab4OfferDayOffersTOT",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "!SelectNetwork.selectedOptionValue",
+                "SelectTSFront.selectedOptionValues.length == 0",
+                " !SelectUserFBPage.selectedOptionValue",
+                "SelectNetwork.selectedOptionValue",
+                "moment(DateTo.selectedDate).format('YYYY-DD-MM')",
+                "moment(DateFrom.selectedDate).format('YYYY-DD-MM')",
+                "SelectUserFBPage.selectedOptionValue",
+                "\"'\" + SelectTSFront.selectedOptionValues.join(\"', '\") + \"'\""
+              ],
+              "timeoutInMillisecond": 10000
+            },
             {
               "id": "My Profit Offer_Utils2.onLoadPage",
               "name": "Utils2.onLoadPage",
@@ -48,25 +65,6 @@
               "pluginType": "JS",
               "jsonPathKeys": [
                 "async () => {\n  if (!appsmith.store.access_token) navigateTo('Login');\n}"
-              ],
-              "timeoutInMillisecond": 10000
-            }
-          ],
-          [
-            {
-              "id": "My Profit Offer_Tab4OfferDayOffersTOT",
-              "name": "Tab4OfferDayOffersTOT",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [
-                "!SelectNetwork.selectedOptionValue",
-                "SelectTSFront.selectedOptionValues.length == 0",
-                " !SelectUserFBPage.selectedOptionValue",
-                "SelectNetwork.selectedOptionValue",
-                "moment(DateTo.selectedDate).format('YYYY-DD-MM')",
-                "moment(DateFrom.selectedDate).format('YYYY-DD-MM')",
-                "SelectUserFBPage.selectedOptionValue",
-                "\"'\" + SelectTSFront.selectedOptionValues.join(\"', '\") + \"'\""
               ],
               "timeoutInMillisecond": 10000
             }

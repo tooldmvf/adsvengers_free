@@ -16,22 +16,22 @@
     "hideCard": false,
     "chartData": {
         "12cnbvnrbx": {
-            "data": "{{SelectFinancialList.data.map((obj) =>{ return  {'x': obj.financial_date , 'y': obj.Tot_ROI_h } })}}",
+            "data": "{{SelectFinancialList.data.map((obj) =>{ return  {'x': obj.financial_date , 'y': obj.Tot_ROI_h.toFixed() } })}}",
             "color": "#000000",
             "seriesName": "1st ROI"
         },
         "ckzqgov3j4": {
-            "data": "{{SelectFinancialList.data.map((obj) =>{ return  {'x': obj.financial_date , 'y': obj.Rejected_Rate } })}}",
+            "data": "{{SelectFinancialList.data.map((obj) =>{ return  {'x': obj.financial_date , 'y': obj.Rejected_Rate.toFixed() } })}}",
             "color": "#3b82f6",
             "seriesName": "Rej. Rate"
         },
         "y4urqo98l5": {
-            "data": "{{SelectFinancialList.data.map((obj) =>{ return  {'x': obj.financial_date , 'y': obj.Tot_ROI } })}}",
+            "data": "{{SelectFinancialList.data.map((obj) =>{ return  {'x': obj.financial_date , 'y': obj.Tot_ROI.toFixed() } })}}",
             "color": "#eab308",
             "seriesName": "Tot ROI"
         },
         "fzexkr5puo": {
-            "data": "{{SelectFinancialList.data.map((obj) =>{ return  {'x': obj.financial_date , 'y': obj.Appr_ROI } })}}",
+            "data": "{{SelectFinancialList.data.map((obj) =>{ return  {'x': obj.financial_date , 'y': obj.Appr_ROI.toFixed() } })}}",
             "color": "#22c55e",
             "seriesName": "Appr. ROI"
         }
@@ -106,7 +106,7 @@
     "isVisible": true,
     "version": 1,
     "parentId": "fs3zh58v7q",
-    "labelOrientation": "auto",
+    "labelOrientation": "slant",
     "renderMode": "CANVAS",
     "isLoading": false,
     "yAxisName": "Values (%)",

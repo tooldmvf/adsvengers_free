@@ -17,32 +17,32 @@
     "hideCard": false,
     "chartData": {
         "z4yrqk9idd": {
-            "data": "{{user_financial_trend.data.filter(e => {return e.network_name == 'WorldFilia'}).map( (obj) => { return  {'x': obj.financial_date, 'y': obj.appr_roi} })}}",
+            "data": "{{user_financial_trend.data.filter(e => {return e.network_name == 'WorldFilia'}).map( (obj) => { return  {'x': obj.financial_date, 'y': obj.appr_roi.toFixed()} })}}",
             "color": "#fef08a",
             "seriesName": "Appr. WF"
         },
         "r8y5go7a4j": {
-            "data": "{{user_financial_trend.data.filter(e => {return e.network_name == 'WorldFilia'}).map( (obj) => { return  {'x': obj.financial_date, 'y': obj.tot_roi} })}}",
+            "data": "{{user_financial_trend.data.filter(e => {return e.network_name == 'WorldFilia'}).map( (obj) => { return  {'x': obj.financial_date, 'y': obj.tot_roi.toFixed()} })}}",
             "color": "#eab308",
             "seriesName": "Tot WF"
         },
         "5cn1lhydos": {
-            "data": "{{user_financial_trend.data.filter(e => {return e.network_name == 'SquidBomb'}).map( (obj) => { return  {'x': obj.financial_date, 'y': obj.tot_roi} })}}",
+            "data": "{{user_financial_trend.data.filter(e => {return e.network_name == 'SquidBomb'}).map( (obj) => { return  {'x': obj.financial_date, 'y': obj.tot_roi.toFixed()} })}}",
             "color": "#db2777",
             "seriesName": "Tot Squid"
         },
         "hocxkizh9q": {
-            "data": "{{user_financial_trend.data.filter(e => {return e.network_name == 'Ai20'}).map( (obj) => { return  {'x': obj.financial_date, 'y': obj.tot_roi} })}}",
+            "data": "{{user_financial_trend.data.filter(e => {return e.network_name == 'Ai20'}).map( (obj) => { return  {'x': obj.financial_date, 'y': obj.tot_roi.toFixed()}})}}",
             "color": "#18181b",
             "seriesName": "Tot Ai20"
         },
         "i2y2qwg36m": {
-            "data": "{{user_financial_trend.data.filter(e => {return e.network_name == 'SquidBomb'}).map( (obj) => { return  {'x': obj.financial_date, 'y': obj.appr_roi} })}}",
+            "data": "{{user_financial_trend.data.filter(e => {return e.network_name == 'SquidBomb'}).map( (obj) => { return  {'x': obj.financial_date, 'y': obj.appr_roi.toFixed()} })}}",
             "color": "#f9a8d4",
             "seriesName": "Appr..t Squid"
         },
         "b2znku49zp": {
-            "data": "{{user_financial_trend.data.filter(e => {return e.network_name == 'Ai20'}).map( (obj) => { return  {'x': obj.financial_date, 'y': obj.appr_roi} })}}",
+            "data": "{{user_financial_trend.data.filter(e => {return e.network_name == 'Ai20'}).map( (obj) => { return  {'x': obj.financial_date, 'y': obj.appr_roi.toFixed()} })}}",
             "color": "#a1a1aa",
             "seriesName": "Appr. Ai20"
         }

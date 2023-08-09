@@ -16,22 +16,22 @@
     "hideCard": false,
     "chartData": {
         "2pknq6nesj": {
-            "data": "{{SelectFinancialList.data.map((obj) =>{ return  {'x': obj.financial_date , 'y': obj.Tot_Profit_h } })}}",
+            "data": "{{SelectFinancialList.data.map((obj) =>{ return  {'x': obj.financial_date , 'y': obj.Tot_Profit_h.toFixed() } })}}",
             "color": "#000000",
             "seriesName": "1st Profit"
         },
         "ckzqgov3j4": {
-            "data": "{{SelectFinancialList.data.map((obj) =>{ return  {'x': obj.financial_date , 'y': obj.amount_revenue } })}}",
+            "data": "{{SelectFinancialList.data.map((obj) =>{ return  {'x': obj.financial_date , 'y': obj.amount_revenue.toFixed() } })}}",
             "color": "#3b82f6",
             "seriesName": "Revenue"
         },
         "y4urqo98l5": {
-            "data": "{{SelectFinancialList.data.map((obj) =>{ return  {'x': obj.financial_date , 'y': obj.Tot_Profit } })}}",
+            "data": "{{SelectFinancialList.data.map((obj) =>{ return  {'x': obj.financial_date , 'y': obj.Tot_Profit.toFixed() } })}}",
             "color": "#22c55e",
             "seriesName": "Profit"
         },
         "fzexkr5puo": {
-            "data": "{{SelectFinancialList.data.map((obj) =>{ return  {'x': obj.financial_date , 'y': obj.amount_spent_plus_fee } })}}",
+            "data": "{{SelectFinancialList.data.map((obj) =>{ return  {'x': obj.financial_date , 'y': obj.amount_spent_plus_fee.toFixed() } })}}",
             "color": "#dc2626",
             "seriesName": "Spent"
         }
@@ -106,7 +106,7 @@
     "isVisible": true,
     "version": 1,
     "parentId": "fs3zh58v7q",
-    "labelOrientation": "auto",
+    "labelOrientation": "slant",
     "renderMode": "CANVAS",
     "isLoading": false,
     "yAxisName": "Revenue (\u20ac)",

@@ -17,12 +17,12 @@
     "hideCard": false,
     "chartData": {
         "ae4f7fwkbq": {
-            "data": "{{Tab4OfferDay.data.map( (obj) =>{ return  {'x': obj.financial_date, 'y': obj.Appr_Roi } })}}",
+            "data": "{{Tab4OfferDay.data.map( (obj) =>{ return  {'x': obj.financial_date, 'y': obj.Appr_Roi.toFixed() } })}}",
             "color": "#16a34a",
             "seriesName": "Appr. ROI"
         },
         "nwz9xt4o60": {
-            "data": "{{Tab4OfferDay.data.map( (obj) =>{ return  {'x': obj.financial_date, 'y': obj.Tot_Roi } })}}",
+            "data": "{{Tab4OfferDay.data.map( (obj) =>{ return  {'x': obj.financial_date, 'y': obj.Tot_Roi.toFixed() } })}}",
             "color": "#2563eb",
             "seriesName": "Tot ROI"
         }

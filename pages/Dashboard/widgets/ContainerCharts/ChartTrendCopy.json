@@ -18,22 +18,22 @@
     "hideCard": false,
     "chartData": {
         "ra358mnnbt": {
-            "data": "{{user_financial_trend.data.map( (obj) =>{ return  {'x': obj.financial_date, 'y': obj.rej_rate } })}}",
+            "data": "{{user_financial_trend.data.map( (obj) =>{ return  {'x': obj.financial_date, 'y': obj.rej_rate.toFixed() } })}}",
             "color": "#db2777",
             "seriesName": "Rej.Rate"
         },
         "r8y5go7a4j": {
-            "data": "{{user_financial_trend.data.map( (obj) =>{ return  {'x': obj.financial_date, 'y': obj.appr_roi } })}}",
+            "data": "{{user_financial_trend.data.map( (obj) =>{ return  {'x': obj.financial_date, 'y': obj.appr_roi.toFixed() } })}}",
             "color": "#22c55e",
             "seriesName": "Appr. ROI"
         },
         "hocxkizh9q": {
-            "data": "{{user_financial_trend.data.map( (obj) =>{ return  {'x': obj.financial_date , 'y': obj.tot_roi } })}}",
+            "data": "{{user_financial_trend.data.map( (obj) =>{ return  {'x': obj.financial_date , 'y': obj.tot_roi.toFixed() } })}}",
             "color": "#eab308",
             "seriesName": "Tot ROI"
         },
         "ezqousbj80": {
-            "data": "{{user_financial_trend.data.map( (obj) =>{ return  {'x': obj.financial_date , 'y': obj.tot_roi_h } })}}",
+            "data": "{{user_financial_trend.data.map( (obj) =>{ return  {'x': obj.financial_date , 'y': obj.tot_roi_h.toFixed() } })}}",
             "color": "#18181b",
             "seriesName": "Tot Roi H"
         }

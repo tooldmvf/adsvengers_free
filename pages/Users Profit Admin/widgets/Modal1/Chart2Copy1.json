@@ -16,17 +16,17 @@
     "hideCard": false,
     "chartData": {
         "ae4f7fwkbq": {
-            "data": "{{Tab4OfferDay.data.map( (obj) =>{ return  {'x': obj.financial_date, 'y': (obj.profit) } })}}",
+            "data": "{{Tab4OfferDay.data.map( (obj) =>{ return  {'x': obj.financial_date, 'y': (obj.profit.toFixed()) } })}}",
             "color": "#16a34a",
             "seriesName": "Profit"
         },
         "xc7553dtkn": {
-            "data": "{{Tab4OfferDay.data.map( (obj) =>{ return  {'x': obj.financial_date, 'y': obj.amount_spent_plus_fee } })}}",
+            "data": "{{Tab4OfferDay.data.map( (obj) =>{ return  {'x': obj.financial_date, 'y': obj.amount_spent_plus_fee.toFixed() } })}}",
             "color": "#dc2626",
             "seriesName": "Spent"
         },
         "nwz9xt4o60": {
-            "data": "{{Tab4OfferDay.data.map( (obj) =>{ return  {'x': obj.financial_date, 'y': obj.amount_revenue } })}}",
+            "data": "{{Tab4OfferDay.data.map( (obj) =>{ return  {'x': obj.financial_date, 'y': obj.amount_revenue.toFixed() } })}}",
             "color": "#2563eb",
             "seriesName": "Revenue"
         }
