@@ -8,5 +8,9 @@ export default {
 	check_login: async () => {
 		if(!appsmith.store.access_token)
 			navigateTo('Login');
+	},
+	
+	get_session: async () => {
+		
 	}
 }

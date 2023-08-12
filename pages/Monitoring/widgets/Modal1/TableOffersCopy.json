@@ -189,7 +189,7 @@
             "verticalAlignment": "CENTER"
         },
         "Tot_ROI": {
-            "computedValue": "{{TableOffersCopy.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Tot_ROI\"].toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2})))}}",
+            "computedValue": "{{TableOffersCopy.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Tot_ROI\"].toLocaleString(undefined, {minimumFractionDigits: 1, maximumFractionDigits: 1})))}}",
             "isEditable": false,
             "alias": "Tot_ROI",
             "enableSort": true,
