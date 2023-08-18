@@ -5,5 +5,5 @@
 	"amount_invoice": "{{HiddenAmountInvoice.text}}",
 	"amount_spent": "{{Hidden_spent.text}}",
 	"amount_debt": "{{HiddenAmountDebt.text}}",
-	"notes": "{{InputNotes.text}}"
+	"notes": "{{InputNotes.text||""}}"
 }
