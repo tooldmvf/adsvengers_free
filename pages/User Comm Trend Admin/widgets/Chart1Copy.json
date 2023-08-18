@@ -19,7 +19,7 @@
     "hideCard": false,
     "mobileRightColumn": 24,
     "chartData": {"t7wjzuzuso": {
-        "data": "{{Fetch_Data_Graphs.data.map( (obj) =>{ return  {'x': obj.financial_month2, 'y': obj.roi } })}}",
+        "data": "{{Fetch_Data_Graphs.data.map( (obj) =>{ return  {'x': obj.financial_month2, 'y': obj.roi.toFixed(1) } })}}",
         "color": "#facc15",
         "seriesName": "ROI"
     }},
