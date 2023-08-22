@@ -30,7 +30,7 @@
     ],
     "shouldTruncate": false,
     "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-    "text": "{{Utils.myCurrency( ( OtherRevInput.value - OtherSpentInput.value)/(100/Fetch_Data_Other_Prj.data[0]?.commissions_fee||1))}}",
+    "text": "{{Utils.myCurrency( Number(FattOther.text.replace(/[^0-9.-]+/g,\"\"))/(100/Fetch_Data_Other_Prj.data[0]?.commissions_fee||1))}}",
     "key": "wmtrt5wcg7",
     "isDeprecated": false,
     "rightColumn": 64,

@@ -1,5 +1,5 @@
 SELECT a.fk_user_id,a.financial_month,amount_revenue_approved as amount_revenue_approved
-,commissions_fee
+,commissions_fee,factory_fee
 ,amount_spent_wfees as amount_spent_wfees
 FROM public.user_other_project_month a
 where 1 = 1

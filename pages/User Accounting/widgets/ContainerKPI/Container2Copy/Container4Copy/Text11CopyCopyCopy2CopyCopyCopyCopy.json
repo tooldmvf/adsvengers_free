@@ -28,7 +28,7 @@
     ],
     "shouldTruncate": false,
     "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-    "text": "Profit ({{Fetch_Data_Other_Prj.data[0]?.commissions_fee||1}}%)",
+    "text": "Profit ({{Fetch_Data_Other_Prj.data[0]?.commissions_fee||0}}%)",
     "key": "wmtrt5wcg7",
     "isDeprecated": false,
     "rightColumn": 34,
