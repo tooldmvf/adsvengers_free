@@ -28,7 +28,7 @@
     ],
     "shouldTruncate": false,
     "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-    "text": "{{Utils.myCurrency(( Fetch_Data_Spent_TOT.data[0]?.spent_wfees||0)+ (Fetch_Data_Spent_TOT.data[1]?.spent_wfees||0)+ (Fetch_Data_Spent_TOT.data[2]?.spent_wfees||0)+ (Fetch_Data_Spent_TOT.data[3]?.spent_wfees||0)\n)}}",
+    "text": "{{Utils.myCurrency(( Fetch_Data_Spent_TOT.data[0]?.spent_wfees||0)+ (Fetch_Data_Spent_TOT.data[1]?.spent_wfees||0)+ (Fetch_Data_Spent_TOT.data[2]?.spent_wfees||0)+ (Fetch_Data_Spent_TOT.data[3]?.spent_wfees||0)+ (Fetch_Data_Spent_TOT.data[4]?.spent_wfees||0)\n)}}",
     "key": "k0zn3vv2el",
     "isDeprecated": false,
     "rightColumn": 62,

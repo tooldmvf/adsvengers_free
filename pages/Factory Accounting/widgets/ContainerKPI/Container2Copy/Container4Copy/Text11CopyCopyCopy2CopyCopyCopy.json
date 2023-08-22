@@ -27,7 +27,7 @@
     ],
     "shouldTruncate": false,
     "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-    "text": "Profit Factory",
+    "text": "Profit",
     "key": "wmtrt5wcg7",
     "isDeprecated": false,
     "rightColumn": 33,

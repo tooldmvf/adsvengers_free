@@ -30,7 +30,7 @@
     ],
     "shouldTruncate": false,
     "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-    "text": "{{Utils.myCurrency( (Number(OtherRev.text.replace(/[^0-9.-]+/g,\"\")) - (Number(OtherSpent.text.replace(/[^0-9.-]+/g,\"\"))))/2)}}",
+    "text": "{{Utils.myCurrency( (Number(OtherRev.text.replace(/[^0-9.-]+/g,\"\")) - (Number(OtherSpent.text.replace(/[^0-9.-]+/g,\"\")))))}}",
     "key": "wmtrt5wcg7",
     "isDeprecated": false,
     "rightColumn": 64,

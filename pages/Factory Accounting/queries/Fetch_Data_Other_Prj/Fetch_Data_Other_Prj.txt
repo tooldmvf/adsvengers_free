@@ -1,7 +1,7 @@
-SELECT a.financial_month, commissions_fee,
+SELECT a.financial_month,
 sum(amount_revenue_approved) as amount_revenue_approved,
 sum(amount_spent_wfees) as amount_spent_wfees
 FROM public.user_other_project_month a
 where 1 = 1
 AND a.financial_month = '{{SelectYear.selectedOptionValue}}{{SelectMonth.selectedOptionValue}}'
-group by a.financial_month, commissions_fee
+group by a.financial_month
