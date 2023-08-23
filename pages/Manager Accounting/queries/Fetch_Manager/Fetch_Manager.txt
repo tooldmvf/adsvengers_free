@@ -1,0 +1,7 @@
+SELECT financial_month
+,comm_value
+,amount_adjustment
+FROM public.manager_commission_month a
+where 1 = 1
+AND a.financial_month = '{{SelectYear.selectedOptionValue}}{{SelectMonth.selectedOptionValue}}'
+GROUP BY financial_month

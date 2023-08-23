@@ -11,7 +11,8 @@
     "dynamicBindingPathList": [
         {"key": "accentColor"},
         {"key": "borderRadius"},
-        {"key": "isDisabled"}
+        {"key": "isDisabled"},
+        {"key": "defaultText"}
     ],
     "labelStyle": "BOLD",
     "isDisabled": "{{appsmith.store.role_level==100}}",
@@ -54,13 +55,13 @@
     "labelAlignment": "left",
     "renderMode": "CANVAS",
     "mobileTopRow": 78,
-    "onBlur": "{{Save_Data_Adjustments.run().then(() => {\n  Fetch_Adjustments.run();\n});}}",
+    "onBlur": "",
     "responsiveBehavior": "fill",
     "originalTopRow": 45,
     "mobileLeftColumn": 16,
     "maxDynamicHeight": 9000,
     "decimals": 2,
     "iconAlign": "left",
-    "defaultText": "0",
+    "defaultText": "{{Fetch_Manager.data[0]?.amount_adjustment ||0}}",
     "minDynamicHeight": 4
 }

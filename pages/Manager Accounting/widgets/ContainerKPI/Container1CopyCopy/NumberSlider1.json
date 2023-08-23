@@ -1,5 +1,5 @@
 {
-    "defaultValue": "5",
+    "defaultValue": "{{Fetch_Manager.data[0]?.comm_value || 3}}",
     "iconSVG": "/static/media/icon.f122000eb591fcd1410a4775a54f9f0d.svg",
     "tooltipAlwaysOn": false,
     "labelText": "Profit Percentage",
@@ -8,7 +8,10 @@
     "type": "NUMBER_SLIDER_WIDGET",
     "animateLoading": true,
     "leftColumn": 2,
-    "dynamicBindingPathList": [{"key": "isDisabled"}],
+    "dynamicBindingPathList": [
+        {"key": "isDisabled"},
+        {"key": "defaultValue"}
+    ],
     "isDisabled": "{{appsmith.store.role_level<500}}",
     "onChange": "",
     "accentColor": "#22c55e",

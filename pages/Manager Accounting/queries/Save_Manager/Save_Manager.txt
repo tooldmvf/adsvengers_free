@@ -1,0 +1,5 @@
+{
+	"financial_month" : "{{SelectYear.selectedOptionValue.concat(SelectMonth.selectedOptionValue)}}",
+	"comm_value": "{{NumberSlider1.value}}",
+	"amount_adjustment": "{{AdjustProfit.value}}"
+}

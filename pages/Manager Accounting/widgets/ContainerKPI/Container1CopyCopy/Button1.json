@@ -3,7 +3,7 @@
     "boxShadow": "none",
     "mobileBottomRow": 56,
     "widgetName": "Button1",
-    "onClick": "",
+    "onClick": "{{Save_Manager.run()}}",
     "buttonColor": "#fde047",
     "dynamicPropertyPathList": [
         {"key": "isVisible"},
@@ -31,7 +31,7 @@
         {"key": "isDisabled"}
     ],
     "text": "Save Data",
-    "isDisabled": "{{appsmith.store.role_level<1000}}",
+    "isDisabled": "{{appsmith.store.role_level<1000 || SelectMonth.selectedOptionValue.length==0}}",
     "key": "3xi9orpbxd",
     "isDeprecated": false,
     "rightColumn": 63,
