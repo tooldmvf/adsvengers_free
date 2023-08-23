@@ -33,7 +33,7 @@
     "iconName": "properties",
     "widgetId": "rb1zwj8np4",
     "minWidth": 50,
-    "isVisible": "{{appsmith.store.role_level >100 && TableOffersCopy.selectedRowIndex>0}}",
+    "isVisible": "{{appsmith.store.role_level >100 && TableOffersCopy.selectedRowIndex>=0}}",
     "version": 1,
     "parentId": "05v51waep0",
     "renderMode": "CANVAS",
