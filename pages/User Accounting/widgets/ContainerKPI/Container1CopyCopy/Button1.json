@@ -3,7 +3,7 @@
     "boxShadow": "none",
     "mobileBottomRow": 56,
     "widgetName": "Button1",
-    "onClick": "{{save_monthly_data.run().then(() => {\n  showAlert('Data Saved on Monthly Table', 'success');\n  Utils.sendEmail();\n}).catch(() => {\n  showAlert('Error: ' + save_monthly_data.responseMeta, 'error');\n});}}",
+    "onClick": "{{save_monthly_data.run().then(() => {\n  showAlert('Data Saved on Monthly Table', 'success');\n  Utils.sendEmail();\n  Utils.reload();\n}).catch(() => {\n  showAlert('Error: ' + save_monthly_data.responseMeta, 'error');\n});}}",
     "buttonColor": "#fde047",
     "dynamicPropertyPathList": [
         {"key": "isVisible"},
