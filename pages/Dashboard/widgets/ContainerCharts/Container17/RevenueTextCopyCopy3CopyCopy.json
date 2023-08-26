@@ -9,8 +9,8 @@
         "paragraph",
         "label"
     ],
-    "topRow": 27,
-    "bottomRow": 31,
+    "topRow": 28,
+    "bottomRow": 33,
     "parentRowSpace": 10,
     "type": "TEXT_WIDGET",
     "hideCard": false,
@@ -30,7 +30,7 @@
     "shouldTruncate": false,
     "borderWidth": "",
     "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-    "text": "{{(((user_financial_period.data[0].profit -user_financial_period.data[0].profit_h)/user_financial_period.data[0].profit)*100).toFixed(2)}} %",
+    "text": "{{(((user_financial_period.data[0].profit -user_financial_period.data[0].profit_h)/user_financial_period.data[0].profit_h)*100).toFixed(2)}} %",
     "key": "nk7g1uvbwm",
     "isDeprecated": false,
     "rightColumn": 63,
@@ -41,7 +41,7 @@
     "widgetId": "lqn7fecu0k",
     "isVisible": true,
     "fontStyle": "BOLD",
-    "textColor": "{{(((user_financial_period.data[0].profit -user_financial_period.data[0].profit_h)/user_financial_period.data[0].profit)*100).toFixed(2) < 0 ? 'red' : 'green'}}",
+    "textColor": "{{(((user_financial_period.data[0].profit -user_financial_period.data[0].profit_h)/user_financial_period.data[0].profit_h)*100).toFixed(2) < 0 ? 'red' : 'green'}}",
     "version": 1,
     "parentId": "ynnw8tn134",
     "renderMode": "CANVAS",
@@ -49,7 +49,7 @@
     "originalTopRow": 27,
     "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
     "maxDynamicHeight": 9000,
-    "originalBottomRow": 32,
+    "originalBottomRow": 31,
     "fontSize": "0.875rem",
     "minDynamicHeight": 4
 }
