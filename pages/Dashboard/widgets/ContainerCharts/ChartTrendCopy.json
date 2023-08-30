@@ -99,6 +99,7 @@
         }
     },
     "key": "zjw5ajma2s",
+    "showDataPointLabel": false,
     "isDeprecated": false,
     "rightColumn": 64,
     "widgetId": "bjgpg35hhv",

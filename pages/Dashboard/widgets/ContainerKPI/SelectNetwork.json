@@ -3,7 +3,10 @@
     "widgetName": "SelectNetwork",
     "isFilterable": true,
     "allowSelectAll": true,
-    "dynamicPropertyPathList": [{"key": "onOptionChange"}],
+    "dynamicPropertyPathList": [
+        {"key": "onOptionChange"},
+        {"key": "sourceData"}
+    ],
     "displayName": "MultiSelect",
     "iconSVG": "/static/media/icon.a3495809ae48291a64404f3bb04b0e69.svg",
     "labelText": "Network",

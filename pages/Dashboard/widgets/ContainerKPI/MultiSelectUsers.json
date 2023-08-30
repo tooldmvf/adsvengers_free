@@ -31,7 +31,8 @@
     "isFilterable": true,
     "dynamicPropertyPathList": [
         {"key": "isVisible"},
-        {"key": "onOptionChange"}
+        {"key": "onOptionChange"},
+        {"key": "sourceData"}
     ],
     "displayName": "MultiSelect",
     "searchTags": [
