@@ -26,6 +26,7 @@
     "originalBottomRow": 5,
     "widgetName": "Select1",
     "isFilterable": true,
+    "dynamicPropertyPathList": [{"key": "sourceData"}],
     "displayName": "Select",
     "searchTags": ["dropdown"],
     "bottomRow": 5,

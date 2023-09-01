@@ -1,4 +1,4 @@
-select offer_name
+select 'Total (' || sum(offer_count) ||')' as offer_name
 ,sum(spent) as spent
 ,sum(revenue) as revenue
 ,sum(profit) as profit
@@ -11,7 +11,7 @@ select offer_name
 	else '#f0fdf4' end as "row_color" 
 from (
 SELECT 	
-	'Total' as offer_name,
+	Count(distinct a.fk_offer_id) as offer_count,
 	sum(a.amount_spent_plus_fee) spent,
 	sum(a.amount_revenue) revenue,
 	case when f.network_name_short != 'WL' then sum(a.amount_revenue)-sum(a.amount_spent_plus_fee) else (sum(a.amount_revenue)-sum(a.amount_spent_plus_fee))/2 end as profit, 
@@ -41,4 +41,3 @@ and ({{MSTrSource.selectedOptionValues.length == 0}} OR text(e.ts_id) IN ({{"'" 
 and ({{MSCategory.selectedOptionValues.length == 0}} OR text(d.off_cat_id) IN ({{"'" + MSCategory.selectedOptionValues.join("', '") + "'"}}))
 group by f.network_name_short
 having (sum(a.amount_revenue)>0 OR sum(a.amount_spent_plus_fee)>0)) z
-group by offer_name

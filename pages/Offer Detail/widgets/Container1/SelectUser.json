@@ -2,7 +2,10 @@
     "boxShadow": "none",
     "widgetName": "SelectUser",
     "isFilterable": true,
-    "dynamicPropertyPathList": [{"key": "isVisible"}],
+    "dynamicPropertyPathList": [
+        {"key": "isVisible"},
+        {"key": "sourceData"}
+    ],
     "iconSVG": "/static/media/icon.bd99caba5853ad71e4b3d8daffacb3a2.svg",
     "displayName": "Select",
     "labelText": "User",
