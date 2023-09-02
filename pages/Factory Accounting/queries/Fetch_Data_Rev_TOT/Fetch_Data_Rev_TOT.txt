@@ -5,8 +5,8 @@ where 1 = 1
 AND a.financial_month = '{{SelectYear.selectedOptionValue}}{{SelectMonth.selectedOptionValue}}'
 and b.network_name_short != 'AW'
 UNION
-SELECT (sum(amount_revenue_approved)-sum(amount_spent_wfees))/2
+SELECT (sum(amount_revenue_approved)-sum(amount_spent_wfees))*(commissions_fee::float/100)*(factory_fee::float/100)
 FROM public.user_other_project_month a
 where 1 = 1
 AND a.financial_month = '{{SelectYear.selectedOptionValue}}{{SelectMonth.selectedOptionValue}}'
-group by commissions_fee
+group by commissions_fee,factory_fee

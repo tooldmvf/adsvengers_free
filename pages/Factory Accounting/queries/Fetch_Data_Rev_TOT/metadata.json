@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "SELECT sum(amount_revenue_approved) as appr_rev\nFROM public.user_financial_month a\ninner join public.network b on (b.network_id = a.fk_network_id)\nwhere 1 = 1\nAND a.financial_month = '{{SelectYear.selectedOptionValue}}{{SelectMonth.selectedOptionValue}}'\nand b.network_name_short != 'AW'\nUNION\nSELECT (sum(amount_revenue_approved)-sum(amount_spent_wfees))/2\nFROM public.user_other_project_month a\nwhere 1 = 1\nAND a.financial_month = '{{SelectYear.selectedOptionValue}}{{SelectMonth.selectedOptionValue}}'\ngroup by commissions_fee",
+      "body": "SELECT sum(amount_revenue_approved) as appr_rev\nFROM public.user_financial_month a\ninner join public.network b on (b.network_id = a.fk_network_id)\nwhere 1 = 1\nAND a.financial_month = '{{SelectYear.selectedOptionValue}}{{SelectMonth.selectedOptionValue}}'\nand b.network_name_short != 'AW'\nUNION\nSELECT (sum(amount_revenue_approved)-sum(amount_spent_wfees))*(commissions_fee::float/100)*(factory_fee::float/100)\nFROM public.user_other_project_month a\nwhere 1 = 1\nAND a.financial_month = '{{SelectYear.selectedOptionValue}}{{SelectMonth.selectedOptionValue}}'\ngroup by commissions_fee,factory_fee",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
