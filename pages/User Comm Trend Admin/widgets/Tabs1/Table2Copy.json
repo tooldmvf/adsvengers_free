@@ -74,6 +74,7 @@
         {"key": "tableData"},
         {"key": "primaryColumns.profit.textColor"}
     ],
+    "compactMode": "SHORT",
     "displayName": "Table",
     "bottomRow": 84,
     "columnWidthMap": {},

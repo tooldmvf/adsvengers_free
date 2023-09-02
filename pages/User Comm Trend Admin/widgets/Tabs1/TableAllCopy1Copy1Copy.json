@@ -84,7 +84,7 @@
         "Dec"
     ],
     "dynamicPropertyPathList": [{"key": "tableData"}],
-    "compactMode": "DEFAULT",
+    "compactMode": "SHORT",
     "displayName": "Table",
     "bottomRow": 83,
     "columnWidthMap": {

@@ -83,6 +83,7 @@
         }
     },
     "key": "cs1b3xopvo",
+    "showDataPointLabel": false,
     "isDeprecated": false,
     "rightColumn": 64,
     "widgetId": "fmxnb462t8",
