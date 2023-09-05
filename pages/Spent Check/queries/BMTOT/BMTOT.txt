@@ -13,6 +13,7 @@ inner join public.fb_ad_account c on (c.ad_account_id = b.fk_ad_account_id)
 inner join public.facebook_bm d on (d.bm_id = c.fk_bm_id)
 inner join public.traffic_source e on (e.ts_id = d.fk_ts_id)
 where 1 = 1
+and lower(d.bm_name) like lower('%{{Table1.searchText}}%')
 and ({{!SelectUser.selectedOptionValue}} OR (text(a.fk_user_id) IN ({{"'" + SelectUser.selectedOptionValue + "'"}})))
 and a.financial_date >= to_date('{{moment(DateFrom.selectedDate).format('YYYY-DD-MM')}}','YYYY-DD-MM')
 and a.financial_date <= to_date('{{moment(DateTo.selectedDate).format('YYYY-DD-MM')}}','YYYY-DD-MM')

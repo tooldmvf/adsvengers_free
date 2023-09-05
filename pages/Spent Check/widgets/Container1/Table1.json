@@ -3,7 +3,7 @@
     "borderColor": "#E0DEDE",
     "isVisibleDownload": true,
     "iconSVG": "/static/media/icon.db8a9cbd2acd22a31ea91cc37ea2a46c.svg",
-    "topRow": 24,
+    "topRow": 28,
     "isSortable": true,
     "type": "TABLE_WIDGET_V2",
     "inlineEditingSaveOption": "ROW_LEVEL",
@@ -30,6 +30,7 @@
     "version": 1,
     "totalRecordsCount": 0,
     "isLoading": false,
+    "onSearchTextChanged": "{{BMTOT.run();}}",
     "childStylesheet": {
         "button": {
             "boxShadow": "none",
@@ -55,7 +56,7 @@
     },
     "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
     "columnUpdatedAt": 1687980200096,
-    "originalBottomRow": 80,
+    "originalBottomRow": 84,
     "primaryColumnId": "user",
     "defaultSelectedRowIndices": [0],
     "widgetName": "Table1",
@@ -67,10 +68,13 @@
         "bm_id",
         "count"
     ],
-    "dynamicPropertyPathList": [{"key": "tableData"}],
+    "dynamicPropertyPathList": [
+        {"key": "tableData"},
+        {"key": "onSearchTextChanged"}
+    ],
     "compactMode": "SHORT",
     "displayName": "Table",
-    "bottomRow": 80,
+    "bottomRow": 84,
     "columnWidthMap": {
         "offer": 328,
         "Traffic_Source": 337,
@@ -87,7 +91,10 @@
     },
     "parentRowSpace": 10,
     "hideCard": false,
-    "dynamicTriggerPathList": [{"key": "onRowSelected"}],
+    "dynamicTriggerPathList": [
+        {"key": "onRowSelected"},
+        {"key": "onSearchTextChanged"}
+    ],
     "borderWidth": "1",
     "primaryColumns": {
         "spent": {
@@ -252,7 +259,7 @@
     "horizontalAlignment": "RIGHT",
     "isVisibleSearch": true,
     "responsiveBehavior": "fill",
-    "originalTopRow": 24,
+    "originalTopRow": 28,
     "isVisiblePagination": true,
     "verticalAlignment": "CENTER"
 }

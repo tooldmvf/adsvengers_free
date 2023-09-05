@@ -14,7 +14,7 @@
     "dynamicBindingPathList": [{"key": "fontFamily"}],
     "text": "Spent Check",
     "labelTextSize": "0.875rem",
-    "rightColumn": 13,
+    "rightColumn": 20,
     "textAlign": "LEFT",
     "dynamicHeight": "FIXED",
     "widgetId": "urzv99hdc8",

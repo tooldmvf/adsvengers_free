@@ -40,36 +40,6 @@
               "timeoutInMillisecond": 10000
             },
             {
-              "id": "Dashboard_get_all_networks",
-              "name": "get_all_networks",
-              "confirmBeforeExecute": false,
-              "pluginType": "API",
-              "jsonPathKeys": [
-                "appsmith.store.access_token"
-              ],
-              "timeoutInMillisecond": 10000
-            },
-            {
-              "id": "Dashboard_get_all_users",
-              "name": "get_all_users",
-              "confirmBeforeExecute": false,
-              "pluginType": "API",
-              "jsonPathKeys": [
-                "appsmith.store.access_token"
-              ],
-              "timeoutInMillisecond": 10000
-            },
-            {
-              "id": "Dashboard_get_ts",
-              "name": "get_ts",
-              "confirmBeforeExecute": false,
-              "pluginType": "API",
-              "jsonPathKeys": [
-                "appsmith.store.access_token"
-              ],
-              "timeoutInMillisecond": 10000
-            },
-            {
               "id": "Dashboard_js_logout.check_login",
               "name": "js_logout.check_login",
               "collectionId": "Dashboard_js_logout",
@@ -96,6 +66,38 @@
                 "moment(DateFrom.selectedDate).format('YYYY-DD-MM')",
                 "\"'\" + SelectNetwork.selectedOptionValues.join(\"', '\") + \"'\"",
                 "\"'\" + SelectTSFront.selectedOptionValues.join(\"', '\") + \"'\""
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
+              "id": "Dashboard_get_all_networks",
+              "name": "get_all_networks",
+              "confirmBeforeExecute": false,
+              "pluginType": "API",
+              "jsonPathKeys": [
+                "appsmith.store.access_token"
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "Dashboard_get_all_users",
+              "name": "get_all_users",
+              "confirmBeforeExecute": false,
+              "pluginType": "API",
+              "jsonPathKeys": [
+                "appsmith.store.access_token"
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "Dashboard_get_ts",
+              "name": "get_ts",
+              "confirmBeforeExecute": false,
+              "pluginType": "API",
+              "jsonPathKeys": [
+                "appsmith.store.access_token"
               ],
               "timeoutInMillisecond": 10000
             }
