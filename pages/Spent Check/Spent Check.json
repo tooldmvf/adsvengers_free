@@ -36,7 +36,7 @@
               "confirmBeforeExecute": false,
               "pluginType": "JS",
               "jsonPathKeys": [
-                "async () => {\n  await get_all_users.run();\n  await BMTOT.run();\n  await BM.run();\n}"
+                "async () => {\n  await get_all_users.run();\n  await get_ts.run();\n  await get_all_bm.run();\n  await BMTOT.run();\n  await BM.run();\n}"
               ],
               "timeoutInMillisecond": 10000
             },
@@ -66,30 +66,6 @@
                 "moment(DateTo.selectedDate).format('YYYY-DD-MM')",
                 "moment(DateFrom.selectedDate).format('YYYY-DD-MM')",
                 "\"'\" + SelectTSFront.selectedOptionValues.join(\"', '\") + \"'\""
-              ],
-              "timeoutInMillisecond": 10000
-            }
-          ],
-          [
-            {
-              "id": "Spent Check_get_all_bm",
-              "name": "get_all_bm",
-              "confirmBeforeExecute": false,
-              "pluginType": "API",
-              "jsonPathKeys": [
-                "appsmith.store.access_token"
-              ],
-              "timeoutInMillisecond": 10000
-            }
-          ],
-          [
-            {
-              "id": "Spent Check_get_ts",
-              "name": "get_ts",
-              "confirmBeforeExecute": false,
-              "pluginType": "API",
-              "jsonPathKeys": [
-                "appsmith.store.access_token"
               ],
               "timeoutInMillisecond": 10000
             }

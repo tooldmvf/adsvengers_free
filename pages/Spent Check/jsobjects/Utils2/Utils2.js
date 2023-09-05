@@ -10,6 +10,8 @@ export default {
 	
 	onLoad: async () => {
 		await get_all_users.run();
+		await get_ts.run();
+		await get_all_bm.run();
 		await BMTOT.run();
 		await BM.run();
 	}

@@ -50,7 +50,7 @@
     "optionValue": "bm_id",
     "minWidth": 450,
     "parentId": "59rw5mx0bq",
-    "labelAlignment": "left",
+    "labelAlignment": "right",
     "renderMode": "CANVAS",
     "mobileTopRow": 5,
     "optionLabel": "bm_name",
