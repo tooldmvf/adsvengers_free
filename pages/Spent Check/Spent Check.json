@@ -72,6 +72,18 @@
           ],
           [
             {
+              "id": "Spent Check_get_all_bm",
+              "name": "get_all_bm",
+              "confirmBeforeExecute": false,
+              "pluginType": "API",
+              "jsonPathKeys": [
+                "appsmith.store.access_token"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
               "id": "Spent Check_get_ts",
               "name": "get_ts",
               "confirmBeforeExecute": false,

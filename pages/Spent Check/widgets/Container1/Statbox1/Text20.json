@@ -40,10 +40,10 @@
     "renderMode": "CANVAS",
     "isLoading": false,
     "responsiveBehavior": "fill",
-    "originalTopRow": 10,
+    "originalTopRow": 8,
     "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
     "maxDynamicHeight": 9000,
-    "originalBottomRow": 14,
+    "originalBottomRow": 12,
     "fontSize": "0.875rem",
     "minDynamicHeight": 4
 }
