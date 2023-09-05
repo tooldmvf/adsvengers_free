@@ -30,19 +30,6 @@
         "layoutOnLoadActions": [
           [
             {
-              "id": "Day by Day_Utils2.onLoadPage",
-              "name": "Utils2.onLoadPage",
-              "collectionId": "Day by Day_Utils2",
-              "confirmBeforeExecute": false,
-              "pluginType": "JS",
-              "jsonPathKeys": [
-                "async () => {\n  await storeValue('custom_off', 'false');\n  await storeValue('custom_off2', 'false');\n  await get_all_users.run();\n  await TableTotal.tblSummary();\n}"
-              ],
-              "timeoutInMillisecond": 10000
-            }
-          ],
-          [
-            {
               "id": "Day by Day_js_logout.check_login",
               "name": "js_logout.check_login",
               "collectionId": "Day by Day_js_logout",
@@ -66,6 +53,19 @@
                 "\"'\" + MultiSelectUsers.selectedOptionValues.join(\"', '\") + \"'\"",
                 "SelectNetworkDbd.selectedOptionValues.length == 0",
                 "\"'\" + SelectTSFront.selectedOptionValues.join(\"', '\") + \"'\""
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
+              "id": "Day by Day_Utils2.onLoadPage",
+              "name": "Utils2.onLoadPage",
+              "collectionId": "Day by Day_Utils2",
+              "confirmBeforeExecute": false,
+              "pluginType": "JS",
+              "jsonPathKeys": [
+                "async () => {\n  await storeValue('custom_off', 'false');\n  await storeValue('custom_off2', 'false');\n  await get_all_users.run();\n  await TableTotal.tblSummary();\n}"
               ],
               "timeoutInMillisecond": 10000
             }

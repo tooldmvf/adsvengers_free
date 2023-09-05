@@ -86,6 +86,7 @@
         }
     },
     "key": "xgvlg15kip",
+    "showDataPointLabel": false,
     "isDeprecated": false,
     "rightColumn": 64,
     "widgetId": "esi926mraf",
