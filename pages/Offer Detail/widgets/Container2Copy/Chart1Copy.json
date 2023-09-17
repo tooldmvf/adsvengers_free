@@ -15,6 +15,11 @@
     "type": "CHART_WIDGET",
     "hideCard": false,
     "chartData": {
+        "df6m4ntma0": {
+            "data": "{{SelectFinancialList.data.map((obj) =>{ return  {'x': obj.financial_date , 'y': obj.Approved_Rev.toFixed() } })}}",
+            "color": "#3b82f6",
+            "seriesName": "Approved"
+        },
         "2pknq6nesj": {
             "data": "{{SelectFinancialList.data.map((obj) =>{ return  {'x': obj.financial_date , 'y': obj.Tot_Profit_h.toFixed() } })}}",
             "color": "#000000",
@@ -22,7 +27,7 @@
         },
         "ckzqgov3j4": {
             "data": "{{SelectFinancialList.data.map((obj) =>{ return  {'x': obj.financial_date , 'y': obj.amount_revenue.toFixed() } })}}",
-            "color": "#3b82f6",
+            "color": "#eab308",
             "seriesName": "Revenue"
         },
         "y4urqo98l5": {
@@ -49,7 +54,8 @@
         {"key": "chartData.y4urqo98l5.data"},
         {"key": "chartData.fzexkr5puo.data"},
         {"key": "chartData.ckzqgov3j4.data"},
-        {"key": "chartData.2pknq6nesj.data"}
+        {"key": "chartData.2pknq6nesj.data"},
+        {"key": "chartData.df6m4ntma0.data"}
     ],
     "customFusionChartConfig": {
         "type": "column2d",
