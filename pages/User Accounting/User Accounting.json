@@ -28,16 +28,6 @@
         "layoutOnLoadActions": [
           [
             {
-              "id": "User Accounting_get_all_users",
-              "name": "get_all_users",
-              "confirmBeforeExecute": false,
-              "pluginType": "API",
-              "jsonPathKeys": [
-                "appsmith.store.access_token"
-              ],
-              "timeoutInMillisecond": 10000
-            },
-            {
               "id": "User Accounting_js_logout.check_login",
               "name": "js_logout.check_login",
               "collectionId": "User Accounting_js_logout",
@@ -60,6 +50,18 @@
                 "\"'\" + SelectUser.selectedOptionValue + \"'\"",
                 "SelectMonth.selectedOptionValue",
                 "SelectYear.selectedOptionValue"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
+              "id": "User Accounting_get_all_users",
+              "name": "get_all_users",
+              "confirmBeforeExecute": false,
+              "pluginType": "API",
+              "jsonPathKeys": [
+                "appsmith.store.access_token"
               ],
               "timeoutInMillisecond": 10000
             }
