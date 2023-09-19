@@ -51,6 +51,10 @@
         {
           "key": "financial_month",
           "value": "eq.{{this.params.currentRow.financial_month}}"
+        },
+        {
+          "key": "spent_rate_fees",
+          "value": "eq.{{this.params.currentRow.spent_rate_fees}}"
         }
       ],
       "body": "{\n  \"amount_spent_fixed\": \"{{this.params.currentRow.amount_spent_fixed}}\"\n}",
@@ -79,6 +83,9 @@
       },
       {
         "key": "queryParameters[2].value"
+      },
+      {
+        "key": "queryParameters[3].value"
       }
     ],
     "isValid": true,
@@ -89,7 +96,8 @@
       "this.params.currentRow.amount_spent_fixed",
       "this.params.currentRow.financial_month",
       "this.params.currentRow.fk_bm_id",
-      "this.params.currentRow.fk_user_id"
+      "this.params.currentRow.fk_user_id",
+      "this.params.currentRow.spent_rate_fees"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,

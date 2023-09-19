@@ -1,7 +1,7 @@
 {
     "mobileBottomRow": 13,
     "widgetName": "Others",
-    "dynamicPropertyPathList": [],
+    "dynamicPropertyPathList": [{"key": "textColor"}],
     "displayName": "Text",
     "iconSVG": "/static/media/icon.97c59b523e6f70ba6f40a10fc2c7c5b5.svg",
     "searchTags": [
@@ -25,11 +25,12 @@
         {"key": "truncateButtonColor"},
         {"key": "fontFamily"},
         {"key": "borderRadius"},
-        {"key": "text"}
+        {"key": "text"},
+        {"key": "textColor"}
     ],
     "shouldTruncate": false,
     "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-    "text": "{{Number(ProfitOther.text.replace(/[^0-9.-]+/g,\"\")) >0 ? ProfitOther.text : '\u20ac0.00'}}",
+    "text": "{{Number(ProfitOther.text.replace(/[^0-9.-]+/g,\"\")) >=0 ? ProfitOther.text : '\u20ac0.00'}}",
     "key": "k0zn3vv2el",
     "isDeprecated": false,
     "rightColumn": 62,
@@ -39,7 +40,7 @@
     "minWidth": 450,
     "isVisible": true,
     "fontStyle": "BOLD",
-    "textColor": "#15803d",
+    "textColor": "{{Number(Others.text.replace(/[^0-9.-]+/g,\"\")) >=0 ? 'green' : 'red'}}",
     "version": 1,
     "parentId": "lvya69kw4u",
     "renderMode": "CANVAS",

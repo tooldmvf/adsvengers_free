@@ -30,7 +30,7 @@
     ],
     "shouldTruncate": false,
     "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-    "text": "{{Utils.myCurrency( ( Number(OtherRevInput.text.replace(/[^0-9-]+/g,\"\")/100) - Number(OtherSpentInput.text.replace(/[^0-9-]+/g,\"\")/100))/(100/Fetch_Data_Other_Prj.data[0]?.factory_fee||1))}}",
+    "text": "{{Utils.myCurrency( ( Number(OtherRevInput.text.replace(/[^0-9-]+/g,\"\").replace(/[^0-9-]+/g,\"\")/100) - Number(OtherSpentInput.text.replace(/[^0-9-]+/g,\"\").replace(/[^0-9-]+/g,\"\")/100))/(100/Fetch_Data_Other_Prj.data[0]?.factory_fee||1))}}",
     "key": "wmtrt5wcg7",
     "isDeprecated": false,
     "rightColumn": 64,
