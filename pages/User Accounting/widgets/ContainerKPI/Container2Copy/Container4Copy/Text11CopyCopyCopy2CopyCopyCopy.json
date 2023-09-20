@@ -31,7 +31,7 @@
     "text": "Profit ({{Fetch_Data_Other_Prj.data[0]?.factory_fee||0}}%)",
     "key": "wmtrt5wcg7",
     "isDeprecated": false,
-    "rightColumn": 34,
+    "rightColumn": 27,
     "textAlign": "LEFT",
     "dynamicHeight": "FIXED",
     "widgetId": "aipk3j1m8r",
