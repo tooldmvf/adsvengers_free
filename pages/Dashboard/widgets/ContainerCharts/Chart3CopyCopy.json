@@ -15,8 +15,8 @@
     "type": "CHART_WIDGET",
     "hideCard": false,
     "chartData": {"063g26ym8t": {
-        "data": "{{user_financialNetwork.data.map( (obj) =>{ return  {'x': obj.network, 'y': obj.revenue } })}}",
-        "seriesName": ""
+        "data": "{{user_financialNetwork.data.map( (obj) =>{ return  {'x': obj.network, 'y': obj.revenue.toFixed(2) } })}}",
+        "seriesName": "Revenue"
     }},
     "animateLoading": true,
     "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
