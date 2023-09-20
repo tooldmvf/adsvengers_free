@@ -39,16 +39,6 @@
               "timeoutInMillisecond": 10000
             },
             {
-              "id": "User Comm Trend Admin_get_all_users",
-              "name": "get_all_users",
-              "confirmBeforeExecute": false,
-              "pluginType": "API",
-              "jsonPathKeys": [
-                "appsmith.store.access_token"
-              ],
-              "timeoutInMillisecond": 10000
-            },
-            {
               "id": "User Comm Trend Admin_js_logout.check_login",
               "name": "js_logout.check_login",
               "collectionId": "User Comm Trend Admin_js_logout",
@@ -56,6 +46,18 @@
               "pluginType": "JS",
               "jsonPathKeys": [
                 "async () => {\n  if (!appsmith.store.access_token) navigateTo('Login');\n}"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
+              "id": "User Comm Trend Admin_get_all_users",
+              "name": "get_all_users",
+              "confirmBeforeExecute": false,
+              "pluginType": "API",
+              "jsonPathKeys": [
+                "appsmith.store.access_token"
               ],
               "timeoutInMillisecond": 10000
             }
