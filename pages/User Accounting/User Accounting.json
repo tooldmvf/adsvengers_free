@@ -13,13 +13,13 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 1100,
+          "bottomRow": 1030,
           "containerStyle": "none",
           "snapRows": 86,
           "parentRowSpace": 1,
           "type": "CANVAS_WIDGET",
           "canExtend": true,
-          "version": 85,
+          "version": 86,
           "minHeight": 880,
           "parentColumnSpace": 1,
           "dynamicBindingPathList": [],
@@ -27,6 +27,16 @@
         },
         "layoutOnLoadActions": [
           [
+            {
+              "id": "User Accounting_get_all_users",
+              "name": "get_all_users",
+              "confirmBeforeExecute": false,
+              "pluginType": "API",
+              "jsonPathKeys": [
+                "appsmith.store.access_token"
+              ],
+              "timeoutInMillisecond": 10000
+            },
             {
               "id": "User Accounting_js_logout.check_login",
               "name": "js_logout.check_login",
@@ -50,18 +60,6 @@
                 "\"'\" + SelectUser.selectedOptionValue + \"'\"",
                 "SelectMonth.selectedOptionValue",
                 "SelectYear.selectedOptionValue"
-              ],
-              "timeoutInMillisecond": 10000
-            }
-          ],
-          [
-            {
-              "id": "User Accounting_get_all_users",
-              "name": "get_all_users",
-              "confirmBeforeExecute": false,
-              "pluginType": "API",
-              "jsonPathKeys": [
-                "appsmith.store.access_token"
               ],
               "timeoutInMillisecond": 10000
             }
