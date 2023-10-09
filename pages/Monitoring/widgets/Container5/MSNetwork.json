@@ -27,7 +27,10 @@
     "originalBottomRow": 4,
     "widgetName": "MSNetwork",
     "isFilterable": true,
-    "dynamicPropertyPathList": [{"key": "onOptionChange"}],
+    "dynamicPropertyPathList": [
+        {"key": "onOptionChange"},
+        {"key": "sourceData"}
+    ],
     "displayName": "MultiSelect",
     "searchTags": [
         "dropdown",

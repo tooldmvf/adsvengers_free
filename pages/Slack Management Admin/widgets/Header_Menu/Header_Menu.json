@@ -46,7 +46,8 @@
         "minHeight": 120.65625,
         "renderMode": "CANVAS",
         "parentColumnSpace": 1,
-        "leftColumn": 0
+        "leftColumn": 0,
+        "dynamicBindingPathList": []
     }],
     "borderWidth": "0",
     "flexVerticalAlignment": "start",

@@ -36,10 +36,10 @@
     ],
     "leftColumn": 11,
     "dynamicBindingPathList": [
-        {"key": "menuColor"},
-        {"key": "borderRadius"},
         {"key": "configureMenuItems.config.label"},
-        {"key": "isVisible"}
+        {"key": "isVisible"},
+        {"key": "menuColor"},
+        {"key": "borderRadius"}
     ],
     "isDisabled": false,
     "sourceData": "",
