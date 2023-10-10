@@ -26,7 +26,7 @@
     "leftColumn": 38,
     "shouldTruncate": false,
     "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-    "text": "{{Utils2.myCurrency(currentItem.amount_revenue_h)}}",
+    "text": "{{Utils2.myCurrency(currentItem.amount_revenue)}}",
     "key": "fak4xyb0hu",
     "isDeprecated": false,
     "rightColumn": 43,
