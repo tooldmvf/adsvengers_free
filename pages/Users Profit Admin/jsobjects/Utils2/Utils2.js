@@ -12,6 +12,7 @@ export default {
 		await Tab4Offer.run();
 		await TotalLine.run();
 		await SelectFinancial.run();
+		await GetUserAccount.run();
 	},
 	
 	chart : () => {

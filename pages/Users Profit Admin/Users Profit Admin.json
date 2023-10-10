@@ -14,13 +14,13 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 2180,
+          "bottomRow": 2190,
           "containerStyle": "none",
           "snapRows": 125,
           "parentRowSpace": 1,
           "type": "CANVAS_WIDGET",
           "canExtend": true,
-          "version": 83,
+          "version": 86,
           "minHeight": 900,
           "parentColumnSpace": 1,
           "dynamicTriggerPathList": [],
@@ -36,23 +36,10 @@
               "confirmBeforeExecute": false,
               "pluginType": "JS",
               "jsonPathKeys": [
-                "async () => {\n  await Tab4Offer.run();\n  await TotalLine.run();\n  await SelectFinancial.run();\n}"
+                "async () => {\n  await Tab4Offer.run();\n  await TotalLine.run();\n  await SelectFinancial.run();\n  await GetUserAccount.run();\n}"
               ],
               "timeoutInMillisecond": 10000
             },
-            {
-              "id": "Users Profit Admin_js_logout.check_login",
-              "name": "js_logout.check_login",
-              "collectionId": "Users Profit Admin_js_logout",
-              "confirmBeforeExecute": false,
-              "pluginType": "JS",
-              "jsonPathKeys": [
-                "async () => {\n  if (!appsmith.store.access_token) navigateTo('Login');\n}"
-              ],
-              "timeoutInMillisecond": 10000
-            }
-          ],
-          [
             {
               "id": "Users Profit Admin_get_all_networks",
               "name": "get_all_networks",
@@ -70,6 +57,17 @@
               "pluginType": "API",
               "jsonPathKeys": [
                 "appsmith.store.access_token"
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "Users Profit Admin_js_logout.check_login",
+              "name": "js_logout.check_login",
+              "collectionId": "Users Profit Admin_js_logout",
+              "confirmBeforeExecute": false,
+              "pluginType": "JS",
+              "jsonPathKeys": [
+                "async () => {\n  if (!appsmith.store.access_token) navigateTo('Login');\n}"
               ],
               "timeoutInMillisecond": 10000
             }
