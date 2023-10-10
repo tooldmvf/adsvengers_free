@@ -77,9 +77,9 @@
     "renderMode": "CANVAS",
     "isLoading": false,
     "mainCanvasId": "cvp8taeri4",
-    "originalTopRow": 28,
+    "originalTopRow": 29,
     "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-    "originalBottomRow": 94,
+    "originalBottomRow": 95,
     "additionalStaticProps": [
         "level",
         "levelData",

@@ -62,9 +62,9 @@
     "parentId": "59rw5mx0bq",
     "renderMode": "CANVAS",
     "isLoading": false,
-    "originalTopRow": 17,
+    "originalTopRow": 18,
     "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
     "maxDynamicHeight": 9000,
-    "originalBottomRow": 24,
+    "originalBottomRow": 25,
     "minDynamicHeight": 10
 }

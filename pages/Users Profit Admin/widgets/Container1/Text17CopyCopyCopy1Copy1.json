@@ -77,10 +77,10 @@
     "parentId": "59rw5mx0bq",
     "renderMode": "CANVAS",
     "isLoading": false,
-    "originalTopRow": 13,
+    "originalTopRow": 14,
     "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
     "maxDynamicHeight": 9000,
-    "originalBottomRow": 17,
+    "originalBottomRow": 18,
     "fontSize": "0.875rem",
     "textStyle": "HEADING",
     "minDynamicHeight": 4

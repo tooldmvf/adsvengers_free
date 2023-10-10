@@ -26,7 +26,7 @@
     "expandAll": false,
     "isLoading": false,
     "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-    "originalBottomRow": 9,
+    "originalBottomRow": 10,
     "widgetName": "MSUserNet",
     "dynamicPropertyPathList": [
         {"key": "isDisabled"},
