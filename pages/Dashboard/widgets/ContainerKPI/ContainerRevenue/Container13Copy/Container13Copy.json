@@ -28,7 +28,7 @@
         "detachFromLayout": true,
         "widgetId": "6koa1ui0s2",
         "containerStyle": "none",
-        "bottomRow": 100,
+        "bottomRow": 80,
         "topRow": 0,
         "parentRowSpace": 1,
         "isVisible": true,
