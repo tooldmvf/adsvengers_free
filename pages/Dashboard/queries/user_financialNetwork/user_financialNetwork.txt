@@ -1,7 +1,14 @@
 SELECT b.network_other_name as network, 
 sum(amount_revenue) as revenue,
 sum(amount_spent_plus_fee) as spent,
-case when c.network_name_short != 'WL' then sum(a.amount_revenue)-sum(a.amount_spent_plus_fee) else (sum(a.amount_revenue)-sum(a.amount_spent_plus_fee))/2 end as profit
+case when c.network_name_short != 'WL' then sum(a.amount_revenue)-sum(a.amount_spent_plus_fee) else (sum(a.amount_revenue)-sum(a.amount_spent_plus_fee))/2 end as profit,
+  sum(a.amount_revenue_pending) as amount_revenue_pending, 
+  sum(a.amount_revenue_approved) as amount_revenue_approved, 
+  sum(a.amount_revenue_rejected) as amount_revenue_rejected, 
+  sum(a.amount_revenue_h) as tot_revenue_h, 
+  sum(a.amount_revenue_pending_h) as amount_revenue_pending_h, 
+  sum(a.amount_revenue_approved_h) as amount_revenue_approved_h, 
+  sum(a.amount_revenue_rejected_h) as amount_revenue_rejected_h
 FROM public."user_financial" a
 INNER JOIN public."user_network" b  ON (a.fk_user_id = b.fk_user_id and a.fk_user_network_id = b.user_network_id)
 INNER JOIN public.network c on (c.network_id = b.fk_network_id)

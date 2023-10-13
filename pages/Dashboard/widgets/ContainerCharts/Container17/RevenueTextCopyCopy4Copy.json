@@ -28,7 +28,7 @@
     "shouldTruncate": false,
     "borderWidth": "",
     "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-    "text": "{{(((user_financial_period.data[0].tot_revenue -user_financial_period.data[0].tot_revenue_h)/user_financial_period.data[0].tot_revenue_h)*100).toFixed(2)}} %",
+    "text": "{{(((user_financial_period.data[0].tot_revenue -user_financial_period.data[0].tot_revenue_h)/user_financial_period.data[0].tot_revenue_h)*100).toFixed(1)}} %",
     "key": "nk7g1uvbwm",
     "isDeprecated": false,
     "rightColumn": 63,
