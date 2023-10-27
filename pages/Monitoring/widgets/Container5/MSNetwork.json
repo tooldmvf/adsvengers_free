@@ -24,7 +24,7 @@
     "version": 1,
     "isLoading": false,
     "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-    "originalBottomRow": 4,
+    "originalBottomRow": 5,
     "widgetName": "MSNetwork",
     "isFilterable": true,
     "dynamicPropertyPathList": [
@@ -36,7 +36,7 @@
         "dropdown",
         "tags"
     ],
-    "bottomRow": 5,
+    "bottomRow": 6,
     "parentRowSpace": 10,
     "hideCard": false,
     "shouldScrollContents": true,
@@ -54,7 +54,7 @@
     "labelAlignment": "right",
     "renderMode": "CANVAS",
     "optionLabel": "label",
-    "originalTopRow": 0,
+    "originalTopRow": 1,
     "maxDynamicHeight": 9000,
     "onOptionChange": "{{SelectFinancialTot.run();\nSelectOFFERSUser.run();SelectUSERS.run();\nstoreValue('row_selected',-1);\nWhereRunned.clear();}}",
     "minDynamicHeight": 4

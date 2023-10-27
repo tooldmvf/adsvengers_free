@@ -6,7 +6,7 @@ Where 1=1
 and (text(a.fk_user_id) IN ({{"''" + MultiSelectUsers.selectedOptionValues.join("'', ''") + "''"}}) OR text(a.fk_user_id) = ''{{appsmith.store.myUser}}'' )
 and substring(financial_month,1,4) = ''{{SelectYear.selectedOptionValue}}''
 GROUP By B.last_name ,a.financial_month, email_sent
-having sum(amount_revenue_approved)-sum(amount_spent) <> 0' 
+having (sum(amount_revenue_approved)-sum(amount_spent) <> 0 or sum(amount_debt) <> 0 )' 
 , 'select m from generate_series(1,12) m')
 AS ct("Type" TEXT, 
   "Jan" BOOLEAN,
