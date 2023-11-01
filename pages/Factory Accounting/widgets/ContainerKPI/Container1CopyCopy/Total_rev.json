@@ -28,7 +28,7 @@
     ],
     "shouldTruncate": false,
     "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-    "text": "{{Utils.myCurrency( Fetch_Data_Rev_TOT.data[0].appr_rev +\t\t\t\t\t\tFetch_Data_Rev_TOT.data[1].appr_rev +\t\t\t\t\t\tFetch_Data_Rev_TOT.data[2].appr_rev)}}",
+    "text": "{{Utils.myCurrency( Fetch_Data_Rev_TOT.data[0].appr_rev +\t\t\t\t\t\tFetch_Data_Rev_TOT.data[1].appr_rev ||0 +\t\t\t\t\t\tFetch_Data_Rev_TOT.data[2].appr_rev ||0)}}",
     "key": "k0zn3vv2el",
     "isDeprecated": false,
     "rightColumn": 62,
