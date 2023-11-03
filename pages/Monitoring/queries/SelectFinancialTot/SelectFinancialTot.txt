@@ -19,6 +19,7 @@ inner join public.traffic_source e on (e.ts_id = b.fk_ts_id)
 inner join public.network f on (f.network_id = b.fk_network_id)
 inner join public.user_profiles g on (g.fk_user_id = a.fk_user_id)
 where 1 = 1
+and text(f.network_id) not in (case when {{Switch1.isSwitchedOn}} = true then '5bc1e851-9ee4-4a76-8a12-8e3d064c3462' else '' end)
 and c.offer_id != 'WU'
 and (lower(c.offer_name) like lower('%{{TableOffers.searchText}}%') OR lower(c.offer_id) like lower('%{{TableOffers.searchText}}%') OR lower(f.network_name_short) like lower('%{{TableOffers.searchText}}%'))
 and (text(a.fk_user_id) IN ({{"'" + MultiSelectUsers.selectedOptionValues.join("', '") + "'"}}) OR text(a.fk_user_id) = '{{appsmith.store.myUser}}' )

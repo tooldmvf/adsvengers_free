@@ -6,8 +6,8 @@
     "dynamicPropertyPathList": [{"key": "tabsObj.tab2.isVisible"}],
     "displayName": "Tabs",
     "iconSVG": "/static/media/icon.74a6d653c8201e66f1cd367a3fba2657.svg",
-    "topRow": 19,
-    "bottomRow": 95,
+    "topRow": 20,
+    "bottomRow": 96,
     "parentRowSpace": 10,
     "type": "TABS_WIDGET",
     "hideCard": false,
@@ -122,9 +122,9 @@
     "renderMode": "CANVAS",
     "isLoading": false,
     "responsiveBehavior": "fill",
-    "originalTopRow": 18,
+    "originalTopRow": 20,
     "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
     "maxDynamicHeight": 9000,
-    "originalBottomRow": 94,
+    "originalBottomRow": 96,
     "minDynamicHeight": 15
 }

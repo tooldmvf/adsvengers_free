@@ -3,13 +3,13 @@
     "allowSelectAll": true,
     "iconSVG": "/static/media/icon.a3495809ae48291a64404f3bb04b0e69.svg",
     "labelText": "Users",
-    "topRow": 1,
+    "topRow": 4,
     "labelWidth": "3",
     "type": "MULTI_SELECT_WIDGET_V2",
     "serverSideFiltering": false,
     "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( appsmith.store.role_level > 100\n?\nget_all_users.data.map(e => {return e.fk_user_id})\n: appsmith.store.myUser))(MultiSelectUsers.options, MultiSelectUsers.serverSideFiltering) }}",
     "animateLoading": true,
-    "leftColumn": 45,
+    "leftColumn": 51,
     "dynamicBindingPathList": [
         {"key": "accentColor"},
         {"key": "borderRadius"},
@@ -26,7 +26,7 @@
     "version": 1,
     "isLoading": false,
     "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-    "originalBottomRow": 5,
+    "originalBottomRow": 10,
     "widgetName": "MultiSelectUsers",
     "isFilterable": true,
     "dynamicPropertyPathList": [
@@ -39,7 +39,7 @@
         "dropdown",
         "tags"
     ],
-    "bottomRow": 6,
+    "bottomRow": 8,
     "parentRowSpace": 10,
     "hideCard": false,
     "shouldScrollContents": true,
@@ -59,7 +59,7 @@
     "renderMode": "CANVAS",
     "optionLabel": "label",
     "responsiveBehavior": "fill",
-    "originalTopRow": 1,
+    "originalTopRow": 5,
     "maxDynamicHeight": 9000,
     "onOptionChange": "{{SelectFinancialTot.run();\nSelectOFFERSUser.run();SelectUSERS.run();\nstoreValue('row_selected',-1);\nWhereRunned.clear();}}",
     "minDynamicHeight": 4
