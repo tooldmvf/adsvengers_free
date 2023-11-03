@@ -3,7 +3,7 @@
     "boxShadow": "none",
     "mobileBottomRow": 90,
     "widgetName": "Button1",
-    "onClick": "{{update_token_db.run()}}",
+    "onClick": "{{update_token_db.run().then(() => {\n  get_fb_token.run();\n});}}",
     "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
     "dynamicPropertyPathList": [],
     "displayName": "Button",
