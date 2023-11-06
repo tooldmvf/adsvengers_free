@@ -3,6 +3,9 @@ select financial_date
 ,sum(amount_revenue_approved) as "Approved_Rev"
 ,sum(net_profit) as "Appr_Profit"
 ,sum(net_profit)/(case when sum(amount_spent_plus_fee) = 0 then 1 else sum(amount_spent_plus_fee) end)*100 as "Appr_Roi"
+,sum(amount_revenue) as amount_revenue
+,sum(profit) as profit
+,sum(profit)/(case when sum(amount_spent_plus_fee) = 0 then 1 else sum(amount_spent_plus_fee) end)*100 as "Tot_Roi"
 ,sum(amount_revenue_h) as amount_revenue_h
 ,sum(profit_h) as profit_h
 ,sum(profit_h)/(case when sum(amount_spent_plus_fee) = 0 then 1 else sum(amount_spent_plus_fee) end)*100 as "Tot_Roi_h"

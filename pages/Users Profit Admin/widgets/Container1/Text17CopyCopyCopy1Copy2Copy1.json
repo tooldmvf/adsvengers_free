@@ -25,7 +25,7 @@
     "leftColumn": 44,
     "shouldTruncate": false,
     "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-    "text": "Tot D. Profit ",
+    "text": "Tot Profit ",
     "key": "fak4xyb0hu",
     "isDeprecated": false,
     "rightColumn": 49,
