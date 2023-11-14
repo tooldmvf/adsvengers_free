@@ -489,6 +489,7 @@
     "rightColumn": 41,
     "textSize": "0.875rem",
     "widgetId": "ggrjhlevbt",
+    "enableServerSideFiltering": false,
     "tableData": "{{SelectOFFERSUser.data}}",
     "label": "Data",
     "searchKey": "",

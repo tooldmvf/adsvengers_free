@@ -283,6 +283,7 @@
     "rightColumn": 63,
     "textSize": "0.875rem",
     "widgetId": "z0sydpmbmf",
+    "enableServerSideFiltering": false,
     "minWidth": 450,
     "tableData": "{{SelectDays.data}}",
     "label": "Data",

@@ -481,6 +481,7 @@
     "rightColumn": 44,
     "textSize": "0.875rem",
     "widgetId": "agnxh3v3kw",
+    "enableServerSideFiltering": false,
     "tableData": "{{SelectUSERS.data}}",
     "label": "Data",
     "searchKey": "",

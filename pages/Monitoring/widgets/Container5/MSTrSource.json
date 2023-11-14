@@ -24,7 +24,7 @@
     "version": 1,
     "isLoading": false,
     "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-    "originalBottomRow": 5,
+    "originalBottomRow": 4,
     "widgetName": "MSTrSource",
     "isFilterable": true,
     "dynamicPropertyPathList": [
@@ -36,7 +36,7 @@
         "dropdown",
         "tags"
     ],
-    "bottomRow": 4,
+    "bottomRow": 5,
     "parentRowSpace": 10,
     "hideCard": false,
     "shouldScrollContents": true,

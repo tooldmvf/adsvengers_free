@@ -159,6 +159,9 @@
   "unpublishedCustomJSLibs": [
     {
       "uidString": "accounting_https://cdn.jsdelivr.net/npm/accounting@0.4.1/accounting.min.js"
+    },
+    {
+      "uidString": "xmlParser_https://cdnjs.cloudflare.com/ajax/libs/fast-xml-parser/3.17.5/parser.min.js"
     }
   ],
   "publishedCustomJSLibs": [],

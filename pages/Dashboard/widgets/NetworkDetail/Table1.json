@@ -460,6 +460,7 @@
     "rightColumn": 64,
     "textSize": "0.875rem",
     "widgetId": "y79i8rqm4z",
+    "enableServerSideFiltering": false,
     "minWidth": 450,
     "tableData": "{{user_financialNetwork.data}}",
     "label": "Data",

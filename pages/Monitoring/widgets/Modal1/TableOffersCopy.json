@@ -489,6 +489,7 @@
     "rightColumn": 64,
     "textSize": "0.875rem",
     "widgetId": "kfn6kz251a",
+    "enableServerSideFiltering": false,
     "tableData": "{{SelectOFFERSUserAdmin.data}}",
     "label": "Data",
     "searchKey": "",
