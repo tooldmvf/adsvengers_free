@@ -272,6 +272,7 @@
     "rightColumn": 64,
     "textSize": "0.875rem",
     "widgetId": "rr7l05s17j",
+    "enableServerSideFiltering": false,
     "minWidth": 450,
     "tableData": "{{Fetch_Profit_Factory_Tot.data}}",
     "label": "Data",

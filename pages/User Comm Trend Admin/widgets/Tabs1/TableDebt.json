@@ -511,6 +511,7 @@
     "rightColumn": 64,
     "textSize": "0.875rem",
     "widgetId": "hkvxk4is9p",
+    "enableServerSideFiltering": false,
     "minWidth": 450,
     "tableData": "{{Fetch_Debt_Factory.data}}",
     "label": "Data",

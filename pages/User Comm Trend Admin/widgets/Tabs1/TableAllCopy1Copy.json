@@ -511,6 +511,7 @@
     "rightColumn": 57,
     "textSize": "0.875rem",
     "widgetId": "ywgqvgrhz3",
+    "enableServerSideFiltering": false,
     "minWidth": 450,
     "tableData": "{{Fetch_Revenue_Factory.data}}",
     "label": "Data",

@@ -511,6 +511,7 @@
     "rightColumn": 57,
     "textSize": "0.875rem",
     "widgetId": "tqpeg6licf",
+    "enableServerSideFiltering": false,
     "minWidth": 450,
     "tableData": "{{Fetch_Roi_Factory.data}}",
     "label": "Data",

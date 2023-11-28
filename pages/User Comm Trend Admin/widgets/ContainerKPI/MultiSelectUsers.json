@@ -32,7 +32,8 @@
     "dynamicPropertyPathList": [
         {"key": "isVisible"},
         {"key": "onOptionChange"},
-        {"key": "sourceData"}
+        {"key": "sourceData"},
+        {"key": "onDropdownClose"}
     ],
     "displayName": "MultiSelect",
     "searchTags": [
@@ -44,8 +45,12 @@
     "hideCard": false,
     "shouldScrollContents": true,
     "parentColumnSpace": 20.0625,
-    "dynamicTriggerPathList": [{"key": "onOptionChange"}],
+    "dynamicTriggerPathList": [
+        {"key": "onOptionChange"},
+        {"key": "onDropdownClose"}
+    ],
     "labelPosition": "Left",
+    "onDropdownClose": "{{Utils2.onLoadPage();}}",
     "sourceData": "{{get_all_users.data.map( (obj) => {return {'value': obj.fk_user_id, 'label':obj.last_name.concat(' ').concat(obj.first_name)}})}}",
     "key": "rofw0ymfke",
     "labelTextSize": "0.875rem",
@@ -59,6 +64,6 @@
     "optionLabel": "label",
     "originalTopRow": 178,
     "maxDynamicHeight": 9000,
-    "onOptionChange": "{{Utils2.onLoadPage();}}",
+    "onOptionChange": "",
     "minDynamicHeight": 4
 }

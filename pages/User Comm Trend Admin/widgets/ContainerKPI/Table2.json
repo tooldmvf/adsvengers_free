@@ -101,6 +101,7 @@
     "rightColumn": 64,
     "textSize": "0.875rem",
     "widgetId": "ux5y7alnpy",
+    "enableServerSideFiltering": false,
     "minWidth": 450,
     "tableData": "{{Fetch_Data_Tot.data}}",
     "label": "Data",

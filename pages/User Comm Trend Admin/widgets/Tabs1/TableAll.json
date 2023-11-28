@@ -511,6 +511,7 @@
     "rightColumn": 57,
     "textSize": "0.875rem",
     "widgetId": "buscrgkt4t",
+    "enableServerSideFiltering": false,
     "minWidth": 450,
     "tableData": "{{Fetch_Profit_Factory.data}}",
     "label": "Data",

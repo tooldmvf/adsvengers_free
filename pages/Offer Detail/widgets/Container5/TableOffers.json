@@ -391,6 +391,7 @@
     "rightColumn": 64,
     "textSize": "0.8rem",
     "widgetId": "3g8awbvwgo",
+    "enableServerSideFiltering": false,
     "tableData": "{{SelectOFFERSUserTOT.data}}",
     "label": "Data",
     "searchKey": "",

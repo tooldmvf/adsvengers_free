@@ -511,6 +511,7 @@
     "rightColumn": 64,
     "textSize": "0.875rem",
     "widgetId": "twpx5d5sez",
+    "enableServerSideFiltering": false,
     "minWidth": 450,
     "tableData": "{{Fetch_Mail_Sent.data}}",
     "label": "Data",

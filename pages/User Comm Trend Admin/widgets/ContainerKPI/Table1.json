@@ -536,6 +536,7 @@
     "rightColumn": 57,
     "textSize": "0.875rem",
     "widgetId": "kxb4komlrc",
+    "enableServerSideFiltering": false,
     "minWidth": 450,
     "tableData": "{{Fetch_Data_All.data}}",
     "label": "Data",

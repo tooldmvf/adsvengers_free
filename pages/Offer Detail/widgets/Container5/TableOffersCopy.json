@@ -99,7 +99,7 @@
         {"key": "primaryColumns.offer_name.cellBackground"},
         {"key": "tableData"}
     ],
-    "compactMode": "DEFAULT",
+    "compactMode": "SHORT",
     "displayName": "Table",
     "bottomRow": 445,
     "columnWidthMap": {
@@ -457,6 +457,7 @@
     "rightColumn": 64,
     "textSize": "0.8rem",
     "widgetId": "yyb3etcgpu",
+    "enableServerSideFiltering": false,
     "tableData": "{{SelectOFFERSUser.data}}",
     "label": "Data",
     "searchKey": "",

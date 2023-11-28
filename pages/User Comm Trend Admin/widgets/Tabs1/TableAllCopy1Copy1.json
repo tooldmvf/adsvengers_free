@@ -511,6 +511,7 @@
     "rightColumn": 57,
     "textSize": "0.875rem",
     "widgetId": "r44utaml2g",
+    "enableServerSideFiltering": false,
     "minWidth": 450,
     "tableData": "{{Fetch_Invoices_Factory.data}}",
     "label": "Data",
