@@ -390,6 +390,7 @@
     "rightColumn": 35,
     "textSize": "0.875rem",
     "widgetId": "h6yn3j787e",
+    "enableServerSideFiltering": false,
     "tableData": "{{\nSelectBM.selectedOptionValue == '6016097061758721' ?\nSALV_GetAccountsCredit.data.data.filter((el) => {\n  return fbAccountQuery.data.some((f) => {\n    return f.fk_ad_account_id == el.id;\n  });\n}).sort((p1, p2) => (((p1.spend_cap-p1.amount_spent) > (p2.spend_cap-p2.amount_spent)) ? 1 : ((p1.spend_cap-p1.amount_spent) < (p2.spend_cap-p2.amount_spent)) ? -1 : 0)) : \nSALV_GetAccountsCredit.data.data.filter((el) => {\n  return fbAccountQuery.data.some((f) => {\n    return f.fk_ad_account_id == el.id;\n  });\n}).sort((p1, p2) => (((p1.spend_cap-p1.amount_spent) > (p2.spend_cap-p2.amount_spent)) ? 1 : ((p1.spend_cap-p1.amount_spent) < (p2.spend_cap-p2.amount_spent)) ? -1 : 0));\n}}",
     "label": "Data",
     "searchKey": "",

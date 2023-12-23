@@ -340,6 +340,7 @@
     "rightColumn": 64,
     "textSize": "0.875rem",
     "widgetId": "36lvfcq8cm",
+    "enableServerSideFiltering": false,
     "tableData": "{{\n}}",
     "label": "Data",
     "searchKey": "",
