@@ -426,6 +426,7 @@
     "rightColumn": 64,
     "textSize": "0.875rem",
     "widgetId": "6bk2a21cqz",
+    "enableServerSideFiltering": false,
     "tableData": "{{SelectOFFERSTot.data}}",
     "label": "Data",
     "searchKey": "",

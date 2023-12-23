@@ -521,6 +521,7 @@
     "rightColumn": 64,
     "textSize": "0.875rem",
     "widgetId": "55ducbil2l",
+    "enableServerSideFiltering": false,
     "minWidth": 450,
     "tableData": "{{Tab4OfferDayOffersTOT.data}}",
     "label": "Data",

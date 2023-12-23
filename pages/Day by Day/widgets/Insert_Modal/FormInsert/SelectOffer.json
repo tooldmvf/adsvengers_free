@@ -32,7 +32,8 @@
     "dynamicPropertyPathList": [
         {"key": "isDisabled"},
         {"key": "isVisible"},
-        {"key": "isRequired"}
+        {"key": "isRequired"},
+        {"key": "sourceData"}
     ],
     "displayName": "Select",
     "searchTags": ["dropdown"],

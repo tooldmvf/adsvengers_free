@@ -276,6 +276,7 @@
     "rightColumn": 64,
     "textSize": "0.875rem",
     "widgetId": "b2i4ie10fs",
+    "enableServerSideFiltering": false,
     "minWidth": 450,
     "tableData": "{{BM.data}}",
     "label": "Data",

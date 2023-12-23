@@ -74,7 +74,7 @@
         "spend_cap",
         "currency"
     ],
-    "dynamicPropertyPathList": [],
+    "dynamicPropertyPathList": [{"key": "tableData"}],
     "compactMode": "SHORT",
     "displayName": "Table",
     "bottomRow": 66,
@@ -370,6 +370,7 @@
     "rightColumn": 64,
     "textSize": "0.875rem",
     "widgetId": "h6yn3j787e",
+    "enableServerSideFiltering": false,
     "tableData": "{{\nSelectBM.selectedOptionValue == '6016097061758721' ?\nSALV2_GetAccountsCredit.data.data.filter((el) => {\n  return fbAccountQuery.data.some((f) => {\n    return f.fk_ad_account_id == el.id;\n  });\n}) : \nSALV1_GetAccountsCredit.data.data.filter((el) => {\n  return fbAccountQuery.data.some((f) => {\n    return f.fk_ad_account_id == el.id;\n  });\n});\n}}",
     "label": "Data",
     "searchKey": "",

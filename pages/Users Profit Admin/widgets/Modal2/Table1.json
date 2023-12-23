@@ -479,6 +479,7 @@
     "rightColumn": 64,
     "textSize": "0.875rem",
     "widgetId": "1ankfqt8zs",
+    "enableServerSideFiltering": false,
     "tableData": "{{TotalLineDays.data}}",
     "label": "Data",
     "searchKey": "",

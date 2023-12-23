@@ -265,6 +265,7 @@
     "rightColumn": 63,
     "textSize": "0.875rem",
     "widgetId": "1zyoy86bkg",
+    "enableServerSideFiltering": false,
     "minWidth": 450,
     "tableData": "{{Tab4OfferDays.data}}",
     "label": "Data",

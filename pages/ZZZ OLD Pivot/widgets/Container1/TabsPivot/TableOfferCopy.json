@@ -97,7 +97,8 @@
     "dynamicPropertyPathList": [
         {"key": "primaryColumns.customColumn2.textColor"},
         {"key": "primaryColumns.customColumn3.textColor"},
-        {"key": "primaryColumns.customColumn4.onClick"}
+        {"key": "primaryColumns.customColumn4.onClick"},
+        {"key": "tableData"}
     ],
     "compactMode": "SHORT",
     "displayName": "Table",
@@ -615,6 +616,7 @@
     "textSize": "0.875rem",
     "widgetId": "l8of6hnxfs",
     "allowAddNewRow": false,
+    "enableServerSideFiltering": false,
     "tableData": "{{Tab5Category.data}}",
     "label": "Data",
     "searchKey": "",

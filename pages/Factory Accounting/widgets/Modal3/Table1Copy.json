@@ -226,6 +226,7 @@
     "rightColumn": 64,
     "textSize": "0.875rem",
     "widgetId": "x5dgsck14i",
+    "enableServerSideFiltering": false,
     "minWidth": 450,
     "tableData": "{{Fetch_Data_Spent_Det_Ai20.data}}",
     "label": "Data",

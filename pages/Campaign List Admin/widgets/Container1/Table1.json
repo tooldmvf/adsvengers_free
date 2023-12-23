@@ -267,6 +267,7 @@
     "rightColumn": 64,
     "textSize": "0.875rem",
     "widgetId": "6q2yqs56md",
+    "enableServerSideFiltering": false,
     "minWidth": 450,
     "tableData": "{{get_campaigns.data}}",
     "label": "Data",

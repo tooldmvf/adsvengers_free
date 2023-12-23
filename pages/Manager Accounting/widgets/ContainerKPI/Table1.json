@@ -272,6 +272,7 @@
     "rightColumn": 48,
     "textSize": "0.875rem",
     "widgetId": "6oyn9oe4ug",
+    "enableServerSideFiltering": false,
     "minWidth": 450,
     "tableData": "{{Fetch_MB_shares.data}}",
     "label": "Data",

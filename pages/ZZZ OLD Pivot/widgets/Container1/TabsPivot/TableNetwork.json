@@ -100,7 +100,8 @@
         {"key": "primaryColumns.customColumn2.onClick"},
         {"key": "primaryColumns.customColumn3.textColor"},
         {"key": "primaryColumns.customColumn4.textColor"},
-        {"key": "primaryColumns.Rejected_Rate1.textColor"}
+        {"key": "primaryColumns.Rejected_Rate1.textColor"},
+        {"key": "tableData"}
     ],
     "compactMode": "SHORT",
     "displayName": "Table",
@@ -662,6 +663,7 @@
     "rightColumn": 64,
     "textSize": "0.875rem",
     "widgetId": "i9gcqwg21h",
+    "enableServerSideFiltering": false,
     "tableData": "{{Tab3Network.data}}",
     "label": "Data",
     "searchKey": "",

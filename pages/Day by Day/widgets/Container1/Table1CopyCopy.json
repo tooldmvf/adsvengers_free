@@ -1129,6 +1129,7 @@
     "textSize": "0.875rem",
     "widgetId": "a59yyq79r7",
     "allowAddNewRow": false,
+    "enableServerSideFiltering": false,
     "tableData": "{{[appsmith.store.summaryRow]}}",
     "label": "Data",
     "searchKey": "",

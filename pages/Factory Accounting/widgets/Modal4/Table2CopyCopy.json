@@ -200,6 +200,7 @@
     "rightColumn": 64,
     "textSize": "0.875rem",
     "widgetId": "l2s5abeg2x",
+    "enableServerSideFiltering": false,
     "minWidth": 450,
     "tableData": "{{Fetch_Data_Other_Prj_Det.data}}",
     "label": "Data",

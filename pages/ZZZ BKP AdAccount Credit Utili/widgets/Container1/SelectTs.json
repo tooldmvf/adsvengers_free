@@ -2,7 +2,10 @@
     "boxShadow": "none",
     "widgetName": "SelectTs",
     "isFilterable": true,
-    "dynamicPropertyPathList": [{"key": "onOptionChange"}],
+    "dynamicPropertyPathList": [
+        {"key": "onOptionChange"},
+        {"key": "sourceData"}
+    ],
     "displayName": "Select",
     "iconSVG": "/static/media/icon.bd99caba5853ad71e4b3d8daffacb3a2.svg",
     "labelText": "Traffic Source",
@@ -23,12 +26,12 @@
     "dynamicBindingPathList": [
         {"key": "accentColor"},
         {"key": "borderRadius"},
-        {"key": "options"}
+        {"key": "sourceData"}
     ],
     "labelPosition": "Left",
-    "options": "{{\nget_ts.data.map( \n \t(obj) =>{\n \t\treturn  {\n \t\t\t'value': obj.ts_id, \n \t\t\t'label': obj.ts_name \n \t\t} \n \t}\n )\n }}",
     "placeholderText": "Select option",
     "isDisabled": false,
+    "sourceData": "{{\nget_ts.data.map( \n \t(obj) =>{\n \t\treturn  {\n \t\t\t'value': obj.ts_id, \n \t\t\t'label': obj.ts_name \n \t\t} \n \t}\n )\n }}",
     "key": "7il0nkenmt",
     "labelTextSize": "0.875rem",
     "isRequired": true,
@@ -37,12 +40,14 @@
     "dynamicHeight": "AUTO_HEIGHT",
     "widgetId": "r75fn9dmdn",
     "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+    "optionValue": "value",
     "isVisible": true,
     "version": 1,
     "parentId": "y7bc0brmf3",
     "labelAlignment": "left",
     "renderMode": "CANVAS",
     "isLoading": false,
+    "optionLabel": "label",
     "originalTopRow": 5,
     "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
     "maxDynamicHeight": 9000,

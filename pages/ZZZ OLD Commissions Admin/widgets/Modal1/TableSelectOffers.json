@@ -63,7 +63,7 @@
         "offer_id",
         "offer_name"
     ],
-    "dynamicPropertyPathList": [],
+    "dynamicPropertyPathList": [{"key": "tableData"}],
     "compactMode": "SHORT",
     "displayName": "Table",
     "bottomRow": 67,
@@ -201,6 +201,7 @@
     "rightColumn": 64,
     "textSize": "0.875rem",
     "widgetId": "8fb2hoxrzf",
+    "enableServerSideFiltering": false,
     "tableData": "{{user_offers.data}}",
     "label": "Data",
     "searchKey": "",

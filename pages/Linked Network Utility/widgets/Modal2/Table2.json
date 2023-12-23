@@ -136,6 +136,7 @@
     "rightColumn": 64,
     "textSize": "0.875rem",
     "widgetId": "z5ou2xovgk",
+    "enableServerSideFiltering": false,
     "tableData": "",
     "label": "Data",
     "searchKey": "",

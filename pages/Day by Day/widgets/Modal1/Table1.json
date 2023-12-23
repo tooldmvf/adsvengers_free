@@ -270,6 +270,7 @@
     "rightColumn": 64,
     "textSize": "0.875rem",
     "widgetId": "b78j4q8kdy",
+    "enableServerSideFiltering": false,
     "tableData": "{{WhereRunned.data}}",
     "label": "Data",
     "searchKey": "",

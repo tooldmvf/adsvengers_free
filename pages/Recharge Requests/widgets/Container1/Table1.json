@@ -469,6 +469,7 @@
     "rightColumn": 64,
     "textSize": "0.875rem",
     "widgetId": "pkdtq8y5jo",
+    "enableServerSideFiltering": false,
     "tableData": "{{UsersLog.data}}",
     "label": "Data",
     "searchKey": "",

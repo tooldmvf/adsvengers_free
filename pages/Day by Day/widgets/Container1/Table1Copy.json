@@ -1286,6 +1286,7 @@
     "textSize": "0.875rem",
     "widgetId": "7ekz7fhe5n",
     "allowAddNewRow": false,
+    "enableServerSideFiltering": false,
     "tableData": "{{SelectFinancialCopy.data}}",
     "label": "Data",
     "searchKey": "",

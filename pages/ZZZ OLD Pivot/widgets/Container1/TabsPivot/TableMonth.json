@@ -107,7 +107,8 @@
         {"key": "primaryColumns.customColumn5.onClick"},
         {"key": "primaryColumns.customColumn6.onClick"},
         {"key": "primaryColumns.customColumn7.onClick"},
-        {"key": "primaryColumns.customColumn8.onClick"}
+        {"key": "primaryColumns.customColumn8.onClick"},
+        {"key": "tableData"}
     ],
     "compactMode": "SHORT",
     "displayName": "Table",
@@ -705,6 +706,7 @@
     "textSize": "0.875rem",
     "widgetId": "o7qx65mrti",
     "allowAddNewRow": false,
+    "enableServerSideFiltering": false,
     "tableData": "{{Tab1Month.data}}",
     "label": "Data",
     "searchKey": "",

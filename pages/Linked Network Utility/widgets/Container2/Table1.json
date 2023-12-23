@@ -404,6 +404,7 @@
     "textSize": "0.875rem",
     "widgetId": "ot0wzqzrnz",
     "allowAddNewRow": false,
+    "enableServerSideFiltering": false,
     "tableData": "{{get_user_network.data\n}}",
     "label": "Data",
     "searchKey": "",

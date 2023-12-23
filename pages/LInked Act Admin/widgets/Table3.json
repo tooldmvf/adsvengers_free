@@ -235,6 +235,7 @@
     "rightColumn": 64,
     "textSize": "0.875rem",
     "widgetId": "9lfjmhojai",
+    "enableServerSideFiltering": false,
     "minWidth": 450,
     "tableData": "{{fbAccountAllCopy.data}}",
     "label": "Data",

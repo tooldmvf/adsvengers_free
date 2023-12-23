@@ -3,7 +3,10 @@
     "widgetName": "SelectTSFront",
     "isFilterable": true,
     "allowSelectAll": true,
-    "dynamicPropertyPathList": [{"key": "onOptionChange"}],
+    "dynamicPropertyPathList": [
+        {"key": "onOptionChange"},
+        {"key": "sourceData"}
+    ],
     "displayName": "MultiSelect",
     "iconSVG": "/static/media/icon.a3495809ae48291a64404f3bb04b0e69.svg",
     "labelText": "Tr. Source",
@@ -29,13 +32,13 @@
     "dynamicBindingPathList": [
         {"key": "accentColor"},
         {"key": "borderRadius"},
-        {"key": "options"}
+        {"key": "sourceData"}
     ],
     "labelPosition": "Left",
     "onDropdownClose": "",
-    "options": "{{get_ts.data.map( (obj) => {return {'value': obj.ts_id, 'label':obj.ts_name}})}}",
     "placeholderText": "Select option(s)",
     "isDisabled": false,
+    "sourceData": "{{get_ts.data.map( (obj) => {return {'value': obj.ts_id, 'label':obj.ts_name}})}}",
     "key": "lkxp32394n",
     "labelTextSize": "0.875rem",
     "isRequired": false,
@@ -44,12 +47,14 @@
     "dynamicHeight": "FIXED",
     "widgetId": "94em4nctt2",
     "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+    "optionValue": "value",
     "isVisible": true,
     "version": 1,
     "parentId": "59rw5mx0bq",
     "labelAlignment": "right",
     "renderMode": "CANVAS",
     "isLoading": false,
+    "optionLabel": "label",
     "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
     "maxDynamicHeight": 9000,
     "onOptionChange": "{{(() => {\nTab4Offer.run();\n})()}}\t",

@@ -171,6 +171,7 @@
     "rightColumn": 28,
     "textSize": "0.875rem",
     "widgetId": "irgndjomcx",
+    "enableServerSideFiltering": false,
     "minWidth": 450,
     "tableData": "{{Fetch_Data_Rev_Ai20_Det.data}}",
     "label": "Data",

@@ -71,7 +71,7 @@
         "spent_rate_fees",
         "ts_name"
     ],
-    "dynamicPropertyPathList": [],
+    "dynamicPropertyPathList": [{"key": "tableData"}],
     "compactMode": "SHORT",
     "displayName": "Table",
     "bottomRow": 66,
@@ -326,6 +326,7 @@
     "rightColumn": 26,
     "textSize": "0.875rem",
     "widgetId": "lctj2md9lo",
+    "enableServerSideFiltering": false,
     "tableData": "{{fbAccountQuery.data}}",
     "label": "Data",
     "searchKey": "",

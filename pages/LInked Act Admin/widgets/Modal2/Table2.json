@@ -331,6 +331,7 @@
     "rightColumn": 64,
     "textSize": "0.875rem",
     "widgetId": "z5ou2xovgk",
+    "enableServerSideFiltering": false,
     "tableData": "{{fbAccountQuery.data}}",
     "label": "Data",
     "searchKey": "",

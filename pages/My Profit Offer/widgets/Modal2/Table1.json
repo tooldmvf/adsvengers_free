@@ -574,6 +574,7 @@
     "rightColumn": 64,
     "textSize": "0.875rem",
     "widgetId": "0t0ax1c53v",
+    "enableServerSideFiltering": false,
     "tableData": "{{Tab4OfferDayOffers.data}}",
     "label": "Data",
     "searchKey": "",

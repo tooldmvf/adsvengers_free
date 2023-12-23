@@ -650,6 +650,7 @@
     "rightColumn": 63,
     "textSize": "0.875rem",
     "widgetId": "yns2985vjp",
+    "enableServerSideFiltering": false,
     "minWidth": 450,
     "tableData": "{{Tab4Offer.data}}",
     "label": "Data",

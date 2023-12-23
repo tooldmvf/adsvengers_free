@@ -80,7 +80,10 @@
         "spent_rate_fees",
         "net_name_short"
     ],
-    "dynamicPropertyPathList": [{"key": "primaryColumns.customColumn4.onClick"}],
+    "dynamicPropertyPathList": [
+        {"key": "primaryColumns.customColumn4.onClick"},
+        {"key": "tableData"}
+    ],
     "compactMode": "SHORT",
     "displayName": "Table",
     "bottomRow": 104,
@@ -425,6 +428,7 @@
     "textSize": "0.875rem",
     "widgetId": "pdw4o56dq7",
     "allowAddNewRow": false,
+    "enableServerSideFiltering": false,
     "tableData": "{{Tab6TraffSource.data}}",
     "label": "Data",
     "searchKey": "",

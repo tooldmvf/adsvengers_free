@@ -243,6 +243,7 @@
     "rightColumn": 64,
     "textSize": "0.875rem",
     "widgetId": "0b0i74yhc3",
+    "enableServerSideFiltering": false,
     "minWidth": 450,
     "tableData": "{{Mbuyers.data}}",
     "label": "Data",

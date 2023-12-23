@@ -279,6 +279,7 @@
     "rightColumn": 64,
     "textSize": "0.875rem",
     "widgetId": "1r7h3uaxne",
+    "enableServerSideFiltering": false,
     "minWidth": 450,
     "tableData": "{{Fetch_Data_Spent.data}}",
     "label": "Data",

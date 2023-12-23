@@ -242,6 +242,7 @@
     "rightColumn": 64,
     "textSize": "0.875rem",
     "widgetId": "2dv43m3eem",
+    "enableServerSideFiltering": false,
     "minWidth": 450,
     "tableData": "{{user_commissions_FB.data}}",
     "label": "Data",

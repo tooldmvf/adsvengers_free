@@ -145,6 +145,7 @@
     "rightColumn": 64,
     "textSize": "0.875rem",
     "widgetId": "kdbs9ddb1q",
+    "enableServerSideFiltering": false,
     "minWidth": 450,
     "tableData": "{{Fetch_Data_Rev_Det.data}}",
     "label": "Data",

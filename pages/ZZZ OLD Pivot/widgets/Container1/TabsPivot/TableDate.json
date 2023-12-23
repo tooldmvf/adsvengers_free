@@ -95,7 +95,8 @@
     "dynamicPropertyPathList": [
         {"key": "primaryColumns.customColumn2.textColor"},
         {"key": "primaryColumns.customColumn3.textColor"},
-        {"key": "primaryColumns.customColumn4.onClick"}
+        {"key": "primaryColumns.customColumn4.onClick"},
+        {"key": "tableData"}
     ],
     "compactMode": "SHORT",
     "displayName": "Table",
@@ -583,6 +584,7 @@
     "textSize": "0.875rem",
     "widgetId": "xa52ngjeny",
     "allowAddNewRow": false,
+    "enableServerSideFiltering": false,
     "tableData": "{{Tab2Date.data}}",
     "label": "Data",
     "searchKey": "",

@@ -282,6 +282,7 @@
     "rightColumn": 63,
     "textSize": "0.875rem",
     "widgetId": "ot0wzqzrnz",
+    "enableServerSideFiltering": false,
     "tableData": "{{get_invoices.data\n}}",
     "label": "Data",
     "searchKey": "",

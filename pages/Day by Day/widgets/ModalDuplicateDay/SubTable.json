@@ -1113,6 +1113,7 @@
     "rightColumn": 64,
     "textSize": "0.875rem",
     "widgetId": "t9pww7avql",
+    "enableServerSideFiltering": false,
     "tableData": "{{Table1Copy.selectedRows}}",
     "label": "Data",
     "searchKey": "",

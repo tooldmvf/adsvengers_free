@@ -26,7 +26,10 @@
     "mobileBottomRow": 86,
     "widgetName": "SelectMonth",
     "isFilterable": true,
-    "dynamicPropertyPathList": [{"key": "onOptionChange"}],
+    "dynamicPropertyPathList": [
+        {"key": "onOptionChange"},
+        {"key": "sourceData"}
+    ],
     "displayName": "Select",
     "searchTags": ["dropdown"],
     "bottomRow": 5,

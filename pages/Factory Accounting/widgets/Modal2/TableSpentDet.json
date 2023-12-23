@@ -240,6 +240,7 @@
     "rightColumn": 64,
     "textSize": "0.875rem",
     "widgetId": "70awgdcada",
+    "enableServerSideFiltering": false,
     "minWidth": 450,
     "tableData": "{{Fetch_Data_Spent_Det.data}}",
     "label": "Data",

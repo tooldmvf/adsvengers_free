@@ -238,6 +238,7 @@
     "rightColumn": 64,
     "textSize": "0.875rem",
     "widgetId": "066gobijhi",
+    "enableServerSideFiltering": false,
     "minWidth": 450,
     "tableData": "{{Tab4Offer.data}}",
     "label": "Data",

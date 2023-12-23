@@ -82,7 +82,8 @@
         {"key": "primaryColumns.revenue.cellBackground"},
         {"key": "primaryColumns.profit.cellBackground"},
         {"key": "textSize"},
-        {"key": "primaryColumns.convs.cellBackground"}
+        {"key": "primaryColumns.convs.cellBackground"},
+        {"key": "tableData"}
     ],
     "compactMode": "DEFAULT",
     "displayName": "Table",
@@ -315,6 +316,7 @@
     "rightColumn": 64,
     "textSize": "0.8rem",
     "widgetId": "3g8awbvwgo",
+    "enableServerSideFiltering": false,
     "tableData": "{{SelectOFFERSUser.data}}",
     "label": "Data",
     "searchKey": "",

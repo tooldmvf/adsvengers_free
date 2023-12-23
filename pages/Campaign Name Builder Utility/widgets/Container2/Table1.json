@@ -335,6 +335,7 @@
     "rightColumn": 64,
     "textSize": "0.875rem",
     "widgetId": "q88jmcsygh",
+    "enableServerSideFiltering": false,
     "tableData": "{{get_user_offers_table.data}}",
     "label": "Data",
     "searchKey": "",

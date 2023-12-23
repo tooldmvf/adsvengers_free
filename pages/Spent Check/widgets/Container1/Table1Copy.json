@@ -276,6 +276,7 @@
     "rightColumn": 46,
     "textSize": "0.875rem",
     "widgetId": "r5ei445gx9",
+    "enableServerSideFiltering": false,
     "minWidth": 450,
     "tableData": "{{AdAccounts.data}}",
     "label": "Data",

@@ -13,9 +13,8 @@
     "dynamicBindingPathList": [
         {"key": "accentColor"},
         {"key": "borderRadius"},
-        {"key": "options"}
+        {"key": "sourceData"}
     ],
-    "options": "{{\nget_all_bm.data.filter(item => item.bm_name.includes( 'ouni') || item.bm_name.includes( 'White') || item.bm_name.includes( 'Factory') || item.bm_name.includes( 'Emtiger') || item.bm_name.includes( 'Dominus') ||  item.bm_name.includes( 'VAS') || \t\t\t\t\t\t\titem.bm_name.includes( 'Ai20')).map( \n \t(obj) =>{\n \t\treturn  {\n \t\t\t'value': obj.bm_id, \n \t\t\t'label': obj.bm_name \n \t\t} \n \t}\n )\n }}",
     "placeholderText": "Select option(s)",
     "isDisabled": false,
     "isRequired": false,
@@ -28,7 +27,10 @@
     "originalBottomRow": 5,
     "widgetName": "MultiSelectBM",
     "isFilterable": true,
-    "dynamicPropertyPathList": [{"key": "onOptionChange"}],
+    "dynamicPropertyPathList": [
+        {"key": "onOptionChange"},
+        {"key": "sourceData"}
+    ],
     "displayName": "MultiSelect",
     "searchTags": [
         "dropdown",
@@ -41,15 +43,18 @@
     "parentColumnSpace": 20.0625,
     "dynamicTriggerPathList": [{"key": "onOptionChange"}],
     "labelPosition": "Left",
+    "sourceData": "{{\nget_all_bm.data.filter(item => item.bm_name.includes( 'ouni') || item.bm_name.includes( 'White') || item.bm_name.includes( 'Factory') || item.bm_name.includes( 'Emtiger') || item.bm_name.includes( 'Dominus') ||  item.bm_name.includes( 'VAS') || \t\t\t\t\t\t\titem.bm_name.includes( 'Ai20')).map( \n \t(obj) =>{\n \t\treturn  {\n \t\t\t'value': obj.bm_id, \n \t\t\t'label': obj.bm_name \n \t\t} \n \t}\n )\n }}",
     "key": "mevudnrhcg",
     "labelTextSize": "0.875rem",
     "isDeprecated": false,
     "rightColumn": 64,
     "widgetId": "npq74hoyzc",
+    "optionValue": "value",
     "minWidth": 450,
     "parentId": "9n4813zity",
     "labelAlignment": "right",
     "renderMode": "CANVAS",
+    "optionLabel": "label",
     "responsiveBehavior": "fill",
     "originalTopRow": 1,
     "maxDynamicHeight": 9000,

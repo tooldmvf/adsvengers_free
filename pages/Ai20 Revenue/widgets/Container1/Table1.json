@@ -363,6 +363,7 @@
     "rightColumn": 64,
     "textSize": "0.875rem",
     "widgetId": "g1nofx7wss",
+    "enableServerSideFiltering": false,
     "minWidth": 450,
     "tableData": "{{MonthlyRev.data}}",
     "label": "Data",

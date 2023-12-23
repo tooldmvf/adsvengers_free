@@ -63,7 +63,7 @@
         "net_profit",
         "valu"
     ],
-    "dynamicPropertyPathList": [],
+    "dynamicPropertyPathList": [{"key": "tableData"}],
     "compactMode": "TALL",
     "displayName": "Table",
     "bottomRow": 42,
@@ -202,6 +202,7 @@
     "rightColumn": 42,
     "textSize": "1rem",
     "widgetId": "z9mg6yd2og",
+    "enableServerSideFiltering": false,
     "tableData": "{{user_commissions.data}}",
     "label": "Data",
     "searchKey": "",

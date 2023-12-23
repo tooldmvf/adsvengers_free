@@ -250,6 +250,7 @@
     "rightColumn": 26,
     "textSize": "0.875rem",
     "widgetId": "066gobijhi",
+    "enableServerSideFiltering": false,
     "minWidth": 450,
     "tableData": "{{BM.data}}",
     "label": "Data",
