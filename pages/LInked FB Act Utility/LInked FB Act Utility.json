@@ -13,13 +13,13 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 970,
+          "bottomRow": 890,
           "containerStyle": "none",
           "snapRows": 89,
           "parentRowSpace": 1,
           "type": "CANVAS_WIDGET",
           "canExtend": true,
-          "version": 86,
+          "version": 87,
           "minHeight": 900,
           "parentColumnSpace": 1,
           "dynamicBindingPathList": [],
@@ -37,37 +37,9 @@
                 "async () => {\n  if (!appsmith.URL.fullPath.includes('#access_token')) return;\n  appsmith.URL.fullPath.split('#')[1].split('&').forEach(i => {\n    const [key, value] = i.split('=');\n    if (key == 'provider_token') storeValue(key, value);\n  });\n}"
               ],
               "timeoutInMillisecond": 10000
-            },
-            {
-              "id": "LInked FB Act Utility_get_all_users",
-              "name": "get_all_users",
-              "confirmBeforeExecute": false,
-              "pluginType": "API",
-              "jsonPathKeys": [
-                "appsmith.store.access_token"
-              ],
-              "timeoutInMillisecond": 10000
-            },
-            {
-              "id": "LInked FB Act Utility_get_fb_token",
-              "name": "get_fb_token",
-              "confirmBeforeExecute": false,
-              "pluginType": "API",
-              "jsonPathKeys": [
-                "appsmith.store.access_token"
-              ],
-              "timeoutInMillisecond": 10000
-            },
-            {
-              "id": "LInked FB Act Utility_get_ts",
-              "name": "get_ts",
-              "confirmBeforeExecute": false,
-              "pluginType": "API",
-              "jsonPathKeys": [
-                "appsmith.store.access_token"
-              ],
-              "timeoutInMillisecond": 10000
-            },
+            }
+          ],
+          [
             {
               "id": "LInked FB Act Utility_js_logout.check_login",
               "name": "js_logout.check_login",
@@ -88,6 +60,38 @@
               "pluginType": "DB",
               "jsonPathKeys": [
                 "SelectUserFBPage?.selectedOptionValue || appsmith.store.myUser"
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "LInked FB Act Utility_get_fb_token",
+              "name": "get_fb_token",
+              "confirmBeforeExecute": false,
+              "pluginType": "API",
+              "jsonPathKeys": [
+                "appsmith.store.access_token"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
+              "id": "LInked FB Act Utility_get_all_users",
+              "name": "get_all_users",
+              "confirmBeforeExecute": false,
+              "pluginType": "API",
+              "jsonPathKeys": [
+                "appsmith.store.access_token"
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "LInked FB Act Utility_get_ts",
+              "name": "get_ts",
+              "confirmBeforeExecute": false,
+              "pluginType": "API",
+              "jsonPathKeys": [
+                "appsmith.store.access_token"
               ],
               "timeoutInMillisecond": 10000
             }
