@@ -1,7 +1,7 @@
 {
     "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
     "widgetName": "Container17",
-    "borderColor": "#E0DEDE",
+    "borderColor": "transparent",
     "isCanvas": true,
     "displayName": "Container",
     "iconSVG": "/static/media/icon.1977dca3370505e2db3a8e44cfd54907.svg",
