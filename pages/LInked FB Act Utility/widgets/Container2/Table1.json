@@ -61,7 +61,7 @@
         }
     },
     "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-    "originalBottomRow": 71,
+    "originalBottomRow": 73,
     "columnUpdatedAt": 1684426855523,
     "primaryColumnId": "bm_id",
     "defaultSelectedRowIndices": [0],
@@ -418,7 +418,7 @@
     "renderMode": "CANVAS",
     "horizontalAlignment": "LEFT",
     "isVisibleSearch": true,
-    "originalTopRow": 6,
+    "originalTopRow": 8,
     "isVisiblePagination": true,
     "verticalAlignment": "CENTER"
 }
