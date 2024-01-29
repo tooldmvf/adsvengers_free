@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 1720,
+          "bottomRow": 1800,
           "containerStyle": "none",
           "snapRows": 125,
           "parentRowSpace": 1,
@@ -49,6 +49,22 @@
               "pluginType": "JS",
               "jsonPathKeys": [
                 "async () => {\n  if (!appsmith.store.access_token) navigateTo('Login');\n}"
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "Dashboard_user_financialNetworkMbs",
+              "name": "user_financialNetworkMbs",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "SelectTSFront.selectedOptionValues.length == 0",
+                "appsmith.store.myUser",
+                "\"'\" + MultiSelectUsers.selectedOptionValues.join(\"', '\") + \"'\"",
+                "moment(DateTo.selectedDate).format('YYYY-DD-MM')",
+                "moment(DateFrom.selectedDate).format('YYYY-DD-MM')",
+                "Table1.triggeredRow.network_id",
+                "\"'\" + SelectTSFront.selectedOptionValues.join(\"', '\") + \"'\""
               ],
               "timeoutInMillisecond": 10000
             }
