@@ -299,7 +299,7 @@
         },
         "customColumn3": {
             "computedValue": "",
-            "onClick": "{{showModal('Modal1');}}",
+            "onClick": "{{showModal('Modal1').then(() => {\n  user_financialNetworkMbs.run();\n});}}",
             "isEditable": false,
             "notation": "standard",
             "alias": "MBs",
