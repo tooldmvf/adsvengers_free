@@ -29,7 +29,7 @@
     "text": "{{MultiSelectUsers.selectedOptionLabels.length == 1 ? MultiSelectUsers.selectedOptionLabels[0]: 'Team'}}",
     "key": "czi7sw6u7v",
     "isDeprecated": false,
-    "rightColumn": 18,
+    "rightColumn": 20,
     "textAlign": "LEFT",
     "dynamicHeight": "FIXED",
     "widgetId": "cvy1pzn73s",
