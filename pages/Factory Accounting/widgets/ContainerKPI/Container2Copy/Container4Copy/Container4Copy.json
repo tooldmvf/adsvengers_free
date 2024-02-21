@@ -11,8 +11,8 @@
         "parent",
         "group"
     ],
-    "topRow": 5,
-    "bottomRow": 23,
+    "topRow": 4,
+    "bottomRow": 22,
     "parentRowSpace": 10,
     "type": "CONTAINER_WIDGET",
     "hideCard": false,
