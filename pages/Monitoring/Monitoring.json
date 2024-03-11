@@ -20,7 +20,7 @@
           "parentRowSpace": 1,
           "type": "CANVAS_WIDGET",
           "canExtend": true,
-          "version": 87,
+          "version": 89,
           "minHeight": 900,
           "parentColumnSpace": 1,
           "dynamicTriggerPathList": [],
@@ -51,7 +51,9 @@
                 "async () => {\n  storeValue('row_selected', -1);\n  await get_all_users.run();\n  await SelectFinancialTot.run();\n  await SelectOFFERSUser.run();\n  await SelectUSERS.run();\n}"
               ],
               "timeoutInMillisecond": 10000
-            },
+            }
+          ],
+          [
             {
               "id": "Monitoring_js_logout.check_login",
               "name": "js_logout.check_login",
