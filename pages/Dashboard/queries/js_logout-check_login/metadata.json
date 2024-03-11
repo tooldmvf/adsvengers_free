@@ -35,7 +35,8 @@
     "userSetOnLoad": true,
     "confirmBeforeExecute": false,
     "policies": [],
-    "userPermissions": []
+    "userPermissions": [],
+    "createdAt": "2023-06-27T15:08:45Z"
   },
   "id": "Dashboard_js_logout.check_login",
   "deleted": false,

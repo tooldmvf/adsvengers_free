@@ -48,7 +48,8 @@
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
-    "userPermissions": []
+    "userPermissions": [],
+    "createdAt": "2023-05-16T07:33:33Z"
   },
   "id": "Dashboard_user_financial_trend",
   "deleted": false,
