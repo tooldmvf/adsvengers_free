@@ -49,7 +49,8 @@
     "userSetOnLoad": true,
     "confirmBeforeExecute": false,
     "policies": [],
-    "userPermissions": []
+    "userPermissions": [],
+    "createdAt": "2023-05-16T07:33:34Z"
   },
   "id": "Spent Check_BMTOT",
   "deleted": false,

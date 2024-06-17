@@ -72,7 +72,8 @@
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
-    "userPermissions": []
+    "userPermissions": [],
+    "createdAt": "2023-05-28T05:40:26Z"
   },
   "id": "User Accounting_save_monthly_data",
   "deleted": false,

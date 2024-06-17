@@ -43,7 +43,8 @@
     "userSetOnLoad": true,
     "confirmBeforeExecute": false,
     "policies": [],
-    "userPermissions": []
+    "userPermissions": [],
+    "createdAt": "2023-05-29T16:36:36Z"
   },
   "id": "User Comm Trend Admin_Fetch_Data_Graphs",
   "deleted": false,

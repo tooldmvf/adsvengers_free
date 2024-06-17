@@ -46,7 +46,8 @@
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
-    "userPermissions": []
+    "userPermissions": [],
+    "createdAt": "2023-07-26T07:22:22Z"
   },
   "id": "Offers Success_Tab4OfferCopy",
   "deleted": false,

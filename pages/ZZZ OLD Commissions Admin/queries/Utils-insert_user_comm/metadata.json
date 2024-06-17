@@ -35,7 +35,8 @@
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
-    "userPermissions": []
+    "userPermissions": [],
+    "createdAt": "2023-05-25T12:27:36Z"
   },
   "id": "ZZZ OLD Commissions Admin_Utils.insert_user_comm",
   "deleted": false,

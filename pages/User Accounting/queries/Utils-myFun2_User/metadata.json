@@ -39,7 +39,8 @@
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
-    "userPermissions": []
+    "userPermissions": [],
+    "createdAt": "2023-07-21T12:46:16Z"
   },
   "id": "User Accounting_Utils.myFun2_User",
   "deleted": false,

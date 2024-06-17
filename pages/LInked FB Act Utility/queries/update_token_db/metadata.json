@@ -67,7 +67,8 @@
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
-    "userPermissions": []
+    "userPermissions": [],
+    "createdAt": "2023-05-18T16:19:41Z"
   },
   "id": "LInked FB Act Utility_update_token_db",
   "deleted": false,

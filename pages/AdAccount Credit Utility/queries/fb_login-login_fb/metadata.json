@@ -35,7 +35,8 @@
     "userSetOnLoad": true,
     "confirmBeforeExecute": false,
     "policies": [],
-    "userPermissions": []
+    "userPermissions": [],
+    "createdAt": "2023-05-16T07:33:33Z"
   },
   "id": "AdAccount Credit Utility_fb_login.login_fb",
   "deleted": false,

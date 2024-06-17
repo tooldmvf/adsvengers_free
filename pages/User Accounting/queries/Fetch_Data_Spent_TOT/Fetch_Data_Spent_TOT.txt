@@ -4,5 +4,5 @@ inner join public.facebook_bm b on (b.bm_id = a.fk_bm_id)
 where 1=1
 and ({{!SelectUser.selectedOptionValue}} OR (text(a.fk_user_id) IN ({{"'" + SelectUser.selectedOptionValue + "'"}})))
 AND a.financial_month = '{{SelectYear.selectedOptionValue}}{{SelectMonth.selectedOptionValue}}'
-and fk_bm_id NOT in ('Ai20-Google','377343377466914','6216057845181337','6418069741610431')
+and fk_bm_id NOT in ('Ai20-Google','377343377466914','6216057845181337','6418069741610431','720611199824998')
 group by a.spent_rate_fees 

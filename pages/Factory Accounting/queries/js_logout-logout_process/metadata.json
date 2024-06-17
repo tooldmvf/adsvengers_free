@@ -36,7 +36,8 @@
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
-    "userPermissions": []
+    "userPermissions": [],
+    "createdAt": "2023-07-21T04:51:12Z"
   },
   "id": "Factory Accounting_js_logout.logout_process",
   "deleted": false,

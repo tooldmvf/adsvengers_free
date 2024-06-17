@@ -67,7 +67,8 @@
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
-    "userPermissions": []
+    "userPermissions": [],
+    "createdAt": "2023-07-26T07:15:20Z"
   },
   "id": "Offers Success_refresh_token",
   "deleted": false,

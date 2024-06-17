@@ -35,7 +35,8 @@
     "userSetOnLoad": true,
     "confirmBeforeExecute": false,
     "policies": [],
-    "userPermissions": []
+    "userPermissions": [],
+    "createdAt": "2023-06-27T15:24:00Z"
   },
   "id": "Campaign Name Builder Utility_js_logout.check_login",
   "deleted": false,

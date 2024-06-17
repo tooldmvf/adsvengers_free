@@ -92,7 +92,8 @@
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
-    "userPermissions": []
+    "userPermissions": [],
+    "createdAt": "2023-05-27T06:22:42Z"
   },
   "id": "User Accounting_Save_Data_Rev",
   "deleted": false,

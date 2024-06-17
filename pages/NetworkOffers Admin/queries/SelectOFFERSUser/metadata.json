@@ -49,7 +49,8 @@
     "userSetOnLoad": true,
     "confirmBeforeExecute": false,
     "policies": [],
-    "userPermissions": []
+    "userPermissions": [],
+    "createdAt": "2023-06-06T09:37:06Z"
   },
   "id": "NetworkOffers Admin_SelectOFFERSUser",
   "deleted": false,

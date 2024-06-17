@@ -52,7 +52,8 @@
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
-    "userPermissions": []
+    "userPermissions": [],
+    "createdAt": "2023-07-21T04:51:12Z"
   },
   "id": "Factory Accounting_logout",
   "deleted": false,

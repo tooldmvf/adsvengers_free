@@ -87,7 +87,8 @@
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
-    "userPermissions": []
+    "userPermissions": [],
+    "createdAt": "2023-05-28T06:21:09Z"
   },
   "id": "User Accounting_Save_Data_Ai20",
   "deleted": false,

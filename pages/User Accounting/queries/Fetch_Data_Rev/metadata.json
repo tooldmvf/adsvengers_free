@@ -44,7 +44,8 @@
     "userSetOnLoad": true,
     "confirmBeforeExecute": false,
     "policies": [],
-    "userPermissions": []
+    "userPermissions": [],
+    "createdAt": "2023-05-27T05:29:56Z"
   },
   "id": "User Accounting_Fetch_Data_Rev",
   "deleted": false,

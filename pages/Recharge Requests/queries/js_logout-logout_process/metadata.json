@@ -36,7 +36,8 @@
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
-    "userPermissions": []
+    "userPermissions": [],
+    "createdAt": "2023-05-16T07:33:34Z"
   },
   "id": "Recharge Requests_js_logout.logout_process",
   "deleted": false,

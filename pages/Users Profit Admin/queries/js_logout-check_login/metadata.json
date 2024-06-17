@@ -35,7 +35,8 @@
     "userSetOnLoad": true,
     "confirmBeforeExecute": false,
     "policies": [],
-    "userPermissions": []
+    "userPermissions": [],
+    "createdAt": "2023-06-27T15:20:15Z"
   },
   "id": "Users Profit Admin_js_logout.check_login",
   "deleted": false,

@@ -42,7 +42,8 @@
     "userSetOnLoad": true,
     "confirmBeforeExecute": false,
     "policies": [],
-    "userPermissions": []
+    "userPermissions": [],
+    "createdAt": "2023-07-21T04:51:12Z"
   },
   "id": "Factory Accounting_Fetch_Data_Other_Prj",
   "deleted": false,

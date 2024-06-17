@@ -39,7 +39,8 @@
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
-    "userPermissions": []
+    "userPermissions": [],
+    "createdAt": "2023-06-24T08:13:12Z"
   },
   "id": "Manager Accounting_Utils.myCurrency",
   "deleted": false,

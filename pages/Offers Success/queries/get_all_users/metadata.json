@@ -59,7 +59,8 @@
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
-    "userPermissions": []
+    "userPermissions": [],
+    "createdAt": "2023-07-26T07:15:20Z"
   },
   "id": "Offers Success_get_all_users",
   "deleted": false,

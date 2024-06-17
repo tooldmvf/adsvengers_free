@@ -35,7 +35,8 @@
     "userSetOnLoad": true,
     "confirmBeforeExecute": false,
     "policies": [],
-    "userPermissions": []
+    "userPermissions": [],
+    "createdAt": "2023-06-27T15:23:46Z"
   },
   "id": "AdAccount Credit Utility_js_logout.check_login",
   "deleted": false,

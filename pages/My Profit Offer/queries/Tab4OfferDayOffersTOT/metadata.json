@@ -48,7 +48,8 @@
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
-    "userPermissions": []
+    "userPermissions": [],
+    "createdAt": "2023-05-23T10:37:45Z"
   },
   "id": "My Profit Offer_Tab4OfferDayOffersTOT",
   "deleted": false,

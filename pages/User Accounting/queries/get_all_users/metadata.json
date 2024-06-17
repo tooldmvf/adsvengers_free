@@ -59,7 +59,8 @@
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
-    "userPermissions": []
+    "userPermissions": [],
+    "createdAt": "2023-05-27T17:20:38Z"
   },
   "id": "User Accounting_get_all_users",
   "deleted": false,

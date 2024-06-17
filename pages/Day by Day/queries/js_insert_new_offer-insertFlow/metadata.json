@@ -36,7 +36,8 @@
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
-    "userPermissions": []
+    "userPermissions": [],
+    "createdAt": "2023-05-16T07:33:33Z"
   },
   "id": "Day by Day_js_insert_new_offer.insertFlow",
   "deleted": false,

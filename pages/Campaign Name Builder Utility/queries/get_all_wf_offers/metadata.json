@@ -42,7 +42,8 @@
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
-    "userPermissions": []
+    "userPermissions": [],
+    "createdAt": "2023-05-16T07:33:33Z"
   },
   "id": "Campaign Name Builder Utility_get_all_wf_offers",
   "deleted": false,

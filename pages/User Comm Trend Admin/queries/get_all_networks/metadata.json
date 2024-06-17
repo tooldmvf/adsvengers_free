@@ -55,7 +55,8 @@
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
-    "userPermissions": []
+    "userPermissions": [],
+    "createdAt": "2023-05-28T05:19:10Z"
   },
   "id": "User Comm Trend Admin_get_all_networks",
   "deleted": false,
