@@ -5,7 +5,7 @@
     "widgetName": "Button1",
     "onClick": "{{update_token_db.run().then(() => {\n  get_fb_token.run();\n});}}",
     "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
-    "dynamicPropertyPathList": [],
+    "dynamicPropertyPathList": [{"key": "isDisabled"}],
     "displayName": "Button",
     "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
     "searchTags": [
@@ -24,10 +24,11 @@
     "leftColumn": 57,
     "dynamicBindingPathList": [
         {"key": "buttonColor"},
-        {"key": "borderRadius"}
+        {"key": "borderRadius"},
+        {"key": "isDisabled"}
     ],
     "text": "Submit",
-    "isDisabled": false,
+    "isDisabled": "{{fbToken.text.length == 0}}",
     "key": "19rfhalc6u",
     "isDeprecated": false,
     "rightColumn": 64,
