@@ -9,7 +9,7 @@
     "serverSideFiltering": false,
     "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( appsmith.store?.myUsers || appsmith.store.myUser))(MultiSelectUsers.options, MultiSelectUsers.serverSideFiltering) }}",
     "animateLoading": true,
-    "leftColumn": 37,
+    "leftColumn": 28,
     "dynamicBindingPathList": [
         {"key": "accentColor"},
         {"key": "borderRadius"},
@@ -50,7 +50,7 @@
     "key": "rofw0ymfke",
     "labelTextSize": "0.875rem",
     "isDeprecated": false,
-    "rightColumn": 53,
+    "rightColumn": 45,
     "widgetId": "vgpmdesn0s",
     "optionValue": "value",
     "parentId": "9n4813zity",

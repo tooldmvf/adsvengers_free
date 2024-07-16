@@ -70,6 +70,33 @@
               ],
               "timeoutInMillisecond": 10000
             }
+          ],
+          [
+            {
+              "id": "Campaign Name Builder Utility_get_user_networks",
+              "name": "get_user_networks",
+              "confirmBeforeExecute": false,
+              "pluginType": "API",
+              "jsonPathKeys": [
+                "appsmith.store.access_token",
+                "MultiSelectUsers.selectedOptionValues.toString()",
+                "SelectNetworkCopy.selectedOptionValue"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
+              "id": "Campaign Name Builder Utility_get_offer_net_cut",
+              "name": "get_offer_net_cut",
+              "confirmBeforeExecute": false,
+              "pluginType": "API",
+              "jsonPathKeys": [
+                "get_user_networks.data[0].user_network_id",
+                "appsmith.store.access_token"
+              ],
+              "timeoutInMillisecond": 10000
+            }
           ]
         ],
         "layoutOnLoadActionErrors": [],

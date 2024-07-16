@@ -77,7 +77,7 @@
     ],
     "compactMode": "SHORT",
     "displayName": "Table",
-    "bottomRow": 77,
+    "bottomRow": 80,
     "columnWidthMap": {
         "task": 245,
         "step": 62,
