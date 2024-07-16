@@ -4,6 +4,7 @@
     "widgetName": "Button2",
     "onClick": "{{showModal(Modal2.name);}}",
     "buttonColor": "#a16207",
+    "dynamicPropertyPathList": [{"key": "isDisabled"}],
     "displayName": "Button",
     "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
     "searchTags": [
@@ -19,9 +20,12 @@
     "parentColumnSpace": 17.5556640625,
     "dynamicTriggerPathList": [{"key": "onClick"}],
     "leftColumn": 55,
-    "dynamicBindingPathList": [{"key": "borderRadius"}],
+    "dynamicBindingPathList": [
+        {"key": "borderRadius"},
+        {"key": "isDisabled"}
+    ],
     "text": "Set Offer Cut",
-    "isDisabled": false,
+    "isDisabled": "{{MultiSelectUsers.selectedOptionValues.length != 1}}",
     "key": "i64rfcqlvd",
     "isDeprecated": false,
     "rightColumn": 64,

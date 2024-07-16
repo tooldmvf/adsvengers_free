@@ -50,7 +50,7 @@
           "value": "eq.{{get_user_networks.data[0].user_network_id}}"
         }
       ],
-      "body": "{ \"offer_cut\": \"{{InputCut.text}}\" }",
+      "body": "{ \"offer_cut\": \"{{100 - InputCut.text}}\" }",
       "httpMethod": "PATCH",
       "selfReferencingDataPaths": [],
       "formData": {
@@ -76,7 +76,7 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "InputCut.text",
+      "100 - InputCut.text",
       "OfferSelCopy.selectedOptionValue",
       "appsmith.store.access_token",
       "get_user_networks.data[0].user_network_id"

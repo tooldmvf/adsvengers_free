@@ -74,7 +74,7 @@
         }
     },
     "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-    "columnUpdatedAt": 1721121912746,
+    "columnUpdatedAt": 1721136365029,
     "originalBottomRow": 210,
     "defaultSelectedRowIndices": [0],
     "widgetName": "TableOffers",
@@ -87,12 +87,12 @@
         "Tot_ROI",
         "CPA",
         "tot_conv",
-        "offer_cut",
         "offer_id",
         "row_color",
         "offer",
         "Appr_ROI",
-        "network_name_short"
+        "network_name_short",
+        "offer_cut"
     ],
     "dynamicPropertyPathList": [
         {"key": "onRowSelected"},

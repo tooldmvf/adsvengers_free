@@ -1,1 +1,1 @@
-{ "offer_cut": "{{InputCut.text}}" }
+{ "offer_cut": "{{100 - InputCut.text}}" }

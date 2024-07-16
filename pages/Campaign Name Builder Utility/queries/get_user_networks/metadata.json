@@ -46,7 +46,7 @@
         "apiContentType": "application/x-www-form-urlencoded"
       }
     },
-    "executeOnLoad": true,
+    "executeOnLoad": false,
     "dynamicBindingPathList": [
       {
         "key": "headers[0].value"
@@ -66,7 +66,7 @@
       "SelectNetworkCopy.selectedOptionValue",
       "appsmith.store.access_token"
     ],
-    "userSetOnLoad": false,
+    "userSetOnLoad": true,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": [],
