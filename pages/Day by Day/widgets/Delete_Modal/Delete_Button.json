@@ -1,28 +1,40 @@
 {
-    "boxShadow": "none",
-    "widgetName": "Delete_Button",
-    "onClick": "{{delete_user_financial.run(() => SelectFinancialCopy.run(() => closeModal('Delete_Modal')), () => {})}}",
-    "dynamicPropertyPathList": [{"key": "onClick"}],
-    "buttonColor": "#DD4B34",
-    "topRow": 13,
-    "bottomRow": 17,
-    "type": "BUTTON_WIDGET",
-    "dynamicTriggerPathList": [{"key": "onClick"}],
-    "leftColumn": 18,
-    "dynamicBindingPathList": [{"key": "borderRadius"}],
-    "text": "Confirm",
-    "isDisabled": false,
-    "labelTextSize": "0.875rem",
-    "rightColumn": 64,
-    "isDefaultClickDisabled": true,
-    "widgetId": "qq02lh7ust",
-    "isVisible": "true",
-    "version": 1,
-    "recaptchaType": "V3",
-    "parentId": "zi8fjakv8o",
-    "isLoading": false,
-    "originalTopRow": 14,
-    "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-    "originalBottomRow": 18,
-    "buttonVariant": "PRIMARY"
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 17,
+  "boxShadow": "none",
+  "buttonColor": "#DD4B34",
+  "buttonVariant": "PRIMARY",
+  "dynamicBindingPathList": [
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "isDefaultClickDisabled": true,
+  "isDisabled": false,
+  "isLoading": false,
+  "isVisible": "true",
+  "labelTextSize": "0.875rem",
+  "leftColumn": 18,
+  "onClick": "{{delete_user_financial.run(() => SelectFinancialCopy.run(() => closeModal('Delete_Modal')), () => {})}}",
+  "originalBottomRow": 18,
+  "originalTopRow": 14,
+  "parentId": "zi8fjakv8o",
+  "recaptchaType": "V3",
+  "rightColumn": 64,
+  "text": "Confirm",
+  "topRow": 13,
+  "type": "BUTTON_WIDGET",
+  "version": 1,
+  "widgetId": "qq02lh7ust",
+  "widgetName": "Delete_Button"
 }

@@ -1,55 +1,69 @@
 {
-    "mobileBottomRow": 13,
-    "widgetName": "Ai20Google",
-    "dynamicPropertyPathList": [{"key": "textColor"}],
-    "displayName": "Text",
-    "iconSVG": "/static/media/icon.97c59b523e6f70ba6f40a10fc2c7c5b5.svg",
-    "searchTags": [
-        "typography",
-        "paragraph",
-        "label"
-    ],
-    "topRow": 37,
-    "bottomRow": 41,
-    "parentRowSpace": 10,
-    "type": "TEXT_WIDGET",
-    "hideCard": false,
-    "mobileRightColumn": 16,
-    "animateLoading": true,
-    "overflow": "NONE",
-    "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
-    "parentColumnSpace": 6.767578125,
-    "dynamicTriggerPathList": [],
-    "leftColumn": 34,
-    "dynamicBindingPathList": [
-        {"key": "truncateButtonColor"},
-        {"key": "fontFamily"},
-        {"key": "borderRadius"},
-        {"key": "text"},
-        {"key": "textColor"}
-    ],
-    "shouldTruncate": false,
-    "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-    "text": "{{Number(ProfitGooAi20.text.replace(/[^0-9.-]+/g,\"\")) >=0 ? ProfitGooAi20.text :  '\u20ac0.00'}}",
-    "key": "k0zn3vv2el",
-    "isDeprecated": false,
-    "rightColumn": 62,
-    "textAlign": "RIGHT",
-    "dynamicHeight": "FIXED",
-    "widgetId": "vft5kdy43e",
-    "minWidth": 450,
-    "isVisible": true,
-    "fontStyle": "BOLD",
-    "textColor": "{{Number(Ai20Google.text.replace(/[^0-9.-]+/g,\"\")) >=0 ? 'green' : 'red'}}",
-    "version": 1,
-    "parentId": "lvya69kw4u",
-    "renderMode": "CANVAS",
-    "isLoading": false,
-    "mobileTopRow": 9,
-    "responsiveBehavior": "fill",
-    "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-    "mobileLeftColumn": 0,
-    "maxDynamicHeight": 9000,
-    "fontSize": "0.875rem",
-    "minDynamicHeight": 4
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 41,
+  "displayName": "Text",
+  "dynamicBindingPathList": [
+    {
+      "key": "truncateButtonColor"
+    },
+    {
+      "key": "fontFamily"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "text"
+    },
+    {
+      "key": "textColor"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "textColor"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
+  "fontSize": "0.875rem",
+  "fontStyle": "BOLD",
+  "hideCard": false,
+  "iconSVG": "/static/media/icon.97c59b523e6f70ba6f40a10fc2c7c5b5.svg",
+  "isDeprecated": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "k0zn3vv2el",
+  "leftColumn": 34,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 13,
+  "mobileLeftColumn": 0,
+  "mobileRightColumn": 16,
+  "mobileTopRow": 9,
+  "overflow": "NONE",
+  "parentColumnSpace": 6.767578125,
+  "parentId": "lvya69kw4u",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 62,
+  "searchTags": [
+    "typography",
+    "paragraph",
+    "label"
+  ],
+  "shouldTruncate": false,
+  "text": "{{Number(ProfitGooAi20.text.replace(/[^0-9.-]+/g,\"\")) >=0 ? ProfitGooAi20.text :  '€0.00'}}",
+  "textAlign": "RIGHT",
+  "textColor": "{{Number(Ai20Google.text.replace(/[^0-9.-]+/g,\"\")) >=0 ? 'green' : 'red'}}",
+  "topRow": 37,
+  "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
+  "type": "TEXT_WIDGET",
+  "version": 1,
+  "widgetId": "vft5kdy43e",
+  "widgetName": "Ai20Google"
 }

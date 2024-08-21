@@ -1,89 +1,34 @@
 {
+  "gitSyncId": "63c3151532584b547fffe91b_640a19c19c8aee70a44687e9",
   "unpublishedPage": {
-    "name": "My Profit Offer",
-    "slug": "my-profit-offer",
     "customSlug": "",
+    "isHidden": true,
     "layouts": [
       {
-        "viewMode": false,
         "dsl": {
-          "widgetName": "MainContainer",
           "backgroundColor": "none",
-          "rightColumn": 1174,
-          "snapColumns": 64,
-          "detachFromLayout": true,
-          "widgetId": "0",
-          "topRow": 0,
           "bottomRow": 1910,
-          "containerStyle": "none",
-          "snapRows": 125,
-          "parentRowSpace": 1,
-          "type": "CANVAS_WIDGET",
           "canExtend": true,
-          "version": 89,
+          "containerStyle": "none",
+          "detachFromLayout": true,
+          "dynamicBindingPathList": [],
+          "dynamicTriggerPathList": [],
+          "leftColumn": 0,
           "minHeight": 900,
           "parentColumnSpace": 1,
-          "dynamicTriggerPathList": [],
-          "dynamicBindingPathList": [],
-          "leftColumn": 0
-        },
-        "layoutOnLoadActions": [
-          [
-            {
-              "id": "My Profit Offer_Utils2.onLoadPage",
-              "name": "Utils2.onLoadPage",
-              "collectionId": "My Profit Offer_Utils2",
-              "confirmBeforeExecute": false,
-              "pluginType": "JS",
-              "jsonPathKeys": [
-                "async () => {\n  await get_all_users.run();\n  await TotalLine.run();\n  await Tab4OfferDay.run();\n  SelectFinancial.run();\n  get_all_networks.run();\n  get_ts.run();\n}"
-              ],
-              "timeoutInMillisecond": 10000
-            },
-            {
-              "id": "My Profit Offer_js_logout.check_login",
-              "name": "js_logout.check_login",
-              "collectionId": "My Profit Offer_js_logout",
-              "confirmBeforeExecute": false,
-              "pluginType": "JS",
-              "jsonPathKeys": [
-                "async () => {\n  if (!appsmith.store.access_token) navigateTo('Login');\n}"
-              ],
-              "timeoutInMillisecond": 10000
-            }
-          ],
-          [
-            {
-              "id": "My Profit Offer_Tab4OfferDayOffersTOT",
-              "name": "Tab4OfferDayOffersTOT",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [
-                "!SelectNetwork.selectedOptionValue",
-                "SelectTSFront.selectedOptionValues.length == 0",
-                " !SelectUserFBPage.selectedOptionValue",
-                "SelectNetwork.selectedOptionValue",
-                "moment(DateTo.selectedDate).format('YYYY-DD-MM')",
-                "moment(DateFrom.selectedDate).format('YYYY-DD-MM')",
-                "SelectUserFBPage.selectedOptionValue",
-                "\"'\" + SelectTSFront.selectedOptionValues.join(\"', '\") + \"'\""
-              ],
-              "timeoutInMillisecond": 10000
-            }
-          ]
-        ],
-        "layoutOnLoadActionErrors": [],
-        "validOnPageLoadActions": true,
-        "id": "My Profit Offer",
-        "deleted": false,
-        "policies": [],
-        "userPermissions": []
+          "parentRowSpace": 1,
+          "rightColumn": 1174,
+          "snapColumns": 64,
+          "snapRows": 125,
+          "topRow": 0,
+          "type": "CANVAS_WIDGET",
+          "version": 89,
+          "widgetId": "0",
+          "widgetName": "MainContainer"
+        }
       }
     ],
-    "userPermissions": [],
-    "policies": [],
-    "isHidden": true
-  },
-  "deleted": false,
-  "gitSyncId": "63c3151532584b547fffe91b_640a19c19c8aee70a44687e9"
+    "name": "My Profit Offer",
+    "slug": "my-profit-offer"
+  }
 }

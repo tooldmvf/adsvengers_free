@@ -1,91 +1,117 @@
 {
-    "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
-    "currentItemsView": "{{[]}}",
-    "triggeredItemView": "{{{}}}",
-    "widgetName": "List2",
-    "requiresFlatWidgetChildren": true,
-    "isCanvas": true,
-    "listData": "{{Tab4Offer.data}}",
-    "dynamicPropertyPathList": [{"key": "primaryKeys"}],
-    "iconSVG": "/static/media/icon.9925ee17dee37bf1ba7374412563a8a7.svg",
-    "displayName": "List",
-    "topRow": 13,
-    "bottomRow": 81,
-    "pageSize": 10,
-    "parentRowSpace": 10,
-    "type": "LIST_WIDGET_V2",
-    "itemSpacing": 8,
-    "hideCard": false,
-    "templateBottomRow": 16,
-    "mainContainerId": "jlhu4px03g",
-    "animateLoading": true,
-    "primaryKeys": "{{List2.listData.map((currentItem, currentIndex) =>`[` + currentItem.network_other_name + ` - ` + currentItem.off_cat_name + `] #` + currentItem.offer_id + ` - ` + currentItem.offer_name)}}",
-    "parentColumnSpace": 20.0625,
-    "dynamicTriggerPathList": [{"key": "onItemClick"}],
-    "dynamicBindingPathList": [
-        {"key": "currentItemsView"},
-        {"key": "selectedItemView"},
-        {"key": "triggeredItemView"},
-        {"key": "primaryKeys"},
-        {"key": "accentColor"},
-        {"key": "borderRadius"},
-        {"key": "boxShadow"},
-        {"key": "listData"}
-    ],
-    "leftColumn": 0,
-    "serverSidePagination": false,
-    "enhancements": true,
-    "children": [{
-        "widgetName": "Canvas16",
-        "displayName": "Canvas",
-        "topRow": 0,
-        "bottomRow": 680,
-        "parentRowSpace": 1,
-        "type": "CANVAS_WIDGET",
-        "canExtend": false,
-        "hideCard": true,
-        "dropDisabled": true,
-        "openParentPropertyPane": true,
-        "minHeight": 400,
-        "noPad": true,
-        "parentColumnSpace": 1,
-        "leftColumn": 0,
-        "dynamicBindingPathList": [],
-        "key": "v8oic4yys9",
-        "isDeprecated": false,
-        "rightColumn": 481.5,
-        "detachFromLayout": true,
-        "widgetId": "7cfugwxx9s",
-        "containerStyle": "none",
-        "isVisible": true,
-        "version": 1,
-        "parentId": "mi0eln1nvu",
-        "renderMode": "CANVAS",
-        "isLoading": false
-    }],
-    "gridType": "vertical",
-    "key": "82x1hme55f",
-    "backgroundColor": "transparent",
-    "isDeprecated": false,
-    "rightColumn": 64,
-    "itemBackgroundColor": "#FFFFFF",
-    "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-    "widgetId": "mi0eln1nvu",
-    "onItemClick": "",
-    "isVisible": true,
-    "parentId": "59rw5mx0bq",
-    "hasMetaWidgets": true,
-    "isLoading": false,
-    "renderMode": "CANVAS",
-    "mainCanvasId": "7cfugwxx9s",
-    "originalTopRow": 16,
-    "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-    "originalBottomRow": 83,
-    "additionalStaticProps": [
-        "level",
-        "levelData",
-        "prefixMetaWidgetId",
-        "metaWidgetId"
-    ],
-    "selectedItemView": "{{{}}}"
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "additionalStaticProps": [
+    "level",
+    "levelData",
+    "prefixMetaWidgetId",
+    "metaWidgetId"
+  ],
+  "animateLoading": true,
+  "backgroundColor": "transparent",
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 81,
+  "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+  "children": [
+    {
+      "bottomRow": 680,
+      "canExtend": false,
+      "containerStyle": "none",
+      "detachFromLayout": true,
+      "displayName": "Canvas",
+      "dropDisabled": true,
+      "dynamicBindingPathList": [],
+      "hideCard": true,
+      "isDeprecated": false,
+      "isLoading": false,
+      "isVisible": true,
+      "key": "v8oic4yys9",
+      "leftColumn": 0,
+      "minHeight": 400,
+      "noPad": true,
+      "openParentPropertyPane": true,
+      "parentColumnSpace": 1,
+      "parentId": "mi0eln1nvu",
+      "parentRowSpace": 1,
+      "renderMode": "CANVAS",
+      "rightColumn": 481.5,
+      "topRow": 0,
+      "type": "CANVAS_WIDGET",
+      "version": 1,
+      "widgetId": "7cfugwxx9s",
+      "widgetName": "Canvas16"
+    }
+  ],
+  "currentItemsView": "{{[]}}",
+  "displayName": "List",
+  "dynamicBindingPathList": [
+    {
+      "key": "currentItemsView"
+    },
+    {
+      "key": "selectedItemView"
+    },
+    {
+      "key": "triggeredItemView"
+    },
+    {
+      "key": "primaryKeys"
+    },
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "boxShadow"
+    },
+    {
+      "key": "listData"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "primaryKeys"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onItemClick"
+    }
+  ],
+  "enhancements": true,
+  "gridType": "vertical",
+  "hasMetaWidgets": true,
+  "hideCard": false,
+  "iconSVG": "/static/media/icon.9925ee17dee37bf1ba7374412563a8a7.svg",
+  "isCanvas": true,
+  "isDeprecated": false,
+  "isLoading": false,
+  "isVisible": true,
+  "itemBackgroundColor": "#FFFFFF",
+  "itemSpacing": 8,
+  "key": "82x1hme55f",
+  "leftColumn": 0,
+  "listData": "{{Tab4Offer.data}}",
+  "mainCanvasId": "7cfugwxx9s",
+  "mainContainerId": "jlhu4px03g",
+  "onItemClick": "",
+  "originalBottomRow": 83,
+  "originalTopRow": 16,
+  "pageSize": 10,
+  "parentColumnSpace": 20.0625,
+  "parentId": "59rw5mx0bq",
+  "parentRowSpace": 10,
+  "primaryKeys": "{{List2.listData.map((currentItem, currentIndex) =>`[` + currentItem.network_other_name + ` - ` + currentItem.off_cat_name + `] #` + currentItem.offer_id + ` - ` + currentItem.offer_name)}}",
+  "renderMode": "CANVAS",
+  "requiresFlatWidgetChildren": true,
+  "rightColumn": 64,
+  "selectedItemView": "{{{}}}",
+  "serverSidePagination": false,
+  "templateBottomRow": 16,
+  "topRow": 13,
+  "triggeredItemView": "{{{}}}",
+  "type": "LIST_WIDGET_V2",
+  "widgetId": "mi0eln1nvu",
+  "widgetName": "List2"
 }

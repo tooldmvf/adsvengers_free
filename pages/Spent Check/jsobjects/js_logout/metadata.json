@@ -1,15 +1,11 @@
 {
+  "gitSyncId": "63c3151532584b547fffe91b_642bda869e29566c0dd624b6",
+  "id": "Spent Check_js_logout",
   "unpublishedCollection": {
     "name": "js_logout",
     "pageId": "Spent Check",
     "pluginId": "js-plugin",
     "pluginType": "JS",
-    "actions": [],
-    "archivedActions": [],
-    "variables": [],
-    "userPermissions": []
-  },
-  "id": "Spent Check_js_logout",
-  "deleted": false,
-  "gitSyncId": "63c3151532584b547fffe91b_642bda869e29566c0dd624b6"
+    "variables": []
+  }
 }

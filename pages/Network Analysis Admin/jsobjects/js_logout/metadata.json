@@ -1,15 +1,11 @@
 {
+  "gitSyncId": "63c3151532584b547fffe91b_641c04818f7e5b7bc5de4f92",
+  "id": "Network Analysis Admin_js_logout",
   "unpublishedCollection": {
     "name": "js_logout",
     "pageId": "Network Analysis Admin",
     "pluginId": "js-plugin",
     "pluginType": "JS",
-    "actions": [],
-    "archivedActions": [],
-    "variables": [],
-    "userPermissions": []
-  },
-  "id": "Network Analysis Admin_js_logout",
-  "deleted": false,
-  "gitSyncId": "63c3151532584b547fffe91b_641c04818f7e5b7bc5de4f92"
+    "variables": []
+  }
 }

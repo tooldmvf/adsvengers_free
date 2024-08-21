@@ -1,42 +1,54 @@
 {
-    "boxShadow": "none",
-    "widgetName": "IconButton1CopyCopy",
-    "onClick": "{{update_offer_cut.run().then(() => {\n  showAlert('Value updated', 'success');\n  closeModal(Modal2.name);\n});}}",
-    "buttonColor": "#22c55e",
-    "dynamicPropertyPathList": [{"key": "isDisabled"}],
-    "displayName": "Icon Button",
-    "iconSVG": "/static/media/icon.1a0c634ac75f9fa6b6ae7a8df882a3ba.svg",
-    "searchTags": [
-        "click",
-        "submit"
-    ],
-    "topRow": 20,
-    "bottomRow": 24,
-    "tooltip": "Save Data",
-    "parentRowSpace": 10,
-    "type": "ICON_BUTTON_WIDGET",
-    "hideCard": false,
-    "animateLoading": true,
-    "parentColumnSpace": 7.3535614013671875,
-    "dynamicTriggerPathList": [{"key": "onClick"}],
-    "leftColumn": 19,
-    "dynamicBindingPathList": [
-        {"key": "borderRadius"},
-        {"key": "isDisabled"}
-    ],
-    "isDisabled": "{{OfferSelCopy.selectedOptionValue.length == 0 || InputCut.text.length ==0}}",
-    "key": "f6bj1inc2j",
-    "isDeprecated": false,
-    "rightColumn": 26,
-    "iconName": "saved",
-    "widgetId": "vperzf4nl4",
-    "isVisible": true,
-    "version": 1,
-    "parentId": "20mq3bix5b",
-    "renderMode": "CANVAS",
-    "isLoading": false,
-    "originalTopRow": 44,
-    "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-    "originalBottomRow": 48,
-    "buttonVariant": "PRIMARY"
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 24,
+  "boxShadow": "none",
+  "buttonColor": "#22c55e",
+  "buttonVariant": "PRIMARY",
+  "displayName": "Icon Button",
+  "dynamicBindingPathList": [
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "isDisabled"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "isDisabled"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "hideCard": false,
+  "iconName": "saved",
+  "iconSVG": "/static/media/icon.1a0c634ac75f9fa6b6ae7a8df882a3ba.svg",
+  "isDeprecated": false,
+  "isDisabled": "{{OfferSelCopy.selectedOptionValue.length == 0 || InputCut.text.length ==0}}",
+  "isLoading": false,
+  "isVisible": true,
+  "key": "f6bj1inc2j",
+  "leftColumn": 19,
+  "onClick": "{{update_offer_cut.run().then(() => {\n  showAlert('Value updated', 'success');\n  closeModal(Modal2.name);\n});}}",
+  "originalBottomRow": 48,
+  "originalTopRow": 44,
+  "parentColumnSpace": 7.3535614013671875,
+  "parentId": "20mq3bix5b",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "rightColumn": 26,
+  "searchTags": [
+    "click",
+    "submit"
+  ],
+  "tooltip": "Save Data",
+  "topRow": 20,
+  "type": "ICON_BUTTON_WIDGET",
+  "version": 1,
+  "widgetId": "vperzf4nl4",
+  "widgetName": "IconButton1CopyCopy"
 }

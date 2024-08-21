@@ -1,36 +1,48 @@
 {
-    "boxShadow": "none",
-    "widgetName": "IconButton4",
-    "onClick": "{{Utils.reload()}}",
-    "buttonColor": "#eab308",
-    "dynamicPropertyPathList": [{"key": "onClick"}],
-    "displayName": "Icon Button",
-    "iconSVG": "/static/media/icon.1a0c634ac75f9fa6b6ae7a8df882a3ba.svg",
-    "searchTags": [
-        "click",
-        "submit"
-    ],
-    "topRow": 1,
-    "bottomRow": 5,
-    "parentRowSpace": 10,
-    "type": "ICON_BUTTON_WIDGET",
-    "hideCard": false,
-    "animateLoading": true,
-    "parentColumnSpace": 17.5556640625,
-    "dynamicTriggerPathList": [{"key": "onClick"}],
-    "leftColumn": 0,
-    "dynamicBindingPathList": [{"key": "borderRadius"}],
-    "isDisabled": false,
-    "key": "sqkxrybeqo",
-    "isDeprecated": false,
-    "rightColumn": 3,
-    "iconName": "refresh",
-    "widgetId": "xlfx48fy7b",
-    "isVisible": true,
-    "version": 1,
-    "parentId": "qd74yy4u3t",
-    "renderMode": "CANVAS",
-    "isLoading": false,
-    "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-    "buttonVariant": "PRIMARY"
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 5,
+  "boxShadow": "none",
+  "buttonColor": "#eab308",
+  "buttonVariant": "PRIMARY",
+  "displayName": "Icon Button",
+  "dynamicBindingPathList": [
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "hideCard": false,
+  "iconName": "refresh",
+  "iconSVG": "/static/media/icon.1a0c634ac75f9fa6b6ae7a8df882a3ba.svg",
+  "isDeprecated": false,
+  "isDisabled": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "sqkxrybeqo",
+  "leftColumn": 0,
+  "onClick": "{{Utils.reload()}}",
+  "parentColumnSpace": 17.5556640625,
+  "parentId": "qd74yy4u3t",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "rightColumn": 3,
+  "searchTags": [
+    "click",
+    "submit"
+  ],
+  "topRow": 1,
+  "type": "ICON_BUTTON_WIDGET",
+  "version": 1,
+  "widgetId": "xlfx48fy7b",
+  "widgetName": "IconButton4"
 }

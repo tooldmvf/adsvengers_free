@@ -1,15 +1,11 @@
 {
+  "gitSyncId": "63936c0b4b95806da2da5de7_63b2c2fe3c0da0138a06a534",
+  "id": "Invoices Accounting_ManageFile",
   "unpublishedCollection": {
     "name": "ManageFile",
     "pageId": "Invoices Accounting",
     "pluginId": "js-plugin",
     "pluginType": "JS",
-    "actions": [],
-    "archivedActions": [],
-    "variables": [],
-    "userPermissions": []
-  },
-  "id": "Invoices Accounting_ManageFile",
-  "deleted": false,
-  "gitSyncId": "63936c0b4b95806da2da5de7_63b2c2fe3c0da0138a06a534"
+    "variables": []
+  }
 }

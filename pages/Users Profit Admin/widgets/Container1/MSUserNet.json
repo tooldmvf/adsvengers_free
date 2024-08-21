@@ -1,59 +1,77 @@
 {
-    "boxShadow": "none",
-    "iconSVG": "/static/media/icon.b3e28afbbceae59d6fe826fa409a4b4c.svg",
-    "labelText": "Act. Network",
-    "topRow": 5,
-    "labelWidth": "6",
-    "type": "MULTI_SELECT_TREE_WIDGET",
-    "mode": "SHOW_ALL",
-    "defaultOptionValue": "",
-    "animateLoading": true,
-    "leftColumn": 25,
-    "dynamicBindingPathList": [
-        {"key": "accentColor"},
-        {"key": "borderRadius"},
-        {"key": "options"},
-        {"key": "isDisabled"}
-    ],
-    "options": "{{GetUserAccount.data.map(e => {return {'value' : e.user_network_id, 'label':e.user_email_network}})}}",
-    "placeholderText": "Select option(s)",
-    "isDisabled": "{{SelectNetwork.selectedOptionValue.length == 0}}",
-    "isRequired": false,
-    "dynamicHeight": "AUTO_HEIGHT",
-    "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-    "isVisible": true,
-    "version": 1,
-    "expandAll": false,
-    "isLoading": false,
-    "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-    "originalBottomRow": 10,
-    "widgetName": "MSUserNet",
-    "dynamicPropertyPathList": [
-        {"key": "isDisabled"},
-        {"key": "onOptionChange"}
-    ],
-    "displayName": "Multi TreeSelect",
-    "searchTags": ["dropdown"],
-    "bottomRow": 10,
-    "parentRowSpace": 10,
-    "hideCard": false,
-    "shouldScrollContents": true,
-    "parentColumnSpace": 19.75,
-    "dynamicTriggerPathList": [{"key": "onOptionChange"}],
-    "labelPosition": "Left",
-    "key": "m5bkgbqpgb",
-    "labelTextSize": "0.875rem",
-    "isDeprecated": false,
-    "rightColumn": 41,
-    "widgetId": "3hpn1qu5sd",
-    "minWidth": 450,
-    "parentId": "59rw5mx0bq",
-    "labelAlignment": "right",
-    "renderMode": "CANVAS",
-    "responsiveBehavior": "fill",
-    "originalTopRow": 5,
-    "maxDynamicHeight": 9000,
-    "onOptionChange": "{{TotalLine.run();Tab4Offer.run();SelectFinancial.run();}}",
-    "allowClear": false,
-    "minDynamicHeight": 4
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "allowClear": false,
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 10,
+  "boxShadow": "none",
+  "defaultOptionValue": "",
+  "displayName": "Multi TreeSelect",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "options"
+    },
+    {
+      "key": "isDisabled"
+    }
+  ],
+  "dynamicHeight": "AUTO_HEIGHT",
+  "dynamicPropertyPathList": [
+    {
+      "key": "isDisabled"
+    },
+    {
+      "key": "onOptionChange"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onOptionChange"
+    }
+  ],
+  "expandAll": false,
+  "hideCard": false,
+  "iconSVG": "/static/media/icon.b3e28afbbceae59d6fe826fa409a4b4c.svg",
+  "isDeprecated": false,
+  "isDisabled": "{{SelectNetwork.selectedOptionValue.length == 0}}",
+  "isLoading": false,
+  "isRequired": false,
+  "isVisible": true,
+  "key": "m5bkgbqpgb",
+  "labelAlignment": "right",
+  "labelPosition": "Left",
+  "labelText": "Act. Network",
+  "labelTextSize": "0.875rem",
+  "labelWidth": "6",
+  "leftColumn": 25,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mode": "SHOW_ALL",
+  "onOptionChange": "{{TotalLine.run();Tab4Offer.run();SelectFinancial.run();}}",
+  "options": "{{GetUserAccount.data.map(e => {return {'value' : e.user_network_id, 'label':e.user_email_network}})}}",
+  "originalBottomRow": 10,
+  "originalTopRow": 5,
+  "parentColumnSpace": 19.75,
+  "parentId": "59rw5mx0bq",
+  "parentRowSpace": 10,
+  "placeholderText": "Select option(s)",
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 41,
+  "searchTags": [
+    "dropdown"
+  ],
+  "shouldScrollContents": true,
+  "topRow": 5,
+  "type": "MULTI_SELECT_TREE_WIDGET",
+  "version": 1,
+  "widgetId": "3hpn1qu5sd",
+  "widgetName": "MSUserNet"
 }

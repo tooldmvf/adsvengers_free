@@ -1,109 +1,133 @@
 {
-    "isCompact": true,
-    "boxShadow": "0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)",
-    "widgetName": "MenuButton1",
-    "configureMenuItems": {
-        "label": "Configure Menu Items",
-        "id": "config",
-        "config": {
-            "onClick": "{{navigateTo('', {}, 'SAME_WINDOW')}}",
-            "id": "config",
-            "label": "{{MenuButton1.sourceData.map((currentItem, currentIndex) => ( currentItem))}}",
-            "isVisible": true,
-            "isDisabled": false
-        }
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 5,
+  "boxShadow": "0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)",
+  "configureMenuItems": {
+    "config": {
+      "id": "config",
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "{{MenuButton1.sourceData.map((currentItem, currentIndex) => ( currentItem))}}",
+      "onClick": "{{navigateTo('', {}, 'SAME_WINDOW')}}"
     },
-    "dynamicPropertyPathList": [
-        {"key": "isVisible"},
-        {"key": "menuItems.menuItemyf8q144z6c.onClick"}
-    ],
-    "displayName": "Menu Button",
-    "iconSVG": "/static/media/icon.0341d17d67020c8bfc560cc5928af2a7.svg",
-    "topRow": 1,
-    "bottomRow": 5,
-    "parentRowSpace": 10,
-    "type": "MENU_BUTTON_WIDGET",
-    "hideCard": false,
-    "animateLoading": true,
-    "parentColumnSpace": 20.0625,
-    "dynamicTriggerPathList": [
-        {"key": "configureMenuItems.config.onClick"},
-        {"key": "menuItems.menuItem1.onClick"},
-        {"key": "menuItems.menuItem9xpfl0ir7r.onClick"},
-        {"key": "menuItems.menuItemud1zlvp54x.onClick"},
-        {"key": "menuItems.menuItemmsskf7467j.onClick"},
-        {"key": "menuItems.menuItemluz74ga2mq.onClick"}
-    ],
-    "leftColumn": 11,
-    "dynamicBindingPathList": [
-        {"key": "menuColor"},
-        {"key": "borderRadius"},
-        {"key": "configureMenuItems.config.label"},
-        {"key": "isVisible"}
-    ],
-    "isDisabled": false,
-    "sourceData": "",
-    "key": "i3fdkxvkmd",
-    "isDeprecated": false,
-    "rightColumn": 17,
-    "menuVariant": "PRIMARY",
-    "widgetId": "2pknbqp0gk",
-    "menuItems": {
-        "menuItem1": {
-            "onClick": "{{navigateTo('Campaign List Admin', {}, 'SAME_WINDOW')}}",
-            "widgetId": "",
-            "index": 0,
-            "label": "Campaign List",
-            "id": "menuItem1",
-            "isVisible": true,
-            "isDisabled": false
-        },
-        "menuItem9xpfl0ir7r": {
-            "onClick": "{{navigateTo('Balance Check Live', {}, 'SAME_WINDOW')}}",
-            "widgetId": "uit8gd2t68",
-            "index": 1,
-            "id": "menuItem9xpfl0ir7r",
-            "label": "Balance Check Live",
-            "isDisabled": false,
-            "isVisible": true
-        },
-        "menuItemluz74ga2mq": {
-            "onClick": "{{navigateTo('Slack Management Admin', {}, 'SAME_WINDOW')}}",
-            "widgetId": "gwtrooid7h",
-            "index": 4,
-            "id": "menuItemluz74ga2mq",
-            "label": "Slack Users",
-            "isDisabled": false,
-            "isVisible": true
-        },
-        "menuItemud1zlvp54x": {
-            "onClick": "{{navigateTo('Ai20 Revenue', {}, 'SAME_WINDOW')}}",
-            "widgetId": "5g5xhf4ki4",
-            "index": 2,
-            "id": "menuItemud1zlvp54x",
-            "label": "Ai20 Rev Month",
-            "isDisabled": false,
-            "isVisible": true
-        },
-        "menuItemmsskf7467j": {
-            "onClick": "{{navigateTo('Spent Check', {}, 'SAME_WINDOW')}}",
-            "widgetId": "umm2rcfrt0",
-            "index": 3,
-            "id": "menuItemmsskf7467j",
-            "label": "Spent Check",
-            "isDisabled": false,
-            "isVisible": true
-        }
+    "id": "config",
+    "label": "Configure Menu Items"
+  },
+  "displayName": "Menu Button",
+  "dynamicBindingPathList": [
+    {
+      "key": "menuColor"
     },
-    "isVisible": "{{appsmith.store.myEmail == 'tool@dmvf.net'}}",
-    "label": "Admin Tools",
-    "version": 1,
-    "parentId": "igqxuhmy4a",
-    "renderMode": "CANVAS",
-    "isLoading": false,
-    "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-    "menuItemsSource": "STATIC",
-    "menuColor": "{{appsmith.theme.colors.primaryColor}}",
-    "iconAlign": "left",
-    "placement": "CENTER"
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "configureMenuItems.config.label"
+    },
+    {
+      "key": "isVisible"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "isVisible"
+    },
+    {
+      "key": "menuItems.menuItemyf8q144z6c.onClick"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "configureMenuItems.config.onClick"
+    },
+    {
+      "key": "menuItems.menuItem1.onClick"
+    },
+    {
+      "key": "menuItems.menuItem9xpfl0ir7r.onClick"
+    },
+    {
+      "key": "menuItems.menuItemud1zlvp54x.onClick"
+    },
+    {
+      "key": "menuItems.menuItemmsskf7467j.onClick"
+    },
+    {
+      "key": "menuItems.menuItemluz74ga2mq.onClick"
+    }
+  ],
+  "hideCard": false,
+  "iconAlign": "left",
+  "iconSVG": "/static/media/icon.0341d17d67020c8bfc560cc5928af2a7.svg",
+  "isCompact": true,
+  "isDeprecated": false,
+  "isDisabled": false,
+  "isLoading": false,
+  "isVisible": "{{appsmith.store.myEmail == 'tool@dmvf.net'}}",
+  "key": "i3fdkxvkmd",
+  "label": "Admin Tools",
+  "leftColumn": 11,
+  "menuColor": "{{appsmith.theme.colors.primaryColor}}",
+  "menuItems": {
+    "menuItem1": {
+      "id": "menuItem1",
+      "index": 0,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "Campaign List",
+      "onClick": "{{navigateTo('Campaign List Admin', {}, 'SAME_WINDOW')}}",
+      "widgetId": ""
+    },
+    "menuItem9xpfl0ir7r": {
+      "id": "menuItem9xpfl0ir7r",
+      "index": 1,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "Balance Check Live",
+      "onClick": "{{navigateTo('Balance Check Live', {}, 'SAME_WINDOW')}}",
+      "widgetId": "uit8gd2t68"
+    },
+    "menuItemluz74ga2mq": {
+      "id": "menuItemluz74ga2mq",
+      "index": 4,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "Slack Users",
+      "onClick": "{{navigateTo('Slack Management Admin', {}, 'SAME_WINDOW')}}",
+      "widgetId": "gwtrooid7h"
+    },
+    "menuItemmsskf7467j": {
+      "id": "menuItemmsskf7467j",
+      "index": 3,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "Spent Check",
+      "onClick": "{{navigateTo('Spent Check', {}, 'SAME_WINDOW')}}",
+      "widgetId": "umm2rcfrt0"
+    },
+    "menuItemud1zlvp54x": {
+      "id": "menuItemud1zlvp54x",
+      "index": 2,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "Ai20 Rev Month",
+      "onClick": "{{navigateTo('Ai20 Revenue', {}, 'SAME_WINDOW')}}",
+      "widgetId": "5g5xhf4ki4"
+    }
+  },
+  "menuItemsSource": "STATIC",
+  "menuVariant": "PRIMARY",
+  "parentColumnSpace": 20.0625,
+  "parentId": "igqxuhmy4a",
+  "parentRowSpace": 10,
+  "placement": "CENTER",
+  "renderMode": "CANVAS",
+  "rightColumn": 17,
+  "sourceData": "",
+  "topRow": 1,
+  "type": "MENU_BUTTON_WIDGET",
+  "version": 1,
+  "widgetId": "2pknbqp0gk",
+  "widgetName": "MenuButton1"
 }

@@ -1,15 +1,11 @@
 {
+  "gitSyncId": "63c3151532584b547fffe91b_63e3ece58d40323e241b324f",
+  "id": "Offers Analysis_Utils2",
   "unpublishedCollection": {
     "name": "Utils2",
     "pageId": "Offers Analysis",
     "pluginId": "js-plugin",
     "pluginType": "JS",
-    "actions": [],
-    "archivedActions": [],
-    "variables": [],
-    "userPermissions": []
-  },
-  "id": "Offers Analysis_Utils2",
-  "deleted": false,
-  "gitSyncId": "63c3151532584b547fffe91b_63e3ece58d40323e241b324f"
+    "variables": []
+  }
 }

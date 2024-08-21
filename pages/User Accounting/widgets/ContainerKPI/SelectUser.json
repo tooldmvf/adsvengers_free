@@ -1,65 +1,87 @@
 {
-    "boxShadow": "none",
-    "iconSVG": "/static/media/icon.bd99caba5853ad71e4b3d8daffacb3a2.svg",
-    "labelText": "User",
-    "topRow": 1,
-    "labelWidth": "3",
-    "type": "SELECT_WIDGET",
-    "serverSideFiltering": false,
-    "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( appsmith.store.myUser))(SelectUser.options, SelectUser.serverSideFiltering) }}",
-    "animateLoading": true,
-    "leftColumn": 24,
-    "dynamicBindingPathList": [
-        {"key": "accentColor"},
-        {"key": "borderRadius"},
-        {"key": "sourceData"},
-        {"key": "defaultOptionValue"},
-        {"key": "isVisible"}
-    ],
-    "placeholderText": "Select option",
-    "isDisabled": false,
-    "isRequired": false,
-    "dynamicHeight": "FIXED",
-    "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-    "isVisible": "{{appsmith.store.role_level>100}}",
-    "version": 1,
-    "isLoading": false,
-    "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-    "originalBottomRow": 75,
-    "mobileBottomRow": 78,
-    "widgetName": "SelectUser",
-    "isFilterable": true,
-    "dynamicPropertyPathList": [
-        {"key": "onOptionChange"},
-        {"key": "isVisible"},
-        {"key": "sourceData"}
-    ],
-    "displayName": "Select",
-    "searchTags": ["dropdown"],
-    "bottomRow": 5,
-    "parentRowSpace": 10,
-    "hideCard": false,
-    "mobileRightColumn": 34,
-    "parentColumnSpace": 20.0625,
-    "dynamicTriggerPathList": [{"key": "onOptionChange"}],
-    "labelPosition": "Left",
-    "sourceData": "{{get_all_users.data.map( (obj) => {return {'value': obj.fk_user_id, 'label':obj.last_name.concat(' ').concat(obj.first_name)}})}}",
-    "key": "v5onvlal5t",
-    "labelTextSize": "0.875rem",
-    "isDeprecated": false,
-    "rightColumn": 38,
-    "widgetId": "whhn9887vc",
-    "optionValue": "value",
-    "minWidth": 450,
-    "parentId": "qd74yy4u3t",
-    "labelAlignment": "right",
-    "renderMode": "CANVAS",
-    "mobileTopRow": 71,
-    "optionLabel": "label",
-    "responsiveBehavior": "fill",
-    "originalTopRow": 71,
-    "mobileLeftColumn": 14,
-    "maxDynamicHeight": 9000,
-    "onOptionChange": "{{Utils.reload()}}",
-    "minDynamicHeight": 4
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 5,
+  "boxShadow": "none",
+  "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( appsmith.store.myUser))(SelectUser.options, SelectUser.serverSideFiltering) }}",
+  "displayName": "Select",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "sourceData"
+    },
+    {
+      "key": "defaultOptionValue"
+    },
+    {
+      "key": "isVisible"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "onOptionChange"
+    },
+    {
+      "key": "isVisible"
+    },
+    {
+      "key": "sourceData"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onOptionChange"
+    }
+  ],
+  "hideCard": false,
+  "iconSVG": "/static/media/icon.bd99caba5853ad71e4b3d8daffacb3a2.svg",
+  "isDeprecated": false,
+  "isDisabled": false,
+  "isFilterable": true,
+  "isLoading": false,
+  "isRequired": false,
+  "isVisible": "{{appsmith.store.role_level>100}}",
+  "key": "v5onvlal5t",
+  "labelAlignment": "right",
+  "labelPosition": "Left",
+  "labelText": "User",
+  "labelTextSize": "0.875rem",
+  "labelWidth": "3",
+  "leftColumn": 24,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 78,
+  "mobileLeftColumn": 14,
+  "mobileRightColumn": 34,
+  "mobileTopRow": 71,
+  "onOptionChange": "{{Utils.reload()}}",
+  "optionLabel": "label",
+  "optionValue": "value",
+  "originalBottomRow": 75,
+  "originalTopRow": 71,
+  "parentColumnSpace": 20.0625,
+  "parentId": "qd74yy4u3t",
+  "parentRowSpace": 10,
+  "placeholderText": "Select option",
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 38,
+  "searchTags": [
+    "dropdown"
+  ],
+  "serverSideFiltering": false,
+  "sourceData": "{{get_all_users.data.map( (obj) => {return {'value': obj.fk_user_id, 'label':obj.last_name.concat(' ').concat(obj.first_name)}})}}",
+  "topRow": 1,
+  "type": "SELECT_WIDGET",
+  "version": 1,
+  "widgetId": "whhn9887vc",
+  "widgetName": "SelectUser"
 }

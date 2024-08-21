@@ -1,64 +1,84 @@
 {
-    "boxShadow": "none",
-    "allowSelectAll": true,
-    "iconSVG": "/static/media/icon.a3495809ae48291a64404f3bb04b0e69.svg",
-    "labelText": "User",
-    "topRow": 6,
-    "labelWidth": 5,
-    "type": "MULTI_SELECT_WIDGET_V2",
-    "serverSideFiltering": false,
-    "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( appsmith.store.myUsers.length > 0 ? appsmith.store.myUsers : appsmith.store.myUser))(MultiSelectUsers.options, MultiSelectUsers.serverSideFiltering) }}",
-    "animateLoading": true,
-    "leftColumn": 45,
-    "dynamicBindingPathList": [
-        {"key": "accentColor"},
-        {"key": "borderRadius"},
-        {"key": "isVisible"},
-        {"key": "sourceData"},
-        {"key": "defaultOptionValue"}
-    ],
-    "placeholderText": "Select option(s)",
-    "isDisabled": false,
-    "isRequired": false,
-    "dynamicHeight": "AUTO_HEIGHT",
-    "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-    "isVisible": "{{appsmith.store.role_level> 100 && appsmith.store.access_token.length>0 }}",
-    "version": 1,
-    "isLoading": false,
-    "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-    "originalBottomRow": 9,
-    "widgetName": "MultiSelectUsers",
-    "isFilterable": true,
-    "dynamicPropertyPathList": [
-        {"key": "isVisible"},
-        {"key": "onOptionChange"},
-        {"key": "sourceData"}
-    ],
-    "displayName": "MultiSelect",
-    "searchTags": [
-        "dropdown",
-        "tags"
-    ],
-    "bottomRow": 10,
-    "parentRowSpace": 10,
-    "hideCard": false,
-    "shouldScrollContents": true,
-    "parentColumnSpace": 20.0625,
-    "dynamicTriggerPathList": [{"key": "onOptionChange"}],
-    "labelPosition": "Left",
-    "sourceData": "{{get_all_users.data.map( (obj) => {return {'value': obj.fk_user_id, 'label':obj.last_name.concat(' ').concat(obj.first_name)}})}}",
-    "key": "rofw0ymfke",
-    "labelTextSize": "0.875rem",
-    "isDeprecated": false,
-    "rightColumn": 64,
-    "widgetId": "xv7kd5hhya",
-    "optionValue": "value",
-    "parentId": "9n4813zity",
-    "labelAlignment": "right",
-    "renderMode": "CANVAS",
-    "optionLabel": "label",
-    "originalTopRow": 5,
-    "maxDynamicHeight": 9000,
-    "onOptionChange": "{{(() => {\nstoreValue('myUsers',MultiSelectUsers.selectedOptionValues);\nfbAccountAll.run();\nfbAccountAllCopy.run();\n})()}}",
-    "minDynamicHeight": 4
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "allowSelectAll": true,
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 10,
+  "boxShadow": "none",
+  "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( appsmith.store.myUsers.length > 0 ? appsmith.store.myUsers : appsmith.store.myUser))(MultiSelectUsers.options, MultiSelectUsers.serverSideFiltering) }}",
+  "displayName": "MultiSelect",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "isVisible"
+    },
+    {
+      "key": "sourceData"
+    },
+    {
+      "key": "defaultOptionValue"
+    }
+  ],
+  "dynamicHeight": "AUTO_HEIGHT",
+  "dynamicPropertyPathList": [
+    {
+      "key": "isVisible"
+    },
+    {
+      "key": "onOptionChange"
+    },
+    {
+      "key": "sourceData"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onOptionChange"
+    }
+  ],
+  "hideCard": false,
+  "iconSVG": "/static/media/icon.a3495809ae48291a64404f3bb04b0e69.svg",
+  "isDeprecated": false,
+  "isDisabled": false,
+  "isFilterable": true,
+  "isLoading": false,
+  "isRequired": false,
+  "isVisible": "{{appsmith.store.role_level> 100 && appsmith.store.access_token.length>0 }}",
+  "key": "rofw0ymfke",
+  "labelAlignment": "right",
+  "labelPosition": "Left",
+  "labelText": "User",
+  "labelTextSize": "0.875rem",
+  "labelWidth": 5,
+  "leftColumn": 45,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "onOptionChange": "{{(() => {\nstoreValue('myUsers',MultiSelectUsers.selectedOptionValues);\nfbAccountAll.run();\nfbAccountAllCopy.run();\n})()}}",
+  "optionLabel": "label",
+  "optionValue": "value",
+  "originalBottomRow": 9,
+  "originalTopRow": 5,
+  "parentColumnSpace": 20.0625,
+  "parentId": "9n4813zity",
+  "parentRowSpace": 10,
+  "placeholderText": "Select option(s)",
+  "renderMode": "CANVAS",
+  "rightColumn": 64,
+  "searchTags": [
+    "dropdown",
+    "tags"
+  ],
+  "serverSideFiltering": false,
+  "shouldScrollContents": true,
+  "sourceData": "{{get_all_users.data.map( (obj) => {return {'value': obj.fk_user_id, 'label':obj.last_name.concat(' ').concat(obj.first_name)}})}}",
+  "topRow": 6,
+  "type": "MULTI_SELECT_WIDGET_V2",
+  "version": 1,
+  "widgetId": "xv7kd5hhya",
+  "widgetName": "MultiSelectUsers"
 }

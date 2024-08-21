@@ -1,45 +1,55 @@
 {
-    "boxShadow": "none",
-    "mobileBottomRow": 11,
-    "widgetName": "IconButton5",
-    "onClick": "{{showModal('NetworkDetail').then(() => {\n  user_financialNetwork.run();\n});}}",
-    "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
-    "displayName": "Icon button",
-    "iconSVG": "/static/media/icon.b08054586989b185a0801e9a34f8ad49.svg",
-    "searchTags": [
-        "click",
-        "submit"
-    ],
-    "topRow": 7,
-    "bottomRow": 11,
-    "parentRowSpace": 10,
-    "type": "ICON_BUTTON_WIDGET",
-    "hideCard": false,
-    "mobileRightColumn": 5,
-    "animateLoading": true,
-    "parentColumnSpace": 4.918212890625,
-    "dynamicTriggerPathList": [{"key": "onClick"}],
-    "leftColumn": 2,
-    "dynamicBindingPathList": [
-        {"key": "buttonColor"},
-        {"key": "borderRadius"}
-    ],
-    "isDisabled": false,
-    "key": "ccl8gxsn4n",
-    "isDeprecated": false,
-    "rightColumn": 5,
-    "iconName": "property",
-    "widgetId": "hlet90k8ov",
-    "minWidth": 50,
-    "isVisible": true,
-    "version": 1,
-    "parentId": "ynnw8tn134",
-    "tags": ["Buttons"],
-    "renderMode": "CANVAS",
-    "isLoading": false,
-    "mobileTopRow": 7,
-    "responsiveBehavior": "hug",
-    "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-    "mobileLeftColumn": 1,
-    "buttonVariant": "SECONDARY"
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 11,
+  "boxShadow": "none",
+  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+  "buttonVariant": "SECONDARY",
+  "displayName": "Icon button",
+  "dynamicBindingPathList": [
+    {
+      "key": "buttonColor"
+    },
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "hideCard": false,
+  "iconName": "property",
+  "iconSVG": "/static/media/icon.b08054586989b185a0801e9a34f8ad49.svg",
+  "isDeprecated": false,
+  "isDisabled": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "ccl8gxsn4n",
+  "leftColumn": 2,
+  "minWidth": 50,
+  "mobileBottomRow": 11,
+  "mobileLeftColumn": 1,
+  "mobileRightColumn": 5,
+  "mobileTopRow": 7,
+  "onClick": "{{showModal('NetworkDetail').then(() => {\n  user_financialNetwork.run();\n});}}",
+  "parentColumnSpace": 4.918212890625,
+  "parentId": "ynnw8tn134",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "hug",
+  "rightColumn": 5,
+  "searchTags": [
+    "click",
+    "submit"
+  ],
+  "tags": [
+    "Buttons"
+  ],
+  "topRow": 7,
+  "type": "ICON_BUTTON_WIDGET",
+  "version": 1,
+  "widgetId": "hlet90k8ov",
+  "widgetName": "IconButton5"
 }

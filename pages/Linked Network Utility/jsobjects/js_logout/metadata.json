@@ -1,15 +1,11 @@
 {
+  "gitSyncId": "63936c0b4b95806da2da5de7_63b45cf93c0da0138a06bfa9",
+  "id": "Linked Network Utility_js_logout",
   "unpublishedCollection": {
     "name": "js_logout",
     "pageId": "Linked Network Utility",
     "pluginId": "js-plugin",
     "pluginType": "JS",
-    "actions": [],
-    "archivedActions": [],
-    "variables": [],
-    "userPermissions": []
-  },
-  "id": "Linked Network Utility_js_logout",
-  "deleted": false,
-  "gitSyncId": "63936c0b4b95806da2da5de7_63b45cf93c0da0138a06bfa9"
+    "variables": []
+  }
 }

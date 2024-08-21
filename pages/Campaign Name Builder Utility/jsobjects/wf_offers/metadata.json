@@ -1,15 +1,11 @@
 {
+  "gitSyncId": "63936c0b4b95806da2da5de7_63bfd9cda9c896341acc820d",
+  "id": "Campaign Name Builder Utility_wf_offers",
   "unpublishedCollection": {
     "name": "wf_offers",
     "pageId": "Campaign Name Builder Utility",
     "pluginId": "js-plugin",
     "pluginType": "JS",
-    "actions": [],
-    "archivedActions": [],
-    "variables": [],
-    "userPermissions": []
-  },
-  "id": "Campaign Name Builder Utility_wf_offers",
-  "deleted": false,
-  "gitSyncId": "63936c0b4b95806da2da5de7_63bfd9cda9c896341acc820d"
+    "variables": []
+  }
 }

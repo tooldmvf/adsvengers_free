@@ -1,56 +1,70 @@
 {
-    "boxShadow": "none",
-    "widgetName": "OfferSelCopy",
-    "isFilterable": true,
-    "dynamicPropertyPathList": [
-        {"key": "isDisabled"},
-        {"key": "sourceData"}
-    ],
-    "displayName": "Select",
-    "iconSVG": "/static/media/icon.bd99caba5853ad71e4b3d8daffacb3a2.svg",
-    "labelText": "Offer",
-    "searchTags": ["dropdown"],
-    "topRow": 8,
-    "bottomRow": 14,
-    "parentRowSpace": 10,
-    "labelWidth": 5,
-    "type": "SELECT_WIDGET",
-    "serverSideFiltering": false,
-    "hideCard": false,
-    "defaultOptionValue": "",
-    "animateLoading": true,
-    "parentColumnSpace": 7.3535614013671875,
-    "dynamicTriggerPathList": [],
-    "leftColumn": 1,
-    "dynamicBindingPathList": [
-        {"key": "accentColor"},
-        {"key": "borderRadius"},
-        {"key": "sourceData"},
-        {"key": "isDisabled"}
-    ],
-    "labelPosition": "Top",
-    "placeholderText": "Select option",
-    "isDisabled": "{{SelectNetworkCopy.selectedOptionValue.length == 0 }}",
-    "sourceData": "{{get_offer_net_cut.data.map( (obj) => {return {'value':obj.offer_id, 'label':obj.offer_id  + ' - ' + obj.offer_name }})}}",
-    "key": "whxtg5h0m4",
-    "labelTextSize": "0.875rem",
-    "isRequired": false,
-    "isDeprecated": false,
-    "rightColumn": 57,
-    "dynamicHeight": "FIXED",
-    "widgetId": "8qf56rpytr",
-    "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-    "optionValue": "value",
-    "isVisible": true,
-    "version": 1,
-    "parentId": "20mq3bix5b",
-    "labelAlignment": "left",
-    "renderMode": "CANVAS",
-    "isLoading": false,
-    "optionLabel": "label",
-    "originalTopRow": 33,
-    "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-    "maxDynamicHeight": 9000,
-    "originalBottomRow": 40,
-    "minDynamicHeight": 4
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 14,
+  "boxShadow": "none",
+  "defaultOptionValue": "",
+  "displayName": "Select",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "sourceData"
+    },
+    {
+      "key": "isDisabled"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "isDisabled"
+    },
+    {
+      "key": "sourceData"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "hideCard": false,
+  "iconSVG": "/static/media/icon.bd99caba5853ad71e4b3d8daffacb3a2.svg",
+  "isDeprecated": false,
+  "isDisabled": "{{SelectNetworkCopy.selectedOptionValue.length == 0 }}",
+  "isFilterable": true,
+  "isLoading": false,
+  "isRequired": false,
+  "isVisible": true,
+  "key": "whxtg5h0m4",
+  "labelAlignment": "left",
+  "labelPosition": "Top",
+  "labelText": "Offer",
+  "labelTextSize": "0.875rem",
+  "labelWidth": 5,
+  "leftColumn": 1,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "optionLabel": "label",
+  "optionValue": "value",
+  "originalBottomRow": 40,
+  "originalTopRow": 33,
+  "parentColumnSpace": 7.3535614013671875,
+  "parentId": "20mq3bix5b",
+  "parentRowSpace": 10,
+  "placeholderText": "Select option",
+  "renderMode": "CANVAS",
+  "rightColumn": 57,
+  "searchTags": [
+    "dropdown"
+  ],
+  "serverSideFiltering": false,
+  "sourceData": "{{get_offer_net_cut.data.map( (obj) => {return {'value':obj.offer_id, 'label':obj.offer_id  + ' - ' + obj.offer_name }})}}",
+  "topRow": 8,
+  "type": "SELECT_WIDGET",
+  "version": 1,
+  "widgetId": "8qf56rpytr",
+  "widgetName": "OfferSelCopy"
 }

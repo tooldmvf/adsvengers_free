@@ -1,61 +1,85 @@
 {
-    "boxShadow": "none",
-    "widgetName": "SelectNetwork",
-    "isFilterable": true,
-    "dynamicPropertyPathList": [
-        {"key": "onOptionChange"},
-        {"key": "isDisabled"},
-        {"key": "isRequired"},
-        {"key": "sourceData"}
-    ],
-    "iconSVG": "/static/media/icon.bd99caba5853ad71e4b3d8daffacb3a2.svg",
-    "displayName": "Select",
-    "labelText": "Network",
-    "topRow": 8,
-    "searchTags": ["dropdown"],
-    "bottomRow": 12,
-    "parentRowSpace": 10,
-    "labelWidth": "20",
-    "type": "SELECT_WIDGET",
-    "serverSideFiltering": false,
-    "hideCard": false,
-    "shouldScrollContents": true,
-    "defaultOptionValue": "",
-    "animateLoading": true,
-    "parentColumnSpace": 7.05078125,
-    "dynamicTriggerPathList": [{"key": "onOptionChange"}],
-    "leftColumn": 2,
-    "dynamicBindingPathList": [
-        {"key": "accentColor"},
-        {"key": "borderRadius"},
-        {"key": "sourceData"},
-        {"key": "isDisabled"},
-        {"key": "isRequired"}
-    ],
-    "labelPosition": "Left",
-    "placeholderText": "Select option",
-    "isDisabled": "{{appsmith.store.custom_off}}",
-    "sourceData": "{{get_user_networks.data.map( (obj) =>{ return  {'value': obj.user_network_id, 'label': obj.network_other_name } })}}",
-    "key": "99hmwl6png",
-    "labelTextSize": "0.875rem",
-    "isRequired": "{{appsmith.store.custom_off == 'false'}}",
-    "isDeprecated": false,
-    "rightColumn": 59,
-    "dynamicHeight": "AUTO_HEIGHT",
-    "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-    "widgetId": "kbmw93psqr",
-    "optionValue": "value",
-    "isVisible": true,
-    "version": 1,
-    "parentId": "hgd83jumux",
-    "isLoading": false,
-    "labelAlignment": "left",
-    "renderMode": "CANVAS",
-    "optionLabel": "label",
-    "originalTopRow": 8,
-    "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-    "maxDynamicHeight": 9000,
-    "originalBottomRow": 12,
-    "onOptionChange": "{{get_user_offers.run(() => {},() => {},{user_net_id: SelectNetwork.selectedOptionValue});get_ts.run();}}",
-    "minDynamicHeight": 4
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 12,
+  "boxShadow": "none",
+  "defaultOptionValue": "",
+  "displayName": "Select",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "sourceData"
+    },
+    {
+      "key": "isDisabled"
+    },
+    {
+      "key": "isRequired"
+    }
+  ],
+  "dynamicHeight": "AUTO_HEIGHT",
+  "dynamicPropertyPathList": [
+    {
+      "key": "onOptionChange"
+    },
+    {
+      "key": "isDisabled"
+    },
+    {
+      "key": "isRequired"
+    },
+    {
+      "key": "sourceData"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onOptionChange"
+    }
+  ],
+  "hideCard": false,
+  "iconSVG": "/static/media/icon.bd99caba5853ad71e4b3d8daffacb3a2.svg",
+  "isDeprecated": false,
+  "isDisabled": "{{appsmith.store.custom_off}}",
+  "isFilterable": true,
+  "isLoading": false,
+  "isRequired": "{{appsmith.store.custom_off == 'false'}}",
+  "isVisible": true,
+  "key": "99hmwl6png",
+  "labelAlignment": "left",
+  "labelPosition": "Left",
+  "labelText": "Network",
+  "labelTextSize": "0.875rem",
+  "labelWidth": "20",
+  "leftColumn": 2,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "onOptionChange": "{{get_user_offers.run(() => {},() => {},{user_net_id: SelectNetwork.selectedOptionValue});get_ts.run();}}",
+  "optionLabel": "label",
+  "optionValue": "value",
+  "originalBottomRow": 12,
+  "originalTopRow": 8,
+  "parentColumnSpace": 7.05078125,
+  "parentId": "hgd83jumux",
+  "parentRowSpace": 10,
+  "placeholderText": "Select option",
+  "renderMode": "CANVAS",
+  "rightColumn": 59,
+  "searchTags": [
+    "dropdown"
+  ],
+  "serverSideFiltering": false,
+  "shouldScrollContents": true,
+  "sourceData": "{{get_user_networks.data.map( (obj) =>{ return  {'value': obj.user_network_id, 'label': obj.network_other_name } })}}",
+  "topRow": 8,
+  "type": "SELECT_WIDGET",
+  "version": 1,
+  "widgetId": "kbmw93psqr",
+  "widgetName": "SelectNetwork"
 }

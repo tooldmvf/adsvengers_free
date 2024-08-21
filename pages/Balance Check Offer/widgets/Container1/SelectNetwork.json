@@ -1,57 +1,73 @@
 {
-    "boxShadow": "none",
-    "widgetName": "SelectNetwork",
-    "isFilterable": true,
-    "dynamicPropertyPathList": [
-        {"key": "onOptionChange"},
-        {"key": "sourceData"}
-    ],
-    "displayName": "Select",
-    "iconSVG": "/static/media/icon.bd99caba5853ad71e4b3d8daffacb3a2.svg",
-    "labelText": "Network",
-    "searchTags": ["dropdown"],
-    "topRow": 1,
-    "bottomRow": 5,
-    "parentRowSpace": 10,
-    "labelWidth": "4",
-    "type": "SELECT_WIDGET",
-    "serverSideFiltering": false,
-    "hideCard": false,
-    "shouldScrollContents": true,
-    "defaultOptionValue": "",
-    "animateLoading": true,
-    "parentColumnSpace": 19.75,
-    "dynamicTriggerPathList": [{"key": "onOptionChange"}],
-    "leftColumn": 28,
-    "dynamicBindingPathList": [
-        {"key": "accentColor"},
-        {"key": "borderRadius"},
-        {"key": "sourceData"}
-    ],
-    "labelPosition": "Left",
-    "placeholderText": "Select option",
-    "isDisabled": false,
-    "sourceData": "{{get_all_networks.data.map( (obj) => {return {'value': obj.network_id, 'label':obj.network_name}})}}",
-    "key": "oii3vhqege",
-    "labelTextSize": "0.875rem",
-    "isRequired": false,
-    "isDeprecated": false,
-    "rightColumn": 42,
-    "dynamicHeight": "AUTO_HEIGHT",
-    "widgetId": "d2t5jcve5e",
-    "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-    "optionValue": "value",
-    "isVisible": true,
-    "version": 1,
-    "parentId": "59rw5mx0bq",
-    "labelAlignment": "right",
-    "renderMode": "CANVAS",
-    "isLoading": false,
-    "optionLabel": "label",
-    "originalTopRow": 0,
-    "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-    "maxDynamicHeight": 9000,
-    "originalBottomRow": 5,
-    "onOptionChange": "{{Tab4Offer.run();TotalLine.run();Tab4User.run();}}",
-    "minDynamicHeight": 4
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 5,
+  "boxShadow": "none",
+  "defaultOptionValue": "",
+  "displayName": "Select",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "sourceData"
+    }
+  ],
+  "dynamicHeight": "AUTO_HEIGHT",
+  "dynamicPropertyPathList": [
+    {
+      "key": "onOptionChange"
+    },
+    {
+      "key": "sourceData"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onOptionChange"
+    }
+  ],
+  "hideCard": false,
+  "iconSVG": "/static/media/icon.bd99caba5853ad71e4b3d8daffacb3a2.svg",
+  "isDeprecated": false,
+  "isDisabled": false,
+  "isFilterable": true,
+  "isLoading": false,
+  "isRequired": false,
+  "isVisible": true,
+  "key": "oii3vhqege",
+  "labelAlignment": "right",
+  "labelPosition": "Left",
+  "labelText": "Network",
+  "labelTextSize": "0.875rem",
+  "labelWidth": "4",
+  "leftColumn": 28,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "onOptionChange": "{{Tab4Offer.run();TotalLine.run();Tab4User.run();}}",
+  "optionLabel": "label",
+  "optionValue": "value",
+  "originalBottomRow": 5,
+  "originalTopRow": 0,
+  "parentColumnSpace": 19.75,
+  "parentId": "59rw5mx0bq",
+  "parentRowSpace": 10,
+  "placeholderText": "Select option",
+  "renderMode": "CANVAS",
+  "rightColumn": 42,
+  "searchTags": [
+    "dropdown"
+  ],
+  "serverSideFiltering": false,
+  "shouldScrollContents": true,
+  "sourceData": "{{get_all_networks.data.map( (obj) => {return {'value': obj.network_id, 'label':obj.network_name}})}}",
+  "topRow": 1,
+  "type": "SELECT_WIDGET",
+  "version": 1,
+  "widgetId": "d2t5jcve5e",
+  "widgetName": "SelectNetwork"
 }

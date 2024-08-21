@@ -1,60 +1,82 @@
 {
-    "boxShadow": "none",
-    "widgetName": "SelectUserFBPage",
-    "isFilterable": true,
-    "dynamicPropertyPathList": [
-        {"key": "onOptionChange"},
-        {"key": "isVisible"},
-        {"key": "sourceData"}
-    ],
-    "iconSVG": "/static/media/icon.bd99caba5853ad71e4b3d8daffacb3a2.svg",
-    "displayName": "Select",
-    "labelText": "User",
-    "topRow": 10,
-    "searchTags": ["dropdown"],
-    "bottomRow": 14,
-    "parentRowSpace": 10,
-    "labelWidth": "3",
-    "type": "SELECT_WIDGET",
-    "serverSideFiltering": false,
-    "hideCard": false,
-    "shouldScrollContents": true,
-    "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( appsmith.store.myUser))(SelectUserFBPage.options, SelectUserFBPage.serverSideFiltering) }}",
-    "animateLoading": true,
-    "parentColumnSpace": 19.75,
-    "dynamicTriggerPathList": [{"key": "onOptionChange"}],
-    "leftColumn": 1,
-    "dynamicBindingPathList": [
-        {"key": "accentColor"},
-        {"key": "borderRadius"},
-        {"key": "sourceData"},
-        {"key": "isVisible"},
-        {"key": "defaultOptionValue"}
-    ],
-    "labelPosition": "Left",
-    "placeholderText": "Select option",
-    "isDisabled": false,
-    "sourceData": "{{get_all_users.data.map(e => {return {'value':e.fk_user_id,'label':e.last_name+' '+e.first_name}})}}",
-    "key": "dzotye9sxi",
-    "labelTextSize": "0.875rem",
-    "isRequired": false,
-    "isDeprecated": false,
-    "rightColumn": 14,
-    "dynamicHeight": "AUTO_HEIGHT",
-    "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-    "widgetId": "nwgpft5u4l",
-    "optionValue": "value",
-    "isVisible": "{{appsmith.store.role_level >100}}",
-    "version": 1,
-    "parentId": "59rw5mx0bq",
-    "isLoading": false,
-    "labelAlignment": "left",
-    "renderMode": "CANVAS",
-    "optionLabel": "label",
-    "originalTopRow": 9,
-    "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-    "maxDynamicHeight": 9000,
-    "originalBottomRow": 13,
-    "onOptionChange": "{{TotalLine.run();Tab4OfferDay.run();SelectFinancial.run();}}",
-    "minDynamicHeight": 4
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 14,
+  "boxShadow": "none",
+  "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( appsmith.store.myUser))(SelectUserFBPage.options, SelectUserFBPage.serverSideFiltering) }}",
+  "displayName": "Select",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "sourceData"
+    },
+    {
+      "key": "isVisible"
+    },
+    {
+      "key": "defaultOptionValue"
+    }
+  ],
+  "dynamicHeight": "AUTO_HEIGHT",
+  "dynamicPropertyPathList": [
+    {
+      "key": "onOptionChange"
+    },
+    {
+      "key": "isVisible"
+    },
+    {
+      "key": "sourceData"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onOptionChange"
+    }
+  ],
+  "hideCard": false,
+  "iconSVG": "/static/media/icon.bd99caba5853ad71e4b3d8daffacb3a2.svg",
+  "isDeprecated": false,
+  "isDisabled": false,
+  "isFilterable": true,
+  "isLoading": false,
+  "isRequired": false,
+  "isVisible": "{{appsmith.store.role_level >100}}",
+  "key": "dzotye9sxi",
+  "labelAlignment": "left",
+  "labelPosition": "Left",
+  "labelText": "User",
+  "labelTextSize": "0.875rem",
+  "labelWidth": "3",
+  "leftColumn": 1,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "onOptionChange": "{{TotalLine.run();Tab4OfferDay.run();SelectFinancial.run();}}",
+  "optionLabel": "label",
+  "optionValue": "value",
+  "originalBottomRow": 13,
+  "originalTopRow": 9,
+  "parentColumnSpace": 19.75,
+  "parentId": "59rw5mx0bq",
+  "parentRowSpace": 10,
+  "placeholderText": "Select option",
+  "renderMode": "CANVAS",
+  "rightColumn": 14,
+  "searchTags": [
+    "dropdown"
+  ],
+  "serverSideFiltering": false,
+  "shouldScrollContents": true,
+  "sourceData": "{{get_all_users.data.map(e => {return {'value':e.fk_user_id,'label':e.last_name+' '+e.first_name}})}}",
+  "topRow": 10,
+  "type": "SELECT_WIDGET",
+  "version": 1,
+  "widgetId": "nwgpft5u4l",
+  "widgetName": "SelectUserFBPage"
 }

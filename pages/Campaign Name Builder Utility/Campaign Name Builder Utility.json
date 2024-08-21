@@ -1,89 +1,32 @@
 {
+  "gitSyncId": "63936c0b4b95806da2da5de7_63bfca8160108a125629b4a1",
   "unpublishedPage": {
-    "name": "Campaign Name Builder Utility",
-    "slug": "campaign-name-builder-utility",
+    "isHidden": true,
     "layouts": [
       {
-        "viewMode": false,
         "dsl": {
-          "widgetName": "MainContainer",
           "backgroundColor": "none",
-          "rightColumn": 1224,
-          "snapColumns": 64,
-          "detachFromLayout": true,
-          "widgetId": "0",
-          "topRow": 0,
           "bottomRow": 850,
-          "containerStyle": "none",
-          "snapRows": 89,
-          "parentRowSpace": 1,
-          "type": "CANVAS_WIDGET",
           "canExtend": true,
-          "version": 89,
+          "containerStyle": "none",
+          "detachFromLayout": true,
+          "dynamicBindingPathList": [],
+          "leftColumn": 0,
           "minHeight": 900,
           "parentColumnSpace": 1,
-          "dynamicBindingPathList": [],
-          "leftColumn": 0
-        },
-        "layoutOnLoadActions": [
-          [
-            {
-              "id": "Campaign Name Builder Utility_OnLoad.myFun2",
-              "name": "OnLoad.myFun2",
-              "collectionId": "Campaign Name Builder Utility_OnLoad",
-              "clientSideExecution": true,
-              "confirmBeforeExecute": false,
-              "pluginType": "JS",
-              "jsonPathKeys": [
-                "async () => {\n  await get_all_users.run();\n  await get_user_offers_table.run();\n}"
-              ],
-              "timeoutInMillisecond": 10000
-            },
-            {
-              "id": "Campaign Name Builder Utility_get_all_networks",
-              "name": "get_all_networks",
-              "confirmBeforeExecute": false,
-              "pluginType": "API",
-              "jsonPathKeys": [
-                "appsmith.store.access_token"
-              ],
-              "timeoutInMillisecond": 10000
-            },
-            {
-              "id": "Campaign Name Builder Utility_get_off_category",
-              "name": "get_off_category",
-              "confirmBeforeExecute": false,
-              "pluginType": "API",
-              "jsonPathKeys": [
-                "appsmith.store.access_token"
-              ],
-              "timeoutInMillisecond": 10000
-            },
-            {
-              "id": "Campaign Name Builder Utility_js_logout.check_login",
-              "name": "js_logout.check_login",
-              "collectionId": "Campaign Name Builder Utility_js_logout",
-              "confirmBeforeExecute": false,
-              "pluginType": "JS",
-              "jsonPathKeys": [
-                "async () => {\n  if (!appsmith.store.access_token) navigateTo('Login');\n}"
-              ],
-              "timeoutInMillisecond": 10000
-            }
-          ]
-        ],
-        "layoutOnLoadActionErrors": [],
-        "validOnPageLoadActions": true,
-        "id": "Campaign Name Builder Utility",
-        "deleted": false,
-        "policies": [],
-        "userPermissions": []
+          "parentRowSpace": 1,
+          "rightColumn": 1224,
+          "snapColumns": 64,
+          "snapRows": 89,
+          "topRow": 0,
+          "type": "CANVAS_WIDGET",
+          "version": 89,
+          "widgetId": "0",
+          "widgetName": "MainContainer"
+        }
       }
     ],
-    "userPermissions": [],
-    "policies": [],
-    "isHidden": true
-  },
-  "deleted": false,
-  "gitSyncId": "63936c0b4b95806da2da5de7_63bfca8160108a125629b4a1"
+    "name": "Campaign Name Builder Utility",
+    "slug": "campaign-name-builder-utility"
+  }
 }

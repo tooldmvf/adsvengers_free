@@ -1,15 +1,11 @@
 {
+  "gitSyncId": "63936c0b4b95806da2da5de7_63b9998160108a1256294fd6",
+  "id": "Day by Day_js_duplicate_date",
   "unpublishedCollection": {
     "name": "js_duplicate_date",
     "pageId": "Day by Day",
     "pluginId": "js-plugin",
     "pluginType": "JS",
-    "actions": [],
-    "archivedActions": [],
-    "variables": [],
-    "userPermissions": []
-  },
-  "id": "Day by Day_js_duplicate_date",
-  "deleted": false,
-  "gitSyncId": "63936c0b4b95806da2da5de7_63b9998160108a1256294fd6"
+    "variables": []
+  }
 }

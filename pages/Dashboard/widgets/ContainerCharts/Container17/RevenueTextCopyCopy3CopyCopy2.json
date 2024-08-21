@@ -1,55 +1,67 @@
 {
-    "widgetName": "RevenueTextCopyCopy3CopyCopy2",
-    "borderColor": "",
-    "dynamicPropertyPathList": [{"key": "textColor"}],
-    "displayName": "Text",
-    "iconSVG": "/static/media/icon.97c59b523e6f70ba6f40a10fc2c7c5b5.svg",
-    "searchTags": [
-        "typography",
-        "paragraph",
-        "label"
-    ],
-    "topRow": 27,
-    "bottomRow": 31,
-    "parentRowSpace": 10,
-    "type": "TEXT_WIDGET",
-    "hideCard": false,
-    "shouldScrollContents": true,
-    "animateLoading": true,
-    "overflow": "NONE",
-    "fontFamily": "System Default",
-    "parentColumnSpace": 2.008636474609375,
-    "dynamicTriggerPathList": [],
-    "leftColumn": 39,
-    "dynamicBindingPathList": [
-        {"key": "truncateButtonColor"},
-        {"key": "borderRadius"},
-        {"key": "text"},
-        {"key": "textColor"}
-    ],
-    "shouldTruncate": false,
-    "borderWidth": "",
-    "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-    "text": "{{Utils.myCurrency(user_financial_period.data[0].profit -user_financial_period.data[0].profit_h)}} \u20ac",
-    "key": "nk7g1uvbwm",
-    "isDeprecated": false,
-    "rightColumn": 51,
-    "backgroundColor": "",
-    "disableLink": false,
-    "textAlign": "RIGHT",
-    "dynamicHeight": "AUTO_HEIGHT",
-    "widgetId": "kzkoe11tll",
-    "isVisible": false,
-    "fontStyle": "BOLD",
-    "textColor": "{{(user_financial_period.data[0].profit -user_financial_period.data[0].profit_h)<0 ? 'red' : 'black'}}",
-    "version": 1,
-    "parentId": "ynnw8tn134",
-    "renderMode": "CANVAS",
-    "isLoading": false,
-    "originalTopRow": 28,
-    "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-    "maxDynamicHeight": 9000,
-    "originalBottomRow": 33,
-    "fontSize": "0.875rem",
-    "minDynamicHeight": 4
+  "animateLoading": true,
+  "backgroundColor": "",
+  "borderColor": "",
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "borderWidth": "",
+  "bottomRow": 31,
+  "disableLink": false,
+  "displayName": "Text",
+  "dynamicBindingPathList": [
+    {
+      "key": "truncateButtonColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "text"
+    },
+    {
+      "key": "textColor"
+    }
+  ],
+  "dynamicHeight": "AUTO_HEIGHT",
+  "dynamicPropertyPathList": [
+    {
+      "key": "textColor"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "fontFamily": "System Default",
+  "fontSize": "0.875rem",
+  "fontStyle": "BOLD",
+  "hideCard": false,
+  "iconSVG": "/static/media/icon.97c59b523e6f70ba6f40a10fc2c7c5b5.svg",
+  "isDeprecated": false,
+  "isLoading": false,
+  "isVisible": false,
+  "key": "nk7g1uvbwm",
+  "leftColumn": 39,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "originalBottomRow": 33,
+  "originalTopRow": 28,
+  "overflow": "NONE",
+  "parentColumnSpace": 2.008636474609375,
+  "parentId": "ynnw8tn134",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "rightColumn": 51,
+  "searchTags": [
+    "typography",
+    "paragraph",
+    "label"
+  ],
+  "shouldScrollContents": true,
+  "shouldTruncate": false,
+  "text": "{{Utils.myCurrency(user_financial_period.data[0].profit -user_financial_period.data[0].profit_h)}} €",
+  "textAlign": "RIGHT",
+  "textColor": "{{(user_financial_period.data[0].profit -user_financial_period.data[0].profit_h)<0 ? 'red' : 'black'}}",
+  "topRow": 27,
+  "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
+  "type": "TEXT_WIDGET",
+  "version": 1,
+  "widgetId": "kzkoe11tll",
+  "widgetName": "RevenueTextCopyCopy3CopyCopy2"
 }

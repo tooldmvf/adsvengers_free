@@ -1,63 +1,79 @@
 {
-    "boxShadow": "none",
-    "widgetName": "SelectNetworkDbd",
-    "isFilterable": true,
-    "allowSelectAll": true,
-    "dynamicPropertyPathList": [
-        {"key": "onOptionChange"},
-        {"key": "sourceData"}
-    ],
-    "displayName": "MultiSelect",
-    "iconSVG": "/static/media/icon.a3495809ae48291a64404f3bb04b0e69.svg",
-    "labelText": "Network",
-    "searchTags": [
-        "dropdown",
-        "tags"
-    ],
-    "topRow": 2,
-    "bottomRow": 6,
-    "parentRowSpace": 10,
-    "labelWidth": "6",
-    "type": "MULTI_SELECT_WIDGET_V2",
-    "serverSideFiltering": false,
-    "hideCard": false,
-    "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( appsmith?.store?.myNetworks || ''))(SelectNetworkDbd.options, SelectNetworkDbd.serverSideFiltering) }}",
-    "animateLoading": true,
-    "parentColumnSpace": 20.0625,
-    "dynamicTriggerPathList": [
-        {"key": "onOptionChange"},
-        {"key": "onDropdownClose"}
-    ],
-    "leftColumn": 44,
-    "dynamicBindingPathList": [
-        {"key": "accentColor"},
-        {"key": "borderRadius"},
-        {"key": "sourceData"},
-        {"key": "defaultOptionValue"}
-    ],
-    "labelPosition": "Left",
-    "onDropdownClose": "",
-    "placeholderText": "Select option(s)",
-    "isDisabled": false,
-    "sourceData": "{{get_all_networks.data.map( (obj) => {return {'value': obj.network_id, 'label':obj.network_name}})}}",
-    "key": "lkxp32394n",
-    "labelTextSize": "0.875rem",
-    "isRequired": false,
-    "isDeprecated": false,
-    "rightColumn": 61,
-    "dynamicHeight": "FIXED",
-    "widgetId": "7yglms6gl4",
-    "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-    "optionValue": "value",
-    "isVisible": true,
-    "version": 1,
-    "parentId": "59rw5mx0bq",
-    "labelAlignment": "right",
-    "renderMode": "CANVAS",
-    "isLoading": false,
-    "optionLabel": "label",
-    "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-    "maxDynamicHeight": 9000,
-    "onOptionChange": "{{(() => {\nstoreValue('myNetworks',SelectNetworkDbd.selectedOptionValues, false);\nTableTotal.tblSummary();\n\tGetUserAccount.run();\n})()}}\t",
-    "minDynamicHeight": 4
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "allowSelectAll": true,
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 6,
+  "boxShadow": "none",
+  "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( appsmith?.store?.myNetworks || ''))(SelectNetworkDbd.options, SelectNetworkDbd.serverSideFiltering) }}",
+  "displayName": "MultiSelect",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "sourceData"
+    },
+    {
+      "key": "defaultOptionValue"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "onOptionChange"
+    },
+    {
+      "key": "sourceData"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onOptionChange"
+    },
+    {
+      "key": "onDropdownClose"
+    }
+  ],
+  "hideCard": false,
+  "iconSVG": "/static/media/icon.a3495809ae48291a64404f3bb04b0e69.svg",
+  "isDeprecated": false,
+  "isDisabled": false,
+  "isFilterable": true,
+  "isLoading": false,
+  "isRequired": false,
+  "isVisible": true,
+  "key": "lkxp32394n",
+  "labelAlignment": "right",
+  "labelPosition": "Left",
+  "labelText": "Network",
+  "labelTextSize": "0.875rem",
+  "labelWidth": "6",
+  "leftColumn": 44,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "onDropdownClose": "",
+  "onOptionChange": "{{(() => {\nstoreValue('myNetworks',SelectNetworkDbd.selectedOptionValues, false);\nTableTotal.tblSummary();\n\tGetUserAccount.run();\n})()}}\t",
+  "optionLabel": "label",
+  "optionValue": "value",
+  "parentColumnSpace": 20.0625,
+  "parentId": "59rw5mx0bq",
+  "parentRowSpace": 10,
+  "placeholderText": "Select option(s)",
+  "renderMode": "CANVAS",
+  "rightColumn": 61,
+  "searchTags": [
+    "dropdown",
+    "tags"
+  ],
+  "serverSideFiltering": false,
+  "sourceData": "{{get_all_networks.data.map( (obj) => {return {'value': obj.network_id, 'label':obj.network_name}})}}",
+  "topRow": 2,
+  "type": "MULTI_SELECT_WIDGET_V2",
+  "version": 1,
+  "widgetId": "7yglms6gl4",
+  "widgetName": "SelectNetworkDbd"
 }

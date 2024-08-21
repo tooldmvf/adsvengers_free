@@ -1,15 +1,11 @@
 {
+  "gitSyncId": "63c3151532584b547fffe91b_642300e99e29566c0dd581fa",
+  "id": "Ai20 Revenue_js_logout",
   "unpublishedCollection": {
     "name": "js_logout",
     "pageId": "Ai20 Revenue",
     "pluginId": "js-plugin",
     "pluginType": "JS",
-    "actions": [],
-    "archivedActions": [],
-    "variables": [],
-    "userPermissions": []
-  },
-  "id": "Ai20 Revenue_js_logout",
-  "deleted": false,
-  "gitSyncId": "63c3151532584b547fffe91b_642300e99e29566c0dd581fa"
+    "variables": []
+  }
 }

@@ -1,15 +1,11 @@
 {
+  "gitSyncId": "63c3151532584b547fffe91b_63dc06d88d40323e241b320c",
+  "id": "Day by Day_TableTotal",
   "unpublishedCollection": {
     "name": "TableTotal",
     "pageId": "Day by Day",
     "pluginId": "js-plugin",
     "pluginType": "JS",
-    "actions": [],
-    "archivedActions": [],
-    "variables": [],
-    "userPermissions": []
-  },
-  "id": "Day by Day_TableTotal",
-  "deleted": false,
-  "gitSyncId": "63c3151532584b547fffe91b_63dc06d88d40323e241b320c"
+    "variables": []
+  }
 }

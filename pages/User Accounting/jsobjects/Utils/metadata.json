@@ -1,15 +1,11 @@
 {
+  "gitSyncId": "646331cd28902b71518db22a_6471a2694bdc0705211d9418",
+  "id": "User Accounting_Utils",
   "unpublishedCollection": {
     "name": "Utils",
     "pageId": "User Accounting",
     "pluginId": "js-plugin",
     "pluginType": "JS",
-    "actions": [],
-    "archivedActions": [],
-    "variables": [],
-    "userPermissions": []
-  },
-  "id": "User Accounting_Utils",
-  "deleted": false,
-  "gitSyncId": "646331cd28902b71518db22a_6471a2694bdc0705211d9418"
+    "variables": []
+  }
 }

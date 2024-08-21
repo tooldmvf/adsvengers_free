@@ -1,58 +1,34 @@
 {
+  "gitSyncId": "63c3151532584b547fffe91b_644b89d831cbfd3f2cf1e46c",
   "unpublishedPage": {
-    "name": "ZZZ OLD 2 Commissions Admin",
-    "slug": "zzz-old-2-commissions-admin",
     "customSlug": "",
+    "isHidden": true,
     "layouts": [
       {
-        "viewMode": false,
         "dsl": {
-          "widgetName": "MainContainer",
           "backgroundColor": "none",
+          "bottomRow": 710,
+          "canExtend": true,
+          "containerStyle": "none",
+          "detachFromLayout": true,
+          "dynamicBindingPathList": [],
+          "dynamicTriggerPathList": [],
+          "leftColumn": 0,
+          "minHeight": 1292,
+          "parentColumnSpace": 1,
+          "parentRowSpace": 1,
           "rightColumn": 4896,
           "snapColumns": 64,
-          "detachFromLayout": true,
-          "widgetId": "0",
-          "topRow": 0,
-          "bottomRow": 710,
-          "containerStyle": "none",
           "snapRows": 125,
-          "parentRowSpace": 1,
+          "topRow": 0,
           "type": "CANVAS_WIDGET",
-          "canExtend": true,
           "version": 89,
-          "minHeight": 1292,
-          "dynamicTriggerPathList": [],
-          "parentColumnSpace": 1,
-          "dynamicBindingPathList": [],
-          "leftColumn": 0
-        },
-        "layoutOnLoadActions": [
-          [
-            {
-              "id": "ZZZ OLD 2 Commissions Admin_get_all_users",
-              "name": "get_all_users",
-              "confirmBeforeExecute": false,
-              "pluginType": "API",
-              "jsonPathKeys": [
-                "appsmith.store.access_token"
-              ],
-              "timeoutInMillisecond": 10000
-            }
-          ]
-        ],
-        "layoutOnLoadActionErrors": [],
-        "validOnPageLoadActions": true,
-        "id": "ZZZ OLD 2 Commissions Admin",
-        "deleted": false,
-        "policies": [],
-        "userPermissions": []
+          "widgetId": "0",
+          "widgetName": "MainContainer"
+        }
       }
     ],
-    "userPermissions": [],
-    "policies": [],
-    "isHidden": true
-  },
-  "deleted": false,
-  "gitSyncId": "63c3151532584b547fffe91b_644b89d831cbfd3f2cf1e46c"
+    "name": "ZZZ OLD 2 Commissions Admin",
+    "slug": "zzz-old-2-commissions-admin"
+  }
 }

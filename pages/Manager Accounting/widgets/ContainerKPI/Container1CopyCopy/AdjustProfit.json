@@ -1,67 +1,83 @@
 {
-    "boxShadow": "none",
-    "iconSVG": "/static/media/icon.f312efcb48ce4dafb08c20291635b30b.svg",
-    "topRow": 44,
-    "defaultCurrencyCode": "EUR",
-    "labelWidth": 5,
-    "type": "CURRENCY_INPUT_WIDGET",
-    "animateLoading": true,
-    "resetOnSubmit": true,
-    "leftColumn": 39,
-    "dynamicBindingPathList": [
-        {"key": "accentColor"},
-        {"key": "borderRadius"},
-        {"key": "isDisabled"},
-        {"key": "defaultText"}
-    ],
-    "labelStyle": "BOLD",
-    "isDisabled": "{{appsmith.store.role_level==100}}",
-    "isRequired": false,
-    "dynamicHeight": "AUTO_HEIGHT",
-    "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-    "showStepArrows": false,
-    "isVisible": true,
-    "allowCurrencyChange": false,
-    "version": 1,
-    "isLoading": false,
-    "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-    "originalBottomRow": 49,
-    "mobileBottomRow": 85,
-    "widgetName": "AdjustProfit",
-    "dynamicPropertyPathList": [{"key": "isDisabled"}],
-    "displayName": "Currency Input",
-    "searchTags": [
-        "amount",
-        "total"
-    ],
-    "bottomRow": 48,
-    "parentRowSpace": 10,
-    "autoFocus": false,
-    "hideCard": false,
-    "mobileRightColumn": 36,
-    "shouldScrollContents": true,
-    "parentColumnSpace": 20.03125,
-    "dynamicTriggerPathList": [{"key": "onBlur"}],
-    "labelPosition": "Auto",
-    "labelTextColor": "",
-    "key": "tybdhtzpnm",
-    "labelTextSize": "0.875rem",
-    "isDeprecated": false,
-    "rightColumn": 63,
-    "widgetId": "8u0jch8v3u",
-    "minWidth": 450,
-    "label": "",
-    "parentId": "lvya69kw4u",
-    "labelAlignment": "left",
-    "renderMode": "CANVAS",
-    "mobileTopRow": 78,
-    "onBlur": "",
-    "responsiveBehavior": "fill",
-    "originalTopRow": 45,
-    "mobileLeftColumn": 16,
-    "maxDynamicHeight": 9000,
-    "decimals": 2,
-    "iconAlign": "left",
-    "defaultText": "{{Fetch_Manager.data[0]?.amount_adjustment ||0}}",
-    "minDynamicHeight": 4
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "allowCurrencyChange": false,
+  "animateLoading": true,
+  "autoFocus": false,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 48,
+  "boxShadow": "none",
+  "decimals": 2,
+  "defaultCurrencyCode": "EUR",
+  "defaultText": "{{Fetch_Manager.data[0]?.amount_adjustment ||0}}",
+  "displayName": "Currency Input",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "isDisabled"
+    },
+    {
+      "key": "defaultText"
+    }
+  ],
+  "dynamicHeight": "AUTO_HEIGHT",
+  "dynamicPropertyPathList": [
+    {
+      "key": "isDisabled"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onBlur"
+    }
+  ],
+  "hideCard": false,
+  "iconAlign": "left",
+  "iconSVG": "/static/media/icon.f312efcb48ce4dafb08c20291635b30b.svg",
+  "isDeprecated": false,
+  "isDisabled": "{{appsmith.store.role_level==100}}",
+  "isLoading": false,
+  "isRequired": false,
+  "isVisible": true,
+  "key": "tybdhtzpnm",
+  "label": "",
+  "labelAlignment": "left",
+  "labelPosition": "Auto",
+  "labelStyle": "BOLD",
+  "labelTextColor": "",
+  "labelTextSize": "0.875rem",
+  "labelWidth": 5,
+  "leftColumn": 39,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 85,
+  "mobileLeftColumn": 16,
+  "mobileRightColumn": 36,
+  "mobileTopRow": 78,
+  "onBlur": "",
+  "originalBottomRow": 49,
+  "originalTopRow": 45,
+  "parentColumnSpace": 20.03125,
+  "parentId": "lvya69kw4u",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "resetOnSubmit": true,
+  "responsiveBehavior": "fill",
+  "rightColumn": 63,
+  "searchTags": [
+    "amount",
+    "total"
+  ],
+  "shouldScrollContents": true,
+  "showStepArrows": false,
+  "topRow": 44,
+  "type": "CURRENCY_INPUT_WIDGET",
+  "version": 1,
+  "widgetId": "8u0jch8v3u",
+  "widgetName": "AdjustProfit"
 }

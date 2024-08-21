@@ -1,15 +1,11 @@
 {
+  "gitSyncId": "63c3151532584b547fffe91b_64535ca031cbfd3f2cf26d16",
+  "id": "ZZZ OLD Off Detail Admin_Utils",
   "unpublishedCollection": {
     "name": "Utils",
     "pageId": "ZZZ OLD Off Detail Admin",
     "pluginId": "js-plugin",
     "pluginType": "JS",
-    "actions": [],
-    "archivedActions": [],
-    "variables": [],
-    "userPermissions": []
-  },
-  "id": "ZZZ OLD Off Detail Admin_Utils",
-  "deleted": false,
-  "gitSyncId": "63c3151532584b547fffe91b_64535ca031cbfd3f2cf26d16"
+    "variables": []
+  }
 }

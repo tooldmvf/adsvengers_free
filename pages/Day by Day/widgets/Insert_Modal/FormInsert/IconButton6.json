@@ -1,44 +1,58 @@
 {
-    "boxShadow": "none",
-    "widgetName": "IconButton6",
-    "onClick": "{{storeValue('custom_off','true');storeValue('custom_off2','true')}}",
-    "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
-    "dynamicPropertyPathList": [
-        {"key": "isDisabled"},
-        {"key": "onClick"}
-    ],
-    "displayName": "Icon Button",
-    "iconSVG": "/static/media/icon.1a0c634ac75f9fa6b6ae7a8df882a3ba.svg",
-    "searchTags": [
-        "click",
-        "submit"
-    ],
-    "topRow": 8,
-    "bottomRow": 12,
-    "tooltip": "Add Custom network",
-    "parentRowSpace": 10,
-    "type": "ICON_BUTTON_WIDGET",
-    "hideCard": false,
-    "animateLoading": true,
-    "parentColumnSpace": 10.88671875,
-    "dynamicTriggerPathList": [{"key": "onClick"}],
-    "leftColumn": 59,
-    "dynamicBindingPathList": [
-        {"key": "buttonColor"},
-        {"key": "borderRadius"},
-        {"key": "isDisabled"}
-    ],
-    "isDisabled": "{{appsmith.store.custom_off}}",
-    "key": "8mzmirdvd0",
-    "isDeprecated": false,
-    "rightColumn": 63,
-    "iconName": "edit",
-    "widgetId": "e2hunzzcdn",
-    "isVisible": true,
-    "version": 1,
-    "parentId": "hgd83jumux",
-    "renderMode": "CANVAS",
-    "isLoading": false,
-    "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-    "buttonVariant": "SECONDARY"
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 12,
+  "boxShadow": "none",
+  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+  "buttonVariant": "SECONDARY",
+  "displayName": "Icon Button",
+  "dynamicBindingPathList": [
+    {
+      "key": "buttonColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "isDisabled"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "isDisabled"
+    },
+    {
+      "key": "onClick"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "hideCard": false,
+  "iconName": "edit",
+  "iconSVG": "/static/media/icon.1a0c634ac75f9fa6b6ae7a8df882a3ba.svg",
+  "isDeprecated": false,
+  "isDisabled": "{{appsmith.store.custom_off}}",
+  "isLoading": false,
+  "isVisible": true,
+  "key": "8mzmirdvd0",
+  "leftColumn": 59,
+  "onClick": "{{storeValue('custom_off','true');storeValue('custom_off2','true')}}",
+  "parentColumnSpace": 10.88671875,
+  "parentId": "hgd83jumux",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "rightColumn": 63,
+  "searchTags": [
+    "click",
+    "submit"
+  ],
+  "tooltip": "Add Custom network",
+  "topRow": 8,
+  "type": "ICON_BUTTON_WIDGET",
+  "version": 1,
+  "widgetId": "e2hunzzcdn",
+  "widgetName": "IconButton6"
 }

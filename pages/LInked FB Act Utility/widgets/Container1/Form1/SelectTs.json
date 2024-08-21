@@ -1,54 +1,70 @@
 {
-    "boxShadow": "none",
-    "widgetName": "SelectTs",
-    "isFilterable": true,
-    "dynamicPropertyPathList": [{"key": "sourceData"}],
-    "iconSVG": "/static/media/icon.bd99caba5853ad71e4b3d8daffacb3a2.svg",
-    "displayName": "Select",
-    "labelText": "Traffic Source",
-    "topRow": 1,
-    "searchTags": ["dropdown"],
-    "bottomRow": 8,
-    "parentRowSpace": 10,
-    "labelWidth": "19",
-    "type": "SELECT_WIDGET",
-    "serverSideFiltering": false,
-    "hideCard": false,
-    "shouldScrollContents": true,
-    "defaultOptionValue": "",
-    "animateLoading": true,
-    "parentColumnSpace": 20.0625,
-    "dynamicTriggerPathList": [{"key": "onOptionChange"}],
-    "leftColumn": 1,
-    "dynamicBindingPathList": [
-        {"key": "accentColor"},
-        {"key": "borderRadius"},
-        {"key": "sourceData"}
-    ],
-    "labelPosition": "Top",
-    "placeholderText": "Select option",
-    "isDisabled": false,
-    "sourceData": "{{\nget_ts.data.map( \n \t(obj) =>{\n \t\treturn  {\n \t\t\t'value': obj.ts_id, \n \t\t\t'label': obj.ts_name \n \t\t} \n \t}\n )\n }}",
-    "key": "7il0nkenmt",
-    "labelTextSize": "0.875rem",
-    "isRequired": true,
-    "isDeprecated": false,
-    "rightColumn": 61,
-    "dynamicHeight": "AUTO_HEIGHT",
-    "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-    "widgetId": "r75fn9dmdn",
-    "optionValue": "value",
-    "isVisible": true,
-    "version": 1,
-    "parentId": "lt2rztie39",
-    "isLoading": false,
-    "labelAlignment": "left",
-    "renderMode": "CANVAS",
-    "optionLabel": "label",
-    "originalTopRow": 1,
-    "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-    "maxDynamicHeight": 9000,
-    "originalBottomRow": 8,
-    "onOptionChange": "{{get_all_bm.run()}}",
-    "minDynamicHeight": 4
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 8,
+  "boxShadow": "none",
+  "defaultOptionValue": "",
+  "displayName": "Select",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "sourceData"
+    }
+  ],
+  "dynamicHeight": "AUTO_HEIGHT",
+  "dynamicPropertyPathList": [
+    {
+      "key": "sourceData"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onOptionChange"
+    }
+  ],
+  "hideCard": false,
+  "iconSVG": "/static/media/icon.bd99caba5853ad71e4b3d8daffacb3a2.svg",
+  "isDeprecated": false,
+  "isDisabled": false,
+  "isFilterable": true,
+  "isLoading": false,
+  "isRequired": true,
+  "isVisible": true,
+  "key": "7il0nkenmt",
+  "labelAlignment": "left",
+  "labelPosition": "Top",
+  "labelText": "Traffic Source",
+  "labelTextSize": "0.875rem",
+  "labelWidth": "19",
+  "leftColumn": 1,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "onOptionChange": "{{get_all_bm.run()}}",
+  "optionLabel": "label",
+  "optionValue": "value",
+  "originalBottomRow": 8,
+  "originalTopRow": 1,
+  "parentColumnSpace": 20.0625,
+  "parentId": "lt2rztie39",
+  "parentRowSpace": 10,
+  "placeholderText": "Select option",
+  "renderMode": "CANVAS",
+  "rightColumn": 61,
+  "searchTags": [
+    "dropdown"
+  ],
+  "serverSideFiltering": false,
+  "shouldScrollContents": true,
+  "sourceData": "{{\nget_ts.data.map( \n \t(obj) =>{\n \t\treturn  {\n \t\t\t'value': obj.ts_id, \n \t\t\t'label': obj.ts_name \n \t\t} \n \t}\n )\n }}",
+  "topRow": 1,
+  "type": "SELECT_WIDGET",
+  "version": 1,
+  "widgetId": "r75fn9dmdn",
+  "widgetName": "SelectTs"
 }

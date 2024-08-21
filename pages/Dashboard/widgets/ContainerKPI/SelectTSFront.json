@@ -1,63 +1,79 @@
 {
-    "boxShadow": "none",
-    "widgetName": "SelectTSFront",
-    "isFilterable": true,
-    "allowSelectAll": true,
-    "dynamicPropertyPathList": [
-        {"key": "onDropdownClose"},
-        {"key": "onOptionChange"},
-        {"key": "sourceData"}
-    ],
-    "displayName": "MultiSelect",
-    "iconSVG": "/static/media/icon.a3495809ae48291a64404f3bb04b0e69.svg",
-    "labelText": "Tr.Source",
-    "searchTags": [
-        "dropdown",
-        "tags"
-    ],
-    "topRow": 4,
-    "bottomRow": 8,
-    "parentRowSpace": 10,
-    "labelWidth": "4",
-    "type": "MULTI_SELECT_WIDGET_V2",
-    "serverSideFiltering": false,
-    "hideCard": false,
-    "defaultOptionValue": "",
-    "animateLoading": true,
-    "parentColumnSpace": 20.0625,
-    "dynamicTriggerPathList": [
-        {"key": "onOptionChange"},
-        {"key": "onDropdownClose"}
-    ],
-    "leftColumn": 27,
-    "dynamicBindingPathList": [
-        {"key": "accentColor"},
-        {"key": "borderRadius"},
-        {"key": "sourceData"}
-    ],
-    "labelPosition": "Left",
-    "onDropdownClose": "",
-    "placeholderText": "Select option(s)",
-    "isDisabled": false,
-    "sourceData": "{{get_ts.data.map( (obj) => {return {'value': obj.ts_id, 'label':obj.ts_name}})}}",
-    "key": "lkxp32394n",
-    "labelTextSize": "0.875rem",
-    "isRequired": false,
-    "isDeprecated": false,
-    "rightColumn": 42,
-    "dynamicHeight": "FIXED",
-    "widgetId": "5x05ty2m6i",
-    "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-    "optionValue": "value",
-    "isVisible": true,
-    "version": 1,
-    "parentId": "kvdk6yenbb",
-    "labelAlignment": "right",
-    "renderMode": "CANVAS",
-    "isLoading": false,
-    "optionLabel": "label",
-    "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-    "maxDynamicHeight": 9000,
-    "onOptionChange": "{{(() => {\nstoreValue('myNetworks',SelectNetwork.selectedOptionValues, false);\nuser_financial_period.run();\nuser_financialOffers.run();user_financialNetwork.run();\nuser_financial_rej_rate_24h.run();\nuser_financial_active_offers.run();\nuser_financial_trend.run();\n})()}}",
-    "minDynamicHeight": 4
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "allowSelectAll": true,
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 8,
+  "boxShadow": "none",
+  "defaultOptionValue": "",
+  "displayName": "MultiSelect",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "sourceData"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "onDropdownClose"
+    },
+    {
+      "key": "onOptionChange"
+    },
+    {
+      "key": "sourceData"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onOptionChange"
+    },
+    {
+      "key": "onDropdownClose"
+    }
+  ],
+  "hideCard": false,
+  "iconSVG": "/static/media/icon.a3495809ae48291a64404f3bb04b0e69.svg",
+  "isDeprecated": false,
+  "isDisabled": false,
+  "isFilterable": true,
+  "isLoading": false,
+  "isRequired": false,
+  "isVisible": true,
+  "key": "lkxp32394n",
+  "labelAlignment": "right",
+  "labelPosition": "Left",
+  "labelText": "Tr.Source",
+  "labelTextSize": "0.875rem",
+  "labelWidth": "4",
+  "leftColumn": 27,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "onDropdownClose": "",
+  "onOptionChange": "{{(() => {\nstoreValue('myNetworks',SelectNetwork.selectedOptionValues, false);\nuser_financial_period.run();\nuser_financialOffers.run();user_financialNetwork.run();\nuser_financial_rej_rate_24h.run();\nuser_financial_active_offers.run();\nuser_financial_trend.run();\n})()}}",
+  "optionLabel": "label",
+  "optionValue": "value",
+  "parentColumnSpace": 20.0625,
+  "parentId": "kvdk6yenbb",
+  "parentRowSpace": 10,
+  "placeholderText": "Select option(s)",
+  "renderMode": "CANVAS",
+  "rightColumn": 42,
+  "searchTags": [
+    "dropdown",
+    "tags"
+  ],
+  "serverSideFiltering": false,
+  "sourceData": "{{get_ts.data.map( (obj) => {return {'value': obj.ts_id, 'label':obj.ts_name}})}}",
+  "topRow": 4,
+  "type": "MULTI_SELECT_WIDGET_V2",
+  "version": 1,
+  "widgetId": "5x05ty2m6i",
+  "widgetName": "SelectTSFront"
 }

@@ -1,114 +1,32 @@
 {
+  "gitSyncId": "646331cd28902b71518db22a_64ba0ec0c08640241d2a3149",
   "unpublishedPage": {
-    "name": "Factory Accounting",
-    "slug": "factory-accounting",
+    "isHidden": true,
     "layouts": [
       {
-        "viewMode": false,
         "dsl": {
-          "widgetName": "MainContainer",
           "backgroundColor": "none",
-          "rightColumn": 1224,
-          "snapColumns": 64,
-          "detachFromLayout": true,
-          "widgetId": "0",
-          "topRow": 0,
           "bottomRow": 980,
-          "containerStyle": "none",
-          "snapRows": 86,
-          "parentRowSpace": 1,
-          "type": "CANVAS_WIDGET",
           "canExtend": true,
-          "version": 89,
+          "containerStyle": "none",
+          "detachFromLayout": true,
+          "dynamicBindingPathList": [],
+          "leftColumn": 0,
           "minHeight": 880,
           "parentColumnSpace": 1,
-          "dynamicBindingPathList": [],
-          "leftColumn": 0
-        },
-        "layoutOnLoadActions": [
-          [
-            {
-              "id": "Factory Accounting_Utils.reload",
-              "name": "Utils.reload",
-              "collectionId": "Factory Accounting_Utils",
-              "confirmBeforeExecute": false,
-              "pluginType": "JS",
-              "jsonPathKeys": [
-                "async function () {\n  if (SelectMonth.selectedOptionValue.length > 0) {\n    await resetWidget('Adjust');\n    await Fetch_Adjustments.run();\n    await resetWidget('AdjustProfit');\n    await Fetch_Debt_Prev_Month.run();\n    await Fetch_Data_Rev_TOT.run();\n    await Fetch_Data_Rev.run();\n    await Fetch_Data_Spent.run();\n    await Fetch_Data_Spent_TOT.run();\n    await Fetch_Data_Other_Prj.run();\n    await Fetch_Data_Rev_Ai20.run();\n  }\n}"
-              ],
-              "timeoutInMillisecond": 10000
-            }
-          ],
-          [
-            {
-              "id": "Factory Accounting_Fetch_Data_Other_Prj_Det",
-              "name": "Fetch_Data_Other_Prj_Det",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [
-                "SelectMonth.selectedOptionValue",
-                "SelectYear.selectedOptionValue"
-              ],
-              "timeoutInMillisecond": 10000
-            },
-            {
-              "id": "Factory Accounting_Fetch_Data_Rev_Ai20_Det",
-              "name": "Fetch_Data_Rev_Ai20_Det",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [
-                "SelectMonth.selectedOptionValue",
-                "SelectYear.selectedOptionValue"
-              ],
-              "timeoutInMillisecond": 10000
-            },
-            {
-              "id": "Factory Accounting_Fetch_Data_Spent_Det_Ai20",
-              "name": "Fetch_Data_Spent_Det_Ai20",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [
-                "SelectMonth.selectedOptionValue",
-                "SelectYear.selectedOptionValue"
-              ],
-              "timeoutInMillisecond": 10000
-            },
-            {
-              "id": "Factory Accounting_js_logout.check_login",
-              "name": "js_logout.check_login",
-              "collectionId": "Factory Accounting_js_logout",
-              "confirmBeforeExecute": false,
-              "pluginType": "JS",
-              "jsonPathKeys": [],
-              "timeoutInMillisecond": 10000
-            }
-          ],
-          [
-            {
-              "id": "Factory Accounting_Fetch_Adjustments",
-              "name": "Fetch_Adjustments",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [
-                "SelectMonth.selectedOptionValue",
-                "SelectYear.selectedOptionValue"
-              ],
-              "timeoutInMillisecond": 10000
-            }
-          ]
-        ],
-        "layoutOnLoadActionErrors": [],
-        "validOnPageLoadActions": true,
-        "id": "Factory Accounting",
-        "deleted": false,
-        "policies": [],
-        "userPermissions": []
+          "parentRowSpace": 1,
+          "rightColumn": 1224,
+          "snapColumns": 64,
+          "snapRows": 86,
+          "topRow": 0,
+          "type": "CANVAS_WIDGET",
+          "version": 89,
+          "widgetId": "0",
+          "widgetName": "MainContainer"
+        }
       }
     ],
-    "userPermissions": [],
-    "policies": [],
-    "isHidden": true
-  },
-  "deleted": false,
-  "gitSyncId": "646331cd28902b71518db22a_64ba0ec0c08640241d2a3149"
+    "name": "Factory Accounting",
+    "slug": "factory-accounting"
+  }
 }

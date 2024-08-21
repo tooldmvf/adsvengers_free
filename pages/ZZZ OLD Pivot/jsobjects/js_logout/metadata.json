@@ -1,15 +1,11 @@
 {
+  "gitSyncId": "63936c0b4b95806da2da5de7_63b326a10bc0a80b30018498",
+  "id": "ZZZ OLD Pivot_js_logout",
   "unpublishedCollection": {
     "name": "js_logout",
     "pageId": "ZZZ OLD Pivot",
     "pluginId": "js-plugin",
     "pluginType": "JS",
-    "actions": [],
-    "archivedActions": [],
-    "variables": [],
-    "userPermissions": []
-  },
-  "id": "ZZZ OLD Pivot_js_logout",
-  "deleted": false,
-  "gitSyncId": "63936c0b4b95806da2da5de7_63b326a10bc0a80b30018498"
+    "variables": []
+  }
 }

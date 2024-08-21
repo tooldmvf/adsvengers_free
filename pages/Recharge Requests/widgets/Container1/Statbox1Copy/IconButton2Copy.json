@@ -1,44 +1,56 @@
 {
-    "boxShadow": "none",
-    "mobileBottomRow": 10,
-    "widgetName": "IconButton2Copy",
-    "onClick": "",
-    "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
-    "dynamicPropertyPathList": [{"key": "onClick"}],
-    "displayName": "Icon button",
-    "iconSVG": "/static/media/icon.80fc7466c0d7181ec0271de7fda795ec.svg",
-    "searchTags": [
-        "click",
-        "submit"
-    ],
-    "topRow": 0,
-    "bottomRow": 6,
-    "type": "ICON_BUTTON_WIDGET",
-    "hideCard": false,
-    "mobileRightColumn": 62,
-    "animateLoading": true,
-    "dynamicTriggerPathList": [{"key": "onClick"}],
-    "leftColumn": 45,
-    "dynamicBindingPathList": [
-        {"key": "buttonColor"},
-        {"key": "borderRadius"}
-    ],
-    "isDisabled": false,
-    "key": "ngq0sikg6n",
-    "isDeprecated": false,
-    "rightColumn": 63,
-    "iconName": "dollar",
-    "widgetId": "eeohrdp0yj",
-    "buttonStyle": "PRIMARY",
-    "minWidth": 50,
-    "isVisible": true,
-    "version": 1,
-    "parentId": "g373esrdf7",
-    "renderMode": "CANVAS",
-    "isLoading": false,
-    "mobileTopRow": 2,
-    "responsiveBehavior": "hug",
-    "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-    "mobileLeftColumn": 46,
-    "buttonVariant": "PRIMARY"
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 6,
+  "boxShadow": "none",
+  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+  "buttonStyle": "PRIMARY",
+  "buttonVariant": "PRIMARY",
+  "displayName": "Icon button",
+  "dynamicBindingPathList": [
+    {
+      "key": "buttonColor"
+    },
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "hideCard": false,
+  "iconName": "dollar",
+  "iconSVG": "/static/media/icon.80fc7466c0d7181ec0271de7fda795ec.svg",
+  "isDeprecated": false,
+  "isDisabled": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "ngq0sikg6n",
+  "leftColumn": 45,
+  "minWidth": 50,
+  "mobileBottomRow": 10,
+  "mobileLeftColumn": 46,
+  "mobileRightColumn": 62,
+  "mobileTopRow": 2,
+  "onClick": "",
+  "parentId": "g373esrdf7",
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "hug",
+  "rightColumn": 63,
+  "searchTags": [
+    "click",
+    "submit"
+  ],
+  "topRow": 0,
+  "type": "ICON_BUTTON_WIDGET",
+  "version": 1,
+  "widgetId": "eeohrdp0yj",
+  "widgetName": "IconButton2Copy"
 }

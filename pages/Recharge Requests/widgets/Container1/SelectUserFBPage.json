@@ -1,61 +1,81 @@
 {
-    "boxShadow": "none",
-    "widgetName": "SelectUserFBPage",
-    "isFilterable": true,
-    "dynamicPropertyPathList": [
-        {"key": "isVisible"},
-        {"key": "sourceData"}
-    ],
-    "displayName": "Select",
-    "iconSVG": "/static/media/icon.bd99caba5853ad71e4b3d8daffacb3a2.svg",
-    "labelText": "User",
-    "searchTags": ["dropdown"],
-    "topRow": 5,
-    "bottomRow": 9,
-    "parentRowSpace": 10,
-    "labelWidth": "3",
-    "type": "SELECT_WIDGET",
-    "serverSideFiltering": false,
-    "hideCard": false,
-    "shouldScrollContents": true,
-    "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( appsmith.store.myUser))(SelectUserFBPage.options, SelectUserFBPage.serverSideFiltering) }}",
-    "animateLoading": true,
-    "parentColumnSpace": 20.0625,
-    "dynamicTriggerPathList": [
-        {"key": "onOptionChange"},
-        {"key": "onDropdownClose"}
-    ],
-    "leftColumn": 43,
-    "dynamicBindingPathList": [
-        {"key": "accentColor"},
-        {"key": "borderRadius"},
-        {"key": "sourceData"},
-        {"key": "isVisible"},
-        {"key": "defaultOptionValue"}
-    ],
-    "labelPosition": "Left",
-    "onDropdownClose": "",
-    "placeholderText": "Select user",
-    "isDisabled": false,
-    "sourceData": "{{get_all_users.data.map( (obj) => {return {'value': obj.fk_user_id, 'label':obj.last_name.concat(' ').concat(obj.first_name)}})}}",
-    "key": "lfplr8djyh",
-    "labelTextSize": "0.875rem",
-    "isRequired": true,
-    "isDeprecated": false,
-    "rightColumn": 63,
-    "dynamicHeight": "FIXED",
-    "widgetId": "812bjacpaq",
-    "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-    "optionValue": "value",
-    "isVisible": "{{appsmith.store.role_level> 100 && appsmith.store.access_token.length>0 }}",
-    "version": 1,
-    "parentId": "59rw5mx0bq",
-    "labelAlignment": "right",
-    "renderMode": "CANVAS",
-    "isLoading": false,
-    "optionLabel": "label",
-    "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-    "maxDynamicHeight": 9000,
-    "onOptionChange": "{{UsersLog.run();\nUsersLogTot.run().then(() => {\n  Utils2.myCurrency3();\n});}}",
-    "minDynamicHeight": 4
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 9,
+  "boxShadow": "none",
+  "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( appsmith.store.myUser))(SelectUserFBPage.options, SelectUserFBPage.serverSideFiltering) }}",
+  "displayName": "Select",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "sourceData"
+    },
+    {
+      "key": "isVisible"
+    },
+    {
+      "key": "defaultOptionValue"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "isVisible"
+    },
+    {
+      "key": "sourceData"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onOptionChange"
+    },
+    {
+      "key": "onDropdownClose"
+    }
+  ],
+  "hideCard": false,
+  "iconSVG": "/static/media/icon.bd99caba5853ad71e4b3d8daffacb3a2.svg",
+  "isDeprecated": false,
+  "isDisabled": false,
+  "isFilterable": true,
+  "isLoading": false,
+  "isRequired": true,
+  "isVisible": "{{appsmith.store.role_level> 100 && appsmith.store.access_token.length>0 }}",
+  "key": "lfplr8djyh",
+  "labelAlignment": "right",
+  "labelPosition": "Left",
+  "labelText": "User",
+  "labelTextSize": "0.875rem",
+  "labelWidth": "3",
+  "leftColumn": 43,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "onDropdownClose": "",
+  "onOptionChange": "{{UsersLog.run();\nUsersLogTot.run().then(() => {\n  Utils2.myCurrency3();\n});}}",
+  "optionLabel": "label",
+  "optionValue": "value",
+  "parentColumnSpace": 20.0625,
+  "parentId": "59rw5mx0bq",
+  "parentRowSpace": 10,
+  "placeholderText": "Select user",
+  "renderMode": "CANVAS",
+  "rightColumn": 63,
+  "searchTags": [
+    "dropdown"
+  ],
+  "serverSideFiltering": false,
+  "shouldScrollContents": true,
+  "sourceData": "{{get_all_users.data.map( (obj) => {return {'value': obj.fk_user_id, 'label':obj.last_name.concat(' ').concat(obj.first_name)}})}}",
+  "topRow": 5,
+  "type": "SELECT_WIDGET",
+  "version": 1,
+  "widgetId": "812bjacpaq",
+  "widgetName": "SelectUserFBPage"
 }

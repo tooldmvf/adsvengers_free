@@ -1,15 +1,11 @@
 {
+  "gitSyncId": "63c3151532584b547fffe91b_6416052c8f7e5b7bc5ddd7d1",
+  "id": "Monitoring_Utils2",
   "unpublishedCollection": {
     "name": "Utils2",
     "pageId": "Monitoring",
     "pluginId": "js-plugin",
     "pluginType": "JS",
-    "actions": [],
-    "archivedActions": [],
-    "variables": [],
-    "userPermissions": []
-  },
-  "id": "Monitoring_Utils2",
-  "deleted": false,
-  "gitSyncId": "63c3151532584b547fffe91b_6416052c8f7e5b7bc5ddd7d1"
+    "variables": []
+  }
 }

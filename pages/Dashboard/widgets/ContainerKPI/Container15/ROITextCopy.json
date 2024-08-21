@@ -1,49 +1,61 @@
 {
-    "widgetName": "ROITextCopy",
-    "dynamicPropertyPathList": [{"key": "textColor"}],
-    "displayName": "Text",
-    "iconSVG": "/static/media/icon.97c59b523e6f70ba6f40a10fc2c7c5b5.svg",
-    "searchTags": [
-        "typography",
-        "paragraph",
-        "label"
-    ],
-    "topRow": 4,
-    "bottomRow": 9,
-    "parentRowSpace": 10,
-    "type": "TEXT_WIDGET",
-    "hideCard": false,
-    "shouldScrollContents": true,
-    "animateLoading": true,
-    "overflow": "NONE",
-    "fontFamily": "System Default",
-    "parentColumnSpace": 1.78802490234375,
-    "dynamicTriggerPathList": [],
-    "leftColumn": 0,
-    "dynamicBindingPathList": [
-        {"key": "truncateButtonColor"},
-        {"key": "borderRadius"},
-        {"key": "text"},
-        {"key": "textColor"}
-    ],
-    "shouldTruncate": false,
-    "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-    "text": "{{Utils.myCurrency( (user_financial_period.data[0]?.profit || 0))}} \u20ac ({{Utils.GrossROI()}}%)",
-    "key": "nk7g1uvbwm",
-    "isDeprecated": false,
-    "rightColumn": 64,
-    "textAlign": "RIGHT",
-    "dynamicHeight": "FIXED",
-    "widgetId": "plhwhtocos",
-    "isVisible": true,
-    "fontStyle": "BOLD",
-    "textColor": "{{Utils.GrossROI()> 0 ? 'green' : 'red' }}",
-    "version": 1,
-    "parentId": "nkp0elhx4g",
-    "renderMode": "CANVAS",
-    "isLoading": false,
-    "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-    "maxDynamicHeight": 9000,
-    "fontSize": "0.875rem",
-    "minDynamicHeight": 4
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 9,
+  "displayName": "Text",
+  "dynamicBindingPathList": [
+    {
+      "key": "truncateButtonColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "text"
+    },
+    {
+      "key": "textColor"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "textColor"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "fontFamily": "System Default",
+  "fontSize": "0.875rem",
+  "fontStyle": "BOLD",
+  "hideCard": false,
+  "iconSVG": "/static/media/icon.97c59b523e6f70ba6f40a10fc2c7c5b5.svg",
+  "isDeprecated": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "nk7g1uvbwm",
+  "leftColumn": 0,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "overflow": "NONE",
+  "parentColumnSpace": 1.78802490234375,
+  "parentId": "nkp0elhx4g",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "rightColumn": 64,
+  "searchTags": [
+    "typography",
+    "paragraph",
+    "label"
+  ],
+  "shouldScrollContents": true,
+  "shouldTruncate": false,
+  "text": "{{Utils.myCurrency( (user_financial_period.data[0]?.profit || 0))}} € ({{Utils.GrossROI()}}%)",
+  "textAlign": "RIGHT",
+  "textColor": "{{Utils.GrossROI()> 0 ? 'green' : 'red' }}",
+  "topRow": 4,
+  "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
+  "type": "TEXT_WIDGET",
+  "version": 1,
+  "widgetId": "plhwhtocos",
+  "widgetName": "ROITextCopy"
 }

@@ -1,59 +1,79 @@
 {
-    "boxShadow": "none",
-    "widgetName": "SelectUserNet",
-    "isFilterable": true,
-    "dynamicPropertyPathList": [
-        {"key": "onOptionChange"},
-        {"key": "isDisabled"},
-        {"key": "sourceData"}
-    ],
-    "iconSVG": "/static/media/icon.bd99caba5853ad71e4b3d8daffacb3a2.svg",
-    "displayName": "Select",
-    "labelText": "Act. Network",
-    "topRow": 6,
-    "searchTags": ["dropdown"],
-    "bottomRow": 10,
-    "parentRowSpace": 10,
-    "labelWidth": "6",
-    "type": "SELECT_WIDGET",
-    "serverSideFiltering": false,
-    "hideCard": false,
-    "shouldScrollContents": true,
-    "defaultOptionValue": "",
-    "animateLoading": true,
-    "parentColumnSpace": 19.75,
-    "dynamicTriggerPathList": [{"key": "onOptionChange"}],
-    "leftColumn": 44,
-    "dynamicBindingPathList": [
-        {"key": "accentColor"},
-        {"key": "borderRadius"},
-        {"key": "sourceData"},
-        {"key": "isDisabled"}
-    ],
-    "labelPosition": "Left",
-    "placeholderText": "Select option",
-    "isDisabled": "{{SelectNetworkDbd.selectedOptionValues.length == 0}}",
-    "sourceData": "{{GetUserAccount.data.map(e => {return {'value' : e.user_network_id, 'label':e.user_email_network}})}}",
-    "key": "k6zidmclah",
-    "labelTextSize": "0.875rem",
-    "isRequired": false,
-    "isDeprecated": false,
-    "rightColumn": 61,
-    "dynamicHeight": "AUTO_HEIGHT",
-    "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-    "widgetId": "lczknxewgo",
-    "optionValue": "value",
-    "isVisible": true,
-    "version": 1,
-    "parentId": "59rw5mx0bq",
-    "isLoading": false,
-    "labelAlignment": "right",
-    "renderMode": "CANVAS",
-    "optionLabel": "label",
-    "originalTopRow": 6,
-    "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-    "maxDynamicHeight": 9000,
-    "originalBottomRow": 11,
-    "onOptionChange": "{{TableTotal.tblSummary();}}",
-    "minDynamicHeight": 4
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 10,
+  "boxShadow": "none",
+  "defaultOptionValue": "",
+  "displayName": "Select",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "sourceData"
+    },
+    {
+      "key": "isDisabled"
+    }
+  ],
+  "dynamicHeight": "AUTO_HEIGHT",
+  "dynamicPropertyPathList": [
+    {
+      "key": "onOptionChange"
+    },
+    {
+      "key": "isDisabled"
+    },
+    {
+      "key": "sourceData"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onOptionChange"
+    }
+  ],
+  "hideCard": false,
+  "iconSVG": "/static/media/icon.bd99caba5853ad71e4b3d8daffacb3a2.svg",
+  "isDeprecated": false,
+  "isDisabled": "{{SelectNetworkDbd.selectedOptionValues.length == 0}}",
+  "isFilterable": true,
+  "isLoading": false,
+  "isRequired": false,
+  "isVisible": true,
+  "key": "k6zidmclah",
+  "labelAlignment": "right",
+  "labelPosition": "Left",
+  "labelText": "Act. Network",
+  "labelTextSize": "0.875rem",
+  "labelWidth": "6",
+  "leftColumn": 44,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "onOptionChange": "{{TableTotal.tblSummary();}}",
+  "optionLabel": "label",
+  "optionValue": "value",
+  "originalBottomRow": 11,
+  "originalTopRow": 6,
+  "parentColumnSpace": 19.75,
+  "parentId": "59rw5mx0bq",
+  "parentRowSpace": 10,
+  "placeholderText": "Select option",
+  "renderMode": "CANVAS",
+  "rightColumn": 61,
+  "searchTags": [
+    "dropdown"
+  ],
+  "serverSideFiltering": false,
+  "shouldScrollContents": true,
+  "sourceData": "{{GetUserAccount.data.map(e => {return {'value' : e.user_network_id, 'label':e.user_email_network}})}}",
+  "topRow": 6,
+  "type": "SELECT_WIDGET",
+  "version": 1,
+  "widgetId": "lczknxewgo",
+  "widgetName": "SelectUserNet"
 }

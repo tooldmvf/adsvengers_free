@@ -1,71 +1,85 @@
 {
-    "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
-    "widgetName": "Container3Copy",
-    "borderColor": "#f4f4f5",
-    "disallowCopy": true,
-    "isCanvas": true,
-    "dynamicPropertyPathList": [{"key": "backgroundColor"}],
-    "displayName": "Container",
-    "iconSVG": "/static/media/icon.1977dca3370505e2db3a8e44cfd54907.svg",
-    "searchTags": [
-        "div",
-        "parent",
-        "group"
-    ],
-    "topRow": 0,
-    "bottomRow": 11,
-    "dragDisabled": true,
-    "type": "CONTAINER_WIDGET",
-    "hideCard": false,
-    "shouldScrollContents": false,
-    "isDeletable": false,
-    "animateLoading": true,
-    "dynamicTriggerPathList": [],
-    "leftColumn": 0,
-    "dynamicBindingPathList": [
-        {"key": "borderRadius"},
-        {"key": "boxShadow"},
-        {"key": "backgroundColor"}
-    ],
-    "children": [{
-        "widgetName": "Canvas16Copy",
-        "isDeprecated": false,
-        "detachFromLayout": true,
-        "displayName": "Canvas",
-        "widgetId": "jzm4y753rv",
-        "topRow": 0,
-        "bottomRow": 110,
-        "containerStyle": "none",
-        "parentRowSpace": 1,
-        "isVisible": true,
-        "type": "CANVAS_WIDGET",
-        "canExtend": false,
-        "version": 1,
-        "hideCard": true,
-        "parentId": "bohk8qvria",
-        "renderMode": "CANVAS",
-        "isLoading": false,
-        "parentColumnSpace": 1,
-        "leftColumn": 0,
-        "dynamicBindingPathList": [],
-        "key": "53sd09kxam"
-    }],
-    "borderWidth": "1",
-    "key": "upc32071un",
-    "backgroundColor": "{{currentItem.Tot_ROI < 0 ? '#fef2f2' : (currentItem.Tot_ROI < 30 ? '#fefce8' : '#f0fdf4') }}",
-    "isDeprecated": false,
-    "rightColumn": 64,
-    "dynamicHeight": "FIXED",
-    "widgetId": "bohk8qvria",
-    "containerStyle": "card",
-    "isVisible": true,
-    "version": 1,
-    "parentId": "lezqdyqul2",
-    "renderMode": "CANVAS",
-    "isLoading": false,
-    "noContainerOffset": true,
-    "disabledWidgetFeatures": ["dynamicHeight"],
-    "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-    "maxDynamicHeight": 9000,
-    "minDynamicHeight": 10
+  "animateLoading": true,
+  "backgroundColor": "{{currentItem.Tot_ROI < 0 ? '#fef2f2' : (currentItem.Tot_ROI < 30 ? '#fefce8' : '#f0fdf4') }}",
+  "borderColor": "#f4f4f5",
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "borderWidth": "1",
+  "bottomRow": 11,
+  "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+  "children": [
+    {
+      "bottomRow": 110,
+      "canExtend": false,
+      "containerStyle": "none",
+      "detachFromLayout": true,
+      "displayName": "Canvas",
+      "dynamicBindingPathList": [],
+      "hideCard": true,
+      "isDeprecated": false,
+      "isLoading": false,
+      "isVisible": true,
+      "key": "53sd09kxam",
+      "leftColumn": 0,
+      "parentColumnSpace": 1,
+      "parentId": "bohk8qvria",
+      "parentRowSpace": 1,
+      "renderMode": "CANVAS",
+      "topRow": 0,
+      "type": "CANVAS_WIDGET",
+      "version": 1,
+      "widgetId": "jzm4y753rv",
+      "widgetName": "Canvas16Copy"
+    }
+  ],
+  "containerStyle": "card",
+  "disabledWidgetFeatures": [
+    "dynamicHeight"
+  ],
+  "disallowCopy": true,
+  "displayName": "Container",
+  "dragDisabled": true,
+  "dynamicBindingPathList": [
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "boxShadow"
+    },
+    {
+      "key": "backgroundColor"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "backgroundColor"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "hideCard": false,
+  "iconSVG": "/static/media/icon.1977dca3370505e2db3a8e44cfd54907.svg",
+  "isCanvas": true,
+  "isDeletable": false,
+  "isDeprecated": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "upc32071un",
+  "leftColumn": 0,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 10,
+  "noContainerOffset": true,
+  "parentId": "lezqdyqul2",
+  "renderMode": "CANVAS",
+  "rightColumn": 64,
+  "searchTags": [
+    "div",
+    "parent",
+    "group"
+  ],
+  "shouldScrollContents": false,
+  "topRow": 0,
+  "type": "CONTAINER_WIDGET",
+  "version": 1,
+  "widgetId": "bohk8qvria",
+  "widgetName": "Container3Copy"
 }

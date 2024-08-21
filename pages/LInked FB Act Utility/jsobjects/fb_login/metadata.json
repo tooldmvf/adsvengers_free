@@ -1,15 +1,11 @@
 {
+  "gitSyncId": "63c3151532584b547fffe91b_63cc178c40c6ec5d3546a956",
+  "id": "LInked FB Act Utility_fb_login",
   "unpublishedCollection": {
     "name": "fb_login",
     "pageId": "LInked FB Act Utility",
     "pluginId": "js-plugin",
     "pluginType": "JS",
-    "actions": [],
-    "archivedActions": [],
-    "variables": [],
-    "userPermissions": []
-  },
-  "id": "LInked FB Act Utility_fb_login",
-  "deleted": false,
-  "gitSyncId": "63c3151532584b547fffe91b_63cc178c40c6ec5d3546a956"
+    "variables": []
+  }
 }

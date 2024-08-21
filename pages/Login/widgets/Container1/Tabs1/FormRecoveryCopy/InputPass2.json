@@ -1,58 +1,70 @@
 {
-    "boxShadow": "none",
-    "widgetName": "InputPass2",
-    "dynamicPropertyPathList": [{"key": "onBlur"}],
-    "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
-    "displayName": "Input",
-    "topRow": 7,
-    "searchTags": [
-        "form",
-        "text input",
-        "number",
-        "textarea"
-    ],
-    "bottomRow": 14,
-    "parentRowSpace": 10,
-    "labelWidth": "13",
-    "autoFocus": false,
-    "type": "INPUT_WIDGET_V2",
-    "hideCard": false,
-    "shouldScrollContents": true,
-    "animateLoading": true,
-    "parentColumnSpace": 5.958984375,
-    "dynamicTriggerPathList": [{"key": "onBlur"}],
-    "resetOnSubmit": true,
-    "leftColumn": 1,
-    "dynamicBindingPathList": [
-        {"key": "accentColor"},
-        {"key": "borderRadius"}
-    ],
-    "labelPosition": "Top",
-    "labelStyle": "",
-    "inputType": "PASSWORD",
-    "isDisabled": false,
-    "key": "zcdo5rdkhi",
-    "labelTextSize": "0.875rem",
-    "isRequired": true,
-    "isDeprecated": false,
-    "rightColumn": 61,
-    "dynamicHeight": "AUTO_HEIGHT",
-    "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-    "widgetId": "2uydhp0ef1",
-    "showStepArrows": false,
-    "isVisible": true,
-    "label": "Verify password",
-    "version": 2,
-    "parentId": "bs19zt79ss",
-    "isLoading": false,
-    "labelAlignment": "left",
-    "renderMode": "CANVAS",
-    "onBlur": "{{InputPass1.text != InputPass2.text? showAlert(\"Passwords do not match\",'warning'):''}}",
-    "originalTopRow": 7,
-    "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-    "maxDynamicHeight": 9000,
-    "originalBottomRow": 14,
-    "iconAlign": "left",
-    "defaultText": "",
-    "minDynamicHeight": 4
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "autoFocus": false,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 14,
+  "boxShadow": "none",
+  "defaultText": "",
+  "displayName": "Input",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicHeight": "AUTO_HEIGHT",
+  "dynamicPropertyPathList": [
+    {
+      "key": "onBlur"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onBlur"
+    }
+  ],
+  "hideCard": false,
+  "iconAlign": "left",
+  "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
+  "inputType": "PASSWORD",
+  "isDeprecated": false,
+  "isDisabled": false,
+  "isLoading": false,
+  "isRequired": true,
+  "isVisible": true,
+  "key": "zcdo5rdkhi",
+  "label": "Verify password",
+  "labelAlignment": "left",
+  "labelPosition": "Top",
+  "labelStyle": "",
+  "labelTextSize": "0.875rem",
+  "labelWidth": "13",
+  "leftColumn": 1,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "onBlur": "{{InputPass1.text != InputPass2.text? showAlert(\"Passwords do not match\",'warning'):''}}",
+  "originalBottomRow": 14,
+  "originalTopRow": 7,
+  "parentColumnSpace": 5.958984375,
+  "parentId": "bs19zt79ss",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "resetOnSubmit": true,
+  "rightColumn": 61,
+  "searchTags": [
+    "form",
+    "text input",
+    "number",
+    "textarea"
+  ],
+  "shouldScrollContents": true,
+  "showStepArrows": false,
+  "topRow": 7,
+  "type": "INPUT_WIDGET_V2",
+  "version": 2,
+  "widgetId": "2uydhp0ef1",
+  "widgetName": "InputPass2"
 }

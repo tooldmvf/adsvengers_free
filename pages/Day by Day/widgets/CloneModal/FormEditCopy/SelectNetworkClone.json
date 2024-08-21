@@ -1,57 +1,75 @@
 {
-    "boxShadow": "none",
-    "widgetName": "SelectNetworkClone",
-    "isFilterable": false,
-    "dynamicPropertyPathList": [
-        {"key": "onOptionChange"},
-        {"key": "sourceData"}
-    ],
-    "displayName": "Select",
-    "iconSVG": "/static/media/icon.bd99caba5853ad71e4b3d8daffacb3a2.svg",
-    "labelText": "Network",
-    "searchTags": ["dropdown"],
-    "topRow": 8,
-    "bottomRow": 12,
-    "parentRowSpace": 10,
-    "labelWidth": "14",
-    "type": "SELECT_WIDGET",
-    "serverSideFiltering": false,
-    "hideCard": false,
-    "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( Table1Copy.triggeredRow.fk_user_network_id))(SelectNetworkClone.options, SelectNetworkClone.serverSideFiltering) }}",
-    "animateLoading": true,
-    "parentColumnSpace": 7.05078125,
-    "dynamicTriggerPathList": [{"key": "onOptionChange"}],
-    "leftColumn": 2,
-    "dynamicBindingPathList": [
-        {"key": "accentColor"},
-        {"key": "borderRadius"},
-        {"key": "sourceData"},
-        {"key": "defaultOptionValue"}
-    ],
-    "labelPosition": "Left",
-    "placeholderText": "Select option",
-    "isDisabled": true,
-    "sourceData": "{{get_user_networks.data.map( (obj) =>{ return  {'value': obj.user_network_id, 'label': obj.network_other_name } })}}",
-    "key": "99hmwl6png",
-    "labelTextSize": "0.875rem",
-    "isRequired": true,
-    "isDeprecated": false,
-    "rightColumn": 61,
-    "dynamicHeight": "FIXED",
-    "widgetId": "xmp6kcizud",
-    "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-    "optionValue": "value",
-    "isVisible": true,
-    "version": 1,
-    "parentId": "eypeksotbl",
-    "labelAlignment": "left",
-    "renderMode": "CANVAS",
-    "isLoading": false,
-    "optionLabel": "label",
-    "originalTopRow": 14,
-    "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-    "maxDynamicHeight": 9000,
-    "originalBottomRow": 18,
-    "onOptionChange": "{{get_user_offers.run(() => {},() => {},{user_net_id: SelectNetworkEdit.selectedOptionValue})}}",
-    "minDynamicHeight": 4
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 12,
+  "boxShadow": "none",
+  "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( Table1Copy.triggeredRow.fk_user_network_id))(SelectNetworkClone.options, SelectNetworkClone.serverSideFiltering) }}",
+  "displayName": "Select",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "sourceData"
+    },
+    {
+      "key": "defaultOptionValue"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "onOptionChange"
+    },
+    {
+      "key": "sourceData"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onOptionChange"
+    }
+  ],
+  "hideCard": false,
+  "iconSVG": "/static/media/icon.bd99caba5853ad71e4b3d8daffacb3a2.svg",
+  "isDeprecated": false,
+  "isDisabled": true,
+  "isFilterable": false,
+  "isLoading": false,
+  "isRequired": true,
+  "isVisible": true,
+  "key": "99hmwl6png",
+  "labelAlignment": "left",
+  "labelPosition": "Left",
+  "labelText": "Network",
+  "labelTextSize": "0.875rem",
+  "labelWidth": "14",
+  "leftColumn": 2,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "onOptionChange": "{{get_user_offers.run(() => {},() => {},{user_net_id: SelectNetworkEdit.selectedOptionValue})}}",
+  "optionLabel": "label",
+  "optionValue": "value",
+  "originalBottomRow": 18,
+  "originalTopRow": 14,
+  "parentColumnSpace": 7.05078125,
+  "parentId": "eypeksotbl",
+  "parentRowSpace": 10,
+  "placeholderText": "Select option",
+  "renderMode": "CANVAS",
+  "rightColumn": 61,
+  "searchTags": [
+    "dropdown"
+  ],
+  "serverSideFiltering": false,
+  "sourceData": "{{get_user_networks.data.map( (obj) =>{ return  {'value': obj.user_network_id, 'label': obj.network_other_name } })}}",
+  "topRow": 8,
+  "type": "SELECT_WIDGET",
+  "version": 1,
+  "widgetId": "xmp6kcizud",
+  "widgetName": "SelectNetworkClone"
 }

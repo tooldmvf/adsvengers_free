@@ -1,55 +1,69 @@
 {
-    "mobileBottomRow": 13,
-    "widgetName": "Profit",
-    "dynamicPropertyPathList": [{"key": "textColor"}],
-    "displayName": "Text",
-    "iconSVG": "/static/media/icon.97c59b523e6f70ba6f40a10fc2c7c5b5.svg",
-    "searchTags": [
-        "typography",
-        "paragraph",
-        "label"
-    ],
-    "topRow": 21,
-    "bottomRow": 25,
-    "parentRowSpace": 10,
-    "type": "TEXT_WIDGET",
-    "hideCard": false,
-    "mobileRightColumn": 16,
-    "animateLoading": true,
-    "overflow": "NONE",
-    "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
-    "parentColumnSpace": 6.767578125,
-    "dynamicTriggerPathList": [],
-    "leftColumn": 33,
-    "dynamicBindingPathList": [
-        {"key": "truncateButtonColor"},
-        {"key": "fontFamily"},
-        {"key": "borderRadius"},
-        {"key": "text"},
-        {"key": "textColor"}
-    ],
-    "shouldTruncate": false,
-    "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-    "text": "{{Utils.myCurrency(\nNumber(Total_rev.text.replace(/[^0-9.-]+/g,\"\")) - Number(Total_spent.text.replace(/[^0-9.-]+/g,\"\")) + Number(Adjust.text.replace(/[^0-9-]+/g,\"\")/100) + Number(Debt2.text.replace(/[^0-9.-]+/g,\"\"))\n)}}",
-    "key": "k0zn3vv2el",
-    "isDeprecated": false,
-    "rightColumn": 62,
-    "textAlign": "RIGHT",
-    "dynamicHeight": "FIXED",
-    "widgetId": "ke1cjg5k91",
-    "minWidth": 450,
-    "isVisible": true,
-    "fontStyle": "BOLD",
-    "textColor": "{{(\nNumber(Total_rev.text.replace(/[^0-9.-]+/g,\"\")) - Number(Total_spent.text.replace(/[^0-9.-]+/g,\"\")) + Adjust.value + Number(Debt2.text.replace(/[^0-9.-]+/g,\"\"))\n)<0 ? 'red' : 'green' }}",
-    "version": 1,
-    "parentId": "lvya69kw4u",
-    "renderMode": "CANVAS",
-    "isLoading": false,
-    "mobileTopRow": 9,
-    "responsiveBehavior": "fill",
-    "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-    "mobileLeftColumn": 0,
-    "maxDynamicHeight": 9000,
-    "fontSize": "0.875rem",
-    "minDynamicHeight": 4
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 25,
+  "displayName": "Text",
+  "dynamicBindingPathList": [
+    {
+      "key": "truncateButtonColor"
+    },
+    {
+      "key": "fontFamily"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "text"
+    },
+    {
+      "key": "textColor"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "textColor"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
+  "fontSize": "0.875rem",
+  "fontStyle": "BOLD",
+  "hideCard": false,
+  "iconSVG": "/static/media/icon.97c59b523e6f70ba6f40a10fc2c7c5b5.svg",
+  "isDeprecated": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "k0zn3vv2el",
+  "leftColumn": 33,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 13,
+  "mobileLeftColumn": 0,
+  "mobileRightColumn": 16,
+  "mobileTopRow": 9,
+  "overflow": "NONE",
+  "parentColumnSpace": 6.767578125,
+  "parentId": "lvya69kw4u",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 62,
+  "searchTags": [
+    "typography",
+    "paragraph",
+    "label"
+  ],
+  "shouldTruncate": false,
+  "text": "{{Utils.myCurrency(\nNumber(Total_rev.text.replace(/[^0-9.-]+/g,\"\")) - Number(Total_spent.text.replace(/[^0-9.-]+/g,\"\")) + Number(Adjust.text.replace(/[^0-9-]+/g,\"\")/100) + Number(Debt2.text.replace(/[^0-9.-]+/g,\"\"))\n)}}",
+  "textAlign": "RIGHT",
+  "textColor": "{{(\nNumber(Total_rev.text.replace(/[^0-9.-]+/g,\"\")) - Number(Total_spent.text.replace(/[^0-9.-]+/g,\"\")) + Adjust.value + Number(Debt2.text.replace(/[^0-9.-]+/g,\"\"))\n)<0 ? 'red' : 'green' }}",
+  "topRow": 21,
+  "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
+  "type": "TEXT_WIDGET",
+  "version": 1,
+  "widgetId": "ke1cjg5k91",
+  "widgetName": "Profit"
 }

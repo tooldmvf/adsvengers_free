@@ -1,15 +1,11 @@
 {
+  "gitSyncId": "63c3151532584b547fffe91b_63d306fd409b83782962857b",
+  "id": "Users Profit Admin_js_logout",
   "unpublishedCollection": {
     "name": "js_logout",
     "pageId": "Users Profit Admin",
     "pluginId": "js-plugin",
     "pluginType": "JS",
-    "actions": [],
-    "archivedActions": [],
-    "variables": [],
-    "userPermissions": []
-  },
-  "id": "Users Profit Admin_js_logout",
-  "deleted": false,
-  "gitSyncId": "63c3151532584b547fffe91b_63d306fd409b83782962857b"
+    "variables": []
+  }
 }

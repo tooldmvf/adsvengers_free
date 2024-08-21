@@ -1,52 +1,64 @@
 {
-    "boxShadow": "none",
-    "widgetName": "Text20Copy1CopyCopyCopyCopyCopy1",
-    "dynamicPropertyPathList": [{"key": "textColor"}],
-    "displayName": "Text",
-    "iconSVG": "/static/media/icon.97c59b523e6f70ba6f40a10fc2c7c5b5.svg",
-    "searchTags": [
-        "typography",
-        "paragraph",
-        "label"
-    ],
-    "topRow": 444,
-    "bottomRow": 448,
-    "parentRowSpace": 10,
-    "type": "TEXT_WIDGET",
-    "hideCard": false,
-    "animateLoading": true,
-    "overflow": "NONE",
-    "dynamicTriggerPathList": [],
-    "fontFamily": "Poppins",
-    "parentColumnSpace": 3.3469390869140625,
-    "dynamicBindingPathList": [
-        {"key": "text"},
-        {"key": "truncateButtonColor"},
-        {"key": "borderRadius"},
-        {"key": "textColor"}
-    ],
-    "leftColumn": 18,
-    "shouldTruncate": false,
-    "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-    "text": "{{( SelectFinancialTot.data[0]?.Tot_ROI).toFixed(2)+'%'}}",
-    "key": "k7w2jfj1uj",
-    "isDeprecated": false,
-    "rightColumn": 41,
-    "textAlign": "RIGHT",
-    "dynamicHeight": "FIXED",
-    "widgetId": "33ve4sqb2s",
-    "isVisible": true,
-    "fontStyle": "BOLD",
-    "textColor": "{{SelectFinancialTot.data[0].Tot_ROI.toFixed(0)< 0 ? 'red' : (SelectFinancialTot.data[0].Tot_ROI.toFixed(0) <30 ? '#eab308' : 'green')}}",
-    "version": 1,
-    "parentId": "0",
-    "renderMode": "CANVAS",
-    "isLoading": false,
-    "originalTopRow": 444,
-    "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-    "maxDynamicHeight": 9000,
-    "originalBottomRow": 448,
-    "fontSize": "0.875rem",
-    "textStyle": "HEADING",
-    "minDynamicHeight": 4
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 448,
+  "boxShadow": "none",
+  "displayName": "Text",
+  "dynamicBindingPathList": [
+    {
+      "key": "text"
+    },
+    {
+      "key": "truncateButtonColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "textColor"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "textColor"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "fontFamily": "Poppins",
+  "fontSize": "0.875rem",
+  "fontStyle": "BOLD",
+  "hideCard": false,
+  "iconSVG": "/static/media/icon.97c59b523e6f70ba6f40a10fc2c7c5b5.svg",
+  "isDeprecated": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "k7w2jfj1uj",
+  "leftColumn": 18,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "originalBottomRow": 448,
+  "originalTopRow": 444,
+  "overflow": "NONE",
+  "parentColumnSpace": 3.3469390869140625,
+  "parentId": "0",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "rightColumn": 41,
+  "searchTags": [
+    "typography",
+    "paragraph",
+    "label"
+  ],
+  "shouldTruncate": false,
+  "text": "{{( SelectFinancialTot.data[0]?.Tot_ROI).toFixed(2)+'%'}}",
+  "textAlign": "RIGHT",
+  "textColor": "{{SelectFinancialTot.data[0].Tot_ROI.toFixed(0)< 0 ? 'red' : (SelectFinancialTot.data[0].Tot_ROI.toFixed(0) <30 ? '#eab308' : 'green')}}",
+  "textStyle": "HEADING",
+  "topRow": 444,
+  "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
+  "type": "TEXT_WIDGET",
+  "version": 1,
+  "widgetId": "33ve4sqb2s",
+  "widgetName": "Text20Copy1CopyCopyCopyCopyCopy1"
 }

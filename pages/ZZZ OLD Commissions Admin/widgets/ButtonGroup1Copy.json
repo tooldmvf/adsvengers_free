@@ -1,344 +1,426 @@
 {
-    "boxShadow": "0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)",
-    "widgetName": "ButtonGroup1Copy",
-    "isCanvas": false,
-    "dynamicPropertyPathList": [
-        {"key": "groupButtons.groupButton70kdvvujia.onClick"},
-        {"key": "groupButtons.groupButtonjink2bzzms.buttonColor"},
-        {"key": "groupButtons.groupButtonoh0l7stppj.buttonColor"},
-        {"key": "groupButtons.groupButtonl755tlm16y.buttonColor"},
-        {"key": "groupButtons.groupButtonz40p7cz8uy.isVisible"},
-        {"key": "groupButtons.groupButton1.buttonColor"},
-        {"key": "groupButtons.groupButtonz40p7cz8uy.menuItems.menuItemy66xiw4eao.backgroundColor"},
-        {"key": "groupButtons.groupButtonenmx60lrah.buttonColor"},
-        {"key": "groupButtons.groupButtonz40p7cz8uy.buttonColor"}
-    ],
-    "displayName": "Button Group",
-    "iconSVG": "/static/media/icon.d6773218cfb61dcfa5f460d43371e30d.svg",
-    "searchTags": [
-        "click",
-        "submit"
-    ],
-    "topRow": 1,
-    "bottomRow": 7,
-    "parentRowSpace": 10,
-    "groupButtons": {
-        "groupButton70kdvvujia": {
-            "onClick": "{{js_logout.logout_process()}}",
-            "buttonColor": "#71717a",
-            "iconName": "log-out",
-            "widgetId": "igopogrci3",
-            "menuItems": {},
-            "index": 6,
-            "label": "LogOut",
-            "isVisible": true,
-            "buttonType": "SIMPLE",
-            "iconAlign": "right",
-            "id": "groupButton70kdvvujia",
-            "placement": "CENTER",
-            "isDisabled": false
-        },
-        "groupButtonoh0l7stppj": {
-            "onClick": "{{navigateTo('Pivot', {}, 'SAME_WINDOW')}}",
-            "buttonType": "SIMPLE",
-            "buttonColor": "{{appsmith.URL.pathname.includes('pivot') ? '#D6D6D6' : '#E4E4E4'}}",
-            "widgetId": "44mx0hg26e",
-            "menuItems": {},
-            "index": 3,
-            "id": "groupButtonoh0l7stppj",
-            "label": "Pivot",
-            "placement": "CENTER",
-            "isDisabled": false,
-            "isVisible": true
-        },
-        "groupButtonenmx60lrah": {
-            "onClick": "{{navigateTo('LInked FB Act', {}, 'SAME_WINDOW')}}",
-            "buttonColor": "{{appsmith.URL.pathname.includes('utility') ? '#D6D6D6' : '#E4E4E4'}}",
-            "iconName": "chevron-down",
-            "widgetId": "cgod2vhcsx",
-            "menuItems": {
-                "menuItem2d18e7ktzk": {
-                    "onClick": "{{navigateTo('Campaign Name Builder Utility', {}, 'SAME_WINDOW')}}",
-                    "backgroundColor": "#f4f4f5",
-                    "widgetId": "a25wkibfj7",
-                    "index": 2,
-                    "id": "menuItem2d18e7ktzk",
-                    "label": "CampName Builder",
-                    "isDisabled": false,
-                    "isVisible": true
-                },
-                "menuItem4frcjhbtq1": {
-                    "onClick": "{{navigateTo('Linked Network Utility', {}, 'SAME_WINDOW')}}",
-                    "backgroundColor": "#f4f4f5",
-                    "widgetId": "21brbafka7",
-                    "index": 0,
-                    "id": "menuItem4frcjhbtq1",
-                    "label": "Linked Network",
-                    "isDisabled": false,
-                    "isVisible": true
-                },
-                "menuItemjo1jexl24o": {
-                    "onClick": "{{navigateTo('Recharge Requests', {}, 'SAME_WINDOW')}}",
-                    "backgroundColor": "#f4f4f5",
-                    "widgetId": "37h8vy8dic",
-                    "index": 4,
-                    "id": "menuItemjo1jexl24o",
-                    "label": "Recharge History",
-                    "isDisabled": false,
-                    "isVisible": true
-                },
-                "menuItemy7np5lz2w8": {
-                    "onClick": "{{navigateTo('Invoices Utility', {}, 'SAME_WINDOW')}}",
-                    "backgroundColor": "#f4f4f5",
-                    "widgetId": "9lx79zdw64",
-                    "index": 5,
-                    "id": "menuItemy7np5lz2w8",
-                    "label": "Invoices",
-                    "isDisabled": false,
-                    "isVisible": true
-                },
-                "menuItemxaf52rzr57": {
-                    "onClick": "{{navigateTo('AdAccount Credit Utility', {}, 'SAME_WINDOW')}}",
-                    "backgroundColor": "#f4f4f5",
-                    "widgetId": "wzmh0fk127",
-                    "index": 3,
-                    "id": "menuItemxaf52rzr57",
-                    "label": "AdAccount Credit",
-                    "isDisabled": false,
-                    "isVisible": true
-                },
-                "menuItemhu0vpqm5i2": {
-                    "onClick": "{{navigateTo('LInked FB Act Utility', {}, 'SAME_WINDOW')}}",
-                    "backgroundColor": "#f4f4f5",
-                    "widgetId": "cheiksxmfr",
-                    "index": 1,
-                    "id": "menuItemhu0vpqm5i2",
-                    "label": "Linked Ad Act",
-                    "isDisabled": false,
-                    "isVisible": true
-                }
-            },
-            "index": 4,
-            "label": "Utility",
-            "isVisible": true,
-            "buttonType": "MENU",
-            "iconAlign": "right",
-            "id": "groupButtonenmx60lrah",
-            "placement": "CENTER",
-            "isDisabled": false
-        },
-        "groupButtonz40p7cz8uy": {
-            "buttonType": "MENU",
-            "buttonColor": "{{appsmith.URL.pathname.includes('admin') ? '#D6D6D6' : '#E4E4E4'}}",
-            "iconName": "chevron-down",
-            "widgetId": "fr8hqslsci",
-            "menuItems": {
-                "menuItemy66xiw4eao": {
-                    "onClick": "{{navigateTo('Users Profit Admin', {}, 'SAME_WINDOW')}}",
-                    "backgroundColor": "#f4f4f5",
-                    "widgetId": "9elkpcs5h9",
-                    "index": 0,
-                    "id": "menuItemy66xiw4eao",
-                    "label": "Users Profit",
-                    "isDisabled": false,
-                    "isVisible": true
-                },
-                "menuItem8uotiiku3d": {
-                    "onClick": "{{navigateTo('Off Detail Admin', {}, 'SAME_WINDOW')}}",
-                    "backgroundColor": "#f4f4f5",
-                    "widgetId": "gfvajw2mbq",
-                    "index": 1,
-                    "id": "menuItem8uotiiku3d",
-                    "label": "Offer Analysis",
-                    "isDisabled": false,
-                    "isVisible": true
-                },
-                "menuItemq0wvfgti97": {
-                    "onClick": "{{navigateTo('Network Analysis Admin', {}, 'SAME_WINDOW')}}",
-                    "backgroundColor": "#f4f4f5",
-                    "widgetId": "lo9cvdz5u8",
-                    "index": 2,
-                    "id": "menuItemq0wvfgti97",
-                    "label": "Network Analysis",
-                    "isDisabled": false,
-                    "isVisible": true
-                },
-                "menuItem23gqu4kave": {
-                    "onClick": "{{navigateTo('Users SW Log Admin', {}, 'SAME_WINDOW')}}",
-                    "backgroundColor": "#f4f4f5",
-                    "widgetId": "7498dfb6r7",
-                    "index": 5,
-                    "id": "menuItem23gqu4kave",
-                    "label": "Users Log",
-                    "isDisabled": false,
-                    "isVisible": true
-                },
-                "menuItema5dve7zx6p": {
-                    "onClick": "{{navigateTo('Offers Analysis Admin', {}, 'SAME_WINDOW')}}",
-                    "backgroundColor": "#f4f4f5",
-                    "widgetId": "q1rrq7bdi3",
-                    "index": 3,
-                    "id": "menuItema5dve7zx6p",
-                    "label": "Offers Admin",
-                    "isDisabled": false,
-                    "isVisible": true
-                },
-                "menuItem1rbff8b8r7": {
-                    "backgroundColor": "#f4f4f5",
-                    "onClick": "{{navigateTo('LInked Act Admin', {}, 'SAME_WINDOW')}}",
-                    "widgetId": "16t72zwyaz",
-                    "index": 4,
-                    "id": "menuItem1rbff8b8r7",
-                    "label": "Ad Acccount List",
-                    "isDisabled": false,
-                    "isVisible": true
-                }
-            },
-            "index": 5,
-            "iconAlign": "right",
-            "id": "groupButtonz40p7cz8uy",
-            "label": "Admin",
-            "placement": "CENTER",
-            "isDisabled": false,
-            "isVisible": "{{appsmith.store.role_level> 100 && appsmith.store.access_token.length>0 }}"
-        },
-        "groupButton1": {
-            "onClick": "{{navigateTo('Dashboard', {}, 'SAME_WINDOW')}}",
-            "buttonType": "SIMPLE",
-            "buttonColor": "{{appsmith.URL.pathname.includes('dashboard') ? '#D6D6D6' : '#E4E4E4'}}",
-            "widgetId": "",
-            "menuItems": {},
-            "index": 0,
-            "iconAlign": "left",
-            "label": "Dashboard",
-            "id": "groupButton1",
-            "placement": "CENTER",
-            "isVisible": true,
-            "isDisabled": false
-        },
-        "groupButtonjink2bzzms": {
-            "onClick": "{{navigateTo('Day by Day', {}, 'SAME_WINDOW')}}",
-            "buttonType": "SIMPLE",
-            "buttonColor": "{{appsmith.URL.pathname.includes('day-by-day') ? '#D6D6D6' : '#E4E4E4'}}",
-            "widgetId": "z47cmbaodr",
-            "menuItems": {},
-            "index": 1,
-            "iconAlign": "left",
-            "id": "groupButtonjink2bzzms",
-            "label": "Day by Day",
-            "placement": "CENTER",
-            "isDisabled": false,
-            "isVisible": true
-        },
-        "groupButtonl755tlm16y": {
-            "onClick": "{{navigateTo('Offers Analysis', {}, 'SAME_WINDOW')}}",
-            "buttonColor": "{{appsmith.URL.pathname.includes('offer') ? '#D6D6D6' : '#E4E4E4'}}",
-            "iconName": "chevron-down",
-            "widgetId": "l8d3iznecp",
-            "menuItems": {
-                "menuItem0rhhnxfpby": {
-                    "onClick": "{{navigateTo('Offer Detail', {}, 'SAME_WINDOW')}}",
-                    "backgroundColor": "#f4f4f5",
-                    "widgetId": "isq1op8y1g",
-                    "index": 1,
-                    "id": "menuItem0rhhnxfpby",
-                    "label": "My Offer Analysis",
-                    "isDisabled": false,
-                    "isVisible": true
-                },
-                "menuItemka4ib47veg": {
-                    "onClick": "{{navigateTo('Balance Check Offer', {}, 'SAME_WINDOW')}}",
-                    "backgroundColor": "#f4f4f5",
-                    "widgetId": "1jn877wegg",
-                    "index": 3,
-                    "id": "menuItemka4ib47veg",
-                    "label": "Balance Check",
-                    "isDisabled": false,
-                    "isVisible": true
-                },
-                "menuItemaih5a9o4do": {
-                    "onClick": "{{navigateTo('My Profit Offer', {}, 'SAME_WINDOW')}}",
-                    "backgroundColor": "#f4f4f5",
-                    "widgetId": "z2jyryalal",
-                    "index": 0,
-                    "id": "menuItemaih5a9o4do",
-                    "label": "My Profit",
-                    "isDisabled": false,
-                    "isVisible": true
-                },
-                "menuItem4fllqug7hs": {
-                    "onClick": "{{navigateTo('Offers Analysis', {}, 'SAME_WINDOW')}}",
-                    "backgroundColor": "#f4f4f5",
-                    "widgetId": "251z32lmtc",
-                    "index": 2,
-                    "id": "menuItem4fllqug7hs",
-                    "label": "Factory Offers",
-                    "isDisabled": false,
-                    "isVisible": true
-                }
-            },
-            "index": 2,
-            "label": "Offers",
-            "isVisible": true,
-            "buttonType": "MENU",
-            "iconAlign": "right",
-            "id": "groupButtonl755tlm16y",
-            "placement": "CENTER",
-            "isDisabled": false
-        }
+  "animateLoading": true,
+  "borderRadius": "0.375rem",
+  "bottomRow": 7,
+  "boxShadow": "0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)",
+  "buttonVariant": "PRIMARY",
+  "childStylesheet": {
+    "button": {
+      "buttonColor": "{{appsmith.theme.colors.primaryColor}}"
+    }
+  },
+  "displayName": "Button Group",
+  "dynamicBindingPathList": [
+    {
+      "key": "groupButtons.groupButtonenmx60lrah.onClick"
     },
-    "type": "BUTTON_GROUP_WIDGET",
-    "hideCard": false,
-    "animateLoading": true,
-    "parentColumnSpace": 20.0625,
-    "dynamicTriggerPathList": [
-        {"key": "groupButtons.groupButtonjink2bzzms.onClick"},
-        {"key": "groupButtons.groupButton1.onClick"},
-        {"key": "groupButtons.groupButtonoh0l7stppj.onClick"},
-        {"key": "groupButtons.groupButtonenmx60lrah.onClick"},
-        {"key": "groupButtons.groupButton70kdvvujia.onClick"},
-        {"key": "groupButtons.groupButtonenmx60lrah.menuItems.menuItem4frcjhbtq1.onClick"},
-        {"key": "groupButtons.groupButtonenmx60lrah.menuItems.menuItemhu0vpqm5i2.onClick"},
-        {"key": "groupButtons.groupButtonenmx60lrah.menuItems.menuItemy7np5lz2w8.onClick"},
-        {"key": "groupButtons.groupButtonenmx60lrah.menuItems.menuItem2d18e7ktzk.onClick"},
-        {"key": "groupButtons.groupButtonenmx60lrah.menuItems.menuItemxaf52rzr57.onClick"},
-        {"key": "groupButtons.groupButtonl755tlm16y.onClick"},
-        {"key": "groupButtons.groupButtonz40p7cz8uy.menuItems.menuItemy66xiw4eao.onClick"},
-        {"key": "groupButtons.groupButtonz40p7cz8uy.menuItems.menuItema5dve7zx6p.onClick"},
-        {"key": "groupButtons.groupButtonz40p7cz8uy.menuItems.menuItem23gqu4kave.onClick"},
-        {"key": "groupButtons.groupButtonl755tlm16y.menuItems.menuItemaih5a9o4do.onClick"},
-        {"key": "groupButtons.groupButtonl755tlm16y.menuItems.menuItem0rhhnxfpby.onClick"},
-        {"key": "groupButtons.groupButtonl755tlm16y.menuItems.menuItem4fllqug7hs.onClick"},
-        {"key": "groupButtons.groupButtonl755tlm16y.menuItems.menuItemka4ib47veg.onClick"},
-        {"key": "groupButtons.groupButtonenmx60lrah.menuItems.menuItemjo1jexl24o.onClick"},
-        {"key": "groupButtons.groupButtonz40p7cz8uy.menuItems.menuItem1rbff8b8r7.onClick"},
-        {"key": "groupButtons.groupButtonz40p7cz8uy.menuItems.menuItemq0wvfgti97.onClick"},
-        {"key": "groupButtons.groupButtonz40p7cz8uy.menuItems.menuItem8uotiiku3d.onClick"}
-    ],
-    "leftColumn": 24,
-    "dynamicBindingPathList": [
-        {"key": "groupButtons.groupButtonenmx60lrah.onClick"},
-        {"key": "groupButtons.groupButtonz40p7cz8uy.isVisible"},
-        {"key": "groupButtons.groupButton1.buttonColor"},
-        {"key": "groupButtons.groupButtonjink2bzzms.buttonColor"},
-        {"key": "groupButtons.groupButtonl755tlm16y.buttonColor"},
-        {"key": "groupButtons.groupButtonoh0l7stppj.buttonColor"},
-        {"key": "groupButtons.groupButtonenmx60lrah.buttonColor"},
-        {"key": "groupButtons.groupButtonz40p7cz8uy.buttonColor"}
-    ],
-    "key": "zq7t27bhdi",
-    "orientation": "horizontal",
-    "isDeprecated": false,
-    "rightColumn": 64,
-    "widgetId": "971mdah2st",
-    "isVisible": true,
-    "version": 1,
-    "parentId": "0",
-    "renderMode": "CANVAS",
-    "isLoading": false,
-    "childStylesheet": {"button": {"buttonColor": "{{appsmith.theme.colors.primaryColor}}"}},
-    "originalTopRow": 7,
-    "borderRadius": "0.375rem",
-    "originalBottomRow": 30,
-    "buttonVariant": "PRIMARY"
+    {
+      "key": "groupButtons.groupButtonz40p7cz8uy.isVisible"
+    },
+    {
+      "key": "groupButtons.groupButton1.buttonColor"
+    },
+    {
+      "key": "groupButtons.groupButtonjink2bzzms.buttonColor"
+    },
+    {
+      "key": "groupButtons.groupButtonl755tlm16y.buttonColor"
+    },
+    {
+      "key": "groupButtons.groupButtonoh0l7stppj.buttonColor"
+    },
+    {
+      "key": "groupButtons.groupButtonenmx60lrah.buttonColor"
+    },
+    {
+      "key": "groupButtons.groupButtonz40p7cz8uy.buttonColor"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "groupButtons.groupButton70kdvvujia.onClick"
+    },
+    {
+      "key": "groupButtons.groupButtonjink2bzzms.buttonColor"
+    },
+    {
+      "key": "groupButtons.groupButtonoh0l7stppj.buttonColor"
+    },
+    {
+      "key": "groupButtons.groupButtonl755tlm16y.buttonColor"
+    },
+    {
+      "key": "groupButtons.groupButtonz40p7cz8uy.isVisible"
+    },
+    {
+      "key": "groupButtons.groupButton1.buttonColor"
+    },
+    {
+      "key": "groupButtons.groupButtonz40p7cz8uy.menuItems.menuItemy66xiw4eao.backgroundColor"
+    },
+    {
+      "key": "groupButtons.groupButtonenmx60lrah.buttonColor"
+    },
+    {
+      "key": "groupButtons.groupButtonz40p7cz8uy.buttonColor"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "groupButtons.groupButtonjink2bzzms.onClick"
+    },
+    {
+      "key": "groupButtons.groupButton1.onClick"
+    },
+    {
+      "key": "groupButtons.groupButtonoh0l7stppj.onClick"
+    },
+    {
+      "key": "groupButtons.groupButtonenmx60lrah.onClick"
+    },
+    {
+      "key": "groupButtons.groupButton70kdvvujia.onClick"
+    },
+    {
+      "key": "groupButtons.groupButtonenmx60lrah.menuItems.menuItem4frcjhbtq1.onClick"
+    },
+    {
+      "key": "groupButtons.groupButtonenmx60lrah.menuItems.menuItemhu0vpqm5i2.onClick"
+    },
+    {
+      "key": "groupButtons.groupButtonenmx60lrah.menuItems.menuItemy7np5lz2w8.onClick"
+    },
+    {
+      "key": "groupButtons.groupButtonenmx60lrah.menuItems.menuItem2d18e7ktzk.onClick"
+    },
+    {
+      "key": "groupButtons.groupButtonenmx60lrah.menuItems.menuItemxaf52rzr57.onClick"
+    },
+    {
+      "key": "groupButtons.groupButtonl755tlm16y.onClick"
+    },
+    {
+      "key": "groupButtons.groupButtonz40p7cz8uy.menuItems.menuItemy66xiw4eao.onClick"
+    },
+    {
+      "key": "groupButtons.groupButtonz40p7cz8uy.menuItems.menuItema5dve7zx6p.onClick"
+    },
+    {
+      "key": "groupButtons.groupButtonz40p7cz8uy.menuItems.menuItem23gqu4kave.onClick"
+    },
+    {
+      "key": "groupButtons.groupButtonl755tlm16y.menuItems.menuItemaih5a9o4do.onClick"
+    },
+    {
+      "key": "groupButtons.groupButtonl755tlm16y.menuItems.menuItem0rhhnxfpby.onClick"
+    },
+    {
+      "key": "groupButtons.groupButtonl755tlm16y.menuItems.menuItem4fllqug7hs.onClick"
+    },
+    {
+      "key": "groupButtons.groupButtonl755tlm16y.menuItems.menuItemka4ib47veg.onClick"
+    },
+    {
+      "key": "groupButtons.groupButtonenmx60lrah.menuItems.menuItemjo1jexl24o.onClick"
+    },
+    {
+      "key": "groupButtons.groupButtonz40p7cz8uy.menuItems.menuItem1rbff8b8r7.onClick"
+    },
+    {
+      "key": "groupButtons.groupButtonz40p7cz8uy.menuItems.menuItemq0wvfgti97.onClick"
+    },
+    {
+      "key": "groupButtons.groupButtonz40p7cz8uy.menuItems.menuItem8uotiiku3d.onClick"
+    }
+  ],
+  "groupButtons": {
+    "groupButton1": {
+      "buttonColor": "{{appsmith.URL.pathname.includes('dashboard') ? '#D6D6D6' : '#E4E4E4'}}",
+      "buttonType": "SIMPLE",
+      "iconAlign": "left",
+      "id": "groupButton1",
+      "index": 0,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "Dashboard",
+      "menuItems": {},
+      "onClick": "{{navigateTo('Dashboard', {}, 'SAME_WINDOW')}}",
+      "placement": "CENTER",
+      "widgetId": ""
+    },
+    "groupButton70kdvvujia": {
+      "buttonColor": "#71717a",
+      "buttonType": "SIMPLE",
+      "iconAlign": "right",
+      "iconName": "log-out",
+      "id": "groupButton70kdvvujia",
+      "index": 6,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "LogOut",
+      "menuItems": {},
+      "onClick": "{{js_logout.logout_process()}}",
+      "placement": "CENTER",
+      "widgetId": "igopogrci3"
+    },
+    "groupButtonenmx60lrah": {
+      "buttonColor": "{{appsmith.URL.pathname.includes('utility') ? '#D6D6D6' : '#E4E4E4'}}",
+      "buttonType": "MENU",
+      "iconAlign": "right",
+      "iconName": "chevron-down",
+      "id": "groupButtonenmx60lrah",
+      "index": 4,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "Utility",
+      "menuItems": {
+        "menuItem2d18e7ktzk": {
+          "backgroundColor": "#f4f4f5",
+          "id": "menuItem2d18e7ktzk",
+          "index": 2,
+          "isDisabled": false,
+          "isVisible": true,
+          "label": "CampName Builder",
+          "onClick": "{{navigateTo('Campaign Name Builder Utility', {}, 'SAME_WINDOW')}}",
+          "widgetId": "a25wkibfj7"
+        },
+        "menuItem4frcjhbtq1": {
+          "backgroundColor": "#f4f4f5",
+          "id": "menuItem4frcjhbtq1",
+          "index": 0,
+          "isDisabled": false,
+          "isVisible": true,
+          "label": "Linked Network",
+          "onClick": "{{navigateTo('Linked Network Utility', {}, 'SAME_WINDOW')}}",
+          "widgetId": "21brbafka7"
+        },
+        "menuItemhu0vpqm5i2": {
+          "backgroundColor": "#f4f4f5",
+          "id": "menuItemhu0vpqm5i2",
+          "index": 1,
+          "isDisabled": false,
+          "isVisible": true,
+          "label": "Linked Ad Act",
+          "onClick": "{{navigateTo('LInked FB Act Utility', {}, 'SAME_WINDOW')}}",
+          "widgetId": "cheiksxmfr"
+        },
+        "menuItemjo1jexl24o": {
+          "backgroundColor": "#f4f4f5",
+          "id": "menuItemjo1jexl24o",
+          "index": 4,
+          "isDisabled": false,
+          "isVisible": true,
+          "label": "Recharge History",
+          "onClick": "{{navigateTo('Recharge Requests', {}, 'SAME_WINDOW')}}",
+          "widgetId": "37h8vy8dic"
+        },
+        "menuItemxaf52rzr57": {
+          "backgroundColor": "#f4f4f5",
+          "id": "menuItemxaf52rzr57",
+          "index": 3,
+          "isDisabled": false,
+          "isVisible": true,
+          "label": "AdAccount Credit",
+          "onClick": "{{navigateTo('AdAccount Credit Utility', {}, 'SAME_WINDOW')}}",
+          "widgetId": "wzmh0fk127"
+        },
+        "menuItemy7np5lz2w8": {
+          "backgroundColor": "#f4f4f5",
+          "id": "menuItemy7np5lz2w8",
+          "index": 5,
+          "isDisabled": false,
+          "isVisible": true,
+          "label": "Invoices",
+          "onClick": "{{navigateTo('Invoices Utility', {}, 'SAME_WINDOW')}}",
+          "widgetId": "9lx79zdw64"
+        }
+      },
+      "onClick": "{{navigateTo('LInked FB Act', {}, 'SAME_WINDOW')}}",
+      "placement": "CENTER",
+      "widgetId": "cgod2vhcsx"
+    },
+    "groupButtonjink2bzzms": {
+      "buttonColor": "{{appsmith.URL.pathname.includes('day-by-day') ? '#D6D6D6' : '#E4E4E4'}}",
+      "buttonType": "SIMPLE",
+      "iconAlign": "left",
+      "id": "groupButtonjink2bzzms",
+      "index": 1,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "Day by Day",
+      "menuItems": {},
+      "onClick": "{{navigateTo('Day by Day', {}, 'SAME_WINDOW')}}",
+      "placement": "CENTER",
+      "widgetId": "z47cmbaodr"
+    },
+    "groupButtonl755tlm16y": {
+      "buttonColor": "{{appsmith.URL.pathname.includes('offer') ? '#D6D6D6' : '#E4E4E4'}}",
+      "buttonType": "MENU",
+      "iconAlign": "right",
+      "iconName": "chevron-down",
+      "id": "groupButtonl755tlm16y",
+      "index": 2,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "Offers",
+      "menuItems": {
+        "menuItem0rhhnxfpby": {
+          "backgroundColor": "#f4f4f5",
+          "id": "menuItem0rhhnxfpby",
+          "index": 1,
+          "isDisabled": false,
+          "isVisible": true,
+          "label": "My Offer Analysis",
+          "onClick": "{{navigateTo('Offer Detail', {}, 'SAME_WINDOW')}}",
+          "widgetId": "isq1op8y1g"
+        },
+        "menuItem4fllqug7hs": {
+          "backgroundColor": "#f4f4f5",
+          "id": "menuItem4fllqug7hs",
+          "index": 2,
+          "isDisabled": false,
+          "isVisible": true,
+          "label": "Factory Offers",
+          "onClick": "{{navigateTo('Offers Analysis', {}, 'SAME_WINDOW')}}",
+          "widgetId": "251z32lmtc"
+        },
+        "menuItemaih5a9o4do": {
+          "backgroundColor": "#f4f4f5",
+          "id": "menuItemaih5a9o4do",
+          "index": 0,
+          "isDisabled": false,
+          "isVisible": true,
+          "label": "My Profit",
+          "onClick": "{{navigateTo('My Profit Offer', {}, 'SAME_WINDOW')}}",
+          "widgetId": "z2jyryalal"
+        },
+        "menuItemka4ib47veg": {
+          "backgroundColor": "#f4f4f5",
+          "id": "menuItemka4ib47veg",
+          "index": 3,
+          "isDisabled": false,
+          "isVisible": true,
+          "label": "Balance Check",
+          "onClick": "{{navigateTo('Balance Check Offer', {}, 'SAME_WINDOW')}}",
+          "widgetId": "1jn877wegg"
+        }
+      },
+      "onClick": "{{navigateTo('Offers Analysis', {}, 'SAME_WINDOW')}}",
+      "placement": "CENTER",
+      "widgetId": "l8d3iznecp"
+    },
+    "groupButtonoh0l7stppj": {
+      "buttonColor": "{{appsmith.URL.pathname.includes('pivot') ? '#D6D6D6' : '#E4E4E4'}}",
+      "buttonType": "SIMPLE",
+      "id": "groupButtonoh0l7stppj",
+      "index": 3,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "Pivot",
+      "menuItems": {},
+      "onClick": "{{navigateTo('Pivot', {}, 'SAME_WINDOW')}}",
+      "placement": "CENTER",
+      "widgetId": "44mx0hg26e"
+    },
+    "groupButtonz40p7cz8uy": {
+      "buttonColor": "{{appsmith.URL.pathname.includes('admin') ? '#D6D6D6' : '#E4E4E4'}}",
+      "buttonType": "MENU",
+      "iconAlign": "right",
+      "iconName": "chevron-down",
+      "id": "groupButtonz40p7cz8uy",
+      "index": 5,
+      "isDisabled": false,
+      "isVisible": "{{appsmith.store.role_level> 100 && appsmith.store.access_token.length>0 }}",
+      "label": "Admin",
+      "menuItems": {
+        "menuItem1rbff8b8r7": {
+          "backgroundColor": "#f4f4f5",
+          "id": "menuItem1rbff8b8r7",
+          "index": 4,
+          "isDisabled": false,
+          "isVisible": true,
+          "label": "Ad Acccount List",
+          "onClick": "{{navigateTo('LInked Act Admin', {}, 'SAME_WINDOW')}}",
+          "widgetId": "16t72zwyaz"
+        },
+        "menuItem23gqu4kave": {
+          "backgroundColor": "#f4f4f5",
+          "id": "menuItem23gqu4kave",
+          "index": 5,
+          "isDisabled": false,
+          "isVisible": true,
+          "label": "Users Log",
+          "onClick": "{{navigateTo('Users SW Log Admin', {}, 'SAME_WINDOW')}}",
+          "widgetId": "7498dfb6r7"
+        },
+        "menuItem8uotiiku3d": {
+          "backgroundColor": "#f4f4f5",
+          "id": "menuItem8uotiiku3d",
+          "index": 1,
+          "isDisabled": false,
+          "isVisible": true,
+          "label": "Offer Analysis",
+          "onClick": "{{navigateTo('Off Detail Admin', {}, 'SAME_WINDOW')}}",
+          "widgetId": "gfvajw2mbq"
+        },
+        "menuItema5dve7zx6p": {
+          "backgroundColor": "#f4f4f5",
+          "id": "menuItema5dve7zx6p",
+          "index": 3,
+          "isDisabled": false,
+          "isVisible": true,
+          "label": "Offers Admin",
+          "onClick": "{{navigateTo('Offers Analysis Admin', {}, 'SAME_WINDOW')}}",
+          "widgetId": "q1rrq7bdi3"
+        },
+        "menuItemq0wvfgti97": {
+          "backgroundColor": "#f4f4f5",
+          "id": "menuItemq0wvfgti97",
+          "index": 2,
+          "isDisabled": false,
+          "isVisible": true,
+          "label": "Network Analysis",
+          "onClick": "{{navigateTo('Network Analysis Admin', {}, 'SAME_WINDOW')}}",
+          "widgetId": "lo9cvdz5u8"
+        },
+        "menuItemy66xiw4eao": {
+          "backgroundColor": "#f4f4f5",
+          "id": "menuItemy66xiw4eao",
+          "index": 0,
+          "isDisabled": false,
+          "isVisible": true,
+          "label": "Users Profit",
+          "onClick": "{{navigateTo('Users Profit Admin', {}, 'SAME_WINDOW')}}",
+          "widgetId": "9elkpcs5h9"
+        }
+      },
+      "placement": "CENTER",
+      "widgetId": "fr8hqslsci"
+    }
+  },
+  "hideCard": false,
+  "iconSVG": "/static/media/icon.d6773218cfb61dcfa5f460d43371e30d.svg",
+  "isCanvas": false,
+  "isDeprecated": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "zq7t27bhdi",
+  "leftColumn": 24,
+  "orientation": "horizontal",
+  "originalBottomRow": 30,
+  "originalTopRow": 7,
+  "parentColumnSpace": 20.0625,
+  "parentId": "0",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "rightColumn": 64,
+  "searchTags": [
+    "click",
+    "submit"
+  ],
+  "topRow": 1,
+  "type": "BUTTON_GROUP_WIDGET",
+  "version": 1,
+  "widgetId": "971mdah2st",
+  "widgetName": "ButtonGroup1Copy"
 }

@@ -1,15 +1,11 @@
 {
+  "gitSyncId": "63c3151532584b547fffe91b_63f37193e5dc947295dcf13a",
+  "id": "Users SW Log Admin_js_logout",
   "unpublishedCollection": {
     "name": "js_logout",
     "pageId": "Users SW Log Admin",
     "pluginId": "js-plugin",
     "pluginType": "JS",
-    "actions": [],
-    "archivedActions": [],
-    "variables": [],
-    "userPermissions": []
-  },
-  "id": "Users SW Log Admin_js_logout",
-  "deleted": false,
-  "gitSyncId": "63c3151532584b547fffe91b_63f37193e5dc947295dcf13a"
+    "variables": []
+  }
 }

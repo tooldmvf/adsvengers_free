@@ -1,62 +1,84 @@
 {
-    "boxShadow": "none",
-    "iconSVG": "/static/media/icon.bd99caba5853ad71e4b3d8daffacb3a2.svg",
-    "labelText": "User",
-    "topRow": 1,
-    "labelWidth": 5,
-    "type": "SELECT_WIDGET",
-    "serverSideFiltering": false,
-    "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( appsmith.store.myUser))(SelectUser.options, SelectUser.serverSideFiltering) }}",
-    "animateLoading": true,
-    "leftColumn": 35,
-    "dynamicBindingPathList": [
-        {"key": "accentColor"},
-        {"key": "borderRadius"},
-        {"key": "sourceData"},
-        {"key": "isVisible"},
-        {"key": "defaultOptionValue"}
-    ],
-    "placeholderText": "Select option",
-    "isDisabled": false,
-    "isRequired": false,
-    "dynamicHeight": "AUTO_HEIGHT",
-    "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-    "isVisible": "{{appsmith.store.role_level>100}}",
-    "version": 1,
-    "isLoading": false,
-    "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-    "originalBottomRow": 12,
-    "widgetName": "SelectUser",
-    "isFilterable": true,
-    "dynamicPropertyPathList": [
-        {"key": "onOptionChange"},
-        {"key": "isVisible"},
-        {"key": "sourceData"}
-    ],
-    "displayName": "Select",
-    "searchTags": ["dropdown"],
-    "bottomRow": 5,
-    "parentRowSpace": 10,
-    "hideCard": false,
-    "shouldScrollContents": true,
-    "parentColumnSpace": 19.75,
-    "dynamicTriggerPathList": [{"key": "onOptionChange"}],
-    "labelPosition": "Left",
-    "sourceData": "{{get_all_users.data.map( (obj) => {return {'value': obj.fk_user_id, 'label':obj.last_name.concat(' ').concat(obj.first_name)}})}}",
-    "key": "7jh0y9t1an",
-    "labelTextSize": "0.875rem",
-    "isDeprecated": false,
-    "rightColumn": 49,
-    "widgetId": "icdh9t72sg",
-    "optionValue": "value",
-    "minWidth": 450,
-    "parentId": "59rw5mx0bq",
-    "labelAlignment": "right",
-    "renderMode": "CANVAS",
-    "optionLabel": "label",
-    "responsiveBehavior": "fill",
-    "originalTopRow": 5,
-    "maxDynamicHeight": 9000,
-    "onOptionChange": "{{Tab4Offer.run();TotalLine.run();Tab4User.run();}}",
-    "minDynamicHeight": 4
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 5,
+  "boxShadow": "none",
+  "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( appsmith.store.myUser))(SelectUser.options, SelectUser.serverSideFiltering) }}",
+  "displayName": "Select",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "sourceData"
+    },
+    {
+      "key": "isVisible"
+    },
+    {
+      "key": "defaultOptionValue"
+    }
+  ],
+  "dynamicHeight": "AUTO_HEIGHT",
+  "dynamicPropertyPathList": [
+    {
+      "key": "onOptionChange"
+    },
+    {
+      "key": "isVisible"
+    },
+    {
+      "key": "sourceData"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onOptionChange"
+    }
+  ],
+  "hideCard": false,
+  "iconSVG": "/static/media/icon.bd99caba5853ad71e4b3d8daffacb3a2.svg",
+  "isDeprecated": false,
+  "isDisabled": false,
+  "isFilterable": true,
+  "isLoading": false,
+  "isRequired": false,
+  "isVisible": "{{appsmith.store.role_level>100}}",
+  "key": "7jh0y9t1an",
+  "labelAlignment": "right",
+  "labelPosition": "Left",
+  "labelText": "User",
+  "labelTextSize": "0.875rem",
+  "labelWidth": 5,
+  "leftColumn": 35,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "onOptionChange": "{{Tab4Offer.run();TotalLine.run();Tab4User.run();}}",
+  "optionLabel": "label",
+  "optionValue": "value",
+  "originalBottomRow": 12,
+  "originalTopRow": 5,
+  "parentColumnSpace": 19.75,
+  "parentId": "59rw5mx0bq",
+  "parentRowSpace": 10,
+  "placeholderText": "Select option",
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 49,
+  "searchTags": [
+    "dropdown"
+  ],
+  "serverSideFiltering": false,
+  "shouldScrollContents": true,
+  "sourceData": "{{get_all_users.data.map( (obj) => {return {'value': obj.fk_user_id, 'label':obj.last_name.concat(' ').concat(obj.first_name)}})}}",
+  "topRow": 1,
+  "type": "SELECT_WIDGET",
+  "version": 1,
+  "widgetId": "icdh9t72sg",
+  "widgetName": "SelectUser"
 }

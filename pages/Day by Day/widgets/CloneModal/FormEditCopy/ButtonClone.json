@@ -1,49 +1,57 @@
 {
-    "resetFormOnClick": true,
-    "boxShadow": "none",
-    "mobileBottomRow": 36,
-    "widgetName": "ButtonClone",
-    "onClick": "{{js_clone_day_offer.insertFlow();\ncloseModal('CloneModal');}}",
-    "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
-    "displayName": "Button",
-    "iconSVG": "/static/media/icon.7beb9123fb53027d9d6b778cdfe4caed.svg",
-    "searchTags": [
-        "click",
-        "submit"
-    ],
-    "topRow": 32,
-    "bottomRow": 36,
-    "parentRowSpace": 10,
-    "type": "BUTTON_WIDGET",
-    "hideCard": false,
-    "mobileRightColumn": 28,
-    "animateLoading": true,
-    "parentColumnSpace": 10.634765625,
-    "dynamicTriggerPathList": [{"key": "onClick"}],
-    "leftColumn": 2,
-    "dynamicBindingPathList": [
-        {"key": "buttonColor"},
-        {"key": "borderRadius"}
-    ],
-    "text": "Submit",
-    "isDisabled": false,
-    "key": "avgc9fk3c4",
-    "isDeprecated": false,
-    "rightColumn": 61,
-    "isDefaultClickDisabled": true,
-    "widgetId": "drehj6okmi",
-    "minWidth": 120,
-    "isVisible": true,
-    "recaptchaType": "V3",
-    "version": 1,
-    "parentId": "eypeksotbl",
-    "renderMode": "CANVAS",
-    "isLoading": false,
-    "mobileTopRow": 32,
-    "responsiveBehavior": "hug",
-    "disabledWhenInvalid": true,
-    "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-    "mobileLeftColumn": 12,
-    "buttonVariant": "PRIMARY",
-    "placement": "CENTER"
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 36,
+  "boxShadow": "none",
+  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+  "buttonVariant": "PRIMARY",
+  "disabledWhenInvalid": true,
+  "displayName": "Button",
+  "dynamicBindingPathList": [
+    {
+      "key": "buttonColor"
+    },
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "hideCard": false,
+  "iconSVG": "/static/media/icon.7beb9123fb53027d9d6b778cdfe4caed.svg",
+  "isDefaultClickDisabled": true,
+  "isDeprecated": false,
+  "isDisabled": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "avgc9fk3c4",
+  "leftColumn": 2,
+  "minWidth": 120,
+  "mobileBottomRow": 36,
+  "mobileLeftColumn": 12,
+  "mobileRightColumn": 28,
+  "mobileTopRow": 32,
+  "onClick": "{{js_clone_day_offer.insertFlow();\ncloseModal('CloneModal');}}",
+  "parentColumnSpace": 10.634765625,
+  "parentId": "eypeksotbl",
+  "parentRowSpace": 10,
+  "placement": "CENTER",
+  "recaptchaType": "V3",
+  "renderMode": "CANVAS",
+  "resetFormOnClick": true,
+  "responsiveBehavior": "hug",
+  "rightColumn": 61,
+  "searchTags": [
+    "click",
+    "submit"
+  ],
+  "text": "Submit",
+  "topRow": 32,
+  "type": "BUTTON_WIDGET",
+  "version": 1,
+  "widgetId": "drehj6okmi",
+  "widgetName": "ButtonClone"
 }

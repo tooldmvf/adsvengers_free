@@ -1,15 +1,11 @@
 {
+  "gitSyncId": "63c3151532584b547fffe91b_6422b67a9e29566c0dd57597",
+  "id": "ZZZ OLD Off Detail Admin_js_logout",
   "unpublishedCollection": {
     "name": "js_logout",
     "pageId": "ZZZ OLD Off Detail Admin",
     "pluginId": "js-plugin",
     "pluginType": "JS",
-    "actions": [],
-    "archivedActions": [],
-    "variables": [],
-    "userPermissions": []
-  },
-  "id": "ZZZ OLD Off Detail Admin_js_logout",
-  "deleted": false,
-  "gitSyncId": "63c3151532584b547fffe91b_6422b67a9e29566c0dd57597"
+    "variables": []
+  }
 }

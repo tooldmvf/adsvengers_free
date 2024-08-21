@@ -1,15 +1,11 @@
 {
+  "gitSyncId": "63936c0b4b95806da2da5de7_63bfca8160108a125629b4bd",
+  "id": "Campaign Name Builder Utility_js_logout",
   "unpublishedCollection": {
     "name": "js_logout",
     "pageId": "Campaign Name Builder Utility",
     "pluginId": "js-plugin",
     "pluginType": "JS",
-    "actions": [],
-    "archivedActions": [],
-    "variables": [],
-    "userPermissions": []
-  },
-  "id": "Campaign Name Builder Utility_js_logout",
-  "deleted": false,
-  "gitSyncId": "63936c0b4b95806da2da5de7_63bfca8160108a125629b4bd"
+    "variables": []
+  }
 }

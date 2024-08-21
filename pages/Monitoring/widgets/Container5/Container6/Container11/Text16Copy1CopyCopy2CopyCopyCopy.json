@@ -1,35 +1,45 @@
 {
-    "boxShadow": "none",
-    "widgetName": "Text16Copy1CopyCopy2CopyCopyCopy",
-    "dynamicPropertyPathList": [{"key": "textColor"}],
-    "topRow": 4,
-    "bottomRow": 8,
-    "parentRowSpace": 10,
-    "type": "TEXT_WIDGET",
-    "parentColumnSpace": 2.42578125,
-    "dynamicTriggerPathList": [],
-    "overflow": "NONE",
-    "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
-    "leftColumn": 0,
-    "dynamicBindingPathList": [
-        {"key": "fontFamily"},
-        {"key": "text"},
-        {"key": "textColor"}
-    ],
-    "text": "{{( SelectFinancialTot.data[0].Tot_ROI).toFixed(1)}}%",
-    "labelTextSize": "0.875rem",
-    "rightColumn": 64,
-    "textAlign": "CENTER",
-    "dynamicHeight": "FIXED",
-    "widgetId": "1z8fm9vviu",
-    "isVisible": "true",
-    "fontStyle": "BOLD",
-    "textColor": "{{SelectFinancialTot.data[0].Tot_ROI<0 ? 'red' : (SelectFinancialTot.data[0].Tot_ROI<30 ? '#eab308' : 'green')}}",
-    "version": 1,
-    "parentId": "qn4sixaqq0",
-    "isLoading": false,
-    "borderRadius": "0px",
-    "maxDynamicHeight": 9000,
-    "fontSize": "1rem",
-    "minDynamicHeight": 4
+  "borderRadius": "0px",
+  "bottomRow": 8,
+  "boxShadow": "none",
+  "dynamicBindingPathList": [
+    {
+      "key": "fontFamily"
+    },
+    {
+      "key": "text"
+    },
+    {
+      "key": "textColor"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "textColor"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
+  "fontSize": "1rem",
+  "fontStyle": "BOLD",
+  "isLoading": false,
+  "isVisible": "true",
+  "labelTextSize": "0.875rem",
+  "leftColumn": 0,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "overflow": "NONE",
+  "parentColumnSpace": 2.42578125,
+  "parentId": "qn4sixaqq0",
+  "parentRowSpace": 10,
+  "rightColumn": 64,
+  "text": "{{( SelectFinancialTot.data[0].Tot_ROI).toFixed(1)}}%",
+  "textAlign": "CENTER",
+  "textColor": "{{SelectFinancialTot.data[0].Tot_ROI<0 ? 'red' : (SelectFinancialTot.data[0].Tot_ROI<30 ? '#eab308' : 'green')}}",
+  "topRow": 4,
+  "type": "TEXT_WIDGET",
+  "version": 1,
+  "widgetId": "1z8fm9vviu",
+  "widgetName": "Text16Copy1CopyCopy2CopyCopyCopy"
 }

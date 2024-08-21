@@ -1,46 +1,60 @@
 {
-    "boxShadow": "none",
-    "mobileBottomRow": 4,
-    "widgetName": "IconButton3",
-    "onClick": "{{showModal('Modal2').then(() => {\n  DetailMB.run();\n});}}",
-    "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
-    "dynamicPropertyPathList": [{"key": "isVisible"}],
-    "displayName": "Icon button",
-    "iconSVG": "/static/media/icon.80fc7466c0d7181ec0271de7fda795ec.svg",
-    "searchTags": [
-        "click",
-        "submit"
-    ],
-    "topRow": 0,
-    "bottomRow": 4,
-    "parentRowSpace": 10,
-    "type": "ICON_BUTTON_WIDGET",
-    "hideCard": false,
-    "mobileRightColumn": 5,
-    "animateLoading": true,
-    "parentColumnSpace": 8.814697265625,
-    "dynamicTriggerPathList": [{"key": "onClick"}],
-    "leftColumn": 1,
-    "dynamicBindingPathList": [
-        {"key": "buttonColor"},
-        {"key": "borderRadius"},
-        {"key": "isVisible"}
-    ],
-    "isDisabled": false,
-    "key": "bl5715aj7e",
-    "isDeprecated": false,
-    "rightColumn": 5,
-    "iconName": "properties",
-    "widgetId": "rb1zwj8np4",
-    "minWidth": 50,
-    "isVisible": "{{appsmith.store.role_level >100 && TableOffersCopy.selectedRowIndex>=0}}",
-    "version": 1,
-    "parentId": "05v51waep0",
-    "renderMode": "CANVAS",
-    "isLoading": false,
-    "mobileTopRow": 0,
-    "responsiveBehavior": "hug",
-    "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-    "mobileLeftColumn": 1,
-    "buttonVariant": "TERTIARY"
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 4,
+  "boxShadow": "none",
+  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+  "buttonVariant": "TERTIARY",
+  "displayName": "Icon button",
+  "dynamicBindingPathList": [
+    {
+      "key": "buttonColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "isVisible"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "isVisible"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "hideCard": false,
+  "iconName": "properties",
+  "iconSVG": "/static/media/icon.80fc7466c0d7181ec0271de7fda795ec.svg",
+  "isDeprecated": false,
+  "isDisabled": false,
+  "isLoading": false,
+  "isVisible": "{{appsmith.store.role_level >100 && TableOffersCopy.selectedRowIndex>=0}}",
+  "key": "bl5715aj7e",
+  "leftColumn": 1,
+  "minWidth": 50,
+  "mobileBottomRow": 4,
+  "mobileLeftColumn": 1,
+  "mobileRightColumn": 5,
+  "mobileTopRow": 0,
+  "onClick": "{{showModal('Modal2').then(() => {\n  DetailMB.run();\n});}}",
+  "parentColumnSpace": 8.814697265625,
+  "parentId": "05v51waep0",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "hug",
+  "rightColumn": 5,
+  "searchTags": [
+    "click",
+    "submit"
+  ],
+  "topRow": 0,
+  "type": "ICON_BUTTON_WIDGET",
+  "version": 1,
+  "widgetId": "rb1zwj8np4",
+  "widgetName": "IconButton3"
 }

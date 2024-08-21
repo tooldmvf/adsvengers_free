@@ -1,60 +1,82 @@
 {
-    "boxShadow": "none",
-    "widgetName": "SelectCateg",
-    "isFilterable": true,
-    "dynamicPropertyPathList": [
-        {"key": "isVisible"},
-        {"key": "isRequired"},
-        {"key": "sourceData"}
-    ],
-    "iconSVG": "/static/media/icon.bd99caba5853ad71e4b3d8daffacb3a2.svg",
-    "displayName": "Select",
-    "labelText": "Offer Category",
-    "topRow": 20,
-    "searchTags": ["dropdown"],
-    "bottomRow": 24,
-    "parentRowSpace": 10,
-    "labelWidth": "20",
-    "type": "SELECT_WIDGET",
-    "serverSideFiltering": false,
-    "hideCard": false,
-    "shouldScrollContents": true,
-    "defaultOptionValue": "",
-    "animateLoading": true,
-    "parentColumnSpace": 7.05078125,
-    "dynamicTriggerPathList": [{"key": "onOptionChange"}],
-    "leftColumn": 2,
-    "dynamicBindingPathList": [
-        {"key": "accentColor"},
-        {"key": "borderRadius"},
-        {"key": "sourceData"},
-        {"key": "isVisible"},
-        {"key": "isRequired"}
-    ],
-    "labelPosition": "Left",
-    "placeholderText": "Select option",
-    "isDisabled": false,
-    "sourceData": "{{get_off_category.data.map( (obj) =>{ return  {'value': obj.off_cat_id, 'label': obj.off_cat_name } })}}",
-    "key": "99hmwl6png",
-    "labelTextSize": "0.875rem",
-    "isRequired": "{{appsmith.store.custom_off && appsmith.store.custom_off2}}",
-    "isDeprecated": false,
-    "rightColumn": 59,
-    "dynamicHeight": "AUTO_HEIGHT",
-    "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-    "widgetId": "u9266i10y0",
-    "optionValue": "value",
-    "isVisible": "{{appsmith.store.custom_off && appsmith.store.custom_off2}}",
-    "version": 1,
-    "parentId": "hgd83jumux",
-    "isLoading": false,
-    "labelAlignment": "left",
-    "renderMode": "CANVAS",
-    "optionLabel": "label",
-    "originalTopRow": 20,
-    "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-    "maxDynamicHeight": 9000,
-    "originalBottomRow": 24,
-    "onOptionChange": "",
-    "minDynamicHeight": 4
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 24,
+  "boxShadow": "none",
+  "defaultOptionValue": "",
+  "displayName": "Select",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "sourceData"
+    },
+    {
+      "key": "isVisible"
+    },
+    {
+      "key": "isRequired"
+    }
+  ],
+  "dynamicHeight": "AUTO_HEIGHT",
+  "dynamicPropertyPathList": [
+    {
+      "key": "isVisible"
+    },
+    {
+      "key": "isRequired"
+    },
+    {
+      "key": "sourceData"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onOptionChange"
+    }
+  ],
+  "hideCard": false,
+  "iconSVG": "/static/media/icon.bd99caba5853ad71e4b3d8daffacb3a2.svg",
+  "isDeprecated": false,
+  "isDisabled": false,
+  "isFilterable": true,
+  "isLoading": false,
+  "isRequired": "{{appsmith.store.custom_off && appsmith.store.custom_off2}}",
+  "isVisible": "{{appsmith.store.custom_off && appsmith.store.custom_off2}}",
+  "key": "99hmwl6png",
+  "labelAlignment": "left",
+  "labelPosition": "Left",
+  "labelText": "Offer Category",
+  "labelTextSize": "0.875rem",
+  "labelWidth": "20",
+  "leftColumn": 2,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "onOptionChange": "",
+  "optionLabel": "label",
+  "optionValue": "value",
+  "originalBottomRow": 24,
+  "originalTopRow": 20,
+  "parentColumnSpace": 7.05078125,
+  "parentId": "hgd83jumux",
+  "parentRowSpace": 10,
+  "placeholderText": "Select option",
+  "renderMode": "CANVAS",
+  "rightColumn": 59,
+  "searchTags": [
+    "dropdown"
+  ],
+  "serverSideFiltering": false,
+  "shouldScrollContents": true,
+  "sourceData": "{{get_off_category.data.map( (obj) =>{ return  {'value': obj.off_cat_id, 'label': obj.off_cat_name } })}}",
+  "topRow": 20,
+  "type": "SELECT_WIDGET",
+  "version": 1,
+  "widgetId": "u9266i10y0",
+  "widgetName": "SelectCateg"
 }

@@ -1,57 +1,73 @@
 {
-    "boxShadow": "none",
-    "widgetName": "SelectNetwork",
-    "isFilterable": true,
-    "dynamicPropertyPathList": [
-        {"key": "onOptionChange"},
-        {"key": "sourceData"}
-    ],
-    "iconSVG": "/static/media/icon.bd99caba5853ad71e4b3d8daffacb3a2.svg",
-    "displayName": "Select",
-    "labelText": "Network",
-    "topRow": 1,
-    "searchTags": ["dropdown"],
-    "bottomRow": 6,
-    "parentRowSpace": 10,
-    "labelWidth": "4",
-    "type": "SELECT_WIDGET",
-    "serverSideFiltering": false,
-    "hideCard": false,
-    "shouldScrollContents": true,
-    "defaultOptionValue": "",
-    "animateLoading": true,
-    "parentColumnSpace": 19.75,
-    "dynamicTriggerPathList": [{"key": "onOptionChange"}],
-    "leftColumn": 29,
-    "dynamicBindingPathList": [
-        {"key": "accentColor"},
-        {"key": "borderRadius"},
-        {"key": "sourceData"}
-    ],
-    "labelPosition": "Left",
-    "placeholderText": "Select option",
-    "isDisabled": false,
-    "sourceData": "{{get_all_networks.data.map( (obj) => {return {'value': obj.network_id, 'label':obj.network_name}})}}",
-    "key": "oii3vhqege",
-    "labelTextSize": "0.875rem",
-    "isRequired": false,
-    "isDeprecated": false,
-    "rightColumn": 42,
-    "dynamicHeight": "AUTO_HEIGHT",
-    "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-    "widgetId": "d2t5jcve5e",
-    "optionValue": "value",
-    "isVisible": true,
-    "version": 1,
-    "parentId": "59rw5mx0bq",
-    "isLoading": false,
-    "labelAlignment": "right",
-    "renderMode": "CANVAS",
-    "optionLabel": "label",
-    "originalTopRow": 1,
-    "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-    "maxDynamicHeight": 9000,
-    "originalBottomRow": 5,
-    "onOptionChange": "{{TotalLine.run();Tab4OfferDay.run();SelectFinancial.run();}}",
-    "minDynamicHeight": 4
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 6,
+  "boxShadow": "none",
+  "defaultOptionValue": "",
+  "displayName": "Select",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "sourceData"
+    }
+  ],
+  "dynamicHeight": "AUTO_HEIGHT",
+  "dynamicPropertyPathList": [
+    {
+      "key": "onOptionChange"
+    },
+    {
+      "key": "sourceData"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onOptionChange"
+    }
+  ],
+  "hideCard": false,
+  "iconSVG": "/static/media/icon.bd99caba5853ad71e4b3d8daffacb3a2.svg",
+  "isDeprecated": false,
+  "isDisabled": false,
+  "isFilterable": true,
+  "isLoading": false,
+  "isRequired": false,
+  "isVisible": true,
+  "key": "oii3vhqege",
+  "labelAlignment": "right",
+  "labelPosition": "Left",
+  "labelText": "Network",
+  "labelTextSize": "0.875rem",
+  "labelWidth": "4",
+  "leftColumn": 29,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "onOptionChange": "{{TotalLine.run();Tab4OfferDay.run();SelectFinancial.run();}}",
+  "optionLabel": "label",
+  "optionValue": "value",
+  "originalBottomRow": 5,
+  "originalTopRow": 1,
+  "parentColumnSpace": 19.75,
+  "parentId": "59rw5mx0bq",
+  "parentRowSpace": 10,
+  "placeholderText": "Select option",
+  "renderMode": "CANVAS",
+  "rightColumn": 42,
+  "searchTags": [
+    "dropdown"
+  ],
+  "serverSideFiltering": false,
+  "shouldScrollContents": true,
+  "sourceData": "{{get_all_networks.data.map( (obj) => {return {'value': obj.network_id, 'label':obj.network_name}})}}",
+  "topRow": 1,
+  "type": "SELECT_WIDGET",
+  "version": 1,
+  "widgetId": "d2t5jcve5e",
+  "widgetName": "SelectNetwork"
 }

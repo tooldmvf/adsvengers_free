@@ -1,15 +1,11 @@
 {
+  "gitSyncId": "63c3151532584b547fffe91b_6414b53dcaf33246bc984d80",
+  "id": "ZZZ BKP AdAccount Credit Utili_js_logout",
   "unpublishedCollection": {
     "name": "js_logout",
     "pageId": "ZZZ BKP AdAccount Credit Utili",
     "pluginId": "js-plugin",
     "pluginType": "JS",
-    "actions": [],
-    "archivedActions": [],
-    "variables": [],
-    "userPermissions": []
-  },
-  "id": "ZZZ BKP AdAccount Credit Utili_js_logout",
-  "deleted": false,
-  "gitSyncId": "63c3151532584b547fffe91b_6414b53dcaf33246bc984d80"
+    "variables": []
+  }
 }

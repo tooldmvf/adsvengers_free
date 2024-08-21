@@ -1,15 +1,11 @@
 {
+  "gitSyncId": "63c3151532584b547fffe91b_6453629c31cbfd3f2cf26e9b",
+  "id": "Offer Detail_Utils2",
   "unpublishedCollection": {
     "name": "Utils2",
     "pageId": "Offer Detail",
     "pluginId": "js-plugin",
     "pluginType": "JS",
-    "actions": [],
-    "archivedActions": [],
-    "variables": [],
-    "userPermissions": []
-  },
-  "id": "Offer Detail_Utils2",
-  "deleted": false,
-  "gitSyncId": "63c3151532584b547fffe91b_6453629c31cbfd3f2cf26e9b"
+    "variables": []
+  }
 }

@@ -1,15 +1,11 @@
 {
+  "gitSyncId": "63c3151532584b547fffe91b_6412d2c1caf33246bc982666",
+  "id": "Campaign List Admin_Utils2",
   "unpublishedCollection": {
     "name": "Utils2",
     "pageId": "Campaign List Admin",
     "pluginId": "js-plugin",
     "pluginType": "JS",
-    "actions": [],
-    "archivedActions": [],
-    "variables": [],
-    "userPermissions": []
-  },
-  "id": "Campaign List Admin_Utils2",
-  "deleted": false,
-  "gitSyncId": "63c3151532584b547fffe91b_6412d2c1caf33246bc982666"
+    "variables": []
+  }
 }
