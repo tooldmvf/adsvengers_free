@@ -36,7 +36,7 @@
   "isLoading": false,
   "isVisible": true,
   "key": "k0zn3vv2el",
-  "leftColumn": 33,
+  "leftColumn": 24,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
@@ -57,7 +57,7 @@
     "label"
   ],
   "shouldTruncate": false,
-  "text": "{{Utils.myCurrency(\nNumber(Total_rev.text.replace(/[^0-9.-]+/g,\"\")) - Number(Total_spent.text.replace(/[^0-9.-]+/g,\"\"))\n)}}",
+  "text": "{{Utils.myCurrency(\nNumber(Total_rev.text.replace(/[^0-9.-]+/g,\"\")) - Number(Total_spent.text.replace(/[^0-9.-]+/g,\"\"))\n)}} (ROI {{ ((\nNumber(Total_rev.text.replace(/[^0-9.-]+/g,\"\")) - Number(Total_spent.text.replace(/[^0-9.-]+/g,\"\"))\n)/Number(Total_spent.text.replace(/[^0-9.-]+/g,\"\"))*100).toFixed(1)}}%)",
   "textAlign": "RIGHT",
   "textColor": "{{(\nNumber(Total_rev.text.replace(/[^0-9.-]+/g,\"\")) - Number(Total_spent.text.replace(/[^0-9.-]+/g,\"\")))<0 ? 'red' : 'green' }}",
   "topRow": 9,
