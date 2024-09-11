@@ -13,13 +13,13 @@ Select mbuyer
 from	(
 SELECT a.fk_user_id,
 	g.last_name||' '||g.first_name as mbuyer,
-	sum(a.amount_revenue)*(case when c.offer_cut > 0 then c.offer_cut/100 else 1 end) revenue,
+	sum(a.amount_revenue_approved)+(sum(a.amount_revenue_pending)*(case when c.offer_cut > 0 then c.offer_cut/100 else 1 end)) revenue,
 	sum(a.amount_spent_plus_fee) spent,
-	case when f.network_name_short != 'WL' then (sum(a.amount_revenue)*(case when c.offer_cut > 0 then c.offer_cut/100 else 1 end))-sum(a.amount_spent_plus_fee) else ((sum(a.amount_revenue)*(case when c.offer_cut > 0 then c.offer_cut/100 else 1 end))-sum(a.amount_spent_plus_fee))/2 end as profit,
+	case when f.network_name_short != 'WL' then (sum(a.amount_revenue_approved)+(sum(a.amount_revenue_pending)*(case when c.offer_cut > 0 then c.offer_cut/100 else 1 end)))-sum(a.amount_spent_plus_fee) else ((sum(a.amount_revenue_approved)+(sum(a.amount_revenue_pending)*(case when c.offer_cut > 0 then c.offer_cut/100 else 1 end)))-sum(a.amount_spent_plus_fee))/2 end as profit,
 	sum(a.amount_conversion) as tot_conv,
 	case 
-		when ((((sum(a.amount_revenue)*(case when c.offer_cut > 0 then c.offer_cut/100 else 1 end)) - sum(a.amount_spent_plus_fee))/case when sum(a.amount_spent_plus_fee) = 0 then 1 else sum(a.amount_spent_plus_fee) end) *100) <0 then '#fef2f2'
-		when ((((sum(a.amount_revenue)*(case when c.offer_cut > 0 then c.offer_cut/100 else 1 end)) - sum(a.amount_spent_plus_fee))/case when sum(a.amount_spent_plus_fee) = 0 then 1 else sum(a.amount_spent_plus_fee) end) *100) <30 then '#fefce8'
+		when ((((sum(a.amount_revenue_approved)+(sum(a.amount_revenue_pending)*(case when c.offer_cut > 0 then c.offer_cut/100 else 1 end))) - sum(a.amount_spent_plus_fee))/case when sum(a.amount_spent_plus_fee) = 0 then 1 else sum(a.amount_spent_plus_fee) end) *100) <0 then '#fef2f2'
+		when ((((sum(a.amount_revenue_approved)+(sum(a.amount_revenue_pending)*(case when c.offer_cut > 0 then c.offer_cut/100 else 1 end))) - sum(a.amount_spent_plus_fee))/case when sum(a.amount_spent_plus_fee) = 0 then 1 else sum(a.amount_spent_plus_fee) end) *100) <30 then '#fefce8'
 		else '#f0fdf4' end as "row_color",
 a.fk_offer_id
 from public.user_financial_live a

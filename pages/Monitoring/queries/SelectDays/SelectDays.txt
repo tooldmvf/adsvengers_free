@@ -9,9 +9,9 @@ select financial_date
 from (
 SELECT  	
 	a.financial_date,
-	sum(a.amount_revenue)*(case when c.offer_cut > 0 then c.offer_cut/100 else 1 end) revenue,
+	sum(a.amount_revenue_approved)+(sum(a.amount_revenue_pending)*(case when c.offer_cut > 0 then c.offer_cut/100 else 1 end)) revenue,
 	sum(a.amount_spent_plus_fee) spent,
-	case when f.network_name_short != 'WL' then (sum(a.amount_revenue)*(case when c.offer_cut > 0 then c.offer_cut/100 else 1 end))-sum(a.amount_spent_plus_fee) else ((sum(a.amount_revenue)*(case when c.offer_cut > 0 then c.offer_cut/100 else 1 end))-sum(a.amount_spent_plus_fee))/2 end as profit
+	case when f.network_name_short != 'WL' then (sum(a.amount_revenue_approved)+(sum(a.amount_revenue_pending)*(case when c.offer_cut > 0 then c.offer_cut/100 else 1 end)))-sum(a.amount_spent_plus_fee) else ((sum(a.amount_revenue_approved)+(sum(a.amount_revenue_pending)*(case when c.offer_cut > 0 then c.offer_cut/100 else 1 end)))-sum(a.amount_spent_plus_fee))/2 end as profit
 from public.user_financial a
 INNER JOIN public.user_network b ON (a.fk_user_id = b.fk_user_id and a.fk_user_network_id = b.user_network_id)
 INNER JOIN public.offer c ON (b.user_network_id = c.fk_user_network_id and a.fk_offer_id = c.offer_id)

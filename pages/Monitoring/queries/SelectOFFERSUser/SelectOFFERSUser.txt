@@ -2,17 +2,17 @@ SELECT
 	c.offer_name,
 	c.offer_id,
 	concat(f.network_name_short,'|',d.off_cat_short,'|',a.fk_offer_id, ' - ',c.offer_name) as offer,
-	sum(a.amount_revenue)*(case when c.offer_cut > 0 then c.offer_cut/100 else 1 end) revenue,
+	sum(a.amount_revenue_approved)+(sum(a.amount_revenue_pending)*(case when c.offer_cut > 0 then c.offer_cut/100 else 1 end)) revenue,
 	sum(a.amount_spent_plus_fee) spent,
-	(case when f.network_name_short != 'WL' then (sum(a.amount_revenue)*(case when c.offer_cut > 0 then c.offer_cut/100 else 1 end))-sum(a.amount_spent_plus_fee) else ((sum(a.amount_revenue)*(case when c.offer_cut > 0 then c.offer_cut/100 else 1 end))-sum(a.amount_spent_plus_fee))/2 end)  profit,
-	(((sum(a.amount_revenue)*(case when c.offer_cut > 0 then c.offer_cut/100 else 1 end)) - sum(a.amount_spent_plus_fee))/case when sum(a.amount_spent_plus_fee) = 0 then 1 else sum(a.amount_spent_plus_fee) end)*100 as "Tot_ROI",
+	(case when f.network_name_short != 'WL' then (sum(a.amount_revenue_approved)+(sum(a.amount_revenue_pending)*(case when c.offer_cut > 0 then c.offer_cut/100 else 1 end)))-sum(a.amount_spent_plus_fee) else ((sum(a.amount_revenue_approved)+(sum(a.amount_revenue_pending)*(case when c.offer_cut > 0 then c.offer_cut/100 else 1 end)))-sum(a.amount_spent_plus_fee))/2 end)  profit,
+	(((sum(a.amount_revenue_approved)+(sum(a.amount_revenue_pending)*(case when c.offer_cut > 0 then c.offer_cut/100 else 1 end))) - sum(a.amount_spent_plus_fee))/case when sum(a.amount_spent_plus_fee) = 0 then 1 else sum(a.amount_spent_plus_fee) end)*100 as "Tot_ROI",
 	(((sum(a.amount_revenue_approved)*(case when c.offer_cut > 0 then c.offer_cut/100 else 1 end)) - sum(a.amount_spent_plus_fee))/case when sum(a.amount_spent_plus_fee) = 0 then 1 else sum(a.amount_spent_plus_fee) end)*100 as "Appr_ROI",
 	sum(a.amount_conversion) as tot_conv,
 	sum(a.amount_spent_plus_fee)/(case when sum(a.amount_conversion) > 0 then sum(a.amount_conversion) else 1 end) as "CPA",
 	f.network_name_short,
 	case 
-		when ((((sum(a.amount_revenue)*(case when c.offer_cut > 0 then c.offer_cut/100 else 1 end)) - sum(a.amount_spent_plus_fee))/case when sum(a.amount_spent_plus_fee) = 0 then 1 else sum(a.amount_spent_plus_fee) end) *100) <0 then '#fef2f2'
-		when ((((sum(a.amount_revenue)*(case when c.offer_cut > 0 then c.offer_cut/100 else 1 end)) - sum(a.amount_spent_plus_fee))/case when sum(a.amount_spent_plus_fee) = 0 then 1 else sum(a.amount_spent_plus_fee) end) *100) <30 then '#fefce8'
+		when ((((sum(a.amount_revenue_approved)+(sum(a.amount_revenue_pending)*(case when c.offer_cut > 0 then c.offer_cut/100 else 1 end))) - sum(a.amount_spent_plus_fee))/case when sum(a.amount_spent_plus_fee) = 0 then 1 else sum(a.amount_spent_plus_fee) end) *100) <0 then '#fef2f2'
+		when ((((sum(a.amount_revenue_approved)+(sum(a.amount_revenue_pending)*(case when c.offer_cut > 0 then c.offer_cut/100 else 1 end))) - sum(a.amount_spent_plus_fee))/case when sum(a.amount_spent_plus_fee) = 0 then 1 else sum(a.amount_spent_plus_fee) end) *100) <30 then '#fefce8'
 		else '#f0fdf4' end as "row_color",
 	(case when c.offer_cut > 0 then 100-c.offer_cut else 0 end) as "offer_cut"
 from public.user_financial_live a

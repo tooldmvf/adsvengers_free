@@ -2,7 +2,7 @@ SELECT
 	c.offer_name,
 	c.offer_id,
 	concat(f.network_name_short,'|',d.off_cat_short,'|',a.fk_offer_id, ' - ',c.offer_name) as offer,
-	sum(a.amount_revenue)*(case when c.offer_cut > 0 then c.offer_cut/100 else 1 end) revenue,
+	sum(a.amount_revenue_approved)+(sum(a.amount_revenue_pending)*(case when c.offer_cut > 0 then c.offer_cut/100 else 1 end)) revenue,
 	sum(a.amount_spent_plus_fee) spent,
 	case when f.network_name_short != 'WL' then (sum(a.amount_revenue)*(case when c.offer_cut > 0 then c.offer_cut/100 else 1 end))-sum(a.amount_spent_plus_fee) else (sum(a.amount_revenue)-sum(a.amount_spent_plus_fee))/2 end profit,
 	(((sum(a.amount_revenue)*(case when c.offer_cut > 0 then c.offer_cut/100 else 1 end)) - sum(a.amount_spent_plus_fee))/case when sum(a.amount_spent_plus_fee) = 0 then 1 else sum(a.amount_spent_plus_fee) end)*100 as "Tot_ROI",
