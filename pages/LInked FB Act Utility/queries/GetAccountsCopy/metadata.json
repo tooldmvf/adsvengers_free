@@ -14,7 +14,7 @@
       "headers": [],
       "httpMethod": "GET",
       "paginationType": "NONE",
-      "path": "/v17.0/6016097061758721",
+      "path": "/v19.0/6016097061758721",
       "pluginSpecifiedTemplates": [
         {
           "value": true

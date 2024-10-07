@@ -14,7 +14,7 @@
       "headers": [],
       "httpMethod": "GET",
       "paginationType": "NONE",
-      "path": "/v17.0/{{this.params.bizId}}",
+      "path": "/v19.0/{{this.params.bizId}}",
       "pluginSpecifiedTemplates": [
         {
           "value": true

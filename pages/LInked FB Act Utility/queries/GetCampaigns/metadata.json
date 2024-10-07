@@ -14,7 +14,7 @@
       "headers": [],
       "httpMethod": "GET",
       "paginationType": "NONE",
-      "path": "/v17.0/{{Table1.triggeredRow.bm_id}}/",
+      "path": "/v19.0/{{Table1.triggeredRow.bm_id}}/",
       "pluginSpecifiedTemplates": [
         {
           "value": true
