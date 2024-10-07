@@ -14,7 +14,7 @@
       "headers": [],
       "httpMethod": "GET",
       "paginationType": "NONE",
-      "path": "/v19.0/6016097061758721",
+      "path": "/v19.0/6418069741610431/owned_ad_accounts",
       "pluginSpecifiedTemplates": [
         {
           "value": true
@@ -22,16 +22,20 @@
       ],
       "queryParameters": [
         {
+          "key": "access_token",
+          "value": "EAALZCNCZClZALABO5Mm0RtGKLkCBJGjQFOwtf04ZCthVSZBSXbDi7BQ96QrLUMYhkUpR5kcyf0CG50W4NaBT7f2EH9FxFeJSUFvXojSEZBLV8E6VAtEnszWxNcDiHTtZC8ZBPJpBA8Ft56yYghdMPtqZAPdwQxV5ZCTgsrMUL41kHxi6wta7Hrm2zDs0gTbla9mqXVIbdN2xoFEdiIQ0ZCiiGOL9tZC7imIZD"
+        },
+        {
           "key": "fields",
-          "value": "owned_ad_accounts{name,owner,currency,account_status},client_ad_accounts{name,owner,currency,account_status}"
+          "value": "name"
         },
         {
           "key": "limit",
-          "value": "1000"
+          "value": "25"
         },
         {
-          "key": "access_token",
-          "value": "{{get_fb_token.data[0].fb_token}}"
+          "key": "after",
+          "value": "QVFIUm5VTHhvTkcwa0tpVHA4QlF2dV9uRlFCS292bTJOSzhNV3F4REo1RnJmM0lmYmUyQTlPakQ1YTIxc3NCZAl81b0ZA0VUEzM0p2bFlTMmUwMk5nRUc1RzVR"
         }
       ],
       "timeoutInMillisecond": 10000
@@ -45,14 +49,7 @@
       "name": "DEFAULT_REST_DATASOURCE",
       "pluginId": "restapi-plugin"
     },
-    "dynamicBindingPathList": [
-      {
-        "key": "path"
-      },
-      {
-        "key": "queryParameters[2].value"
-      }
-    ],
+    "dynamicBindingPathList": [],
     "executeOnLoad": false,
     "name": "GetAccountsCopy",
     "pageId": "LInked FB Act Utility",

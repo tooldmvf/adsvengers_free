@@ -27,12 +27,14 @@ export default {
 					result['fk_bm_id'] = new_Arr[i].bm_id;
 					arr_act.push(result);					
 				}	
-				await console.log(arr_act);
+				//await console.log(arr_act);
 				await insert_all_AdAct.run({act_json: arr_act});	
 
-				if (act_id[client_owner].paging.next) {					
+				if (act_id[client_owner].paging.next) {		
 					let seguita = true;
-					let act_id2 = await GetAccountNextPage.run({next_page: act_id[client_owner].paging.next});
+					//await console.log(act_id[client_owner].paging.next.replaceAll("%2C", ","));
+					let act_id2 = await GetAccountNextPage.run({next_page: act_id[client_owner].paging.next.replaceAll("%2C", ",")});
+						
 					for (let result of act_id2.data) {
 						delete Object.assign(result, { ad_account_id: result.id })['id'];
 						delete Object.assign(result, { ad_account_name: result.name })['name'];	
@@ -43,7 +45,7 @@ export default {
 					await insert_all_AdAct.run({act_json: arr_act});	
 
 					if (act_id2.paging.hasOwnProperty('next')) {
-						var param_next_ow = act_id2.paging.next;					
+						var param_next_ow = act_id2.paging.next.replaceAll("%2C", ",");					
 						do {		
 							let act_id3 = await GetAccountNextPage.run({next_page: param_next_ow});						
 							for (let result of act_id3.data) {
