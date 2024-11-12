@@ -27,12 +27,16 @@ export default {
 		}
 	},
 	
+	temp_tbd : () => {
+		storeValue("access_token","xxxxxxxx");
+	},
+	
 	sign_up_continue: async () => {
 		if(!appsmith.URL.fullPath.includes('#access_token')) {
 			if (!appsmith.store.access_token) {
 				return;
 			} else {
-				navigateTo('Dashboard');
+				//navigateTo('Dashboard');
 				return;
 			}
 		}
