@@ -36,7 +36,7 @@ export default {
 			if (!appsmith.store.access_token) {
 				return;
 			} else {
-				//navigateTo('Dashboard');
+				navigateTo('Dashboard');
 				return;
 			}
 		}
