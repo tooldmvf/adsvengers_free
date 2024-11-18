@@ -3,7 +3,7 @@
   "allowClear": false,
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 10,
+  "bottomRow": 9,
   "boxShadow": "none",
   "defaultOptionValue": "",
   "displayName": "Multi TreeSelect",

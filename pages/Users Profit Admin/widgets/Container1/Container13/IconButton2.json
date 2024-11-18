@@ -4,7 +4,7 @@
   "bottomRow": 5,
   "boxShadow": "none",
   "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
-  "buttonVariant": "SECONDARY",
+  "buttonVariant": "TERTIARY",
   "displayName": "Icon Button",
   "dynamicBindingPathList": [
     {
@@ -38,7 +38,7 @@
   "parentId": "42b7hkiv6p",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
-  "rightColumn": 3,
+  "rightColumn": 2,
   "searchTags": [
     "click",
     "submit"

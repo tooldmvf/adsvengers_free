@@ -38,7 +38,7 @@
   "isLoading": false,
   "isVisible": true,
   "key": "fak4xyb0hu",
-  "leftColumn": 33,
+  "leftColumn": 34,
   "logBlackList": {
     "animateLoading": true,
     "borderRadius": true,
@@ -83,7 +83,7 @@
   "overflow": "NONE",
   "parentId": "u2byc58pn7",
   "renderMode": "CANVAS",
-  "rightColumn": 37,
+  "rightColumn": 38,
   "searchTags": [
     "typography",
     "paragraph",

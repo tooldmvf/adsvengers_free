@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 18,
+  "bottomRow": 17,
   "boxShadow": "none",
   "displayName": "Text",
   "dynamicBindingPathList": [
@@ -84,7 +84,7 @@
   "textAlign": "RIGHT",
   "textColor": "#18181b",
   "textStyle": "HEADING",
-  "topRow": 14,
+  "topRow": 13,
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,

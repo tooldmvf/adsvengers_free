@@ -14,7 +14,7 @@
   "isLoading": false,
   "isVisible": true,
   "key": "x0w1qm7s06",
-  "leftColumn": 53,
+  "leftColumn": 54,
   "logBlackList": {
     "animateLoading": true,
     "bottomRow": true,
@@ -52,7 +52,7 @@
   "parentId": "u2byc58pn7",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
-  "rightColumn": 55,
+  "rightColumn": 56,
   "searchTags": [
     "line"
   ],
