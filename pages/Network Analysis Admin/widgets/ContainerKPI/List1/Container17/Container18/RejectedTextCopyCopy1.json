@@ -55,7 +55,7 @@
   "shouldTruncate": false,
   "text": "{{Utils.myCurrency( (currentItem.amount_revenue_approved -currentItem.spent_wfees))}} €",
   "textAlign": "RIGHT",
-  "textColor": "{{Utils.ROI()> 0 ? 'green' : 'red' }}",
+  "textColor": "{{currentItem.appr_roi.toFixed(1)> 0 ? 'green' : 'red' }}",
   "topRow": 20,
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
