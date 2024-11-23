@@ -27,7 +27,7 @@
   "parentColumnSpace": 11.78515625,
   "parentId": "2gal345gt7",
   "parentRowSpace": 10,
-  "rightColumn": 10,
+  "rightColumn": 9,
   "text": "Last Update {{moment(SelectFinancialTot.data[0].last_update).format('HH:mm:ss') }}",
   "textAlign": "CENTER",
   "textColor": "#231F20",
