@@ -4,7 +4,7 @@
   "borderColor": "#E0DEDE",
   "borderRadius": "0.375rem",
   "borderWidth": "1",
-  "bottomRow": 35,
+  "bottomRow": 31,
   "boxShadow": "0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)",
   "children": [
     {
@@ -54,14 +54,14 @@
   "parentId": "kvdk6yenbb",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
-  "rightColumn": 34,
+  "rightColumn": 21,
   "searchTags": [
     "div",
     "parent",
     "group"
   ],
   "shouldScrollContents": true,
-  "topRow": 13,
+  "topRow": 9,
   "type": "CONTAINER_WIDGET",
   "version": 1,
   "widgetId": "5ltpnrx7gc",
