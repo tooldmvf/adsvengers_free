@@ -1,6 +1,6 @@
 {
   "animateLoading": true,
-  "bottomRow": 130,
+  "bottomRow": 129,
   "capSide": 0,
   "capType": "nc",
   "displayName": "Divider",
@@ -27,7 +27,7 @@
   ],
   "strokeStyle": "solid",
   "thickness": "1",
-  "topRow": 126,
+  "topRow": 125,
   "type": "DIVIDER_WIDGET",
   "version": 1,
   "widgetId": "i337wpkxfg",

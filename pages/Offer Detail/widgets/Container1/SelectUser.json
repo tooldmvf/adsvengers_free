@@ -46,7 +46,7 @@
   "isDisabled": false,
   "isFilterable": true,
   "isLoading": false,
-  "isRequired": true,
+  "isRequired": false,
   "isVisible": "{{appsmith.store.role_level> 100 && appsmith.store.access_token.length>0 }}",
   "key": "lfplr8djyh",
   "labelAlignment": "right",
