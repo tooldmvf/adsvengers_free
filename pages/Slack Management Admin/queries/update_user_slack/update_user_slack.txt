@@ -1,0 +1,1 @@
+{ "hourly_total_message": "{{Table1.updatedRow.hourly_total_message}}" }
