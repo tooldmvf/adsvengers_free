@@ -6,9 +6,6 @@
   "displayName": "Text",
   "dynamicBindingPathList": [
     {
-      "key": "text"
-    },
-    {
       "key": "truncateButtonColor"
     },
     {
@@ -16,6 +13,9 @@
     },
     {
       "key": "borderRadius"
+    },
+    {
+      "key": "text"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -29,7 +29,7 @@
   "isLoading": false,
   "isVisible": true,
   "key": "fak4xyb0hu",
-  "leftColumn": 23,
+  "leftColumn": 14,
   "logBlackList": {
     "animateLoading": true,
     "borderRadius": true,
@@ -74,14 +74,14 @@
   "overflow": "NONE",
   "parentId": "jn10eobkxd",
   "renderMode": "CANVAS",
-  "rightColumn": 30,
+  "rightColumn": 22,
   "searchTags": [
     "typography",
     "paragraph",
     "label"
   ],
   "shouldTruncate": false,
-  "text": "{{Utils2.myCurrency(currentItem.amount_spent_plus_fee)}}{{' '}}",
+  "text": "{{currentItem.Tot_conversion}}",
   "textAlign": "RIGHT",
   "textColor": "",
   "textStyle": "HEADING",
@@ -89,6 +89,6 @@
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,
-  "widgetId": "do6v5y9754",
-  "widgetName": "Text17CopyCopyCopy1Copy1"
+  "widgetId": "rlx5yavghu",
+  "widgetName": "Text17CopyCopyCopy1Copy1Copy"
 }
