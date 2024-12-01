@@ -156,6 +156,10 @@
     {
       "id": "Offers Success",
       "isDefault": false
+    },
+    {
+      "id": "Offers Fix",
+      "isDefault": false
     }
   ],
   "unpublishedAppLayout": {

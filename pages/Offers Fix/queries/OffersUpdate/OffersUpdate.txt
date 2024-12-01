@@ -1,0 +1,5 @@
+{
+	"offer_name" : "{{Table2.updatedRow.offer_name}}",
+	"fk_off_cat_id" : "{{Table2.updatedRow.fk_off_cat_id}}",
+	"offer_payout" : "{{Table2.updatedRow.offer_payout}}"
+}

@@ -1,24 +1,23 @@
 {
-  "gitSyncId": "63936c0b4b95806da2da5de7_63936c0b4b95806da2da5de9",
+  "gitSyncId": "646331cd28902b71518db22a_2ac34168-707c-4d87-be67-9d564a507840",
   "unpublishedPage": {
     "isHidden": true,
     "layouts": [
       {
         "dsl": {
           "backgroundColor": "none",
-          "bottomRow": 1690,
+          "bottomRow": 790,
           "canExtend": true,
           "containerStyle": "none",
           "detachFromLayout": true,
           "dynamicBindingPathList": [],
-          "dynamicTriggerPathList": [],
           "leftColumn": 0,
-          "minHeight": 1292,
+          "minHeight": 880,
           "parentColumnSpace": 1,
           "parentRowSpace": 1,
-          "rightColumn": 4896,
+          "rightColumn": 1224,
           "snapColumns": 64,
-          "snapRows": 125,
+          "snapRows": 86,
           "topRow": 0,
           "type": "CANVAS_WIDGET",
           "version": 90,
@@ -27,7 +26,7 @@
         }
       }
     ],
-    "name": "Dashboard",
-    "slug": "dashboard"
+    "name": "Offers Fix",
+    "slug": "offers-fix"
   }
 }
