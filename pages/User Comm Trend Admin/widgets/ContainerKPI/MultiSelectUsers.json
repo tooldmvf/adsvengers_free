@@ -64,7 +64,7 @@
   "leftColumn": 28,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
-  "onDropdownClose": "{{Utils2.onLoadPage();}}",
+  "onDropdownClose": "{{Utils2.onLoadPage2();}}",
   "onOptionChange": "",
   "optionLabel": "label",
   "optionValue": "value",

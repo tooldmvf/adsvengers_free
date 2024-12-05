@@ -30,7 +30,7 @@
   "isVisible": true,
   "key": "sqkxrybeqo",
   "leftColumn": 0,
-  "onClick": "{{Utils2.onLoadPage();}}",
+  "onClick": "{{Utils2.onLoadPage2();}}",
   "parentColumnSpace": 17.5556640625,
   "parentId": "qd74yy4u3t",
   "parentRowSpace": 10,
