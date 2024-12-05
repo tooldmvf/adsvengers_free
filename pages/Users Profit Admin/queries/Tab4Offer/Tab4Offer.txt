@@ -55,4 +55,4 @@ group by e.first_name, e.last_name, c.ts_name,
 	a.fk_user_id, c.ts_id, c1.network_name_short
 having (sum(a.amount_spent) > 0 or sum(a.amount_revenue) > 0))z
 group by first_name, last_name, ts_name, ts_id, fk_user_id
-order by sum(profit_h) desc
+order by {{SelectOrder.selectedOptionValue}}
