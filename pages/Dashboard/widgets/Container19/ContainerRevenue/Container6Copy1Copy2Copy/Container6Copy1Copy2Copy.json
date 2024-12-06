@@ -1,14 +1,14 @@
 {
   "animateLoading": true,
-  "backgroundColor": "#FFFFFF",
+  "backgroundColor": "#ffffff",
   "borderColor": "#E0DEDE",
-  "borderRadius": "0.375rem",
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": "1",
-  "bottomRow": 170,
-  "boxShadow": "0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)",
+  "bottomRow": 20,
+  "boxShadow": "none",
   "children": [
     {
-      "bottomRow": 1270,
+      "bottomRow": 80,
       "canExtend": false,
       "containerStyle": "none",
       "detachFromLayout": true,
@@ -18,25 +18,29 @@
       "isDeprecated": false,
       "isLoading": false,
       "isVisible": true,
-      "key": "zkmbovmcld",
+      "key": "se3aloziyr",
       "leftColumn": 0,
-      "minHeight": 850,
+      "minHeight": 100,
       "parentColumnSpace": 1,
-      "parentId": "h0r40ncjwu",
+      "parentId": "o02luo0ol4",
       "parentRowSpace": 1,
       "renderMode": "CANVAS",
-      "rightColumn": 475.5,
+      "rightColumn": 240.7734375,
       "topRow": 0,
       "type": "CANVAS_WIDGET",
       "version": 1,
-      "widgetId": "sngwfl0pcx",
-      "widgetName": "Canvas3"
+      "widgetId": "ttxnk76akk",
+      "widgetName": "Canvas6Copy1Copy2Copy"
     }
   ],
   "containerStyle": "card",
   "displayName": "Container",
-  "dynamicBindingPathList": [],
-  "dynamicHeight": "AUTO_HEIGHT",
+  "dynamicBindingPathList": [
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicHeight": "FIXED",
   "dynamicTriggerPathList": [],
   "hideCard": false,
   "iconSVG": "/static/media/icon.1977dca3370505e2db3a8e44cfd54907.svg",
@@ -44,14 +48,14 @@
   "isDeprecated": false,
   "isLoading": false,
   "isVisible": true,
-  "key": "22jazgs104",
-  "leftColumn": 0,
+  "key": "9tm3fz168x",
+  "leftColumn": 39,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 10,
-  "originalBottomRow": 170,
-  "originalTopRow": 43,
-  "parentColumnSpace": 19.8125,
-  "parentId": "0",
+  "originalBottomRow": 14,
+  "originalTopRow": 6,
+  "parentColumnSpace": 10.0322265625,
+  "parentId": "lbpgavx48s",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "rightColumn": 64,
@@ -61,9 +65,9 @@
     "group"
   ],
   "shouldScrollContents": true,
-  "topRow": 43,
+  "topRow": 12,
   "type": "CONTAINER_WIDGET",
   "version": 1,
-  "widgetId": "h0r40ncjwu",
-  "widgetName": "ContainerCharts"
+  "widgetId": "o02luo0ol4",
+  "widgetName": "Container6Copy1Copy2Copy"
 }
