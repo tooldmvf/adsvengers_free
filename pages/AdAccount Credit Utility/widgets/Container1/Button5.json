@@ -24,12 +24,14 @@
       "key": "onClick"
     }
   ],
+  "iconAlign": "left",
+  "iconName": "send-to-graph",
   "isDefaultClickDisabled": true,
   "isDisabled": false,
   "isLoading": false,
   "isVisible": "{{appsmith.store.myEmail == 'tool@dmvf.net'}}",
   "key": "zfgxgae7qz",
-  "leftColumn": 25,
+  "leftColumn": 30,
   "minWidth": 120,
   "mobileBottomRow": 8,
   "mobileLeftColumn": 25,
