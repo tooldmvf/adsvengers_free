@@ -1,23 +1,23 @@
 {
   "animateLoading": true,
-  "backgroundColor": "#FFFFFF",
-  "borderColor": "#E0DEDE",
+  "backgroundColor": "{{Utils.GrossROI()> 0 ? '#f0fdf4' : '#fef2f2' }}",
+  "borderColor": "#e0dede",
   "borderRadius": "0.375rem",
   "borderWidth": "1",
-  "bottomRow": 44,
-  "boxShadow": "0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)",
+  "bottomRow": 11,
+  "boxShadow": "0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)",
   "children": [
     {
-      "bottomRow": 350,
+      "bottomRow": 110,
       "canExtend": false,
       "containerStyle": "none",
       "detachFromLayout": true,
       "isLoading": false,
       "isVisible": true,
       "leftColumn": 0,
-      "minHeight": 400,
+      "minHeight": 110,
       "parentColumnSpace": 1,
-      "parentId": "oihjqgoe9y",
+      "parentId": "42emm34pko",
       "parentRowSpace": 1,
       "props": {
         "canExtend": false,
@@ -26,18 +26,27 @@
         "detachFromLayout": true
       },
       "renderMode": "CANVAS",
-      "rightColumn": 1143.5625,
+      "rightColumn": 114.43359375,
       "topRow": 0,
       "type": "CANVAS_WIDGET",
       "version": 1,
-      "widgetId": "kvdk6yenbb",
-      "widgetName": "Canvas12"
+      "widgetId": "h26g9u9xsl",
+      "widgetName": "Canvas18"
     }
   ],
   "containerStyle": "card",
   "displayName": "Container",
-  "dynamicBindingPathList": [],
-  "dynamicHeight": "AUTO_HEIGHT",
+  "dynamicBindingPathList": [
+    {
+      "key": "backgroundColor"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "backgroundColor"
+    }
+  ],
   "dynamicTriggerPathList": [],
   "hideCard": false,
   "iconSVG": "/static/media/icon.1977dca3370505e2db3a8e44cfd54907.svg",
@@ -45,17 +54,17 @@
   "isDeprecated": false,
   "isLoading": false,
   "isVisible": true,
-  "key": "sbczdut4yj",
-  "leftColumn": 0,
+  "key": "xohgkgbh7f",
+  "leftColumn": 48,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 10,
-  "originalBottomRow": 42,
-  "originalTopRow": 9,
-  "parentColumnSpace": 17.8681640625,
-  "parentId": "0",
+  "originalBottomRow": 24,
+  "originalTopRow": 13,
+  "parentColumnSpace": 4.5,
+  "parentId": "wvt1dna8oj",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
-  "rightColumn": 64,
+  "rightColumn": 56,
   "searchTags": [
     "div",
     "parent",
@@ -63,9 +72,9 @@
   ],
   "shouldScrollContents": true,
   "tabId": "",
-  "topRow": 9,
+  "topRow": 0,
   "type": "CONTAINER_WIDGET",
   "version": 1,
-  "widgetId": "oihjqgoe9y",
-  "widgetName": "ContainerKPI"
+  "widgetId": "42emm34pko",
+  "widgetName": "Container15"
 }
