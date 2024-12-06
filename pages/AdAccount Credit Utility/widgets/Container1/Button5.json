@@ -1,0 +1,55 @@
+{
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 8,
+  "boxShadow": "none",
+  "buttonColor": "#dbeafe",
+  "buttonVariant": "PRIMARY",
+  "disabledWhenInvalid": false,
+  "dynamicBindingPathList": [
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "isVisible"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "isVisible"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "isDefaultClickDisabled": true,
+  "isDisabled": false,
+  "isLoading": false,
+  "isVisible": "{{appsmith.store.myEmail == 'tool@dmvf.net'}}",
+  "key": "zfgxgae7qz",
+  "leftColumn": 25,
+  "minWidth": 120,
+  "mobileBottomRow": 8,
+  "mobileLeftColumn": 25,
+  "mobileRightColumn": 41,
+  "mobileTopRow": 4,
+  "needsErrorInfo": false,
+  "onClick": "{{navigateTo('https://n8n.theadsvengers.com/webhook/92c746d5-b3e6-44c7-9b85-bdebbce6917f', {}, 'SAME_WINDOW');}}",
+  "parentColumnSpace": 18.375,
+  "parentId": "y7bc0brmf3",
+  "parentRowSpace": 10,
+  "placement": "CENTER",
+  "recaptchaType": "V3",
+  "renderMode": "CANVAS",
+  "resetFormOnClick": false,
+  "responsiveBehavior": "hug",
+  "rightColumn": 41,
+  "text": "Send Email",
+  "topRow": 4,
+  "type": "BUTTON_WIDGET",
+  "version": 1,
+  "widgetId": "uk2x7i3pqe",
+  "widgetName": "Button5"
+}
