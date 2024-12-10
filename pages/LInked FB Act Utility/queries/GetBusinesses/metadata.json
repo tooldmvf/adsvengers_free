@@ -14,7 +14,7 @@
       "headers": [],
       "httpMethod": "GET",
       "paginationType": "NONE",
-      "path": "/v19.0/me/businesses",
+      "path": "/v21.0/me/businesses",
       "pluginSpecifiedTemplates": [
         {
           "value": true

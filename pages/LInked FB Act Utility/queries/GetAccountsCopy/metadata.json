@@ -14,7 +14,7 @@
       "headers": [],
       "httpMethod": "GET",
       "paginationType": "NONE",
-      "path": "/v19.0/6418069741610431/owned_ad_accounts",
+      "path": "/v21.0/6418069741610431/owned_ad_accounts",
       "pluginSpecifiedTemplates": [
         {
           "value": true
