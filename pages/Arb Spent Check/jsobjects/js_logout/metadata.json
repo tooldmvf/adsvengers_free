@@ -1,0 +1,11 @@
+{
+  "gitSyncId": "646331cd28902b71518db22a_a956dc5f-f066-4a81-b913-6ff98823d802",
+  "id": "Arb Spent Check_js_logout",
+  "unpublishedCollection": {
+    "name": "js_logout",
+    "pageId": "Arb Spent Check",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": []
+  }
+}
