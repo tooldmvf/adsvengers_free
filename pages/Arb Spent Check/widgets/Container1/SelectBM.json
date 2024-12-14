@@ -51,7 +51,7 @@
   "mobileLeftColumn": 13,
   "mobileRightColumn": 30,
   "mobileTopRow": 5,
-  "onOptionChange": "{{BM.run();\nBMTOT.run()}}",
+  "onOptionChange": "{{BM.run();\nAdAccounts.run()}}",
   "optionLabel": "bm_name",
   "optionValue": "bm_id",
   "parentColumnSpace": 13.390625,
