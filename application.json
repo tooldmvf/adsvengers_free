@@ -160,6 +160,10 @@
     {
       "id": "Offers Fix",
       "isDefault": false
+    },
+    {
+      "id": "SouthPow Credit Utility",
+      "isDefault": false
     }
   ],
   "unpublishedAppLayout": {
