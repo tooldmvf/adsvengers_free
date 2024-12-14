@@ -35,7 +35,7 @@
   "mobileLeftColumn": 0,
   "mobileRightColumn": 2,
   "mobileTopRow": 0,
-  "onClick": "{{get_ts.run(); get_all_bm.run();\nfbAccountQuery.run();}}",
+  "onClick": "{{get_all_bm.run();SALV_GetAccountsCredit.run()}}",
   "parentColumnSpace": 19.796875,
   "parentId": "y7bc0brmf3",
   "parentRowSpace": 10,

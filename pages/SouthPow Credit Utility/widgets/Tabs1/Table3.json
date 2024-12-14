@@ -4,7 +4,7 @@
   "borderColor": "#E0DEDE",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": "1",
-  "bottomRow": 74,
+  "bottomRow": 68,
   "boxShadow": "0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)",
   "canFreezeColumn": false,
   "childStylesheet": {
@@ -31,8 +31,8 @@
     }
   },
   "columnOrder": [
-    "customColumn1",
     "name",
+    "customColumn1",
     "amount_spent",
     "balance",
     "spend_cap",
@@ -40,7 +40,7 @@
     "account_status",
     "id"
   ],
-  "columnUpdatedAt": 1734166606702,
+  "columnUpdatedAt": 1734169630912,
   "columnWidthMap": {
     "account_status": 99,
     "customColumn1": 134.25,
@@ -190,7 +190,7 @@
       "enableFilter": true,
       "enableSort": true,
       "fontStyle": "",
-      "horizontalAlignment": "LEFT",
+      "horizontalAlignment": "RIGHT",
       "id": "amount_spent",
       "index": 2,
       "isCellEditable": false,
@@ -390,7 +390,7 @@
       "enableFilter": true,
       "enableSort": true,
       "fontStyle": "",
-      "horizontalAlignment": "LEFT",
+      "horizontalAlignment": "RIGHT",
       "id": "spend_cap",
       "index": 4,
       "isCellEditable": false,
@@ -417,7 +417,7 @@
   "rightColumn": 64,
   "searchKey": "",
   "serverSidePaginationEnabled": false,
-  "tableData": "{{\nSALV_GetAccountsCredit.data.data;\n}}",
+  "tableData": "{{\nSALV_GetAccountsCredit.data.data.sort((p1, p2) => (((p1.spend_cap-p1.amount_spent) > (p2.spend_cap-p2.amount_spent)) ? 1 : ((p1.spend_cap-p1.amount_spent) < (p2.spend_cap-p2.amount_spent)) ? -1 : 0))\n}}",
   "textSize": "0.875rem",
   "topRow": 0,
   "totalRecordsCount": "",

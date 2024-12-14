@@ -5,11 +5,11 @@
   "borderColor": "#E0DEDE",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": 1,
-  "bottomRow": 94,
+  "bottomRow": 88,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "children": [
     {
-      "bottomRow": 760,
+      "bottomRow": 700,
       "canExtend": true,
       "detachFromLayout": true,
       "displayName": "Canvas",
@@ -38,7 +38,7 @@
       "widgetName": "Canvas15"
     },
     {
-      "bottomRow": 760,
+      "bottomRow": 700,
       "canExtend": true,
       "detachFromLayout": true,
       "displayName": "Canvas",
