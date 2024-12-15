@@ -341,7 +341,7 @@
   "searchKey": "",
   "tableData": "{{AdAccounts.data}}",
   "textSize": "0.875rem",
-  "topRow": 7,
+  "topRow": 11,
   "totalRecordsCount": 0,
   "type": "TABLE_WIDGET_V2",
   "version": 1,
