@@ -465,6 +465,7 @@
           "widgetId": "q1rrq7bdi3"
         },
         "menuItemjqguitgwjs": {
+          "backgroundColor": "#f4f4f5",
           "id": "menuItemjqguitgwjs",
           "index": 6,
           "isDisabled": false,
@@ -474,6 +475,7 @@
           "widgetId": "qebhcojqm2"
         },
         "menuItempn9li4d23w": {
+          "backgroundColor": "#f4f4f5",
           "id": "menuItempn9li4d23w",
           "index": 7,
           "isDisabled": false,
