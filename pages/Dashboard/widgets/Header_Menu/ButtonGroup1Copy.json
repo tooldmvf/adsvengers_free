@@ -164,6 +164,12 @@
     },
     {
       "key": "groupButtons.groupButton3d0sb7a9e2.menuItems.menuItema9wfmmikrk.onClick"
+    },
+    {
+      "key": "groupButtons.groupButtonz40p7cz8uy.menuItems.menuItemjqguitgwjs.onClick"
+    },
+    {
+      "key": "groupButtons.groupButtonz40p7cz8uy.menuItems.menuItempn9li4d23w.onClick"
     }
   ],
   "groupButtons": {
@@ -457,6 +463,24 @@
           "label": "Offers Admin",
           "onClick": "{{navigateTo('Offers Analysis Admin', {}, 'SAME_WINDOW')}}",
           "widgetId": "q1rrq7bdi3"
+        },
+        "menuItemjqguitgwjs": {
+          "id": "menuItemjqguitgwjs",
+          "index": 6,
+          "isDisabled": false,
+          "isVisible": true,
+          "label": "SouthPow Credit",
+          "onClick": "{{navigateTo('SouthPow Credit Utility', {}, 'SAME_WINDOW');}}",
+          "widgetId": "qebhcojqm2"
+        },
+        "menuItempn9li4d23w": {
+          "id": "menuItempn9li4d23w",
+          "index": 7,
+          "isDisabled": false,
+          "isVisible": true,
+          "label": "SouthPow Spent",
+          "onClick": "{{navigateTo('Arb Spent Check', {}, 'SAME_WINDOW');}}",
+          "widgetId": "pux58h21ti"
         },
         "menuItemq0wvfgti97": {
           "backgroundColor": "#f4f4f5",
