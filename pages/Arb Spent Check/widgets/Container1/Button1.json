@@ -28,7 +28,7 @@
   "mobileRightColumn": 45,
   "mobileTopRow": 7,
   "needsErrorInfo": false,
-  "onClick": "{{navigateTo('https://n8n.theadsvengers.com/webhook/8aab24e7-394f-4ccd-9651-5aa3d0b2011e', {}, 'SAME_WINDOW').then(() => {\n  showAlert('Launched... please wait 1 minute before refresh!', 'success');\n  BM.run();\n}).catch(() => {\n  showAlert('Wait a bit more...', 'error');\n});}}",
+  "onClick": "{{navigateTo('https://n8n.theadsvengers.com/webhook/8aab24e7-394f-4ccd-9651-5aa3d0b2011e', {}, 'NEW_WINDOW').then(() => {\n  showAlert('Launched... please wait 1 minute before refresh!', 'success');\n  BM.run();\n}).catch(() => {\n  showAlert('Wait a bit more...', 'error');\n});}}",
   "parentColumnSpace": 18.03125,
   "parentId": "59rw5mx0bq",
   "parentRowSpace": 10,
