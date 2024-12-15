@@ -36,17 +36,19 @@
     "spent_wfees",
     "bm_name",
     "count",
-    "ad_account_id"
+    "ad_account_id",
+    "customColumn1"
   ],
-  "columnUpdatedAt": 1687980551921,
+  "columnUpdatedAt": 1734255485441,
   "columnWidthMap": {
     "Traffic_Source": 337,
     "User": 211,
-    "ad_account_name": 241,
+    "ad_account_name": 348,
     "bm_name": 233,
-    "customColumn1": 80,
+    "customColumn1": 201,
     "offer": 328,
-    "spent": 115,
+    "spent": 188,
+    "spent_wfees": 203,
     "status": 85,
     "step": 70,
     "task": 245,
@@ -88,6 +90,9 @@
     },
     {
       "key": "primaryColumns.ad_account_id.computedValue"
+    },
+    {
+      "key": "primaryColumns.customColumn1.computedValue"
     }
   ],
   "dynamicPropertyPathList": [
@@ -112,7 +117,7 @@
   "isVisibleSearch": true,
   "key": "stxh2vmeqq",
   "label": "Data",
-  "leftColumn": 35,
+  "leftColumn": 29,
   "minWidth": 450,
   "multiRowSelection": true,
   "needsHeightForContent": true,
@@ -234,6 +239,39 @@
       "sticky": "",
       "textColor": "",
       "textSize": "0.875rem",
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "customColumn1": {
+      "alias": "Avg Spent Day €",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "buttonStyle": "rgb(3, 179, 101)",
+      "columnType": "text",
+      "computedValue": "{{TableAct.processedTableData.map((currentRow, currentIndex) => ( (currentRow[\"spent\"]/currentRow[\"count\"]).toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2})))}}",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "horizontalAlignment": "RIGHT",
+      "id": "customColumn1",
+      "index": 7,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": true,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "Avg Spent Day €",
+      "labelColor": "#FFFFFF",
+      "notation": "standard",
+      "originalId": "customColumn1",
+      "sticky": "",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
       "validation": {},
       "verticalAlignment": "CENTER",
       "width": 150

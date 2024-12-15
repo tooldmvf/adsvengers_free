@@ -43,10 +43,11 @@
   "columnUpdatedAt": 1734169630912,
   "columnWidthMap": {
     "account_status": 99,
+    "currency": 111,
     "customColumn1": 134.25,
     "customColumn2": 93,
     "id": 212,
-    "name": 185,
+    "name": 286,
     "status": 75,
     "step": 62,
     "task": 245

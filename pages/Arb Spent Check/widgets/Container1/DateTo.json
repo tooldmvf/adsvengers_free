@@ -59,7 +59,7 @@
   "maxDynamicHeight": 9000,
   "minDate": "{{DateFrom.selectedDate}}",
   "minDynamicHeight": 4,
-  "onDateSelected": "{{(() => {\nstoreValue('dateTo',DateTo.selectedDate);\nBM.run();\n})()}}  ",
+  "onDateSelected": "{{(() => {\nstoreValue('dateTo',DateTo.selectedDate);\nBM.run();AdAccounts.run();\n})()}}  ",
   "parentColumnSpace": 19.8125,
   "parentId": "59rw5mx0bq",
   "parentRowSpace": 10,

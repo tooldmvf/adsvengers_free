@@ -63,7 +63,7 @@
   "parentRowSpace": 10,
   "positioning": "fixed",
   "renderMode": "CANVAS",
-  "rightColumn": 35,
+  "rightColumn": 29,
   "shouldScrollContents": true,
   "topRow": 7,
   "type": "STATBOX_WIDGET",
