@@ -43,12 +43,12 @@
   "columnWidthMap": {
     "Traffic_Source": 337,
     "User": 211,
-    "ad_account_name": 348,
+    "ad_account_name": 260,
     "bm_name": 233,
-    "customColumn1": 201,
+    "customColumn1": 152.84375,
     "offer": 328,
-    "spent": 188,
-    "spent_wfees": 203,
+    "spent": 150,
+    "spent_wfees": 161,
     "status": 85,
     "step": 70,
     "task": 245,
@@ -125,7 +125,7 @@
   "originalTopRow": 23,
   "parentId": "59rw5mx0bq",
   "parentRowSpace": 10,
-  "primaryColumnId": "user",
+  "primaryColumnId": "ad_account_name",
   "primaryColumns": {
     "ad_account_id": {
       "alias": "ad_account_id",
