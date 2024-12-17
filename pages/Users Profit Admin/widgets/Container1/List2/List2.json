@@ -13,7 +13,7 @@
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "children": [
     {
-      "bottomRow": 660,
+      "bottomRow": 750,
       "canExtend": false,
       "containerStyle": "none",
       "detachFromLayout": true,
@@ -98,7 +98,7 @@
   "onItemClick": "",
   "originalBottomRow": 95,
   "originalTopRow": 29,
-  "pageSize": 10,
+  "pageSize": 12,
   "parentColumnSpace": 20.0625,
   "parentId": "59rw5mx0bq",
   "parentRowSpace": 10,
@@ -108,7 +108,7 @@
   "rightColumn": 64,
   "selectedItemView": "{{{}}}",
   "templateBottomRow": 16,
-  "topRow": 33,
+  "topRow": 24,
   "triggeredItemView": "{{{}}}",
   "type": "LIST_WIDGET_V2",
   "widgetId": "16q3onry22",

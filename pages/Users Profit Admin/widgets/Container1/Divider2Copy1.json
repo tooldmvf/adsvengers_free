@@ -1,6 +1,6 @@
 {
   "animateLoading": true,
-  "bottomRow": 22,
+  "bottomRow": 14,
   "capSide": 0,
   "capType": "nc",
   "displayName": "Divider",
@@ -27,7 +27,7 @@
   ],
   "strokeStyle": "solid",
   "thickness": "1",
-  "topRow": 18,
+  "topRow": 10,
   "type": "DIVIDER_WIDGET",
   "version": 1,
   "widgetId": "boyo37m9vi",
