@@ -45,7 +45,7 @@
     "label"
   ],
   "shouldTruncate": false,
-  "text": "Tot: {{ _.sumBy(TableAct.selectedRows , (row) => parseFloat(row.spent_wfees.replace(\",\",\"\")) ).toLocaleString('en-IT', { style: 'currency', currency: \"EUR\"}) }}",
+  "text": "Tot Fees: {{ _.sumBy(TableAct.selectedRows , (row) => parseFloat(row.spent_wfees.replace(\",\",\"\")) ).toLocaleString('en-IT', { style: 'currency', currency: \"EUR\"}) }}",
   "textAlign": "LEFT",
   "textColor": "#03B365",
   "topRow": 8,
