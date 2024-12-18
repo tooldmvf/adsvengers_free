@@ -34,14 +34,14 @@
     "customColumn2",
     "name",
     "customColumn1",
+    "spend_cap",
     "account_status",
     "id",
     "amount_spent",
     "balance",
-    "spend_cap",
     "currency"
   ],
-  "columnUpdatedAt": 1678983645833,
+  "columnUpdatedAt": 1734507278088,
   "columnWidthMap": {
     "account_status": 99,
     "customColumn1": 134.25,
@@ -117,6 +117,9 @@
     },
     {
       "key": "primaryColumns.id.cellBackground"
+    },
+    {
+      "key": "primaryColumns.spend_cap.cellBackground"
     }
   ],
   "dynamicPropertyPathList": [
@@ -140,6 +143,9 @@
     },
     {
       "key": "tableData"
+    },
+    {
+      "key": "primaryColumns.spend_cap.cellBackground"
     }
   ],
   "dynamicTriggerPathList": [
@@ -421,13 +427,13 @@
     "spend_cap": {
       "alias": "spend_cap",
       "allowCellWrapping": false,
-      "cellBackground": "",
+      "cellBackground": "{{Table3.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"account_status\"] == 2 ? '#fee2e2' : 'white'))}}",
       "columnType": "text",
-      "computedValue": "{{Table3.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"spend_cap\"]))}}",
+      "computedValue": "{{Table3.processedTableData.map((currentRow, currentIndex) => ( (currentRow[\"spend_cap\"]/100).toLocaleString('en-IT', { style: 'currency', currency: currentRow[\"currency\"] })))}}",
       "enableFilter": true,
       "enableSort": true,
       "fontStyle": "",
-      "horizontalAlignment": "LEFT",
+      "horizontalAlignment": "RIGHT",
       "id": "spend_cap",
       "index": 4,
       "isCellEditable": false,
@@ -437,8 +443,8 @@
       "isDiscardVisible": true,
       "isEditable": false,
       "isSaveVisible": true,
-      "isVisible": false,
-      "label": "spend_cap",
+      "isVisible": true,
+      "label": "New Limit",
       "originalId": "spend_cap",
       "sticky": "",
       "textColor": "",
