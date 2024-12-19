@@ -1,0 +1,71 @@
+{
+  "backgroundColor": "#FFFFFF",
+  "borderColor": "#E0DEDE",
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "borderWidth": "1",
+  "bottomRow": 30,
+  "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+  "defaultModel": "{\n  \"tips\": [\n    \"Pass data to this widget in the default model field\",\n    \"Access data in the javascript file using the appsmith.model variable\",\n    \"Create events in the widget and trigger them in the javascript file using appsmith.triggerEvent('eventName')\",\n    \"Access data in CSS as var(--appsmith-model-{property-name})\"\n  ]\n}",
+  "dynamicBindingPathList": [
+    {
+      "key": "theme"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "boxShadow"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onResetClick"
+    },
+    {
+      "key": "onDateRangeChange"
+    }
+  ],
+  "events": [
+    "onResetClick",
+    "onDateRangeChange"
+  ],
+  "isCanvas": false,
+  "isLoading": false,
+  "isSearchWildcard": true,
+  "isVisible": true,
+  "key": "ggkj5f8xe0",
+  "leftColumn": 4,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "mobileBottomRow": 42,
+  "mobileLeftColumn": 4,
+  "mobileRightColumn": 27,
+  "mobileTopRow": 12,
+  "needsErrorInfo": false,
+  "onDateRangeChange": "{{showAlert('suc\t' + startDateC.$d, '').then(() => {\n  storeValue('mySD', startDateC.$d);\n});}}",
+  "onResetClick": "{{showAlert('Successfully reset!!', '');}}",
+  "parentColumnSpace": 18.375,
+  "parentId": "kuzt0s9qm0",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "rightColumn": 19,
+  "shouldScrollContents": true,
+  "srcDoc": {
+    "css": ".range-date-picker {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  height: 100vh;\n  background-color: #fff;\n  border-radius: var(--appsmith-theme-borderRadius);\n  position: relative;\n  z-index: 1;\n}\n\n.range-date-picker .ant-picker {\n  border-radius: var(--appsmith-theme-borderRadius);\n  border: 1px solid var(--appsmith-theme-borderColor);\n}\n\n.range-date-picker .ant-picker:hover {\n  border-color: var(--appsmith-theme-primaryColor);\n}\n\n.range-date-picker .ant-picker-focused {\n  border-color: var(--appsmith-theme-primaryColor);\n  box-shadow: 0 0 0 2px rgba(var(--appsmith-theme-primaryColorRGB), 0.2);\n}\n\n/* Ensure the calendar overlay appears above other elements */\n.range-date-picker .ant-picker-dropdown {\n  position: absolute;\n  z-index: 1000;\n}",
+    "html": "<link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/antd/5.11.1/antd.min.css\" />\n<div id=\"root\"></div>",
+    "js": "import React, { useState } from 'https://esm.sh/react@18.2.0';\nimport ReactDOM from 'https://esm.sh/react-dom@18.2.0';\nimport { DatePicker } from 'https://esm.sh/antd@5.11.1';\nfunction RangeDatePicker() {\n  const [dates, setDates] = useState([]);\n\n  // Handle date change\n  const onChange = dates => {\n    setDates(dates);\n    if (dates && dates.length === 2) {\n      appsmith.triggerEvent('onDateRangeChange', {\n        startDate: dates[0],\n        endDate: dates[1]\n      });\n    }\n  };\n  return /*#__PURE__*/React.createElement(\"div\", {\n    className: \"range-date-picker\"\n  }, /*#__PURE__*/React.createElement(DatePicker.RangePicker, {\n    onChange: onChange,\n    getPopupContainer: trigger => document.body,\n    dropdownClassName: \"ant-picker-dropdown\"\n  }));\n}\nappsmith.onReady(() => {\n  ReactDOM.render( /*#__PURE__*/React.createElement(RangeDatePicker, null), document.getElementById('root'));\n});"
+  },
+  "theme": "{{appsmith.theme}}",
+  "topRow": 12,
+  "type": "CUSTOM_WIDGET",
+  "uncompiledSrcDoc": {
+    "css": ".range-date-picker {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  height: 100vh;\n  background-color: #fff;\n  border-radius: var(--appsmith-theme-borderRadius);\n  position: relative;\n  z-index: 1;\n}\n\n.range-date-picker .ant-picker {\n  border-radius: var(--appsmith-theme-borderRadius);\n  border: 1px solid var(--appsmith-theme-borderColor);\n}\n\n.range-date-picker .ant-picker:hover {\n  border-color: var(--appsmith-theme-primaryColor);\n}\n\n.range-date-picker .ant-picker-focused {\n  border-color: var(--appsmith-theme-primaryColor);\n  box-shadow: 0 0 0 2px rgba(var(--appsmith-theme-primaryColorRGB), 0.2);\n}\n\n/* Ensure the calendar overlay appears above other elements */\n.range-date-picker .ant-picker-dropdown {\n  position: absolute;\n  z-index: 1000;\n}",
+    "html": "<link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/antd/5.11.1/antd.min.css\" />\n<div id=\"root\"></div>",
+    "js": "import React, { useState } from 'https://esm.sh/react@18.2.0';\nimport ReactDOM from 'https://esm.sh/react-dom@18.2.0';\nimport { DatePicker } from 'https://esm.sh/antd@5.11.1';\n\nfunction RangeDatePicker() {\n    const [dates, setDates] = useState([]);\n\n    // Handle date change\n    const onChange = (dates) => {\n        setDates(dates);\n        if (dates && dates.length === 2) {\n            appsmith.triggerEvent('onDateRangeChange', { startDate: dates[0], endDate: dates[1] });\n        }\n    };\n\n    return (\n        <div className=\"range-date-picker\">\n            <DatePicker.RangePicker onChange={onChange} getPopupContainer={trigger => document.body} dropdownClassName=\"ant-picker-dropdown\" />\n        </div>\n    );\n}\n\nappsmith.onReady(() => {\n    ReactDOM.render(<RangeDatePicker />, document.getElementById('root'));\n});"
+  },
+  "version": 1,
+  "widgetId": "489ia5rabp",
+  "widgetName": "Custom1"
+}

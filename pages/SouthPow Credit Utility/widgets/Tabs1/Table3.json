@@ -99,6 +99,27 @@
     },
     {
       "key": "primaryColumns.account_status.computedValue"
+    },
+    {
+      "key": "primaryColumns.name.cellBackground"
+    },
+    {
+      "key": "primaryColumns.amount_spent.cellBackground"
+    },
+    {
+      "key": "primaryColumns.balance.cellBackground"
+    },
+    {
+      "key": "primaryColumns.spend_cap.cellBackground"
+    },
+    {
+      "key": "primaryColumns.currency.cellBackground"
+    },
+    {
+      "key": "primaryColumns.account_status.cellBackground"
+    },
+    {
+      "key": "primaryColumns.id.cellBackground"
     }
   ],
   "dynamicPropertyPathList": [
@@ -110,6 +131,27 @@
     },
     {
       "key": "tableData"
+    },
+    {
+      "key": "primaryColumns.name.cellBackground"
+    },
+    {
+      "key": "primaryColumns.amount_spent.cellBackground"
+    },
+    {
+      "key": "primaryColumns.balance.cellBackground"
+    },
+    {
+      "key": "primaryColumns.spend_cap.cellBackground"
+    },
+    {
+      "key": "primaryColumns.currency.cellBackground"
+    },
+    {
+      "key": "primaryColumns.account_status.cellBackground"
+    },
+    {
+      "key": "primaryColumns.id.cellBackground"
     }
   ],
   "dynamicTriggerPathList": [
@@ -149,7 +191,7 @@
       "alias": "account_status",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
-      "cellBackground": "",
+      "cellBackground": "{{Table3.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"account_status\"] == 2 ? '#fee2e2' : 'white'))}}",
       "columnType": "number",
       "computedValue": "{{Table3.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"account_status\"]==\"1\" ? \"Active\" : \"Disabled\"))}}",
       "currencyCode": "USD",
@@ -183,7 +225,7 @@
       "alias": "amount_spent",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
-      "cellBackground": "",
+      "cellBackground": "{{Table3.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"account_status\"] == 2 ? '#fee2e2' : 'white'))}}",
       "columnType": "text",
       "computedValue": "{{Table3.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"amount_spent\"]/100).toLocaleString('en-IT', { style: 'currency', currency: currentRow[\"currency\"] }))}}",
       "currencyCode": "USD",
@@ -217,7 +259,7 @@
       "alias": "balance",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
-      "cellBackground": "",
+      "cellBackground": "{{Table3.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"account_status\"] == 2 ? '#fee2e2' : 'white'))}}",
       "columnType": "text",
       "computedValue": "{{Table3.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"balance\"]/100).toLocaleString('en-IT', { style: 'currency', currency: currentRow[\"currency\"] }))}}",
       "currencyCode": "USD",
@@ -251,7 +293,7 @@
       "alias": "currency",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
-      "cellBackground": "",
+      "cellBackground": "{{Table3.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"account_status\"] == 2 ? '#fee2e2' : 'white'))}}",
       "columnType": "text",
       "computedValue": "{{Table3.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"currency\"]))}}",
       "currencyCode": "USD",
@@ -315,7 +357,7 @@
       "alias": "id",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
-      "cellBackground": "",
+      "cellBackground": "{{Table3.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"account_status\"] == 2 ? '#fee2e2' : 'white'))}}",
       "columnType": "text",
       "computedValue": "{{Table3.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"id\"]))}}",
       "currencyCode": "USD",
@@ -349,7 +391,7 @@
       "alias": "name",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
-      "cellBackground": "",
+      "cellBackground": "{{Table3.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"account_status\"] == 2 ? '#fee2e2' : 'white'))}}",
       "columnType": "text",
       "computedValue": "{{Table3.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"name\"]))}}",
       "currencyCode": "USD",
@@ -383,7 +425,7 @@
       "alias": "spend_cap",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
-      "cellBackground": "",
+      "cellBackground": "{{Table3.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"account_status\"] == 2 ? '#fee2e2' : 'white'))}}",
       "columnType": "text",
       "computedValue": "{{Table3.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"spend_cap\"]/100).toLocaleString('en-IT', { style: 'currency', currency: currentRow[\"currency\"] }))}}",
       "currencyCode": "USD",
