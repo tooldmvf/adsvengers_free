@@ -1,0 +1,61 @@
+{
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 5,
+  "boxShadow": "none",
+  "buttonColor": "#3b82f6",
+  "buttonVariant": "SECONDARY",
+  "disabledWhenInvalid": false,
+  "dynamicBindingPathList": [
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "isVisible"
+    },
+    {
+      "key": "isDisabled"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "isVisible"
+    },
+    {
+      "key": "isDisabled"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "isDefaultClickDisabled": true,
+  "isDisabled": "{{(SelectMonth.selectedOptionValue.length == 0) || (SelectYear.selectedOptionValue.length == 0)}}",
+  "isLoading": false,
+  "isVisible": "{{appsmith.store.role_level>900}}",
+  "key": "ht2sroc8nl",
+  "leftColumn": 25,
+  "minWidth": 120,
+  "mobileBottomRow": 5,
+  "mobileLeftColumn": 21,
+  "mobileRightColumn": 37,
+  "mobileTopRow": 1,
+  "needsErrorInfo": false,
+  "onClick": "{{Insert_month_commissions.run().then(() => {\n  showAlert('Insert executed', 'success');\n});}}",
+  "parentColumnSpace": 18.03125,
+  "parentId": "qd74yy4u3t",
+  "parentRowSpace": 10,
+  "placement": "CENTER",
+  "recaptchaType": "V3",
+  "renderMode": "CANVAS",
+  "resetFormOnClick": false,
+  "responsiveBehavior": "hug",
+  "rightColumn": 38,
+  "text": "Insert month commissions",
+  "topRow": 1,
+  "type": "BUTTON_WIDGET",
+  "version": 1,
+  "widgetId": "gkylwd0xeq",
+  "widgetName": "Button1"
+}

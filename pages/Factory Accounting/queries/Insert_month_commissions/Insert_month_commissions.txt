@@ -1,0 +1,9 @@
+INSERT INTO "public".user_commission_month (fk_user_id, comm_value, fk_comm_type_id, financial_month) 
+select distinct fk_user_id, comm_value, fk_comm_type_id , '{{SelectYear.selectedOptionValue+SelectMonth.selectedOptionValue}}' 
+from public.user_commission_month a 
+where a.financial_month = TO_CHAR(TO_DATE('{{SelectYear.selectedOptionValue+SelectMonth.selectedOptionValue}}' , 'YYYYMM') - INTERVAL '1 month', 'YYYYMM')
+ON conflict (fk_user_id,
+fk_comm_type_id,
+financial_month)
+DO 
+   UPDATE SET comm_value = excluded.comm_value
