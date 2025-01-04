@@ -444,7 +444,7 @@
       "isEditable": false,
       "isSaveVisible": true,
       "isVisible": true,
-      "label": "Spend Cap",
+      "label": "Credit",
       "notation": "standard",
       "originalId": "spend_cap",
       "sticky": "",

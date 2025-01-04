@@ -1,8 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 5,
-  "displayName": "Text",
+  "bottomRow": 4,
   "dynamicBindingPathList": [
     {
       "key": "truncateButtonColor"
@@ -14,37 +13,38 @@
       "key": "borderRadius"
     }
   ],
-  "dynamicHeight": "FIXED",
+  "dynamicHeight": "AUTO_HEIGHT",
   "dynamicTriggerPathList": [],
   "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
-  "fontSize": "1.25rem",
-  "fontStyle": "",
-  "hideCard": false,
-  "iconSVG": "/static/media/icon.97c59b523e6f70ba6f40a10fc2c7c5b5.svg",
-  "isDeprecated": false,
+  "fontSize": "0.875rem",
+  "fontStyle": "BOLD",
   "isLoading": false,
   "isVisible": true,
-  "key": "943elwrbty",
-  "leftColumn": 4,
+  "key": "sk0t0xfyai",
+  "leftColumn": 1,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 4,
+  "mobileLeftColumn": 1,
+  "mobileRightColumn": 37,
+  "mobileTopRow": 0,
+  "needsErrorInfo": false,
+  "originalBottomRow": 5,
+  "originalTopRow": 0,
   "overflow": "NONE",
-  "parentId": "y7bc0brmf3",
+  "parentId": "jh7g93977d",
   "renderMode": "CANVAS",
-  "rightColumn": 22,
-  "searchTags": [
-    "typography",
-    "paragraph",
-    "label"
-  ],
+  "responsiveBehavior": "fill",
+  "rightColumn": 28,
   "shouldTruncate": false,
-  "text": "SouthPow Ad Accounts Credit",
+  "text": "Remaining Tot: ",
   "textAlign": "LEFT",
-  "textColor": "#231F20",
-  "topRow": 1,
+  "textColor": "#999999",
+  "topRow": 0,
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,
-  "widgetId": "4jhegz95do",
-  "widgetName": "Text3CopyCopy"
+  "widgetId": "inilz8vvd7",
+  "widgetName": "Text19"
 }

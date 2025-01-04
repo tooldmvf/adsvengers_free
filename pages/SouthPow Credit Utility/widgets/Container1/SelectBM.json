@@ -51,7 +51,7 @@
   "labelText": "Business Manager",
   "labelTextSize": "0.875rem",
   "labelWidth": "8",
-  "leftColumn": 41,
+  "leftColumn": 42,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "onOptionChange": "{{get_bm.run().then(() => {\n  SALV_GetAccountsCredit.run();\n  fbAccountQuery.run();\n  UsersLog.run();\n}).catch(() => {});}}",
