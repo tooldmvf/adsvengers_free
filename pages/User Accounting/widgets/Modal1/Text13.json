@@ -1,8 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 4,
-  "displayName": "Text",
+  "bottomRow": 10,
   "dynamicBindingPathList": [
     {
       "key": "truncateButtonColor"
@@ -12,6 +11,9 @@
     },
     {
       "key": "borderRadius"
+    },
+    {
+      "key": "text"
     }
   ],
   "dynamicHeight": "AUTO_HEIGHT",
@@ -19,42 +21,35 @@
   "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
   "fontSize": "1rem",
   "fontStyle": "",
-  "hideCard": false,
-  "iconSVG": "/static/media/icon.97c59b523e6f70ba6f40a10fc2c7c5b5.svg",
-  "isDeprecated": false,
   "isLoading": false,
   "isVisible": true,
-  "key": "wmtrt5wcg7",
-  "leftColumn": 2,
+  "key": "crjkofvzg2",
+  "leftColumn": 1,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
-  "mobileBottomRow": 11,
-  "mobileLeftColumn": 0,
-  "mobileRightColumn": 16,
-  "mobileTopRow": 7,
-  "originalBottomRow": 4,
-  "originalTopRow": 0,
+  "mobileBottomRow": 9,
+  "mobileLeftColumn": 1,
+  "mobileRightColumn": 17,
+  "mobileTopRow": 5,
+  "needsErrorInfo": false,
+  "originalBottomRow": 10,
+  "originalTopRow": 5,
   "overflow": "NONE",
-  "parentColumnSpace": 6.15234375,
-  "parentId": "s21wbj4vy8",
+  "parentColumnSpace": 6.9375,
+  "parentId": "cvxk1j9z1z",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 58,
-  "searchTags": [
-    "typography",
-    "paragraph",
-    "label"
-  ],
+  "rightColumn": 62,
   "shouldTruncate": false,
-  "text": "Google budget Ai20",
+  "text": "Are you sure you want to reset the debt of {{SelectUser.selectedOptionLabel}} starting from {{SelectYear.selectedOptionValue}}/{{SelectMonth.selectedOptionValue}} ?",
   "textAlign": "LEFT",
   "textColor": "#231F20",
-  "topRow": 0,
+  "topRow": 5,
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,
-  "widgetId": "c6yy8ykyp3",
-  "widgetName": "Text11Copy2"
+  "widgetId": "bahmhl0r9e",
+  "widgetName": "Text13"
 }
