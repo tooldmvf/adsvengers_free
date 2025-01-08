@@ -1,5 +1,6 @@
 {
   "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "allowAddNewRow": false,
   "animateLoading": true,
   "borderColor": "#E0DEDE",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
@@ -39,11 +40,14 @@
     "fk_off_cat_id",
     "offer_name_suffix",
     "offer_cut",
+    "customColumn1",
     "EditActions1"
   ],
-  "columnUpdatedAt": 1733036574403,
+  "columnUpdatedAt": 1736323107061,
   "columnWidthMap": {
+    "customColumn1": 93,
     "fk_off_cat_id": 313,
+    "offer_name_suffix": 212,
     "offer_payout": 140
   },
   "compactMode": "SHORT",
@@ -106,6 +110,12 @@
     },
     {
       "key": "primaryColumns.EditActions1.isDiscardDisabled"
+    },
+    {
+      "key": "primaryColumns.customColumn1.boxShadow"
+    },
+    {
+      "key": "primaryColumns.customColumn1.borderRadius"
     }
   ],
   "dynamicPropertyPathList": [
@@ -122,6 +132,9 @@
   "dynamicTriggerPathList": [
     {
       "key": "primaryColumns.EditActions1.onSave"
+    },
+    {
+      "key": "primaryColumns.customColumn1.onClick"
     }
   ],
   "enableClientSideSearch": true,
@@ -147,6 +160,7 @@
   "parentColumnSpace": 18.375,
   "parentId": "kuzt0s9qm0",
   "parentRowSpace": 10,
+  "primaryColumnId": "offer_id",
   "primaryColumns": {
     "EditActions1": {
       "alias": "EditActions1",
@@ -216,6 +230,46 @@
       "originalId": "creation_date",
       "outputFormat": "YYYY-MM-DD",
       "sticky": "",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "customColumn1": {
+      "alias": "Delete",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "borderRadius": "{{Table2.processedTableData.map((currentRow, currentIndex) => ( (appsmith.theme.borderRadius.appBorderRadius)))}}",
+      "boxShadow": "{{Table2.processedTableData.map((currentRow, currentIndex) => ( \"none\"))}}",
+      "buttonColor": "#ef4444",
+      "buttonStyle": "rgb(3, 179, 101)",
+      "buttonVariant": "SECONDARY",
+      "columnType": "iconButton",
+      "computedValue": "",
+      "currencyCode": "USD",
+      "customAlias": "",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "horizontalAlignment": "LEFT",
+      "iconName": "delete",
+      "id": "customColumn1",
+      "index": 9,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": true,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "Delete",
+      "labelColor": "#FFFFFF",
+      "notation": "standard",
+      "onClick": "{{OffersDelete.run().then(() => {\n  showAlert('Row deleted', 'success');\n  Offers.run();\n}).catch(() => {\n  showAlert('Error', 'error');\n});}}",
+      "originalId": "customColumn1",
+      "sticky": "right",
       "textSize": "0.875rem",
       "thousandSeparator": true,
       "validation": {},

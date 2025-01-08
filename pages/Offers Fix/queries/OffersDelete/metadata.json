@@ -1,6 +1,6 @@
 {
-  "gitSyncId": "646331cd28902b71518db22a_86babe9c-2ff5-4e43-852e-42dc4b76903d",
-  "id": "Offers Fix_OffersUpdate",
+  "gitSyncId": "646331cd28902b71518db22a_5edcf41f-1697-461f-8311-30b42eedeb6c",
+  "id": "Offers Fix_OffersDelete",
   "pluginId": "restapi-plugin",
   "pluginType": "API",
   "unpublishedAction": {
@@ -11,11 +11,11 @@
           "value": "application/json"
         }
       ],
-      "body": "{\n\t\"offer_name\" : \"{{Table2.updatedRow.offer_name}}\",\n\t\"fk_off_cat_id\" : \"{{Table2.updatedRow.fk_off_cat_id}}\",\n\t\"offer_payout\" : \"{{Table2.updatedRow.offer_payout}}\"\n}",
+      "body": "",
       "bodyFormData": [],
       "encodeParamsToggle": true,
       "formData": {
-        "apiContentType": "none"
+        "apiContentType": "application/json"
       },
       "headers": [
         {
@@ -23,7 +23,7 @@
           "value": "Bearer {{appsmith.store.access_token}}"
         }
       ],
-      "httpMethod": "PATCH",
+      "httpMethod": "DELETE",
       "httpVersion": "HTTP11",
       "paginationType": "NONE",
       "path": "/rest/v1/offer",
@@ -35,7 +35,11 @@
       "queryParameters": [
         {
           "key": "offer_id",
-          "value": "eq.{{Table2.updatedRow.offer_id}}"
+          "value": "eq.{{Table2.triggeredRow.offer_id}}"
+        },
+        {
+          "key": "fk_user_network_id",
+          "value": "eq.{{Table2.triggeredRow.fk_user_network_id}}"
         }
       ],
       "timeoutInMillisecond": 10000
@@ -52,14 +56,14 @@
         "key": "headers[0].value"
       },
       {
-        "key": "body"
+        "key": "queryParameters[0].value"
       },
       {
-        "key": "queryParameters[0].value"
+        "key": "queryParameters[1].value"
       }
     ],
     "executeOnLoad": false,
-    "name": "OffersUpdate",
+    "name": "OffersDelete",
     "pageId": "Offers Fix",
     "userSetOnLoad": false
   }
