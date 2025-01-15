@@ -15,7 +15,7 @@
       "bodyFormData": [],
       "encodeParamsToggle": true,
       "formData": {
-        "apiContentType": "none"
+        "apiContentType": "application/json"
       },
       "headers": [
         {
@@ -36,6 +36,10 @@
         {
           "key": "offer_id",
           "value": "eq.{{Table2.updatedRow.offer_id}}"
+        },
+        {
+          "key": "fk_user_network_id",
+          "value": "eq.{{Table2.updatedRow.fk_user_network_id}}"
         }
       ],
       "timeoutInMillisecond": 10000
@@ -56,6 +60,9 @@
       },
       {
         "key": "queryParameters[0].value"
+      },
+      {
+        "key": "queryParameters[1].value"
       }
     ],
     "executeOnLoad": false,
