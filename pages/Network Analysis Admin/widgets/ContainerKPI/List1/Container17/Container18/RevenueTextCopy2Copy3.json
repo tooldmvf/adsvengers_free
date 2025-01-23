@@ -47,7 +47,7 @@
   ],
   "shouldScrollContents": true,
   "shouldTruncate": false,
-  "text": "{{(((currentItem.tot_revenue_h-currentItem.tot_revenue)/currentItem.tot_revenue_h)*100).toFixed(1)}} %",
+  "text": "{{(((currentItem.tot_revenue-currentItem.tot_revenue_h)/currentItem.tot_revenue_h)*100).toFixed(1)}} %",
   "textAlign": "RIGHT",
   "textColor": "#231F20",
   "topRow": 4,

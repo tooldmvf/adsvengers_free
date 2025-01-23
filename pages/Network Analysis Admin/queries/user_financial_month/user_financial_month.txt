@@ -1,0 +1,20 @@
+SELECT to_char(a.financial_date, 'yyyy-mm'), c.network_name,
+sum(amount_revenue) as revenue,
+sum(amount_spent_plus_fee) as spent,
+case when c.network_name_short != 'WL' then sum(a.amount_revenue)-sum(a.amount_spent_plus_fee) else (sum(a.amount_revenue)-sum(a.amount_spent_plus_fee))/2 end as profit,
+sum(amount_revenue - amount_spent_plus_fee)/sum(case when amount_spent_plus_fee = 0 then 1 else amount_spent_plus_fee end)*100 as tot_roi,
+sum(amount_revenue_approved - amount_spent_plus_fee)/sum(case when amount_spent_plus_fee = 0 then 1 else amount_spent_plus_fee end)*100 as appr_roi,
+sum(conversions_rejected)/(case when sum(amount_conversion+conversions_rejected) = 0 then 1 else sum(amount_conversion+conversions_rejected) end)*100 as rej_rate,
+(sum(amount_revenue)-sum(amount_revenue_h))/sum(amount_revenue_h)*100 as st_day_cut
+FROM 
+  public."user_financial" a
+  INNER JOIN public."user_network" b  ON (a.fk_user_id = b.fk_user_id and a.fk_user_network_id = b.user_network_id)
+	INNER JOIN public."network" c on (c.network_id = b.fk_network_id)
+where 1 = 1
+and c.network_name_short != 'AW'
+and text(c.network_id) = '{{List1.triggeredItem.fk_network_id}}'
+and a.financial_date >= to_date('{{moment(DateFrom.selectedDate).format('YYYY-DD-MM')}}','YYYY-DD-MM')
+and a.financial_date <= to_date('{{moment(DateTo.selectedDate).format('YYYY-DD-MM')}}','YYYY-DD-MM')
+and (text(a.fk_user_id) IN ({{"'" + MultiSelectUsers.selectedOptionValues.join("', '") + "'"}}) OR text(a.fk_user_id) = '{{appsmith.store.myUser}}' )
+and ({{SelectTSFront.selectedOptionValues.length == 0}} OR text(b.fk_ts_id) IN ({{"'" + SelectTSFront.selectedOptionValues.join("', '") + "'"}}))
+group by  to_char(a.financial_date, 'yyyy-mm'), c.network_name, c.network_name_short order by 1,2;

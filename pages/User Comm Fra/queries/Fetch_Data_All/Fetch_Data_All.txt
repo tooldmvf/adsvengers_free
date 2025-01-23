@@ -1,0 +1,56 @@
+select * from crosstab(
+'SELECT ''Revenue (€)'', substring(financial_month,5,2)::integer m,  sum(amount_revenue_approved) 
+FROM public.user_totals_month a
+Where 1=1
+and (text(a.fk_user_id) IN ({{"''" + MultiSelectUsers.selectedOptionValues.join("'', ''") + "''"}}) OR text(a.fk_user_id) = ''{{appsmith.store.myUser}}'' )
+and substring(financial_month,1,4) = ''{{SelectYear.selectedOptionValue}}''
+GROUP By a.financial_month
+union All
+SELECT ''Spent (€)'' , substring(financial_month,5,2)::integer m,  sum(amount_spent)-sum(amount_adjustment)
+FROM public.user_totals_month a
+Where 1=1
+and (text(a.fk_user_id) IN ({{"''" + MultiSelectUsers.selectedOptionValues.join("'', ''") + "''"}}) OR text(a.fk_user_id) = ''{{appsmith.store.myUser}}'' )
+and substring(financial_month,1,4) = ''{{SelectYear.selectedOptionValue}}''
+GROUP By a.financial_month
+union All
+SELECT ''Profit (€)'' , substring(financial_month,5,2)::integer m,  sum(amount_revenue_approved) -sum(amount_spent)+sum(amount_adjustment)
+FROM public.user_totals_month a
+Where 1=1
+and (text(a.fk_user_id) IN ({{"''" + MultiSelectUsers.selectedOptionValues.join("'', ''") + "''"}}) OR text(a.fk_user_id) = ''{{appsmith.store.myUser}}'' )
+and substring(financial_month,1,4) = ''{{SelectYear.selectedOptionValue}}''
+GROUP By a.financial_month
+union All
+SELECT ''Roi (%)'' , substring(financial_month,5,2)::integer m,  (sum(amount_revenue_approved) -sum(amount_spent)+sum(amount_adjustment))/(case when sum(amount_spent)-sum(amount_adjustment) = 0 then 1 else sum(amount_spent)-sum(amount_adjustment) end)*100
+FROM public.user_totals_month a
+Where 1=1
+and (text(a.fk_user_id) IN ({{"''" + MultiSelectUsers.selectedOptionValues.join("'', ''") + "''"}}) OR text(a.fk_user_id) = ''{{appsmith.store.myUser}}'' )
+and substring(financial_month,1,4) = ''{{SelectYear.selectedOptionValue}}''
+GROUP By a.financial_month
+union All
+SELECT ''Invoice (€)'' , substring(financial_month,5,2)::integer m,  sum(amount_invoice)
+FROM public.user_totals_month a
+Where 1=1
+and (text(a.fk_user_id) IN ({{"''" + MultiSelectUsers.selectedOptionValues.join("'', ''") + "''"}}) OR text(a.fk_user_id) = ''{{appsmith.store.myUser}}'' )
+and substring(financial_month,1,4) = ''{{SelectYear.selectedOptionValue}}''
+GROUP By a.financial_month
+union All
+SELECT ''Debt (€)'' , substring(financial_month,5,2)::integer m,  sum(amount_debt)
+FROM public.user_totals_month a
+Where 1=1
+and (text(a.fk_user_id) IN ({{"''" + MultiSelectUsers.selectedOptionValues.join("'', ''") + "''"}}) OR text(a.fk_user_id) = ''{{appsmith.store.myUser}}'' )
+and substring(financial_month,1,4) = ''{{SelectYear.selectedOptionValue}}''
+GROUP By a.financial_month' 
+, 'select m from generate_series(1,12) m')
+AS ct("Type" TEXT, 
+  "Jan" float,
+  "Feb" float,
+  "Mar" float,
+  "Apr" float,
+  "May" float,
+  "Jun" float,
+  "Jul" float,
+  "Aug" float,
+  "Sep" float,
+  "Oct" float,
+  "Nov" float,
+  "Dec" float)

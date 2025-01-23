@@ -1,24 +1,23 @@
 {
-  "gitSyncId": "63c3151532584b547fffe91b_641c04808f7e5b7bc5de4f49",
+  "gitSyncId": "646331cd28902b71518db22a_461f7cee-2d44-4e11-ac11-1515931dc01a",
   "unpublishedPage": {
     "isHidden": true,
     "layouts": [
       {
         "dsl": {
           "backgroundColor": "none",
-          "bottomRow": 1520,
+          "bottomRow": 450,
           "canExtend": true,
           "containerStyle": "none",
           "detachFromLayout": true,
           "dynamicBindingPathList": [],
-          "dynamicTriggerPathList": [],
           "leftColumn": 0,
-          "minHeight": 1292,
+          "minHeight": 880,
           "parentColumnSpace": 1,
           "parentRowSpace": 1,
-          "rightColumn": 4896,
+          "rightColumn": 1224,
           "snapColumns": 64,
-          "snapRows": 125,
+          "snapRows": 86,
           "topRow": 0,
           "type": "CANVAS_WIDGET",
           "version": 90,
@@ -27,7 +26,7 @@
         }
       }
     ],
-    "name": "Network Analysis Admin",
-    "slug": "network-analysis-admin"
+    "name": "User Comm Fra",
+    "slug": "user-comm-fra"
   }
 }

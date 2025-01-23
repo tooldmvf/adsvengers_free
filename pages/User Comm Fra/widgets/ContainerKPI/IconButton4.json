@@ -1,53 +1,48 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 29,
+  "bottomRow": 5,
   "boxShadow": "none",
-  "buttonColor": "{{currentItem.rej_rate.toFixed(1) < 50 ? 'green' : 'red'}}",
-  "buttonStyle": "PRIMARY",
+  "buttonColor": "#eab308",
   "buttonVariant": "PRIMARY",
   "displayName": "Icon Button",
   "dynamicBindingPathList": [
     {
-      "key": "buttonColor"
-    },
-    {
       "key": "borderRadius"
-    },
-    {
-      "key": "iconName"
     }
   ],
-  "dynamicHeight": "FIXED",
   "dynamicPropertyPathList": [
     {
-      "key": "iconName"
-    },
-    {
-      "key": "buttonColor"
+      "key": "onClick"
     }
   ],
-  "dynamicTriggerPathList": [],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
   "hideCard": false,
-  "iconName": "{{currentItem.rej_rate.toFixed(1) < 50 ? 'thumbs-up' : 'thumbs-down'}}",
+  "iconName": "refresh",
   "iconSVG": "/static/media/icon.1a0c634ac75f9fa6b6ae7a8df882a3ba.svg",
   "isDeprecated": false,
   "isDisabled": false,
   "isLoading": false,
   "isVisible": true,
-  "key": "d9sw8ud4oz",
-  "leftColumn": 35,
-  "minWidth": 50,
-  "parentId": "7kfbs5g36r",
+  "key": "sqkxrybeqo",
+  "leftColumn": 0,
+  "onClick": "{{Utils2.onLoadPage2();}}",
+  "parentColumnSpace": 17.5556640625,
+  "parentId": "qd74yy4u3t",
+  "parentRowSpace": 10,
   "renderMode": "CANVAS",
-  "rightColumn": 50,
+  "rightColumn": 3,
   "searchTags": [
     "click",
     "submit"
   ],
-  "topRow": 21,
+  "topRow": 1,
   "type": "ICON_BUTTON_WIDGET",
   "version": 1,
-  "widgetId": "08mbc77v6j",
-  "widgetName": "IconButton5"
+  "widgetId": "xlfx48fy7b",
+  "widgetName": "IconButton4"
 }

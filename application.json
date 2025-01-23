@@ -168,6 +168,10 @@
     {
       "id": "Arb Spent Check",
       "isDefault": false
+    },
+    {
+      "id": "User Comm Fra",
+      "isDefault": false
     }
   ],
   "unpublishedAppLayout": {

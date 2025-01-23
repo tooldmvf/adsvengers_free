@@ -47,7 +47,7 @@
   ],
   "shouldScrollContents": true,
   "shouldTruncate": false,
-  "text": "{{Utils.myCurrency(currentItem.tot_revenue_h-currentItem.tot_revenue)}} €",
+  "text": "{{Utils.myCurrency(currentItem.tot_revenue-currentItem.tot_revenue_h)}} €",
   "textAlign": "RIGHT",
   "textColor": "#231F20",
   "topRow": 4,

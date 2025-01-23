@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 28,
+  "bottomRow": 5,
   "displayName": "Text",
   "dynamicBindingPathList": [
     {
@@ -9,43 +9,45 @@
     },
     {
       "key": "borderRadius"
+    },
+    {
+      "key": "text"
     }
   ],
   "dynamicHeight": "FIXED",
   "dynamicTriggerPathList": [],
-  "fontFamily": "System Default",
-  "fontSize": "0.875rem",
+  "fontFamily": "Nunito Sans",
+  "fontSize": "1.25rem",
   "fontStyle": "",
   "hideCard": false,
   "iconSVG": "/static/media/icon.97c59b523e6f70ba6f40a10fc2c7c5b5.svg",
   "isDeprecated": false,
   "isLoading": false,
   "isVisible": true,
-  "key": "nk7g1uvbwm",
-  "leftColumn": 1,
+  "key": "czi7sw6u7v",
+  "leftColumn": 3,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
-  "originalBottomRow": 4,
-  "originalTopRow": 0,
   "overflow": "NONE",
-  "parentColumnSpace": 3.31396484375,
-  "parentId": "7kfbs5g36r",
+  "parentColumnSpace": 19.123046875,
+  "parentId": "qd74yy4u3t",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
-  "rightColumn": 25,
+  "rightColumn": 17,
   "searchTags": [
     "typography",
     "paragraph",
     "label"
   ],
+  "shouldScrollContents": true,
   "shouldTruncate": false,
-  "text": "Tolerance?",
+  "text": "{{MultiSelectUsers.selectedOptionValues.length == 1 ? MultiSelectUsers.selectedOptionLabels[0] : 'Team'}}",
   "textAlign": "LEFT",
   "textColor": "#231F20",
-  "topRow": 22,
+  "topRow": 1,
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,
-  "widgetId": "ed4j1xzv9t",
-  "widgetName": "PendingLabelCopyCopyCopy1Copy"
+  "widgetId": "7ipvce62wn",
+  "widgetName": "Text1Copy2"
 }
