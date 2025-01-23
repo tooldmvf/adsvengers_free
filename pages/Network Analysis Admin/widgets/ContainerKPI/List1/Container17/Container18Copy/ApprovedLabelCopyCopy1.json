@@ -22,7 +22,7 @@
   "isLoading": false,
   "isVisible": true,
   "key": "nk7g1uvbwm",
-  "leftColumn": 1,
+  "leftColumn": 0,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "originalBottomRow": 17,
@@ -32,7 +32,7 @@
   "parentId": "7kfbs5g36r",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
-  "rightColumn": 27,
+  "rightColumn": 16,
   "searchTags": [
     "typography",
     "paragraph",
