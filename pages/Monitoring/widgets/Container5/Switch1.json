@@ -33,7 +33,7 @@
   "isDeprecated": false,
   "isDisabled": false,
   "isLoading": false,
-  "isVisible": true,
+  "isVisible": false,
   "key": "80jtmb0735",
   "label": "Only COD",
   "labelPosition": "Left",
