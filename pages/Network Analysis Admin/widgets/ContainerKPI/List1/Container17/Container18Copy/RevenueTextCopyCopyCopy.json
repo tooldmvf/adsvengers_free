@@ -47,7 +47,7 @@
   ],
   "shouldScrollContents": true,
   "shouldTruncate": false,
-  "text": "{{((currentItem.conversions_approved-currentItem.conversions_approved_h)/(currentItem.conversions_approved_h)*100).toFixed(1)}}",
+  "text": "{{(((currentItem.conversions_rejected + currentItem.tot_conversions)-(currentItem.conversions_rejected_h + currentItem.tot_conversions_h))/((currentItem.conversions_rejected + currentItem.tot_conversions))*100).toFixed(1)}}",
   "textAlign": "RIGHT",
   "textColor": "#231F20",
   "topRow": 4,

@@ -4,7 +4,7 @@
   "borderColor": "",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": "",
-  "bottomRow": 20,
+  "bottomRow": 16,
   "disableLink": false,
   "displayName": "Text",
   "dynamicBindingPathList": [
@@ -47,7 +47,7 @@
   "text": "--",
   "textAlign": "RIGHT",
   "textColor": "#231F20",
-  "topRow": 16,
+  "topRow": 12,
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,
