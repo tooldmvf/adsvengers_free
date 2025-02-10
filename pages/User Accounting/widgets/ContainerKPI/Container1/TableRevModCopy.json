@@ -31,6 +31,7 @@
     }
   },
   "columnOrder": [
+    "customColumn1",
     "financial_month",
     "network_name",
     "amount_revenue_approved",
@@ -38,9 +39,10 @@
     "fk_network_id",
     "fk_user_id"
   ],
-  "columnUpdatedAt": 1689867117826,
+  "columnUpdatedAt": 1739201624313,
   "columnWidthMap": {
     "amount_revenue_approved": 135,
+    "customColumn1": 60,
     "network_name": 152,
     "status": 85,
     "step": 70,
@@ -90,6 +92,9 @@
     },
     {
       "key": "primaryColumns.amount_revenue_fixed.isCellEditable"
+    },
+    {
+      "key": "primaryColumns.customColumn1.isDisabled"
     }
   ],
   "dynamicPropertyPathList": [
@@ -101,6 +106,12 @@
     },
     {
       "key": "primaryColumns.amount_revenue_fixed.isCellEditable"
+    },
+    {
+      "key": "primaryColumns.customColumn1.isDisabled"
+    },
+    {
+      "key": "primaryColumns.customColumn1.isCellVisible"
     }
   ],
   "dynamicTriggerPathList": [
@@ -109,6 +120,9 @@
     },
     {
       "key": "primaryColumns.amount_revenue_fixed.onSubmit"
+    },
+    {
+      "key": "primaryColumns.customColumn1.onClick"
     }
   ],
   "enableClientSideSearch": true,
@@ -197,6 +211,43 @@
       "sticky": "",
       "textColor": "#eab308",
       "textSize": "0.875rem",
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "customColumn1": {
+      "alias": "",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "buttonStyle": "rgb(3, 179, 101)",
+      "buttonVariant": "TERTIARY",
+      "columnType": "iconButton",
+      "computedValue": "",
+      "currencyCode": "USD",
+      "customAlias": "",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "horizontalAlignment": "LEFT",
+      "iconName": "list-detail-view",
+      "id": "customColumn1",
+      "index": 6,
+      "isCellEditable": false,
+      "isCellVisible": "true",
+      "isDerived": true,
+      "isDisabled": "{{TableRevModCopy.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"network_name\"] != 'Private Offerz'))}}",
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "",
+      "labelColor": "#FFFFFF",
+      "notation": "standard",
+      "onClick": "{{Fetch_Data_Rev_PO.run().then(() => {\n  showModal(Detail_PrivateOfferz.name);\n});}}",
+      "originalId": "customColumn1",
+      "sticky": "",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
       "validation": {},
       "verticalAlignment": "CENTER",
       "width": 150
