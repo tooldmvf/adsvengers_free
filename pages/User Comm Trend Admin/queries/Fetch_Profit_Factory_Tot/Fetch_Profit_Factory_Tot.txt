@@ -10,5 +10,5 @@ Where 1=1
 and (text(a.fk_user_id) IN ({{"'" + MultiSelectUsers.selectedOptionValues.join("', '") + "'"}}) OR text(a.fk_user_id) = '{{appsmith.store.myUser}}' )
 and substring(financial_month,1,4) = '{{SelectYear.selectedOptionValue}}'
 group by last_name 
-HAVING (sum(amount_revenue_approved)-sum(amount_spent) <> 0)
+HAVING (sum(amount_spent) <> 0 OR sum(amount_revenue_approved) <> 0 )
 order by 1
