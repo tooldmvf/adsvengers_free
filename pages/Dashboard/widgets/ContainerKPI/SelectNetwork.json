@@ -56,7 +56,7 @@
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "onDropdownClose": "",
-  "onOptionChange": "{{(() => {\nstoreValue('myNetworks',SelectNetwork.selectedOptionValues, false);\nuser_financial_period.run();\nuser_financialOffers.run();user_financialNetwork.run();\nuser_financial_rej_rate_24h.run();\nuser_financial_active_offers.run();\nuser_financial_trend.run();\n})()}}",
+  "onOptionChange": "{{(() => {\nstoreValue('myNetworks',SelectNetwork.selectedOptionValues, false);\nuser_financial_period.run();\nuser_financialOffers.run();user_financialNetwork.run();\nuser_financial_rej_rate_24h.run();\nuser_financial_active_offers.run();\nuser_financial_trend.run();\n\tGetUserAccount.run();\n})()}}",
   "optionLabel": "label",
   "optionValue": "value",
   "parentColumnSpace": 20.0625,

@@ -1,12 +1,11 @@
 {
   "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-  "allowSelectAll": true,
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 4,
+  "bottomRow": 8,
   "boxShadow": "none",
   "defaultOptionValue": "",
-  "displayName": "MultiSelect",
+  "displayName": "Select",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -16,15 +15,18 @@
     },
     {
       "key": "sourceData"
-    }
-  ],
-  "dynamicHeight": "FIXED",
-  "dynamicPropertyPathList": [
-    {
-      "key": "onDropdownClose"
     },
     {
+      "key": "isDisabled"
+    }
+  ],
+  "dynamicHeight": "AUTO_HEIGHT",
+  "dynamicPropertyPathList": [
+    {
       "key": "onOptionChange"
+    },
+    {
+      "key": "isDisabled"
     },
     {
       "key": "sourceData"
@@ -33,47 +35,45 @@
   "dynamicTriggerPathList": [
     {
       "key": "onOptionChange"
-    },
-    {
-      "key": "onDropdownClose"
     }
   ],
   "hideCard": false,
-  "iconSVG": "/static/media/icon.a3495809ae48291a64404f3bb04b0e69.svg",
+  "iconSVG": "/static/media/icon.bd99caba5853ad71e4b3d8daffacb3a2.svg",
   "isDeprecated": false,
-  "isDisabled": false,
+  "isDisabled": "{{SelectNetwork.selectedOptionValues.length == 0}}",
   "isFilterable": true,
   "isLoading": false,
   "isRequired": false,
   "isVisible": true,
-  "key": "lkxp32394n",
+  "key": "k6zidmclah",
   "labelAlignment": "right",
   "labelPosition": "Left",
-  "labelText": "Tr.Source",
+  "labelText": "Act. Network",
   "labelTextSize": "0.875rem",
-  "labelWidth": "4",
-  "leftColumn": 16,
+  "labelWidth": "6",
+  "leftColumn": 25,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
-  "onDropdownClose": "",
   "onOptionChange": "{{(() => {\nstoreValue('myNetworks',SelectNetwork.selectedOptionValues, false);\nuser_financial_period.run();\nuser_financialOffers.run();user_financialNetwork.run();\nuser_financial_rej_rate_24h.run();\nuser_financial_active_offers.run();\nuser_financial_trend.run();\n})()}}",
   "optionLabel": "label",
   "optionValue": "value",
-  "parentColumnSpace": 20.0625,
+  "originalBottomRow": 11,
+  "originalTopRow": 6,
+  "parentColumnSpace": 19.75,
   "parentId": "kvdk6yenbb",
   "parentRowSpace": 10,
-  "placeholderText": "Select option(s)",
+  "placeholderText": "Select option",
   "renderMode": "CANVAS",
-  "rightColumn": 27,
+  "rightColumn": 42,
   "searchTags": [
-    "dropdown",
-    "tags"
+    "dropdown"
   ],
   "serverSideFiltering": false,
-  "sourceData": "{{get_ts.data.map( (obj) => {return {'value': obj.ts_id, 'label':obj.ts_name}})}}",
-  "topRow": 0,
-  "type": "MULTI_SELECT_WIDGET_V2",
+  "shouldScrollContents": true,
+  "sourceData": "{{GetUserAccount.data.map(e => {return {'value' : e.user_network_id, 'label':e.user_email_network}})}}",
+  "topRow": 4,
+  "type": "SELECT_WIDGET",
   "version": 1,
-  "widgetId": "5x05ty2m6i",
-  "widgetName": "SelectTSFront"
+  "widgetId": "8b3p78tnkf",
+  "widgetName": "SelectUserNet"
 }
