@@ -10,4 +10,5 @@ where 1 = 1
 and a.financial_date = '{{moment().add(-1, 'days')}}'
 and (text(a.fk_user_id) IN ({{"'" + MultiSelectUsers.selectedOptionValues.join("', '") + "'"}}) OR text(a.fk_user_id) = '{{appsmith.store.myUser}}' )
 and ({{SelectNetwork.selectedOptionValues.length == 0}} OR text(b.fk_network_id) IN ({{"'" + SelectNetwork.selectedOptionValues.join("', '") + "'"}}))
+and ({{SelectSubNet.selectedOptionValues.length == 0}} OR text(b.user_network_id) IN ({{"'" + SelectSubNet.selectedOptionValues.join("', '") + "'"}}))
 and ({{SelectTSFront.selectedOptionValues.length == 0}} OR text(b.fk_ts_id) IN ({{"'" + SelectTSFront.selectedOptionValues.join("', '") + "'"}}))

@@ -4,8 +4,7 @@
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 8,
   "boxShadow": "none",
-  "defaultOptionValue": "",
-  "displayName": "Select",
+  "defaultOptionValue": "\t",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -23,13 +22,10 @@
   "dynamicHeight": "AUTO_HEIGHT",
   "dynamicPropertyPathList": [
     {
-      "key": "onOptionChange"
+      "key": "sourceData"
     },
     {
       "key": "isDisabled"
-    },
-    {
-      "key": "sourceData"
     }
   ],
   "dynamicTriggerPathList": [
@@ -37,43 +33,44 @@
       "key": "onOptionChange"
     }
   ],
-  "hideCard": false,
-  "iconSVG": "/static/media/icon.bd99caba5853ad71e4b3d8daffacb3a2.svg",
-  "isDeprecated": false,
   "isDisabled": "{{SelectNetwork.selectedOptionValues.length == 0}}",
   "isFilterable": true,
   "isLoading": false,
   "isRequired": false,
   "isVisible": true,
-  "key": "k6zidmclah",
+  "key": "p8omcn0efl",
   "labelAlignment": "right",
   "labelPosition": "Left",
-  "labelText": "Act. Network",
+  "labelText": "Sub Net.",
   "labelTextSize": "0.875rem",
-  "labelWidth": "6",
-  "leftColumn": 25,
+  "labelWidth": "4",
+  "leftColumn": 27,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
-  "onOptionChange": "{{(() => {\nstoreValue('myNetworks',SelectNetwork.selectedOptionValues, false);\nuser_financial_period.run();\nuser_financialOffers.run();user_financialNetwork.run();\nuser_financial_rej_rate_24h.run();\nuser_financial_active_offers.run();\nuser_financial_trend.run();\n})()}}",
+  "minWidth": 450,
+  "mobileBottomRow": 15,
+  "mobileLeftColumn": 6,
+  "mobileRightColumn": 26,
+  "mobileTopRow": 8,
+  "needsErrorInfo": false,
+  "onOptionChange": "{{user_financial_period.run();\nuser_financialOffers.run();\nuser_financialNetwork.run();\nuser_financial_rej_rate_24h.run();\nuser_financial_active_offers.run();\nuser_financial_trend.run();}}",
   "optionLabel": "label",
   "optionValue": "value",
-  "originalBottomRow": 11,
-  "originalTopRow": 6,
-  "parentColumnSpace": 19.75,
+  "originalBottomRow": 15,
+  "originalTopRow": 8,
+  "parentColumnSpace": 18.375,
   "parentId": "kvdk6yenbb",
   "parentRowSpace": 10,
-  "placeholderText": "Select option",
+  "placeholderText": "Select option(s)",
   "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
   "rightColumn": 42,
-  "searchTags": [
-    "dropdown"
-  ],
   "serverSideFiltering": false,
   "shouldScrollContents": true,
   "sourceData": "{{GetUserAccount.data.map(e => {return {'value' : e.user_network_id, 'label':e.user_email_network}})}}",
   "topRow": 4,
-  "type": "SELECT_WIDGET",
+  "type": "MULTI_SELECT_WIDGET_V2",
   "version": 1,
-  "widgetId": "8b3p78tnkf",
-  "widgetName": "SelectUserNet"
+  "widgetId": "zz75jxfg6y",
+  "widgetName": "SelectSubNet"
 }

@@ -13,6 +13,7 @@ and a.amount_spent > 0
 and a.financial_date = '{{moment().add(-24, 'hours')}}'
 and (text(a.fk_user_id) IN ({{"'" + MultiSelectUsers.selectedOptionValues.join("', '") + "'"}}) OR text(a.fk_user_id) = '{{appsmith.store.myUser}}' )
 and ({{SelectNetwork.selectedOptionValues.length == 0}} OR text(b.fk_network_id) IN ({{"'" + SelectNetwork.selectedOptionValues.join("', '") + "'"}}))
+and ({{SelectSubNet.selectedOptionValues.length == 0}} OR text(b.user_network_id) IN ({{"'" + SelectSubNet.selectedOptionValues.join("', '") + "'"}}))
 and ({{SelectTSFront.selectedOptionValues.length == 0}} OR text(b.fk_ts_id) IN ({{"'" + SelectTSFront.selectedOptionValues.join("', '") + "'"}}))
 and b.network_other_name not like '%For Ad Account Warming%'
 group by off_cat_short) z

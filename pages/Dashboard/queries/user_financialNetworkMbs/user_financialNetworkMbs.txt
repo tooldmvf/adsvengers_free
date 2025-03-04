@@ -1,4 +1,4 @@
-SELECT d.last_name, 
+SELECT d.last_name||' '||substring(d.first_name,1,1)||'.' as "last_name", 
 sum(amount_revenue) as revenue,
 sum(amount_spent_plus_fee) as spent,
 case when c.network_name_short != 'WL' then sum(a.amount_revenue)-sum(a.amount_spent_plus_fee) else (sum(a.amount_revenue)-sum(a.amount_spent_plus_fee))/2 end as profit,
@@ -18,6 +18,7 @@ and text(c.network_id) = '{{Table1.triggeredRow.network_id}}'
 and a.financial_date >= to_date('{{moment(DateFrom.selectedDate).format('YYYY-DD-MM')}}','YYYY-DD-MM')
 and a.financial_date <= to_date('{{moment(DateTo.selectedDate).format('YYYY-DD-MM')}}','YYYY-DD-MM')
 and (text(a.fk_user_id) IN ({{"'" + MultiSelectUsers.selectedOptionValues.join("', '") + "'"}}) OR text(a.fk_user_id) = '{{appsmith.store.myUser}}' )
+and ({{SelectSubNet.selectedOptionValues.length == 0}} OR text(b.user_network_id) IN ({{"'" + SelectSubNet.selectedOptionValues.join("', '") + "'"}}))
 and ({{SelectTSFront.selectedOptionValues.length == 0}} OR text(b.fk_ts_id) IN ({{"'" + SelectTSFront.selectedOptionValues.join("', '") + "'"}}))
 and b.network_other_name not like '%For Ad Account Warming%'
-group by d.last_name,c.network_name_short
+group by d.last_name||' '||substring(d.first_name,1,1)||'.',c.network_name_short
