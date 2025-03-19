@@ -7,7 +7,7 @@ inner join public.network b on (b.network_id = c.fk_network_id)
 where 1 = 1
 and b.network_name_short != 'AW'
 and ({{!SelectUser.selectedOptionValue}} OR (text(a.fk_user_id) IN ({{"'" + SelectUser.selectedOptionValue + "'"}})))
-AND a.financial_date BETWEEN to_date('{{SelectYear.selectedOptionValue}}{{SelectMonth.selectedOptionValue}}01','YYYYMMDD') and to_date('{{SelectYear.selectedOptionValue}}{{SelectMonth.selectedOptionValue}}31','YYYYMMDD')
+AND a.financial_date BETWEEN to_date('{{SelectYear.selectedOptionValue}}{{SelectMonth.selectedOptionValue}}01','YYYYMMDD') and to_date('{{SelectYear.selectedOptionValue}}{{SelectMonth.selectedOptionValue}}{{moment(SelectYear.selectedOptionValue+'-'+SelectMonth.selectedOptionValue).endOf('month').format('DD')}}','YYYYMMDD')
 and b.network_id = '5bc1e851-9ee4-4a76-8a12-8e3d064c3462'
 group by case when c.user_email_network like '%COD%' then 'COD' else 'Other' end 
 ,c.fk_network_id,a.fk_user_id
