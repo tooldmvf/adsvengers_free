@@ -94,7 +94,7 @@
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
       "columnType": "number",
-      "computedValue": "{{Table2.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"revenue\"].toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2}) ))}}",
+      "computedValue": "{{(() => { const tableData = Table2.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => ( currentRow[\"revenue\"].toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2}) )) :  currentRow[\"revenue\"].toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2})  })()}}",
       "enableFilter": true,
       "enableSort": true,
       "fontStyle": "BOLD",
