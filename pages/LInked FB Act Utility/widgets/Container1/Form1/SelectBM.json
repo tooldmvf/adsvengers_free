@@ -67,7 +67,7 @@
   ],
   "serverSideFiltering": false,
   "shouldScrollContents": true,
-  "sourceData": "{{\nget_all_bm.data.filter(item => item.bm_name.includes( 'ouni') || item.bm_name.includes( 'White') || item.bm_name.includes( 'VF - N1') || item.bm_name.includes( 'Factory') || item.bm_name.includes( 'Emtiger') || item.bm_name.includes( 'MCC') || item.bm_name.includes( 'YOUniversalnext NU') || item.bm_name.includes( 'Dominus') || item.bm_name.includes( 'Allan Silva Zumba') || \t\t\t\t\t\t\titem.bm_name.includes( 'Ai20')).map( \n \t(obj) =>{\n \t\treturn  {\n \t\t\t'value': obj.bm_id, \n \t\t\t'label': obj.bm_name \n \t\t} \n \t}\n )\n }}",
+  "sourceData": "{{\nget_all_bm.data.filter(item => item.bm_name.includes( 'ouni') || item.bm_name.includes( 'White') || item.bm_name.includes( 'VF - N1') || item.bm_name.includes( 'Factory') || item.bm_name.includes( 'Emtiger') || item.bm_name.includes( 'DMVF') || item.bm_name.includes( 'MCC') || item.bm_name.includes( 'YOUniversalnext NU') || item.bm_name.includes( 'Dominus') || item.bm_name.includes( 'Allan Silva Zumba') || \t\t\t\t\t\t\titem.bm_name.includes( 'Ai20')).map( \n \t(obj) =>{\n \t\treturn  {\n \t\t\t'value': obj.bm_id, \n \t\t\t'label': obj.bm_name \n \t\t} \n \t}\n )\n }}",
   "topRow": 9,
   "type": "SELECT_WIDGET",
   "version": 1,
