@@ -2,11 +2,12 @@ Select count(*)
 ,bm_name, bm_id, a.financial_date
 ,sum(a.amount_spent) as spent 
 ,sum(a.amount_spent)+ (sum(a.amount_spent)/100 * a.spent_rate_fees) as spent_wfees
+,(sum(a.amount_spent)/100 * (a.spent_rate_fees-6)) as our_fees
 from public.raw_act_fb_financial_data a
 inner join public.fb_ad_account c on (c.ad_account_id = a.fk_ad_account_id)
 inner join public.facebook_bm d on (d.bm_id = c.fk_bm_id)
 where 1 = 1
-and ({{SelectBM.selectedOptionValues.length == 0}} OR text(d.bm_id) IN ({{"'" + SelectBM.selectedOptionValues.join("', '") + "'"}}))
+and (text(d.bm_id) IN ({{"'" + SelectBM.selectedOptionValues.join("', '") + "'"}}))
 and a.financial_date >= to_date('{{moment(DateFrom.selectedDate).format('YYYY-DD-MM')}}','YYYY-DD-MM')
 and a.financial_date <= to_date('{{moment(DateTo.selectedDate).format('YYYY-DD-MM')}}','YYYY-DD-MM')
 group by a.financial_date, bm_name, bm_id, a.spent_rate_fees

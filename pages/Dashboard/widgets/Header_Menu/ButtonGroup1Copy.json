@@ -470,7 +470,7 @@
           "index": 6,
           "isDisabled": false,
           "isVisible": true,
-          "label": "SouthPow Credit",
+          "label": "Rent Accounts Credit",
           "onClick": "{{navigateTo('SouthPow Credit Utility', {}, 'SAME_WINDOW');}}",
           "widgetId": "qebhcojqm2"
         },
@@ -480,7 +480,7 @@
           "index": 7,
           "isDisabled": false,
           "isVisible": true,
-          "label": "SouthPow Spent",
+          "label": "Rent Accounts Spent",
           "onClick": "{{navigateTo('Arb Spent Check', {}, 'SAME_WINDOW');}}",
           "widgetId": "pux58h21ti"
         },

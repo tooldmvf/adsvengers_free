@@ -86,9 +86,6 @@
       "key": "primaryColumns.id.computedValue"
     },
     {
-      "key": "primaryColumns.amount_spent.computedValue"
-    },
-    {
       "key": "primaryColumns.balance.computedValue"
     },
     {
@@ -120,6 +117,9 @@
     },
     {
       "key": "primaryColumns.id.cellBackground"
+    },
+    {
+      "key": "primaryColumns.amount_spent.computedValue"
     }
   ],
   "dynamicPropertyPathList": [
@@ -227,7 +227,7 @@
       "allowSameOptionsInNewRow": true,
       "cellBackground": "{{Table3.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"account_status\"] == 2 ? '#fee2e2' : 'white'))}}",
       "columnType": "text",
-      "computedValue": "{{(() => { const tableData = Table3.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => ( currentRow[\"amount_spent\"]/100).toLocaleString('en-IT', { style: 'currency', currency: currentRow[\"currency\"] })) :  currentRow[\"amount_spent\"]/100).toLocaleString('en-IT', { style: 'currency', currency: currentRow[\"currency\"] } })()}}",
+      "computedValue": "{{(() => { const tableData = Table3.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => ( (currentRow[\"amount_spent\"]/100).toLocaleString('en-IT', { style: 'currency', currency: currentRow[\"currency\"] }))) :  (currentRow[\"amount_spent\"]/100).toLocaleString('en-IT', { style: 'currency', currency: currentRow[\"currency\"] }) })()}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
@@ -427,7 +427,7 @@
       "allowSameOptionsInNewRow": true,
       "cellBackground": "{{Table3.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"account_status\"] == 2 ? '#fee2e2' : 'white'))}}",
       "columnType": "text",
-      "computedValue": "{{(() => { const tableData = Table3.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => ( currentRow[\"spend_cap\"]/100).toLocaleString('en-IT', { style: 'currency', currency: currentRow[\"currency\"] })) :  currentRow[\"spend_cap\"]/100).toLocaleString('en-IT', { style: 'currency', currency: currentRow[\"currency\"] } })()}}",
+      "computedValue": "{{(() => { const tableData = Table3.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => ( (currentRow[\"spend_cap\"]/100).toLocaleString('en-IT', { style: 'currency', currency: currentRow[\"currency\"] }))) :  (currentRow[\"spend_cap\"]/100).toLocaleString('en-IT', { style: 'currency', currency: currentRow[\"currency\"] }) })()}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,

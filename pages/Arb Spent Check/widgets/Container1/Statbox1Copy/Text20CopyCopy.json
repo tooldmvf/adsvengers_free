@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 5,
+  "bottomRow": 12,
   "displayName": "Text",
   "dynamicBindingPathList": [
     {
@@ -12,39 +12,46 @@
     },
     {
       "key": "borderRadius"
+    },
+    {
+      "key": "text"
     }
   ],
-  "dynamicHeight": "FIXED",
+  "dynamicHeight": "AUTO_HEIGHT",
   "dynamicTriggerPathList": [],
   "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
-  "fontSize": "1.25rem",
-  "fontStyle": "",
+  "fontSize": "0.875rem",
+  "fontStyle": "BOLD",
   "hideCard": false,
   "iconSVG": "/static/media/icon.97c59b523e6f70ba6f40a10fc2c7c5b5.svg",
   "isDeprecated": false,
   "isLoading": false,
   "isVisible": true,
-  "key": "943elwrbty",
-  "leftColumn": 4,
+  "key": "ergzcb9xo3",
+  "leftColumn": 24,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
+  "minWidth": 450,
+  "originalBottomRow": 12,
+  "originalTopRow": 8,
   "overflow": "NONE",
-  "parentId": "y7bc0brmf3",
+  "parentId": "x4xsq3xk3p",
   "renderMode": "CANVAS",
-  "rightColumn": 22,
+  "responsiveBehavior": "fill",
+  "rightColumn": 47,
   "searchTags": [
     "typography",
     "paragraph",
     "label"
   ],
   "shouldTruncate": false,
-  "text": "Ad Accounts Credit",
+  "text": "Our Fees ({{_.meanBy(TableAct.selectedRows , (row) => parseFloat(row.spent_rate_fees-6)).toFixed(1)}}%): {{ _.sumBy(TableAct.selectedRows , (row) => parseFloat(row.our_fees.replace(\",\",\"\")) ).toLocaleString('en-IT', { style: 'currency', currency: \"EUR\"}) }}",
   "textAlign": "LEFT",
-  "textColor": "#231F20",
-  "topRow": 1,
+  "textColor": "#03B365",
+  "topRow": 8,
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,
-  "widgetId": "4jhegz95do",
-  "widgetName": "Text3CopyCopy"
+  "widgetId": "901o03bifw",
+  "widgetName": "Text20CopyCopy"
 }
