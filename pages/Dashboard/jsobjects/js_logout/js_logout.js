@@ -11,7 +11,7 @@ export default {
 		}
 		
 		get_all_users.run().then(() => {
-								console.log("ok");							
+			console.log("ok");							
 		}).catch((err) => {
 			console.log(err.message);
 			clearStore();
