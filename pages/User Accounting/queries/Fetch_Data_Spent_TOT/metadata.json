@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT SUM(amount_spent), SUM(amount_spent)*(1+(a.spent_rate_fees::float/100)) spent_wfees ,a.spent_rate_fees\nFROM public.user_spent_month a\ninner join public.facebook_bm b on (b.bm_id = a.fk_bm_id)\nwhere 1=1\nand ({{!SelectUser.selectedOptionValue}} OR (text(a.fk_user_id) IN ({{\"'\" + SelectUser.selectedOptionValue + \"'\"}})))\nAND a.financial_month = '{{SelectYear.selectedOptionValue}}{{SelectMonth.selectedOptionValue}}'\nand fk_bm_id NOT in ('Ai20-Google','377343377466914','6216057845181337','720611199824998')\ngroup by a.spent_rate_fees \n",
+      "body": "SELECT SUM(amount_spent), SUM(amount_spent)*(1+(a.spent_rate_fees::float/100)) spent_wfees ,a.spent_rate_fees\nFROM public.user_spent_month a\ninner join public.facebook_bm b on (b.bm_id = a.fk_bm_id)\nwhere 1=1\nand ({{!SelectUser.selectedOptionValue}} OR (text(a.fk_user_id) IN ({{\"'\" + SelectUser.selectedOptionValue + \"'\"}})))\nAND a.financial_month = '{{SelectYear.selectedOptionValue}}{{SelectMonth.selectedOptionValue}}'\nand fk_bm_id NOT in ('Ai20-Google','377343377466914','6216057845181337')\ngroup by a.spent_rate_fees \n",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
