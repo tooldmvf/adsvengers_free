@@ -27,9 +27,9 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": false,
     "name": "SelectFinancialCopy",
     "pageId": "Day by Day",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": true
   }
 }

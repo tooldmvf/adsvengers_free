@@ -51,9 +51,9 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": false,
     "name": "Save_Manager",
     "pageId": "Manager Accounting",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
 }

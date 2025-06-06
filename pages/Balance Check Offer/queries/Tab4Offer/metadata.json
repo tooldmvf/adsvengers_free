@@ -27,9 +27,9 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": false,
     "name": "Tab4Offer",
     "pageId": "Balance Check Offer",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": true
   }
 }

@@ -50,9 +50,9 @@
       "pluginId": "restapi-plugin"
     },
     "dynamicBindingPathList": [],
-    "executeOnLoad": false,
     "name": "GetAccountsCopy",
     "pageId": "LInked FB Act Utility",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
 }

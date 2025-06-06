@@ -48,9 +48,9 @@
         "key": "formData.send.bcc"
       }
     ],
-    "executeOnLoad": false,
     "name": "send_invoice_email",
     "pageId": "Invoices Accounting",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
 }

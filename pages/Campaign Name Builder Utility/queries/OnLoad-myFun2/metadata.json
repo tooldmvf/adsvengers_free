@@ -24,10 +24,10 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": true,
     "fullyQualifiedName": "OnLoad.myFun2",
     "name": "myFun2",
     "pageId": "Campaign Name Builder Utility",
+    "runBehaviour": "ON_PAGE_LOAD",
     "userSetOnLoad": true
   }
 }

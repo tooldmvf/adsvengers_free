@@ -23,10 +23,10 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": false,
     "fullyQualifiedName": "Utils2.onLoad",
     "name": "onLoad",
     "pageId": "ZZZ OLD 2 Commissions Admin",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
 }

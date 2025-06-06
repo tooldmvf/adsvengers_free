@@ -27,9 +27,9 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": false,
     "name": "Fetch_Data_Other_Prj",
     "pageId": "Factory Accounting",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": true
   }
 }

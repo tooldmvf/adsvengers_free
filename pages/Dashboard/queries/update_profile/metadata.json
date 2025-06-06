@@ -53,9 +53,9 @@
         "key": "queryParameters[0].value"
       }
     ],
-    "executeOnLoad": false,
     "name": "update_profile",
     "pageId": "Dashboard",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
 }

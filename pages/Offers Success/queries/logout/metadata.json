@@ -38,9 +38,9 @@
         "key": "headers[1].value"
       }
     ],
-    "executeOnLoad": false,
     "name": "logout",
     "pageId": "Offers Success",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
 }

@@ -22,10 +22,10 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": false,
     "fullyQualifiedName": "auth.temp_tbd",
     "name": "temp_tbd",
     "pageId": "Login",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
 }

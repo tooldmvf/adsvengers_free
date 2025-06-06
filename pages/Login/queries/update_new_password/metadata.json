@@ -41,9 +41,9 @@
         "key": "headers[0].value"
       }
     ],
-    "executeOnLoad": false,
     "name": "update_new_password",
     "pageId": "Login",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
 }

@@ -23,10 +23,10 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": false,
     "fullyQualifiedName": "wf_offers.insert_ai20_offer",
     "name": "insert_ai20_offer",
     "pageId": "Campaign Name Builder Utility",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
 }

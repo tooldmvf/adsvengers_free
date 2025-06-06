@@ -23,10 +23,10 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": true,
     "fullyQualifiedName": "Utils.reload",
     "name": "reload",
     "pageId": "Factory Accounting",
+    "runBehaviour": "ON_PAGE_LOAD",
     "userSetOnLoad": true
   }
 }

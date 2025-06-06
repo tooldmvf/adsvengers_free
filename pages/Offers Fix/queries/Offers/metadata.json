@@ -47,9 +47,9 @@
         "key": "headers[0].value"
       }
     ],
-    "executeOnLoad": true,
     "name": "Offers",
     "pageId": "Offers Fix",
+    "runBehaviour": "ON_PAGE_LOAD",
     "userSetOnLoad": false
   }
 }

@@ -71,9 +71,9 @@
         "key": "queryParameters[1].value"
       }
     ],
-    "executeOnLoad": false,
     "name": "Reset_Debt",
     "pageId": "User Accounting",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
 }

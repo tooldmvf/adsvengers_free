@@ -41,9 +41,9 @@
         "key": "headers[0].value"
       }
     ],
-    "executeOnLoad": false,
     "name": "get_all_networks",
     "pageId": "User Comm Trend Admin",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
 }

@@ -39,9 +39,9 @@
         "key": "headers[0].value"
       }
     ],
-    "executeOnLoad": true,
     "name": "get_user",
     "pageId": "Invoices Accounting",
+    "runBehaviour": "ON_PAGE_LOAD",
     "userSetOnLoad": true
   }
 }

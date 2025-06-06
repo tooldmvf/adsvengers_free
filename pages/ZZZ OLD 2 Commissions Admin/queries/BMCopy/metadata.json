@@ -27,9 +27,9 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": false,
     "name": "BMCopy",
     "pageId": "ZZZ OLD 2 Commissions Admin",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
 }

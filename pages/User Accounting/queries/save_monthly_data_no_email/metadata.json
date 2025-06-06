@@ -51,9 +51,9 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": false,
     "name": "save_monthly_data_no_email",
     "pageId": "User Accounting",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
 }

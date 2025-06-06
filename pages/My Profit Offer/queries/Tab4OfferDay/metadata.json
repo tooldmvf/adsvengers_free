@@ -27,9 +27,9 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": false,
     "name": "Tab4OfferDay",
     "pageId": "My Profit Offer",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": true
   }
 }

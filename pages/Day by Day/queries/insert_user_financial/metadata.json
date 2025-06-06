@@ -45,9 +45,9 @@
         "key": "headers[0].value"
       }
     ],
-    "executeOnLoad": false,
     "name": "insert_user_financial",
     "pageId": "Day by Day",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
 }

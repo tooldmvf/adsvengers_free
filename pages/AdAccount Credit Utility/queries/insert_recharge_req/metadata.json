@@ -45,9 +45,9 @@
         "key": "headers[0].value"
       }
     ],
-    "executeOnLoad": false,
     "name": "insert_recharge_req",
     "pageId": "AdAccount Credit Utility",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
 }

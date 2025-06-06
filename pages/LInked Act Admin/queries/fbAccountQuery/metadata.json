@@ -27,9 +27,9 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": false,
     "name": "fbAccountQuery",
     "pageId": "LInked Act Admin",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": true
   }
 }

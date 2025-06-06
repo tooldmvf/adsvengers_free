@@ -35,9 +35,9 @@
         "key": "headers[0].value"
       }
     ],
-    "executeOnLoad": true,
     "name": "get_comm_type",
     "pageId": "ZZZ OLD Commissions Admin",
+    "runBehaviour": "ON_PAGE_LOAD",
     "userSetOnLoad": false
   }
 }

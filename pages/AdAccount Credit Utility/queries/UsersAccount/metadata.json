@@ -27,9 +27,9 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": false,
     "name": "UsersAccount",
     "pageId": "AdAccount Credit Utility",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
 }

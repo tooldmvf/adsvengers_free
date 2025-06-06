@@ -65,9 +65,9 @@
         "key": "queryParameters[1].value"
       }
     ],
-    "executeOnLoad": false,
     "name": "OffersUpdate",
     "pageId": "Offers Fix",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
 }

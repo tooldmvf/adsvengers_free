@@ -35,9 +35,9 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": false,
     "name": "pass_recovery",
     "pageId": "Login",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
 }

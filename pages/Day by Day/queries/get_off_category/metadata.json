@@ -35,9 +35,9 @@
         "key": "headers[0].value"
       }
     ],
-    "executeOnLoad": false,
     "name": "get_off_category",
     "pageId": "Day by Day",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": true
   }
 }

@@ -27,9 +27,9 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": false,
     "name": "Tab2Date",
     "pageId": "ZZZ OLD Pivot",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": true
   }
 }

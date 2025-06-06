@@ -44,9 +44,9 @@
         "key": "headers[0].value"
       }
     ],
-    "executeOnLoad": true,
     "name": "get_all_users",
     "pageId": "Recharge Requests",
+    "runBehaviour": "ON_PAGE_LOAD",
     "userSetOnLoad": true
   }
 }

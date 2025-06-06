@@ -40,9 +40,9 @@
         "key": "headers[0].value"
       }
     ],
-    "executeOnLoad": true,
     "name": "get_ts",
     "pageId": "ZZZ BKP AdAccount Credit Utili",
+    "runBehaviour": "ON_PAGE_LOAD",
     "userSetOnLoad": false
   }
 }

@@ -23,10 +23,10 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": true,
     "fullyQualifiedName": "js_logout.check_login",
     "name": "check_login",
     "pageId": "Slack Management Admin",
+    "runBehaviour": "ON_PAGE_LOAD",
     "userSetOnLoad": true
   }
 }

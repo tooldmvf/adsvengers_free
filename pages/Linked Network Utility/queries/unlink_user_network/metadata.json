@@ -39,9 +39,9 @@
         "key": "queryParameters[0].value"
       }
     ],
-    "executeOnLoad": false,
     "name": "unlink_user_network",
     "pageId": "Linked Network Utility",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
 }

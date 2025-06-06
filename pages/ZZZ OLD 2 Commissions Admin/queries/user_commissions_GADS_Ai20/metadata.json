@@ -27,9 +27,9 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": false,
     "name": "user_commissions_GADS_Ai20",
     "pageId": "ZZZ OLD 2 Commissions Admin",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": true
   }
 }

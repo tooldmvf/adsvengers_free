@@ -45,9 +45,9 @@
         "key": "headers[0].value"
       }
     ],
-    "executeOnLoad": false,
     "name": "add_user_network",
     "pageId": "Linked Network Utility",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
 }

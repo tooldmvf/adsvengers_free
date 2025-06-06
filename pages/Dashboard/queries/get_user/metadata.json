@@ -40,9 +40,9 @@
         "key": "headers[0].value"
       }
     ],
-    "executeOnLoad": false,
     "name": "get_user",
     "pageId": "Dashboard",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": true
   }
 }

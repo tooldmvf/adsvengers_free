@@ -27,9 +27,9 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": false,
     "name": "Tab4OfferCopy",
     "pageId": "Offers Success",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
 }

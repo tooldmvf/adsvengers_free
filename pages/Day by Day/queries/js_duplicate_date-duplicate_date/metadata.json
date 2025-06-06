@@ -24,10 +24,10 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": false,
     "fullyQualifiedName": "js_duplicate_date.duplicate_date",
     "name": "duplicate_date",
     "pageId": "Day by Day",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
 }

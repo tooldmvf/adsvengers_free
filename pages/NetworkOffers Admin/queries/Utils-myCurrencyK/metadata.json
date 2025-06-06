@@ -27,10 +27,10 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": false,
     "fullyQualifiedName": "Utils.myCurrencyK",
     "name": "myCurrencyK",
     "pageId": "NetworkOffers Admin",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
 }

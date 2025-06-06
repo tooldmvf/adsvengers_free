@@ -36,9 +36,9 @@
         "key": "headers[0].value"
       }
     ],
-    "executeOnLoad": false,
     "name": "get_category",
     "pageId": "Monitoring",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
 }

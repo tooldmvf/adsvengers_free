@@ -47,9 +47,9 @@
         "key": "queryParameters[1].value"
       }
     ],
-    "executeOnLoad": false,
     "name": "get_offer_net_cut",
     "pageId": "Campaign Name Builder Utility",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": true
   }
 }

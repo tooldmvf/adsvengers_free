@@ -38,9 +38,9 @@
         "key": "headers[1].value"
       }
     ],
-    "executeOnLoad": false,
     "name": "logout",
     "pageId": "User Comm Fra",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
 }

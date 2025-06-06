@@ -44,9 +44,9 @@
         "key": "headers[0].value"
       }
     ],
-    "executeOnLoad": false,
     "name": "get_all_users",
     "pageId": "Campaign Name Builder Utility",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": true
   }
 }

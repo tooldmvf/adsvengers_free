@@ -38,9 +38,9 @@
         "key": "headers[1].value"
       }
     ],
-    "executeOnLoad": false,
     "name": "logout",
     "pageId": "ZZZ BKP AdAccount Credit Utili",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
 }

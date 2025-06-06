@@ -86,9 +86,9 @@
         "key": "formData.body.data"
       }
     ],
-    "executeOnLoad": false,
     "name": "upload_a_file",
     "pageId": "Invoices Accounting",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
 }

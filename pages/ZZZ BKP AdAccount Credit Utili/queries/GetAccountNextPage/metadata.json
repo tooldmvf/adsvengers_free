@@ -35,9 +35,9 @@
         "key": "datasourceUrl"
       }
     ],
-    "executeOnLoad": false,
     "name": "GetAccountNextPage",
     "pageId": "ZZZ BKP AdAccount Credit Utili",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
 }

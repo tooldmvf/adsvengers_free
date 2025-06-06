@@ -27,9 +27,9 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": false,
     "name": "get_user_offers_table",
     "pageId": "Campaign Name Builder Utility",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": true
   }
 }

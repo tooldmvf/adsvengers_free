@@ -24,10 +24,10 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": false,
     "fullyQualifiedName": "js_logout.logout_process",
     "name": "logout_process",
     "pageId": "ZZZ OLD Pivot",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
 }

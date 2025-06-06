@@ -45,9 +45,9 @@
         "key": "headers[0].value"
       }
     ],
-    "executeOnLoad": false,
     "name": "clone_user_financial",
     "pageId": "Day by Day",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
 }

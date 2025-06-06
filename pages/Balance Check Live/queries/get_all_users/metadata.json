@@ -46,9 +46,9 @@
         "key": "headers[0].value"
       }
     ],
-    "executeOnLoad": false,
     "name": "get_all_users",
     "pageId": "Balance Check Live",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": true
   }
 }

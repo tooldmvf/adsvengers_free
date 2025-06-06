@@ -48,9 +48,9 @@
         "key": "headers[0].value"
       }
     ],
-    "executeOnLoad": false,
     "name": "insert_invoice",
     "pageId": "Invoices Accounting",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
 }

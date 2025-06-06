@@ -41,9 +41,9 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": false,
     "name": "get_all_wf_offers_QL",
     "pageId": "Campaign Name Builder Utility",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
 }

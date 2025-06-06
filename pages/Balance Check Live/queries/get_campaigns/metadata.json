@@ -27,9 +27,9 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": false,
     "name": "get_campaigns",
     "pageId": "Balance Check Live",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": true
   }
 }

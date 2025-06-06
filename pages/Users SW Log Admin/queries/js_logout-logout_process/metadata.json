@@ -24,10 +24,10 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": false,
     "fullyQualifiedName": "js_logout.logout_process",
     "name": "logout_process",
     "pageId": "Users SW Log Admin",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
 }

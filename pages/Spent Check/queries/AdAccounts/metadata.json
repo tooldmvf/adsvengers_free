@@ -27,9 +27,9 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": false,
     "name": "AdAccounts",
     "pageId": "Spent Check",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": true
   }
 }

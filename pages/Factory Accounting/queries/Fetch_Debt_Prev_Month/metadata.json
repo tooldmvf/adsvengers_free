@@ -27,9 +27,9 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": false,
     "name": "Fetch_Debt_Prev_Month",
     "pageId": "Factory Accounting",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": true
   }
 }

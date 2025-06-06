@@ -40,9 +40,9 @@
         "key": "headers[0].value"
       }
     ],
-    "executeOnLoad": false,
     "name": "get_all_networks",
     "pageId": "ZZZ OLD Commissions Admin",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
 }

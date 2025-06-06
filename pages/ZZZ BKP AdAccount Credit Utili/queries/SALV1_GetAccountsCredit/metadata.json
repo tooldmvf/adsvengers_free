@@ -57,9 +57,9 @@
         "key": "prev"
       }
     ],
-    "executeOnLoad": false,
     "name": "SALV1_GetAccountsCredit",
     "pageId": "ZZZ BKP AdAccount Credit Utili",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": true
   }
 }

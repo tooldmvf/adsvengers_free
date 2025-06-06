@@ -27,9 +27,9 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": false,
     "name": "DetailMB",
     "pageId": "Offer Detail",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": true
   }
 }

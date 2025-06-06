@@ -27,9 +27,9 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": false,
     "name": "Fetch_Data_Rev_TOT",
     "pageId": "User Accounting",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": true
   }
 }

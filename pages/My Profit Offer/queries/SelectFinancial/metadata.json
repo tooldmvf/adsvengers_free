@@ -27,9 +27,9 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": false,
     "name": "SelectFinancial",
     "pageId": "My Profit Offer",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": true
   }
 }

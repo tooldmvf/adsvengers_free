@@ -45,9 +45,9 @@
         "key": "path"
       }
     ],
-    "executeOnLoad": false,
     "name": "GetCampaigns",
     "pageId": "ZZZ BKP AdAccount Credit Utili",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
 }

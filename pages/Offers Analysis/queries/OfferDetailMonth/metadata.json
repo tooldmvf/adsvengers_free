@@ -27,9 +27,9 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": false,
     "name": "OfferDetailMonth",
     "pageId": "Offers Analysis",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": true
   }
 }

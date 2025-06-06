@@ -62,9 +62,9 @@
         "key": "queryParameters[1].value"
       }
     ],
-    "executeOnLoad": false,
     "name": "OffersDelete",
     "pageId": "Offers Fix",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
 }

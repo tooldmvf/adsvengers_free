@@ -41,9 +41,9 @@
       "pluginId": "restapi-plugin"
     },
     "dynamicBindingPathList": [],
-    "executeOnLoad": false,
     "name": "get_all_users",
     "pageId": "Monitoring",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": true
   }
 }

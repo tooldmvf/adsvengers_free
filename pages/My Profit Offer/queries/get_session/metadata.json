@@ -38,9 +38,9 @@
         "key": "headers[1].value"
       }
     ],
-    "executeOnLoad": false,
     "name": "get_session",
     "pageId": "My Profit Offer",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
 }

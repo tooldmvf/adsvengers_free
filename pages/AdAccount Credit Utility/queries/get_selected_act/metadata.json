@@ -43,9 +43,9 @@
         "key": "headers[0].value"
       }
     ],
-    "executeOnLoad": false,
     "name": "get_selected_act",
     "pageId": "AdAccount Credit Utility",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": true
   }
 }

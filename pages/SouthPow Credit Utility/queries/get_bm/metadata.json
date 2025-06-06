@@ -46,9 +46,9 @@
         "key": "queryParameters[1].value"
       }
     ],
-    "executeOnLoad": true,
     "name": "get_bm",
     "pageId": "SouthPow Credit Utility",
+    "runBehaviour": "ON_PAGE_LOAD",
     "userSetOnLoad": false
   }
 }

@@ -81,9 +81,9 @@
         "key": "queryParameters[2].value"
       }
     ],
-    "executeOnLoad": false,
     "name": "Save_Data_Comm_Fee",
     "pageId": "User Accounting",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
 }

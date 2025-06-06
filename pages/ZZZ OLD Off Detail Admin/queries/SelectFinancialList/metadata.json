@@ -27,9 +27,9 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": false,
     "name": "SelectFinancialList",
     "pageId": "ZZZ OLD Off Detail Admin",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": true
   }
 }

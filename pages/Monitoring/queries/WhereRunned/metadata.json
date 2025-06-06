@@ -27,9 +27,9 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": false,
     "name": "WhereRunned",
     "pageId": "Monitoring",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": true
   }
 }

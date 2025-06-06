@@ -24,10 +24,10 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": false,
     "fullyQualifiedName": "js_logout.logout_process",
     "name": "logout_process",
     "pageId": "Invoices Accounting",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
 }

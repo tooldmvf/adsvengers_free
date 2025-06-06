@@ -37,9 +37,9 @@
         "key": "path"
       }
     ],
-    "executeOnLoad": false,
     "name": "GetAccountNextPage",
     "pageId": "LInked FB Act Utility",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
 }

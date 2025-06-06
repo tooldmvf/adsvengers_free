@@ -45,9 +45,9 @@
         "key": "formData.send.to"
       }
     ],
-    "executeOnLoad": false,
     "name": "Send_Confirmation",
     "pageId": "User Accounting",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
 }

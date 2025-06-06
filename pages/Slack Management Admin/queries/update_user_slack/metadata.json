@@ -65,9 +65,9 @@
         "key": "queryParameters[0].value"
       }
     ],
-    "executeOnLoad": false,
     "name": "update_user_slack",
     "pageId": "Slack Management Admin",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
 }

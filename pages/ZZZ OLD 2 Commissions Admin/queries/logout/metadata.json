@@ -38,9 +38,9 @@
         "key": "headers[1].value"
       }
     ],
-    "executeOnLoad": false,
     "name": "logout",
     "pageId": "ZZZ OLD 2 Commissions Admin",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
 }

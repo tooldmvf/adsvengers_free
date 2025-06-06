@@ -27,10 +27,10 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": false,
     "fullyQualifiedName": "Utils.myFun2_User",
     "name": "myFun2_User",
     "pageId": "User Accounting",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
 }

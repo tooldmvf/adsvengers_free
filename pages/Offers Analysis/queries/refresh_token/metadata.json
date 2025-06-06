@@ -52,9 +52,9 @@
         "key": "headers[1].value"
       }
     ],
-    "executeOnLoad": false,
     "name": "refresh_token",
     "pageId": "Offers Analysis",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
 }

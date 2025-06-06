@@ -45,9 +45,9 @@
         "key": "formData.send.bcc"
       }
     ],
-    "executeOnLoad": false,
     "name": "Send_Confirmation_NEG",
     "pageId": "User Accounting",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
 }

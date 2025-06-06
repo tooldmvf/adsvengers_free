@@ -63,9 +63,9 @@
         "key": "headers[0].value"
       }
     ],
-    "executeOnLoad": false,
     "name": "get_all_bm",
     "pageId": "Spent Check",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": true
   }
 }

@@ -26,10 +26,10 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": false,
     "fullyQualifiedName": "Utils2.myCurrency",
     "name": "myCurrency",
     "pageId": "Offers Analysis",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
 }

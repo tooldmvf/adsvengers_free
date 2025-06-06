@@ -46,9 +46,9 @@
         "key": "queryParameters[0].value"
       }
     ],
-    "executeOnLoad": false,
     "name": "get_user_profile",
     "pageId": "Network Analysis Admin",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": true
   }
 }

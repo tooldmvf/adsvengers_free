@@ -49,9 +49,9 @@
         "key": "queryParameters[1].value"
       }
     ],
-    "executeOnLoad": false,
     "name": "GetCampaigns",
     "pageId": "LInked FB Act Utility",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
 }

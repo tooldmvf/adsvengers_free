@@ -23,10 +23,10 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": false,
     "fullyQualifiedName": "ManageFile.delete",
     "name": "delete",
     "pageId": "Invoices Accounting",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
 }

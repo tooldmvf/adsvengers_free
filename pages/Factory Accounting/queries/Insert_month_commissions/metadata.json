@@ -27,9 +27,9 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": false,
     "name": "Insert_month_commissions",
     "pageId": "Factory Accounting",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
 }

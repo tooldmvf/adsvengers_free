@@ -34,9 +34,9 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": false,
     "name": "sign_up",
     "pageId": "Login",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
 }

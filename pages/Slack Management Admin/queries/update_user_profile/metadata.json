@@ -53,9 +53,9 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": false,
     "name": "update_user_profile",
     "pageId": "Slack Management Admin",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
 }

@@ -32,9 +32,9 @@
       "pluginId": "restapi-plugin"
     },
     "dynamicBindingPathList": [],
-    "executeOnLoad": false,
     "name": "Eur_value",
     "pageId": "Recharge Requests",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
 }

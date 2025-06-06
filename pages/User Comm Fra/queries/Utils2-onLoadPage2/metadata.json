@@ -22,10 +22,10 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": false,
     "fullyQualifiedName": "Utils2.onLoadPage2",
     "name": "onLoadPage2",
     "pageId": "User Comm Fra",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
 }

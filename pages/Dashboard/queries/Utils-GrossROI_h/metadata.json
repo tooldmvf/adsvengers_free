@@ -23,10 +23,10 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": false,
     "fullyQualifiedName": "Utils.GrossROI_h",
     "name": "GrossROI_h",
     "pageId": "Dashboard",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
 }

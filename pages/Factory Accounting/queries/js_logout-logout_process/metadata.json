@@ -23,10 +23,10 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": false,
     "fullyQualifiedName": "js_logout.logout_process",
     "name": "logout_process",
     "pageId": "Factory Accounting",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
 }

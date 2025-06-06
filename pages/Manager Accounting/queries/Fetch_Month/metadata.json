@@ -27,9 +27,9 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": false,
     "name": "Fetch_Month",
     "pageId": "Manager Accounting",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": true
   }
 }

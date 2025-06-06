@@ -27,9 +27,9 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": false,
     "name": "TotalLineDaysUser",
     "pageId": "Users Profit Admin",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
 }

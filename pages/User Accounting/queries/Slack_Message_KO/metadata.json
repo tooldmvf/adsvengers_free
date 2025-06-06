@@ -40,9 +40,9 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": false,
     "name": "Slack_Message_KO",
     "pageId": "User Accounting",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
 }

@@ -27,9 +27,9 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": false,
     "name": "Fetch_Data_Tot",
     "pageId": "User Comm Fra",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": true
   }
 }

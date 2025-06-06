@@ -52,9 +52,9 @@
         "key": "headers[0].value"
       }
     ],
-    "executeOnLoad": false,
     "name": "update_token_db",
     "pageId": "LInked FB Act Utility",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
 }

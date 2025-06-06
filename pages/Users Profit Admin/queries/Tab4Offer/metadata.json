@@ -27,9 +27,9 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": false,
     "name": "Tab4Offer",
     "pageId": "Users Profit Admin",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": true
   }
 }

@@ -45,9 +45,9 @@
         "key": "queryParameters[0].value"
       }
     ],
-    "executeOnLoad": false,
     "name": "GetBusinesses",
     "pageId": "LInked FB Act Utility",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": true
   }
 }

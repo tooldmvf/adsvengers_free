@@ -23,10 +23,10 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": false,
     "fullyQualifiedName": "Utils.store_user_profile",
     "name": "store_user_profile",
     "pageId": "Dashboard",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
 }

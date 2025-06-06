@@ -39,9 +39,9 @@
         "key": "queryParameters[0].value"
       }
     ],
-    "executeOnLoad": false,
     "name": "delete_req_recharge",
     "pageId": "Recharge Requests",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
 }

@@ -74,9 +74,9 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": false,
     "name": "Save_Data_Rev",
     "pageId": "User Accounting",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
 }

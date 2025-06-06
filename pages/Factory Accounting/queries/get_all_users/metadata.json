@@ -45,9 +45,9 @@
         "key": "headers[0].value"
       }
     ],
-    "executeOnLoad": false,
     "name": "get_all_users",
     "pageId": "Factory Accounting",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
 }

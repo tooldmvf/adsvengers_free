@@ -27,9 +27,9 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": false,
     "name": "user_financialNetwork",
     "pageId": "Network Analysis Admin",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": true
   }
 }

@@ -27,9 +27,9 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": false,
     "name": "Fetch_Profit_Factory_Tot",
     "pageId": "User Comm Trend Admin",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": true
   }
 }

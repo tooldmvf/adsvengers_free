@@ -23,10 +23,10 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": true,
     "fullyQualifiedName": "Utils2.onPageLoad",
     "name": "onPageLoad",
     "pageId": "ZZZ OLD Pivot",
+    "runBehaviour": "ON_PAGE_LOAD",
     "userSetOnLoad": true
   }
 }

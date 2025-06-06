@@ -27,9 +27,9 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": false,
     "name": "user_financial_rej_rate_24h",
     "pageId": "Dashboard",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": true
   }
 }

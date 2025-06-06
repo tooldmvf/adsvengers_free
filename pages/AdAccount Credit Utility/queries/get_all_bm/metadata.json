@@ -46,9 +46,9 @@
         "key": "queryParameters[1].value"
       }
     ],
-    "executeOnLoad": false,
     "name": "get_all_bm",
     "pageId": "AdAccount Credit Utility",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": true
   }
 }

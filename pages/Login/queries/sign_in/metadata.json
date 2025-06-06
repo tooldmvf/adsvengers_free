@@ -46,9 +46,9 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": false,
     "name": "sign_in",
     "pageId": "Login",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": true
   }
 }
